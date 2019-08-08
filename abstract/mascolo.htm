@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+
+<p align="justify">In the past few years dynamic and reconfigurable systems
+have evolved and new strategy and paradigms for the development of
+applications have been devised.  In this thesis we study mobile code based
+systems focusing on the importance of formalization and investigation of the
+potential of code mobility.  Mobile code paradigms have been used in different
+systems, however, as most of these are Java based, the potential of code
+mobility are some-how lost behind the Java language capabilities, and design
+choices related to mobility have been conditioned by implementation choices.
+
+<p align="justify">In this thesis we reason on code mobility systems at the
+design level in order to investigate novel powerful approaches.  This thesis
+is composed of different parts. We first introduce a coordination based
+language and a model checker to reason on formalization of mobile code based
+systems with automatic analysis.  Properties of mobile agents, of their
+interaction and behavior may be formally expressed and verified against the
+system specification.
+
+<p align="justify">Then, in order to express code mobility potential and to
+formalize the basic constructs for code migration, we describe a formal
+language for the specification of very fine-grained mobility. Every line of
+code, and every variable declaration can be mobile, giving a very high
+flexibility in the range of application.  A prototype of this model
+implemented in Java is also presented to validate the implementability of the
+model.
+
+<p align="justify">Finally, we show a possible incarnation of the fine-grained
+mobility approach based on XML.  The approach allows XML documents to be
+updated cutting, extending, or replacing parts of the tree structure of the
+document. We exploit this idea to incrementally update remote code. The
+approach can be used in different domains; we describe possible applications
+in graphic user interface management, document consistency checking and
+management of application on thin clients like personal digital assistants
+(PDAs).
+
+
+
+
+
+
+
+
+
+
+
+
+The increasing popularity of mobile devices, such as mobile phones and
+personal digital assistants, and advances in wireless networking
+technologies, are enabling new classes of applications that present
+challenging problems to application designers. Applications have to be
+aware of, and adapt to, variations in the execution
+context, such as fluctuating network bandwidth and decreasing battery
+power, in order to deliver a good quality of service to their users.
+
+<p>We argue that building applications directly on top of the network
+operating system would be extremely tedious and error-prone, as
+application developers would have to deal with these issues
+explicitly, and would consequently be distracted from the actual
+requirements of the application they are building.  Rather, a
+middleware layered between the network operating system and the
+application should provide application developers with abstractions
+and mechanisms to deal with them.
+
+<p>We investigate the principle of reflection and demonstrate how
+it can be used to support context-awareness and dynamic adaptation to
+context changes. We offer application engineers an abstraction of
+middleware as a dynamically customisable service provider, where each
+service can be delivered using different policies when requested in
+different contexts. Based on this abstraction, current middleware
+behaviour, with respect to a particular application, is reified in an
+application profile, and made accessible to the application for
+run-time inspection and adaptation. Applications can use the 
+meta-interface that the middleware provides to change the information
+encoded in their profile, thus tailoring middleware behaviour to the
+user's needs. However, while doing so, conflicts may arise;
+different users may have different quality-of-service needs,
+and applications, in an attempt to fulfil these needs, may customise
+middleware behaviour in conflicting ways. These conflicts have to be
+resolved in order to allow applications to come to an agreement, and
+thus be able to engage successful collaborations.
+
+<p>We demonstrate how microeconomic techniques can be used to treat
+these kinds of conflicts. We offer an abstraction of the mobile setting
+as an economy, where applications compete to have a service
+delivered according to their quality-of-service needs. We have
+designed a mechanism where middleware plays the role of the
+auctioneer, collecting bids from the applications and delivering the
+service using the policy that maximises social welfare; that is, the
+one that delivers, on average, the best quality-of-service.
+
+<p>We formalise the principles discussed above, namely reflection to
+support context-awareness and microeconomic techniques to support
+conflict resolution. To demonstrate their effectiveness in fostering
+the development of context-aware applications, we discuss a middleware
+architecture and implementation (CARISMA) that embed these principles,
+and report on performance and usability results obtained during a
+thorough evaluation stage.
+
+
+
+</body> </html>

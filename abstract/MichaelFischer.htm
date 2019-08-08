@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+Large and long-lived software systems represent important assets.
+With respect to their constantly changing and evolving environment
+they must react flexible to incorporate user requirements.  Design for
+change and agile development are no panacea without appropriate
+feedback about the created instances of the solution space.  As a
+consequence, the check for anomalies in a system's evolution must be
+an integral part of the overall live-cycle process.  Software
+evolution analysis offers an opportunity to establish a feedback loop
+for the assessment of the structural stability of a software system.
+A methodology is required to systematically identify critical entities
+in a system's evolution with respect to their structural dependencies
+and to point out their shortcomings.  This information represents the
+feedback about and enables the validation of past design decisions.
+<p>
+To solve the problem of information extraction and feedback generation
+we focus on the large amount of historical data which are
+automatically recorded by the various supporting tools such as version
+control or problem reporting systems. The primary research goals which
+arise are therefore: (G1) an efficient storage model and support tools
+which enable the accommodation of the historical and structural
+changes for fast and efficient analysis; (G2) a fast and efficient
+method to detect structural anomalies from release history and problem
+report information; and (G3) a method for feedback generation about
+critical entities and dependencies to improve the understanding about
+changes and their effects.
+<p>
+Central element of all analyses is a release history database which
+accommodates all data gathered about a system.  We propose EvoGraph,
+an approach for hot-spot and change pattern detection in the evolution
+of large-scale software systems based on modification and problem
+reports, run-time data and source code changes.  For the efficient use
+of our EvoGraph approach, we first apply feature analysis to obtain
+source file candidates for a detailed exploration.  Based on the
+obtained file-set, a dependency graph is generated from the historical
+and structural information in the database.  Next, the graph is used
+to reveal non-obvious structural dependencies, which is achieved via
+minimizing the distance between related nodes and maximizing the
+distance between unrelated nodes.  Finally, a subsequent source change
+analysis phase provides detailed information about the system's
+evolution with respect to structural changes.
+<p>
+Result of the approach are qualified subsets of the pre-selected
+source artifacts with their respective structural dependencies, which
+can be conceived as the evolutionary echo of the as-implemented
+architecture.  Structural changes are also quantifiable which
+facilitates their assessment on a fine-grained level such as method or
+variable.  Moreover, visualizations provide feedback to draw further
+conclusions about identified change patterns and re-engineering
+intervals.
+<p>
+EvoGraph represents a flexible, lightweight, and sufficient approach
+to assess the structural stability of large software systems. Our case
+study with the Mozilla Application Suite has shown its applicability and
+effectiveness in pointing out the major artifacts and their structural
+shortcomings.  Results also indicate that long-lived software systems
+provide historical data in sufficient quality and quantity to
+efficiently identify and point out structural and evolutionary
+anomalies.  With respect to our case study we were able to identify
+God-classes in the structural dimension and different anti-patterns in
+the evolutionary dimension which are indicators for structural
+instabilities causing complex and costly source code changes.
+
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+Software is becoming a critical part of many computer-based systems. The range of systems that require software is growing every day given that software provides a flexible and powerful way to codify complex behaviors. Newer software systems have stricter dependability requirements such as safety, availability, reliability, and integrity.
+<p>
+The early assessment of system attributes, such as performance or reliability, provides information to improve the system design and its development process. Early assessment results in schedule and costs savings, and in system quality and performance improvements. The term  early  means that the assessment is performed before the actual construction of the system.
+<p>
+The objective of this research is to produce an early reliability assessment of a sequential assembly of software components using limited component execution-related information and considering the expected assembly use. Accomplishing this objective provides quantitative means to support design decisions and to improve the component selection process. The execution-related information, called execution traces, is gathered during the component testing process.
+<p>
+This research is motivated by the need of methodological frameworks addressing the early reliability assessment problem in practical settings. Practical settings have characteristics such as the limited information of the testing process, an increasing number of mandatory software dependability requirements, and the popular use of software development methods such as the Component-Based Software Development and Software Architecture-Based Development.
+<p>
+This research has produced a novel methodological framework, named the Test Profile Analysis Framework (TPAF), to produce early reliability assessments of software assemblies. TPAF has four phases: component testing phase, assembly operational specification phase, execution composition phase, and reliability assessment phase. Each phase has artifacts and models which provide practical, semantic, and analytic foundations for the reliability assessment.
+<p>
+During the component testing phase, the Component Test Profiles (CTPs) are built. A CTP includes test cases, test results, a component specification, and a set of execution traces of one component. An execution trace is a sequence of visited abstract nodes in each test case. An abstract node represents blocks of source code statements derived from a control-flow static analysis. Execution traces are dynamically collected with a run-time monitoring infrastructure together with an instrumented executable version of the component.
+<p>
+During the assembly operational specification phase, the Assembly Operational Profile (AOP) is built. AOP is a quantitative assembly use characterization. This artifact is used to weight the reliability assessment. AOP is specified using a UML profile that was created for such purpose and it is referred to as the UML Operational Characterization profile.
+<p>
+During the execution composition phase, the Assembly Test Profile (ATP) is built. ATP is a composite CTP derived from a sequential assembly of CTPs. The composition uses an ad-hoc formal composition model that matches test cases from different components to produce the composite CTP. Since CTPs have a limited number of test cases, it is possible to have test cases without matching during the composition process. To address this issue, the formal composition model includes a strategy to select the most appropriate execution prediction technique to predict the missing matches between components. The prediction techniques considered in the framework are artificial neural networks, classification trees, and the best binary matching technique.
+<P>
+During the reliability assessment phase, an ad-hoc reliability model combines the information from the ATP with the AOP to assess the reliability of a software assembly. This model is built on the top of the composition execution model and produces an early reliability estimate and the corresponding confidence interval.
+<p>
+The tool TP-Toolset is a partially automated analysis environment to perform the assembly reliability assessment. TP-Toolset has been used in two case studies to test and evaluate the framework. The results show that the framework produces a meaningful early assembly reliability assessment that is consistent with the expected usage and the execution-related information. This framework is unique since it focuses on early reliability assessment of a software assembly using a novel approach to compose limited component testing information, component execution information, and the expected assembly usage.
+<p>
+In addition, TPAF provides the foundation to define methodologies for assessing other sorts of assemblies using other architectural approaches and assessing other attributes that can be analyzed using information from the component test profiles.
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+This dissertation presents a completely automatable test data generation technique, constraint-based testing (CBT), that is based on test case adequacy.  CBT has been implemented as part of the Mothra mutation system.<p>
+
+Software testing research has often attempted to generate test data that is reliable, where a reliable test data set ensures that the program is correct on all inputs.  Unfortunately, it is theoretically possible to generate reliable test sets, there are simple programming errors that are not found by reliability-based techniques, and most reliability techniques have not been successively automated.
+<p>
+Test data adequacy requires that the test data distinguishes correct versions of the program from every incorrect version of the program.  Although we cannot generate adequate test sets, relative-adequacy, or mutation-adequacy, is a weak version of adequacy that requires that the test data set distinguish correct programs from a finite number of incorrect programs.  This dissertation presents a completely automatable technique for generating test data sets that approximate mutation-adequacy.  CBT defines conditions under which mutant programs will die that are represented as mathematical constraints that are automatically satisfied to generate sets of data.
+<p>
+The major results include a new technique for automatically generating test data that effectively kills mutants in a mutation system (specifically the Mothra system), and that combines the capabilities of previous test data generation methods.  Also, procedures for creating mathematical constraints that describe the test cases and for solving those constraints to produce test cases are presented.  CBT has been implemented as a prototype test data generation tool (Godzilla) that is integrated with the Mothra mutation testing system.
+<p>
+Experimentation with the Godzilla generator and the Mothra system indicates that CBT produces test data that is closer to adequate than other testing techniques.  Based on the evidence presented in the dissertation, CBT is at least competitive with other test data techniques and may well be more powerful.  Also, CBT is easy to extend to detect more errors or incorporate the capabilities of new testing techniques.  Perhaps most importantly, CBT is easily automatable, as demonstrated by the prototype generator Godzilla.
+
+</div>
+</body>
+</html>

@@ -1,0 +1,202 @@
+
+<!doctype html>
+<head>
+<META http-equiv="Content-Style-Type" content="text/css">
+<title>A-TEST 2018- Proceedings of the 9th ACM SIGSOFT International Workshop on Automating TEST Case Design, Selection, and Evaluation</title>
+<STYLE type="text/css">
+#DLtoc {
+	font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+	}
+
+#DLheader {
+	}
+#DLheader h1 {
+	font-size:16px;	
+}
+	
+#DLcontent {
+	 font-size:12px;
+	}
+#DLcontent h2 {
+	 font-size:14px;
+	 margin-bottom:5px;
+	}
+#DLcontent h3 {
+	 font-size:12px;
+	 padding-left:20px;
+	 margin-bottom:0px;
+	}
+
+#DLcontent ul{
+	margin-top:0px;
+	margin-bottom:0px;
+	}
+		
+.DLauthors li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLauthors li:after{
+	content:",";
+	}
+.DLauthors li.nameList.Last:after{
+	content:"";
+	}		
+
+.DLabstract {
+	 padding-left:40px;
+	 padding-right:20px;
+	 display:block;
+	}
+
+.DLformats li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLformats li:after{
+	content:",";
+	}
+.DLformats li.formatList.Last:after{
+	content:"";
+	}		
+
+.DLlogo {
+	vertical-align:middle; 
+	padding-right:5px;
+	border:none;
+	}
+	
+.DLcitLink {
+	margin-left:20px;
+	}	
+
+.DLtitleLink {
+	margin-left:20px;
+	}	
+
+.DLotherLink {
+	margin-left:0px;
+	}		
+   
+</STYLE>
+</head>
+<body>
+<div id="DLtoc">
+<div id="DLheader">
+<h1>A-TEST 2018- Proceedings of the 9th ACM SIGSOFT International Workshop on Automating TEST Case Design, Selection, and Evaluation</h1>
+<a class="DLcitLink" href="https://dl.acm.org/citation.cfm?id=3278186" title="Go to the ACM Digital Library for additional information about this proceeding"><img class="DLlogo" src="https://dl.acm.org/img/dllogo.png" alt="Digital Library logo" height="30" width="30">Full Citation in the ACM Digital Library</a>
+</div>
+<div id="DLcontent">
+<h2>SESSION: Keynote</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N661714" title="Get the Full Text from the ACM Digital Library">Improving regression testing in continuous integration development environments (keynote)</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Gregg Rothermel</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In continuous integration development environments, software engineers frequently integrate new or changed code with the mainline codebase. Merged code is then regression tested to help ensure that the codebase remains stable and that continuing engineering efforts can be performed more reliably. Continuous integration is advantageous because it can reduce the amount of code rework that is needed in later phases of development, and speed up overall development time. From a testing standpoint, however, continuous integration raises several challenges. </p> <p> Chief among these challenges are the costs, in terms and time and resources, associated with handling a constant flow of requests to execute tests. To help with this, organizations often utilize farms of servers to run tests in parallel, or execute tests "in the cloud", but even then, test suites tend to expand to utilize all available resources, and then continue to expand beyond that. </p> <p> We have been investigating strategies for applying regression testing in continuous integration development environments more cost-effectively. Our strategies are based on two well-researched techniques for improving the cost-effectiveness of regression testing &#8211; regression test selection (RTS) and test case prioritization (TCP). In the continuous integration context, however, traditional RTS and TCP techniques are difficult to apply, because these techniques rely on instrumentation and analyses that cannot easily be applied to fast-arriving streams of test suites. </p> <p> We have thus created new forms of RTS and TCP techniques that utilize relatively lightweight analyses, that can cope with the volume of test requests. To evaluate our techniques, we have conducted an empirical study on several large data sets. In this talk, I describe our techniques and the empirical results we have obtained in studying them.</p></div> </div>
+<h2>SESSION: Session 1</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N661725" title="Get the Full Text from the ACM Digital Library">Reinforcement learning for Android GUI testing</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">David Adamo</li>
+<li class="nameList">Md Khorrom Khan</li>
+<li class="nameList">Sreedevi Koppula</li>
+<li class="nameList Last">Ren&#233;e Bryce</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>This paper presents a reinforcement learning approach to automated GUI testing of Android apps. We use a test generation algorithm based on Q-learning to systematically select events and explore the GUI of an application under test without requiring a preexisting abstract model. We empirically evaluate the algorithm on eight Android applications and find that the proposed approach generates test suites that achieve between 3.31% to 18.83% better block-level code coverage than random test generation.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N661726" title="Get the Full Text from the ACM Digital Library">Extending equivalence transformation based program generator for random testing of C compilers</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Shogo Takakura</li>
+<li class="nameList">Mitsuyoshi Iwatsuji</li>
+<li class="nameList Last">Nagisa Ishiura</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>This paper proposes a method of reinforcing random program generation for automated testing of C compilers. Although program generation based on equivalence transformation is a promising method for detecting deep bugs in compilers, the range of syntax it can cover has been narrower than the production rule based methods. While the conventional method based on equivalence transformation can only generate programs with scalar variables, assign statements, if and for statements, the proposed method attempts to extend them to handle arrays, structures, unions, as well as while and switch statements and function calls. A random test system, Orange4, extended with the proposed method has detected bugs in the latest development versions of GCC-8.0.0 and LLVM/Clang-6.0 which had been missed by the existing test methods.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N661727" title="Get the Full Text from the ACM Digital Library">HDDr: a recursive variant of the hierarchical Delta debugging algorithm</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">&#193;kos Kiss</li>
+<li class="nameList">Ren&#225;ta Hodov&#225;n</li>
+<li class="nameList Last">Tibor Gyim&#243;thy</li>
+</ul>
+
+<div class="DLabstract"><div style="display:inline"><p>The minimization of failure-inducing test cases is an important first step in the process of bug fixing. It helps focusing the expensive software engineering resources on the root of the problem by pruning down the excess from the input that is not contributing to the failure. Naturally, minimization is most helpful if it is automated. The original minimizing Delta Debugging algorithm and the follow-up Hierarchical Delta Debugging approach have been invented to give a solution to this challenge. Although automated, the minimization of inputs from real-life scenarios can take hours for both approaches. This paper builds on and improves the hierarchical minimization algorithm and experiments with a recursive variant called HDDr. After evaluating HDDr on various test cases, it turns out that it can give minimal results in 29&#8211;65% less time than the baseline hierarchical algorithm. On our largest test case, this means that the minimization process gets shorter by more than 4 hours.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N661728" title="Get the Full Text from the ACM Digital Library">Goal-oriented mutation testing with focal methods</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Sten Vercammen</li>
+<li class="nameList">Mohammad Ghafari</li>
+<li class="nameList">Serge Demeyer</li>
+<li class="nameList Last">Markus Borg</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Mutation testing is the state-of-the-art technique for assessing the fault-detection capacity of a test suite. Unfortunately, mutation testing consumes enormous computing resources because it runs the whole test suite for each and every injected mutant. In this paper we explore fine-grained traceability links at method level (named <em>focal methods</em>), to reduce the execution time of mutation testing and to verify the quality of the test cases for each individual method, instead of the usually verified overall test suite quality. Validation of our approach on the open source Apache Ant project shows a speed-up of 573.5x for the mutants located in focal methods with a quality score of 80%.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N661729" title="Get the Full Text from the ACM Digital Library">A reinforcement learning based approach to automated testing of Android applications</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Thi Anh Tuyet Vuong</li>
+<li class="nameList Last">Shingo Takada</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In recent years, researchers have actively proposed tools to automate testing for Android applications. Their techniques, however, still encounter major difficulties. First is the difficulty of achieving high code coverage because applications usually have a large number of possible combinations of operations and transitions, which makes testing all possible scenarios time-consuming and ineffective for large systems. Second is the difficulty of achieving a wide range of application functionalities, because some functionalities can only be reached through a specific sequence of events. Therefore they are tested less often in random testing. Facing these problems, we apply a reinforcement learning algorithm called Q-learning to take advantage of both random and model-based testing. A Q-learning agent interacts with the Android application, builds a behavioral model gradually and generates test cases based on the model. The agent explores the application in an optimal way that reveals as much functionalities of the application as possible. The exploration using Q-learning improves code coverage in comparison to random and model-based testing and is able to detect faults in applications under test.</p></div> </div>
+<h2>SESSION: Session 2</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N661720" title="Get the Full Text from the ACM Digital Library">Random testing of compilers&#8217; performance based on mixed static and dynamic code comparison</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Kota Kitaura</li>
+<li class="nameList Last">Nagisa Ishiura</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>This paper proposes an automated test method for detecting performance bugs in compilers. It is based on differential random testing, in which randomly generated programs are compiled by two different compilers and resulting pairs of assembly codes are compared. Our method attempts to achieve efficient and accurate detection of performance difference, by combining dynamic measurement of execution time with static assembly-level comparison and test program minimization. In the first step, discrepant pairs of code sections in the assembly codes are extracted, and then the sums of the weights of discrepant instructions in the sections are computed. If significant differences are detected, the test program is reduced to a small program that still exhibits the static difference and then the actual execution time of the codes are compared. A test system has been implemented on top of the random test system Orange4, which has successfully detected a regression in the optimizer of a development version of GCC-8.0.0 (latest as of May, 2017).</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N661721" title="Get the Full Text from the ACM Digital Library">Grammarinator: a grammar-based open source fuzzer</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Ren&#225;ta Hodov&#225;n</li>
+<li class="nameList">&#193;kos Kiss</li>
+<li class="nameList Last">Tibor Gyim&#243;thy</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Fuzzing, or random testing, is an increasingly popular testing technique. The power of the approach lies in its ability to generate a large number of useful test cases without consuming expensive manpower. Furthermore, because of the randomness, it can often produce unusual cases that would be beyond the awareness of a human tester. In this paper, we present Grammarinator, a general purpose test generator tool that is able to utilize existing parser grammars as models. Since the model can act both as a parser and as a generator, the tool can provide the capabilities of both generation and mutation-based fuzzers. The presented tool is actively used to test various JavaScript engines and has found more than 100 unique issues.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N661722" title="Get the Full Text from the ACM Digital Library">Abstract flow learning for web application test generation</a>
+</h3>
+<ul class="DLauthors">
+ <li class="nameList First">Dionny Santiago</li>
+<li class="nameList">Peter J. Clarke</li>
+<li class="nameList">Patrick Alt</li>
+<li class="nameList Last">Tariq M. King</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Achieving high software quality today involves manual analysis, test planning, documentation of testing strategy and test cases, and the development of scripts to support automated regression testing. To keep pace with software evolution, test artifacts must also be frequently updated. Although test automation practices help mitigate the cost of regression testing, a large gap exists between the current paradigm and fully automated software testing. Researchers and practitioners are realizing the potential for artificial intelligence and machine learning (ML) to help bridge the gap between the testing capabilities of humans and those of machines. This paper presents an ML approach that combines a language specification that includes a grammar that can be used to describe test flows, and a trainable test flow generation model, in order to generate tests in a way that is trainable, reusable across different applications, and generalizable to new applications.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N661723" title="Get the Full Text from the ACM Digital Library">Property-based testing for the robot operating system</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Andr&#233; Santos</li>
+<li class="nameList">Alcino Cunha</li>
+<li class="nameList Last">Nuno Macedo</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The Robot Operating System (ROS) is an open source framework for the development of robotic software, in which a typical system consists of multiple processes communicating under a publisher-subscriber architecture. A great deal of development time goes into orchestration and making sure that the communication interfaces comply with the expected contracts (e.g. receiving a message leads to the publication of another message). Orchestration mistakes are only detected during runtime, stressing the importance of component and integration testing in the verification process. Property-based Testing is fitting in this context, since it is based on the specification of contracts and treats tested components as black boxes, but there is no support for it in ROS. In this paper, we present a first approach towards automatic generation of test scripts for property-based testing of various configurations of a ROS system.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N661724" title="Get the Full Text from the ACM Digital Library">Test patterns for IoT</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Pedro Martins Pontes</li>
+<li class="nameList">Bruno Lima</li>
+<li class="nameList Last">Jo&#227;o Pascoal Faria</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The Internet of Things (IoT) is expected to bring forward new promising solutions in various domains. Consequently, it can impact many aspects of everyday life, and errors can have serious consequences. Despite this, there is a lack of standard testing processes and methods, which poses a major challenge for IoT testing. Nonetheless, closer examination makes it possible to identify a set of recurring behaviors of IoT applications and a set of corresponding test strategies. This paper formalizes the notion of a Pattern-Based IoT Testing method for systematizing and automating the testing of IoT ecosystems. It consists in a set of test strategies for recurring behaviors of the IoT system, which can be defined as IoT Test Patterns.</p></div> </div>
+</div>
+</div>
+</body>
+</html>

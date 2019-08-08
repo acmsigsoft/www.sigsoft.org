@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">Composition and adaptation of software components is an important issue in Component Based Software
+Engineering (CBSE). Building a system from reusable or Commercial-Off-The-Shelf (COTS) components
+introduces a set of problems, mainly related to compatibility and communication. On one hand, components
+may have incompatible interaction behavior (e.g., deadlocks, livelocks, incompatible method names,
+mismatch between the order in which messages are expected/exchanged and so on). This might require
+one to restrict the system’s behavior to avoid undesired interactions among components. On the other hand,
+it might be necessary to enhance the current communication protocol in order to deal with architectural
+updates (e.g., inserting, replacing or removing components), missing functionality or to improve quality
+attributes such as reliability. This might require one to augment the system’s behavior to introduce more
+sophisticated interactions among components. We address these problems by means of an architectural
+approach implemented in our SYNTHESIS tool which allows one for both detecting/avoiding incompatible
+interactions and enhancing the communication protocol by synthesizing a suitable coordinator. Taking into
+account the specification of the system to be assembled, the specification of the desired behaviors that the
+composed system has to exhibit and the specification of the protocol enhancements, SYNTHESIS automatically
+derives, in a compositional way, the glue code for the set of components forming the system. The
+synthesized glue code implements a software coordinator which avoids incompatible interactions (with respect
+to the specified desired behaviors) and provides a protocol-enhanced version of the composed system.
+<P>
+Our SYNTHESIS tool can be applied to a variety of commonly used component-based middleware (e.g.,
+Sun’s Java Beans, J2EE, CORBA, Microsoft COM/DCOM, Microsoft .NET). So far, we validated and
+applied SYNTHESIS for assembling Microsoft COM/DCOM components. The code synthesized by the
+current version of SYNTHESIS refers to Microsoft Visual Studio with Active Template Library (ATL) as
+reference development platform. The approach presented in this thesis and implemented in the SYNTHESIS
+tool - which is also presented here - has to be considered as a support for developing component-based
+systems out of a set of already implemented heterogeneous components by ensuring the correct functioning
+of the assembled system at level of component interaction protocol. Moreover, it also provides the developers
+with a means for evolving/maintaining the assembled component-based system by allowing them to
+add new functionality and, in the same time, continue to maintain (or to be consistent with respect to) the
+behavior of the original system.
+</div>
+</body>
+</html>

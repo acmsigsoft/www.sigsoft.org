@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+To integrate a software component into a system, the component must
+interact properly with the system's other components. Unfortunately, the
+decisions about how a component is to interact with other components
+are typically committed long before the moment of integration and are
+diYcult to change. As a result, system integrators often face mismatches
+between their system's interaction commitments and those of a compo
+nent to be integrated. How a component interacts with other compo
+nents is called its packaging; hence these mismatches are called
+packaging mismatches. Packaging mismatches are typically resolved by
+introducing so-called glue code, which is costly to produce and main
+tain.
+<p>
+In this dissertation, I introduce a software development method,
+called Flexible Packaging, which allows a component developer to defer
+many decisions about component interaction until system integration.
+Using this method, a system integrator Wrst selects a component, called a
+ware, with few interaction commitments and then writes a packaging
+description, which captures how the ware is to interact with other com
+ponents. Given a ware and a packaging description, the Flexible Packag
+ing system automatically produces the source code, non-code artifacts,
+and construction and installation steps needed for the component to
+exhibit the described form of interaction. By writing a packaging
+description, the system integrator tailors the component's interaction to
+the system at hand, and the component can be readily integrated. I have
+validated the feasibility of the Flexible Packaging method and its tools
+with several case studies, which involve a wide range of interaction: com
+servers (ActiveX controls); com clients; Netscape plug-ins; Windows
+applications with guis; odbc-based database accessors; Wlters; cgi
+scripts; and tcp socket clients.
+</div>
+</body>
+</html>

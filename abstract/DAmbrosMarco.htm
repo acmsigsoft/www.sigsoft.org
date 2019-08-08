@@ -1,0 +1,15 @@
+<p>Software systems are subject to continuous changes to adapt to new and changing requirements.  This phenomenon, known as software evolution, leads in the long term to software aging: The size and the complexity of systems increase, while their quality decreases. In this context, it is no wonder that software maintenance claims the most part of a software system's cost.  The analysis of software evolution helps practitioners deal with the negative effects of software aging.</p>
+
+<p>With the advent of the Internet and the consequent widespread adoption of distributed development tools, such as software configuration management and issue tracking systems, a vast amount of valuable information concerning software evolution has become available.  In the last two decades, researchers have focused on mining and analyzing this data, residing in various software repositories, to understand software evolution and support maintenance activities.  However, most approaches target a specific maintenance task, and consider only one of the several facets of software evolution. Such approaches, and the infrastructures that implement them, cannot be extended to address different maintenance problems.</p>
+ 
+<p>In this dissertation, we propose an integrated view of software evolution that combines different evolutionary aspects. Our thesis is that an integrated and flexible approach supports an extensible set of software maintenance activities.  To this aim, we present a meta-model that integrates two aspects of software evolution: source code and software defects.  We implemented our approach in a framework that, by retrieving information from source code and defect repositories, serves as a basis to create analysis techniques and tools.  To show the flexibility of our approach, we extended our meta-model and framework with e-mail information extracted from development mailing lists.</p>
+ 
+<p>To validate our thesis, we devised and evaluated, on top of our approach, a number of novel analysis techniques that achieve two goals:</p>
+ 
+<ol>
+<li>Inferring the causes of problems in a software system. We propose three retrospective analysis techniques, based on interactive visualizations, to analyze the evolution of source code, software defects, and their co-evolution. These techniques support various maintenance tasks, such as system restructuring, re-documentation, and identification of critical software components.</li>
+ 
+<li>Predicting the future of a software system. We present four analysis techniques aimed at anticipating the locations of future defects, and investigating the impact of certain source code properties on the presence of defects. They support two maintenance tasks: defect prediction and software quality analysis.</li>
+</ol>
+
+<p>By creating our framework and the mentioned techniques on top of it, we provide evidence that an integrated view of software evolution, combining source code and software defects information, supports an extensible set of software maintenance tasks.</p>

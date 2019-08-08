@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+Software is increasingly being built through the composition of
+exisiting components, such as web services, where access to the source
+code, and in some cases even the executable code, is unavailable. The
+users of these components must rely on the existing documentation of
+the component to understand how the component should be used. However,
+this documentation is often imprecise or incomplete (when generated
+automatically via static analysis) or does not match the current
+version of the service (when maintained manually). Additionally, users
+of closed components have no control over the delivered quality of the
+component, and currently rely of the developers claims or ad-hoc
+testing to assess the quality of the component. In this work, we
+present probing analysis, a new analysis technique designed
+specifically to address these issues for closed components.
+<p>
+Probing analysis is a black-box dynamic analysis technique that probes
+a component by generating inputs for the component, executing the
+component on those inputs, and analyzing the inputs and outputs to
+infer properties that describe some aspect of the behavior of the
+component. We present a formal definition of probing analysis that can
+be used to guide the development of probing analysis techniques. We
+then develop a probing analysis methodology for web applications and
+web services called WebAppSleuth.
+<p>
+We have implemented versions of WebAppSleuth for web applications and
+for web services. We apply these versions to six production web
+applications and two commercial web services. WebAppSleuth was able to
+accurately and quickly infer properties for the six web application
+and found anomalous behavior in four of the web
+applications. Additionally WebAppSleuth was able to find several ways
+that the two web services could be improved.
+<p>
+These results suggest that probing analysis is a useful new technique
+for analyzing the behavior of software components and the provided
+definition of probing analysis provides a framework for the
+development of new probing analysis techniques.
+</div>
+</body>
+</html>

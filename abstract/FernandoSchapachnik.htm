@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+Real-time systems are present today in embedded devices, cellphones, flight
+controllers, etc. Their complexity is ever increasing, as well as the criticality of their functions. Consequences of failure are each day more dangerous. This is why performing a rigorous analysis over them makes sense, allowing to assert that their design complies with some desirable properties. This type of analysis is usually called automated verification or model checking.
+<p>
+A well-known formalism for model checking is timed automata, an extension of the classical automata theory allowing to model dense time. Although timed automata-based techniques are known since a couple of decades ago, they still suffer from scalability issues, jeopardizing a broader adoption in real cases.
+<p>
+This thesis analyzes diverse mechanisms to speedup timed automata verification, both in the (classical) monoprocessor environment, as well as in distributed architectures. While working on it, the model checker Zeus was built as a base for experimentation.
+<p>
+After motivating and introducing the subject matter, foundational concepts of the formalism are presented, as well as the data structures more used by the tools. Special attention is payed to the two traditional verification algorithms, forward and backwards.
+<p>
+Next, the parallelization of the backwards algorithm is explored: a correctness proof of a distributed and asynchronous version is presented. It is implemented, and experimentation is also done with a synchronous version and another one that dynamically balances workload among processors. Obtained results are analyzed and it is argued that they are close to optimal, as long as the same unit of distribution is used: assigning each automata node to only one processor.
+<p>
+After that, a distributed version of the forward algorithm is analyzed, along with a dynamic workload migration strategy. Its correctness is proved, and various case studies over different configuration settings are tried. Positive results are achieved, yet not optimal, corroborating that there is still much research to perform regarding this algorithm. Also, various possible future continuation lines are presented.
+<p>
+Next chapter compares against other work in the literature, and argues than certain positive results achieved by other researchers might be caused not by the distribution per se, but actually as a byproduct of it, and that the same effects might be reproducible in a monoprocessor setting.
+<p>
+Work towards a new data structure is next, introducing rCDDs (short for restricted Clock Difference Diagrams). Along with their details and algorithms, case studies showing up to a thirty percent of improvement in running times are presented.
+<p>
+After that, two optimizations also valid for the monoprocessor setting are introduced. The first one computes ranges of possible values for the data structures, trying to accommodate them in such a way that certain finishing conditions for the most used operation are met earlier. Results show improvements of up to a seventeen percent in running times. The second one is about computing an approximation to the hypervolume of the polyhedra represented by the data structures, thus avoiding O(n^2) comparisons at the price of O(1). This technique allows to reduce running times by up to almost twenty percent.
+<p>
+The penultimate chapter presents VInTiMe a graphical tool that allows to describe real-time system designs, specify their properties in a friendly way, and verify them using the distributed model checker Zeus, in a simple manner. This is an effort to put formal methods closer to the practitioner.
+</div>
+</body>
+</html>

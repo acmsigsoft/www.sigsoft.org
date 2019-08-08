@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">As compilers increasingly rely on optimizations to achieve high performance, the
+technology to debug optimized code continues to falter. The problem of debugging
+optimized code is two fold because errors in an optimized program can originate
+in the source program or be introduced by the optimizer. Therefore, tools must be developed to help application programmers debug optimized code and optimizer
+writers debug optimizers from the point of view of the source program.
+<P>
+
+This dissertation first analyzes the effects of optimizations and the complexities in maintaining correspondences between the source and optimized code statements. A variety of code transformations are considered, including classical and aggressive statement level transformations, loop transformations, and inlining. A mapping technique is developed for determining the correspondences between the source and optimized code statements while code transformations are performed. The mappings capture the impact that optimizations have on statements and their instances and thus are useful for a wide range of optimizations.
+<P>
+
+Two complementary debugging techniques for optimized code are then developed and
+experimentally evaluated. The techniques are based on the mappings, and the
+effectiveness of the techniques rely on the use of both dynamic and static information. The first technique, called comparison checking, is oriented to help optimizer writers debug and validate optimizers. The technique compares values computed in both the unoptimized and optimized executions of a source program and detects semantic differences between the versions. This technique can be modified to check different levels of optimizations or tailored for specific optimizations, and in particular global register allocation. The second technique, a full reporting source level debugger for optimized code, helps application programmers find errors in source programs even though the optimized code executes. This technique reports more expected values than previously developed source level debuggers for optimized code. Both techniques are demonstrated using a compiler that performs a set of global statement level optimizations for C source programs. The techniques do not restrict !
+the set of optimizations applied, and the optimized code is not modified, except for the setting of breakpoints. Experimental results are presented and demonstrate the approaches are effective and practical.
+<P>
+
+
+
+</div>
+</body>
+</html>

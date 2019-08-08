@@ -1,0 +1,489 @@
+
+<!doctype html>
+<head>
+<META http-equiv="Content-Style-Type" content="text/css">
+<title>ICSE-SEIP '18- Proceedings of the 40th International Conference on Software Engineering: Software Engineering in Practice</title>
+<STYLE type="text/css">
+#DLtoc {
+	font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+	}
+
+#DLheader {
+	}
+#DLheader h1 {
+	font-size:16px;	
+}
+	
+#DLcontent {
+	 font-size:12px;
+	}
+#DLcontent h2 {
+	 font-size:14px;
+	 margin-bottom:5px;
+	}
+#DLcontent h3 {
+	 font-size:12px;
+	 padding-left:20px;
+	 margin-bottom:0px;
+	}
+
+#DLcontent ul{
+	margin-top:0px;
+	margin-bottom:0px;
+	}
+		
+.DLauthors li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLauthors li:after{
+	content:",";
+	}
+.DLauthors li.nameList.Last:after{
+	content:"";
+	}		
+
+.DLabstract {
+	 padding-left:40px;
+	 padding-right:20px;
+	 display:block;
+	}
+
+.DLformats li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLformats li:after{
+	content:",";
+	}
+.DLformats li.formatList.Last:after{
+	content:"";
+	}		
+
+.DLlogo {
+	vertical-align:middle; 
+	padding-right:5px;
+	border:none;
+	}
+	
+.DLcitLink {
+	margin-left:20px;
+	}	
+
+.DLtitleLink {
+	margin-left:20px;
+	}	
+
+.DLotherLink {
+	margin-left:0px;
+	}		
+   
+</STYLE>
+</head>
+<body>
+<div id="DLtoc">
+<div id="DLheader">
+<h1>ICSE-SEIP '18- Proceedings of the 40th International Conference on Software Engineering: Software Engineering in Practice</h1>
+<a class="DLcitLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_citation.cfm-3Fid-3D3183519&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=mZTmZD_-1K3A4OudPbHlkdOfQ8g6hKkJ-hHLCGLesZU&e=" title="Go to the ACM Digital Library for additional information about this proceeding"><img class="DLlogo" src="https://dl.acm.org/img/dllogo.png" alt="Digital Library logo" height="30" width="30">Full Citation in the ACM Digital Library</a>
+</div>
+<div id="DLcontent">
+<h2>SESSION: Cloud and devops</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651546&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=Z-e0qSWHmEeYpIbRhxEfzstbeWDJYjSitQFf3X8oL2s&e=" title="Get the Full Text from the ACM Digital Library">Adopting autonomic computing capabilities in existing large-scale systems: an industrial experience report</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Heng Li</li>
+<li class="nameList">Tse-Hsun (Peter) Chen</li>
+<li class="nameList">Ahmed E. Hassan</li>
+<li class="nameList">Mohamed Nasser</li>
+<li class="nameList Last">Parminder Flora</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In current DevOps practice, developers are responsible for the operation and maintenance of software systems. However, the human costs for the operation and maintenance grow fast along with the increasing functionality and complexity of software systems. Autonomic computing aims to reduce or eliminate such human intervention. However, there are many existing large systems that did not consider autonomic computing capabilities in their design. Adding autonomic computing capabilities to these existing systems is particularly challenging, because of 1) the significant amount of efforts that are required for investigating and refactoring the existing code base, 2) the risk of adding additional complexity, and 3) the difficulties for allocating resources while developers are busy adding core features to the system. In this paper, we share our industrial experience of re-engineering autonomic computing capabilities to an existing large-scale software system. Our autonomic computing capabilities effectively reduce human intervention on performance configuration tuning and significantly improve system performance. In particular, we discuss the challenges that we encountered and the lessons that we learned during this re-engineering process. For example, in order to minimize the change impact to the original system, we use a variety of approaches (e.g., aspect-oriented programming) to separate the concerns of autonomic computing from the original behaviour of the system. We also share how we tested such autonomic computing capabilities under different conditions, which has never been discussed in prior work. As there are numerous large-scale software systems that still require expensive human intervention, we believe our experience provides valuable insights to software practitioners who wish to add autonomic computing capabilities to these existing large-scale software systems.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651547&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=hlzjQ9yph_i70DLFrFEixij_uPOOH9I9bORZLBZAxS4&e=" title="Get the Full Text from the ACM Digital Library">Java performance troubleshooting and optimization at alibaba</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Fangxi Yin</li>
+<li class="nameList">Denghui Dong</li>
+<li class="nameList">Sanhong Li</li>
+<li class="nameList">Jianmei Guo</li>
+<li class="nameList Last">Kingsum Chow</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Alibaba is moving toward one of the most efficient cloud infrastructures for global online shopping. On the 2017 Double 11 Global Shopping Festival, Alibaba's cloud platform achieved total sales of more than 25 billion dollars and supported peak volumes of 325,000 transactions and 256,000 payments per second. Most of the cloud-based e-commerce transactions were processed by hundreds of thousands of Java applications with above a billion lines of code. It is challenging to achieve comprehensive and efficient performance troubleshooting and optimization for large-scale online Java applications in production. We proposed new approaches to method profiling and code warmup for Java performance tuning. Our fine-grained, low-overhead method profiler improves the efficiency of Java performance troubleshooting. Moreover, our approach to ahead-of-time code warmup significantly reduces the runtime overheads of just-in-time compiler to address the bursty traffic. Our approaches have been implemented in Alibaba JDK (AJDK), a customized version of OpenJDK, and have been rolled out to Alibaba's cloud platform to support online critical business.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651548&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=28a6BFYG9UW_Op8muYlFf3dB2VhsSLT9HDCBIzBEWAo&e=" title="Get the Full Text from the ACM Digital Library">An exploratory study on faults in web API integration in a large-scale payment company</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Joop Au&#233;</li>
+<li class="nameList">Maur&#237;cio Aniche</li>
+<li class="nameList">Maikel Lobbezoo</li>
+<li class="nameList Last">Arie van Deursen</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Service-oriented architectures are more popular than ever, and increasingly companies and organizations depend on services offered through Web APIs. The capabilities and complexity of Web APIs differ from service to service, and therefore the impact of API errors varies. API problem cases related to Adyen's payment service were found to have direct considerable impact on API consumer applications. With more than 60,000 daily API errors, the potential impact is enormous. In an effort to reduce the impact of API related problems, we analyze 2.43 million API error responses to identify the underlying faults. We quantify the occurrence of faults in terms of the frequency and impacted API consumers. We also challenge our quantitative results by means of a survey with 40 API consumers. Our results show that 1) faults in API integration can be grouped into 11 general causes: invalid user input, missing user input, expired request data, invalid request data, missing request data, insufficient permissions, double processing, configuration, missing server data, internal and third party, 2) most faults can be attributed to the invalid or missing request data, and most API consumers seem to be impacted by faults caused by invalid request data and third party integration; and 3) insufficient guidance on certain aspects of the integration and on how to recover from errors is an important challenge to developers.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651549&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=QtgYFVapqH5p3IOqGkw96Rc0v3kNRnE71MryCa3ZCVA&e=" title="Get the Full Text from the ACM Digital Library">Transparency and contracts: continuous integration and delivery in the automotive ecosystem</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Rob van der Valk</li>
+<li class="nameList">Patrizio Pelliccione</li>
+<li class="nameList">Patricia Lago</li>
+<li class="nameList">Rogardt Heldal</li>
+<li class="nameList">Eric Knauss</li>
+<li class="nameList Last">Jacob Juul</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Most of the innovation in automotive is nowadays coming from electronics and software. The pressure of reducing time to market and increasing flexibility while keeping quality are leading motivations for these companies to embrace system-wide Continuous Integration and Delivery (CI&#38;D), which in the scope of complex automotive value-chains, implies inter-organizational CI&#38;D.</p> <p>In this paper, we investigate the challenges and impediments posed by inter-organizational CI&#38;D in the automotive domain, i.e. continuous software development that involves agile interaction between an OEM (the car manufacturer) and its software suppliers. In particular, we focus on <i>legal contracts</i> that regulate the agreements between these companies and <i>transparency</i> intended as the degree/level of information that is shared between the various companies in the value-chain. The main findings of this study show that (i) inter-organizational transparency is considered positive but not a necessary condition for inter-organizational CI&#38;D, (ii) transparency has positive effects on information sharing among different companies, and (iii) legal contracts are an impediment for inter-organizational CI&#38;D. The results of the study provide useful insights for practitioners that work in similar settings. In addition, the identified challenges and impediments define a research agenda for researchers.</p></div> </div>
+<h2>SESSION: Data and databases</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651540&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=DhSTk0JqVtxbPR4QXoUyizAiAeznteisKnZFpx4xQWI&e=" title="Get the Full Text from the ACM Digital Library">A data decomposition method for stepwise migration of complex legacy data</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Andreas Martens</li>
+
+<li class="nameList">Matthias Book</li>
+<li class="nameList Last">Volker Gruhn</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Sooner or later, in almost every company, the maintenance and further development of large enterprise IT applications reaches its limit. From the point of view of cost as well as technical capability, legacy applications must eventually be replaced by new enterprise IT applications. Data migration is an inevitable part of making this switch. While different data migration strategies can be applied, incremental data migration is one of the most popular strategies, due to its low level of risk: The entire data volume is split into several data tranches, which are then migrated in individual migration steps. The key to a successful migration is the strategy for decomposing the data into suitable tranches.</p> <p>This paper presents an approach for data decomposition where the entire data volume of a monolithic enterprise IT application is split into independent data migration tranches. Each tranche comprises the data to be migrated in one migration step, which is usually executed during the application's downtime window. Unlike other approaches, which describe data migration in a highly abstract way, we propose specific heuristics for data decomposition into independent data packages (tranches).</p> <p>The data migration approach described here is being applied in one of the largest migration projects currently underway in the European healthcare sector, comprising millions of customer records.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651541&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=roHY8ISMEeMpiIGmw2N41jqu7BMgsVHibaNCekSqCG4&e=" title="Get the Full Text from the ACM Digital Library">Mind the gap: can and <i>should</i> software engineering data sharing become a path of less resistance?</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Ken Wallace</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The facility to process data is, arguably, the defining capability underpinning the transformative power of software: the relationships of each to the other are deep and extensive. This is reflected in the degree to which both software engineering practitioners and researchers rely upon data to direct their endeavours. Ironically however, while both the industrial and research communities are dependent upon data these dependencies present a dichotomy. Practitioners can suffer an abundance of data, much of it dark, which they struggle to interpret and apply beneficially. Isolated by gaps between industry and academia researchers often find themselves lacking data, watching as their industrial counterparts pursue a different and distinct course of action.</p> <p>Integrating evidence with experience gained in practice and through engagement with research this talk offers an industrial perspective on whether this situation can be improved upon; and what the benefits of achieving this outcome, particularly for practitioners, might be.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651542&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=8Lt_01dZ8IWyzIS3CcyYZkXxvqsGsG4B6GFrfa7nVpk&e=" title="Get the Full Text from the ACM Digital Library">Cross-language optimizations in big data systems: a case study of SCOPE</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Marija Selakovic</li>
+<li class="nameList">Michael Barnett</li>
+<li class="nameList">Madan Musuvathi</li>
+<li class="nameList Last">Todd Mytkowicz</li>
+
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Building scalable big data programs currently requires programmers to combine relational (SQL) with non-relational code (Java, C#, Scala). Relational code is declarative - a program describes <i>what</i> the computation is and the compiler decides <i>how</i> to distribute the program. SQL query optimization has enjoyed a rich and fruitful history, however, most research and commercial optimization engines treat non-relational code as a black-box and thus are unable to optimize it.</p> <p>This paper empirically studies over 3 million SCOPE programs across five data centers within Microsoft and finds programs with non-relational code take between 45-70% of data center CPU time. We further explore the potential for SCOPE optimization by generating more native code from the non-relational part. Finally, we present 6 case studies showing that triggering more generation of native code in these jobs yields significant performance improvement: optimizing just one portion resulted in as much as 25% improvement for an entire program.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651543&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=Ioj1kDe6bzG-2V8UJyGNs0_dMOTHoF336w9U0RSh4RI&e=" title="Get the Full Text from the ACM Digital Library">Smelly relations: measuring and understanding database schema quality</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Tushar Sharma</li>
+<li class="nameList">Marios Fragkoulis</li>
+<li class="nameList">Stamatia Rizou</li>
+<li class="nameList">Magiel Bruntink</li>
+<li class="nameList Last">Diomidis Spinellis</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b><i>Context:</i></b> Databases are an integral element of enterprise applications. Similarly to code, database schemas are also prone to smells - best practice violations.</p> <p><b><i>Objective:</i></b> We aim to explore database schema quality, associated characteristics and their relationships with other software artifacts.</p> <p><b><i>Method:</i></b> We present a catalog of 13 database schema smells and elicit developers' perspective through a survey. We extract embedded <scp>sql</scp> statements and identify database schema smells by employing the DbDeo tool which we developed. We analyze 2925 production-quality systems (357 industrial and 2568 well-engineered open-source projects) and empirically study quality characteristics of their database schemas. In total, we analyze 629 million lines of code containing more than 393 thousand <scp>sql</scp> statements.</p> <p><b><i>Results:</i></b> We find that the <i>index abuse</i> smell occurs most frequently in database code, that the use of an <scp>orm</scp> framework doesn't immune the application from database smells, and that some database smells, such as <i>adjacency list</i>, are more prone to occur in industrial projects compared to open-source projects. Our co-occurrence analysis shows that whenever the <i>clone table</i> smell in industrial projects and the <i>values in attribute definition</i> smell in open-source projects get spotted, it is very likely to find other database smells in the project.</p> <p><b><i>Conclusion:</i></b> The awareness and knowledge of database smells are crucial for developing high-quality software systems and can be enhanced by the adoption of better tools helping developers to identify database smells early.</p></div> </div>
+<h2>SESSION: Architecture</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651544&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=oN0XNUBbujM4Zv5Jq7dw8nK9nfO78eP0sKhziZxEm5Y&e=" title="Get the Full Text from the ACM Digital Library">Rethink EE architecture in automotive to facilitate automation, connectivity, and electro mobility</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Anders Magnusson</li>
+<li class="nameList">Leo Laine</li>
+<li class="nameList Last">Johan Lindberg</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Nowadays software and electronics play a fundamental role for commercial vehicles in order for a driver to manually operate them effectively and safely in different transport applications. Although the overall design thinking in the commercial vehicle industry is still very much oriented towards a geometric perspective and thus physical modules, which for software means binaries related to physical electronic boxes. Furthermore, there are many incentives for a higher degree of automation for commercial vehicles to gain productivity, while at the same time facing very different demands on final transport applications. In addition, the environmental impact drives the need to reduce the fossil fuel usage by introducing electrified propulsion torque, which could be distributed over several vehicle units. In order to manage this variety of final applications a product line oriented approach is used that will also be challenged by the need to support a feature range from manual to fully automated vehicles and alternative powertrains, possibly distributed torque supply and electrification of many things. In order to deal with different transport applications; wide feature range; and a transition from traditionally closed embedded systems towards interconnected machines and systems there is a need to shift the traditional ECU-oriented mindset. In this paper a supplementary perspective is added to the traditional geometry-oriented perspective - a functionality perspective, which facilitates reasoning about functionality and thus application software. The paper proposes a reference architecture that is based on horizontal and vertical layering of functionality.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651655&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=Qg1tookXXM6fk4DyH9MrytdD5d8VoPNklU5ZHmyFJqU&e=" title="Get the Full Text from the ACM Digital Library">Exploration of technical debt in start-ups</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Eriks Klotins</li>
+<li class="nameList">Michael Unterkalmsteiner</li>
+<li class="nameList">Panagiota Chatzipetrou</li>
+<li class="nameList">Tony Gorschek</li>
+<li class="nameList">Rafael Prikladnicki</li>
+<li class="nameList">Nirnaya Tripathi</li>
+<li class="nameList Last">Leandro Bento Pompermaier</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><i>Context:</i> Software start-ups are young companies aiming to build and market software-intensive products fast with little resources. Aiming to accelerate time-to-market, start-ups often opt for ad-hoc engineering practices, make shortcuts in product engineering, and accumulate technical debt.</p> <p><i>Objective:</i> In this paper we explore to what extent precedents, dimensions and outcomes associated with technical debt are prevalent in start-ups.</p> <p><i>Method:</i> We apply a case survey method to identify aspects of technical debt and contextual information characterizing the engineering context in start-ups.</p> <p><i>Results:</i> By analyzing responses from 86 start-up cases we found that start-ups accumulate most technical debt in the testing dimension, despite attempts to automate testing. Furthermore, we found that start-up team size and experience is a leading precedent for accumulating technical debt: larger teams face more challenges in keeping the debt under control.</p> <p><i>Conclusions:</i> This study highlights the necessity to monitor levels of technical debt and to preemptively introduce practices to keep the debt under control. Adding more people to an already difficult to maintain product could amplify other precedents, such as resource shortages, communication issues and negatively affect decisions pertaining to the use of good engineering practices.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651656&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=8MLj9_NT6pAsSV8F3prM8EquRtQorCQ8ZeJ9Ba5sPA8&e=" title="Get the Full Text from the ACM Digital Library">Variant management solution for large scale software product lines</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Richard Pohl</li>
+<li class="nameList">Mischa H&#246;chsmann</li>
+<li class="nameList">Philipp Wohlgemuth</li>
+<li class="nameList Last">Christian Tischer</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Application lifecycle management for large scale software product lines (SPL) comes with the challenge to integrate distributed development activities across different parts of an organization and the engineering process in a tool landscape. Variant management is a cross-cutting concern that has interaction points with many of those integrated solutions. At Bosch, two different tools are used for variant management: pure::variants, a feature modeling tool for describing the feature-oriented product decomposition, and the custom tool MIC that offers a more comprehensive set of fine-grained variability management mechanisms. These include parameters, automated configurations or constraints. In turn, it is more suitable for component selection that is done close to the technology. In this experience report, we present a methodological approach on how to use the two tools with a technical integration solution we developed. Its purpose is to serve as an example for establishing successful variant management in large-scale product lines with respect to methodology and tools.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651657&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=MXUStxGMeeDCyb_f3D-MgELn_fyx4jsasrOxK_me-sM&e=" title="Get the Full Text from the ACM Digital Library">How to design a program repair bot?: insights from the repairnator project</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Simon Urli</li>
+<li class="nameList">Zhongxing Yu</li>
+<li class="nameList">Lionel Seinturier</li>
+<li class="nameList Last">Martin Monperrus</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Program repair research has made tremendous progress over the last few years, and software development bots are now being invented to help developers gain productivity. In this paper, we investigate the concept of a "program repair bot" and present Repairnator. The Repairnator bot is an autonomous agent that constantly monitors test failures, reproduces bugs, and runs program repair tools against each reproduced bug. If a patch is found, Repairnator bot reports it to the developers. At the time of writing, Repairnator uses three different program repair systems and has been operating since February 2017. In total, it has studied 11 523 test failures over 1 609 open-source software projects hosted on GitHub, and has generated patches for 15 different bugs. Over months, we hit a number of hard technical challenges and had to make various design and engineering decisions. This gives us a unique experience in this area. In this paper, we reflect upon Repairnator in order to share this knowledge with the automatic program repair community.</p></div> </div>
+<h2>SESSION: Design and tools</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651658&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=37GaNsTPsSFkWrVRpLFXQv9TTLGmBdtnYx2-8_N4xPc&e=" title="Get the Full Text from the ACM Digital Library">Echoes from space: grouping commands with large-scale telemetry data</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Alexander Lattas</li>
+<li class="nameList Last">Diomidis Spinellis</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>Background:</b> As evolving desktop applications continuously accrue new features and grow more complex with denser user interfaces and deeply-nested commands, it becomes inefficient to use simple heuristic processes for grouping <scp>gui</scp> commands in multi-level menus. Existing search-based software engineering studies on user performance prediction and command grouping optimization lack evidence-based answers on choosing a systematic grouping method.</p> <p><b>Research Questions:</b> We investigate the scope of command grouping optimization methods to reduce a user's average task completion time and improve their relative performance, as well as the benefit of using detailed interaction logs compared to sampling.</p> <p><b>Method:</b> We introduce seven grouping methods and compare their performance based on extensive telemetry data, collected from program runs of a <scp>cad</scp> application.</p> <p><b>Results:</b> We find that methods using global frequencies, user-specific frequencies, deterministic and stochastic optimization, and clustering perform the best.</p> <p><b>Conclusions:</b> We reduce the average user task completion time by more than 17%, by running a Knapsack Problem algorithm on clustered users, training only on a small sample of the available data. We show that with most methods using just a 1% sample of the data is enough to obtain nearly the same results as those obtained from all the data. Additionally, we map the methods to specific problems and applications where they would perform better. Overall, we provide a guide on how practitioners can use search-based software engineering techniques when grouping commands in menus and interfaces, to maximize users' task execution efficiency.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651659&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=lPtQ966RXEd2WllPf5X-hwn-Wbi5HevThH2duxTbObA&e=" title="Get the Full Text from the ACM Digital Library">Tool-based interactive software parallelization: a case study</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Andreas Wilhelm</li>
+<li class="nameList">Faris &#268;akari&#263;</li>
+<li class="nameList">Michael Gerndt</li>
+<li class="nameList Last">Tobias Schuele</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Continuous advances in multicore processor technology have placed immense pressure on the software industry. Developers are forced to parallelize their applications to make them scalable. However, applications are often very large and inherently complex; here, automatic parallelization methods are inappropriate. A dependable software redesign requires profound comprehension of the underlying software architecture and its dynamic behavior. To address this problem, we propose Parceive, a tool that supports identification of parallelization scenarios at various levels of abstraction. Parceive collects behavior information at runtime and combines it with reconstructed software architecture information to generate useful visualizations for parallelization. In this paper, we motivate our approach and explain the main components of Parceive. A case study demonstrates the usefulness of the tool.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651650&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=mZJBzY8u56Qw7aK5MR6JSuQ4a29scfDUoQ7z-GjsLYI&e=" title="Get the Full Text from the ACM Digital Library">Studying pull request merges: a case study of shopify's active merchant</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Oleksii Kononenko</li>
+<li class="nameList">Tresa Rose</li>
+<li class="nameList">Olga Baysal</li>
+<li class="nameList">Michael Godfrey</li>
+<li class="nameList">Dennis Theisen</li>
+<li class="nameList Last">Bart de Water</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Pull-based development has become a popular choice for developing distributed projects, such as those hosted on GitHub. In this model, contributions are pulled from forked repositories, modified, and then later merged back into the main repository. In this work, we report on two empirical studies that investigate pull request (PR) merges of Active Merchant, a commercial project developed by Shopify Inc. In the first study, we apply data mining techniques on the project's GitHub repository to explore the nature of merges, and we conduct a manual inspection of pull requests; we also investigate what factors contribute to PR merge time and outcome. In the second study, we perform a qualitative analysis of the results of a survey of developers who contributed to Active Merchant. The study addresses the topic of PR review quality and developers' perception of it. The results provide insights into how these developers perform pull request merges, and what factors they find contribute to how they review and merge pull requests.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651651&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=MwNS1z5U-LyGXc0e-KyMR5MmS8YhryUOXhiPplBxWW4&e=" title="Get the Full Text from the ACM Digital Library">A detailed and real-time performance monitoring framework for blockchain systems</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Peilin Zheng</li>
+<li class="nameList">Zibin Zheng</li>
+<li class="nameList">Xiapu Luo</li>
+<li class="nameList">Xiangping Chen</li>
+<li class="nameList Last">Xuanzhe Liu</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Blockchain systems, with the characteristics of decentralization, irreversibility and traceability, have attracted a lot of attentions recently. However, the current performance of blockchain is poor, which becomes a major constraint of its applications. Additionally, different blockchain systems lack standard performance monitoring approach which can automatically adapt to different systems and provide detailed and real-time performance information. To solve this problem, we propose overall performance metrics and detailed performance metrics for the users to know the exact performance in different stages of the blockchain. Then we propose a performance monitoring framework with a log-based method. It has advantages of lower overhead, more details, and better scalability than the previous performance monitoring approaches. Finally we implement the framework to monitor four well-known blockchain systems, using a set of 1,000 open-source smart contracts. The experimental results show that our framework can make detailed and real-time performance monitoring of blockchain systems. We also provide some suggestions for the future development of blockchain systems.</p></div> </div>
+<h2>SESSION: Testing and defects i</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651652&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=bECVkIJOLROaC6JFXPOGuIb08lZI5tbIBS5X6laLAkE&e=" title="Get the Full Text from the ACM Digital Library">Proactive and pervasive combinatorial testing</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Dale Blue</li>
+<li class="nameList">Orna Raz</li>
+<li class="nameList">Rachel Tzoref-Brill</li>
+<li class="nameList">Paul Wojciak</li>
+<li class="nameList Last">Marcel Zalmanovici</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Combinatorial testing (CT) is a well-known technique for improving the quality of test plans while reducing testing costs. Traditionally, CT is used by testers at testing phase to design a test plan based on a manual definition of the test space. In this work, we extend the traditional use of CT to other parts of the development life cycle. We use CT at early design phase to improve design quality. We also use CT after test cases have been created and executed, in order to find gaps between design and test. For the latter use case we deploy a novel technique for a semi-automated definition of the test space, which significantly reduces the effort associated with manual test space definition. We report on our practical experience in applying CT for these use cases to three large and heavily deployed industrial products. We demonstrate the value gained from extending the use of CT by (1) discovering latent design flaws with high potential impact, and (2) correlating CT-uncovered gaps between design and test with field reported problems.</p></div> </div>
+<h3>
+
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651653&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=nr7F4B0flQW1njfGSpI7zexHWyhM4sp5XT0zWyv5GYA&e=" title="Get the Full Text from the ACM Digital Library">Practical selective regression testing with effective redundancy in interleaved tests</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Dusica Marijan</li>
+<li class="nameList Last">Marius Liaaen</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>As software systems evolve and change over time, test suites used for checking the correctness of software typically grow larger. Together with size, test suites tend to grow in redundancy. This is especially problematic for complex highly-configurable software domains, as growing the size of test suites significantly impacts the cost of regression testing.</p> <p>In this paper we present a practical approach for reducing ineffective redundancy of regression suites in continuous integration testing (strict constraints on time-efficiency) for highly-configurable software. The main idea of our approach consists in combining coverage based redundancy metrics (test overlap) with historical fault-detection effectiveness of integration tests, to identify ineffective redundancy that is eliminated from a regression test suite. We first apply and evaluate the approach in testing of industrial video conferencing software. We further evaluate the approach using a large set of artificial subjects, in terms of fault-detection effectiveness and timeliness of regression test feedback. We compare the results with an advanced retest-all approach and random test selection. The results show that regression test selection based on coverage and history analysis can: 1) reduce regression test feedback compared to industry practice (up to 39%), 2) reduce test feedback compared to the advanced retest-all approach (up to 45%) without significantly compromising fault-detection effectiveness (less than 0.5% on average), and 3) improve fault detection effectiveness compared to random selection (72% on average).</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651654&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=w-6F2kOUSdq6RURgCKec2n3unuB_2-B1-flxlsykClQ&e=" title="Get the Full Text from the ACM Digital Library">State of mutation testing at google</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Goran Petrovi&#263;</li>
+<li class="nameList Last">Marko Ivankovi&#263;</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Mutation testing assesses test suite efficacy by inserting small faults into programs and measuring the ability of the test suite to detect them. It is widely considered the strongest test criterion in terms of finding the most faults and it subsumes a number of other coverage criteria. Traditional mutation analysis is computationally prohibitive which hinders its adoption as an industry standard. In order to alleviate the computational issues, we present a diff-based probabilistic approach to mutation analysis that drastically reduces the number of mutants by omitting lines of code without statement coverage and lines that are determined to be uninteresting - we dub these <i>arid lines.</i> Furthermore, by reducing the number of mutants and carefully selecting only the most interesting ones we make it easier for humans to understand and evaluate the result of mutation analysis. We propose a heuristic for judging whether a node is arid or not, conditioned on the programming language. We focus on a code-review based approach and consider the effects of surfacing mutation results on developer attention. The described system is used by 6,000 engineers in Google on all code changes they author or review, affecting in total more than 13,000 code authors as part of the mandatory code review process. The system processes about 30% of all diffs across Google that have statement coverage calculated. About 15% of coverage statement calculations fail across Google.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651665&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=m97hy_m8M2egbsS7wrNM25Q9ygPwWR0DswNaluAjxBk&e=" title="Get the Full Text from the ACM Digital Library">Improving model-based testing in automotive software engineering</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Stefan Kriebel</li>
+<li class="nameList">Matthias Markthaler</li>
+<li class="nameList">Karin Samira Salman</li>
+<li class="nameList">Timo Greifenberg</li>
+<li class="nameList">Steffen Hillemacher</li>
+<li class="nameList">Bernhard Rumpe</li>
+<li class="nameList">Christoph Schulze</li>
+<li class="nameList">Andreas Wortmann</li>
+<li class="nameList">Philipp Orth</li>
+<li class="nameList Last">Johannes Richenhagen</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Testing is crucial to successfully engineering reliable automotive software. The manual derivation of test cases from ambiguous textual requirements is costly and error-prone. Model-based development can reduce the test case derivation effort by capturing requirements in structured models from which test cases can be generated with reduced effort. To facilitate the automated test case derivation at BMW, we conducted an anonymous survey among its testing practitioners and conceived a model-based improvement of the testing activities. The new model-based test case derivation extends BMW's SMArDT method with automated generation of tests, which addresses many of the practitioners' challenges uncovered through our study. This ultimately can facilitate quality assurance for automotive software.</p></div> </div>
+<h2>SESSION: Agile and ways of working</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651666&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=EJ6fMu9c2JY3wb410rRELN15NuJIknWw1_X41iwbqoI&e=" title="Get the Full Text from the ACM Digital Library">Modern code review: a case study at google</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Caitlin Sadowski</li>
+<li class="nameList">Emma S&#246;derberg</li>
+<li class="nameList">Luke Church</li>
+<li class="nameList">Michal Sipko</li>
+<li class="nameList Last">Alberto Bacchelli</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Employing lightweight, tool-based code review of code changes (aka <i>modern code review</i>) has become the norm for a wide variety of open-source and industrial systems. In this paper, we make an exploratory investigation of modern code review at Google. Google introduced code review early on and evolved it over the years; our study sheds light on why Google introduced this practice and analyzes its current status, after the process has been refined through decades of code changes and millions of code reviews. By means of 12 interviews, a survey with 44 respondents, and the analysis of review logs for 9 million reviewed changes, we investigate motivations behind code review at Google, current practices, and developers' satisfaction and challenges.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651667&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=sbXn3C_8VMO6gouiWf0mkocFAa143LiLewBmlbzWGCA&e=" title="Get the Full Text from the ACM Digital Library">A study of the organizational dynamics of software teams</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Michael Hilton</li>
+<li class="nameList Last">Andrew Begel</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Large-scale software is developed by teams of engineers that work together. The teams' compositions change all the time, with engineers continuously leaving and joining. Learning about these organizational dynamics is vital to understanding how engineers acquire technical skills and business relationships throughout their career. In addition, since employee turnover can be costly to team morale and productivity, it is important for management to learn how to proactively guide the process. In this paper, we report on a study of a professional software development organization in which engineers switch teams frequently. We learned what causes engineers to consider leaving their teams, why they leave, how they learn about new teams, and how they decide which team to join. We also quantify the perceived costs and benefits of recent moves made by the engineers. In addition to reporting the answers to our research questions, we interpret our results to offer recommendations to engineers and their managers on how to ensure that both make better, happier team moves.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651668&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=E_V2evqodPVoxVgsxxcip2D9l0_NAN7BnCiGz0Hr_TI&e=" title="Get the Full Text from the ACM Digital Library">An investigation of work practices used by companies making contributions to established OSS projects</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Simon Butler</li>
+<li class="nameList">Jonas Gamalielsson</li>
+<li class="nameList">Bj&#246;rn Lundell</li>
+<li class="nameList">Per Jonsson</li>
+<li class="nameList">Johan Sj&#246;berg</li>
+<li class="nameList">Anders Mattsson</li>
+<li class="nameList">Niklas Rick&#246;</li>
+<li class="nameList">Tomas Gustavsson</li>
+<li class="nameList">Jonas Feist</li>
+<li class="nameList">Stefan Landemoo</li>
+<li class="nameList Last">Erik L&#246;nroth</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Professionals contribute to open source software (OSS) projects as part of their employment. Previous research has addressed motivations of individuals and the ways they engage with OSS projects. However, there is a lack of research which examines and explains work practices used by companies in their engagement with projects. Work practices used by companies to contribute to five established OSS projects are investigated through examination of the actions of employees in public communication channels and draw on our experiences when analysing engagement with the same projects. We find that companies utilise work practices for contributing which are congruent with the circumstances and their capabilities that support their short and long term needs. We find that companies contribute to OSS projects in different ways, such as employing core project developers, making donations, and joining project steering committees in order to advance strategic interests.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651669&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=6wkoVmy_gIEg3DsKXR7AwkKy5locXzP7PjDrK8iY_g4&e=" title="Get the Full Text from the ACM Digital Library">From agile to continuous development in the healthcare domain: lessons learned</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Walter Stocker</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Starting in 2006 our organization in the healthcare domain began a shift towards agile-like development rather than a strict interpretation of the "V-model". But this was only the beginning of an ongoing journey. Today modern software engineering is characterized by much faster development cycles than those used in traditional models. Our business demands that we shorten release cycles and support many different deployment scenarios. Due to the nature of our products, it is also necessary to address the relevant regulatory requirements which make this task even more challenging.</p> <p>Over the years, we have made a number of improvements in the spirit of "continuous improvement" that have helped us reap the benefits of a more continuous way-of-working. These include organizational, architectural, and process-based improvements as well as explicitly focusing on the necessary culture in the organization. This experience report is a summary of our learnings and hopefully will provide something for everyone that helps on their own journey.</p></div> </div>
+<h2>SESSION: Mobile, code and SMEs</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651660&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=17WzuO8Z2yLI2SCqdx-FC49_beXkJuuE0MoUEMfvXi4&e=" title="Get the Full Text from the ACM Digital Library">Helping SMEs to better develop software: experience report and challenges ahead</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Christophe Ponsard</li>
+<li class="nameList Last">Jean-Christophe Deprez</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Small and medium-sized enterprises (SMEs) play a key role in the worldwide economy and are increasingly dependent on software as part of their products/services or to support their operation (e.g. e-commerce, smart manufacturing). Over the past 15 years, as a research and technology transfer centre, CETIC has been busy helping Belgian SMEs to increase their maturity in software development. We have also contributed specific methods and tools for the SME target, including the OWPL framework and now the ISO29110 standard. This talk aims at sharing what we learned from different types of SMEs (from startups to grownups, both IT and non IT) about common problems gathered in a long term survey. We then focus on key issues like requirements, technical debt, test/release and (agile/lean) project management. Finally, we share our thoughts on new challenges ahead raised by the ever increasing connectivity like cybersecurity and privacy regulation (GDPR).</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651661&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=ShgLk1QQfjsnNtjz0b-wsrE3cztaO7s9OO2rt90t4_o&e=" title="Get the Full Text from the ACM Digital Library">Static analysis of context leaks in android applications</a>
+</h3>
+ <ul class="DLauthors">
+<li class="nameList First">Flavio Toffalini</li>
+<li class="nameList">Jun Sun</li>
+<li class="nameList Last">Mart&#237;n Ochoa</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Android native applications, written in Java and distributed in APK format, are widely used in mobile devices. Their specific pattern of use lets the operating system control the creation and destruction of key resources, such as activities and services (<i>contexts</i>). Programmers are not supposed to interfere with such lifecycle events. Otherwise contexts might be leaked, <i>i.e.</i> they will never be deallocated from memory, or be deallocated too late, leading to memory exhaustion and frozen applications. In practice, it is easy to write incorrect code, which hinders garbage collection of contexts and subsequently leads to context leakage.</p> <p>In this work, we present a new static analysis method that finds context leaks in Android code. We apply this analysis to APKs translated into Java bytecode. We discuss the results of a large number of experiments with our analysis, which reveal context leaks in many widely used applications from the Android marketplace. This shows the practical usefulness of our technique and proves its superiority <i>w.r.t.</i> the well-known Lint static analysis tool. We then estimate the amount of memory saved by the collection of the leaks found and explain, experimentally, where programmers often go wrong and what the analysis is not yet able to find. Such lessons could be later leveraged for the definition of a sound or more powerful static analysis for Android leaks. This work can be considered as a practical application of software analysis techniques to solve practical problems.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651662&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=I-bqT_7KMmY9XsUOirDmiOWCs3QV8j0o6vrPSKz20WU&e=" title="Get the Full Text from the ACM Digital Library">Advantages and disadvantages of a monolithic repository: a case study at google</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Ciera Jaspan</li>
+<li class="nameList">Matthew Jorde</li>
+<li class="nameList">Andrea Knight</li>
+<li class="nameList">Caitlin Sadowski</li>
+<li class="nameList">Edward K. Smith</li>
+<li class="nameList">Collin Winter</li>
+<li class="nameList Last">Emerson Murphy-Hill</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Monolithic source code repositories (repos) are used by several large tech companies, but little is known about their advantages or disadvantages compared to multiple per-project repos. This paper investigates the relative tradeoffs by utilizing a mixed-methods approach. Our primary contribution is a survey of engineers who have experience with both monolithic repos and multiple, per-project repos. This paper also backs up the claims made by these engineers with a large-scale analysis of developer tool logs. Our study finds that the visibility of the codebase is a significant advantage of a monolithic repo: it enables engineers to discover APIs to reuse, find examples for using an API, and automatically have dependent code updated as an API migrates to a new version. Engineers also appreciate the centralization of dependency management in the repo. In contrast, multiple-repository (multi-repo) systems afford engineers more flexibility to select their own toolchains and provide significant access control and stability benefits. In both cases, the related tooling is also a significant factor; engineers favor particular tools and are drawn to repo management systems that support their desired toolchain.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651663&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=pDHx3daCzK6rQvwxehqW1Esz66EEbhAjX9wHZD8HiUM&e=" title="Get the Full Text from the ACM Digital Library">Protecting million-user iOS apps with obfuscation: motivations, pitfalls, and experience</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Pei Wang</li>
+<li class="nameList">Dinghao Wu</li>
+<li class="nameList">Zhaofeng Chen</li>
+<li class="nameList Last">Tao Wei</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In recent years, mobile apps have become the infrastructure of many popular Internet services. It is now fairly common that a mobile app serves a large number of users across the globe. Different from web-based services whose important program logic is mostly placed on remote servers, many mobile apps require complicated client-side code to perform tasks that are critical to the businesses. The code of mobile apps can be easily accessed by any party after the software is installed on a rooted or jailbroken device. By examining the code, skilled reverse engineers can learn various knowledge about the design and implementation of an app. Real-world cases have shown that the disclosed critical information allows malicious parties to abuse or exploit the app-provided services for unrightful profits, leading to significant financial losses for app vendors.</p> <p>One of the most viable mitigations against malicious reverse engineering is to obfuscate the software before release. Despite that security by obscurity is typically considered to be an unsound protection methodology, software obfuscation can indeed increase the cost of reverse engineering, thus delivering practical merits for protecting mobile apps.</p> <p>In this paper, we share our experience of applying obfuscation to multiple commercial iOS apps, each of which has millions of users. We discuss the necessity of adopting obfuscation for protecting modern mobile business, the challenges of software obfuscation on the iOS platform, and our efforts in overcoming these obstacles. Our report can benefit many stakeholders in the iOS ecosystem, including developers, security service providers, and Apple as the administrator of the ecosystem.</p></div> </div>
+<h2>SESSION: Safety and culture</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651664&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=K2i7OYC5rn07seE8lxMe8ZoStZ785HOFzZuOSOUWh9o&e=" title="Get the Full Text from the ACM Digital Library">We don't need another hero?: the impact of "heroes" on software development</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Amritanshu Agrawal</li>
+<li class="nameList">Akond Rahman</li>
+<li class="nameList">Rahul Krishna</li>
+<li class="nameList">Alexander Sobran</li>
+<li class="nameList Last">Tim Menzies</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>A software project has "Hero Developers" when 80% of contributions are delivered by 20% of the developers. Are such heroes a good idea? Are too many heroes bad for software quality? Is it better to have more/less heroes for different kinds of projects? To answer these questions, we studied 661 open source projects from Public open source software (OSS) Github and 171 projects from an Enterprise Github.</p> <p>We find that hero projects are very common. In fact, as projects grow in size, nearly all projects become hero projects. These findings motivated us to look more closely at the effects of heroes on software development. Analysis shows that the frequency to close issues and bugs are not significantly affected by the presence of heroes or project type (Public or Enterprise). Similarly, the time needed to resolve an issue/bug/enhancement is not affected by heroes or project type. This is a surprising result since, before looking at the data, we expected that increasing heroes on a project will slow down how fast that project reacts to change. However, we do find a statistically significant association between heroes, project types, and enhancement resolution rates. Heroes do not affect enhancement resolution rates in Public projects. However, in Enterprise projects, heroes increase the rate at which projects complete enhancements.</p> <p>In summary, our empirical results call for a revision of a long-held truism in software engineering. Software heroes are far more common and valuable than suggested by the literature, particularly for medium to large Enterprise developments. Organizations should reflect on better ways to find and retain more of these heroes.</p></div> </div>
+<h3>
+ <a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651675&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=8b9G_K9V0-icx7i7C-YhRXlXk-K7C_k_BL-65mIn5bY&e=" title="Get the Full Text from the ACM Digital Library">Improving the definition of software development projects through design thinking led collaboration workshops</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Hilary Cinis</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Software development projects need clear agreed goals, a provable value proposition and key stakeholder commitment. Employing Design Thinking methods to focus the expertise of workshop participants can uncover and support these needs.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651676&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=KRcwIoL0cWOhfDw_u5ITBcr8Tl-GMlqH5DRyuNwpznY&e=" title="Get the Full Text from the ACM Digital Library">Evaluating specification-level MC/DC criterion in model-based testing of safety critical systems</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Syed S. Arefin</li>
+<li class="nameList">Hadi Hemmati</li>
+<li class="nameList Last">Howard W. Loewen</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Safety-critical software systems in the aviation domain, e.g., a UAV autopilot software, needs to go through a formal process of certification (e.g., DO-178C standard). One of the main requirements for this certification is having a set of explicit test cases for each software requirement. To achieve this, the DO-178C standard recommends using a model-driven approach. For instance, model-based testing (MBT) is recommended in its DO-331 supplement to automatically generate system-level test cases for the requirements provided as the specification models. In addition, the DO-178C standard also requires high level of source code coverage, which typically is achieved by a separate set of structural testing. However, the standard allows targeting high code coverage with MBT, only if the applicants justify their plan on how to achieve high code coverage through model-level testing.</p> <p>In this study, we propose using the Modified Condition and Decision coverage ("MC/DC") criterion on the specification-level constraints rather than the standard-recommended "all transition coverage" criterion, to achieve higher code coverage through MBT. We evaluate our approach in the context of a case study at MicroPilot Inc., our industry collaborator, which is a UAV producer company. We implemented our idea as an MC/DC coverage on transition guards in a UML state-machine-based testing tool that was developed in-house. The results show that applying model-level MC/DC coverage outperforms the typical transition-coverage (DO-178C's required MBT coverage criterion), with respect to source code-level "all condition-decision coverage criterion" by 33%. In addition, our MC/DC test suite detected three new faults and two instances of legacy specification in the code that are no longer in use, compared to the "all transition" test suite.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651677&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=jGBVJy3Vjfim8hYtehU0RD4S35uIgsRqvCqMq2wcACg&e=" title="Get the Full Text from the ACM Digital Library">On groupthink in safety analysis: an industrial case study</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Yang Wang</li>
+<li class="nameList Last">Stefan Wagner</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>Context:</b> In safety-critical systems, an effective safety analysis produces high-quality safety requirements and ensures a safe product from an early stage. <b>Motivation:</b> In safety-critical industries, safety analysis happens mostly in groups. The occurrence of "groupthink", under which the group members become concurrence-seeking, potentially leads to a poor safety assurance of products and fatalities. <b>Objective:</b> The purpose of this study is to investigate how groupthink influences safety analysis as well as how to reduce it. <b>Method:</b> We conducted a multiple case study in seven companies by surveying 39 members and interviewing 17 members including software developers, software testers, quality engineers, functional safety managers, hazard/risk managers, sales, purchasing, production managers and senior managers. <b>Results:</b> The TOP 10 phenomena of groupthink in safety analysis are: (1) The managers are too optimistic on the plan of safety analysis from norms. (2) The technical members overestimate their capability on avoiding risks. (3) The non-functional department is under negative stereo-types in safety analysis. (4) Non-technical members keep silence during safety analysis. (5) Team members keep consistent opinions with senior safety experts. (6) The team rationalizes the safety analysis solutions. (7) The safety analysts spontaneously freeze the safety-related documents. (8) The safety analyst has an illusion of invulnerability during verification. (9) The internal safety assessor rationalizes the safety assurance to a third party. (10) The team rationalizes the safety analysis for providing safety evidences. Furthermore, we found reasons like "cohesion" and "group insulation" and solutions like "inviting external expert" and "making key members impartial". <b>Conclusion:</b> There is groupthink in safety analysis in practice. Practitioners should look for the phenomena and consider solutions. However, the cases are limited to the investigated domains and countries.</p></div> </div>
+<h2>SESSION: Testing and defects ii</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651678&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=w4NwkH7Y5LyrZyiNxU1BalSDD6UFyqHjeOo9C0oaJT8&e=" title="Get the Full Text from the ACM Digital Library">Robustness testing of autonomy software</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Casidhe Hutchison</li>
+<li class="nameList">Milda Zizyte</li>
+<li class="nameList">Patrick E. Lanigan</li>
+<li class="nameList">David Guttendorf</li>
+<li class="nameList">Michael Wagner</li>
+<li class="nameList">Claire Le Goues</li>
+<li class="nameList Last">Philip Koopman</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>As robotic and autonomy systems become progressively more present in industrial and human-interactive applications, it is increasingly critical for them to behave safely in the presence of unexpected inputs. While robustness testing for traditional software systems is long-studied, robustness testing for autonomy systems is relatively uncharted territory. In our role as engineers, testers, and researchers we have observed that autonomy systems are importantly different from traditional systems, requiring novel approaches to effectively test them. We present Automated Stress Testing for Autonomy Architectures (ASTAA), a system that effectively, automatically robustness tests autonomy systems by building on classic principles, with important innovations to support this new domain. Over five years, we have used ASTAA to test 17 real-world autonomy systems, robots, and robotics-oriented libraries, across commercial and academic applications, discovering hundreds of bugs. We outline the ASTAA approach and analyze more than 150 bugs we found in real systems. We discuss what we discovered about testing autonomy systems, specifically focusing on how doing so differs from and is similar to traditional software robustness testing and other high-level lessons.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651679&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=9t3n6UV7FJ1UuYKeJIsYCBpnhDH45KHPXR3i0p6IaEc&e=" title="Get the Full Text from the ACM Digital Library">An experience report on defect modelling in practice: pitfalls and challenges</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Chakkrit Tantithamthavorn</li>
+<li class="nameList Last">Ahmed E. Hassan</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Over the past decade with the rise of the Mining Software Repositories (MSR)field, the modelling of defects for large and long-lived systems has become one of the most common applications of MSR. The findings and approaches of such studies have attracted the attention of many of our industrial collaborators (and other practitioners worldwide). At the core of many of these studies is the development and use of analytical models for defects. In this paper, we discuss common pitfalls and challenges that we observed as practitioners attempt to develop such models or reason about the findings of such studies. The key goal of this paper is to document such pitfalls and challenges so practitioners can avoid them in future efforts. We also hope that other academics will be mindful of such pitfalls and challenges in their own work and industrial engagements.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651670&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=3DAQKb7vgDcg_7YJ__waSnofqWqve_MQQuwDn1IGX0s&e=" title="Get the Full Text from the ACM Digital Library">Smartunit: empirical evaluations for automated unit testing of embedded software in industry</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Chengyu Zhang</li>
+<li class="nameList">Yichen Yan</li>
+<li class="nameList">Hanru Zhou</li>
+<li class="nameList">Yinbo Yao</li>
+<li class="nameList">Ke Wu</li>
+<li class="nameList">Ting Su</li>
+<li class="nameList">Weikai Miao</li>
+<li class="nameList Last">Geguang Pu</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In this paper, we aim at the automated unit coverage-based testing for embedded software. To achieve the goal, by analyzing the industrial requirements and our previous work on automated unit testing tool CAUT, we rebuild a new tool, SmartUnit, to solve the engineering requirements that take place in our partner companies. SmartUnit is a dynamic symbolic execution implementation, which supports statement, branch, boundary value and MC/DC coverage.</p> <p>SmartUnit has been used to test more than one million lines of code in real projects. For confidentiality motives, we select three in-house real projects for the empirical evaluations. We also carry out our evaluations on two open source database projects, SQLite and PostgreSQL, to test the scalability of our tool since the scale of the embedded software project is mostly not large, 5K-50K lines of code on average. From our experimental results, in general, more than 90% of functions in commercial embedded software achieve 100% statement, branch, MC/DC coverage, more than 80% of functions in SQLite achieve 100% MC/DC coverage, and more than 60% of functions in PostgreSQL achieve 100% MC/DC coverage. Moreover, SmartUnit is able to find the runtime exceptions at the unit testing level. We also have reported exceptions like <i>array index out of bounds</i> and <i>divided-by-zero</i> in SQLite. Furthermore, we analyze the reasons of low coverage in automated unit testing in our setting and give a survey on the situation of manual unit testing with respect to automated unit testing in industry.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__dl.acm.org_authorize-3FN651671&d=DwMFAg&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=ZHuLpaRqk3Uz8lrvKUHs4g&m=ZtTFTKYomGCS3QudN40aJIe4Q0M5qsSPlBuSCPve1eY&s=jyowKMPDs2vKisbYsanNQe6BBGbMlyRg5QrkgoBdhWg&e=" title="Get the Full Text from the ACM Digital Library">What is the connection between issues, bugs, and enhancements?: lessons learned from 800+ software projects</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Rahul Krishna</li>
+<li class="nameList">Amritanshu Agrawal</li>
+<li class="nameList">Akond Rahman</li>
+<li class="nameList">Alexander Sobran</li>
+<li class="nameList Last">Tim Menzies</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Agile teams juggle multiple tasks so professionals are often assigned to multiple projects, especially in service organizations that monitor and maintain large suites of software for a large user base. If we could predict changes in project conditions change, then managers could better adjust the staff allocated to those projects.</p> <p>This paper builds such a predictor using data from 832 open source and proprietary projects. Using a time series analysis of the last 4 months of <i>issues</i>, we can forecast how many <i>bug reports</i> and <i>enhancement requests</i> will be generated the next month.</p> <p>The forecasts made in this way only require a frequency count of these issue reports (and do &lt;u&gt;not&lt;/u&gt; require an historical record of bugs found in the project). That is, this kind of predictive model is very easy to deploy within a project. We hence strongly recommend this method for forecasting future issues, enhancements, and bugs in a project.</p></div> </div>
+</div>
+</div>
+</body>
+</html>

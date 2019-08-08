@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+Designers of software components can use finite-state properties to
+denote behavioral interface specifications which enforce client-side
+programming rules that state how the components ought to be used. This
+allows users of these components to check their client code for
+compliance with these rules, both statically and at runtime.
+<p>
+In this dissertation we explain the design and implementation of
+Clara, a frame- work for specifying and verifying finite-state
+properties of large-scale programs. With Clara, programmers specify
+finite-state properties together with runtime monitors, using a
+syntactic extension to the aspect-oriented programming language
+AspectJ. Clara then uses a sequence of three increasingly detailed
+static analyses to determine if the program satisfies the finite-state
+properties, i.e., is free of property violations.
+<p>
+Clara produces a list of program points at which the program may
+violate the properties, ranked by a confidence value. If violations
+are possible, Clara also instruments the program with the supplied
+runtime monitor, which will capture property violations when the
+program executes. Due to its static analyses, Clara can omit the
+instrumentation at program locations which the analyses proved safe,
+and so optimize the instrumented program. When much instrumentation
+remains, Clara partitions the instrumentation into subsets, so that
+one can distribute multiple partially instrumented program versions
+that each run with a low overhead.
+<p>
+We validated the approach by applying Clara to finite-state properties
+denoted in multiple formalisms over several large-scale Java
+programs. Clara proved that most of the programs fulfill our example
+properties. For most other programs, Clara could remove the monitoring
+overhead to below 10%. We also found multiple property violations by
+manually inspecting the top entries in Clara s ranked result list.
+</div> </body> </html>

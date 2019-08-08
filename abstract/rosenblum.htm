@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+
+<p align="justify">A <em>tasking supervisor</em> implements the concurrency constructs of a 
+  concurrent programming language.&nbsp; This thesis addresses two fundamental 
+  issues 
+in constructing <em>distributed</em> implementations of a concurrent anguage: (1) Principles for designing a tasking supervisor for the language, and 
+  (2) Practical techniques for verifying that the supervisor correctly
+  implements the semantics of the language.&nbsp; Previous research in concurrent 
+  languages has focused on the design of constructs for expressing 
+  concurrency, 
+while ignoring these two important implementation issues. </p>
+<p align="justify">First, the thesis describes the design of a tasking supervisor for the Ada 
+  programming language.&nbsp; The Supervisor implements the full Ada tasking 
+  language, and it performs distributed program execution on multiple CPUs. 
+  The 
+  Supervisor is a portable, modular, distributed software system written in 
+  Ada.
+  The interface between the Supervisor and application programs forms the 
+  topmost layer of the Supervisor and is formally specified in <em>Anna</em> (ANNotated Ada).&nbsp; All machine dependences are encapsulated in the bottom 
+  layer
+  of the Supervisor; this layer is an implementation of an <em>abstract virtual 
+  loosely coupled multiprocessor</em>.&nbsp; The principles used to design the 
+  Supervisor may be used to design a distributed supervisor for <em>any</em> concurrent language.</p>
+<p align="justify">Second, the thesis presents new and practical techniques for automatically 
+  verifying the behavior of a distributed supervisor; these techniques are 
+  illustrated by the verification of the Distributed Ada Supervisor.&nbsp; An 
+  event- 
+  based formalization of the Ada tasking semantics is expressed as a 
+  collection 
+  of machine-processable specifications written in <em>TSL</em> (Task Sequencing
+  Language).&nbsp; Correctness of the Supervisor is established by automatically 
+  checking executions of test programs for consistency with the TSL 
+  specifications.&nbsp; Since the specifications are derived solely from the Ada 
+  semantics, the specifications can be used to test <em>any</em> implementation 
+  of
+  Ada tasking.&nbsp; In addition, <em>every</em> Ada tasking program may be used as 
+test input.</p>
+<p align="justify">  The theory and practice of concurrent programming is in its infancy.&nbsp; The 
+  research described in this thesis represents a major step toward the 
+  development of a theory of constructing multiprocessor implementations of
+  concurrent programming languages. <br>
+</p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify"
+Software Architectures (SA) emerged in the  to structure complex software systems and providing a high-level system description. To specify and analyze SA, informal box-and-line notations have been replaced/complemented by formal and rigorous Architecture Description Languages (ADLs). However formal
+languages are not easily used in industrial applications, which tend to prefer model-based, semi-formal notations.
+<p>
+The CHARMY framework introduced in this work intends to fill this gap by providing the software architects with an automated, easy to use tool for the design and validation of SA. To make it useful in an industrial context, the tool allows to graphically design the system by using instruments commonly used
+in the industry. CHARMY enables the formulation of the SA through model-based specifications, which are automatically translated into a prototype and validated against selected properties. In particular, state diagrams, used to specify how architectural components behave, are automatically interpreted in order to synthesize a prototype. This prototype is expressed in Promela, the SPIN model checker modeling language.
+When the design is done, a prototype is automatically created for simulation and analysis purposes.
+<p>
+Desired properties, designed using a graphical notation close to UML 2.0 Interaction Sequence Diagrams, are checked on the prototype by means of model checking techniques.
+<p>
+The second part of the thesis tracts the promising technique of SA testing. The dependability analysis of a component-based system may be driven by the components/system implementation or by the model-based specification provided prior to or together with the implementation. In particular, model-based specifications of a component-based system allows to explicitly model the structure and behavior of components and their integration, while model-based testing allows to derive test sequences which can be successively refined into test cases and then run onto the system implementation. Several techniques have been proposed so far to allow model-based testing. However, very few of them show certain characteristics which are peculiar for use in industrial contexts. We here describe TESTOR, a TEst Sequence generaTOR algorithm which permits to extract test sequences from both state machine and scenario diagrams. We detail the algorithm, we apply it to a system study and we provide a link to its implementation.
+<p>
+Two important topics require more attention: i) how different analysis techniques may be integrated, and ii) how results obtained by SA-based analysis may be related with requirements and coding. We show how Model-Checking and Testing techniques may be jointly applied in an SA-based automatic analysis
+framework, where an SA specification of the system is available, model-checking validates the SA model conformance with respect to selected properties, while testing techniques validate the implementation conformance to the SA model. We apply the resulting analysis framework to an SDH Telecommunication system architecture designed by Siemens CNX.
+<p>
+For middleware-based software architectures, ad hoc techniques can be developed. In the third part of this work we present a compositional reasoning to verify middleware-based software architecture descriptions.
+<p>
+We consider a nowadays typical software system development, namely the development of a software application A on a middleware M. Our goal is to efficiently integrate verification techniques, like model checking, in the software life cycle in order to improve the overall software quality. To this extent we adopt current industrial practice notations, namely state-based machines and scenarios. Behavioral analysis of middleware-based applications typically requires the analysis of the middleware and the application, in a monolithic way. In terms of model-checking, this is a complex task and may result in the well known state-explosion problem. These considerations led us to investigate a compositional verification approach which decomposes the system in accordance with its Software Architecture. The architectural decomposability theorem decomposes the system into three logical layer: (i) application components, (ii) proxies and, (iii) middleware. This logical separation allows for reducing the global system validation to the verification of local behaviors. The architectural decomposability theorem has been engineered in order to automatically generate the proxies needed by the components to properly interact with each other via the middleware. In particular, following the Model Driven Architecture approach and by making use of the Abstract State Machine formalism, we describe a set of transformation rules that allow for deriving correct proxies for using CORBA. By means of the proposed transformations, the correctness of the proxy behavioral models is guaranteed without the need to validate them with respect to the assumptions posed by the theorem.
+<p>
+In the thesis are detailed theoretical aspects and how each technique has been automatized.
+</div>
+</body>
+</html>

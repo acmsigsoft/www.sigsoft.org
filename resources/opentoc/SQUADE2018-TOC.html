@@ -1,0 +1,166 @@
+
+<!doctype html>
+<head>
+<META http-equiv="Content-Style-Type" content="text/css">
+<title>SQUADE '18- Proceedings of the 1st International Workshop on Software Qualities and Their Dependencies</title>
+<STYLE type="text/css">
+#DLtoc {
+	font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+	}
+
+#DLheader {
+	}
+#DLheader h1 {
+	font-size:16px;	
+}
+	
+#DLcontent {
+	 font-size:12px;
+	}
+#DLcontent h2 {
+	 font-size:14px;
+	 margin-bottom:5px;
+	}
+#DLcontent h3 {
+	 font-size:12px;
+	 padding-left:20px;
+	 margin-bottom:0px;
+	}
+
+#DLcontent ul{
+	margin-top:0px;
+	margin-bottom:0px;
+	}
+		
+.DLauthors li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLauthors li:after{
+	content:",";
+	}
+.DLauthors li.nameList.Last:after{
+	content:"";
+	}		
+
+.DLabstract {
+	 padding-left:40px;
+	 padding-right:20px;
+	 display:block;
+	}
+
+.DLformats li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLformats li:after{
+	content:",";
+	}
+.DLformats li.formatList.Last:after{
+	content:"";
+	}		
+
+.DLlogo {
+	vertical-align:middle; 
+	padding-right:5px;
+	border:none;
+	}
+	
+.DLcitLink {
+	margin-left:20px;
+	}	
+
+.DLtitleLink {
+	margin-left:20px;
+	}	
+
+.DLotherLink {
+	margin-left:0px;
+	}		
+   
+</STYLE>
+</head>
+<body>
+<div id="DLtoc">
+<div id="DLheader">
+<h1>SQUADE '18- Proceedings of the 1st International Workshop on Software Qualities and Their Dependencies</h1>
+<a class="DLcitLink" href="https://dl.acm.org/citation.cfm?id=3194095" title="Go to the ACM Digital Library for additional information about this proceeding"><img class="DLlogo" src="https://dl.acm.org/img/dllogo.png" alt="Digital Library logo" height="30" width="30">Full Citation in the ACM Digital Library</a>
+</div>
+<div id="DLcontent">
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N654161" title="Get the Full Text from the ACM Digital Library">Software quality through the eyes of the end-user and static analysis tools: a study on Android OSS applications</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Kamonphop Srisopha</li>
+<li class="nameList Last">Reem Alfayez</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Source code analysis tools have been the vehicle for measuring and assessing the quality of a software product for decades. However, recently many studies have shown that post-deployment end-user reviews provide a wealth of insight into the quality of a software product and how it should evolve and be maintained. For example, end-user reviews help to identify missing features or inform developers about incorrect or unexpected software behavior. We believe that analyzing end-user reviews and utilizing analysis tools are a crucial step towards understanding the complete picture of the quality of a software product, as well as towards reasoning about the evolution history of it. In this paper, we investigate whether both methods correlate with one another. In other words, we explore if there exists a relationship between user satisfaction and the application's internal quality characteristics. To conduct our research, we analyze a total of 46 actual releases of three Android open source software (OSS) applications on the Google Play Store. For each release, we employ multiple static analysis tools to assess several aspects of the application's software quality. We retrieve and manually analyze the complete reviews after each release of each application from its store page, totaling 1004 reviews. Our initial results suggest that having high or low code quality does not necessary ensure user overall satisfaction.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N654162" title="Get the Full Text from the ACM Digital Library">Assessing the release readiness of engine control software</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Sichao Wen</li>
+<li class="nameList">Christoffer Nilsson</li>
+<li class="nameList Last">Miroslaw Staron</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Powertrain control calibration is an essential stage before the delivery of final products, to ensure that a vehicle works well in all driving environments. However, due to complexity of a powertrain control system (often as many as 40,000 parameters), it is difficult to assess when all parameters are fully calibrated. Therefore, the aim of this paper is to explore an approach to evaluate and predict the maturity level of powertrain control software based on calibration data for simulation models. We developed metrics that indicate software maturity and their visualization using heatmaps. We used software maturity growth curves to select maturity growth models for maturity assessment. The results and approaches of this paper were validated with theoretical methods and empirical methods using action research techniques. Our conclusions show that we can use standard software reliability growth models to monitor the calibration process for powertrain software, and we conclude that this type of monitoring provides a good support for quality stakeholders in monitoring powertrain calibration quality.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N654163" title="Get the Full Text from the ACM Digital Library">Prioritizing alerts from multiple static analysis tools, using classification models</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Lori Flynn</li>
+<li class="nameList">William Snavely</li>
+<li class="nameList">David Svoboda</li>
+<li class="nameList">Nathan VanHoudnos</li>
+<li class="nameList">Richard Qin</li>
+<li class="nameList">Jennifer Burns</li>
+<li class="nameList">David Zubrow</li>
+<li class="nameList">Robert Stoddard</li>
+<li class="nameList Last">Guillermo Marce-Santurio</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Static analysis (SA) tools examine code for flaws without executing the code, and produce warnings ("alerts") about possible flaws. A human auditor then evaluates the validity of the purported code flaws. The effort required to manually audit all alerts and repair all confirmed code flaws is often too much for a project's budget and schedule. An alert triaging tool enables strategically prioritizing alerts for examination, and could use classifier confidence. We developed and tested classification models that predict if static analysis alerts are true or false positives, using a novel combination of multiple static analysis tools, features from the alerts, alert fusion, code base metrics, and archived audit determinations. We developed classifiers using a partition of the data, then evaluated the performance of the classifier using standard measurements, including specificity, sensitivity, and accuracy. Test results and overall data analysis show accurate classifiers were developed, and specifically using multiple SA tools increased classifier accuracy, but labeled data for many types of flaws were inadequately represented (if at all) in the archive data, resulting in poor predictive accuracy for many of those flaws.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N654164" title="Get the Full Text from the ACM Digital Library">Learning-based response time analysis in real-time embedded systems: a simulation-based approach</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Mahshid Helali Moghadam</li>
+<li class="nameList">Mehrdad Saadatmand</li>
+<li class="nameList">Markus Borg</li>
+<li class="nameList">Markus Bohlin</li>
+<li class="nameList Last">Bj&#246;rn Lisper</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Response time analysis is an essential task to verify the behavior of real-time systems. Several response time analysis methods have been proposed to address this challenge, particularly for real-time systems with different levels of complexity. Static analysis is a popular approach in this context, but its practical applicability is limited due to the high complexity of the industrial real-time systems, as well as many unpredictable runtime events in these systems. In this work-in-progress paper, we propose a simulation-based response time analysis approach using reinforcement learning to find the execution scenarios leading to the worst-case response time. The approach learns how to provide a practical estimation of the worst-case response time through simulating the program without performing static analysis. Our initial study suggests that the proposed approach could be applicable in the simulation environments of the industrial real-time control systems to provide a practical estimation of the execution scenarios leading to the worst-case response time.<sup>1</sup></p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N654175" title="Get the Full Text from the ACM Digital Library">Towards a classification of bugs to facilitate software maintainability tasks</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Mathieu Nayrolles</li>
+<li class="nameList Last">Abdelwahab Hamou-Lhadj</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Software maintainability is an important software quality attribute that defines the degree by which a software system is understood, repaired, or enhanced. In recent years, there has been an increase in attention in techniques and tools that mine large bug repositories to help software developers understand the causes of bugs and speed up the fixing process. These techniques, however, treat all bugs in the same way. Bugs that are fixed by changing a single location in the code are examined the same way as those that require complex changes. After examining more than 100 thousand bug reports of 380 projects, we found that bugs can be classified into four types based on the location of their fixes. Type 1 bugs are the ones that fixed by modifying a single location in the code, while Type 2 refers to bugs that are fixed in more than one location. Type 3 refers to multiple bugs that are fixed in the exact same location. Type 4 is an extension of Type 3, where multiple bugs are resolved by modifying the same set of locations. This classification can help companies put the resources where they are needed the most. It also provides useful insight into the quality of the code. Knowing, for example, that a system contains a large number of bugs of Type 4 suggests high maintenance efforts. This classification can also be used for other tasks such as predicting the type of incoming bugs for an improved bug handling process. For example, if a bug is found to be of Type 4 then it should be directed to experienced developers.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N654176" title="Get the Full Text from the ACM Digital Library">The quality of junit tests: an empirical study report</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Dor D. Ma'ayan</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The quality of unit tests gains substantial importance in modern software systems. This work explores the way in which Junit tests are written in real world Java systems. We analyse 112 Java repositories and measure the quality of unit tests by finding patterns which indicate good practices of coding. Our results show that the quality of real world unit tests is low, and that in many cases, unit tests don't follow the well-known recommendations for writing unit tests. These early results demonstrate the need for more tools and techniques for refactoring of tests.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N654177" title="Get the Full Text from the ACM Digital Library">Timing verification of component-based vehicle software with rubus-ICE: end-user's experience</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Saad Mubeen</li>
+<li class="nameList">Mattias G&#229;lnander</li>
+<li class="nameList">Alessio Bucaioni</li>
+<li class="nameList">John Lundb&#228;ck</li>
+<li class="nameList Last">Kurt-Lennart Lundb&#228;ck</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>This paper discusses an end-user's experiences of utilizing timing analysis tools to verify predictability of distributed embedded systems in the vehicle industry. The analysis tools are plug-ins for an industrial tool suite, namely Rubus-ICE, that is based on the principles of model-based engineering (MBE) and component-based software engineering (CBSE). These plug-ins implement various state-of-the-art timing analyses including response-time analysis and end-to-end data-path analysis. The experiences discussed in this paper provide a useful feedback in terms of usability and validity of assumptions to the tools provider as well as to the academia.</p></div> </div>
+</div>
+</div>
+</body>
+</html>

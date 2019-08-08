@@ -1,0 +1,469 @@
+
+<!doctype html>
+<head>
+<META http-equiv="Content-Style-Type" content="text/css">
+<title>MOBILESoft '18- Proceedings of the 5th International Conference on Mobile Software Engineering and Systems</title>
+<STYLE type="text/css">
+#DLtoc {
+	font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+	}
+
+#DLheader {
+	}
+#DLheader h1 {
+	font-size:16px;	
+}
+	
+#DLcontent {
+	 font-size:12px;
+	}
+#DLcontent h2 {
+	 font-size:14px;
+	 margin-bottom:5px;
+	}
+#DLcontent h3 {
+	 font-size:12px;
+	 padding-left:20px;
+	 margin-bottom:0px;
+	}
+
+#DLcontent ul{
+	margin-top:0px;
+	margin-bottom:0px;
+	}
+		
+.DLauthors li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLauthors li:after{
+	content:",";
+	}
+.DLauthors li.nameList.Last:after{
+	content:"";
+	}		
+
+.DLabstract {
+	 padding-left:40px;
+	 padding-right:20px;
+	 display:block;
+	}
+
+.DLformats li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLformats li:after{
+	content:",";
+	}
+.DLformats li.formatList.Last:after{
+	content:"";
+	}		
+
+.DLlogo {
+	vertical-align:middle; 
+	padding-right:5px;
+	border:none;
+	}
+	
+.DLcitLink {
+	margin-left:20px;
+	}	
+
+.DLtitleLink {
+	margin-left:20px;
+	}	
+
+.DLotherLink {
+	margin-left:0px;
+	}		
+   
+</STYLE>
+</head>
+<body>
+<div id="DLtoc">
+<div id="DLheader">
+<h1>MOBILESoft '18- Proceedings of the 5th International Conference on Mobile Software Engineering and Systems</h1>
+<a class="DLcitLink" href="https://dl.acm.org/citation.cfm?id=3197231" title="Go to the ACM Digital Library for additional information about this proceeding"><img class="DLlogo" src="https://dl.acm.org/img/dllogo.png" alt="Digital Library logo" height="30" width="30">Full Citation in the ACM Digital Library</a>
+</div>
+<div id="DLcontent">
+<h2>SESSION: Keynote</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665805" title="Get the Full Text from the ACM Digital Library">Development, testing and maintenance of Android apps: challenges, tools, and future directions</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Denys Poshyvanyk</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Mobile devices have become a permanent fixture in modern society. As such, it is of critical importance that the mobile development process is made as frictionless as possible to facilitate the creation of high-quality apps for end users. This keynote offers a brief introduction to mobile development paradigms, surveys the major categories of research conducted to date towards improving mobile software engineering, examines open challenges, and outlines a roadmap of future work aimed to support mobile developers.</p></div> </div>
+<h2>SESSION: Maliciousness</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665806" title="Get the Full Text from the ACM Digital Library">ARES: triggering payload of evasive Android malware</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Luciano Bello</li>
+<li class="nameList Last">Marco Pistoia</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>With the emergence of mobile application markets, there has been a dramatic increase in mobile malware. Mobile platform providers are constantly creating and refining their malware-detection techniques, including static analysis and behavioral monitoring. The goal of malware writers is to hide the malware payload from those analyzers. In parallel, security analysts want to quickly detect if any software is malware in order to prevent harm to users. This confrontation is pushing malware writers to develop new evasion techniques that prevent their malware from being detected or making analysis harder.</p> <p>This paper describes ARES, a system built on top of an existing behavioral analysis, based on static information-flow analysis, binary instrumentation, and multiexecution analysis, to detect and bypass many common evasive techniques used by mobile malware. Additionally, this paper presents our implementation of ARES, and shows that, when run against real-world software, ARES is able to reveal previously unknown malicious components. We also developed a test suite for evasion detection techniques: EVADROID, which we have made fully available to other researchers.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665807" title="Get the Full Text from the ACM Digital Library">ORLIS: obfuscation-resilient library detection for Android</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Yan Wang</li>
+<li class="nameList">Haowei Wu</li>
+<li class="nameList">Hailong Zhang</li>
+<li class="nameList Last">Atanas Rountev</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Android apps often contain third-party libraries. For many program analyses, it is important to identify the library code in a given closed-source Android app. There are several clients of such library detection, including security analysis, clone/repackage detection, and library removal/isolation. However, library detection is complicated significantly by commonly-used code obfuscation techniques for Android. Although some of the state-of-the-art library detection tools are intended to be resilient to obfuscation, there is still room to improve recall, precision, and analysis cost.</p> <p>We propose a new approach to detect third-party libraries in obfuscated apps. The approach relies on obfuscation-resilient code features derived from the interprocedural structure and behavior of the app (e.g., call graphs of methods). The design of our approach is informed by close examination of the code features preserved by typical Android obfuscators. To reduce analysis cost, we use similarity digests as an efficient mechanism for identifying a small number of likely matches. We implemented this approach in the ORLIS library detection tool. As demonstrated by our experimental results, ORLIS advances the state of the art and presents an attractive choice for detection of third-party libraries in Android apps.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665808" title="Get the Full Text from the ACM Digital Library">AnFlo: detecting anomalous sensitive information flows in Android apps</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Biniam Fisseha Demissie</li>
+<li class="nameList">Mariano Ceccato</li>
+<li class="nameList Last">Lwin Khin Shar</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Smartphone apps usually have access to sensitive user data such as contacts, geo-location, and account credentials and they might share such data to external entities through the Internet or with other apps. Confidentiality of user data could be breached if there are anomalies in the way sensitive data is handled by an app which is vulnerable or malicious. Existing approaches that detect anomalous sensitive data flows have limitations in terms of accuracy because the definition of <i>anomalous flows</i> may differ for different apps with different functionalities; it is normal for "Health" apps to share heart rate information through the Internet but is anomalous for "Travel" apps.</p> <p>In this paper, we propose a novel approach to detect anomalous sensitive data flows in Android apps, with improved accuracy. To achieve this objective, we first group <i>trusted</i> apps according to the topics inferred from their functional descriptions. We then learn sensitive information flows with respect to each group of trusted apps. For a given app under analysis, anomalies are identified by comparing sensitive information flows in the app against those flows learned from trusted apps grouped under the same topic. In the evaluation, information flow is learned from 11,796 trusted apps. We then checked for anomalies in 596 new (benign) apps and identified 2 previously-unknown vulnerable apps related to anomalous flows. We also analyzed 18 malware apps and found anomalies in 6 of them.</p></div> </div>
+<h2>SESSION: Student research competition madness</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665809" title="Get the Full Text from the ACM Digital Library">Identifying architectural technical debt in Android applications through automated compliance checking</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Roberto Verdecchia</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>By considering the fast pace at which mobile applications need to evolve, Architectural Technical Debt results to be a crucial yet implicit factor of success. In this research we present an approach to automatically identify Architectural Technical Debt in Android applications. The approach takes advantage of architectural guidelines extraction and modeling, architecture reverse engineering, and compliance checking. As future work, we plan to fully automate the process and empirically evaluate it via large-scale experiments.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665800" title="Get the Full Text from the ACM Digital Library">Programming support for data intensive distributed mobile applications at the edge</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Breno Dantas Cruz</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Mobile, IoT, and wearable devices have been transitioning from passive consumers of remote data to active generators of massive amounts of data. Mobile apps often need to move data, generated on one device, to other nearby devices for processing. For example, when reading its wearer's health vitals, a health monitoring app on a wearable device needs to transfer the data to the wearer's smartphone for display and analysis. This local processing of data by means of nearby computing resources has been promoted as a solution to network bandwidth bottlenecks, and commonly referred to as edge computing. Despite the critical dependence of edge computing on the device-to-device data sharing functionality, its mainstream implementations introduce low-level and hard-to-maintain code into the mobile codebase. To address this problem, this research introduces Remote ICC (RICCi), a novel middleware framework that provides programming support for data-intensive mobile applications at the edge, thereby reconciling programming convenience and performance efficiency. RICCi builds upon the native Android Inter-Component Communication (ICC) to simultaneously support seamless and efficient inter-device data sharing via a convenient and familiar programming model. To reach these design objectives, RICCi innovates in the middleware space by offering distributed programming abstractions that are data-oriented rather than procedure-oriented, thereby elevating latency into a first-class design concern for developing distributed mobile apps.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665801" title="Get the Full Text from the ACM Digital Library">Classifying code comments in Java mobile applications</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Luca Pascarella</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Developers adopt code comments for different reasons such as document source codes or change program flows. Due to a variety of use scenarios, code comments may impact on readability and maintainability. In this study, we investigate how developers of 5 open-source mobile applications use code comments to document their projects. Additionally, we evaluate the performance of two machine learning models to automatically classify code comments. Initial results show marginal differences between desktop and mobile applications.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665802" title="Get the Full Text from the ACM Digital Library">Improving Android permissions models for increased user awareness and security</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Jeffrey Palmerino</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Determining how to make users more aware of the permissions used in their favorite apps is one of the largest challenges facing mobile developers today. Research has shown that the less aware a user is, the less secure they feel while using the app. Unfortunately, this same research has shown that users are not well informed of the permissions their apps use, leading to many users feeling insecure. This makes us ask, how can users become more informed about the permissions their apps use so they can feel more secure?</p> <p>To better understand this question, we examined the effects of the previous and current Android permissions models, as well as our proposed permissions model through an in person study. Our primary findings were I) Our proposed permissions model makes users significantly more secure than both Android models. II) Runtime based permissions models make users significantly more informed than install-time based models.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665803" title="Get the Full Text from the ACM Digital Library">Does source code quality reflect the ratings of apps?</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Gemma Catolino</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In the past, bad code quality has been associated with higher bugproneness. At the same time, the main reason why mobile users negatively rate an app is due to the presence of bugs leading to crashes. In this paper, we preliminarily investigate the extent to which code quality metrics can be exploited to predict the commercial success of mobile apps. Key results suggest the existence of a relation between code quality and commercial success; We found that inheritance and information hiding metrics represent important indicators and therefore should be carefully monitored by developers.</p></div> </div>
+<h2>SESSION: Permissiveness</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665804" title="Get the Full Text from the ACM Digital Library">An investigation into Android run-time permissions from the end users' perspective</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Gian Luca Scoccia</li>
+<li class="nameList">Stefano Ruberto</li>
+<li class="nameList">Ivano Malavolta</li>
+<li class="nameList">Marco Autili</li>
+<li class="nameList Last">Paola Inverardi</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>To protect the privacy of end users from intended or unintended malicious behaviour, the Android operating system provides a permissions-based security model that restricts access to privacy-relevant parts of the platform. Starting with Android 6, the permission system has been revamped, moving to a run-time model. Users are now prompted for confirmation when an app attempts to access a restricted part of the platform.</p> <p>We conducted a large-scale empirical study to investigate how end users perceive the new run-time permission system of Android, collecting and inspecting over 4.3 million user reviews about 5,572 apps published in the Google Play Store. Among them, we identified, classified, and analyzed 3,574 permission-related reviews, employing machine learning and Natural Language Processing techniques. Out of the permission-related reviews, we determined recurring points made by users about the new permission system and classified them into a taxonomy. Results of our analysis suggest that, even with the new system, permission-related issues are widespread, with 8% of collected apps having user reviews with negative comments about permissions. We identify a number of points for improvement in the Android run-time permission system, and provide recommendations for future research.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665815" title="Get the Full Text from the ACM Digital Library">Investigating user perception and comprehension of Android permission models</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Anthony Peruma</li>
+<li class="nameList">Jeffrey Palmerino</li>
+<li class="nameList Last">Daniel E. Krutz</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Do you know the permissions your favorite apps use? You probably don't, and you aren't alone. Everyone seemingly talks about how important app security and privacy is to them, but research has shown that users are generally not well informed about the permissions their apps use. This leads to serious ramifications for security, privacy and user perception (rating) of an app. Understanding the current Android permission model and how it can be improved offers significant benefits for both developers and users.</p> <p>To better understand user perception of the previous, current and a new proposed permission model, we conducted an in-person study involving 185 participants. Our primary findings include I) The current Android runtime model does not make users feel more secure in comparison with the older install-time model. II) Our proposed model is beneficial in helping users feel more secure. III) There is no statistically significant difference between the user ratings given to the apps using the different permissions models. IV) Runtime permission models are significantly beneficial in helping users to recall the requested permissions. V) We found that users were generally well informed about what the requested permissions meant, but age played a significant factor in reducing how informed users were.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665816" title="Get the Full Text from the ACM Digital Library">Automated detection and repair of incompatible uses of runtime permissions in Android apps</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Malinda Dilhara</li>
+<li class="nameList">Haipeng Cai</li>
+<li class="nameList Last">John Jenkins</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The runtime permission model of Android enhances security yet also constitutes a source of incompatibility issues that impedes the productivity of mobile developers. This paper presents a novel analysis that detects the incompatible permission uses in a given app and repairs them when found, hence automatically adapting the app to the runtime permission model. The key approach is to check and enforce the app's conformance to the runtime permission use protocol through static control flow analysis and bytecode transformation. We implemented our technique as an open-source tool, ARPDROID, and initially evaluated it on 20 incompatible and 3 compatible real-world apps, assisted by manual ground truth and verification. Our results show that ARPDROID achieved 100% detection accuracy, 90% repair success rate, and 91.3% overall adaptation success rate at an average time cost of about two minutes.</p></div> </div>
+<h2>POSTER SESSION: Poster &#38; tool demo madness</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665817" title="Get the Full Text from the ACM Digital Library">TYDR: track your daily routine. Android app for tracking smartphone sensor and usage data</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Felix Beierle</li>
+<li class="nameList">Vinh Thuy Tran</li>
+<li class="nameList">Mathias Allemand</li>
+<li class="nameList">Patrick Neff</li>
+<li class="nameList">Winfried Schlee</li>
+<li class="nameList">Thomas Probst</li>
+<li class="nameList">R&#252;diger Pryss</li>
+<li class="nameList Last">Johannes Zimmermann</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We present the Android app TYDR (Track Your Daily Routine) which tracks smartphone sensor and usage data and utilizes standardized psychometric personality questionnaires. With the app, we aim at collecting data for researching correlations between the tracked smartphone data and the user's personality in order to predict personality from smartphone data. In this paper, we highlight our approaches in addressing the challenges in developing such an app. We optimize the tracking of sensor data by assessing the trade-off of size of data and battery consumption and granularity of the stored information. Our user interface is designed to incentivize users to install the app and fill out questionnaires. TYDR processes and visualizes the tracked sensor and usage data as well as the results of the personality questionnaires. When developing an app that will be used in psychological studies, requirements posed by ethics commissions / institutional review boards and data protection officials have to be met. We detail our approaches concerning those requirements regarding the anonymized storing of user data, informing the users about the data collection, and enabling an opt-out option. We present our process for anonymized data storing while still being able to identify individual users who successfully completed a psychological study with the app.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665818" title="Get the Full Text from the ACM Digital Library">Mobicomonkey: context testing of Android apps</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Amit Seal Ami</li>
+<li class="nameList">Md. Mehedi Hasan</li>
+<li class="nameList">Md. Rayhanur Rahman</li>
+<li class="nameList Last">Kazi Sakib</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The functionality of many mobile applications is dependent on various contextual, external factors. Depending on unforeseen scenarios, mobile apps can even malfunction or crash. In this paper, we have introduced <i>MobiCoMonkey</i> - automated tool that allows a developer to test app against custom or auto generated contextual scenarios and help detect possible bugs through the emulator. Moreover, it reports the connection between the bugs and contextual factors so that the bugs can later be reproduced. It utilizes the tools offered by Android SDK and logcat to inject events and capture traces of the app execution.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665819" title="Get the Full Text from the ACM Digital Library">ICC-inspect: supporting runtime inspection of Android inter-component communications</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">John Jenkins</li>
+<li class="nameList Last">Haipeng Cai</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We present ICC-INSPECT, a tool for understanding Android app behaviors exhibited at runtime via inter-component communication (ICC). Through lightweight Intent profiling, ICC-INSPECT streams run-time ICC information to a dynamic visualization framework which depicts interactive ICC call graphs along with informative ICC statistics. This framework allows users to examine the details of a specific fragment of execution in the context of the holistic ICC view of an app. Through its ability to concisely map in a visual format the complex ICC mechanisms of any Android app, ICC-INSPECT facilitates behavior understanding and debugging of Android programs. The open-source release, documentation, and a video demo of ICC-INSPECT are available here.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665810" title="Get the Full Text from the ACM Digital Library">Analyzing the user interface of Android apps</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Konstantin Kuznetsov</li>
+<li class="nameList">Vitalii Avdiienko</li>
+<li class="nameList">Alessandra Gorla</li>
+<li class="nameList Last">Andreas Zeller</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>When interacting with Android apps, users may not always get what they expect. For instance, when clicking on a button labeled "<i>upload picture</i>", the app may actually leak the user's location while uploading photos to a cloud service. In this paper we present BACKSTAGE, a static analysis framework that binds UI elements to their corresponding callbacks, and further extracts <i>actions</i> in the form of Android sensitive API calls that may be triggered by events on such UI elements. We illustrate the inner workings of the analysis implemented by BACKSTAGE and then compare it against similar frameworks.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665811" title="Get the Full Text from the ACM Digital Library">HR-auth: heart rate data authentication using consumer wearables</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Alfredo J. Perez</li>
+<li class="nameList">Kevin G. Rivera-Morales</li>
+<li class="nameList">Miguel A. Labrador</li>
+<li class="nameList Last">Idalides Vergara-Laurens</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We study the authentication of the heart rate (HR) signal and we present HR-Auth, an algorithm to authenticate HR data using two independent wearable sensors. We describe and evaluate the proposed algorithm.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665812" title="Get the Full Text from the ACM Digital Library">API for power-aware application design on mobile systems</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">N. Peters</li>
+<li class="nameList">S. Park</li>
+<li class="nameList">D. Clifford</li>
+<li class="nameList">S. Kyostila</li>
+<li class="nameList">R. McIlroy</li>
+<li class="nameList">B. Meurer</li>
+<li class="nameList">H. Payer</li>
+<li class="nameList Last">S. Chakraborty</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Thanks to the performance improvements in hardware and software architectures, more applications, which used to run on desktop computers, are now being migrated to mobile devices. However, this entails increased power consumption, that necessitates more effective runtime power management techniques due to battery capacity constraints. Such techniques should reduce power consumption while satisfying user-perceived requirements, such as frame rate, and response times. A major hurdle in incorporating such techniques into real products is that user-perceived requirements are only visible to user applications, but not accessible by the power managers residing in the operating system. In this paper, we show that better power management is achievable by passing such information to the OS, and propose an API for that purpose.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665813" title="Get the Full Text from the ACM Digital Library">A performance evaluation of cross-platform mobile application development approaches</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Xiaoping Jia</li>
+<li class="nameList">Aline Ebone</li>
+<li class="nameList Last">Yongshan Tan</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>There is a wide range of different approaches and tool for cross-platform mobile application development. We studied the performance characteristic of the mobile applications developed with a number of common approaches and tools for mobile application development, including the native SDK's of Google Android and Apple iOS, and cross-platform tools of Apache Cordova, Microsoft Xamarin, and Appcelerator Titanium. The data reveal insights to the designs and trade-offs of different approaches and offer guidance in selecting the appropriate approaches based on their respective performance characteristics.</p></div> </div>
+<h2>SESSION: Helpfulness</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665814" title="Get the Full Text from the ACM Digital Library">Intent to share: enhancing Android inter-component communication for distributed devices</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Breno Dantas Cruz</li>
+<li class="nameList Last">Eli Tilevich</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Data-intensive applications in diverse domains, including video streaming, gaming, and health monitoring, increasingly require that mobile devices directly share data with each other. However, developing distributed data sharing functionality introduces low-level, brittle, and hard-to-maintain code into the mobile codebase. To reconcile the goals of programming convenience and performance efficiency, we present a novel middleware framework that enhances the Android platform's component model to support seamless and efficient inter-device data sharing. Our framework provides a familiar programming interface that extends the ubiquitous Android Inter-Component Communication (ICC), thus lowering the learning curve. Unlike middleware platforms based on the RPC paradigm, our programming abstractions require that mobile application developers think through and express explicitly data transmission patterns, thus treating latency as a first-class design concern. Our performance evaluation shows that using our framework incurs little performance overhead, comparable to that of custom-built implementations. By providing reusable programming abstractions that preserve component encapsulation, our framework enables Android devices to efficiently share data at the component level, providing powerful building blocks for the development of emerging distributed mobile applications.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665825" title="Get the Full Text from the ACM Digital Library">Programming support for sharing resources across heterogeneous mobile devices</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Zheng Song</li>
+<li class="nameList">Sanchit Chadha</li>
+<li class="nameList">Antuan Byalik</li>
+<li class="nameList Last">Eli Tilevich</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Modern mobile users commonly use multiple heterogeneous mobile devices, including smartphones, tablets, and wearables. Enabling these devices to seamlessly share their computational, network, and sensing resources has great potential benefit. Sharing resources across collocated mobile devices creates mobile device clouds (MDCs), commonly used to optimize application performance and to enable novel applications. However, enabling heterogeneous mobile devices to share their resources presents a number of difficulties, including the need to coordinate and steer the execution of devices with dissimilar network interfaces, application programming models, and system architectures. In this paper, we describe a solution that systematically empowers heterogeneous mobile devices to seamlessly, reliably, and efficiently share their resources. We present a programming model and runtime support for heterogeneous mobile device-to-device resource sharing. Our solution comprises a declarative domain-specific language for device-to-device cooperation, supported by a powerful runtime infrastructure. we evaluated our solution by conducting a controlled user study and running performance/energy efficiency benchmarks. The evaluation results indicate that our solution can become a practical tool for enhancing the capabilities of modern mobile applications by leveraging the resources of nearby mobile devices.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665826" title="Get the Full Text from the ACM Digital Library">Code offloading solutions for audio processing in mobile healthcare applications: a case study</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Pablo Sanabria</li>
+<li class="nameList">Jose I. Benedetto</li>
+<li class="nameList">Andres Neyem</li>
+<li class="nameList">Jaime Navon</li>
+<li class="nameList Last">Christian Poellabauer</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In this paper, we present a real-life case study of a mobile healthcare application that leverages code offloading techniques to accelerate the execution of a complex deep neural network algorithm for analyzing audio samples. Resource-intensive machine learning tasks take a significant time to complete on high-end devices, while lower-end devices may outright crash when attempting to run them. In our experiments, offloading granted the former a 3.6x performance improvement, and up to 80% reduction in energy consumption; while the latter gained the capability of running a process they originally could not.</p></div> </div>
+<h2>SESSION: Inquisitiveness</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665827" title="Get the Full Text from the ACM Digital Library">Automation of Android applications functional testing using machine learning activities classification</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Ariel Rosenfeld</li>
+<li class="nameList">Odaya Kardashov</li>
+<li class="nameList Last">Orel Zang</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Following the ever-growing demand for mobile applications, researchers are constantly developing new test automation solutions for mobile developers. However, researchers have yet to produce an automated functional testing approach, resulting in many developers relying on a resource consuming manual testing. In this paper, we present a novel approach for the automation of functional testing in mobile software by leveraging machine learning techniques and reusing generic test scenarios. Our approach aims at relieving some of the manual functional testing burden by automatically classifying each of the application's screens to a set of common screen behaviors for which generic test scripts can be instantiated and reused. We empirically demonstrate the potential benefits of our approach in two experiments: First, using 26 randomly selected Android applications, we show that our approach can successfully instantiate and reuse generic functional tests and discover functional bugs. Second, in a human study with two experienced human mobile testers, we show that our approach can automatically cover a large portion of the human testers' work suggesting a significant potential relief in the manual testing efforts.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665828" title="Get the Full Text from the ACM Digital Library">Guiding app testing with mined interaction models</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Nataniel P. Borges, Jr.</li>
+<li class="nameList">Maria G&#243;mez</li>
+<li class="nameList Last">Andreas Zeller</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Test generators for graphical user interfaces must constantly choose which UI element to interact with, and how. We <i>guide</i> this choice by <i>mining</i> associations between UI elements and their interactions from the most common applications. Once mined, the resulting <i>UI interaction model</i> can be easily applied to new apps and new test generators. In our experiments, the mined interaction models lead to code coverage improvements of 19.41% and 43.03% on average on two state-of-the-art tools (DROIDMATE and DROIDBOT), when executing the same number of actions.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665829" title="Get the Full Text from the ACM Digital Library">Self-reported activities of Android developers</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Luca Pascarella</li>
+<li class="nameList">Franz-Xaver Geiger</li>
+<li class="nameList">Fabio Palomba</li>
+<li class="nameList">Dario Di Nucci</li>
+<li class="nameList">Ivano Malavolta</li>
+<li class="nameList Last">Alberto Bacchelli</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>To gain a deeper empirical understanding of how developers work on Android apps, we investigate self-reported activities of Android developers and to what extent these activities can be classified with machine learning techniques. To this aim, we firstly create a taxonomy of self-reported activities coming from the manual analysis of 5,000 commit messages from 8,280 Android apps. Then, we study the frequency of each category of self-reported activities identified in the taxonomy, and investigate the feasibility of an automated classification approach. Our findings can inform be used by both practitioners and researchers to take informed decisions or support other software engineering activities.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665820" title="Get the Full Text from the ACM Digital Library">How do Android operating system updates impact apps?</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Guowei Yang</li>
+<li class="nameList">Jeffrey Jones</li>
+<li class="nameList">Austin Moninger</li>
+<li class="nameList Last">Meiru Che</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Mobile devices are practically ubiquitous in today's society. People are increasingly dependent on mobile devices, for uses such as computation, navigation, storing private information, and web browsing among others. Thus, developers are required to produce high quality mobile apps. However, mobile operating systems are frequently updated, which can affect the functionality of mobile apps and hinder developers' ability to consistently provide high quality apps across multiple operating systems versions. In this paper, we introduce a novel approach for automatically locating the part of Android apps that have been affected by an update of the underlying Android mobile operating system, and statistically analyzing the impact of the update. Preliminary evaluation shows that the overall impact of an operating system update is low.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665821" title="Get the Full Text from the ACM Digital Library">Detecting no-sleep energy bugs using reference counted variables</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Scott Hall</li>
+<li class="nameList">Suman Nataraj</li>
+<li class="nameList Last">Dae-Kyoo Kim</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Mobile devices have become pervasive in today's society. The range of their use has been constantly increasing, which requires more computing capability. As the computing capability of mobile devices grow, so does the need for effective power management. There has been some work on reducing the power consumption of mobile applications by detecting energy bugs. In this work, we address no-sleep energy bugs with respect to semaphore wakelocks in consideration of race conditions with synchronization using reaching definitions and parallel flow graphs. We demonstrate the approach through a case example.</p></div> </div>
+<h2>SESSION: Adaptiveness</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665822" title="Get the Full Text from the ACM Digital Library">LIQDROID: towards seamlessly distributed Android applications</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Luciano Baresi</li>
+<li class="nameList">Anita Imani</li>
+<li class="nameList">Cristina Fr&#224;</li>
+<li class="nameList Last">Massimo Valla</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Mobile devices have changed the way we live, but most applications are still conceived for isolated devices and do not allow the user to take advantage of the different devices (e.g., phones, cars, watches, televisions, etc.) opportunistically, efficiently, and dynamically. Multi-device interactions are currently mainly conceived as independent cooperating applications, which then require the a-priori definition of the set of communicating elements, along with the responsibility carried out by each participant. This paper tries to flip the perspective and fosters the idea of <i>liquid</i>, loosely coupled distributed Android applications by extending intent-based app communication, usually limited to the same device, to proximal devices. While changing the operating system would have been too expensive, the concept has been implemented through LIQDROID, a middleware that eases the creation of distributed Android applications and oversees their execution on a dynamically changing set of Android devices. Specifically, LIQDROID is an Android service that both augments each single Android device and manages their cooperation. Some example applications demonstrate the main characteristics of LIQDROID and provide interesting insights for possible future developments.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665823" title="Get the Full Text from the ACM Digital Library">Towards a framework for proximity-based hybrid mobile applications</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Valerio Panzica La Manna</li>
+<li class="nameList Last">Frank Pasveer</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Despite the increasing availability of IoT devices and technology, the current user interaction requires users to download dedicated ad-hoc mobile apps, each of these remotely monitoring and controlling a limited set of IoT devices. In the near future, with billions of deployed IoT devices, this approach will not scale since users cannot be expected to download different apps for every place they visit or every device they interact with.</p> <p>To overcome such limitation, this paper presents the vision, the risks, and opportunities, of the development and deployment of future hybrid proximity services, as a paradigm shift for an intuitive interaction between users and the surrounding IoT environment. Hybrid proximity services are user-facing mobile applications developed and configured for specific locations and automatically installed on user mobile devices when the user is in their proximity and without the need of explicit download. A proximity service enabled environment can directly provide the user with the right service for the right place, and automatically instructs the user device on how to interact with the surrounding IoT devices.</p></div> </div>
+<h2>SESSION: Resourcefulness</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665824" title="Get the Full Text from the ACM Digital Library">Automatic inference of Java-to-swift translation rules for porting mobile applications</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Kijin An</li>
+<li class="nameList">Na Meng</li>
+<li class="nameList Last">Eli Tilevich</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>A native cross-platform mobile app has multiple platform-specific implementations. Typically, an app is developed for one platform and then ported to the remaining ones. Translating an app from one language (e.g., Java) to another (e.g., Swift) by hand is tedious and error-prone, while automated translators either require manually defined translation rules or focus on translating APIs. To automate the translation of native cross-platform apps, we present J2SINFERER, a novel approach that iteratively infers syntactic transformation rules and API mappings from Java to Swift. Given a software corpus in both languages, J2SLNFERER first identifies the syntactically equivalent code based on braces and string similarity. For each pair of similar code segments, J2SLNFERER then creates syntax trees of both languages, leveraging <i>the minimalist domain knowledge of language correspondence (e.g., operators and markers)</i> to iteratively align syntax tree nodes, and to infer both syntax and API mapping rules. J2SLNFERER represents inferred rules as string templates, stored in a database, to translate code from Java to Swift. We evaluated J2SLNFERER with four applications, using one part of the data to infer translation rules, and the other part to apply the rules. With 76% in-project accuracy and 65% cross-project accuracy, J2SLNFERER outperforms in accuracy j2swift, a state-of-the-art Java-to-Swift conversion tool. As native cross-platform mobile apps grow in popularity, J2SLNFERER can shorten their time to market by automating the tedious and error prone task of source-to-source translation.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665835" title="Get the Full Text from the ACM Digital Library">Development frameworks for mobile devices: a comparative study about energy consumption</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Leonardo Corbalan</li>
+<li class="nameList">Juan Fernandez</li>
+<li class="nameList">Alfonso Cuiti&#241;o</li>
+<li class="nameList">Lisandro Delia</li>
+<li class="nameList">Germ&#225;n C&#225;seres</li>
+<li class="nameList">Pablo Thomas</li>
+<li class="nameList Last">Patricia Pesado</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The development frameworks and the power efficiency in mobile devices have been studied separately. This paper deals with both topics together to determine how the selection of a development framework can impact on energy consumption of a mobile application. The focus is on applications with high processing load, audio and video playback. The results were analyzed and conclusions were reached.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665836" title="Get the Full Text from the ACM Digital Library">ANEL: robust mobile network programming using a declarative language</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Xinxin Jin</li>
+<li class="nameList">William G. Griswold</li>
+<li class="nameList Last">Yuanyuan Zhou</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The dynamics of mobile networks make it difficult for mobile apps to deliver a seamless user experience. In particular, intermittent connections and weak signals pose challenges for app developers. While recent network libraries have simplified network programming, much expert knowledge is still required. However, most mobile app developers are relative novices and tend to assume a reliable network connection, paying little attention to handling network errors in programming until users complain and leave bad reviews.</p> <p>We argue that the difficulty of avoiding such software defects can be mitigated through an annotation language that allows developers to declaratively state desired and actual properties of the application, largely without reference to fault-tolerant concepts, much less implementation. A pre-compiler can process these annotations, replacing calls to standard networking libraries with customized calls to a specialized library that enhances the reliability. This paper presents ANEL, a declarative language and middleware for Android that enables non-experts. We demonstrate the expressiveness and practicability of ANEL annotation through case studies and usability studies on real-world networked mobile apps. We also show that the ANEL middleware introduces negligible runtime performance overhead.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665837" title="Get the Full Text from the ACM Digital Library">Beyond web/native/hybrid: a new taxonomy for mobile app development</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Robin Nunkesser</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Currently, mobile operating systems are dominated by the duopoly of iOS and Android. App projects that intend to reach a high number of customers need to target these two platforms foremost. However, iOS and Android do not have an officially supported common development framework. Instead, different development approaches are available for multi-platform development.</p> <p>The standard taxonomy for different development approaches of mobile applications is: Web Apps, Native Apps, Hybrid Apps. While this made perfect sense for iPhone development, it is not accurate for Android or cross-platform development, for example.</p> <p>In this paper, a new taxonomy is proposed. Based on the fundamental difference in the tools and programming languages used for the task, six different categories are proposed for everyday use: Endemic Apps, Web Apps, Hybrid Web Apps, Hybrid Bridged Apps, System Language Apps, and Foreign Language Apps. In addition, when a more precise distinction is necessary, a total of three main categories and seven subcategories are defined.</p> <p>The paper also contains a short overview of the advantages and disadvantages of the approaches mentioned.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665838" title="Get the Full Text from the ACM Digital Library">Vision: improved development of mobile ehealth applications</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">John Grundy</li>
+<li class="nameList">Mohamed Abdelrazek</li>
+<li class="nameList Last">Maheswaree Kissoon Curumsing</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Mobile eHealth applications have become very popular, not just using mobile phones but also wearables, mobile AR/VR, and increasingly "smart houses" and "smart care" sensing and interaction facilities. However, a large majority of these solutions, despite early promise, suffer from a range of challenges including effort to develop, deploy and maintain; lack of end user acceptance; integration with other health systems; difficulty in tailoring to divergent users; lack of adequate feedback to developers; lack of sustainable adoption; and ultimately lack of success. In this MobileSoft vision paper we characterise these key issues from a Software Engineering perspective and present and discuss some approaches to mitigating them, building on our and others prior work.</p></div> </div>
+<h2>SESSION: Usefulness</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665839" title="Get the Full Text from the ACM Digital Library">P2A: a tool for converting pixels to animated mobile application user interfaces</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Siva Natarajan</li>
+<li class="nameList Last">Christoph Csallner</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Developing mobile applications is typically a labor-intensive process in which software engineers manually re-implement in code screen designs, inter-screen transitions, and in-screen animations developed by user interface and user experience experts. Other engineering domains have used computer vision techniques to automate human perception and manual data entry tasks. The P2A tool adopts computer vision techniques for developing animated mobile applications. P2A infers from mobile application screen designs the user interface portion of an application's source code and other assets that are ready to be compiled and executed on a mobile phone. Among others, inferred mobile applications contain inter-screen transitions and in-screen animations. In our experiments on screenshots of 30 highly-ranked third-party Android applications, the P2A-generated application user interfaces exhibited high pixel-to-pixel similarity with their input screenshots. P2A took an average of 26 seconds to infer in-screen animations.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665830" title="Get the Full Text from the ACM Digital Library">GUIfetch: supporting app design and development through GUI search</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Farnaz Behrang</li>
+<li class="nameList">Steven P. Reiss</li>
+<li class="nameList Last">Alessandro Orso</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>A typical way to design and develop a mobile app is to sketch the graphical user interfaces (GUIs) for the different screens in the app and then create actual GUIs from these sketches. Doing so involves identifying which layouts to use, which widgets to add, and how to configure and connect the different pieces of the GUI. To help with this difficult and time-consuming task, we propose GUIFetch, a technique that takes as input the sketch for an app and leverages the growing number of open source apps in public repositories to identify apps with GUIs and transitions that are similar to those in the provided sketch. GUIFetch first searches public repositories to find potential apps using keyword matching. It then builds models of the identified apps' screens and screen transitions using a combination of static and dynamic analyses and computes a similarity metric between the models and the provided sketch. Finally, GUIFetch ranks the identified apps (or parts thereof) based on their computed similarity value and produces a visual ranking of the results together with the code of the corresponding apps. We implemented GUIFetch for Android apps and evaluated it through user studies involving different types of apps.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665831" title="Get the Full Text from the ACM Digital Library">Acceptance testing of mobile applications: automated emotion tracking for large user groups</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Simon Andr&#233; Scherr</li>
+<li class="nameList">Frank Elberzhager</li>
+<li class="nameList Last">Konstantin Holl</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Mobile applications1 are nowadays used by everyone. The success of a mobile app highly depends on its user acceptance, which must be checked as part of quality assurance. However, such tests are costly because they usually include testers using the app manually. An obvious solution for improving efficiency is to automate certain test steps. In this article, we present an approach that tracks user emotions automatically to support acceptance testing. Furthermore, we consider user motivation in a positive way with gamification solutions and focus on data privacy aspects in order to gain the trust of potential test users.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665832" title="Get the Full Text from the ACM Digital Library">Vision: mobile ehealth learning and intervention platform</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Mohamed Abdelrazek</li>
+<li class="nameList">Amani Ibrahim</li>
+<li class="nameList">Andrew Cain</li>
+<li class="nameList Last">John Grundy</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Face-to-face health educational and intervention programs are helpful in addressing mental and physical illness challenges in focused groups. However, these programs are expensive, resource-intensive and struggle with scalability and reachability, leading to limited take-up and short-term impact. Digital Health Intervention (DHI) programs incorporate the use of technology - mobile, web, wearables, virtual and augmented reality - to address these limitations while being more cost-effective. DHIs have shown major success in improving physical and mental health outcomes for the general public as well as reducing adverse outcomes or high-risk groups. However, it is still very challenging and expensive to design and run high quality mobile-based DHI programs, in part due to the lack of technical skills of researchers in this field. Our proposed mobile eHealth Learning and Intervention Platform (eHeLP) aims to address these challenges with a novel approach that allows health researchers to focus on their studies, and participants to have access to multiple health programs that meet their needs. The platform caters for identified stakeholders in the DHI field and encourages the development of a new health-tech industry. We present our vision eHeLP, why this idea is worth further research, risks we perceive, and next steps.</p></div> </div>
+</div>
+</div>
+</body>
+</html>

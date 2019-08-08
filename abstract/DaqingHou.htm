@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+
+Although they are intended to support and encourage reuse,
+object-oriented application frameworks are difficult to use.  The
+architecture and implementation details of frameworks, because of
+their size and complexity, are rarely fully understood.  Instead,
+faced with a framework problem, developers must somehow learn just
+enough about the parts of the framework required for their task and
+ask for assistance or muddle through using a trial-and-error approach.
+In many cases, they misuse the framework by not learning what the
+framework designer had in mind as the proper solution to their
+problem.
+<p>
+This thesis investigates both the feasibility and the effectiveness of
+tools support for the problem: The idea is to formalize the patterns
+to which the code structure of the application should conform, and
+thereafter detect violations of such patterns with an automated
+checker program.  To capture the know-how knowledge about frameworks
+use, we introduce the notion of <i>framework constraints</i>:
+framework constraints are rules that frameworks impose on the
+<i>code</i> of framework-based applications.
+<p>
+The tool consists of a specification language and an associated
+checker.  The specification language, FCL (Framework Constraints
+Language), is defined to formally specify framework constraints.  The
+semantics of FCL is based on a first-order logic extended with set and
+sequence operations.  Essentially, framework constraints can be
+regarded as framework-specific typing rules conveyed by FCL
+specifications and thus can be enforced by techniques analogous to
+those of conventional type checking.
+<p>
+Several case studies have been conducted to evaluate the approach.
+These include a part of the MFC (Microsoft Foundation Classes)
+framework, the law of Demeter, Scott Meyers' C++ guidelines, and the
+Observer design pattern.  Lessons in terms of both the strengths and
+the limitations of FCL are reported.
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+This dissertation attacks the well-known problem of path-imprecision in static program analysis. Our starting point is an existing static program analysis that over-approximates the execution paths of the analyzed program. We then make this over-approximating program analysis more precise for automatic testing in an object-oriented programming language. We achieve this by combining the over-approximating program analysis with usage-observing and under-approximating analyses. More specifically, we make the following contributions.
+<p>
+We present a technique to eliminate language-level unsound bug warnings produced by an execution-path-over-approximating analysis for object-oriented programs that is based on the weakest precondition calculus. Our technique post-processes the results of the over-approximating analysis by solving the produced constraint systems and generating and executing concrete test-cases that satisfy the given constraint systems. Only test-cases that confirm the results of the over-approximating static analysis are presented to the user. This technique has the important side-benefit of making the results of a weakest-precondition based static analysis easier to understand for human consumers. We show examples from our experiments that visually demonstrate the difference between hundreds of complicated constraints and a simple corresponding JUnit test-case.
+<p>
+Besides eliminating language-level unsound bug warnings, we present an additional technique that also addresses user-level unsound bug warnings. This technique pre-processes the testee with a dynamic analysis that takes advantage of actual user data. It annotates the testee with the knowledge obtained from this pre-processing step and thereby provides guidance for the over-approximating analysis.
+<p>
+We also present an improvement to dynamic invariant detection for object-oriented programming languages. Previous approaches do not take behavioral subtyping into account and therefore may produce inconsistent results, which can throw off automated analyses such as the ones we are performing for bug-finding.
+<p>
+Finally, we address the problem of unwanted dependencies between test-cases caused by global state. We present two techniques for efficiently re-initializing global state between test-case executions and discuss their trade-offs.
+<p>
+We have implemented the above techniques in the JCrasher, Check 'n' Crash, and DSD-Crasher tools and present initial experience in using them for automated bug finding in real-world Java programs.
+
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+Modern software development is highly reliant on reusable APIs. APIs often define usage protocols that API clients must follow in order for code implementing the API to work correctly. Loosely speaking, API protocols define legal sequences of method calls on objects. In this work, protocols are defined based on typestates. Typestates leverage the familiar intuition of abstract state machines to define usage protocols.
+<p>
+The goal of this work is to give developers comprehensive help in defining and following API protocols in object-oriented software. Two key technical contributions enable the proposed approach: (1) Object state spaces are defined with hierarchical state refinements. Hierarchical state spaces make specifications more succinct, elegantly deal with subtyping, express uncertainty, and enable more precise reasoning about aliasing. (2) A novel abstraction, called access permissions, combines typestate and aliasing information.Access permissions capture developers' design intent regarding API protocols and enable sound modular verification of API protocol compliance while allowing a great deal of flexibility in aliasing objects.
+<p>
+This dissertation demonstrates that typestate-based protocols with state refinement and access permissions can be used for automated, static, modular enforcement of API protocols in practical object-oriented software. Formal and empirical results show that the presented approach captures common API protocols succinctly, allows sound modular checking of protocol compliance in object-oriented code, can be automated in tools for mainstream programming languages that impose low annotation burden on developers, and can check API protocols in off-the-shelf software with higher precision than previous approaches.
+<p>
+This work puts automatic API protocol compliance checking within reach of being used in practice. It will enable rapid and correct use of APIs during initial construction and ensure that API clients and implementations remain consistent with the specified protocol during maintenance tasks.
+
+
+</div>
+</body>
+</html>

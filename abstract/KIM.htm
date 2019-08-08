@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">Finding and fixing software bugs is difficult, and many developers put 
+significant effort into finding and fixing them. A project's software change history records the change that introduces a bug and the change that subsequently fixes it.
+<P>
+
+This bug-introducing and bug-fix experience can be used to predict future bugs.
+<P>
+This dissertation presents two bug prediction algorithms that adaptively analyze a project'ss change history: bug cache and change classification. The basic assumption of the bug cache approach is that the bugs do not occur in isolation, but rather in a burst of several related bugs. The bug cache exploits this locality by caching locations that are likely to have bugs. By consulting the bug cache, a developer can detect locations likely to be fault prone. This is useful for prioritizing verification and validation resources on the most bug prone files, functions, or methods. An evaluation of seven open source projects with more than 200,000 revisions shows that the bug cache selects 10% of the source code files; these files account for 73%-95% of future bugs.
+<P>
+
+The change classification approach learns from previous buggy change
+patterns using two machine learning algorithms, Naive Bayes and Support Vector
+Machine. After training on buggy change patterns, it predicts new unknown
+changes as either buggy or clean. As soon as changes are made, developers can use the predicted information to inspect the new changes, which are an average of 20 lines of code. After training on 12 open source projects, the change classification approach can, on average, classify buggy changes with 78% accuracy and 65% buggy change recall.
+<P>
+
+By leveraging project history and learning the unique bug patterns of each
+project, both approaches can be used to find locations of bugs. This information
+can be used to increase software quality and reduce software development cost.
+<P>
+
+
+
+</div>
+</body>
+</html>

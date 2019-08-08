@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+Making changes to software is a difficult task. Up to 70% of the effort in 
+the software process goes towards maintenance. This is mainly because programs 
+have poor structure (due to poor initial design, or due to repeated ad hoc 
+modifications) which makes them difficult to understand and modify. The focus 
+of this thesis is duplication in source code, which is a major cause of poor 
+structure in real programs. We make two contributions: (a) a
+novel program-slicing-based approach for detecting duplicated fragments in 
+source code, and (b) a pair of algorithms, one that works on a single selected 
+fragment of code, and the other that works on a group of matching fragments, 
+for making the fragment(s) easily extractable into a separate procedure.
+<p>
+The key, novel aspect of our duplication-detection approach is its ability to 
+detect "difficult" groups of matching fragments, i.e., groups in which 
+matching statements are not in the same order in all fragments, and groups 
+in which non-matching statements intervene between matching statements. 
+Our procedure-extraction algorithms are an advance over
+previous work in this area in two ways: they employ a range of 
+transformations, including code motion and duplication of predicates, to 
+handle a wide variety of difficult clone groups that arise in practice; and 
+they are the first, to our knowledge, to address the extraction of fragments 
+that contain exiting jumps (jumps from within the region containing the 
+fragment to locations outside that are not the "fall through" exit of the 
+region). We present experimental results, using implementations of our 
+duplication-detection algorithm and one of our extractability algorithms, 
+that indicate that our approaches are effective and useful in practice.
+</div>
+</body>
+</html>

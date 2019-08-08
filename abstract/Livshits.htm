@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+
+The landscape of security vulnerabilities has changed dramatically in the last several years. While buffer overruns and format string violations accounted for a large fraction of all exploited vulnerabilities in the 1990s, the picture started to change in the first decade of the new millennium. As Web-based applications became more prominent, familiar buffer overruns are now far outnumbered by Web application vulnerabilities such as SQL injections and cross-site scripting attacks. These vulnerabilities have been responsible for a multitude of attacks against large e-commerce sites, financial institutions and other sites, leading to millions of dollars in damages.
+<p>
+In this thesis, we describe the Griffin project, which provides a comprehensive static and runtime compiler-based solution to a wide range of Web application vulnerabilities. Our approach targets large real-life Web-based Java applications. Given a vulnerability description a static code checker is generated. The checker statically analyzes the code and produces vulnerability warnings. Alternatively, a specially instrumented, secured version of the original application bytecode is produced, which can be deployed on a standard application server alongside other applications.
+<p>
+To make our approach to vulnerability detection and prevention both extensible and user-friendly, vulnerability specifications are expressed in PQL, a Program Query Language. The initial PQL vulnerability specification is provided by the user, but the majority of the specification can be shared among multiple applications being analyzed. This is because most of the PQL specification is specific to the framework being used, such as Java J2EE, rather than the application.
+<p>
+The static checker generated based on the PQL specification finds vulnerabilities by analyzing the Web-based applications. The static approach is sound, which ensures that it finds all vulnerabilities captured by the specification in the statically analyzed code. We evaluate analysis features such as context-, object- and map sensitivity that help keep the number of false positives low.
+<p>
+Modern Java applications make an extensive use of runtime reflection; this is especially common in extensible applications that support plugins and extensions. Being oblivious to reflection in the process of call graph construction leads to large portions of the application being ignored. This thesis describes the first call graph construction algorithm to explicitly address the issue of reflection. When reflection is taken into account by our approach, the size of the resulting application call graph often increases many-fold.
+<p>
+Conservative static analysis provides an over-approximation of runtime behavior. As such, it is impossible to have a conservative static solution that is completely free of false positives, despite our efforts to improve static analysis precision. Therefore, as an alternative to static analysis, secured application executables can be automatically generated based on the same PQL vulnerability specification. As an alternative to terminating the Web application whenever an exploit is detected, vulnerability recovery rules may be provided as part of the PQL specification. Recovery allows injecting security into existing applications without sacrificing application availability. Finally, we show how static analysis can be used to significantly reduce the instrumentation overhead required for runtime protection.
+<p>
+Our experimental results show that Griffin provides effective and practical tools for finding and preventing security vulnerabilities. We were able to find a total of 98 security errors, and all but one of our 11 large real-life benchmark applications were vulnerable. Two vulnerabilities were located in commonly used libraries, thus subjecting applications using the libraries to potential vulnerabilities. Most of the security errors we reported were confirmed as exploitable vulnerabilities by their maintainers, resulting in more than a dozen code fixes. The static analysis reported false positives for only one of 11 applications we have analyzed. While the runtime overhead can be quite high for our runtime protection, information we compute statically allows us to reduce the number of necessary instrumentation points dramatically, reducing the dynamic overhead to below 10% in the majority of cases. Finally, our runtime system was able to recover from all exploits we performed against it in practice.
+</div>
+</body>
+</html>

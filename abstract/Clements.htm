@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">Debugging tools and certain language extensions need to observe and change
+programs as they run. Steppers, debuggers, and profilers all gather information
+about running programs. Stack inspection extracts runtime data to verify security
+properties.  Aspect-oriented-programming uses dynamic context to decide which
+code to evaluate.
+<P>
+
+Each of these needs to inspect control information.  The traditional solution
+in each case is to ``hard-wire'' low-level access to the inner machinery of the
+evaluator. As a result of this choice, these tools are fragile and often
+difficult to port.  This architecture also makes it extremely difficult to
+specify the meaning of these tools or language features in a high-level way.
+<P>
+
+Our thesis is that this Faustian compromise is unnecessary.  We can give these
+tools the information they need through a narrow and portable interface without
+binding them to a particular set of machine details.  Our dissertation supports
+this thesis with the introduction of \emph{continuation marks}, a language
+feature that allows programs to observe control information without exposing
+details of the evaluator's implementation, and a demonstration of their power.
+<P>
+
+
+
+
+</div>
+</body>
+</html>

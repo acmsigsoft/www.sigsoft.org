@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+Two decades ago, Mark Weiser advanced a vision of the future of computing technology. In his vision of ubiquitous computing, the computer of the future will be invisible. It will be integrated into everyday objects, pervasive throughout our physical environment. As his vision gained momentum in computer science research, it became clear that the big hurdle to turn his vision into reality would not be the development of miniaturised, embedded, wireless hardware (which is a goal we have already reached today), but rather the development of the software that needs to run on this ubiquitous network of invisible computers.
+<p>
+This dissertation investigates scalable software engineering techniques for ubiquitous computing. From a distributed systems perspective, ubiquitous computing applications are distributed across a so-called mobile ad hoc network: a computer network of mobile devices that communicate via wireless technology. The idiosyncratic properties of such networks drastically change the assumptions underlying our contemporary software engineering abstractions. This observation has formed the direct motivation for a new breed of programming languages based on the ambient-oriented programming paradigm.
+<p>
+The goal of ambient-oriented programming is to mould distributed object-oriented software technology as to make it fit the changing hardware characteristics of mobile ad hoc networks. Within the framework provided by this paradigm, we survey existing abstractions to coordinate distributed processes and examine how they cope with the hardware characteristics of mobile ad hoc networks. As we will point out, contemporary object-oriented distribution abstractions are unsuitable for these networks. Event-based communication, on the other hand, has proven to be the most scalable communication paradigm to date. As a consequence, a state-of-the-art object-oriented application must abandon the classic distributed object-oriented abstractions in favour of an event-based communication paradigm. However, integrating objects with events is not without issues, leading us to define the object-event impedance mismatch.
+<p>
+In order to resolve this impedance mismatch, we propose ambient references, a novel language abstraction for designating and communicating with objects distributed across a mobile ad hoc network. Ambient references unify the concepts underlying both object-oriented and event-driven remote communication by turning the event broker - which lies at the heart of an event-driven, publish/subscribe architecture - into a remote object reference. Unlike a classic remote object reference, which designates a single unique object, an ambient reference designates a volatile group of proximate objects. We contribute the design and implementation of ambient references in the context of AmbientTalk/2, a novel ambient-oriented programming language.
+</div>
+</body>
+</html>

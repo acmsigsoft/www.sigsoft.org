@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">Software is difficult and costly to modify correctly.  Automating tiresome mechanical tasks such as program restructuring is one approach to reducing the burden of software maintenance.  Several restructuring tools have been proposed and prototyped, all centered on the concept of meaning-preserving transformations similar in spirit to compiler optimizations.  Like optimizing compilers, these tools rely on static analysis to reason about the correctness of program changes.  However, the cost (in both time and space) of static analysis serves as the limiting factor for transformation tools, resulting in slow, complex tool designs that scale poorly for use on large systems.
+<P>
+
+To reduce these costs, this thesis proposes efficient, demand-driven flow analysis techniques as an alternate to traditional, compiler-based methods.  These techniques operate directly on the abstract syntax tree (AST), the data structure most appropriate for use in a source-to-source tool architecture.  By eliminating the need for other program representations such as the standard control flow graph (CFG) or program dependence graph (PDG), this approach greatly simplifies program modification.
+<P>
+
+A key contribution of this work is the idea of virtual control flow, a method for computing the control successors or predecessors of individual AST expressions on demand.  This method handles all types of structured and unstructured jumps found in an imperative programming language such as C.  Virtual control flow couples well with demand-driven data flow analysis to minimize the cost of determining semantic information.  To conservatively estimate data flow relationships, the effects of aliasing between memory locations can be inexpensively approximated using flow-insensitive points-to analysis based on type inference.
+<P>
+
+These techniques were implemented in a prototype tool called Cstructure to support a simple restructuring transformation for reordering program statements.  To check that this transformation does not change the program's behavior requires syntax, control flow and data dependence analysis. Experimental results on three programs ranging in size from 72,000 to 213,000 lines of code demonstrate the performance advantages of such aggressive demand-driven approaches.  For the largest program, gcc, check times for the average statement were 50 milliseconds on a desktop workstation. 
+
+
+
+</div>
+</body>
+</html>

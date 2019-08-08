@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+Providing proper modularity is one of the major challenges in software
+development. In the context of programming language implementation,
+two key factors impede the modularization process in a compiler
+system: First, the parser, as the core of the language implementation,
+usually is specified in a non-decomposable style such that it must be
+built as a whole regardless of the complexity of the grammar. This
+usually yields poor comprehensibility, reduced changeability, limited
+reusability, and hampers independent development of the language
+implementation. Second, the interconnected nature of syntax and
+semantic analysis of a language propels the compiler implementation to
+have each phase tangled together. As a result, the construction of one
+phase always pollutes a different phase, which makes a system hard to
+develop, maintain and extend. These two modularization complications
+create the intricacy in compiler design known as a dragon task.
+<p>
+With an aim to address the modularity problems and alleviate the
+implementation complexity in language implementations, this thesis
+presents a new language implementation formalism and archetype that
+improves the modularity in compiler construction in a two-dimensional
+manner. Structure wise, a new parsing algorithm called Component-based
+LR parsing is utilized to decompose a language implementation into
+executable components at the byte-code level, which decreases the
+complexity of building a large language by constructing a set of
+smaller languages. Function wise, the framework employs
+object-oriented and aspect-oriented programming paradigms to describe
+syntax and semantic entities separately, which facilitates separation
+of concerns by isolating syntax and semantics as well as semantic
+phases themselves into different modules. The techniques in these two
+dimensions work in a coherent manner, producing a solution that can
+solve both modularization obstacles introduced above. Consequently,
+the framework increases the reusability, changeability, extensibility
+and independent development ability of both syntax and semantics
+specification with less development workload required from compiler
+designers.
+<p>
+This dissertation elaborates the design, implementation, usage, and
+future directions of the overall framework. A number of case studies,
+including an implementation of the Java language, are provided to
+assess and demonstrate the benefits of using the framework in
+practice.
+</div>
+</body>
+</html>

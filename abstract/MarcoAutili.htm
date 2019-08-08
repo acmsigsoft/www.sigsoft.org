@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+Building a distributed system from third-party black-box components
+introduces a set of problems, mainly related to interoperability. Our
+previous approach to solve such problems was to build a centralized
+adaptor which restricts the system s behavior to exhibit only
+deadlock-free and desired interactions. However, in a distributed
+environment such an approach is not always suitable. In this thesis we
+show how to automatically synthesize a distributed adaptor for a set
+of black-box components. As first step, by taking into account a
+specification of the interaction behavior of each component, we
+synthesize a behavioral model of a centralized glue adaptor. As second
+step, from the synthesized adaptor model and a specification of the
+desired interaction behavior that must be guaranteed, we generate one
+local adaptor for each component. The local adaptors suitably
+communicate in order to avoid possible deadlocks and to enforce the
+specified desired interaction behavior. These local adaptors
+constitute the distributed adaptor for the given set of black-box
+components. The desired interaction behavior is specified through an
+LTS-based notation. This notation has a simple enriched syntax for
+easily specifying a relevant subset (i.e., regular expressions) of all
+possible interactions specifiable by more expressive temporal logic
+based formalisms (such as Linear-time Temporal Logic). In this thesis
+we also propose a formalism for specifying temporal properties aimed
+at being simple, (sufficiently) powerful and user-friendly. After
+examining Message Sequence Charts, and UML 2.0 Interaction Sequence
+Diagrams, we present a scenario-based graphical language that is an
+extended notation of a selected subset of the UML 2.0 Interaction
+Sequence Diagrams. This language is called Property Sequence Chart
+(PSC) and represents a first step toward languages that try to balance
+expressive power and simplicity of use. By means of PSC more complex
+desired/undesired interaction behaviors can be specified w.r.t. the
+ones specifiable through the LTS-based notation used by the approach
+to the automatic synthesis of distributed adaptors.
+</div>
+</body>
+</html>

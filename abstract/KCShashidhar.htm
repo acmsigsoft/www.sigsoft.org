@@ -1,0 +1,18 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+Thesis "Automatic and efficient verification of loop and data-flow transformations commonly applied while optimizing digital signal processing and scientific computing programs is feasible by functional equivalence checking of the original and transformed programs."
+<p>
+Application of transformations, in general, is known to enable efficient implementation of programs. For resource constrained embedded systems, however, transformations are essential to meet the stringent constraints on the power consumption and performance of the implementation. The choice of relevant transformations depends here on the target processor and memory architecture. Hence compilers are often not able to apply such transformations, leaving them to be applied either manually or using transformation tools. This necessitates verification of the correctness of the transformed program. At present, the verification is being done by simulation-based testing. But testing is very time-consuming, often inconclusive and calls for additional effort for debugging. To overcome these limitations, this dissertation presents a fully automatic and efficient functional equivalence checking method for formal verification of the transformed program against the original.
+<p>
+The presented equivalence checking method targets a class of programs and transformations that is common in the domain of digital signal processing and scientific computing applications. Most importantly, in these applications, program routines subject to transformations are typically array intensive, with piecewise affine expressions to index and bound the references to arrays, and have static control-flow. The method is based on a model that represents the data and operator dependencies between the elements of the output and the input variables relying on the single assignment form of the program. It is able to check equivalence of models of the original and the transformed programs that are related through a combination of global loop and data-flow transformations. Reasoning with value-based dependencies, it establishes equivalences between sets of values in corresponding points in the data-flow of the two programs. When the transformed program fails to pass the check, it generates feedback on the possible locations of errors in the program. A prototype implementation of the method demonstrates its efficiency on real-life program pairs.
+</div>
+</body>
+</html>

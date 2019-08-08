@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+Distributed systems have evolved considerably in recent
+years. Depending on the scalability level required, several solutions
+can be found to develop distributed applications. If the number of
+users is relatively low, there are several centralized client-server
+models, with a rather simple subjacent architectural complexity, which
+provide an acceptable performance. As soon as a distributed
+application needs to grow, its set of target users probably does so as
+well. It is at this point that centralized solutions start showing
+performance problems because of the well known bottleneck effect: that
+is to say, the central server is unable to efficiently cope with all
+of the users needs. As a consequence of these scalability needs, the
+current trend is towards decentralization, thus minimizing this
+bottleneck effect by adding more servers that process
+logic. Therefore, not so many clients overwhelm the single central
+server. These approaches are adequate for applications which do not
+need to be worldwide scalable because the number of potential users
+they are used by is relatively enclosed, and not excessively
+big. However, when worldwide scalability is required, decentralization
+is one of the best options, but it also creates many problems which
+have to be dealt with. Some of these problems include how to provide
+fault tolerance, how to deal with constant node joins and leaves, and
+many others. This thesis proposes a set of middleware elements that
+help to develop distributed applications which are worldwide scalable,
+dynamic and fault tolerant. We have chosen a totally decentralized
+paradigm which guarantees the scalability of worldwide accessible
+applications. This middleware is built on three basic
+pillars. Firstly, we need an efficient message routing layer;
+secondly, we need a layer which provides application-level multicast
+services, so that one-to-many communication is efficient. Finally, a
+decentralized persistence service is required to store and restore
+data. Using these three primitives, we build a wide-area middleware
+platform for the development of distributed applications, based on a
+remote object layer and a distributed component layer. The
+functionalities of these tiers are as generic as possible so they do
+not depend on the underlying layers. Therefore, several underlying
+decentralized paradigms can be theoretically used without any
+variation in the middleware layer. Consequently, developers dispose of
+a higher level of abstraction when building wide-area distributed
+applications, since they can make good use of the services provided by
+the middleware layer. In order to materialize this thesis, we
+implemented the proposed middleware framework on top of a relatively
+new paradigm of peer-to-peer networks, called structured peer-to-peer
+networks. These networks have interesting properties which make them
+highly suitable for the development of new distributed services.
+<p>
+The main contributions of our wide-area middleware proposal include
+the design and definition of a brand new set of invocation
+abstractions for our remote object model; a remote distributed
+interception algorithm; and a decentralized object location
+service. We have also defined two new load balancing algorithms based
+on the primitives of the remote object layer. As far as the reusable
+distributed component layer is concerned, our main contribution is the
+adoption of a lightweight container model which allows decentralized
+deployment and the activation of reusable components. We also provide
+proof of the concept of our architecture with the implementation of
+SNAP: a decentralized, fault tolerant and scalable Java Platform,
+Enterprise Edition (J2EE) web application deployment platform. The
+idea is to facilitate already existing J2EE applications in a
+worldwide interconnected network, in the easiest possible way, and by
+changing as little code as possible. With the vision that we provide,
+we believe that developers will be able to produce newly decentralized
+applications by investing a minimal amount of learning time in a
+technology which surely still has much to show us.  </div> </body>
+</html>

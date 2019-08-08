@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">Keywords: software, maintenance, evolution, reuse, replay, history,
+design, formal, transformation, implementation.
+<P>
+
+This thesis provides theory and procedures for modifying software
+artifacts implemented by a formal transformation process. Installing
+modifications requires knowing not only what transformations were
+applied (a derivation history) to construct the artifact, but also why
+the application sequence ensures that the artifact meets its
+specification. The derivation history and the justification are
+collectively called a design history. A Design Maintenance System
+(DMS), when provided with a formal change called a maintenance delta,
+revises a design history to guide construction of a new artifact. A
+DMS can be used to integrate a stream of deltas into a history,
+providing implementations as a side effect, leading to an
+incremental­evolution model for software construction.
+<P>
+
+We provide a broadly applicable formal model of transformation systems
+in which specifications are performance predicates, subsuming the
+functional specifica­ tions which are traditional for transformation
+systems. Such performance predicates provide vocabulary used in the
+design history to describe the effect of applying sets of
+transformations.
+<P>
+
+A nonprocedural, performance­goal­oriented Transformation Control
+Language (TCL) is defined to control navigation of the design space
+for a transformation system.  Recording the execution of a TCL
+metaprogram directly provides a design history.
+<P>
+
+A complete classification of, and representation for, the set of
+possible maintenance deltas is given in terms of the inputs defined
+by the transformation system model. Such deltas include not only
+specification changes, but also changes to implementation support
+technologies. Delta integration procedures for revising derivation
+histories given functional or support technology deltas are provided,
+based on rearranging the order of the transformations in the design
+space.  Building on these operations, integration procedures that
+revise the design history for each type of delta are described. An
+agenda-oriented TCL execution process dovetails smoothly with the
+integration procedures.
+<P>
+
+Our DMS system is compared to a number of other maintenance systems.
+<P>
+By using an explicit delta and verified commutativity, our DMS often
+reuses transformations when others fail.
+<P>
+
+
+
+
+</div>
+</body>
+</html>

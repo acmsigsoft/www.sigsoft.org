@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify"> Developers of modern software systems are increasingly employing
+ concurrency to meet demanding system requirements.  To deal with the
+ inherent complexity that results from concurrency, developers require
+ cost-effective automated analysis techniques to gain confidence in
+ the quality of their concurrent software.
+<P>
+
+ We present an approach, called FLAVERS, that is able to provide
+ cost-effective analysis of concurrent programs with respect to a rich
+ class of explicitly stated correctness properties.  Using this
+ approach, a developer specifies a property of a concurrent program as
+ a pattern of selected program events and then asks FLAVERS whether
+ the property holds on the given program.  We have developed a family
+ of polynomial-time, conservative data flow analysis algorithms that
+ support reasoning about these questions.  Unlike existing analysis
+ approaches for concurrent software, FLAVERS allows developers to
+ control the tradeoff between analysis time and the precision of
+ analysis results by incrementally introducing additional information
+ into the analysis.  One strength of this approach is the flexibility
+ allowed in choosing and combining a variety of sources of information
+ about the program and property being analyzed, so as to increase
+ precision without making analysis time impractical.
+<P>
+
+ To support reasoning about the correctness and complexity of the data
+ flow analysis algorithms in FLAVERS, we have developed
+ complete-lattice data flow analysis frameworks.  Complete-lattice
+ frameworks are a generalization of the semi-lattice frameworks that have
+ been used extensively in the specification of data flow analyses for
+ sequential programs.
+<P>
+
+ For analysis problems formulated as data flow frameworks we have
+ developed an architecture that supports the construction of analyzer
+ implementations.  We make use of this architecture in the
+ implementation of a toolset that supports checking properties of
+ programs written in Ada, called FLAVERS/Ada.  The toolset provides a
+ foundation on which to conduct empirical evaluations of the strengths
+ and weaknesses of this analysis approach.  We present empirical
+ results that address important questions about how FLAVERS/Ada
+ performs in practice.
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+In this dissertation we propose the XGuideWeb development method. XGuide
+focuses on the timely development of Web applications while guaranteeing
+high-quality designs and reusable implementation artifacts. It supports the
+whole life-cycle of a Web application and covers the analysis, design,
+implementation and maintenance phases.
+<p>
+The central idea in XGuide is to bring the well-established software engineering concepts of interfaces and contracts to theWeb engineering domain. Contracts clearly state the requirements and internal dependencies of Web pages and act as specifications for a subsequent implementation. To support multiple activities being carried out in parallel by different people, XGuide
+introduces multi-dimensional contracts that enable the concurrent development of implementation concerns such as the content, the graphical appearance and the application logic. In addition to the parallel implementation phase, contracts also enable the definition of Web componentsâ?"reusable page fragments that get assembled to form the final Web page. A Web component is fully specified by its contract and contract composition defines the rules for embedding components into pages.
+<p>
+The short innovation cycles on the Web further require a Web development methodology to constantly cope with new requirements. In XGuide, a formal definition of contracts and their composition is the foundation for an open contract model that can integrate new concerns such as access control, meta-data or device independence as separate modules. The XGuide process applies a model-driven approach to Web development that iteratively refines initial requirements into design diagrams, contracts and implementation components. After the initial deployment, XGuide directly maps maintenance and evolution tasks to updates of the design models (i.e., diagrams and contracts). Model updates trigger a new iteration of the XGuide process, i.e., follow the same contract-based, parallel implementation paradigm. This round-trip engineering ensures that models remain consistent with the implementation and guarantees
+well-structured and easy to trace projects. 
+<p>
+In order to support the application of XGuide in real-world Web projects, we implemented the XSuite Web development environment. The purpose of the XSuite IDE is to support the developer in all phases of the XGuide process. Visual design models are automatically transcoded into contracts and wizards assist in creating pages, composing contracts and deploying the application. XSuite is built on top of the generic Eclipse framework and integrates a Java IDE, a
+version control system and a Web server into the actual Web development environment. 
+<p>
+The practicality of the XGuide method and the XSuite tool suite is demonstrated in the implementation of the Vienna International Festival 2003 (VIF) case study.
+</div>
+</body>
+</html>

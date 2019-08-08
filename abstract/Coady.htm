@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">Operating system code is complex.  But, while substantial complexity is inherent to this domain, other complexity is caused by modularity problems.  The implementation of certain key system concerns seems to defy traditional modular boundaries and impede evolution.  From OS/360 to Windows NT, systems suffer from unintentional interactions between modules [Lehman and Belady 1985] and require developers to be intimately familiar with implicit patterns of interaction between subsystems [Vogels 1999].  
+The thesis of this work is that aspect-oriented programming (AOP) can be used to improve evolution in operating system code by improving modularity.  Specifically, AOP can alleviate modularity problems associated with concerns that are inherently crosscutting – no single modular decomposition can localize both the crosscutting concern and the concerns it crosscuts.  Better modularization of crosscutting concerns requires that their implementation be localized, their interaction with the parts of the system they crosscut be explicit, and their internal structure be clear.  By accomplishing these three things, AOP can provide better structural support for evolution.  
+The first part of the thesis provides a case study comparing modularity involving three crosscutting concerns in the original versus aspect-oriented implementation within the FreeBSD operating system [Lehey 1999].   This comparison highlights specific improvements in modularity of both the crosscutting concerns and the concerns that are crosscut, or interacting concerns, in the AOP implementation.
+<P>
+The second part of the thesis surveys evolutionary changes the three crosscutting concerns underwent between releases 2.2 (1997), 3.3 (1999) and 4.4 (2001) of FreeBSD, and identifies some of the specific impediments the original implementation poses with respect to evolution.  A case study of the impact of these same evolutionary changes on the aspect-oriented implementation highlights improvements in locality of change afforded by the AOP implementation, and the ways in which improvements in modularity persist across the versions.
+<P>
+The final part of the thesis presents inferences and generalizations based on the results of the case studies.  We infer from the case studies that AOP can be used to improve evolvability of the three crosscutting concerns and their interacting concerns in three versions of FreeBSD, without harming non-interacting concerns.  We then generalize these modularity benefits to more concerns, more systems, and more versions, and infer support for our main claim – that aspect-oriented programming can be used to improve evolvability of operating system code by providing better modularity of crosscutting concerns and their interacting concerns, without harming non-interacting concerns.
+<P>
+
+
+
+
+</div>
+</body>
+</html>

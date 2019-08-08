@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body><p align="justify">Application change and evolution often requires the modification of
+running computer systems.  However, increased reliance on such systems
+has meant that total shutdown is undesirable; ideally change should be
+carried out on running systems without causing major interruption to
+the service provided.  This process of 'dynamic reconfiguration'
+is possible for distributed systems in which low coupling between
+system components permits unaffected sections of the system under
+modification to continue, thereby providing a partial service.</p>
+
+<p align="justify">This thesis identifies the preservation of system consistency to be a
+major requirement of dynamic change and proposes a framework for the
+provision of a consistency preserving dynamic reconfiguration service.
+The framework identifies the basic elements necessary for the
+provision of such a service and provides a model for interaction among
+these and existing system services.  The interaction model ensures
+that in the absence of failures an up-to-date view of the system
+configuration can be obtained.  It also maintains a clear separation
+of concerns between the configuration and the application behaviour.</p>
+
+<p align="justify">In addition, a novel approach to the specification of change
+descriptions is proposed which enables the definition of complex
+hierarchic and reusable reconfiguration scripts.  This is achieved by
+making the reconfiguration behaviour of application components and
+subsystems an integral part of their configuration descriptions and
+using configuration queries to locate reconfiguration targets.</p>
+
+<p align="justify">One of the ways in which dynamic reconfiguration can compromise
+consistency is by invalidating application invariants which govern
+synchronisation or semantic aspects of a distributed system.  This
+thesis proposes a new approach to re-establishing invalidated
+application invariants by using component state-access methods from
+within change scripts.  This is in contrast to existing schemes which
+embed particular state adjustments in the application code and are
+hence inflexible and difficult to reason about.</p>
+
+<p align="justify">Reconfigurations can also compromise consistency by removing
+components and altering communication paths which are involved in
+ongoing interactions.  To resolve this issue a scheme is proposed
+whereby components affected by a planned change are identified and
+moved automatically into a state amenable to reconfiguration.  The
+advantages of this scheme are that it is largely transparent to the
+application programmer, does not impose a heavy overhead on the
+runtime system and takes advantage of the runtime behaviour of the
+application to minimise the disruption to the system.</p>
+
+<p align="justify">The final contribution of the thesis is an implementation of the
+reconfiguration environment as described and a demonstration of its
+utility using a case study.</p>
+</body>
+</html>

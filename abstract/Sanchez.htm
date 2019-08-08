@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+This thesis studies how to prevent deadlocks in distributed real-time
+and embedded systems.  Deadlocks are undesirable states of concurrent
+systems, characterized by a set of processes in a circular wait state,
+in which each process is blocked trying to gain access to a resource
+held by the next one in the chain. Solutions can be classified into
+three categories:
+<ul>
+<li> Deadlock detection is an optimistic approach. It assumes that
+ deadlocks are infrequent and detects and corrects them at
+ runtime. This technique is not applicable to real-time systems
+ since the worst case running time is long. Moreover, in embedded
+ systems actions cannot be undone.
+<li> Deadlock prevention is a pessimistic approach. The possibility of a
+ deadlock is broken statically at the price of restricting
+ concurrency.
+<li> Deadlock avoidance takes a middle route.  At runtime each allocation
+ request is examined to ensure that it cannot lead to a deadlock.
+</ul>
+Deadlock prevention is commonly used in distributed real-time and
+embedded systems but, since concurrency is severely limited, an
+efficient distributed deadlock avoidance schema can have a big
+practical impact.  However, it is commonly accepted (since the mid
+1990s) that the general solution for distributed deadlock avoidance is
+impractical, because it requires maintaining global states and global
+atomicity of actions. The communication costs involved simply outweigh
+the benefits gained from avoidance over prevention.
+<p>
+This thesis presents an efficient distributed deadlock avoidance
+schema that requires no communication between the participant sites,
+based on a combination of static analysis and runtime protocols. This
+solution assumes that the possible sequences of remote calls are
+available for analysis at design time. This thesis also includes
+protocols that guarantee liveness, and mechanisms to handle
+distributed priority inversions.
+</div>
+</body>
+</html>

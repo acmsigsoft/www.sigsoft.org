@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">Complex digital signal processing systems are commonly developed using directed
+graphs called processing graphs. Processing graphs are large grain
+dataflow graphs in which nodes represent processing functions and graph edges
+depict the flow of data from one node to the next.  When sufficient data
+arrives, a node executes its function from start to finish  without
+synchronization with other nodes, and appends data to the edge connecting  it
+to a consumer node. 
+
+We combine software engineering techniques with real-time scheduling theory to
+solve the problem of transforming a processing graph into a predictable
+real-time system in which latency can be managed.  For signal processing
+graphs, real-time execution means processing signal samples as they arrive
+without losing data. Latency is defined as the time between when a sample of
+sensor data is produced and when the graph outputs the processed signal.  
+
+We study a processing graph method, called PGM, developed by the U.S. Navy for
+embedded signal processing applications. We present formulae for computing node
+execution rates, techniques for mapping nodes to tasks in the
+rate-based-execution (RBE) task model, and conditions to verify the
+schedulability of the resulting task set under a rate-based,
+earliest-deadline-first scheduling algorithm.   Furthermore, we prove upper and
+lower bounds for the total latency any sample will encounter in the system.  We
+show that there are two sources of latency in real-time systems created from
+processing graphs: inherent and imposed latency. Inherent latency is the
+latency defined by the dataflow attributes and topology of the processing
+graph.  Imposed latency is the latency imposed by the scheduling and
+execution of nodes in the graph. 
+
+We demonstrate our synthesis method and the management of latency using three
+applications from the literature and industry: a synthetic aperture radar application, an
+INMARSAT mobile satellite receiver application, and an acoustic signal
+processing application from the ALFS anti-submarine warfare system.
+<P>
+
+This research is the first to model the execution of processing graphs with the
+real-time RBE model, and appears to be the first to identify
+and quantify inherent latency in processing graphs.
+<P>
+
+
+
+</div>
+</body>
+</html>

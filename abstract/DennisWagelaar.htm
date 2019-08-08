@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+Software systems not only continue to grow more complex, but they are often required to run on multiple platforms as well. Common personal computer platforms are Microsoft Windows, Linux and Apple Mac OS X on a PowerPC or x86 hardware architecture. Hand-held devices present another range of platforms, such as Microsoft Windows Mobile, Qtopia/Embedix and Symbian running on an ARM or RISC hardware architecture. Each of these platforms look different from a software developer's point of view and requires the development of different software versions for each platform. This platform diversity makes it increasingly difficult to maintain software that is portable to multiple platforms. Software developers not only have to develop multiple software versions, but they also have to keep these versions synchronised and consistent in their common functionality.
+<p>
+In addition to this, platform technologies tend to evolve. When developing software for an evolving platform, software developers have to take into account that the users may use older versions of the platform. Developers may be confronted with the fact that their software is no longer compatible with an older version of the platform, because they do all their development and testing on the latest version of the platform.
+<p>
+If the current range of platforms can already be considered diverse, the vision of Ambient Intelligence only amplifies this diversity. Ambient Intelligence aims for a user-driven, service-based computing environment that includes personal devices as well as special-purpose embedded devices in the environment. The hardware and software combinations in such devices can vary widely.
+<p>
+The Object Management Group has acknowledged the problem of platform diversity by introducing the Model Driven Architecture (MDA). The MDA is centred around the use of software models. The software models provide a means to create partial, platform-independent software specifications that make use of platform abstractions. These abstractions are refined to platform-specific software models in a later stage of the development life cycle, using model transformations. Currently, these model transformations implicitly assume a target platform for the platform-specific models. If other platforms must be targeted, new model transformations have to be created. This introduces a considerable maintenance burden for each additional platform we want to support.
+<p>
+It is possible to split up a model transformation into multiple refinement transformation steps, each of which introduces some partial platform dependencies into the software model. This makes it possible to reuse a refinement transformation for other platforms. It is not clear when we can reuse a refinement transformation, however, since the platform dependencies it introduces are still implicit.
+<p>
+When combining multiple refinement transformations for a target platform, most of the effort goes into checking that (1) the refinement transformations work together and that (2) they are executed in the right order. It is an extra burden to also (3) consider the platform dependencies that each refinement transformation introduces. One approach is to test the generated software on the target platform to tell if the software works on that platform. Testing on each platform is a time-consuming activity, however, and may even leave certain incompatibilities undetected until after deployment. Another approach is to use an automated configuration process that enforces the satisfaction of constraints, including platform dependency constraints. Such a configuration process does not exist for the MDA today.
+<p>
+We propose to use an explicit platform model, which serves as a vocabulary for describing platforms. This vocabulary is used as a basis to express platform instances as well as platform dependencies. By explicitly specifying the platform dependencies for each reusable refinement transformation, each transformation can be guaranteed as valid for a well-defined class of platforms. Because platform instances use the same platform model as a vocabulary, the platform model enables us to determine which platforms satisfy which platform dependencies. The platform model is expressed in the Web Ontology Language (OWL), which is an extensible language for describing ontologies. Ontologies are commonly used to represent domain knowledge and to provide a community of users with a controlled vocabulary. We use the OWL DL variant, which corresponds to description logic (DL) and allows us to apply automatic reasoning.
+<p>
+We also propose a configuration process for the MDA that is based on Software Product Lines (SPLs). Within the field of software engineering, most research on configuration has been conducted by the SPL community. SPLs integrate a number of software-intensive products that share a significant amount of functionality. As such, any software that is developed using the MDA approach can be considered as an SPL, since each platform-specific software product shares significant functionality with other platform-specific versions of that software product.
+</div>
+</body>
+</html>

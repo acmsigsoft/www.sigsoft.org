@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+
+Successful software systems evolve over their lifetimes through the cumulative
+changes made by software maintainers. As software evolves, the problems
+resulting from software change worsen, exacerbated by increased system size
+and complexity, lack of program understanding, amount of effort required to
+make changes, and number of personnel involved. Experience shows that
+software changes made without visibility into their effects can lead to poor
+effort estimates, delays in release schedules, degraded software design,
+unreliable software products, increased costs, and premature retirement of the
+software system.
+
+Software change impact analysis, impact analysis, is a software
+maintenance technique meant to address these problems, by assessing the
+effects of changes made to a software system. While impact analysis is
+frequently cited as a motivation or a potential application for program
+analysis and software maintenance research, research specific to the task of
+impact analysis has languished for more than 10 years. In addition, few
+researchers have examined the empirical factors underlying common impact
+analysis techniques or the tradeoffs inherent in known techniques, and none
+have performed empirical studies comparing impact analysis techniques.
+
+In this dissertation we introduce a new impact analysis approach, named
+PathImpact, that addresses a set of tradeoffs not addressed by any current
+impact analysis approach. Ours is the first fully-dynamic impact analysis
+approach. PathImpact uses light-weight instrumentation to record program
+execution at the level of procedure calls and returns, then efficiently builds
+a compressed representation that can be directly used to estimate change
+impact.
+
+We next extend PathImpact to accomodate system evolution yielding a
+technique we call EvolveImpact. EvolveImpact updates the impact
+representation after a system change, whereas PathImpact requires a
+complete recompution. In addition, we show how our approaches can be extended
+to a large class of emerging software architectures, including Java
+component-based systems and large-scale systems.
+
+Finally, we discuss the implementation of our approaches, present the first
+cost models for impact analysis techniques, and report the results of the
+first empirical studies that compare impact analysis techniques. We also
+empirically examine the performance of our approaches and the factors
+affecting the use of our techniques in practice. We found that our approach
+has linear time and space complexity (in the size of the dynamic information
+collected) and achieved a mean compression value of 0.955 on the
+subjects we used in our experiments. Our investigation of program evolution
+across multiple versions of three of our subject programs showed that,
+depending on the level of change activity, EvolveImpact can update the
+impact representation more efficiently than recomputing it in a majority of
+cases.
+</div>
+</body>
+</html>

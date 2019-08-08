@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+
+This dissertation presents new greedy algorithms to construct covering arrays, m
+ixed-level covering arrays, and l-biased covering arrays. The work on these algo
+rithms is motivated by the application of software interaction testing.
+
+Software systems today are complex and have numerous configurations. Exhaustive 
+testing is often not possible due to limited testing resources. Software interac
+tion testing complements current software testing methods with economical sized 
+test suites that cover all t-way interactions. Covering arrays can represent the
+se test suites.
+
+Numerous methods exist to automatically construct covering arrays. This disserta
+tion summarizes pre-existing methods and then advances "one-row-at-a-time" greed
+y algorithms. "One-row-at-a-time" greedy methods are the focus of this research 
+because they are relatively quick and accurate, while providing flexibility for 
+seeding, soft constraints, and prioritization.
+
+Three new research contributions are presented. First, the Deterministic Density
+ Algorithm (DDA) is introduced. It is the only greedy algorithm that generates c
+overing arrays with a theoretical guarantee on the size of solutions. The guaran
+tee does not hinder the competitiveness of the method in practice; computational
+ results show that DDA often provides competitive, or better, solutions than oth
+er algorithms in it's class.
+
+Second, instead of developing yet another greedy algorithm, a framework for all 
+one-row-at-a-time greedy algorithms is introduced. The framework provides a mech
+anism for developers to rapidly evaluate new algorithms of this type with statis
+tical feedback.  A large experiment is presented with several thousand
+instantiations of the framework. The data from this experiment serves as a repos
+itory that future developers can gain insight from. In addition, hybrid approach
+es of these algorithms combined with algebraic, heuristic search, and vertical-g
+rowth greedy algorithms are explored.
+
+Finally, additional practical considerations of software interaction testing are
+ introduced: prioritization, hard constraints, and soft constraints.  An l-biase
+d covering array is used to represent test suites that adhere to prioritization 
+and soft constraints. Priorities for the importance of covering interactions are
+ modeled with weights, -1.0 < omega < 1.0. The higher the weight associated with
+ an interaction, the more desirable it is to include early in the test suite.  O
+n the contrary, a negative weight indicates a soft constraint, an interaction th
+at is less desirable to include in a test suite. A new algorithm utilizes a simp
+le heuristic with the primary goal of covering as much weight as possible, as ea
+rly as possible, and avoiding negatively weighted interactions. Experimental res
+ults show the method to be effective.
+
+
+
+</div>
+</body>
+</html>

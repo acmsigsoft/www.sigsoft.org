@@ -1,0 +1,152 @@
+
+<!doctype html>
+<head>
+<META http-equiv="Content-Style-Type" content="text/css">
+<title>SWAN 2018- Proceedings of the 4th ACM SIGSOFT International Workshop on Software Analytics</title>
+<STYLE type="text/css">
+#DLtoc {
+	font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+	}
+
+#DLheader {
+	}
+#DLheader h1 {
+	font-size:16px;	
+}
+	
+#DLcontent {
+	 font-size:12px;
+	}
+#DLcontent h2 {
+	 font-size:14px;
+	 margin-bottom:5px;
+	}
+#DLcontent h3 {
+	 font-size:12px;
+	 padding-left:20px;
+	 margin-bottom:0px;
+	}
+
+#DLcontent ul{
+	margin-top:0px;
+	margin-bottom:0px;
+	}
+		
+.DLauthors li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLauthors li:after{
+	content:",";
+	}
+.DLauthors li.nameList.Last:after{
+	content:"";
+	}		
+
+.DLabstract {
+	 padding-left:40px;
+	 padding-right:20px;
+	 display:block;
+	}
+
+.DLformats li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLformats li:after{
+	content:",";
+	}
+.DLformats li.formatList.Last:after{
+	content:"";
+	}		
+
+.DLlogo {
+	vertical-align:middle; 
+	padding-right:5px;
+	border:none;
+	}
+	
+.DLcitLink {
+	margin-left:20px;
+	}	
+
+.DLtitleLink {
+	margin-left:20px;
+	}	
+
+.DLotherLink {
+	margin-left:0px;
+	}		
+   
+</STYLE>
+</head>
+<body>
+<div id="DLtoc">
+<div id="DLheader">
+<h1>SWAN 2018- Proceedings of the 4th ACM SIGSOFT International Workshop on Software Analytics</h1>
+<a class="DLcitLink" href="https://dl.acm.org/citation.cfm?id=3278142" title="Go to the ACM Digital Library for additional information about this proceeding"><img class="DLlogo" src="https://dl.acm.org/img/dllogo.png" alt="Digital Library logo" height="30" width="30">Full Citation in the ACM Digital Library</a>
+</div>
+<div id="DLcontent">
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N663453" title="Get the Full Text from the ACM Digital Library">(No) influence of continuous integration on the commit activity in GitHub projects</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Sebastian Baltes</li>
+<li class="nameList">Jascha Knack</li>
+<li class="nameList">Daniel Anastasiou</li>
+<li class="nameList">Ralf Tymann</li>
+<li class="nameList Last">Stephan Diehl</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>A core goal of Continuous Integration (CI) is to make small incremental changes to software projects, which are integrated frequently into a mainline repository or branch. This paper presents an empirical study that investigates if developers adjust their commit activity towards the above-mentioned goal after projects start using CI. We analyzed the commit and merge activity in 93 GitHub projects that introduced the hosted CI system Travis CI, but have previously been developed for at least one year before introducing CI. In our analysis, we only found one non-negligible effect, an increased merge ratio, meaning that there were more merging commits in relation to all commits after the projects started using Travis CI. This effect has also been reported in related work. However, we observed the same effect in a random sample of 60 GitHub projects not using CI. Thus, it is unlikely that the effect is caused by the introduction of CI alone. We conclude that: (1) in our sample of projects, the introduction of CI did not lead to major changes in developers&#39; commit activity, and (2) it is important to compare the commit activity to a baseline before attributing an effect to a treatment that may not be the cause for the observed effect.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N663454" title="Get the Full Text from the ACM Digital Library">Characterizing the influence of continuous integration: empirical results from 250+ open source and proprietary projects</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Akond Rahman</li>
+<li class="nameList">Amritanshu Agrawal</li>
+<li class="nameList">Rahul Krishna</li>
+<li class="nameList Last">Alexander Sobran</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Continuous integration (CI) tools integrate code changes by automatically compiling, building, and executing test cases upon submission of code changes. Use of CI tools is getting increasingly popular, yet how proprietary projects reap the benefits of CI remains unknown. To investigate the influence of CI on software development, we analyze 150 open source software (OSS) projects, and 123 proprietary projects. For OSS projects, we observe the expected benefits after CI adoption, e.g., improvements in bug and issue resolution. However, for the proprietary projects, we cannot make similar observations. Our findings indicate that only adoption of CI might not be enough to the improve software development process. CI can be effective for software development if practitioners use CI&#39;s feedback mechanism efficiently, by applying the practice of making frequent commits. For our set of proprietary projects we observe practitioners commit less frequently, and hence not use CI effectively for obtaining feedback on the submitted code changes. Based on our findings we recommend industry practitioners to adopt the best practices of CI to reap the benefits of CI tools for example, making frequent commits.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N663465" title="Get the Full Text from the ACM Digital Library">Facilitating feasibility analysis: the pilot defects prediction dataset maker</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Davide Falessi</li>
+<li class="nameList Last">Max Jason Moede</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Our industrial experience in institutionalizing defect prediction models in the software industry shows that the first step is to measure prediction metrics and defects to assess the feasibility of the tool, i.e., if the accuracy of the defect prediction tool is higher than of a random predictor. However, computing prediction metrics is time consuming and error prone. Thus, the feasibility analysis has a cost which needs some initial investment by the potential clients. This initial investment acts as a barrier for convincing potential clients of the benefits of institutionalizing a software prediction model. To reduce this barrier, in this paper we present the Pilot Defects Prediction Dataset Maker (PDPDM), a desktop application for measuring metrics to use for defect prediction. PDPDM receives as input the repository&#8217;s information of a software project, and it provides as output, in an easy and replicable way, a dataset containing a set of 17 well-defined product and process metrics, that have been shown to be useful for defect prediction, such as size and smells. PDPDM avoids the use of outdated datasets and it allows researchers and practitioners to create defect datasets without the need to write any lines of code.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N663466" title="Get the Full Text from the ACM Digital Library">Is one hyperparameter optimizer enough?</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Huy Tu</li>
+<li class="nameList Last">Vivek Nair</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Hyperparameter tuning is the black art of automatically finding a good combination of control parameters for a data miner. While widely applied in empirical Software Engineering, there has not been much discussion on which hyperparameter tuner is best for software analytics.To address this gap in the literature, this paper applied a range of hyperparameter optimizers (grid search, random search, differential evolution, and Bayesian optimization) to a defect prediction problem. Surprisingly, no hyperparameter optimizer was observed to be &#8220;best&#8221; and, for one of the two evaluation measures studied here (F-measure), hyperparameter optimization, in 50% of cases, was no better than using default configurations. </p> <p>We conclude that hyperparameter optimization is more nuanced than previously believed. While such optimization can certainly lead to large improvements in the performance of classifiers used in software analytics, it remains to be seen which specific optimizers should be applied to a new dataset.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N663467" title="Get the Full Text from the ACM Digital Library">Differentially-private software analytics for mobile apps: opportunities and challenges</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Hailong Zhang</li>
+<li class="nameList">Sufian Latif</li>
+<li class="nameList">Raef Bassily</li>
+<li class="nameList Last">Atanas Rountev</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Software analytics libraries are widely used in mobile applications, which raises many questions about trade-offs between privacy, utility, and practicality. A promising approach to address these questions is differential privacy. This algorithmic framework has emerged in the last decade as the foundation for numerous algorithms with strong privacy guarantees, and has recently been adopted by several projects in industry and government. This paper discusses the benefits and challenges of employing differential privacy in software analytics used in mobile apps. We aim to outline an initial research agenda that serves as the starting point for further discussions in the software engineering research community.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N663468" title="Get the Full Text from the ACM Digital Library">Towards a framework for generating program dependence graphs from source code</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Victor J. Marin</li>
+<li class="nameList Last">Carlos R. Rivero</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Originally conceived for compiler optimization, the program dependence graph has become a widely used internal representation for tools in many software engineering tasks. The currently available frameworks for building program dependence graphs rely on compiled source code, which requires resolving dependencies. As a result, these frameworks cannot be applied for analyzing legacy codebases whose dependencies cannot be automatically resolved, or for large codebases in which resolving dependencies can be infeasible. In this paper, we present a framework for generating program dependence graphs from source code based on transition rules, and we describe lessons learned when implementing two different versions of the framework based on a grammar interpreter and an abstract syntax tree iterator, respectively.</p></div> </div>
+</div>
+</div>
+</body>
+</html>

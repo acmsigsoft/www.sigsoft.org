@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">C++ cannot be used to implement control/data abstractions as a library
+if their implementations require specialized code for each user code.
+<P>
+This problem limits programmers to write libraries in
+two ways: it makes some kinds of useful abstractions that inherently
+require such facilities impossible to implement, and it makes other
+abstractions difficult to implement efficiently.
+<P>
+
+The OpenC++ MOP addresses this problem by providing libraries the
+ability to pre-process a program in a context-sensitive and non-local
+way.  That is, libraries can instantiate specialized code depending on
+how the library is used and, if needed, substitute it for the original
+user code.  The basic protocol structure of the OpenC++ MOP is based
+on that of the CLOS MOP, but the OpenC++ MOP runs metaobjects only
+at compile time.  This means that the OpenC++ MOP does not imply
+runtime penalties caused by dispatching to metaobjects.
+<P>
+
+
+
+</div>
+</body>
+</html>

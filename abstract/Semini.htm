@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">Tuple space languages are based on the idea that a
+dynamic collection of tuples can act as shared state of concurrent
+processes.  They are well suited to model cooperation and, more
+generally, to program large distributed reactive systems.  The
+operations to read and change a tuple space represent the primitive
+statements of tuple space languages. 
+
+
+In this thesis, we define a refinement calculus to support the
+development of programs in this framework. We first deal with the
+choice of a specification language: we choose a temporal logic
+oriented language. Since in tuple spaces a state is a multiset of
+ground atoms, the atomic formulae of the specification language are
+atoms and the connectives include a non idempotent conjunction.  We
+then define an axiomatic semantics, which is needed to verify
+specifications, and an operational semantics to describe the allowed
+computations.  We relate these descriptions so that the properties
+derived using the axiomatic semantics are correct with respect to the
+operational behaviour. The axiomatic semantics is in the ``weakest
+precondition'' style: we introduce two different kinds of
+preconditions, weakest and enabling, referring to demonic
+and angelic choice in non-deterministic selection, respectively, to
+overcome the problems related to the non-deterministic features of the
+basic statements.  We finally show how to refine specifications. We
+base our calculus on assertions of the kind: rule $R$ refines formula
+$F$.  We use weakest preconditions to define the refinement of safety
+properties, and enabling preconditions to define liveness properties
+refinement. We show the way to compose these assertions in order to
+derive whether the behaviour of a system is correct with respect to a
+specification. We treat, in addiction, the case of heterogeneous
+systems: in each intermediate refinement step, a system is partially
+written in the programming language, and the unrefined features are
+described by logical formulae.
+<P>
+
+
+
+
+</div>
+</body>
+</html>

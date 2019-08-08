@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">The demand for high-performance distributed communication systems
+(such as video-on-demand servers, global personal communication
+systems, and the underlying communication protocol stacks) is
+increasing dramatically. Distributing communication services
+throughout high-speed computer networks offers many potential benefits
+by increasing performance, scalability, and functionality. In
+particular, performing communication services in parallel helps to
+improve performance by increasing processing rates and reducing
+latency. To improve performance significantly, however, the speed-up
+obtained from parallel processing must outweigh the major sources of
+overhead associated with parallel processing. On multi-processor
+platforms based on shared memory (rather than message passing), these
+sources of overhead primarily involve context switching,
+synchronization, and data movement.
+<P>
+
+Many communication systems (such as the layered protocol stacks
+specified by the TCP/IP and the ISO OSI reference models) decompose
+naturally into a series of hierarchically-related tasks. A number of
+process architectures have been proposed as the basis for
+parallelizing these types of communication systems in order to improve
+performance. There are two fundamental types of process architectures:
+task-based and message-based. Task-based process architectures are
+formed by binding one or more processing elements to the layers of
+tasks in a communication system. In contrast, message-based process
+architectures are formed by binding the processing elements to the
+data messages and control messages that flow through the layers of
+tasks. Each type of process architecture incurs different levels of
+context switching, synchronization, and data movement overhead. This
+overhead is affected by factors such as the application requirements,
+OS and hardware platform, and network characteristics.
+<P>
+
+This dissertation describes parallel process architecture performance
+experiments conducted using the ADAPTIVE Service eXecutive (ASX)
+framework. The purpose of this research is to identify architectures
+for structuring parallelism to reduce the overhead incurred on shared
+memory multi-processing platforms. The ASX framework facilitates the
+flexible configuration of high-performance distributed communication
+systems that effectively utilize parallelism on shared memory
+multi-processor platforms. The ASX framework controls for a number of
+relevant confounding factors (such as application and protocol
+functionality, concurrency control schemes, and application traffic
+characteristics).  By controlling these factors, the ASX framework
+enables precise measurement of the performance impact of alternative
+process architectures for parallelizing communication protocol
+stacks. The dissertation describes the object-oriented architecture of
+the ASX framework and presents results from the process architecture
+performance experiments.
+<P>
+
+
+
+</div>
+</body>
+</html>

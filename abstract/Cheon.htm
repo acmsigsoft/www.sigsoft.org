@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">The Java Modeling Language (JML) is a formal behavioral interface
+specification language (BISL) for Java.  JML has many advances
+including specification-only declarations, specifications of
+interfaces, stateful interfaces, multiple inheritance of
+specifications, and behavioral subtyping.  An approach to runtime
+assertion checking of JML assertions is presented and implemented as a
+JML compiler to translate Java programs annotated with JML
+specifications into Java bytecode.  The compiled bytecode
+transparently checks JML specifications at runtime.  The JML compiler
+supports separate and modular compilation.  The approach brings
+programming benefits such as debugging and testing to BISLs and also
+helps programmers to use BISLs in their daily programming.
+<P>
+
+A set of translation rules are defined from JML expressions into
+assertion checking code.  The translation rules handle various kinds
+of undefinedness, such as runtime exceptions and non-executable
+constructs, in such a way as to both satisfy the standard rules of
+logic and detect as many assertion violations as possible.  The rules
+also support various forms of quantifiers.  Specification-only
+declarations such as model fields, ghost fields, and model methods are
+translated into access methods; e.g., an access method for a model
+field is an abstraction function that calculates an abstract value
+from the program state.  The specification state of a stateful
+interface, due to specification-only fields such as ghost fields, is
+represented as a separate assertion class.  Thus, an object's
+specification state is distributed over the object itself and one
+assertion object for each interface that its class implements.
+<P>
+Assertion checking is also distributed in that a subtype delegates the
+responsibility of checking inherited specifications to its supertypes
+(or the assertion classes of its superinterfaces).  The delegation
+approach supports multiple inheritance, and is modular.
+<P>
+
+Finally, the effectiveness and practicality of runtime assertion
+checking is demonstrated by applying it to program testing.  An
+approach is implemented that significantly automates unit testing.
+<P>
+The key idea of the approach is to view interface specifications as
+test oracles and to use the runtime assertion checker as the decision
+procedure of the test oracles.  The approach also shows that the
+runtime assertion checker can be an effective framework for developing
+specification-based tools.
+<P>
+
+
+
+</div>
+</body>
+</html>

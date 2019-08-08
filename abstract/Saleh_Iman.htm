@@ -1,0 +1,20 @@
+<p>In this thesis, we develop and evaluate a formal model and contracting framework for datacentric Web services. The central component of our framework is a formal specification of a common Create-Read-Update-Delete (CRUD) data store. We show how this model can be used in the formal specification and verification of both basic and transactional Web service compositions. We demonstrate through both formal proofs and empirical evaluations that our proposed framework significantly decreases ambiguity about a service, enhances its reuse, and facilitates detection of errors in service-based implementations.</p>
+
+<p>Web Services are reusable software components that  make use of standardized interfaces to  
+enable loosely-coupled business-to-business and customer-to-business interactions over the Web.  
+In such environments, service consumers depend heavily on the service interface specification to  
+discover, invoke, and synthesize services over the Web. Data-centric Web services are services  
+whose behavior is determined by their interactions  with a repository of stored data. A major  
+challenge in this domain is interpreting the data that must be marshaled between consumer and  
+producer systems. While the Web Services Description Language (WSDL) is currently the de  
+facto standard for Web services, it only specifies a service operation in terms of its syntactical  
+inputs and outputs; it does not provide a means for specifying the underlying data model, nor  
+does it specify how a service invocation affects the data. The lack of data specification  
+potentially leads to erroneous use of the service by a consumer. In this work, we propose a  
+formal contract for data-centric Web services. The  goal is to formally and unambiguously  
+specify the service behavior in terms of its underlying data model and data interactions. We  
+address the specification of a single service, a flow of services interacting with a single data  
+store, and also the specification of distributed transactions involving multiple Web services  
+interacting with different autonomous data stores.  We use the proposed formal contract to  
+decrease ambiguity about a service behavior, to fully verify a composition of services, and to  
+guarantee correctness and data integrity properties within a transactional composition of services.</p>

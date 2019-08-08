@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+Assuring and evolving concurrent programs requires understanding the concurrency-related design decisions used in their implementation. In Java-style shared-memory programs, these decisions include which state is shared, how access to it is regulated, and the policy that distinguishes desired concurrency from race conditions. Source code often does not reveal these design decisions because they rarely have purely local manifestations in the code, or because they cannot be inferred from code. Many programmers believe it is too difficult to explicate the models in ordinary practice. As a result, this design intent is usually not expressed, and it is therefore generally infeasible to assure that concurrent programs are free of race conditions.
+<p>
+This thesis is about a practicable approach to capturing and expressing design intent, and, through the use of annotations and composable static analyses, assuring consistency of code and intent as both evolve. We use case studies from production Java code and a prototype analysis tool to explore the costs and benefits of a new annotation-based approach for expressing design intent. Our annotations express "mechanical" properties that programmers must already be considering, such as lock--state associations, uniqueness of references, and conceptual aggregations of state. Our analyses reveal race conditions in a variety of case study samples which were drawn from library code and production open source projects.
+<p>
+We developed a prototype tool that embodies static analysis techniques for assuring consistency between code and models (expressed as code annotations). Our experience with the tool provides some preliminary evidence of the practicability of our approach for ordinary programmers on deadlines. The dominant design consideration for the tool was adherence to the principle of "early gratification"--some assurance can be obtained with minimal or no annotation effort, and additional increments of annotation are rewarded with additional increments of assurance.
+<p>
+The novel technical features of this approach include (1) regions as flexible aggregations of state that can cross object boundaries, (2) a region-based object-oriented effects system; (3) analysis to track the association of locks with regions, (4) policy descriptions for allowable method interleavings, and (5) an incremental process for inserting, validating, and exploiting annotations. 
+</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">This work is about an infrastructure for supporting event-based applications on a wide-area network. <br>
+  <br>
+A wide range of software systems are designed to operate in a reactive manner. In such systems, the high-level control flow is not explicitly programmed, instead it is driven by the occurrence of events. These systems realize their functionality by performing some actions in response to events, possibly using the information associated with the stimulating events. Examples of reactive systems are integrated development environments, work-flow and process analysis systems, graphical user interfaces, network management systems, software deployment systems and security monitors. <br>
+<br>
+There are two major motivations for designing applications as reactive systems. First, some applications are reactive by their nature. Typically, the ones that involve the direct interaction of human agents are characterized by an asynchronous input of relatively small pieces of data. In these cases, and in the general case of "on-line" input, the concept of event is a good modeling and design abstraction. Similarly, the same abstraction is useful for those components that, although not necessarily functioning in an asynchronous way, are integrated by means of some communication mechanisms that introduce asynchronicity in their interactions. The other benefit of adopting an event-based style is that it requires only a loose coupling for the integration of heterogeneous components. Components do not need to export interfaces to be accessed by other components. Components can request some services without addressing a specific server component and, to a certain extent, components can interoperate even if they have been designed and developed separately without any mutual knowledge. <br>
+<br>
+A common logical component of every event-based application is what we call an event observation and notification service, or more concisely an event service. The event service observes the occurrence of events or the occurrence of combinations of events and consequently notifies all the applications or components that have declared their interests in reacting to such events. Because the semantics of event-based applications is substantially independent of the mechanisms that are used to capture and dispatch events of interest, it is convenient to separate the event service from all the applications that make use of it. In accordance to many standardization efforts that have been proposed recently (e.g., the CORBA Event Service), and according to strategic plans and research in network technology, we envision a unified event service implemented as a common "middle-ware" to support the event-based interaction among software components. <br>
+<br>
+The idea of integrating software components by means of a common event service seems to be very promising especially for those distributed applications that are deployed on a wide-area network such as the Internet. For one thing, the vast number of available information sources offers a great deal of opportunities for the development of new applications. New classes of wide-scale event-driven applications can be devised including stock market analysis tools, efficient news and mailing systems, data mining tools, and indexing tools. Also, many existing applications that are already designed to exploit event-based infrastructures can be proficiently integrated at a much higher scale thanks to the "global" connectivity provided by the network. For example, work-flow systems can be federated for companies that have multiple distributed branches or even across corporate boundaries, or else software deployment systems can connect software producers and consumers through the Internet. In general, the asynchronicity, the heterogeneity, and the high degree of loose coupling that characterize wide-area networks suggest that a wide-scale event service would be a good integration infrastructure for existing systems and for new applications. <br>
+</div>
+</body>
+</html>

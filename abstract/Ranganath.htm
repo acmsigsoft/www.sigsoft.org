@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+With the advent of multi-core processors and rich language support for
+concurrency, the paradigm of concurrent programming has arrived;
+however, the cost of developing and maintaining concurrent programs is
+still high.  Simultaneously, the increase in social ubiquity of
+computing is reducing the "time-to-market" factor while demanding
+stronger correctness requirements.  These effects are amplified with
+ever-growing size of software systems.  Consequently, there is (will
+be) a rise in the demand for scalable and accurate techniques to
+enable faster development and maintenance of correct large scale
+concurrent software.
+<p>
+This dissertation presents a collection of scalable and accurate
+approaches to tackle the above situation.  Primarily, the approaches
+are focused on discovering dependences (relations) between various
+parts of the software/program and leveraging the dependences to
+improve maintenance and development tasks via program slicing
+(comprehension) and verification.
+<p>
+Briefly, the proposed approaches are embodied in the following specific contributions:
+<ol>
+<li>New trace-based foundation for control dependences.
+<li>An equivalence class based analysis to efficiently and accurately calculate escape information and intra- and inter-thread dependences.
+<li>A new parametric data flow style slicing algorithm with various extensions to uniformly and easily realize and reason about most existing forms of static sequential and concurrent slicing.
+<li>A new generic notion of property/trace sensitivity to represent and reason about richer forms of context sensitivity.
+<li>Program dependence based partial order reduction techniques to enable efficient and accurate state space exploration in both static and dynamic mode.
+</ol>
+
+In an attempt to simplify the approaches, they have been based on the
+basic concepts/ideas of the affected techniques (\eg program slicing
+is a rooted transitive closure of dependence relation).  As
+trace-based reasoning is well suited for concurrent systems, an
+attempt has been made to explore trace-based reasoning wherever
+possible.
+<p>
+While providing a rigorous theoretical presentation of these
+techniques, this effort also validates the techniques by implementing
+them in a robust tool framework called Indus (available from
+http://indus.projects.cis.ksu.edu) and then providing experimental
+results that demonstrate the effectiveness of the techniques on
+various concurrent applications.
+<p>
+Given the current trend towards concurrent programming and social
+ubiquity of computing, the approaches proposed in this dissertation
+provide a foundation for collectively attacking scalability, accuracy,
+and soundness challenges in current and emerging systems.
+</div>
+</body>
+</html>

@@ -1,0 +1,321 @@
+
+<!doctype html>
+<head>
+<META http-equiv="Content-Style-Type" content="text/css">
+<title>ISSTA '18- Companion Proceedings for the ISSTA/ECOOP 2018 Workshops</title>
+<STYLE type="text/css">
+#DLtoc {
+	font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+	}
+
+#DLheader {
+	}
+#DLheader h1 {
+	font-size:16px;	
+}
+	
+#DLcontent {
+	 font-size:12px;
+	}
+#DLcontent h2 {
+	 font-size:14px;
+	 margin-bottom:5px;
+	}
+#DLcontent h3 {
+	 font-size:12px;
+	 padding-left:20px;
+	 margin-bottom:0px;
+	}
+
+#DLcontent ul{
+	margin-top:0px;
+	margin-bottom:0px;
+	}
+		
+.DLauthors li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLauthors li:after{
+	content:",";
+	}
+.DLauthors li.nameList.Last:after{
+	content:"";
+	}		
+
+.DLabstract {
+	 padding-left:40px;
+	 padding-right:20px;
+	 display:block;
+	}
+
+.DLformats li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLformats li:after{
+	content:",";
+	}
+.DLformats li.formatList.Last:after{
+	content:"";
+	}		
+
+.DLlogo {
+	vertical-align:middle; 
+	padding-right:5px;
+	border:none;
+	}
+	
+.DLcitLink {
+	margin-left:20px;
+	}	
+
+.DLtitleLink {
+	margin-left:20px;
+	}	
+
+.DLotherLink {
+	margin-left:0px;
+	}		
+   
+</STYLE>
+</head>
+<body>
+<div id="DLtoc">
+<div id="DLheader">
+<h1>ISSTA '18- Companion Proceedings for the ISSTA/ECOOP 2018 Workshops</h1>
+<a class="DLcitLink" href="https://dl.acm.org/citation.cfm?id=3236454" title="Go to the ACM Digital Library for additional information about this proceeding"><img class="DLlogo" src="https://dl.acm.org/img/dllogo.png" alt="Digital Library logo" height="30" width="30">Full Citation in the ACM Digital Library</a>
+</div>
+<div id="DLcontent">
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3236473" title="Full Citation in the ACM Digital Library">On the importance of common sense in program synthesis</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Hila Peleg</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Tools solving the program synthesis problem often take as input partial specification, whether in the form of logical formulas, types or examples. Human users tend to specify just enough to explain the needed solution to themselves, and thus expose the gap between human thought, which is capable of generalization from the partial specifications, and synthesis tools and their backend ML models which are only able to generalize once the form of bias has been selected for them.</p> <p>Humans are often able to generalize better than algorithms. The language of classifiers of a ML algorithm, which creates its built-in bias, it is still no match for human common sense, which allows for selection from a much larger range of generalization mechanisms. Synthesis tools often address this issue by ranking the possible biases of the tool's inner learning based on domain-specific information, but this does not scale when more generalizations are added to the tool, nor does it generalize when a synthesis algorithm is transferred to a different problem domain.</p> <p>We wish to explore methods in which the human user can apply common sense: to select one of several possible biases, to refine specifications so that existing biases are no longer relevant, or to simply intervene manually in the result. In addition, we ask what the limitation of this human intervention is, since common sense can depend on many factors, first and foremost an understanding of the problem being solved and the solution being proposed by the synthesizer.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N675124" title="Get the Full Text from the ACM Digital Library">Buffer overflow detection for C programs is hard to learn</a>
+
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Yang Zhao</li>
+<li class="nameList">Xingzhong Du</li>
+<li class="nameList">Paddy Krishnan</li>
+<li class="nameList Last">Cristina Cifuentes</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Machine learning has been used to detect bugs such as buffer overflow [6, 8]. Models get trained to report bugs at the function or file level, and reviewers of the results have to eyeball the code to determine whether there is a bug in that function or file, or not. Contrast this to static code analysers which report bugs at the statement level along with traces [3, 7], easing the effort required to review the reports.</p> <p>Based on our experience with implementing scalable and precise bug finders in the Parfait tool [3], we experiment with machine learning to understand how close the techniques can get to a precise static code analyser. In this paper we summarise our finding in using ML techniques to find buffer overflow in programs written in C language. We treat bug detection as a classification problem. We use feature extraction and train a model to determine whether a buffer overflow has occurred or not at the function level. Training is done over labelled data used for regression testing of the Parfait tool. We evaluate the performance of different classifiers using the 10-fold cross-validation and the leave-one-out strategy. To understand the generalisability of the trained model, we use it on a collection of unlabelled real-world programs and manually check the reported warnings.</p> <p>Our experiments show that, even though the models give good results over training data, they do not perform that well when faced with larger, unlabelled data. We conclude with open questions that need addressing before machine learning techniques can be used for buffer overflow detection.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N675135" title="Get the Full Text from the ACM Digital Library">Detecting anomalies in Kotlin code</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Timofey Bryksin</li>
+<li class="nameList">Victor Petukhov</li>
+<li class="nameList">Kirill Smirenko</li>
+<li class="nameList Last">Nikita Povarov</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>This paper discusses code anomalies - code fragments that are written in some way that is not typical for the programming language community. Such code fragments are useful for language creators as performance tests, or they could provide insights on how to improve the language. With Kotlin as the target language, we discuss how the task of detecting code anomalies for a very large codebase could be solved using well-known anomaly detection techniques. We outline and discuss approaches to obtain code vector representation and to perform anomaly detection on such vectorized data. The paper concludes with our preliminary results.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3236471" title="Full Citation in the ACM Digital Library">Can we learn some PL theory?: how to make use of a corpus of subtype checks</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Artem Pelenitsyn</li>
+
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Modern object-oriented languages make use of complex subtype relations. Consider Julia programming language: it has user-defined invariant parametric types, existential types, union and covariant product types, as well as some ad hoc rules, like the diagonal rule, facilitating the use of the core mechanism of the language - multiple dispatching. Its subtyping relation had no rigorous description so far, is implemented in 2KLOC of highly-optimized C code touched by only a handful of core developers, and perceived by the community as a black box. Examples sending the algorithm into a loop or crushing the VM keep poping up on the issue tracker. To tame the complexity, some time ago, we aimed for a formal definition of the relation, accompanied with the implementation. But how can we be sure that our implementation indeed corresponds to the cryptic C one? To solve that, we collected a large number of examples of subtype checks from the live Julia sessions and compared the output with that of our implementation's. It would be more enlightening, however, to learn how to generate pairs of Julia types which are likely to be in subtype relation to feed those into the testing framework. More interestingly, to learn the subtype algorithm itself.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N675136" title="Get the Full Text from the ACM Digital Library">Subtype polymorphism &agrave; la carte via machine learning on dependent types</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Jerry Swan</li>
+<li class="nameList">Colin G. Johnson</li>
+<li class="nameList Last">Edwin C. Brady</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The essential rationale for subtype polymorphism is adherence to the 'Open/Closed Principle' [12]: the ability to write framework code in terms of superclasses and subsequently invoke it with any subclass that exhibits 'proper subtyping' via the <i>Liskov Substitution Principle</i> (LSP) [11]. Formally, the LSP states that if <i>&oslash;(t : T)</i> is a provable property of objects <i>t</i> of type <i>T,</i> then <i>&oslash;(s)</i> should be true for objects <i>s</i> of subtype <i>S</i> of <i>T.</i> In practice, such properties have typically been those expressible via 'Design by Contract' [12], specifically preconditions, postconditions and invariants. Such abstraction via subtype polymorphism is intended to insulate against requirements change. However, when new requirements <i>do</i> necessitate a change of contract, the maintenance consequences can be severe. In the (typical) absence of explicit language or tool support, enforcement of proper subtyping is laborious and error-prone: contractual changes typically require manual inspection/repair of the class hierarchy to determine/address violations of the LSP.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N675137" title="Get the Full Text from the ACM Digital Library">Monotonic gradual typing in a common calculus</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Benjamin Chung</li>
+<li class="nameList Last">Jan Vitek</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Gradual typing refers to the notion that programs can be incrementally decorated with type annotations. Languages that support this approach to software development allow for programs being in various states of "typedness" on a scale ranging from entirely untyped to fully statically typed. Points in the middle of this typed-untyped scale create interactions between typed and untyped code, which is where gradual type systems differ. Each gradual type system comes with tradeoffs. Some systems provide strong guarantees at the expense of vastly degraded performance; others do not impact the running time of programs, but they do little to prevent type errors. This paper looks at an intriguing point in the landscape of these systems: the monotonic semantics. The monotonic semantics is designed to reduce the overhead of typed field access through a different enforcement mechanism compared to other gradual type systems. In our previous paper, [1], we described four semantics for gradual typing. This paper uses the framework of that companion paper to present and explore a formulation for the <i>monotonic</i> semantics. In comparison to the others, the monotonic semantics is designed to reduce the overhead of typed field access. We translate a common gradually typed source language to a common statically typed target language according to the monotonic semantics, allowing easy comparison to other gradual type systems in our framework.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N675138" title="Get the Full Text from the ACM Digital Library">A formalism for specification of Java API interfaces</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Davide Ancona</li>
+<li class="nameList">Francesco Dagnino</li>
+<li class="nameList Last">Luca Franceschini</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The standard Java API defines a number of useful and widely used interfaces, where the flow of methods invoked on objects must follow certain patterns to ensure their correct use. Typically, such patterns are informally specified in the documentation with several rules, which often do not cover full details, and are scattered throughout the whole documentation, since they usually involve more methods which are invoked subsequently. Failing to follow such rules causes a throw of IllegalStateException, or similar exceptions. Let us consider, for instance, the specification of the following types defined by the standard API of Java 10 in module java.base.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N675139" title="Get the Full Text from the ACM Digital Library">Incremental overload resolution in object-oriented programming languages</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Tam&#225;s Szab&#243;</li>
+<li class="nameList">Edlira Kuci</li>
+<li class="nameList">Matthijs Bijman</li>
+<li class="nameList">Mira Mezini</li>
+<li class="nameList Last">Sebastian Erdweg</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Object-oriented programming languages feature static and dynamic overloading: Multiple methods share the same name but provide different implementations. Dynamic overloading (also know as dynamic dispatch) is resolved at run time based on the type of the receiver object. In this paper, we focus on static overloading in Featherweight Java, which is resolved at compile time based on the types of the method arguments.</p> <p>The challenge this paper addresses is to incrementalize static overload resolution in IDEs. IDEs resolve overloaded methods for the developer to help them discern which implementation a method call refers to. However, as the code changes, the IDE has to reconsider previously resolved method calls when they are affected by the code change. This paper clarifies when a method call is affected by a code change and how to re-resolve method calls with minimal computational effort. To this end, we explore and compare two approaches to incremental type checking: co-contextual type checking and IncA.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N675130" title="Get the Full Text from the ACM Digital Library">Static latency tracking with placement types</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Pascal Weisenburger</li>
+<li class="nameList">Tobias Reinhard</li>
+<li class="nameList Last">Guido Salvaneschi</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Large-scale distributed applications, e.g., in geodistributed data centers, pose a performance challenge to developers which need to take high cross-data-center latency communication cost into account. We present a preliminary investigation of a type system that tracks latency and makes the cost of remote calls explicit, raising developers' awareness of communication overhead.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N675131" title="Get the Full Text from the ACM Digital Library">Reasoning about functional programming in Java and C++</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">David R. Cok</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Verification projects on industrial code have required reasoning about functional programming constructs in Java 8. General functional programming requires reasoning about how the specifications of function objects that are inputs to a method combine to produce the specifications of output function objects. This short paper describes our in-progress experience in adapting prior work (Kassios &#38; M&uuml;ller) to Java 8, JML, OpenJML, and to ACSL++, a specification language for C++ built on ACSL.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N675132" title="Get the Full Text from the ACM Digital Library">An exercise in verifying sequential programs with VerCors</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Sebastiaan J. C. Joosten</li>
+<li class="nameList">Wytse Oortwijn</li>
+<li class="nameList">Mohsen Safari</li>
+<li class="nameList Last">Marieke Huisman</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Society nowadays relies heavily on software, which makes verifying the correctness of software crucially important. Various verification tools have been proposed for this purpose, each focusing on a limited set of tasks, as there are many different ways to build and reason about software. This paper discusses two case studies from the VerifyThis2018 verification competition, worked out using the VerCors verification toolset. These case studies are sequential, while VerCors specialises in reasoning about parallel and concurrent software. This paper elaborates on our experiences of using VerCors to verify sequential programs. The first case study involves specifying and verifying the behaviour of a gap buffer; a data-structure commonly used in text editors. The second case study involves verifying a combinatorial problem based on Project Euler problem #114. We find that VerCors is well capable of reasoning about sequential software, and that certain techniques to reason about concurrency can help to reason about sequential programs. However, the extra annotations required to reason about concurrency bring some specificational overhead.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N675133" title="Get the Full Text from the ACM Digital Library">Towards automated translation between generations of GUI-based tests for mobile devices</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Luca Ardito</li>
+<li class="nameList">Riccardo Coppola</li>
+<li class="nameList">Marco Torchiano</li>
+<li class="nameList Last">Emil Al&#233;groth</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Market demands for faster delivery and higher software quality are progressively becoming more stringent. A key hindrance for software companies to meet such demands is how to test the software due to to the intrinsic costs of development, maintenance and evolution of testware. Especially since testware should be defined, and aligned, with all layers of system under test (SUT), including all graphical user interface (GUI) abstraction levels. These levels can be tested with different generations of GUI-based test approaches, where 2<sup>nd</sup> generation, or Layout-based, tests leverage GUI properties and 3<sup>rd</sup> generation, or Visual, tests make use of image recognition. The two approaches provide different benefits and drawbacks and are seldom used together because of the aforementioned costs, despite growing academic evidence of the complementary benefits.</p> <p>In this work we propose the proof of concept of a novel two-step translation approach for Android GUI testing that we aim to implement, where a translator first creates a technology independent script with actions and elements of the GUI, and then translates it to a script with the syntax chosen by the user. The approach enables users to translate Layout-based to Visual scripts and vice versa, to gain the benefits (e.g. robustness, speed and ability to emulate the user) of both generations, whilst minimizing the drawbacks (e.g. development and maintenance costs). We outline our approach from a technical perspective, discuss some of the key challenges with the realization of our approach, evaluate the feasibility and the advantages provided by our approach on an open-source Android application, and discuss the potential industrial impact of this work.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N675134" title="Get the Full Text from the ACM Digital Library">Automatic GUI testing of desktop applications: an empirical assessment of the state of the art</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Mauro Pezz&#232;</li>
+<li class="nameList">Paolo Rondena</li>
+<li class="nameList Last">Daniele Zuddas</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Testing software applications interacting with their graphical user interface, in short GUI testing, is both important, since it can reveal subtle and annoying bugs, and expensive, due to myriads of possible GUI interactions. Recent attempts to automate GUI testing have produced several techniques that address the problem from different perspectives, sometimes focusing only on some specific platforms, such as Android or Web, and sometimes targeting only some aspects of GUI testing, like test case generation or execution. Although GUI test case generation techniques for desktop applications were the first to be investigated, this area is still actively researched and its state of the art is continuously expanding.</p> <p>In this paper we comparatively evaluate the state-of-the-art for <i>automatic GUI test cases generation for desktop applications,</i> by presenting a set of experimental results obtained with the main GUI testing tools for desktop applications available. The paper overviews the state of the art in GUI testing, discusses differences, similarities and complementarities among the different techniques, experimentally compares strengths and weaknesses, and pinpoints the open problems that deserve further investigation.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N675145" title="Get the Full Text from the ACM Digital Library">GUI scalability issues of windows desktop applications and how to find them</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Rudolf Ramler</li>
+<li class="nameList">Thomas Wetzlmaier</li>
+<li class="nameList Last">Robert Hoschek</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Advancements in display technologies have constantly increased the numbers of pixels per inch (DPI) of modern monitors. To avoid that the GUI elements and texts appear crisp and sharp but miniscule and barely readable, operating systems allow scaling up the user interface. Proper scaling also requires applications to adjust to DPI changes correctly. Failures can lead to visual artifacts, distorted and misaligned GUI elements, blurry images, and clipped texts. Such issues are highly visible, irritating, and can considerably decrease productivity. In this paper, we present an approach used for testing the GUI of a large Windows application scaled to different DPI settings. We describe the various scalability issues we observed and the methods we implemented to detect them. We conclude the paper by discussing our insights about how to automate and perform GUI scalability testing.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N675146" title="Get the Full Text from the ACM Digital Library">Is this the lifecycle we really want?: an automated black-box testing approach for Android activities</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Vincenzo Riccio</li>
+<li class="nameList">Domenico Amalfitano</li>
+<li class="nameList Last">Anna Rita Fasolino</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Android is today the world's most popular mobile operating system and the demand for quality to Android mobile apps has grown together with their spread. Testing is a well-known approach for assuring the quality of software applications but Android apps have several peculiarities compared to traditional software applications that have to be taken into account by testers. Several studies have pointed out that mobile apps suffer from issues that can be attributed to Activity lifecycle mishandling, e.g. crashes, hangs, waste of system resources. Therefore the lifecycle of the Activities composing an app should be properly considered by testing approaches. In this paper we propose ALARic, a fully automated Black-Box Event-based testing technique that explores an application under test for detecting issues tied to the Android Activity lifecycle. ALARic has been implemented in a tool. We conducted an experiment involving 15 real Android apps that showed the effectiveness of ALARic in finding GUI failures and crashes tied to the Activity lifecycle. In the study, ALARic proved to be more effective in detecting crashes than Monkey, the state-of-the practice automated Android testing tool.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N675147" title="Get the Full Text from the ACM Digital Library">Redesigning Soot's data-flow analysis framework for abstract interpretation</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Elena Sherman</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The goal of a program analysis framework is to decrease the effort required of a program analysis developer to implement a new analysis. The Soot Java optimization framework provides analysis developers with several types of abstract analyses, which depending on the developers' needs, can be further extended. Unfortunately, the applicability of the available abstract analyses in Soot is limited to analyses with finite ascending chains abstract domains, which are sufficient for the majority of program optimization tasks. This limitation hinders the use of Soot for program verification that requires reasoning about a program's semantic over infinite abstract domains, i.e., abstract interpretation.</p> <p>In this work we re-design Soot's forward flow analysis framework to provide basic support for abstract interpretation. To accomplish this goal, we first extend the definition of a data-flow analysis to include additional parameters required for efficient and precise computation of abstract interpretation analyses. Next, we re-factor the current Soot's implementation of a data-flow analysis to represent the extended definition. Finally, we demonstrate the flexibility and the applicability of the refactored implementation by instantiating several essential data-flow analyses used in abstract interpretation research.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N675148" title="Get the Full Text from the ACM Digital Library">The secret sauce in efficient and precise static analysis: the beauty of distributive, summary-based static analyses (and how to master them)</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Eric Bodden</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In this paper I report on experiences gained from more than five years of extensively designing static code analysis tools- in particular such ones with a focus on security- to scale to real-world projects within an industrial context. Within this time frame, my team and I were able to design static-analysis algorithms that yield both <i>largely improved precision and performance</i> compared to previous approaches. I will give a number of insights regarding important design decisions that made this possible.</p> <p>In particular, I argue that summary-based static-analysis techniques for distributive problems, such as IFDS, IDE and WPDS have been unduly under-appreciated. As my experience shows, those techniques can tremendously benefit both precision and performance, if one uses them in a well-informed way, using carefully designed abstract domains. As one example, I will explain how in previous work on B<scp>OOMERANG</scp> we were able to decompose pointer analysis, a static analysis problem that is actually not distributive, into sub-problems that are distributive. This yields an implementation that is both highly precise and efficient.</p> <p>This breakthrough, along with the use of a demand-driven program-analysis design, has recently allowed us to implement practical static analysis tools such as the crypto-misuse checker CogniCrypt, which can analyze the entire Maven-Central repository with more than 200.000 binaries in under five days, although its analysis is flow-sensitive, field-sensitive, and fully context-sensitive.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N675149" title="Get the Full Text from the ACM Digital Library">A<scp>FFOGATO</scp>: runtime detection of injection attacks for Node.js</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Fran&#231;ois Gauthier</li>
+<li class="nameList">Behnaz Hassanshahi</li>
+<li class="nameList Last">Alexander Jordan</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Node.js took JavaScript from the browser to server-side web applications, and injection vulnerabilities are now commonly reported in Node.js modules. However, existing taint analysis approaches for JavaScript require extensive manual modelling, and fail to analyse simple Node.js applications that contain hundreds of third-party modules. For this reason, we developed A<scp>FFOGATO</scp>, a robust and practical grey-box taint analysis tool that uses black-box reasoning to overcome the need for manual modelling while using white-box program analysis to reason about critical program operations. We evaluate A<scp>FFOGATO</scp> on a suite of Node.js modules and show how it can detect all publicly disclosed injection vulnerabilities with an acceptable overhead, outperforming existing state-of-the-art tools for Node.js.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N675140" title="Get the Full Text from the ACM Digital Library">NJR: a normalized Java resource</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Jens Palsberg</li>
+<li class="nameList Last">Cristina V. Lopes</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We are on the cusp of a major opportunity: software tools that take advantage of Big Code. Specifically, Big Code will enable novel tools in areas such as security enhancers, bug finders, and code synthesizers. What do researchers need from Big Code to make progress on their tools? Our answer is an infrastructure that consists of 100,000 executable Java programs together with a set of working tools and an environment for building new tools. This Normalized Java Resource (NJR) will lower the barrier to implementation of new tools, speed up research, and ultimately help advance research frontiers.</p> <p>Researchers get significant advantages from using NJR. They can write scripts that base their new tool on NJR's already-working tools, and they can search NJR for programs with desired characteristics. They will receive the search result as a container that they can run either locally or on a cloud service. Additionally, they benefit from NJR's normalized representation of each Java program, which enables scalable running of tools on the entire collection. Finally, they will find that NJR's collection of programs is diverse because of our efforts to run clone detection and near-duplicate removal. In this paper we describe our vision for NJR and our current prototype.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N675141" title="Get the Full Text from the ACM Digital Library">Systematic evaluation of the unsoundness of call graph construction algorithms for Java</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Michael Reif</li>
+<li class="nameList">Florian K&#252;bler</li>
+<li class="nameList">Michael Eichberg</li>
+<li class="nameList Last">Mira Mezini</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Call graphs are at the core of many static analyses ranging from the detection of unused methods to advanced control-and data-flow analyses. Therefore, a comprehensive understanding of the precision and recall of the respective graphs is crucial to enable an assessment which call-graph construction algorithms are suited in which analysis scenario. For example, malware is often obfuscated and tries to hide its intent by using Reflection. Call graphs that do not represent reflective method calls are, therefore, of limited use when analyzing such apps.</p> <p>In general, the precision is well understood, but the recall is not, i.e., in which cases a call graph will not contain any call edges. In this paper, we discuss the design of a comprehensive test suite that enables us to compute a fingerprint of the <i>unsoundness</i> of the respective call-graph construction algorithms. This suite also enables us to make a comparative evaluation of static analysis frameworks. Comparing Soot and WALA shows that WALA currently has better support for new Java 8 features and also for Java Reflection. However, in some cases both fail to include expected edges.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N675142" title="Get the Full Text from the ACM Digital Library">Lattice based modularization of static analyses</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">M. Eichberg</li>
+<li class="nameList">F. K&#252;bler</li>
+<li class="nameList">D. Helm</li>
+<li class="nameList">M. Reif</li>
+<li class="nameList">G. Salvaneschi</li>
+<li class="nameList Last">M. Mezini</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Static analyses which compute conceptually independent information, e.g., class immutability or method purity are typically developed as standalone, closed analyses. Complementary information that could improve the analyses is either ignored by making a sound over-approximation or it is also computed by the analyses, but at a rudimentary level. For example, an immutability analysis requires field mutability information, alias/escape information, and information about the concurrent behavior of methods to correctly classify classes like java.lang.String or java.util.BigDecimal. As a result, without properly supporting the integration of independently developed, mutually benefiting analysis, many analyses will not correctly classify relevant entities.</p> <p>We propose to use explicitly reified lattices that encode the information about a source code element's properties (e.g., a method's purity or a class' immutability) as the sole interface between mutually dependent analyses. This enables the composition of multiple analyses. Our case study shows that using such an approach enables highly scalable, lightweight implementations of modularized static analyses.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N675143" title="Get the Full Text from the ACM Digital Library">Iceberg: dynamic analysis of Java synchronized methods for investigating runtime performance variability</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Michael D. Shah</li>
+<li class="nameList Last">Samuel Z. Guyer</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Writing multi-threaded code for both correctness and performance is difficult. Often programmers strive for correctness, which may lead to an overly conservative use of synchronization primitives. Even when correct, however, synchronized regions of code (critical sections) may introduce performance variability that causes unexpected <i>software hangs</i> and can be considered a performance bug. These performance bugs are occasional, hard to predict, and may negatively impact the overall user experience. In this paper we present a tool called Iceberg for finding potential software hangs in Java programs. Our focus is on identifying synchronized methods with high variability in their execution time-in particular, if they occasionally run much longer than normal. The key feature of Iceberg is that it records the runtime of every individual execution of a synchronized method, looking for outliers among them, rather than aggregating the runtime the way previous profilers have done. We calibrate our tool using a suite of microbenchmarks with known variability in their critical sections and then tested it with three real world programs. Our results document several cases where our tool finds high variability that could cause real software hangs.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N675144" title="Get the Full Text from the ACM Digital Library"><i>Izinto</i>: a pattern-based IoT testing framework</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Pedro Martins Pontes</li>
+<li class="nameList">Bruno Lima</li>
+<li class="nameList Last">Jo&#227;o Pascoal Faria</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The emergence of Internet of Things (IoT) technology is expected to offer new promising solutions in various domains and, consequently, impact many aspects of everyday life. However, the development and testing of software applications and services for IoT systems encompasses several challenges that existing solutions have not yet properly addressed. Particularly, the difficulty to test IoT systems - due to their heterogeneous and distributed nature -, and the importance of testing in the development process give rise to the need for an efficient way to implement automated testing in IoT. Although there are already several tools that can be used in the testing of IoT systems, a number of issues can be pointed out, such as focusing on a specific platform, language, or standard, limiting the possibility of improvement or extension, and not providing out-of-the-box functionalities. This paper describes <i>Izinto,</i> a pattern-based test automation framework for integration testing of IoT systems. The framework implements in a generic way a set of test patterns specific to the IoT domain which can be easily instantiated for concrete IoT scenarios. It was validated in a number of test cases, within a concrete application scenario in the domain of Ambient Assisted Living (AAL).</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N675255" title="Get the Full Text from the ACM Digital Library">Analysing the effect of uncertainty in airport surface operations</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Heron Yang</li>
+<li class="nameList">Robert Morris</li>
+<li class="nameList Last">Corina S. P&#259;s&#259;reanu</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Designing efficient and robust automated planning and scheduling systems for complex logistics applications presents many challenges, especially if the executing environment is changing unpredictably. In this paper, we study the problem of planning and scheduling airport surface movement at large airports. We describe a fast-time simulation tool that is easily extensible to different scenarios and airports, and is capable of simulating uncertainty in the form of unexpected delays in aircraft movement at different locations. We also describe an approach to scheduling surface movement which is comprised of a deterministic 'rolling horizon' scheduler, paired with heuristic search based on conflict detection and resolution. We summarize a set of experiments designed to quantify the effects of uncertainty on the robustness of schedules and the incurred delays. The system developed is open sourced at https://github.com/heronyang/airport-simulation.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N675256" title="Get the Full Text from the ACM Digital Library">Electromagnetic side-channel attacks: potential for progressing hindered digital forensic analysis</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Asanka Sayakkara</li>
+<li class="nameList">Nhien-An Le-Khac</li>
+<li class="nameList Last">Mark Scanlon</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Digital forensics is fast-growing field involving the discovery and analysis of digital evidence acquired from electronic devices to assist investigations for law enforcement. Traditional digital forensic investigative approaches are often hampered by the data contained on these devices being encrypted. Furthermore, the increasing use of IoT devices with limited standardisation makes it difficult to analyse them with traditional techniques. This paper argues that electromagnetic side-channel analysis has significant potential to progress investigations obstructed by data encryption. Several potential avenues towards this goal are discussed.</p></div> </div>
+</div>
+</div>
+</body>
+</html>

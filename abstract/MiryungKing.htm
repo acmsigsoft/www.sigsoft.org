@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+Programmers often need to reason about how a program evolved between
+two or more program versions. Reasoning about program changes is
+challenging as there is a significant gap between how programmers
+think about changes and how existing program differencing tools
+represent such changes. For example, even though modification of a
+locking protocol is conceptually simple and systematic at a code
+level, diff extracts scattered text additions and deletions per file.
+<p>
+To enable programmers to reason about program differences at a
+high-level, this dissertation proposes an approach that automatically
+discovers and represents systematic changes as first order logic
+rules.  This rule inference approach is based on the insight that
+high-level changes are often systematic at a code level and that first
+order logic rules can represent such systematic changes
+concisely. There are two similar but separate rule-inference
+techniques, each with its own kind of rules. The first kind captures
+systematic changes to application programming interface (API) names
+and signatures. The second kind captures systematic differences at the
+level of code elements (e.g., types, methods, and fields) and
+structural dependencies (e.g., method-calls and subtyping
+relationships).
+<p>
+Both kinds of rules concisely represent systematic changes and
+explicitly note exceptions to systematic changes. Thus, software
+engineers can quickly get an overview of program differences and
+identify potential bugs caused by inconsistent updates. The viability
+of this approach is demonstrated through its application to several
+open source projects as well as a focus group study with professional
+software engineers from a large e-commerce company.
+<p>
+This dissertation also presents empirical studies that motivated the
+rule-based change inference approach. It has been long believed that
+code clones---syntactically similar code fragments---indicate poor
+software design and that refactoring code clones improves software
+quality. By focusing on the evolutionary aspects of clones, this
+dissertation discovered that, in contrast to conventional wisdom,
+programmers often create and maintain code duplicates with clear
+intent and that immediate and aggressive refactoring may not be the
+best solution for managing code clones. The studies also contributed
+to developing the insight that a high-level change operation comprises
+systematic transformations at a code level and that identification of
+such systematicness can help programmers better understand code
+changes and avoid inconsistent updates.
+</div>
+</body>
+</html>

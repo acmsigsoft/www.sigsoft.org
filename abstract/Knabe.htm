@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">Mobile agents are code-containing objects that may be transmitted between communicating participants in a distributed system. As opposed to systems that only allow the exchange of nonexecutable data, systems incorporating mobile agents can achieve significant gains in performance and functionality.
+<P>
+
+A programming language for mobile agents must be able to express their construction, transmission, receipt, and subsequent execution. Its implementation must handle architectural heterogeneity between communicating machines and provide sufficient performance for applications based on agents. In addition to these essential properties, an agent language may support desirable properties such as high-level abstractions for code manipulation and the ability to access resources on remote execution sites.
+<P>
+
+We designed and implemented an agent programming language that satisfies the essential properties and a number of desirable ones. A key feature of our language is the use of strong static typing for remote resource access. Agents may be linked dynamically to resources on remote sites, and this linking is always guaranteed to be type safe. We provide this guarantee without requiring that all components of an agent-based system be compiled together.
+<P>
+
+Our language also includes several features to improve the performance of mobile agents. Before an agent is transmitted, it is trimmed of values that are expected to be available on the recipient, thus shrinking transmissions. Agents may be interpreted or compiled depending on the application and the relative performance trade-offs. When compilation is used, it is done lazily: Each component of an agent is only compiled as it is needed. Furthermore, machine-specific representations for an agent can be transmitted with machine-independent ones, opening the possibility for recipients to skip compilation or interpretation altogether.
+<P>
+
+To evaluate our language and to explore the potential of mobile agents, we developed a programming framework for agents. Several applications were implemented by other programmers within this framework using our language. Their work served to validate our design and our choice of agent language properties. We also analyzed the performance of our language on these applications and several synthetic benchmarks. The analysis shows that the features we incorporated into the implementation significantly improve performance. 
+
+
+
+</div>
+</body>
+</html>

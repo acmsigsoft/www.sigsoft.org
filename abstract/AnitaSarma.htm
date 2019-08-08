@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+Software development requires multiple developers to work in concert
+on highly interdependent tasks and artifacts, which makes coordination
+a crucial part of any software development process. Coordination
+breakdowns are responsible for a wide variety of software conflicts
+that, in turn, lead to cost overruns and project delays. This
+dissertation focuses on those software conflicts that arise because of
+parallel development during the implementation phase. More
+specifically, it focuses on direct conflicts (when the same artifact
+is concurrently modified by multiple developers) and indirect
+conflicts (changes in one artifact negatively affecting concurrent
+changes in another artifact) as they arise when developers work
+together using a configuration management system.
+<p>
+Our work is based on the insight that the use of current configuration
+management systems has the undesired side effect of isolating
+developers in their private workspaces. As a result, they remain
+unaware of emerging conflicts until changes are complete and have to
+be brought together, build, and tested. Conflicts are therefore
+detected much later in time. Direct conflicts are detected when a
+developer checks-in their changes. Indirect conflicts are detected
+even later, during a build failure, an integration failure, or as a
+bug after deployment. This dissertation presents our approach towards
+mitigating the effects of software conflicts by: (1) enabling
+developers to detect emerging conflicts (both direct and indirect),
+while conflicts are still small in size and relatively innocuous, and
+(2) thereby providing the developers the opportunity to
+self-coordinate to either avoid the conflict altogether or resolve it
+easily.
+<p>
+The contributions of this dissertation are threefold. First, it frames
+our approach in a novel framework that provides a historical
+perspective on the evolution of coordination technologies and the
+underlying coordination paradigms that these technologies
+follow. Second, it verifies the technical feasibility of our approach
+through the implementation of our research prototype, Palantír. Third,
+it presents quantitative evidence of the benefits of Palantír in the
+detection and the resolution of a larger number of conflicts through
+controlled user experiments. Specifically, our experiments show
+statistical evidence of the benefits of Palantír in facilitating users
+to: (1) detect conflicts early, (2) detect and resolve a larger number
+of conflicts, and (3) self-coordinate amongst each other.  
+</div>
+</body> </html>

@@ -1,0 +1,685 @@
+
+<!doctype html>
+<head>
+<META http-equiv="Content-Style-Type" content="text/css">
+<title>ESEM '18- Proceedings of the 12th ACM/IEEE International Symposium on Empirical Software Engineering and Measurement</title>
+<STYLE type="text/css">
+#DLtoc {
+	font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+	}
+
+#DLheader {
+	}
+#DLheader h1 {
+	font-size:16px;	
+}
+	
+#DLcontent {
+	 font-size:12px;
+	}
+#DLcontent h2 {
+	 font-size:14px;
+	 margin-bottom:5px;
+	}
+#DLcontent h3 {
+	 font-size:12px;
+	 padding-left:20px;
+	 margin-bottom:0px;
+	}
+
+#DLcontent ul{
+	margin-top:0px;
+	margin-bottom:0px;
+	}
+		
+.DLauthors li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLauthors li:after{
+	content:",";
+	}
+.DLauthors li.nameList.Last:after{
+	content:"";
+	}		
+
+.DLabstract {
+	 padding-left:40px;
+	 padding-right:20px;
+	 display:block;
+	}
+
+.DLformats li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLformats li:after{
+	content:",";
+	}
+.DLformats li.formatList.Last:after{
+	content:"";
+	}		
+
+.DLlogo {
+	vertical-align:middle; 
+	padding-right:5px;
+	border:none;
+	}
+	
+.DLcitLink {
+	margin-left:20px;
+	}	
+
+.DLtitleLink {
+	margin-left:20px;
+	}	
+
+.DLotherLink {
+	margin-left:0px;
+	}		
+   
+</STYLE>
+</head>
+<body>
+<div id="DLtoc">
+<div id="DLheader">
+<h1>ESEM '18- Proceedings of the 12th ACM/IEEE International Symposium on Empirical Software Engineering and Measurement</h1>
+<a class="DLcitLink" href="https://dl.acm.org/citation.cfm?id=3239235" title="Go to the ACM Digital Library for additional information about this proceeding"><img class="DLlogo" src="https://dl.acm.org/img/dllogo.png" alt="Digital Library logo" height="30" width="30">Full Citation in the ACM Digital Library</a>
+</div>
+<div id="DLcontent">
+<h2>SESSION: Full research papers</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668401" title="Get the Full Text from the ACM Digital Library">Architecture, technologies and challenges for cyber-physical systems in industry 4.0: a systematic mapping study</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Florian Hofer</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>Background:</b> The vision of a fourth industrial revolution lately strongly captured the attention of research A Cyber-physical system (CPS) is one of the main drivers of this vision. Such system controls an underlying factory interacting with sensors, actuators and other systems creating systems-of-systems. A main point of interest is how these components are built and interconnected, i.e. the system's architecture, and how it might be improved to increase reliability and security.</p> <p><b>Aims:</b> Unfortunately, there is no review available describing and identifying recent research status and progress for such architectures. Thus, in this systematic mapping study, we overview research on architecture for CPS in the context of Industry 4.0.</p> <p><b>Method:</b> With an initial automatic search and through iterative refining, first results were gathered. Next, forward and backwards snowballing was performed to integrate the results, giving a final population of 213 papers. The output of this study is firstly a categorization and plot of architectural styles. Secondly, the categorization is extended to include security concerns.</p> <p><b>Results:</b> In general, there is a tendency in proposing solutions in the fields of system and software architecture while other areas are visibly under-researched. Most proposals focus in digital representation, information management and integration of solutions.</p> <p><b>Conclusions:</b> While a lot of solution proposals for different architectures exist, there are many fields uncovered and most of the solutions still lack of validation and evaluation results. Our findings highlight areas for future research and provide suggestions for investigation approaches.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668402" title="Get the Full Text from the ACM Digital Library">Are 20% of files responsible for 80% of defects?</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Neil Walkinshaw</li>
+<li class="nameList Last">Leandro Minku</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Background: Over the past two decades a mixture of anecdote from the industry and empirical studies from academia have suggested that the 80:20 rule (otherwise known as the Pareto Principle) applies to the relationship between source code files and the number of defects in the system: a small minority of files (roughly 20%) are responsible for a majority of defects (roughly 80%).</p> <p>Aims: This paper aims to establish how widespread the phenomenon is by analysing 100 systems (previous studies have focussed on between one and three systems), with the goal of whether and under what circumstances this relationship does hold, and whether the key files can be readily identified from basic metrics.</p> <p>Method: We devised a search criterion to identify defect fixes from commit messages and used this to analyse 100 active Github repositories, spanning a variety of languages and domains. We then studied the relationship between files, basic metrics (churn and LOC), and defect fixes.</p> <p>Results: We found that the Pareto principle does hold, but only if defects that incur fixes to multiple files count as multiple defects. When we investigated multi-file fixes, we found that key files (belonging to the top 20%) are commonly fixed alongside other much less frequently-fixed files. We found LOC to be poorly correlated with defect proneness, Code Churn was a more reliable indicator, but only for extremely high values of Churn.</p> <p>Conclusions: It is difficult to reliably identify the "most fixed" 20% of files from basic metrics. However, even if they could be reliably predicted, focussing on them would probably be misguided. Although fixes will naturally involve files that are often involved in other fixes too, they also tend to include other less frequently-fixed files.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668403" title="Get the Full Text from the ACM Digital Library">Are mutants really natural?: a study on how "naturalness" helps mutant selection</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Matthieu Jimenez</li>
+<li class="nameList">Thiery Titcheu Checkam</li>
+<li class="nameList">Maxime Cordy</li>
+<li class="nameList">Mike Papadakis</li>
+<li class="nameList">Marinos Kintis</li>
+<li class="nameList">Yves Le Traon</li>
+<li class="nameList Last">Mark Harman</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>Background:</b> Code is repetitive and predictable in a way that is similar to the natural language. This means that code is "natural" and this "naturalness" can be captured by natural language modelling techniques. Such models promise to capture the program semantics and identify source code parts that `smell', i.e., they are strange, badly written and are generally error-prone (likely to be defective). <b>Aims:</b> We investigate the use of natural language modelling techniques in mutation testing (a testing technique that uses artificial faults). We thus, seek to identify how well artificial faults simulate real ones and ultimately understand how natural the artificial faults can be. Our intuition is that natural mutants, i.e., mutants that are predictable (follow the implicit coding norms of developers), are semantically useful and generally valuable (to testers). We also expect that mutants located on unnatural code locations (which are generally linked with error-proneness) to be of higher value than those located on natural code locations. <b>Method:</b> Based on this idea, we propose mutant selection strategies that rank mutants according to a) their naturalness (naturalness of the mutated code), b) the naturalness of their locations (naturalness of the original program statements) and c) their impact on the naturalness of the code that they apply to (naturalness differences between original and mutated statements). We empirically evaluate these issues on a benchmark set of 5 open-source projects, involving more than 100k mutants and 230 real faults. Based on the fault set we estimate the utility (i.e. capability to reveal faults) of mutants selected on the basis of their naturalness, and compare it against the utility of randomly selected mutants. <b>Results:</b> Our analysis shows that there is no link between naturalness and the fault revelation utility of mutants. We also demonstrate that the naturalness-based mutant selection performs similar (slightly worse) to the random mutant selection. <b>Conclusions:</b> Our findings are negative but we consider them interesting as they confute a strong intuition, i.e., fault revelation is independent of the mutants' naturalness.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668404" title="Get the Full Text from the ACM Digital Library">Assessing the effect of data transformations on test suite compilation</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Panagiotis Stratis</li>
+<li class="nameList">Vanya Yaneva</li>
+<li class="nameList Last">Ajitha Rajan</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>Background.</b> The requirements and responsibilities assumed by software has increasingly rendered it to be large and complex. Testing to ensure that software meets all its requirements and is free from failures is a difficult and time-consuming task that necessitates the use of large test suites, containing many tests. Large test suites result in a corresponding increase in the size of the test code that sets up, exercises and verifies the tests. Time needed to compile and optimise the test code becomes prohibitive for large test code sizes.</p> <p><b>Aims.</b> In this paper we demonstrate for the first time <i>optimisations to speedup compilation of test code.</i> Reducing the compilation time of test code for large and complex systems will allow additional tests to be compiled and executed, while also enabling more frequent and rigorous testing.</p> <p><b>Methods.</b> We propose transformations that reduce the number of instructions in the test code, which in turn reduces compilation time. Using two well known compilers, GCC and Clang, we conduct empirical evaluations using subject programs from industry standard benchmarks and an industry provided program. We evaluate <i>compilation speedup, execution time, scalability</i> and <i>correctness</i> of the proposed test code transformation.</p> <p><b>Results.</b> Our approach resulted in significant compilation speedups in the range of 1.3X to 69X. Execution of the test code was just as fast with our transformation when compared to the original while also preserving correctness of execution. Finally, our experiments show that the gains in compilation time allow significantly more tests to be included in a single binary, improving scalability of test code compilation.</p> <p><b>Conclusions.</b> The proposed transformation results in faster test code compilation for all the programs in our experiment, with more significant speedups for larger case studies and larger numbers of tests. As systems get more complex requiring frequent and extensive testing, we believe our approach provides a safe and efficient means of compiling test code.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668415" title="Get the Full Text from the ACM Digital Library">The birth, growth, death and rejuvenation of software maintenance communities</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Qiong Feng</li>
+<li class="nameList">Yuanfang Cai</li>
+<li class="nameList">Rick Kazman</li>
+<li class="nameList Last">Ran Mo</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>Background:</b> Though much research has been conducted to investigate software maintenance activities, there has been little work charactering maintenance files as a community and exploring the evolution of this community. <b>Aims:</b> The goal of our research is to identify maintenance communities and monitor their evolution-birth, growth, death and rejuvenation. <b>Method:</b> In this paper, we leveraged a social community detection algorithm---clique prelocation method (<i>CPM</i>)---to identify file communities. Then we implemented an algorithm to detect new communities, active communities, inactive communities and reactivated communities by cumulatively detecting and constantly comparing communities in time sequences. <b>Results:</b> Based on our analysis of 14 open-source projects, we found that new communities are mostly caused by <i>bug</i> and <i>improvement</i> issues. An active community can be vigorous, on and off, through the entire life of a system, and so does an inactive community. In addition, an inactive community can be reactivated again, mostly through <i>bug</i> issues. <b>Conclusions:</b> These findings add to our understanding of software maintenance communities and help us identify the most <i>expensive</i> maintenance spots by identifying constantly active communities.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668416" title="Get the Full Text from the ACM Digital Library">Building a collaborative culture: a grounded theory of well succeeded devops adoption in practice</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Welder Pinheiro Luz</li>
+<li class="nameList">Gustavo Pinto</li>
+<li class="nameList Last">Rodrigo Bonif&#225;cio</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><i>Background.</i> DevOps is a set of practices and cultural values that aims to reduce the barriers between development and operations teams. Due to its increasing interest and imprecise definitions, existing research works have tried to characterize DevOps---mainly using a set of concepts and related practices.</p> <p><i>Aims.</i> Nevertheless, little is known about the <i>practitioners practitioners' understanding</i> about successful paths for DevOps adoption. The lack of such understanding might hinder institutions to adopt DevOps practices. Therefore, our goal here is to present a theory about DevOps adoption, highlighting the main related concepts that contribute to its adoption in industry.</p> <p><i>Method.</i> Our work builds upon Classic Grounded Theory. We interviewed practitioners that contributed to DevOps adoption in 15 companies from different domains and across 5 countries. We empirically evaluate our model through a case study, whose goal is to increase the maturity level of DevOps adoption at the Brazilian Federal Court of Accounts, a Brazilian Government institution.</p> <p><i>Results.</i> This paper presents a model to improve both the understanding and guidance of DevOps adoption. The model increments the existing view of DevOps by explaining the role and motivation of each category (and their relationships) in the DevOps adoption process. We organize this model in terms of <i>DevOps enabler categories</i> and <i>DevOps outcome categories.</i> We provide evidence that <i>collaboration</i> is the core DevOps concern, contrasting with an existing wisdom that implanting specific tools to <i>automate building, deployment, and infrastructure provisioning and management</i> is enough to achieve DevOps.</p> <p><i>Conclusions.</i> Altogether, our results contribute to (a) generating an adequate understanding of DevOps, from the perspective of practitioners; and (b) assisting other institutions in the migration path towards DevOps adoption.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668417" title="Get the Full Text from the ACM Digital Library">Calibrating use case points using bayesian analysis</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Kan Qi</li>
+<li class="nameList">Anandi Hira</li>
+<li class="nameList">Elaine Venson</li>
+<li class="nameList Last">Barry W. Boehm</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><i>Background</i>: Use Case Points (UCPs) have been widely used to estimate software size for object-oriented projects. Yet, many research papers criticize the UCPs methodology for not being verified and validated with data, leading to inaccurate size estimates.</p> <p><i>Aims</i>: This paper explores the use of Bayesian analysis to calibrate the use case complexity weights of the UCPs method to improve software size and project effort estimation accuracy.</p> <p><i>Method</i>: Bayesian analysis is applied to integrate prior information (in this study, the weights defined by the UCPs method and suggested by other research papers) with parameter values suggested by multiple linear regression on the data. To validate the effectiveness of this approach, we run the Bayesian-inspired analysis on projects implemented by master's students at University of Southern California and a public dataset retrieved from PROMISE, and compared its performance with three other typical size estimation methods: a priori, original UCPs, and regression methods. To test the approach in a heterogeneous environment, we also run the analysis on the combination of the student projects and the public dataset.</p> <p><i>Results</i>: The Bayesian method outperforms the a priori, original UCPs, and regression methods by 13.4%, 15.9%, and 15.9% respectively in terms of PRED(.25), and by 16.8%, 16.9%, and 17.8% respectively in terms of MMRE for the student projects. The PRED(.25) and MMRE results similarly improved for the public and the combined datasets.</p> <p><i>Conclusions</i>: The results show that the Bayesian estimates of the use case complexity weights consistently provide better estimation accuracy, compared to the weights proposed by the original UCPs method, the weights calibrated by multiple linear regression, and the weights suggested in previous research papers.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668418" title="Get the Full Text from the ACM Digital Library">Comparing techniques for aggregating interrelated replications in software engineering</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Adrian Santos</li>
+<li class="nameList Last">Natalia Juristo</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>Context:</b> Researchers from different groups and institutions are collaborating towards the construction of groups of interrelated replications. Applying unsuitable techniques to aggregate interrelated replications' results may impact the reliability of joint conclusions.</p> <p><b>Objectives:</b> Comparing the advantages and disadvantages of the techniques applied to aggregate interrelated replications' results in Software Engineering (SE).</p> <p><b>Method:</b> We conducted a literature review to identify the techniques applied to aggregate interrelated replications' results in SE. We analyze a prototypical group of interrelated replications in SE with the techniques that we identified. We check whether the advantages and disadvantages of each technique---according to mature experimental disciplines such as medicine---materialize in the SE context.</p> <p><b>Results:</b> Narrative synthesis and Aggregation of <i>p</i>-values do not take advantage of all the information contained within the raw-data for providing joint conclusions. Aggregated Data (AD) meta-analysis provides visual summaries of results and allows assessing experiment-level moderators. Individual Participant Data (IPD) meta-analysis allows interpreting results in natural units and assessing experiment-level and participant-level moderators.</p> <p><b>Conclusion:</b> All the information contained within the raw-data should be used to provide joint conclusions. AD and IPD, when used in tandem, seem suitable to analyze groups of interrelated replications in SE.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668419" title="Get the Full Text from the ACM Digital Library">The effect of noise on software engineers' performance</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Simone Romano</li>
+<li class="nameList">Giuseppe Scanniello</li>
+<li class="nameList">Davide Fucci</li>
+<li class="nameList">Natalia Juristo</li>
+<li class="nameList Last">Burak Turhan</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><i>Background:</i> Noise, defined as an unwanted sound, is one of the commonest factors that could affect people's performance in their daily work activities. The software engineering research community has marginally investigated the effects of noise on software engineers' performance.</p> <p><i>Aims:</i> We studied if noise affects software engineers' performance in: <i>(i)</i> comprehending functional requirements and <i>(ii)</i> fixing faults in source code.</p> <p><i>Method:</i> We conducted two experiments with final-year undergraduate students in Computer Science. In the first experiment, we asked 55 students to comprehend functional requirements exposing them or not to noise, while in the second experiment 42 students were asked to fix faults in Java code.</p> <p><i>Results:</i> The participants in the second experiment, when exposed to noise, had significantly worse performance in fixing faults in source code. On the other hand, we did not observe any statistically significant difference in the first experiment.</p> <p><i>Conclusions:</i> Fixing faults in source code seems to be more vulnerable to noise than comprehending functional requirements.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668410" title="Get the Full Text from the ACM Digital Library">An empirical investigation of transferring research to software technology innovation: a case of data-driven national security software</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Mansooreh Zahedi</li>
+<li class="nameList">Muhammad Ali Babar</li>
+<li class="nameList Last">Brenton Cooper</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>Context:</b> Governments are providing more and more support for academia-industry collaborations for industry led research and innovation via Cooperative Research Centers (CRC). It is important to understand the processes and practices of such programs for transferring scientific R&#38;D to innovation. <b>Goal:</b> We aimed at empirically investigating the processes and practices implemented in the context of one of the Australian CRCs, aimed at transferring big data research to innovative software solutions for national security. <b>Method:</b> We applied case study method and collected and analyzed data from 17 interviews and observations of the participants of the studied CRC program. <b>Findings:</b> We present the innovation process implemented in the studied CRC. We particularly highlight the practices used to involve end-users in the innovation process. We further elaborate on the challenges of running this collaborative model for software technology innovation.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668411" title="Get the Full Text from the ACM Digital Library">An empirical study of design discussions in code review</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Farida El Zanaty</li>
+<li class="nameList">Toshiki Hirao</li>
+<li class="nameList">Shane McIntosh</li>
+<li class="nameList">Akinori Ihara</li>
+<li class="nameList Last">Kenichi Matsumoto</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>Background:</b> Code review is a well-established software quality practice where developers critique each others' changes. A shift towards automated detection of low-level issues (e.g., integration with linters) has, in theory, freed reviewers up to focus on higher level issues, such as software design. Yet in practice, little is known about the extent to which design is discussed during code review.</p> <p><b>Aim:</b> To bridge this gap, in this paper, we set out to study the frequency and nature of design discussions in code reviews.</p> <p><b>Method:</b> We perform an empirical study on the code reviews of the O<scp>pen</scp>S<scp>tack</scp> N<scp>ova</scp> (provisioning management) and N<scp>eutron</scp> (networking abstraction) projects. We manually classify 2,817 review comments from a randomly selected sample of 220 code reviews. We then train and evaluate classifiers to automatically label review comments as design related or not. Finally, we apply the classifiers to a larger sample of 2,506,308 review comments to study the characteristics of reviews that include design discussions.</p> <p><b>Results:</b> Our manual analysis indicates that (1) design discussions are still quite rare, with only 9% and 14% of N<scp>ova</scp> and N<scp>eutron</scp> review comments being related to software design, respectively; and (2) design feedback is often constructive, with 73% of the design-related comments also providing suggestions to address the concerns. Furthermore, our classifiers achieve a precision of 59%-66% and a recall of 70%-78%, outperforming baselines like zeroR by 43 percentage points in terms of F1-score. Finally, code changes that have design-related feedback have a statistically significantly increased rate of abandonment (Pearson <i>&chi;</i><sup>2</sup> test, DF=1, p &lt; 0.001).</p> <p><b>Conclusion:</b> Design-related discussion during code review is still rare. Since design discussion is a primary motivation for conducting code review, more may need to be done to encourage such discussions among contributors.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668412" title="Get the Full Text from the ACM Digital Library">An empirical study of inadequate and adequate test suite reduction approaches</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Carmen Coviello</li>
+<li class="nameList">Simone Romano</li>
+<li class="nameList Last">Giuseppe Scanniello</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><i>Background.</i> Regression testing is conducted after changes are made to a system in order to ensure that these changes did not alter its expected behavior. The problem with regression testing is that it can require too much time and/or too many resources. This is why researchers have defined a number of regression testing approaches. Among these, Test Suite Reduction (TSR) approaches reduce the size of the original test suites, while preserving their capability to detect faults. TSR approaches can be classified as adequate or inadequate. Adequate approaches reduce test suites so that they completely preserve the test requirements (<i>e.g.</i>, statement coverage) of the original test suite, while inadequate ones produce reduced test suites that partially preserve these test requirements.</p> <p><i>Aims.</i> We studied adequate and inadequate TSR approaches in terms of tradeoff between reduction in test suite size and loss in fault detection capability. We also considered three different kinds of test requirements (<i>i.e.</i>, statement, method, and class coverages).</p> <p><i>Method.</i> We conducted an experiment with six adequate (<i>e.g.</i>, HGS) and 12 inadequate (<i>e.g.</i>, the inadequate version of HGS) TSR approaches. In this experiment, we considered 19 experimental objects from a public dataset, <i>i.e.</i>, SIR (Software-artifact Infrastructure Repository).</p> <p><i>Results.</i> The most important result from our experiment is that inadequate approaches, as compared with adequate ones, allow achieving a better tradeoff between reduction in test suite size and loss in fault detection capability. This is especially true when these approaches are applied by considering statement and method coverages as test requirements.</p> <p><i>Conclusions.</i> Although our results are not definitive, they might help the tester to chose both TSR approach and kind of code coverage that is closer to her needs when testing a software system.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668413" title="Get the Full Text from the ACM Digital Library">An empirical study of WIP in kanban teams</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Dag I. K. Sj&#248;berg</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>Background:</b> Limiting the amount of Work-In-Progress (WIP) is considered a fundamental principle in Kanban software development. However, no published studies from real cases exist that indicate what an optimal WIP limit should be. <b>Aims:</b> The primary aim is to study the effect of WIP on the performance of a Kanban team. The secondary aim is to illustrate methodological challenges when attempting to identify an optimal or appropriate WIP limit. <b>Method:</b> A quantitative case study was conducted in a software company that provided information about more than 8,000 work items developed over four years by five teams. Relationships between WIP, lead time and productivity were analyzed. <b>Results:</b> WIP correlates with lead time; that is, lower WIP indicates shorter lead times, which is <i>consistent</i> with claims in the literature. However, WIP also correlates with productivity, which is <i>inconsistent</i> with the claim in the literature that a low WIP (still above a certain threshold) will improve productivity. The collected data set did not include sufficient information to measure aspects of quality. There are several threats to the way productivity was measured. <b>Conclusions:</b> Indicating an optimal WIP limit is difficult in the studied company because a changing WIP gives contrasting results on different team performance variables. Because the effect of WIP has not been quantitatively examined before, this study clearly needs to be replicated in other contexts. In addition, studies that include other team performance variables, such as various aspects of quality, are requested. The methodological challenges illustrated in this paper need to be addressed.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668414" title="Get the Full Text from the ACM Digital Library">An exploratory study of software sustainability dimensions and characteristics: end user perspectives in the kingdom of Saudi Arabia (KSA)</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Sulaiman Aljarallah</li>
+<li class="nameList Last">Russell Lock</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Background: Sustainability has become an important topic globally and the focus on ICT sustainability is increasing. However, issues exist, including vagueness and complexity of the concept itself, in addition to immaturity of the Software Engineering (SE) field. Aims: The study surveys respondents on software sustainability dimensions and characteristics from their perspectives, and seeks to derive rankings for their priority. Method: An exploratory study was conducted to quantitatively investigate Saudi Arabian (KSA) software user's perceptions with regard to the concept itself, the dimensions and characteristics of the software sustainability. Survey data was gathered from 906 respondents. Results: The results highlight key dimensions for sustainability and their priorities to users. The results also indicate that the characteristics perceived to be the most significant, were security, usability, reliability, maintainability, extensibility and portability, whereas respondents were relatively less concerned with computer ethics (e.g. privacy and trust), functionality, efficiency and reusability. A key finding was that females considered the environmental dimension to be more important than males. Conclusions: The dimensions and characteristics identified here can be used as a means of providing valuable feedback for the planning and implementation of future development of sustainable software.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668425" title="Get the Full Text from the ACM Digital Library">Identifying unmaintained projects in github</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Jailton Coelho</li>
+<li class="nameList">Marco Tulio Valente</li>
+<li class="nameList">Luciana L. Silva</li>
+<li class="nameList Last">Emad Shihab</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><i>Background:</i> Open source software has an increasing importance in modern software development. However, there is also a growing concern on the sustainability of such projects, which are usually managed by a small number of developers, frequently working as volunteers. <i>Aims:</i> In this paper, we propose an approach to identify GitHub projects that are not actively maintained. Our goal is to alert users about the risks of using these projects and possibly motivate other developers to assume the maintenance of the projects. <i>Method:</i> We train machine learning models to identify unmaintained or sparsely maintained projects, based on a set of features about project activity (commits, forks, issues, etc). We empirically validate the model with the best performance with the principal developers of 129 GitHub projects. <i>Results:</i> The proposed machine learning approach has a precision of 80%, based on the feedback of real open source developers; and a recall of 96%. We also show that our approach can be used to assess the risks of projects becoming unmaintained. <i>Conclusions:</i> The model proposed in this paper can be used by open source users and developers to identify GitHub projects that are not actively maintained anymore.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668426" title="Get the Full Text from the ACM Digital Library">Improving problem identification via automated log clustering using dimensionality reduction</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Carl Martin Rosenberg</li>
+<li class="nameList Last">Leon Moonen</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>Background:</b> Continuous engineering practices, such as continuous integration and continuous deployment, see increased adoption in modern software development. A frequently reported challenge for adopting these practices is the need to make sense of the large amounts of data that they generate.</p> <p><b>Goal:</b> We consider the problem of automatically grouping logs of runs that failed for the same underlying reasons, so that they can be treated more effectively, and investigate the following questions: (1) Does an approach developed to identify problems in <i>system logs</i> generalize to identifying problems in <i>continuous deployment logs</i>? (2) How does <i>dimensionality reduction</i> affect the quality of automated log clustering? (3) How does the criterion used for merging clusters in the clustering algorithm affect clustering quality?</p> <p><b>Method:</b> We replicate and extend earlier work on clustering system log files to assess its generalization to continuous deployment logs. We consider the optional inclusion of one of these dimensionality reduction techniques: Principal Component Analysis (PCA), Latent Semantic Indexing (LSI), and Non-negative Matrix Factorization (NMF). Moreover, we consider three alternative cluster merge criteria (Single Linkage, Average Linkage, and Weighted Linkage), in addition to the Complete Linkage criterion used in earlier work. We empirically evaluate the 16 resulting configurations on continuous deployment logs provided by our industrial collaborator.</p> <p><b>Results:</b> Our study shows that (1) identifying problems in continuous deployment logs via clustering is feasible, (2) including NMF significantly improves <i>overall</i> accuracy and robustness, and (3) Complete Linkage performs best of all merge criteria analyzed.</p> <p><b>Conclusions:</b> We conclude that problem identification via automated log clustering is improved by including dimensionality reduction, as it decreases the pipeline's sensitivity to parameter choice, thereby increasing its robustness for handling different inputs.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668427" title="Get the Full Text from the ACM Digital Library">Is there a "golden" feature set for static warning identification?: an experimental evaluation</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Junjie Wang</li>
+<li class="nameList">Song Wang</li>
+<li class="nameList Last">Qing Wang</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>Background:</b> The most important challenge regarding the use of static analysis tools (e.g., FindBugs) is that there are a large number of warnings that are not acted on by developers. Many features have been proposed to build classification models for the automatic identification of actionable warnings. Through analyzing these features and related studies, we observe several limitations that make the users lack practical guides to apply these features.</p> <p><b>Aims:</b> This work aims at conducting a systematic experimental evaluation of all the public available features, and exploring whether there is a golden feature set for actionable warning identification.</p> <p><b>Method:</b> We first conduct a systematic literature review to collect all public available features for warning identification. We employ 12 projects with totally 60 revisions as our subject projects. We then implement a tool to extract the values of all features for each project revision to prepare the experimental data.</p> <p><b>Results:</b> Experimental evaluation on 116 collected features demonstrates that there is a common set of features (23 features) which take effect in warning identification for most project revisions. These features can achieve satisfied performance with far less time cost for warning identification.</p> <p><b>Conclusions:</b> These commonly-selected features can be treated as the golden feature set for identifying actionable warnings. This finding can serve as a practical guideline for facilitating real-world warning identification.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668428" title="Get the Full Text from the ACM Digital Library">A longitudinal cohort study on the retainment of test-driven development</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Davide Fucci</li>
+<li class="nameList">Simone Romano</li>
+<li class="nameList">Maria Teresa Baldassarre</li>
+<li class="nameList">Danilo Caivano</li>
+<li class="nameList">Giuseppe Scanniello</li>
+<li class="nameList">Burak Turhan</li>
+<li class="nameList Last">Natalia Juristo</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><i>Background:</i> Test-Driven Development (TDD) is an agile software development practice, which is claimed to boost both external quality of software products and developers' productivity.</p> <p><i>Aims:</i> We want to study: <i>(i)</i> the TDD effects on the external quality of software products as well as the developers' productivity; and <i>(ii)</i> the retainment of TDD over a period of five months.</p> <p><i>Method:</i> We conducted a (quantitative) longitudinal cohort study with 30 third-year undergraduate students in Computer Science at the University of Bari in Italy.</p> <p><i>Results:</i> The use of TDD has a statistically significant effect neither on the external quality of software products nor on the developers' productivity. However, we observed that participants using TDD produced significantly more tests than those applying a non-TDD development process, and that the retainment of TDD is particularly noticeable in the amount of tests written.</p> <p><i>Conclusions:</i> Our results should encourage software companies to adopt TDD because who practices TDD tends to write more tests---having more tests can come in handy when testing software systems or localizing faults---and it seems that novice developers retain TDD.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668429" title="Get the Full Text from the ACM Digital Library">Needs and challenges for a platform to support large-scale requirements engineering: a multiple-case study</a>
+</h3> 
+<ul class="DLauthors">
+<li class="nameList First">Davide Fucci</li>
+<li class="nameList">Cristina Palomares</li>
+<li class="nameList">Xavier Franch</li>
+<li class="nameList">Dolors Costal</li>
+<li class="nameList">Mikko Raatikainen</li>
+<li class="nameList">Martin Stettinger</li>
+<li class="nameList">Zijad Kurtanovic</li>
+<li class="nameList">Tero Kojo</li>
+<li class="nameList">Lars Koenig</li>
+<li class="nameList">Andreas Falkner</li>
+<li class="nameList">Gottfried Schenner</li>
+<li class="nameList">Fabrizio Brasca</li>
+<li class="nameList">Tomi M&#228;nnist&#246;</li>
+<li class="nameList">Alexander Felfernig</li>
+<li class="nameList Last">Walid Maalej</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><i>Background</i>: Requirement engineering is often considered a critical activity in system development projects. The increasing complexity of software as well as number and heterogeneity of stakeholders motivate the development of methods and tools for improving large-scale requirement engineering. <i>Aims</i>: The empirical study presented in this paper aim to identify and understand the characteristics and challenges of a platform, as desired by experts, to support requirement engineering for individual stakeholders, based on the current pain-points of their organizations when dealing with a large number requirements. <i>Method</i>: We conducted a multiple case study with three companies in different domains. We collected data through ten semi-structured interviews with experts from these companies. <i>Results</i>: The main pain-point for stakeholders is handling the vast amount of data from different sources. The foreseen platform should leverage such data to manage changes in requirements according to customers' and users' preferences. It should also offer stakeholders an estimation of how long a requirements engineering task will take to complete, along with an easier requirements dependency identification and requirements reuse strategy. <i>Conclusions</i>: The findings provide empirical evidence about how practitioners wish to improve their requirement engineering processes and tools. The insights are a starting point for in-depth investigations into the problems and solutions presented. Practitioners can use the results to improve existing or design new practices and tools.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668420" title="Get the Full Text from the ACM Digital Library">No search allowed: what risk modeling notation to choose?</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Katsiaryna Labunets</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>[Background] Industry relies on the use of tabular notations to document the risk assessment results, while academia encourages to use graphical notations. Previous studies revealed that tabular and graphical notations with textual labels provide better support for extracting correct information about security risks in comparison to iconic graphical notation. [Aim] In this study we examine how well tabular and graphical risk modeling notations support extraction and memorization of information about risks when models cannot be searched. [Method] We present results of two experiments with 60 MSc and 31 BSc students where we compared their performance in extraction and memorization of security risk models in tabular, UML-style and iconic graphical modeling notations. [Result] Once search is restricted, tabular notation demonstrates results similar to the iconic graphical notation in information extraction. In memorization task tabular and graphical notations showed equivalent results, but it is statistically significant only between two graphical notations. [Conclusion] Three notations provide similar support to decision-makers when they need to extract and remember correct information about security risks.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668421" title="Get the Full Text from the ACM Digital Library">Prediction of relatedness in stack overflow: deep learning vs. SVM: a reproducibility study</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Bowen Xu</li>
+<li class="nameList">Amirreza Shirani</li>
+<li class="nameList">David Lo</li>
+<li class="nameList Last">Mohammad Amin Alipour</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>Background</b> Xu et al. used a deep neural network (DNN) technique to classify the degree of relatedness between two knowledge units (question-answer threads) on Stack Overflow. More recently, extending Xu et al.'s work, Fu and Menzies proposed a simpler classification technique based on a fine-tuned support vector machine (SVM) that achieves similar performance but in a much shorter time. Thus, they suggested that researchers need to compare their sophisticated methods against simpler alternatives.</p> <p><b>Aim</b> The aim of this work is to replicate the previous studies and further investigate the validity of Fu and Menzies' claim by evaluating the DNN- and SVM-based approaches on a larger dataset. We also compare the effectiveness of these two approaches against SimBow, a lightweight SVM-based method that was previously used for general community question-answering.</p> <p><b>Method</b> We (1) collect a large dataset containing knowledge units from Stack Overflow, (2) show the value of the new dataset addressing shortcomings of the original one, (3) re-evaluate both the DNN-and SVM-based approaches on the new dataset, and (4) compare the performance of the two approaches against that of SimBow.</p> <p><b>Results</b> We find that: (1) there are several limitations in the original dataset used in the previous studies, (2) effectiveness of both Xu et al.'s and Fu and Menzies' approaches (as measured using F1-score) drop sharply on the new dataset, (3) similar to the previous finding, performance of SVM-based approaches (Fu and Menzies' approach and SimBow) are slightly better than the DNN-based approach, (4) contrary to the previous findings, Fu and Menzies' approach runs much slower than DNN-based approach on the larger dataset - its runtime grows sharply with increase in dataset size, and (5) SimBow outperforms both Xu et al. and Fu and Menzies' approaches in terms of runtime.</p> <p><b>Conclusion</b> We conclude that, for this task, simpler approaches based on SVM performs adequately well. We also illustrate the challenges brought by the increased size of the dataset and show the benefit of a lightweight SVM-based approach for this task.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668422" title="Get the Full Text from the ACM Digital Library">Relationship between geographical location and evaluation of developer contributions in github</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Ayushi Rastogi</li>
+<li class="nameList">Nachiappan Nagappan</li>
+<li class="nameList">Georgios Gousios</li>
+<li class="nameList Last">Andr&#233; van der Hoek</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>Background</b> Open source software projects show gender bias suggesting that other demographic characteristics of developers, like geographical location, can negatively influence evaluation of contributions too. <b>Aim</b> This study contributes to this emerging body of knowledge in software development by presenting a quantitative analysis of the relationship between the geographical location of developers and evaluation of their contributions on GitHub. <b>Method</b> We present an analysis of 70,000+ pull requests selected from 17 most actively participating countries to model the relationship between the geographical location of developers and pull request acceptance decision. <b>Results and Conclusion</b> We observed structural differences in pull request acceptance rates across 17 countries. Countries with no apparent similarities such as Switzerland and Japan had one of the highest pull request acceptance rates while countries like China and Germany had one of the lowest pull request acceptance rates. Notably, higher acceptance rates were observed for all but one country when pull requests were evaluated by developers from the same country.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668423" title="Get the Full Text from the ACM Digital Library">Revisiting the size effect in software fault prediction models</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Amjed Tahir</li>
+<li class="nameList">Kwabena E. Bennin</li>
+<li class="nameList">Stephen G. MacDonell</li>
+<li class="nameList Last">Stephen Marsland</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>BACKGROUND:</b> In object oriented (OO) software systems, class size has been acknowledged as having an indirect effect on the relationship between certain artifact characteristics, captured via metrics, and fault-proneness, and therefore it is recommended to control for size when designing fault prediction models.</p> <p><b>AIM:</b> To use robust statistical methods to assess whether there is evidence of any <i>true effect</i> of class size on fault prediction models.</p> <p><b>METHOD:</b> We examine the potential <i>mediation</i> and <i>moderation</i> effects of class size on the relationships between OO metrics and number of faults. We employ regression analysis and bootstrapping-based methods to investigate the mediation and moderation effects in two widely-used datasets comprising seventeen systems.</p> <p><b>RESULTS:</b> We find no strong evidence of a significant mediation or moderation effect of class size on the relationships between OO metrics and faults. In particular, size appears to have a more significant mediation effect on CBO and Fan-out than other metrics, although the evidence is not consistent in all examined systems. On the other hand, size does appear to have a significant moderation effect on WMC and CBO in most of the systems examined. Again, the evidence provided is not consistent across all examined systems</p> <p><b>CONCLUSION:</b> We are unable to confirm if class size has a significant mediation or moderation effect on the relationships between OO metrics and the number of faults. We contend that class size does not fully explain the relationships between OO metrics and the number of faults, and it does not always affect the strength/magnitude of these relationships. We recommend that researchers consider the potential mediation and moderation effect of class size when building their prediction models, but this should be examined independently for each system.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668424" title="Get the Full Text from the ACM Digital Library">Simultaneous measurement of program comprehension with fMRI and eye tracking: a case study</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Norman Peitek</li>
+<li class="nameList">Janet Siegmund</li>
+<li class="nameList">Chris Parnin</li>
+<li class="nameList">Sven Apel</li>
+<li class="nameList">Johannes C. Hofmeister</li>
+<li class="nameList Last">Andr&#233; Brechmann</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>Background</b> Researchers have recently started to validate decades-old program-comprehension models using functional magnetic resonance imaging (fMRI). While fMRI helps us to understand neural correlates of cognitive processes during program comprehension, its comparatively low temporal resolution (i.e., seconds) cannot capture fast cognitive subprocesses (i.e., milliseconds).</p> <p><b>Aims</b> To increase the explanatory power of fMRI measurement of programmers, we are exploring in this methodological paper the feasibility of adding simultaneous eye tracking to fMRI measurement. By developing a method to observe programmers with two complementary measures, we aim at obtaining a more comprehensive understanding of program comprehension.</p> <p><b>Method</b> We conducted a controlled fMRI experiment of 22 student participants with simultaneous eye tracking.</p> <p><b>Results</b> We have been able to successfully capture fMRI and eye-tracking data, although with limitations regarding partial data loss and spatial imprecision. The biggest issue that we experienced is the partial loss of data: for only 10 participants, we could collect a complete set of high-precision eye-tracking data. Since some participants of fMRI studies show excessive head motion, the proportion of full and high-quality data on fMRI and eye tracking is rather low. Still, the remaining data allowed us to confirm our prior hypothesis of semantic recall during program comprehension, which was not possible with fMRI alone.</p> <p><b>Conclusions</b> Simultaneous measurement of program comprehension with fMRI and eye tracking is promising, but with limitations. By adding simultaneous eye tracking to our fMRI study framework, we can conduct more fine-grained fMRI analyses, which in turn helps us to understand programmer behavior better.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668435" title="Get the Full Text from the ACM Digital Library">Software analytics in continuous delivery: a case study on success factors</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Hennie Huijgens</li>
+<li class="nameList">Davide Spadini</li>
+<li class="nameList">Dick Stevens</li>
+<li class="nameList">Niels Visser</li>
+<li class="nameList Last">Arie van Deursen</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><i>Background:</i> During the period of one year, ING developed an approach for software analytics within an environment of a large number of software engineering teams working in a Continuous Delivery as a Service setting. <i>Goal:</i> Our objective is to examine what factors helped and hindered the implementation of software analytics in such an environment, in order to improve future software analytics activities. <i>Method:</i> We analyzed artifacts delivered by the software analytics project, and performed semi-structured interviews with 15 stakeholders. <i>Results:</i> We identified 16 factors that helped the implementation of software analytics, and 20 factors that hindered the project. <i>Conclusions:</i> Upfront defining and communicating the aims, standardization of data at an early stage, build efficient visualizations, and an empirical approach help companies to improve software analytics projects.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668436" title="Get the Full Text from the ACM Digital Library">Speeding up mutation testing via the cloud: lessons learned for further optimisations</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Sten Vercammen</li>
+<li class="nameList">Serge Demeyer</li>
+<li class="nameList">Markus Borg</li>
+<li class="nameList Last">Sigrid Eldh</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>Background:</b> Mutation testing is the state-of-the-art technique for assessing the fault detection capacity of a test suite. Unfortunately, it is seldom applied in practice because it is computationally expensive. We witnessed 48 hours of mutation testing time on a test suite comprising 272 unit tests and 5,258 lines of test code for testing a project with 48,873 lines of production code. <b>Aims:</b> Therefore, researchers are currently investigating cloud solutions, hoping to achieve sufficient speed-up to allow for a complete mutation test run during the nightly build. <b>Method:</b> In this paper we evaluate mutation testing in the cloud against two industrial projects. <b>Results:</b> With our proof-of-concept, we achieved a speed-up between 12x and 12.7x on a cloud infrastructure with 16 nodes. This allowed to reduce the aforementioned 48 hours of mutation testing time to 3.7 hours. <b>Conclusions:</b> We make a detailed analysis of the delays induced by the distributed architecture, point out avenues for further optimisation and elaborate on the lessons learned for the mutation testing community. Most importantly, we learned that for optimal deployment in a cloud infrastructure, tasks should remain completely independent. Mutant optimisation techniques that violate this principle will benefit less from deploying in the cloud.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668437" title="Get the Full Text from the ACM Digital Library">A scalable and efficient approach for compiling and analyzing commit history</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Pooyan Behnamghader</li>
+<li class="nameList">Patavee Meemeng</li>
+<li class="nameList">Iordanis Fostiropoulos</li>
+<li class="nameList">Di Huang</li>
+<li class="nameList">Kamonphop Srisopha</li>
+<li class="nameList Last">Barry Boehm</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><i>Background:</i> Researchers oftentimes measure quality metrics only in the changed files when analyzing software evolution over commit-history. This approach is not suitable for compilation and using program analysis techniques that require byte-code. At the same time, compiling the whole software not only is costly but may also leave us with many uncompilable and unanalyzed revisions. <i>Aims:</i> We intend to demonstrate if analyzing changes in a module results in achieving a high compilation ratio and a better understanding of software quality evolution. <i>Method:</i> We conduct a large-scale multi-perspective empirical study on 37838 distinct revisions of the core module of 68 systems across Apache, Google, and Netflix to assess their compilability and identify when the software is uncompilable as a result of a developer's fault. We study the characteristics of uncompilable revisions and analyze compilable ones to understand the impact of developers on software quality. <i>Results:</i> We achieve high compilation ratios: 98.4% for Apache, 99.0% for Google, and 94.3% for Netflix. We identify 303 sequences of uncompile commits and create a model to predict uncompilability based on commit metadata with an F1-score of 0.89 and an AUC of 0.96. We identify statistical differences between the impact of affiliated and external developers of organizations. <i>Conclusions:</i> Focusing on a module results in a more complete and accurate software evolution analysis, reduces the cost and complexity, and facilitates manual inspection.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668438" title="Get the Full Text from the ACM Digital Library">Understanding the software development practices of blockchain projects: a survey</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Partha Chakraborty</li>
+<li class="nameList">Rifat Shahriyar</li>
+<li class="nameList">Anindya Iqbal</li>
+<li class="nameList Last">Amiangshu Bosu</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>Background:</b> The application of the blockchain technology has shown promises in various areas, such as smart-contracts, Internet of Things, land registry management, identity management, etc. Although Github currently hosts more than three thousand active blockchain software (BCS) projects, a few software engineering research has been conducted on their software engineering practices. <b>Aims:</b> To bridge this gap, we aim to carry out the first formal survey to explore the software engineering practices including requirement analysis, task assignment, testing, and verification of blockchain software projects. <b>Method:</b> We sent an online survey to 1,604 active BCS developers identified via mining the Github repositories of 145 popular BCS projects. The survey received 156 responses that met our criteria for analysis. <b>Results:</b> We found that code review and unit testing are the two most effective software development practices among BCS developers. The results suggest that the requirements of BCS projects are mostly identified and selected by community discussion and project owners which is different from requirement collection of general OSS projects. The results also reveal that the development tasks in BCS projects are primarily assigned on voluntary basis, which is the usual task assignment practice for OSS projects. <b>Conclusions:</b> Our findings indicate that standard software engineering methods including testing and security best practices need to be adapted with more seriousness to address unique characteristics of blockchain and mitigate potential threats.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668439" title="Get the Full Text from the ACM Digital Library">Using experience sampling to link software repositories with emotions and work well-being</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Miikka Kuutila</li>
+<li class="nameList">Mika V. M&#228;ntyl&#228;</li>
+<li class="nameList">Ma&#235;lick Claes</li>
+<li class="nameList">Marko Elovainio</li>
+<li class="nameList Last">Bram Adams</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>Background:</b> The experience sampling method studies everyday experiences of humans in natural environments. In psychology it has been used to study the relationships between work well-being and productivity. To our best knowledge, daily experience sampling has not been previously used in software engineering. <b>Aims:</b> Our aim is to identify links between software developers self-reported affective states and work well-being and measures obtained from software repositories. <b>Method:</b> We perform an experience sampling study in a software company for a period of eight months, we use logistic regression to link the well-being measures with development activities, i.e. number of commits and chat messages. <b>Results:</b> We find several significant relationships between questionnaire variables and software repository variables. To our surprise relationship between hurry and number of commits is negative, meaning more perceived hurry is linked with a smaller number of commits. We also find a negative relationship between social interaction and hindered work well-being. <b>Conclusions:</b> The negative link between commits and hurry is counter-intuitive and goes against previous lab-experiments in software engineering that show increased efficiency under time pressure. Overall, our is an initial step in using experience sampling in software engineering and validating theories on work well-being from other fields in the domain of software engineering.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668430" title="Get the Full Text from the ACM Digital Library">What do concurrency developers ask about?: a large-scale study using stack overflow</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Syed Ahmed</li>
+<li class="nameList Last">Mehdi Bagherzadeh</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b><i>Background</i></b> Software developers are increasingly required to write concurrent code. However, most developers find concurrent programming difficult. To better help developers, it is imperative to understand their interest and difficulties in terms of concurrency topics they encounter often when writing concurrent code.</p> <p><b><i>Aims</i></b> In this work, we conduct a large-scale study on the textual content of the entirety of Stack Overflow to understand the interests and difficulties of concurrency developers.</p> <p><b><i>Method</i></b> First, we develop a set of concurrency tags to extract concurrency questions that developers ask. Second, we use latent Dirichlet allocation (LDA) topic modeling and an open card sort to manually determine the topics of these questions. Third, we construct a topic hierarchy by repeated grouping of similar topics into categories and lower level categories into higher level categories. Fourth, we investigate the coincidence of our concurrency topics with findings of previous work. Fifth, we measure the popularity and difficulty of our concurrency topics and analyze their correlation. Finally, we discuss the implications of our findings.</p> <p><b><i>Results</i></b> A few findings of our study are the following. <i>(1)</i> Developers ask questions about a broad spectrum of concurrency topics ranging from <i>multithreading</i> to <i>parallel computing, mobile concurrency to web concurrency</i> and <i>memory consistency</i> to <i>run-time speedup. (2)</i> These questions can be grouped into a hierarchy with eight major categories: <i>concurrency models, programming paradigms, correctness, debugging, basic concepts, persistence, performance</i> and <i>GUI. (3)</i> Developers ask more about <i>correctness</i> of their concurrent programs than <i>performance. (4)</i> Concurrency questions about <i>thread safety</i> and <i>database management systems</i> are among the most popular and the most difficult, respectively. <i>(5)</i> Difficulty and popularity of concurrency topics are negatively correlated.</p> <p><b><i>Conclusions</i></b> The results of our study can not only help concurrency developers but also concurrency educators and researchers to better decide where to focus their efforts, by trading off one concurrency topic against another.</p></div> </div>
+<h2>SESSION: Industry papers</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668431" title="Get the Full Text from the ACM Digital Library">Applying pattern-driven maintenance: a method to prevent latent unhandled exceptions in web applications</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Diogo S. Mendon&#231;a</li>
+<li class="nameList">Tarcila G. da Silva</li>
+<li class="nameList">Daniel Ferreira de Oliveira</li>
+<li class="nameList">Julliany Sales Brand&#227;o</li>
+<li class="nameList">Helio Lopes</li>
+<li class="nameList">Simone D. J. Barbosa</li>
+<li class="nameList">Marcos Kalinowski</li>
+<li class="nameList Last">Arndt von Staa</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>Background:</b> Unhandled exceptions affect the reliability of web applications. Several studies have measured the reliability of web applications in use against unhandled exceptions, showing a recurrence of the problem during the maintenance phase. Detecting latent unhandled exceptions automatically is difficult and application-specific. Hence, general approaches to deal with defects in web applications do not treat unhandled exceptions appropriately. <b>Aims:</b> To design and evaluate a method that can support finding, correcting, and preventing unhandled exceptions in web applications. <b>Method:</b> We applied the design science engineering cycle to design a method called Pattern-Driven Maintenance (PDM). PDM relies on identifying defect patterns based on application server logs and producing static analysis rules that can be used for prevention. We applied PDM to two industrial web applications involving different companies and technologies, measuring the reliability improvement and the precision of the produced static analysis rules. <b>Results:</b> In both cases, our approach allowed identifying defect patterns and finding latent unhandled exceptions to be fixed in the source code, enabling to completely eliminate the pattern-related failures and improving the application reliability. The static analysis rules produced by PDM achieved a precision of 59-68% in the first application and 89-100% in the second, where lessons learnt from the first evaluation were addressed. <b>Conclusions:</b> The results strengthen our confidence that PDM can help maintainers to improve the reliability for unhandled exceptions in other existing web applications.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668432" title="Get the Full Text from the ACM Digital Library">Automatic topic classification of test cases using text mining at an Android smartphone vendor</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Junji Shimagaki</li>
+<li class="nameList">Yasutaka Kamei</li>
+
+<li class="nameList">Naoyasu Ubayashi</li>
+<li class="nameList Last">Abram Hindle</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>Background:</b> An Android smartphone is an ecosystem of applications, drivers, operating system components, and assets. The volume of the software is large and the number of test cases needed to cover the functionality of an Android system is substantial. Enormous effort has been already taken to properly quantify <i>"what features and apps were tested and verified?".</i> This insight is provided by dashboards that summarize test coverage and results per feature. One method to achieve this is to manually tag or label test cases with the topic or function they cover, much like function points. At the studied Android smartphone vendor, tests are labelled with manually defined tags, so-called <i>"feature labels (FLs)"</i>, and the FLs serve to categorize 100s to 1000s test cases into 10 to 50 groups.</p> <p><b>Aim:</b> Unfortunately for developers, manual assignment of FLs to 1000s of test cases is a time consuming task, leading to inaccurately labeled test cases, which will render the dashboard useless. We created an automated system that suggests tags/labels to the developers for their test cases rather than manual labeling.</p> <p><b>Method:</b> We use machine learning models to predict and label the functionality tested by 10,000 test cases developed at the company.</p> <p><b>Results:</b> Through the quantitative experiments, our models achieved acceptable F-1 performance of 0.3 to 0.88. Also through the qualitative studies with expert teams, we showed that the hierarchy and path of tests was a good predictor of a feature's label.</p> <p><b>Conclusions:</b> We find that this method can reduce tedious manual effort that software developers spent classifying test cases, while providing more accurate classification results.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668433" title="Get the Full Text from the ACM Digital Library">Computer games are serious business and so is their quality: particularities of software testing in game development from the perspective of practitioners</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Ronnie E. S. Santos</li>
+<li class="nameList">Cleyton V. C. Magalh&#227;es</li>
+<li class="nameList">Luiz Fernando Capretz</li>
+<li class="nameList">Jorge S. Correia-Neto</li>
+<li class="nameList">Fabio Q. B. da Silva</li>
+<li class="nameList Last">Abdelrahman Saher</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>Context.</b> Over the last several decades, computer games started to have a significant impact on society. However, although a computer game is a type of software, the process to conceptualize, produce and deliver a game could involve unusual features. In software testing, for instance, studies demonstrated the hesitance of professionals to use automated testing techniques with games, due to the constant changes in requirements and design, and pointed out the need for creating testing tools that take into account the flexibility required for the game development process. <b>Goal.</b> This study aims to improve the current body of knowledge regarding these theme and point out the existing particularities observed in software testing considering the development of a computer game. <b>Method.</b> A mixed-method approach based on a case study and a survey was applied to collect quantitative and qualitative data from practitioners regarding the particularities of software testing in game development. <b>Results.</b> We analyzed over 70 messages posted on three well-established network of question-and-answer communities and received answers of 38 practitioners, and identified important aspects to be observed in the process of planning, performing and reporting tests games. <b>Conclusion.</b> Considering computer games, software testing must focus not only on the common aspects of a general software, but also, track and investigate issues that could be related to game balance, game physics and entertainment related-aspects to guarantee the quality of computer games and a successful testing process.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668434" title="Get the Full Text from the ACM Digital Library">Decision making and visualizations based on test results</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Per Erik Strandberg</li>
+<li class="nameList">Wasif Afzal</li>
+<li class="nameList Last">Daniel Sundmark</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>Background:</b> Testing is one of the main methods for quality assurance in the development of embedded software, as well as in software engineering in general. Consequently, test results (and how they are reported and visualized) may substantially influence business decisions in software-intensive organizations. <b>Aims:</b> This case study examines the role of test results from automated nightly software testing and the visualizations for decision making they enable at an embedded systems company in Sweden. In particular, we want to identify the use of the visualizations for supporting decisions from three aspects: in daily work, at feature branch merge, and at release time. <b>Method:</b> We conducted an embedded case study with multiple units of analysis by conducting interviews, questionnaires, using archival data and participant observations. <b>Results:</b> Several visualizations and reports built on top of the test results database are utilized in supporting daily work, merging a feature branch to the master and at release time. Some important visualizations are: lists of failing test cases, easy access to log files, and heatmap trend plots. The industrial practitioners perceived the visualizations and reporting as valuable, however they also mentioned several areas of improvement such as better ways of visualizing test coverage in a functional area as well as better navigation between different views. <b>Conclusions:</b> We conclude that visualizations of test results are a vital decision making tool for a variety of roles and tasks in embedded software development, however the visualizations need to be continuously improved to keep their value for its stakeholders.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668445" title="Get the Full Text from the ACM Digital Library">Defining, measuring and monitoring IT service goals and strategies: preliminary results and pitfalls from a qualitative study with IT service managers</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Bianca Trinkenreich</li>
+<li class="nameList">Tayana Conte</li>
+<li class="nameList">Monalessa Perini Barcellos</li>
+<li class="nameList Last">Gleison Santos</li>
+</ul>
+
+<div class="DLabstract"><div style="display:inline"><p>&lt;u&gt;Background:&lt;/u&gt; Aligning IT to business goals is a top priority for CIOs. However, managers in the IT Service Industry face difficulties to define and monitor IT service goals and strategies aligned to business goals. &lt;u&gt;Goal:&lt;/u&gt; We carried out a study to investigate how IT service managers define, measure and monitor IT service goals and strategies, and the difficulties they have faced in this context. &lt;u&gt;Method:&lt;/u&gt; We interviewed five IT service managers from four service provider organizations and used coding procedures to analyze the collected data. &lt;u&gt;Results:&lt;/u&gt; We obtained information about how organizations define, measure and evaluate IT service goals and strategies and, from the difficulties reported by the managers, we identified 19 pitfalls. &lt;u&gt;Conclusions:&lt;/u&gt; By analyzing the relations among the pitfalls, we defined five hypotheses: <i>(i)</i> lack of awareness and transparency on the relationship between strategies and goals may harm the achievement of IT service goals and strategies, <i>(ii)</i> lack of proper support to execute measurement inhibits reevaluation and adjustment of strategies and indicators related to IT service goals, <i>(iii)</i> lack of motivation can jeopardize decision-making by IT service managers, <i>(iv)</i> conflicts between strategies may harm IT service goals achievement, and <i>(v)</i> lack of proper support to execute IT service management initiatives may harm IT service goals achievement.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668446" title="Get the Full Text from the ACM Digital Library">Development processes and practices in a small but growing software industry: a practitioner survey in New Zealand</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Di Wang</li>
+<li class="nameList Last">Matthias Galster</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><i>Background:</i> Development processes and practices depend on the context in which software is developed (e.g., locations, organizations, projects, developers). <i>Aim:</i> We aim at understanding development processes and practices in New Zealand, a country with a relatively small but growing software sector. We are particularly interested in methods and practices used in such environment, the implementation technologies software development professionals use, how professionals ensure software quality, and how they manage software release processes. <i>Method:</i> We conducted a descriptive survey targeting individual software development professionals working in New Zealand software companies. <i>Results:</i> New Zealand professionals use similar methodologies as professionals in other countries. Popular programming languages differ somewhat to popular languages in other rankings. Quality assurance is rather ad-hoc and the release process is inspired by agile software development principles. <i>Conclusions:</i> Our findings highlight some differences of the New Zealand software industry to other countries. Furthermore, we identified some strengths and weaknesses related to processes and practices. Our findings can help software professionals and organizations reflect on (and potentially adjust) the way they work.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668447" title="Get the Full Text from the ACM Digital Library">An empirical study of process policies and metrics to manage productivity and quality for maintenance of critical software systems at the jet propulsion laboratory</a>
+</h3>
+<ul class="DLauthors">
+
+<li class="nameList First">Dan Port</li>
+<li class="nameList Last">Bill Taber</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>Context/ Background:</b> The Mission Design and Navigation Software (MDN) Group at the Jet Propulsion Laboratory (JPL) develops and continuously maintains software systems critical for NASA deep space missions. Given limited budgets, staffing resources, and a time critical need for repair or enhancement, there is an ever-present temptation to sacrifice quality for higher productivity or slip release target to ensure better quality. We have learned that poor management of this increases risk of mission failure. As a result, our process must be both highly productive and maintain high quality (e.g. reliability, maintainability, usability). Inspired by the "quality is free" paradigm, we have instituted a set of "Rapid Release" maintenance process policies and measures aimed to continually manage productivity and quality. Six Rapid Release polices were established from well-known engineering principles and best practices to address specific issues of concern encountered in the development phase. However, due to the critically of our systems, we must have objective assurance that our developers are following the six policies and that they are demonstratively effective in addressing the areas of concern.</p> <p><b>Goal:</b> Investigate if Rapid Release as currently implemented is effective in achieving effects and impacts as expected from principles and best practice beliefs. Additionally, determine practical methods to assure compliance and performance to Rapid Release policies and determine if any adjustments to policy or practice is needed.</p> <p><b>Method:</b> We have over 15 years of reliable and accurate quality and productivity process data for Monte, a critical system currently in continual operation and maintenance. Time series cross-correlation analyses on this data is used to compare process productivity and quality characteristics pre- and post-implementation of Rapid Release.</p> <p><b>Results:</b> We find strong evidence, that for Monte: (1) there is continual risk due to productivity and quality tradeoffs, (2) the majority of the Rapid Release policies are being complied with, and (3) the policies have been effective in managing this risk.</p> <p><b>Conclusions:</b> High productivity and high quality in maintenance of our critical systems requires more than implementing policy based on belief. The process must be monitored to assure that policies are adhered to and are effective in producing the results desired.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668448" title="Get the Full Text from the ACM Digital Library">Implementing agile practices: the experience of TSol</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Mar&#237;a Cecilia Bastarrica</li>
+<li class="nameList">Germ&#225;n Espinoza</li>
+<li class="nameList Last">Jacqueline Mar&#237;n</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>Background:</b> Implementing agile practices in software development processes promises to bring improvements in product quality and process productivity, but there are few reports of cases of failure to learn from. And more specifically, it is not always clear which practices work well in which contexts.</p> <p><b>Aims:</b> In this paper we present the experience of TSol, a small Chilean-based software company where some agile practices were added to an already formalized process. They intended to prove that this addition resulted in improved performance.</p> <p><b>Method:</b> We conducted a sequential explanatory strategy. First, an action research was applied implementing agile practices into the already existing process. Performance was measured in terms of the rate of rejected products in each process. Next, a survey was conducted by interviewing the development team members in order to know their opinion about the effectiveness of each of the applied agile practices. Finally, the obtained results were compared with scientific literature recommendations about agility implementation.</p> <p><b>Results:</b> There were clear improvements in performance. However, there was agreement about the usefulness of certain practices while others were not or they were even felt as a barrier for appropriate project development. Some of these results are consistent with the literature while others are not.</p> <p><b>Conclusions:</b> This work adds on the scarce lessons learned when agility implementation fails. Not counting on the few existing publications about failure cases of applying agility made TSol implement it in cases it was not recommended. Also, there are particular context circumstances that made TSol's results different from past experiences.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668449" title="Get the Full Text from the ACM Digital Library">The most common causes and effects of technical debt: first results from a global family of industrial surveys</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Nicolli Rios</li>
+<li class="nameList">Rodrigo Oliveira Sp&#237;nola</li>
+<li class="nameList">Manoel Mendon&#231;a</li>
+<li class="nameList Last">Carolyn Seaman</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><i>Background:</i> The presence of technical debt (TD) brings risks to a software project and makes it difficult to manage. Several TD management strategies have been proposed, but considering actions that could explicitly prevent the insertion of TD in the first place and monitor its effects is not yet a common practice. Thus, while TD management is an important topic, it is also worthwhile to understand the causes that could lead development teams to incur different types of debt as well as the effects of their presence on software projects. <i>Aims:</i> The objective of this work is twofold. First, we investigate the state of practice in the TD area including the status quo, the causes that lead to TD occurrence, and the effects of existing TD. Second, we present the design of InsighTD, a globally distributed family of industrial surveys on causes and effects of TD, and the results of its first execution. <i>Method:</i> We designed the InsighTD in joint collaboration with several TD researchers. It is designed to run as an incremental large scale study based on continuous and independent replications of the questionnaire in different countries. <i>Results:</i> This paper presents the first results of the first execution of the survey. In total, 107 practitioners from the Brazilian software industry answered the questionnaire. Results indicate that there is a broad familiarity with the concept of TD. Deadlines, inappropriate planning, lack of knowledge, and lack of a well-defined process are among the top 10 cited and most likely causes that lead to the occurrence of TD. On the other side, low quality, delivery delay, low maintainability, rework and financial loss are among the top 10 most commonly cited and impactful effects of TD. <i>Conclusion:</i> With InsighTD, we intend to reduce the problem of isolated investigations in TD that are not yet representative and, thus, build a continuous and generalizable empirical basis for understanding practical problems and challenges of TD.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668440" title="Get the Full Text from the ACM Digital Library">Software quality assessment in practice: a hypothesis-driven framework</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Markus Schnappinger</li>
+<li class="nameList">Mohd Hafeez Osman</li>
+<li class="nameList">Alexander Pretschner</li>
+<li class="nameList">Markus Pizka</li>
+<li class="nameList Last">Arnaud Fietzke</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Software quality models describe decompositions of quality characteristics. However, in practice, there is a gap between quality models, quality measurements, and quality assessment activities. As a first step of bridging the gap, this paper presents a novel and structured framework to perform quality assessments. Together with our industrial partner, we applied this framework in two case studies and present our lessons learned. Among others, we found that results from automated tools can be misleading. Manual inspections still need to be conducted to find hidden quality issues, and concrete evidence of quality violations needs to be collected to convince the stakeholders.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668441" title="Get the Full Text from the ACM Digital Library">Understanding what industry wants from requirements engineers: an exploration of RE jobs in Canada</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Chong Wang</li>
+<li class="nameList">Pengwei Cui</li>
+<li class="nameList">Maya Daneva</li>
+<li class="nameList Last">Mohamad Kassab</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>[Background]</b> Prior research on the professional occupation of Requirements Engineering (RE) in Europe and Latin America indicated incongruities between RE practice as perceived by industry and as in textbooks, and conducted detailed analysis of both RE and non-RE job aspects. Relatively little is published on the RE competencies and skills industry expects, and seldom investigated the application domains calling for RE professionals. <b>[Aims]</b> We felt motivated by those findings to carry out research on RE job posts in a North-American market. Especially, we focused solely on RE-specific tasks, competencies and skills, from the perspective of defined position categories. Plus, we intend to explore the application domains in need for RE professionals to reveal the wide range of RE roles in industry. <b>[Methods]</b> Coding process, analysis, and synthesis were applied to the textual descriptions of the 190 RE job ads from Canada's most popular online job search site, especially to the text referring to tasks and competencies. <b>[Results]</b> We contribute to the empirical analysis of RE jobs, by providing insights from Canada's IT market in 2017. Using 109 RE job ads from the most popular IT job search portal T-Net, we identified the qualifications, experience and skills demanded by Canadian employers. Furthermore, we explored the distribution of those RE tasks and competences over the 11 categories of RE roles. <b>[Conclusions]</b> Our results suggest that the majority of the employers were big to very big companies in 29 business domains, and the most in-demand RE skills for them were related to RE methods and to project management aspects affecting requirements. In addition, employers placed much more emphasis on experience - both RE-specific and broad software engineering experience, than on higher education.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668442" title="Get the Full Text from the ACM Digital Library">Vulnerable open source dependencies: counting those that matter</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Ivan Pashchenko</li>
+<li class="nameList">Henrik Plate</li>
+<li class="nameList">Serena Elisa Ponta</li>
+<li class="nameList">Antonino Sabetta</li>
+<li class="nameList Last">Fabio Massacci</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>Background:</b> Vulnerable dependencies are a known problem in today's open-source software ecosystems because OSS libraries are highly interconnected and developers do not always update their dependencies.</p> <p><b>Aim:</b> Our paper addresses the over-inflation problem of academic and industrial approaches for reporting vulnerable dependencies in OSS software, and therefore, caters to the needs of industrial practice for correct allocation of development and audit resources.</p> <p><b>Method:</b> Careful analysis of deployed dependencies, aggregation of dependencies by their projects, and distinction of halted dependencies allow us to obtain a counting method that avoids over-inflation. To understand the industrial impact of a more precise approach, we considered the 200 most popular OSS Java libraries used by SAP in its own software. Our analysis included 10905 distinct GAVs (group, artifact, version) in Maven when considering all the library versions.</p> <p><b>Results:</b> We found that about 20% of the dependencies affected by a known vulnerability are not deployed, and therefore, they do not represent a danger to the analyzed library because they cannot be exploited in practice. Developers of the analyzed libraries are able to fix (and actually responsible for) 82% of the deployed vulnerable dependencies. The vast majority (81%) of vulnerable dependencies may be fixed by simply updating to a new version, while 1% of the vulnerable dependencies in our sample are halted, and therefore, potentially require a costly mitigation strategy.</p> <p><b>Conclusions:</b> Our case study shows that the correct counting allows software development companies to receive actionable information about their library dependencies, and therefore, correctly allocate costly development and audit resources, which is spent inefficiently in case of distorted measurements.</p></div> </div>
+<h2>SESSION: Emerging results</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668443" title="Get the Full Text from the ACM Digital Library">Can app changelogs improve requirements classification from app reviews?: an exploratory study</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Chong Wang</li>
+<li class="nameList">Fan Zhang</li>
+<li class="nameList">Peng Liang</li>
+<li class="nameList">Maya Daneva</li>
+<li class="nameList Last">Marten van Sinderen</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>[Background]</b> Recent research on mining app reviews for software evolution indicated that the elicitation and analysis of user requirements can benefit from supplementing user reviews by data from other sources. However, only a few studies reported results of leveraging app changelogs together with app reviews. <b>[Aims]</b> Motivated by those findings, this exploratory experimental study looks into the role of app changelogs in the classification of requirements derived from app reviews. We aim at understanding if the use of app changelogs can lead to more accurate identification and classification of functional and non-functional requirements from app reviews. We also want to know which classification technique works better in this context. <b>[Method]</b> We did a case study on the effect of app changelogs on automatic classification of app reviews. Specifically, manual labeling, text preprocessing, and four supervised machine learning algorithms were applied to a series of experiments, varying in the number of app changelogs in the experimental data. <b>[Results]</b> We compared the accuracy of requirements classification from app reviews, by training the four classifiers with varying combinations of app reviews and changelogs. Among the four algorithms, Na&iuml;ve Bayes was found to be more accurate for categorizing app reviews. <b>[Conclusions]</b> The results show that official app changelogs did not contribute to more accurate identification and classification of requirements from app reviews. In addition, Na&iuml;ve Bayes seems to be more suitable for our further research on this topic.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N668444" title="Get the Full Text from the ACM Digital Library">Comparing the effectiveness of goal-oriented languages: results from a controlled experiment</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Silvia Abrah&#227;o</li>
+<li class="nameList">Emilio Insfran</li>
+<li class="nameList">Fernando Gonz&#225;lez-Ladr&#243;n de Guevara</li>
+<li class="nameList">Marta Fern&#225;ndez-Diego</li>
+<li class="nameList">Carlos Cano-Genoves</li>
+<li class="nameList Last">Raphael Pereira de Oliveira</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><i>Context.</i> Several early requirements approaches focus on modeling objectives, interest or benefits of related stakeholders. However, as they can be used for different purposes as identifying problems, exploring system solutions, evaluating alternatives, etc., there are no clear guidelines on how to build these models, which constructs of the language must be used in each case, and most importantly, how to use these models downstream to the software requirements and design artifacts. <i>Background.</i> In a previous work, we proposed a specialization of the GRL language (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7c0a1d1009193c3b2e30">[email&#160;protected]</a>) to specify stakeholders' goals when dealing with early requirements in the context of incremental software development. <i>Goal/Method.</i> This paper reports on a controlled experiment aimed at comparing the goal model quality and the productivity, perceived ease of use, and perceived usefulness of participants when using <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fd8b9c918898bdbaafb1">[email&#160;protected]</a> and i* languages. <i>Results.</i> The results showed that <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3640575a43537671647a">[email&#160;protected]</a> obtained better results than i* as a goal modeling language indicating that it can be considered as a promising emerging approach in this area. <i>Conclusions.</i> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c294a3aeb7a78285908e">[email&#160;protected]</a> allows obtaining goal models with good quality that may be later used downstream software development activities.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N669555" title="Get the Full Text from the ACM Digital Library">An empirical perspective on security challenges in large-scale agile software development</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Amber van der Heijden</li>
+<li class="nameList">Cosmin Broasca</li>
+<li class="nameList Last">Alexander Serebrenik</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>Background</b> Agile methods have been shown to have a negative impact on security. Several studies have investigated challenges in aligning security practices with agile methods, however, none of these have examined security challenges in the context of large-scale agile. Large-scale agile can present unique challenges, as large organizations often involve highly interdependent teams that need to align with other (non-agile) departments. <b>Goal</b> Our objective is to identify security challenges encountered in large-scale agile software development from the perspective of agile practitioners. <b>Method</b> Cooperative Method Development is applied to guide a qualitative case study at Rabobank, a Dutch multinational banking organization. A total of ten interviews is conducted with members in different agile roles from five different agile development teams. Data saturation has been obtained. By open card sorting we identify challenges pertaining to security in agile. <b>Results</b> The following challenges appear to be unique to large-scale agile: <i>alignment of security objectives in a distributed setting, developing a common understanding of the roles and responsibilities in security activities</i>, and <i>integration of low-overhead security testing tools.</i> Additional challenges reported appear to be common to security in software development in general or concur with challenges reported for small-scale agile. <b>Conclusions</b> The reported findings suggest the presence of multiple security challenges unique to large-scale agile. Future work should focus on confirming these challenges and investigating possible mitigations.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N669556" title="Get the Full Text from the ACM Digital Library">Experimental validation of the suitability of virtualization-based replication for fault tolerance in real-time control of electric grids</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Seyed Alireza Sanaee Kohroudi</li>
+<li class="nameList">Jalal Mostafa</li>
+<li class="nameList">Maaz Mohiuddin</li>
+<li class="nameList">Wajeb Saab</li>
+<li class="nameList Last">Jean-Yves Le Boudec</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Real-time control systems (RTCSs) perform complex control and require low response times. They typically use third-party software libraries and are deployed on generic hardware, which suffer from delay faults that can cause serious damage. To improve availability and latency, the controllers in RTCSs are replicated on physical nodes. As physical replication is expensive, we study the alternative of exploiting virtualization technology to run multiple virtual replicas on the same physical node. As virtual replicas share the same resources, the delay faults they experience might be correlated, which would make such a replication method unsuitable. We conduct several experiments with an RTCS for electric grids, with multiple virtual replicas of its controller. We find that although the delay of a virtual machine is higher than of a physical machine, the correlation between high delays among the virtual replicas is insignificant, causing an overall improved availability. We conclude that virtual replication is indeed applicable to certain RTCSs, as it can improve reliability without added cost.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N669557" title="Get the Full Text from the ACM Digital Library">Maintaining systematic literature reviews: benefits and drawbacks</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Vilmar Nepomuceno</li>
+<li class="nameList Last">Sergio Soares</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Background: Maintenance and traceability (versioning) are constant concerns in Software Engineering (SE), however, few works related to these topics in Systematic Literature Reviews (SLR) were found. Goal: The goal of this research is to elucidate how SLRs can be maintained and what are the benefits and drawbacks in this process. Method: This work presents a survey where experienced researchers that conducted SLRs between 2011 and 2015 answered questions about maintenance and traceability and, using software maintenance concepts, it addresses the SLRs maintenance process. From the 79 e-mails sent we reach 28 answers. Results: 19 of surveyed researchers have shown interest in keeping their SLRs up-to-date, but they have expressed concerns about the effort to be made to accomplish it. It was also observed that 20 participants would be willing to share their SLRs in common repositories, such as GitHub. Conclusions: There is a need to perform maintenance on SLRs. Thus, we are proposing a SLR maintenance process, taking into account some benefits and drawbacks identified during our study and presented through the paper.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N669558" title="Get the Full Text from the ACM Digital Library">Measuring human values in software engineering</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Emily Winter</li>
+<li class="nameList">Steve Forshaw</li>
+<li class="nameList Last">Maria Angela Ferrario</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>Background:</b> Human values, such as prestige, social justice, and financial success, influence software production decision-making processes. While their subjectivity makes some values difficult to measure, their impact on software motivates our research. <b>Aim:</b> To contribute to the scientific understanding and the empirical investigation of human values in Software Engineering (SE). <b>Approach:</b> Drawing from social psychology, we consider values as mental representations to be investigated on three levels: at a system (L1), personal (L2), and instantiation level (L3). <b>Method:</b> We design and develop a selection of tools for the investigation of values at each level, and focus on the design, development, and use of the <i>Values Q-Sort.</i> <b>Results:</b> From our study with 12 software practitioners, it is possible to extract three values `prototypes' indicative of an emergent typology of values considerations in SE. <b>Conclusions:</b> The Values Q-Sort generates quantitative values prototypes indicating values relations (L1) as well as rich personal narratives (L2) that reflect specific software practices (L3). It thus offers a systematic, empirical approach to capturing values in SE.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N669559" title="Get the Full Text from the ACM Digital Library">Measuring LDA topic stability from clusters of replicated runs</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Mika V. Mantyla</li>
+<li class="nameList">Maelick Claes</li>
+<li class="nameList Last">Umar Farooq</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>Background:</b> Unstructured and textual data is increasing rapidly and Latent Dirichlet Allocation (LDA) topic modeling is a popular data analysis methods for it. Past work suggests that instability of LDA topics may lead to systematic errors. <b>Aim:</b> We propose a method that relies on replicated LDA runs, clustering, and providing a stability metric for the topics. <b>Method:</b> We generate k LDA topics and replicate this process n times resulting in n*k topics. Then we use K-medioids to cluster the n*k topics to k clusters. The k clusters now represent the original LDA topics and we present them like normal LDA topics showing the ten most probable words. For the clusters, we try multiple stability metrics, out of which we recommend Rank-Biased Overlap, showing the stability of the topics inside the clusters. <b>Results:</b> We provide an initial validation where our method is used for 270,000 Mozilla Firefox commit messages with k=20 and n=20. We show how our topic stability metrics are related to the contents of the topics. <b>Conclusions:</b> Advances in text mining enable us to analyze large masses of text in software engineering but non-deterministic algorithms, such as LDA, may lead to unreplicable conclusions. Our approach makes LDA stability transparent and is also complementary rather than alternative to many prior works that focus on LDA parameter tuning.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N669550" title="Get the Full Text from the ACM Digital Library">On the use of emoticons in open source software development</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Ma&#235;lick Claes</li>
+<li class="nameList">Mika M&#228;ntyl&#228;</li>
+<li class="nameList Last">Umar Farooq</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>Background:</b> Using sentiment analysis to study software developers' behavior comes with challenges such as the presence of a large amount of technical discussion unlikely to express any positive or negative sentiment. However, emoticons provide information about developer sentiments that can easily be extracted from software repositories. <b>Aim:</b> We investigate how software developers use emoticons differently in issue trackers in order to better understand the differences between developers and determine to which extent emoticons can be used as in place of sentiment analysis. <b>Method:</b> We extract emoticons from 1.3M comments from Apache's issue tracker and 4.5M from Mozilla's issue tracker using regular expressions built from a list of emoticons used by SentiStrength and Wikipedia. We check for statistical differences using Mann-Whitney U tests and determine the effect size with Cliff's &delta;. <b>Results:</b> Overall Mozilla developers rely more on emoticons than Apache developers. While the overall rate of comments with emoticons is of 1% and 3% for Apache and Mozilla, some individual developers can have a rate up to 21%. Looking specifically at Mozilla developers, we find that western developers use significantly more emoticons (with medium size effect) than eastern developers. While the majority of emoticons are used to express joy, we find that Mozilla developers use emoticons more frequently to express sadness and surprise than Apache developers. Finally, we find that Apache developers use overall more emoticons during weekends than during weekdays, with the share of sad and surprised emoticons increasing during weekends. <b>Conclusions:</b> While emoticons are primarily used to express joy, the more occasional use of sad and surprised emoticons can potentially be utilized to detect frustration in place of sentiment analysis among developers using emoticons frequently enough.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N669551" title="Get the Full Text from the ACM Digital Library">A preliminary study of agility in business and production: cases of early-stage hardware startups</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Anh Nguyen-Duc</li>
+<li class="nameList">Xiaofang Weng</li>
+<li class="nameList Last">Pekka Abrahamsson</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>[Context] Advancement in technologies, popularity of small-batch manufacturing and the recent trend of investing in hardware startups are among the factors leading to the rise of hardware startups nowadays. It is essential for hardware startups, companies that involve both software and hardware development, to be not only agile to develop their business but also efficient to develop the right products. [Objective] We investigate how hardware startups achieve agility when developing their products in early stages. [Methods] A qualitative research is conducted with data from 20 hardware startups. [Result] Preliminary results show that agile development is known to hardware entrepreneurs, however it is limitedly adopted. We also found four categories of tactics: (1) strategy, (2) personnel, (3) artifact and (4) resource that enable hardware startups agile in their early stage business and product development. [Conclusions] Agile methodologies should be adopted with the consideration of specific features of hardware development, such as up-front design and vendor dependencies.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N669552" title="Get the Full Text from the ACM Digital Library">What if a bug has a different origin?: making sense of bugs without an explicit bug introducing change</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Gema Rodr&#237;guez-P&#233;rez</li>
+<li class="nameList">Andy Zaidman</li>
+<li class="nameList">Alexander Serebrenik</li>
+<li class="nameList">Gregorio Robles</li>
+<li class="nameList Last">Jes&#250;s M. Gonz&#225;lez-Barahona</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>Background:</b> Many studies in the software research literature on bug fixing are built upon the assumption that "a given bug was introduced by the lines of code that were modified to fix it", or variations of it. Although this assumption seems very reasonable at first glance, there is little empirical evidence supporting it. A careful examination surfaces that there are other possible sources for the introduction of bugs such as modifications to those lines that happened before the last change an changes external to the piece of code being fixed. <b>Goal:</b> We aim at understanding the complex phenomenon of bug introduction and bug fix. <b>Method:</b> We design a preliminary approach distinguishing between bug introducing commits (BIC) and first failing moments (FFM). We apply this approach to Nova and ElasticSearch, two large and well-known open source software projects. <b>Results:</b> In our initial results we obtain that at least 24% bug fixes in Nova and 10% in ElasticSearch have not been caused by a BIC but by co-evolution, compatibility issues or bugs in external API. Merely 26--29% of BICs can be found using the algorithm based on the assumption that "a given bug was introduced by the lines of code that were modified to fix it". <b>Conclusions:</b> The approach allows also for a better framing of the comparison of automatic methods to find bug inducting changes. Our results indicate that more attention should be paid to whether a bug has been introduced and, when it was introduced.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N669553" title="Get the Full Text from the ACM Digital Library">When and who leaves matters: emerging results from an empirical study of employee turnover</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Panagiota Chatzipetrou</li>
+<li class="nameList">Darja &#352;mite</li>
+<li class="nameList Last">Rini van Solingen</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>Background:</b> Employee turnover in GSD is an extremely important issue, especially in Western companies offshoring to emerging nations. <b>Aims:</b> In this case study we investigated an offshore vendor company and in particular whether the employees' retention is related with their experience. Moreover, we studied whether we can identify a threshold associated with the employees' tendency to leave the particular company. <b>Method:</b> We used a case study, applied and presented descriptive statistics, contingency tables, results from Chi-Square test of association and post hoc tests. <b>Results:</b> The emerging results showed that employee retention and company experience are associated. In particular, almost 90% of the employees are leaving the company within the first year, where the percentage within the second year is 50-50%. Thus, there is an indication that the 2 years' time is the retention threshold for the investigated offshore vendor company. <b>Conclusions:</b> The results are preliminary and lead us to the need for building a prediction model which should include more inherent characteristics of the projects to aid the companies avoiding massive turnover waves.</p></div> </div>
+<h2>SESSION: Vision papers</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N669554" title="Get the Full Text from the ACM Digital Library">Measuresoftgram: a future vision of software product quality</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Hilmer Rodrigues Neri</li>
+<li class="nameList Last">Guilherme Horta Travassos</li>
+
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>&lt;u&gt;Background:&lt;/u&gt; Software product quality assurance affects the acceptance of releases. The one dimensional observational perspective of current software product quality (SPQ) models constrains their use in continuous software engineering environments. &lt;u&gt;Aims:&lt;/u&gt; To investigate multidimensional relationships between software product characteristics and build an evidence-based infrastructure to observe SPQ continuously. &lt;u&gt;Method:&lt;/u&gt; To mine and manipulate datasets regarding software development and use. Next, to perform multidimensional analytical SPQ interpretations to observe quality. &lt;u&gt;Results:&lt;/u&gt; There is empirical evidence on the multidimensionality linkage of quality characteristics throughout the software life cycle. &lt;u&gt;Conclusions:&lt;/u&gt; The one-dimensional quality perspective is not enough to observe the SPQ in continuous environments. Alternative mathematical abstractions should be investigated.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N669565" title="Get the Full Text from the ACM Digital Library">Standards of validity and the validity of standards in behavioral software engineering research: the perspective of psychological test theory</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Lucas Gren</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><i>Background.</i> There are some publications in software engineering research that aim at guiding researchers in assessing validity threats to their studies. Still, many researchers fail to address many aspects of validity that are essential to quantitative research on human factors.</p> <p><i>Goal.</i> This paper has the goal of triggering a change of mindset in what types of studies are the most valuable to the behavioral software engineering field, and also provide more details of what construct validity is.</p> <p><i>Method.</i> The approach is based on psychological test theory and draws upon methods used in psychology in relation to construct validity.</p> <p><i>Results.</i> In this paper, I suggest a different approach to validity threats than what is commonplace in behavioral software engineering research.</p> <p><i>Conclusions.</i> While this paper focuses on behavioral software engineering, I believe other types of software engineering research might also benefit from an increased focus on construct validity.</p></div> </div>
+<h2>POSTER SESSION: Posters</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N669566" title="Get the Full Text from the ACM Digital Library">Domain-specific <i>modelware</i>: to make the machine learning model reusable and reproducible</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Hui Zhao</li>
+<li class="nameList">Jimin Liang</li>
+<li class="nameList">Xuezhen Yin</li>
+<li class="nameList">Lingfeng Yang</li>
+<li class="nameList">Peili Yang</li>
+<li class="nameList Last">Yuhang Wang</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Machine learning task is a routine process including data collection, feature engineering, model training, hyper-parameters tuning, model evaluation and model deployment. The process is usually complex, iterated and time-consuming. Commonly, researchers seldom start building the machine model from scratch. They may select some well-known and well-trained models in similar task domains as the reference models. Then they try to tune the hyper-parameters and accelerate the iteration. Thus, some models are often reused and need to be reproduced by using new training dataset. Moreover, understanding the model and the iteration is more necessary. This scenario is very similar to that of software reuse. In this poster, we propose <i>Modelware</i> and argue the need of <i>Modelware</i> to make the machine learning model reusable and reproducible. We define the <i>Modelware</i> which is the reused object and develop a model repository to provide the model lineage management and model visit tool. The big data for building model is managed collaboratively so that the model can be reproduced. The iteration process to obtain the final optimized model is abstracted and implemented using a lightweight workflow. Finally, we take two different classification tasks as the demonstration.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N669567" title="Get the Full Text from the ACM Digital Library">Identifying bug-inducing changes for code additions</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Emre Sahal</li>
+<li class="nameList Last">Ayse Tosun</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Background. SZZ algorithm has been popularly used to identify bug-inducing changes in version history. It is still limited to link a fixing change to an inducing one, when the fix constitutes of code additions only. Goal. We improve the original SZZ by proposing a way to link the code additions in a fixing change to a list of candidate inducing changes. Method. The improved version, A-SZZ, finds the code block encapsulating the new code added in a fixing change, and traces back to the historical changes of the code block. We mined the GitHub repositories of two projects, Angular.js and Vue, and ran A-SZZ to identify bug-inducing changes of code additions. We evaluated the effectiveness of A-SZZ in terms of inducing and fixing ratios, and time span between the two changes. Results. The approach works well for linking code additions with previous changes, although it still produces many false positives. Conclusions. Nearly a quarter of the files in fixing changes contain code additions only, and hence, new heuristics should be implemented to link those with inducing changes in a more efficient way.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N669568" title="Get the Full Text from the ACM Digital Library">Using semantic frames to identify related textual requirements: an initial validation</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Waad Alhoshan</li>
+<li class="nameList">Liping Zhao</li>
+<li class="nameList Last">Riza Batista-Navarro</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Identifying relationships between requirements described in natural language (NL) is a difficult task in requirements engineering (RE). This paper presents a novel approach that uses Semantic Frames in FrameNet to find the relationships between requirements. Our initial validation shows that the approach is promising, with an F-Score of 83%. Our next step is to use the approach to identify implicit requirements relationships and finding requirements traceability links.</p></div> </div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>

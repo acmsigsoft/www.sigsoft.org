@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">The goal of dataflow analysis is to determine properties of the
+run-time behavior of software systems by analyzing the software source
+code. Such analysis has a wide range of uses in software engineering
+tasks and their supporting tools. Traditionally, interprocedural
+dataflow analyses are designed as whole-program analyses: they take as
+input and process complete programs. This analysis model has been used
+extensively in the previous work on dataflow analysis.
+<P>
+
+The paradigm of whole-program analysis has several limitations. Such
+analysis cannot be applied to incomplete programs (e.g., library
+modules), to programs containing unanalyzable modules (e.g., programs
+built with precompiled components), and to large programs. These
+restrictions limit the usefulness of whole-program analysis in the
+context of real-world software development. To address this problem,
+in this thesis we propose the paradigm of fragment dataflow analysis.
+<P>
+
+Fragment dataflow analysis is an interprocedural dataflow analysis
+that is designed to analyze software fragments rather than complete
+programs. This analysis model is more flexible and can be used in
+situations in which whole-program analysis is not applicable.  The
+first contribution of our work is a theoretical framework for
+constructing fragment dataflow analyses. This framework provides
+analysis designers with a sound basis for constructing fragment
+analyses and for reasoning about their properties.
+<P>
+
+Our second contribution is an approach for performing points-to
+analysis and side-effect analysis for C programs that are built with
+precompiled libraries. We define and evaluate fragment analyses that
+can be applied to library modules, as well as to the corresponding
+client modules. Our work enables the use of two fundamental dataflow
+analyses - points-to analysis and side-effect analysis - for C
+programs that cannot be handled by the previous work on whole-program
+analysis.
+<P>
+
+The third contribution of this work is an approach for performing
+class analysis for the purposes of testing of polymorphism in
+Java. Our work defines a method for constructing fragment class
+analyses in order to compute test coverage requirements. We present
+empirical results showing the precision and practicality of the
+analyses. This work is the first one to show how to construct
+high-quality coverage tools for testing of polymorphism in Java
+software.
+<P>
+
+
+
+
+
+</div>
+</body>
+</html>

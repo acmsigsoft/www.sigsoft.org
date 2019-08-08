@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+
+Software does not always behave as expected due to errors. These errors can potentially lead to disastrous consequences. Unfortunately, debugging software errors can be difficult and time-consuming. Many techniques to automatically locate errors have been developed, but the results are far from ideal. Unlike other techniques that analyze existing state information from program executions, dynamic state alteration techniques modify the state of program executions to gain deeper insight into the potential locations of errors.  However, prior state alteration techniques are generally no more effective than other techniques, and come at the expense of increased computation time. This dissertation shows that aggressive and well-targeted state alteration techniques can be both highly effective and reasonably efficient.
+<p>
+The Value Replacement technique performs aggressive state alterations to locate software errors by replacing the set of values used in different statement instances in failing program executions. In a set of benchmarks, Value Replacement precisely identifies a faulty statement in 39 out of 129 cases, whereas the most effective technique previously known does so in 5 cases. Value Replacement can be generalized to iteratively locate multiple errors. A brute-force implementation of Value Replacement can require hours to locate a single error, but techniques are developed that can reduce this timing requirement to minutes to locate multiple errors.
+<p>
+The Execution Suppression technique performs targeted state alterations to locate memory errors by iteratively suppressing (avoiding) the effects of statements involving known memory corruption during failing executions. The technique is able to precisely identify the  first point of memory corruption in all analyzed benchmark programs; this point is typically at or close to the location of a memory error. Execution Suppression can be generalized to locate multithreading errors including data races. While a software-only implementation of suppression incurs an overhead of 7.2x on average, this overhead can be reduced to 1.8x using hardware support.
+<p>
+Finally, a machine learning technique called BugFix is developed that provides automated assistance in modifying a faulty statement to fix an error. A case study illustrates the potential benefit of the technique.
+
+
+</div>
+</body>
+</html>

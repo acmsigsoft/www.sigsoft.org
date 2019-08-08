@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">In recent years, there has been a surge of progress in automated verification methods based on state exploration. In areas like hardware design, these technologies are rapidly augmenting key phases of testing and validation. To date, one of the most successful of these methods has been symbolic model checking, in which large finite-state machines are encoded into compact data structures such as binary decision diagrams (BDDs) -- and are then checked for safety and liveness properties.
+<P>
+
+However, these techniques have not realized the same success on software systems. One limitation is their inability to deal with infinite-state programs -- even those with a single unbounded integer. A second problem is that of state-space explosion, i.e., the exponential blow-up suffered when systems have large numbers of variables and concurrent components.
+<P>
+
+In this dissertation, we report our progress on these problems. First, we present an integer-based model checker, which uses formulas composed of affine constraints, logical connectives, and quantifiers (Presburger formulas) as its underlying state representation. With this model, we can compactly represent huge (even unbounded) sets of integer states in multiple dimensions. Next, we present our composite analyzer, which combines the strengths of both BDD (for Boolean and enumerated types), and Presburger formula (for integers) representations. Using this technique, a system's states are encoded via both representations, where the choice depends on the variable types.
+<P>
+
+We also present conservative approximation techniques for addressing the undecidability of model checking on infinite-state systems. Combined with reachability analysis, conservative approximation techniques form a wide variety of heuristics for analyzing large, complex systems.
+<P>
+
+Finally, we show how we used these methods to verify the properties of some subtle, nontrivial infinite-state systems -- the type of systems usually analyzed by hand or via testing.  Specifically, we discuss our experiments from domains such as requirements engineering, protocol analysis, and concurrent programming.
+<P>
+
+
+
+</div>
+</body>
+</html>

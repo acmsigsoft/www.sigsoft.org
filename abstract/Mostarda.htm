@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">This work describes a specification-based intrusion detection system
+to detect and prevent intrusions at architectural level. We assume
+to have a black-box-components-based application where all
+components run concurrently and interact with each other exchanging
+messages. A message encodes information about the type of
+communication, i.e. a request or a reply, the kind of service and
+its parameters and the (returned) data.
+<P>
+
+Under these assumptions we want to detect, at run time, any tampered
+component that communicates in a malicious way trying to subvert the
+correct system behavior. We define the correct system behavior (i.e.
+<P>
+the correct components messages exchange) by means of a state
+machine that in the following will be referred to as either global
+automaton or (communication) property. The property can define an
+ordering among the components messages, mutual exclusion among
+messages, the correct services parameters format, the correct
+response of services and so on.
+<P>
+
+In a centralized solution the global automaton can be used to build
+a centralized intrusion detection system (IDS). The IDS compares the
+automaton with the system execution. In the case of violation
+reactive utilities are undertaken. However, a centralized solution
+poses problems of security, reliability and performance.
+<P>
+Furthermore, already existing legacy distributed systems could not
+allow the addition of a new component which monitors the information
+flow in a centralized way. Our contribution is the automatic
+distribution of the global automaton in order to build a distributed
+detection system that is ``equivalent'' to the central one.
+<P>
+
+In our approach, we combine architectural information (i.e. the
+components interfaces description) and the global automaton in order
+to produce a local automaton for each component of the system. A
+local automaton constitutes the basis to build a filter that locally
+monitors its component. A filter is interposed between the
+environment and its component. Its main activities are: (i) to
+capture all outgoing component messages; (ii) to capture all
+incoming component messages; (iii) to check the component
+misbehavior. In the case that a violation is detected the filter
+default reaction is to enforce the component to behave correctly.
+<P>
+
+The filters constitutes a distributed IDS that is ``equivalent'' to
+the central one (i.e. an IDS based on the global automaton).
+<P>
+Moreover,  filters and components together constitute a \emph{secure
+software architecture} in which each misused component is detected
+and enforced to behave in the correct way.
+<P>
+
+However subversions of a property can still arise when the attacker
+modifies both a component and its filter (i.e. it attacks the local
+security measure). This problem can be reduced to the general
+problem of building \emph{tamper resistant security measures}. A
+tamper resistant security measure is one that is resistant to
+observation and modification. Although it can be modified (observed)
+we can trust that it will behave as expected even in presence of
+attacks.
+<P>
+
+We benefit from the security measure distribution into the set of
+filters. In our secure software architecture two components never
+interact directly since their messages have to pass through the
+related filters. This communication among filters allows the correct
+filters to discover the compromised ones.
+<P>
+
+We enhance our basic IDS in such a way that besides the detection
+and enforcement of component local messages each filter also checks
+the observable behaviors of other filters in order to detect their
+tampering. In this way, the filters constitute a tamper resistant
+IDS and the filters and the components together constitute a tamper
+resistant software architecture that ensures properties even in
+presence of IDS modifications. In particular, we present a general
+result in which for any topology of the components (i.e. the
+architectures) the tampering of one component and its filter can be
+detected.
+<P>
+
+Our approach is supported by the DESERT tool (Distributed dEtection
+System for sEcure softwaRe archiTectures). It allows the
+specification of architectural information and of the global
+automaton in XML (the XML global specification file).
+<P>
+
+Given the file and a component (e.g. C) the tool produces an high
+level XML specification of the C local automaton. The automaton
+specification is platform independent and may be translated into
+different filter implementations. For instance for distributed
+applications where the components communicate by using the CORBA
+middleware we have implemented a CORBA back-end. This back-end
+automatically produces a new CORBA component (the filter) that is
+interposed between the component communications and the environment.
+<P>
+
+Finally, we have extended our approach to provide intrusion
+detection features in Wireless Sensors Networks (WSN). WSNs are
+usually composed of a large number of low power sensor devices with
+short range transmissions for wireless communications and low
+computational power. From the security point of view, the overhead
+added to standard routing protocols must be as light as possible
+according to the required security level. Starting from the DESERT
+tool, we derive a new framework that permits to specify a set of
+properties of the sensors behavior and interactions. Such
+specifications are automatically translated into few lines of code
+that are incorporated in the sensors. This realizes a distributed
+system that locally detects violation of the policies and is able to
+minimize the information sent among sensors in order to discover
+attacks over the network. We show how to apply such a method on a
+novel routing protocol, CoP, designed for mobile WSNs.
+<P>
+
+
+
+
+</div>
+</body>
+</html>

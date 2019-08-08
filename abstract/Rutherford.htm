@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">Software testing is about risk management. Typically, engineers use test adequacy
+criteria to balance the cost and efficacy of the testing activity. Test adequacy criteria are
+rules that provide an objective stopping condition on test input creation by defining a
+finite set of test requirements that must be satisfied. While adequacy criteria have been
+a focus of research activity for many years, existing testing criteria do not address the
+unique features of distributed applications. The contributions of this dissertation are:
+(1) a study of reported failure scenarios of seven distributed applications; (2) a novel
+testing technique based on discrete-event simulations that serves as a basis for adequacy
+criteria for distributed systems; (3) a fault-based analysis technique that allows testers
+to addresses the fundamental risks associated with using adequacy criteria; and (4) a
+case-study evaluation of the simulation-based and fault-based techniques.
+<P>
+The failure study involves the categorization of test inputs and observations
+needed to replicate failures reported by users. The results show that failure-producing
+scenarios are amenable to categorization, that simple system topologies are likely to be
+quite effective, and that a significant proportion of failure-producing scenarios involve
+distributed inputs. Thus, the results confirm our intuition that distributed systems need
+their own class of adequacy criteria.
+<P>
+Rather than inventing a new specification formalism, we instead adapt the common
+practice of using discrete-event simulations for the design and understanding of
+distributed systems to testing. Our key observation is that these simulations can be
+viewed as specifications of the expected behavior of the system. Using simulations to
+test the implementation of a system is therefore a matter of selecting inputs to cover
+the simulation according to some criterion, and then mapping the inputs into the implementation
+domain. As simulations are sequential programs themselves, virtually all
+black- and white-box criteria can be used with a simulation-based technique.
+<P>
+When using any adequacy criterion for testing, there is generally no way for
+engineers to know a priori how effective a test suite or the criterion itself is going
+to be on their system. To mitigate this risk within the context of simulation-based
+testing, we propose a fault-based analysis technique that uses code mutation operators
+to create a set of incorrect simulations. Candidate test cases are executed against each
+of these specification mutants and the number killed is used as a surrogate measure of
+effectiveness.
+<P>
+We evaluate the simulation-based technique and the companion fault-based analysis
+method on 28 implementations of three distributed systems. The results of these
+experiments are striking. First, we confirm that discrete-event simulations can indeed
+be used in testing, and that white-box techniques based on the simulation are both effective,
+and cost-effective when compared to randomly selected test suites of the same size.
+<P>
+Second, in a significant advancement of the state of the art, we demonstrate the power
+of the fault-based analyses by improving the effectiveness of adequate suites within each
+criterion, and by predicting exactly the overall relationships between different criteria.
+<P>
+
+
+
+</div>
+</body>
+</html>

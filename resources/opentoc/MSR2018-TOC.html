@@ -1,0 +1,889 @@
+
+<!doctype html>
+<head>
+<META http-equiv="Content-Style-Type" content="text/css">
+<title>MSR '18- Proceedings of the 15th International Conference on Mining Software Repositories</title>
+<STYLE type="text/css">
+#DLtoc {
+	font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+	}
+
+#DLheader {
+	}
+#DLheader h1 {
+	font-size:16px;	
+}
+	
+#DLcontent {
+	 font-size:12px;
+	}
+#DLcontent h2 {
+	 font-size:14px;
+	 margin-bottom:5px;
+	}
+#DLcontent h3 {
+	 font-size:12px;
+	 padding-left:20px;
+	 margin-bottom:0px;
+	}
+
+#DLcontent ul{
+	margin-top:0px;
+	margin-bottom:0px;
+	}
+		
+.DLauthors li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLauthors li:after{
+	content:",";
+	}
+.DLauthors li.nameList.Last:after{
+	content:"";
+	}		
+
+.DLabstract {
+	 padding-left:40px;
+	 padding-right:20px;
+	 display:block;
+	}
+
+.DLformats li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLformats li:after{
+	content:",";
+	}
+.DLformats li.formatList.Last:after{
+	content:"";
+	}		
+
+.DLlogo {
+	vertical-align:middle; 
+	padding-right:5px;
+	border:none;
+	}
+	
+.DLcitLink {
+	margin-left:20px;
+	}	
+
+.DLtitleLink {
+	margin-left:20px;
+	}	
+
+.DLotherLink {
+	margin-left:0px;
+	}		
+   
+</STYLE>
+</head>
+<body>
+<div id="DLtoc">
+<div id="DLheader">
+<h1>MSR '18- Proceedings of the 15th International Conference on Mining Software Repositories</h1>
+<a class="DLcitLink" href="https://dl.acm.org/citation.cfm?id=3196398" title="Go to the ACM Digital Library for additional information about this proceeding"><img class="DLlogo" src="https://dl.acm.org/img/dllogo.png" alt="Digital Library logo" height="30" width="30">Full Citation in the ACM Digital Library</a>
+</div>
+<div id="DLcontent">
+<h2>SESSION: Data showcase</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665846" title="Get the Full Text from the ACM Digital Library">50K-C: a dataset of compilable, and compiled, Java projects</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Pedro Martins</li>
+<li class="nameList">Rohan Achar</li>
+<li class="nameList Last">Cristina V. Lopes</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We provide a repository of 50,000 compilable Java projects. Each project in this dataset comes with references to all the dependencies required to compile it, the resulting bytecode, and the scripts with which the projects were built.</p> <p>The dependencies and the build scripts provide a mechanism to re-create compilation of the projects, if needed (to instruct source code for bytecode analysis, for example). The bytecode is ready for testing, execution, and dynamic analysis tools.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665847" title="Get the Full Text from the ACM Digital Library">Jbench: a dataset of data races for concurrency testing</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Jian Gao</li>
+<li class="nameList">Xin Yang</li>
+<li class="nameList">Yu Jiang</li>
+<li class="nameList">Han Liu</li>
+<li class="nameList">Weiliang Ying</li>
+<li class="nameList Last">Xian Zhang</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Race detection is increasingly popular, both in the academic research and in industrial practice. However, there is no specialized and comprehensive dataset of the data race, making it difficult to achieve the purpose of effectively evaluating race detectors or developing efficient race detection algorithms.</p> <p>In this paper, we presented JB<scp>ench</scp>, a dataset with a total number of 985 data races from real-world applications and academic artifacts. We pointed out the locations of data races, provided source code, provided running commands and standardized storage structure. We also analyzed all the data races and classified them from four aspects: variable type, code structure, method span and cause. Furthermore, we discussed usages of the dataset in two scenarios: optimize race detection techniques and extract concurrency patterns.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665848" title="Get the Full Text from the ACM Digital Library">Bugs.jar: a large-scale, diverse dataset of real-world Java bugs</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Ripon K. Saha</li>
+<li class="nameList">Yingjun Lyu</li>
+<li class="nameList">Wing Lam</li>
+<li class="nameList">Hiroaki Yoshida</li>
+<li class="nameList Last">Mukul R. Prasad</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We present Bugs.jar, a large-scale dataset for research in automated debugging, patching, and testing of Java programs. Bugs.jar is comprised of 1,158 bugs and patches, drawn from 8 large, popular open-source Java projects, spanning 8 diverse and prominent application categories. It is an order of magnitude larger than Defects4J, the only other dataset in its class. We discuss the methodology used for constructing Bugs.jar, the representation of the dataset, several use-cases, and an illustration of three of the use-cases through the application of 3 specific tools on Bugs.jar, namely our own tool, E<scp>lixir</scp>, and two third-party tools, Ekstazi and JaCoCo.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665849" title="Get the Full Text from the ACM Digital Library">A gold standard for emotion annotation in stack overflow</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Nicole Novielli</li>
+<li class="nameList">Fabio Calefato</li>
+<li class="nameList Last">Filippo Lanubile</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Software developers experience and share a wide range of emotions throughout a rich ecosystem of communication channels. A recent trend that has emerged in empirical software engineering studies is leveraging sentiment analysis of developers' communication traces. We release a dataset of 4,800 questions, answers, and comments from Stack Overflow, manually annotated for emotions. Our dataset contributes to the building of a shared corpus of annotated resources to support research on emotion awareness in software development.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665840" title="Get the Full Text from the ACM Digital Library">VulinOSS: a dataset of security vulnerabilities in open-source systems</a>
+</h3>
+ <ul class="DLauthors">
+<li class="nameList First">Antonios Gkortzis</li>
+<li class="nameList">Dimitris Mitropoulos</li>
+<li class="nameList Last">Diomidis Spinellis</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Examining the different characteristics of open-source software in relation to security vulnerabilities, can provide the research community with findings that can lead to the development of more secure systems. We present a dataset where the reported vulnerabilities of 8694 open-source project versions, can be correlated with the corresponding source code and a number of software metrics. The metrics were obtained by analyzing the project's source code via well-established tools. Apart from commonly used metrics (e.g. loc), we also provide data related to modern development trends such as continuous integration and testing. We outline motivational examples based on the dataset we describe.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665841" title="Get the Full Text from the ACM Digital Library">A dataset of duplicate pull-requests in github</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Yue Yu</li>
+<li class="nameList">Zhixing Li</li>
+<li class="nameList">Gang Yin</li>
+<li class="nameList">Tao Wang</li>
+<li class="nameList Last">Huaimin Wang</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In GitHub, the pull-based development model enables community contributors to collaborate in a more efficient way. However, the distributed and parallel characteristics of this model pose a potential risk for developers to submit duplicate pull-requests (PRs), which increase the extra cost of project maintenance. To facilitate the further studies to better understand and solve the issues introduced by duplicate PRs, we construct a large dataset of historical duplicate PRs extracted from 26 popular open source projects in GitHub by using a semi-automatic approach. Furthermore, we present some preliminary applications to illustrate how further researches can be conducted based on this dataset.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665842" title="Get the Full Text from the ACM Digital Library">Structured information on state and evolution of dockerfiles on github</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Gerald Schermann</li>
+<li class="nameList">Sali Zumberi</li>
+<li class="nameList Last">J&#252;rgen Cito</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Docker containers are standardized, self-contained units of applications, packaged with their dependencies and execution environment. The environment is defined in a Dockerfile that specifies the steps to reach a certain system state as <i>infrastructure code</i>, with the aim of enabling reproducible builds of the container. To lay the groundwork for research on infrastructure code, we collected structured information about the state and the evolution of Dockerfiles on GitHub and release it as a PostgreSQL database archive (over 100,000 unique Dockerfiles in over 15,000 GitHub projects). Our dataset enables answering a multitude of interesting research questions related to different kinds of software evolution behavior in the Docker ecosystem.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665843" title="Get the Full Text from the ACM Digital Library">A graph-based dataset of commit history of real-world Android apps</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Franz-Xaver Geiger</li>
+<li class="nameList">Ivano Malavolta</li>
+<li class="nameList">Luca Pascarella</li>
+<li class="nameList">Fabio Palomba</li>
+<li class="nameList">Dario Di Nucci</li>
+<li class="nameList Last">Alberto Bacchelli</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Obtaining a good dataset to conduct empirical studies on the engineering of Android apps is an open challenge. To start tackling this challenge, we present AndroidTimeMachine, the first, self-contained, publicly available dataset weaving spread-out data sources about real-world, open-source Android apps. Encoded as a graph-based database, AndroidTimeMachine concerns 8,431 real open-source Android apps and contains: (i) metadata about the apps' GitHub projects, (ii) G<scp>it</scp> repositories with full commit history and (iii) metadata extracted from the G<scp>oogle</scp> P<scp>lay</scp> store, such as app ratings and permissions.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665844" title="Get the Full Text from the ACM Digital Library">Public git archive: a big code dataset for all</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Vadim Markovtsev</li>
+<li class="nameList Last">Waren Long</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The number of open source software projects has been growing exponentially. The major online software repository host, GitHub, has accumulated tens of millions of publicly available Git version-controlled repositories. Although the research potential enabled by the available open source code is clearly substantial, no significant large-scale open source code datasets exist. In this paper, we present the Public Git Archive - dataset of 182,014 top-bookmarked Git repositories from GitHub. We describe the novel data retrieval pipeline to reproduce it. We also elaborate on the strategy for performing dataset updates and legal issues. The Public Git Archive occupies 3.0 TB on disk and is an order of magnitude larger than the current source code datasets. The dataset is made available through HTTP and provides the source code of the projects, the related metadata, and development history. The data retrieval pipeline employs an optimized worker queue model and an optimized archive format to efficiently store forked Git repositories, reducing the amount of data to download and persist. Public Git Archive aims to open a myriad of new opportunities for "Big Code" research.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665955" title="Get the Full Text from the ACM Digital Library">Word embeddings for the software engineering domain</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Vasiliki Efstathiou</li>
+<li class="nameList">Christos Chatzilenas</li>
+<li class="nameList Last">Diomidis Spinellis</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The software development process produces vast amounts of textual data expressed in natural language. Outcomes from the natural language processing community have been adapted in software engineering research for leveraging this rich textual information; these include methods and readily available tools, often furnished with pre-trained models. State of the art pre-trained models however, capture general, common sense knowledge, with limited value when it comes to handling data specific to a specialized domain. There is currently a lack of domain-specific pre-trained models that would further enhance the processing of natural language artefacts related to software engineering. To this end, we release a word2vec model trained over 15GB of textual data from Stack Overflow posts. We illustrate how the model disambiguates polysemous words by interpreting them within their software engineering context. In addition, we present examples of fine-grained semantics captured by the model, that imply transferability of these results to diverse, targeted information retrieval tasks in software engineering and motivate for further reuse of the model.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665956" title="Get the Full Text from the ACM Digital Library">npm-miner: an infrastructure for measuring the quality of the npm registry</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Kyriakos C. Chatzidimitriou</li>
+<li class="nameList">Michail D. Papamichail</li>
+<li class="nameList">Themistoklis Diamantopoulos</li>
+<li class="nameList">Michail Tsapanos</li>
+<li class="nameList Last">Andreas L. Symeonidis</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>As the popularity of the JavaScript language is constantly increasing, one of the most important challenges today is to assess the quality of JavaScript packages. Developers often employ tools for code linting and for the extraction of static analysis metrics in order to assess and/or improve their code. In this context, we have developed npn-miner, a platform that crawls the npm registry and analyzes the packages using static analysis tools in order to extract detailed quality metrics as well as high-level quality attributes, such as maintainability and security. Our infrastructure includes an index that is accessible through a web interface, while we have also constructed a dataset with the results of a detailed analysis for 2000 popular npm packages.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665957" title="Get the Full Text from the ACM Digital Library">CROP: linking code reviews to source code changes</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Matheus Paixao</li>
+<li class="nameList">Jens Krinke</li>
+<li class="nameList">Donggyun Han</li>
+<li class="nameList Last">Mark Harman</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Code review has been widely adopted by both industrial and open source software development communities. Research in code review is highly dependant on real-world data, and although existing researchers have attempted to provide code review datasets, there is still no dataset that links code reviews with complete versions of the system's code base mainly because reviewed versions are not kept in the system's version control repository. Thus, we present CROP, the <b>C</b>ode <b>R</b>eview <b>O</b>pen <b>P</b>latform, the first curated code review repository that links review data with isolated complete versions (snapshots) of the source code at the time of review. CROP currently provides data for 8 software systems, 48,975 reviews and 112,617 patches, including versions of the systems that are inaccessible in the systems' original repositories. Moreover, CROP is extensible, and it will be continuously curated and extended.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665958" title="Get the Full Text from the ACM Digital Library">Developer interaction traces backed by IDE screen recordings from think aloud sessions</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Aiko Yamashita</li>
+<li class="nameList">Fabio Petrillo</li>
+<li class="nameList">Foutse Khomh</li>
+<li class="nameList Last">Yann-Ga&#235;l Gu&#233;h&#233;neuc</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>There are two well-known difficulties to test and interpret methodologies for mining developer interaction traces: first, the lack of enough large datasets needed by mining or machine learning approaches to provide reliable results; and second, the lack of "ground truth" or empirical evidence that can be used to triangulate the results, or to verify their accuracy and correctness. Moreover, relying solely on interaction traces limits our ability to take into account contextual factors that can affect the applicability of mining techniques in other contexts, as well hinders our ability to fully understand the mechanics behind observed phenomena. The data presented in this paper attempts to alleviate these challenges by providing 600+ hours of developer interaction traces, from which 26+ hours are backed with video recordings of the IDE screen and developer's comments. This data set is relevant to researchers interested in investigating program comprehension, and those who are developing techniques for interaction traces analysis and mining.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665959" title="Get the Full Text from the ACM Digital Library">A multi-level dataset of linux kernel patchwork</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Yulin Xu</li>
+<li class="nameList Last">Minghui Zhou</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In many open source software projects (e.g., the Linux kernel), people contribute by sending code patches to the community. The community evaluates these contributions and decides whether to integrate the changes. To improve the efficiency of code contributions, substantial effort has been devoted to analyzing how patches are submitted and processed. Patch data are critical for this type of analysis, while retrieving and cleaning the data is a non-trivial job. To facilitate these studies, we share a multi-level dataset of a Linux kernel patchwork covering a nine-year history of patches and related discussion recorded by the Linux kernel mailing list (LKML). The data and scripts are provided at: https://zenodo.org/record/1165576</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665950" title="Get the Full Text from the ACM Digital Library">Documented unix facilities over 48 years</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Diomidis Spinellis</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The documented Unix facilities data set provides the details regarding the evolution of 15 596 unique facilities through 93 versions of Unix over a period of 48 years. It is based on the manual transcription of early scanned documents, on the curation of text obtained through optical character recognition, and on the automatic extraction of data from code available on the Unix History Repository. The data are categorized into user commands, system calls, C library functions, devices and special files, file formats and conventions, games et. al., miscellanea, system maintenance procedures and commands, and system kernel interfaces. A timeline view allows the visualization of the evolution across releases. The data can be used for empirical research regarding API evolution, system design, as well as technology adoption and trends.</p></div> </div>
+<h2>SESSION: Mining challenge</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665951" title="Get the Full Text from the ACM Digital Library">Enriched event streams: a general dataset for empirical studies on in-IDE activities of software developers</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Sebastian Proksch</li>
+<li class="nameList">Sven Amann</li>
+<li class="nameList Last">Sarah Nadi</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Developers have been the subject of many empirical studies over the years. To assist developers in their everyday work, an understanding of their activities is necessary, especially how they develop source code. Unfortunately, conducting such studies is very expensive and researchers often resort to studying artifacts after the fact. To pave the road for future empirical studies on developer activities, we built F<scp>eed</scp>B<scp>a</scp>G, a general-purpose interaction tracker for V<scp>isual</scp> S<scp>tudio</scp> that monitors development activities. The observations are stored in enriched event streams that encode a holistic picture of the in-IDE development process. Enriched event streams capture all commands invoked in the IDE with additional context information, such as the test being run or the accompanying fine-grained code edits. We used F<scp>eed</scp>B<scp>a</scp>G to collect enriched event streams from 81 developers. Over 1,527 days, we collected more than 11M events that correspond to 15K hours of working time.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665952" title="Get the Full Text from the ACM Digital Library">Comprehension effort and programming activities: related? or not related?</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Akond Rahman</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Researchers have observed programmers to allocate considerable amount of effort in program comprehension. But, how does program comprehension effort relate with programming activities? We answer this question by conducting an empirical study using the MSR 2018 Mining Challenge Dataset. We quantify programmers' comprehension effort, and investigate the relationship between program comprehension effort and four programming activities: navigating, editing, building projects, and debugging. We observe when programmers are involved in high comprehension effort they navigate and make edits at a significantly slower rate. However, we do not observe any significant differences in programmers' build and debugging behavior, when programmers are involved in high comprehension effort. Our findings suggest that the relationship between program comprehension effort and programming activities is nuanced, as not all programming activities associate with program comprehension effort.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665953" title="Get the Full Text from the ACM Digital Library">The hidden cost of code completion: understanding the impact of the recommendation-list length on its efficiency</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Xianhao Jin</li>
+<li class="nameList Last">Francisco Servant</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Automatic code completion is a useful and popular technique that software developers use to write code more effectively and efficiently. However, while the benefits of code completion are clear, its cost is yet not well understood. We hypothesize the existence of a <i>hidden cost</i> of code completion, which mostly impacts developers when code completion techniques produce long recommendations. We study this hidden cost of code completion by evaluating how the length of the recommendation list affects other factors that may cause inefficiencies in the process. We study how common long recommendations are, whether they often provide low-ranked correct items, whether they incur longer time to be assessed, and whether they were more prevalent when developers did not select any item in the list. In our study, we observe evidence for all these factors, confirming the existence of a hidden cost of code completion.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665954" title="Get the Full Text from the ACM Digital Library">Empirical study on the relationship between developer's working habits and efficiency</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Ariel Rodriguez</li>
+<li class="nameList">Fumiya Tanaka</li>
+<li class="nameList Last">Yasutaka Kamei</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Software developers can have a reputation for frequently working long and irregular hours which are widely considered to inhibit mental capacity and negatively affect work quality. This paper analyzes the working habits of software developers and the effects these habits have on efficiency based on a large amount of data extracted from the actions of developers in the IDE (Integrated Development Environment), Visual Studio. We use events that recorded the times at which all developer actions were performed along with the numbers of successful and failed build and test events. Due to the high level of detail of the events provided by KaVE project's tool, we were able to analyze the data in a way that previous studies have not been able to. We structure our study along three dimensions: (1) days of the week, (2) time of the day, and (3) continuous work. Our findings will help software developers and team leaders to appropriatly allocate working times and to maximize work quality.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665965" title="Get the Full Text from the ACM Digital Library">Mining and extraction of personal software process measures through IDE interaction logs</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Alireza Joonbakhsh</li>
+<li class="nameList Last">Ashkan Sami</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The Personal Software Process (PSP) is an effective software process improvement method that heavily relies on manual collection of software development data. This paper describes a semi-automated method that reduces the burden of PSP data collection by extracting the required time and size of PSP measurements from IDE interaction logs. The tool mines enriched event data streams so can be easily generalized to other developing environment also. In addition, the proposed method is adaptable to phase definition changes and creates activity visualizations and summarizations that are helpful for software project management. Tools and processed data used for this paper are available on GitHub at: https://github.com/unknowngithubuser1/data.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665966" title="Get the Full Text from the ACM Digital Library">Predicting developers' IDE commands with machine learning</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Tyson Bulmer</li>
+<li class="nameList">Lloyd Montgomery</li>
+<li class="nameList Last">Daniela Damian</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>When a developer is writing code they are usually focused and in a state-of-mind which some refer to as flow. Breaking out of this flow can cause the developer to lose their train of thought and have to start their thought process from the beginning. This loss of thought can be caused by interruptions and sometimes slow IDE interactions. Predictive functionality has been harnessed in user applications to speed up load times, such as in Google Chrome's browser which has a feature called "Predicting Network Actions". This will pre-load web-pages that the user is most likely to click through. This mitigates the interruption that load times can introduce. In this paper we seek to make the first step towards predicting user commands in the IDE. Using the MSR 2018 Challenge Data of over 3000 developer session and over 10 million recorded events, we analyze and cleanse the data to be parsed into event series, which can then be used to train a variety of machine learning models, including a neural network, to predict user induced commands. Our highest performing model is able to obtain a 5 cross-fold validation prediction accuracy of 64%.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665967" title="Get the Full Text from the ACM Digital Library">Do software engineers use autocompletion features differently than other developers?</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Rahul Amlekar</li>
+<li class="nameList">Andr&#233;s Felipe Rinc&#243;n Gamboa</li>
+<li class="nameList">Keheliya Gallaba</li>
+<li class="nameList Last">Shane McIntosh</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Autocomplete is a common workspace feature that is used to recommend code snippets as developers type in their IDEs. Users of autocomplete features no longer need to remember programming syntax and the names and details of the API methods that are needed to accomplish tasks. Moreover, autocompletion of code snippets may have an accelerating effect, lowering the number of keystrokes that are needed to type the code. However, like any tool, implicit tendencies of users may emerge. Knowledge of how developers in different roles use autocompletion features may help to guide future autocompletion development, research, and training material. In this paper, we set out to better understand how usage of autocompletion varies among software engineers and other developers (i.e., academic researchers, industry researchers, hobby programmers, and students). Analysis of autocompletion events in the Mining Software Repositories (MSR) challenge dataset reveals that: (1) rates of autocompletion usage among software engineers and other developers are not significantly different; and (2) although several non-negligible effect sizes of autocompletion targets (e.g., local variables, method names) are detected between the two groups, the rates at which these targets appear do not vary to a significant degree. These inconclusive results are likely due to the small sample size (n = 35); however, they do provide an interesting insight for future studies to build upon.</p></div> </div>
+
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665968" title="Get the Full Text from the ACM Digital Library">Who's this?: developer identification using IDE event data</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">John Wilkie</li>
+<li class="nameList">Ziad Al Halabi</li>
+<li class="nameList">Alperen Karaoglu</li>
+<li class="nameList">Jiafeng Liao</li>
+<li class="nameList">George Ndungu</li>
+<li class="nameList">Chaiyong Ragkhitwetsagul</li>
+<li class="nameList">Matheus Paixao</li>
+<li class="nameList Last">Jens Krinke</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>This paper presents a technique to identify a developer based on their IDE event data. We exploited the KaVE data set which recorded IDE activities from 85 developers with 11M events. We found that using an SVM with a linear kernel on raw event count outperformed <i>k</i>-NN in identifying developers with an accuracy of 0.52. Moreover, after setting the optimal number of events and sessions to train the classifier, we achieved a higher accuracy of 0.69 and 0.71 respectively. The findings shows that we can identify developers based on their IDE event data. The technique can be expanded further to group similar developers for IDE feature recommendations.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665969" title="Get the Full Text from the ACM Digital Library">Detecting and characterizing developer behavior following opportunistic reuse of code snippets from the web</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Agnieszka Ciborowska</li>
+<li class="nameList">Nicholas A. Kraft</li>
+<li class="nameList Last">Kostadin Damevski</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Modern software development is social and relies on many online resources and tools. In this paper, we study opportunistic code reuse from the Web, e.g., when developers copy code snippets from popular Q&#38;A sites and paste them into their projects. Our focus is the behavior of developers following opportunistic code reuse, which reveals the success or failure of the action. We study developer behavior via a large, representative dataset of micro-interactions in the IDE. Our analysis of developer behavior exhibited in this dataset confirms laboratory study observations that code reuse from the Web is followed by heavy editing, in some cases by a rapid undo, and rarely by the execution of tests.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665960" title="Get the Full Text from the ACM Digital Library">Revisiting "programmers' build errors" in the visual studio context: a replication study using IDE interaction traces</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Noam Rabbani</li>
+<li class="nameList">Michael S. Harvey</li>
+<li class="nameList">Sadnan Saquif</li>
+ <li class="nameList">Keheliya Gallaba</li>
+<li class="nameList Last">Shane McIntosh</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Build systems translate sources into deliverables. Developers execute builds on a regular basis in order to integrate their personal code changes into testable deliverables. Prior studies have evaluated the rate at which builds in large organizations fail. A recent study at Google has analyzed (among other things) the rate at which builds in developer workspaces fail. In this paper, we replicate the Google study in the Visual Studio context of the MSR challenge. We extract and analyze 13,300 build events, observing that builds are failing 67%--76% less frequently and are fixed 46%--78% faster in our study context. Our results suggest that build failure rates are highly sensitive to contextual factors. Given the large number of factors by which our study contexts differ (e.g., system size, team size, IDE tooling, programming languages), it is not possible to trace the root cause for the large differences in our results. Additional data is needed to arrive at more complete conclusions.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665961" title="Get the Full Text from the ACM Digital Library">Common statement kind changes to inform automatic program repair</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Mauricio Soto</li>
+<li class="nameList Last">Claire Le Goues</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The search space for automatic program repair approaches is vast and the search for mechanisms to help restrict this search are increasing. We make a granular analysis based on statement kinds to find which statements are more likely to be modified than others when fixing an error. We construct a corpus for analysis by delimiting debugging regions in the provided dataset and recursively analyze the differences between the Simplified Syntax Trees associated with EditEvent's. We build a distribution of statement kinds with their corresponding likelihood of being modified and we validate the usage of this distribution to guide the statement selection. We then build association rules with different confidence thresholds to describe statement kinds commonly modified together for multi-edit patch creation. Finally we evaluate association rule coverage over a held out test set and find that when using a 95% confidence threshold we can create less and more accurate rules that fully cover 93.8% of the testing instances.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665962" title="Get the Full Text from the ACM Digital Library">Studying developer build issues and debugger usage via timeline analysis in visual studio IDE</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Christopher Bellman</li>
+<li class="nameList">Ahmad Seet</li>
+<li class="nameList Last">Olga Baysal</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Every day, most software developers use development tools to write, build, and maintain their code. The most crucial of such tools is the integrated development environment (IDE), in which developers create and build code. Therefore, it is important to understand how developers perform their work and what impact each action has on their workflow to further enhance their productivity. In this work, we study the KaVE dataset of developer interactions within the Microsoft Visual Studio IDE and analyze a number of topics extracted from the data. First, we propose a method for developing what we call "<i>timelines</i>" that chronologically map an individual development session, and from this, we study build failures, code debugger usage, and we propose a metric for measuring developer throughput. We find that the timeline analysis may prove to be an invaluable tool for developer self-assessment and key to uncovering problem areas regarding build failures. Moreover, we find that developers spend a significant amount of time debugging their code, utilizing features such as breakpoints to resolve issues. Finally, we see that the developer metric can be used for self assessment, giving value to the amount of effort, put forth by a developer, in a given session.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665963" title="Get the Full Text from the ACM Digital Library">Detection and analysis of behavioral T-patterns in debugging activities</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">C&#233;sar Soto-Valero</li>
+<li class="nameList">Johann Bourcier</li>
+<li class="nameList Last">Benoit Baudry</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>A growing body of research in empirical software engineering applies recurrent patterns analysis in order to make sense of the developers' behavior during their interactions with IDEs. However, the exploration of hidden real-time structures of programming behavior remains a challenging task. In this paper, we investigate the presence of temporal behavioral patterns (T-patterns) in debugging activities using the THEME software. Our preliminary exploratory results show that debugging activities are strongly correlated with code editing, file handling, window interactions and other general types of programming activities. The validation of our T-patterns detection approach demonstrates that debugging activities are performed on the basis of repetitive and well-organized behavioral events. Furthermore, we identify a large set of T-patterns that associate debugging activities with build success, which corroborates the positive impact of debugging practices on software development.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665964" title="Get the Full Text from the ACM Digital Library">A study on the use of IDE features for debugging</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Afsoon Afzal</li>
+<li class="nameList Last">Claire Le Goues</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Integrated development environments (IDEs) provide features to help developers both create and understand code. As maintenance and bug repair are time-consuming and costly activities, IDEs have long integrated debugging features to simplify these tasks. In this paper we investigate the impact of using IDE debugger features on different aspects of programming and debugging. Using the data set provided by MSR challenge track, we compared debugging tasks performed with or without the IDE debugger. We find, on average, that developers spend more time and effort on debugging when they use the debugger. Typically, developers start using the debugger early, at the beginning of a debugging session, and that their editing behavior does not appear to significantly change when they are debugging regardless of whether debugging features are in use.</p></div> </div>
+<h2>SESSION: Technical papers - welcome + keynote</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665975" title="Get the Full Text from the ACM Digital Library">Mining the mind, minding the mine: grand challenges in comprehension and mining</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Andrew J. Ko</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The program comprehension and mining software repository communities are, in practice, two separate research endeavors. One is concerned with what's happening in a developer's mind, while the other is concerned with what's happening in a team. And yet, implicit in these fields is a common goal to make better software and the common approach of influencing developer decisions. In this keynote, I provide several examples of this overlap, suggesting several grand challenges in comprehension and mining.</p></div> </div>
+<h2>SESSION: CI and release engineering</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665976" title="Get the Full Text from the ACM Digital Library">An evaluation of open-source software microbenchmark suites for continuous performance assessment</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Christoph Laaber</li>
+<li class="nameList Last">Philipp Leitner</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Continuous integration (CI) emphasizes quick feedback to developers. This is at odds with current practice of performance testing, which predominantely focuses on long-running tests against entire systems in production-like environments. Alternatively, software microbenchmarking attempts to establish a performance baseline for small code fragments in short time. This paper investigates the quality of microbenchmark suites with a focus on suitability to deliver quick performance feedback and CI integration. We study ten open-source libraries written in Java and Go with benchmark suite sizes ranging from 16 to 983 tests, and runtimes between 11 minutes and 8.75 hours. We show that our study subjects include benchmarks with result variability of 50% or higher, indicating that not all benchmarks are useful for reliable discovery of slowdowns. We further artificially inject actual slowdowns into public API methods of the study subjects and test whether test suites are able to discover them. We introduce a performance-test quality metric called the API benchmarking score (<i>ABS</i>). <i>ABS</i> represents a benchmark suite's ability to find slowdowns among a set of defined core API methods. Resulting benchmarking scores (i.e., fraction of discovered slowdowns) vary between 10% and 100% for the study subjects. This paper's methodology and results can be used to (1) assess the quality of existing microbenchmark suites, (2) select a set of tests to be run as part of CI, and (3) suggest or generate benchmarks for currently untested parts of an API.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665977" title="Get the Full Text from the ACM Digital Library">Studying the impact of adopting continuous integration on the delivery time of pull requests</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Jo&#227;o Helis Bernardo</li>
+<li class="nameList">Daniel Alencar da Costa</li>
+<li class="nameList Last">Uir&#225; Kulesza</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Continuous Integration (CI) is a software development practice that leads developers to integrate their work more frequently. Software projects have broadly adopted CI to ship new releases more frequently and to improve code integration. The adoption of CI is motivated by the allure of delivering new functionalities more quickly. However, there is little empirical evidence to support such a claim. Through the analysis of 162,653 pull requests (PRs) of 87 GitHub projects that are implemented in 5 different programming languages, we empirically investigate the impact of adopting CI on the time to deliver merged PRs. Surprisingly, only 51.3% of the projects deliver merged PRs more quickly after adopting CI. We also observe that the large increase of PR submissions <i>after</i> CI is a key reason as to why projects deliver PRs more slowly <i>after</i> adopting CI. To investigate the factors that are related to the time-to-delivery of merged PRs, we train regression models that obtain sound median R-squares of 0.64-0.67. Finally, a deeper analysis of our models indicates that, <i>before</i> the adoption of CI, the integration-load of the development team, i.e., the number of submitted PRs competing for being merged, is the most impactful metric on the time to deliver merged PRs <i>before</i> CI. Our models also reveal that PRs that are merged more recently in a release cycle experience a slower delivery time.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665978" title="Get the Full Text from the ACM Digital Library">What did really change with the new release of the app?</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Paolo Calciati</li>
+<li class="nameList">Konstantin Kuznetsov</li>
+<li class="nameList">Xue Bai</li>
+<li class="nameList Last">Alessandra Gorla</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The mobile app market is evolving at a very fast pace. In order to stay in the market and fulfill user's growing demands, developers have to continuously update their apps either to fix issues or to add new features. Users and market managers may have a hard time understanding what really changed in a new release though, and therefore may not make an informative guess of whether updating the app is recommendable, or whether it may pose new security and privacy threats for the user.</p> <p>We propose a ready-to-use framework to analyze the evolution of Android apps. Our framework extracts and visualizes various information ---such as how an app uses sensitive data, which third-party libraries it relies on, which URLs it connects to, etc.--- and combines it to create a comprehensive report on how the app evolved.</p> <p>Besides, we present the results of an empirical study on 235 applications with at least 50 releases using our framework. Our analysis reveals that Android apps tend to have more leaks of sensitive data over time, and that the majority of API calls relative to dangerous permissions are added to the code in releases posterior to the one where the corresponding permission was requested.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665979" title="Get the Full Text from the ACM Digital Library">CLEVER: combining code metrics with clone detection for just-in-time fault prevention and resolution in large industrial projects</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Mathieu Nayrolles</li>
+<li class="nameList Last">Abdelwahab Hamou-Lhadj</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Automatic prevention and resolution of faults is an important research topic in the field of software maintenance and evolution. Existing approaches leverage code and process metrics to build metric-based models that can effectively prevent defect insertion in a software project. Metrics, however, may vary from one project to another, hindering the reuse of these models. Moreover, they tend to generate high false positive rates by classifying healthy commits as risky. Finally, they do not provide sufficient insights to developers on how to fix the detected risky commits. In this paper, we propose an approach, called CLEVER (Combining Levels of Bug Prevention and Resolution techniques), which relies on a two-phase process for intercepting risky commits before they reach the central repository. When applied to 12 Ubisoft systems, the results show that CLEVER can detect risky commits with 79% precision and 65% recall, which outperforms the performance of Commit-guru, a recent approach that was proposed in the literature. In addition, CLEVER is able to recommend qualitative fixes to developers on how to fix risky commits in 66.7% of the cases.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665970" title="Get the Full Text from the ACM Digital Library">I'm leaving you, Travis: a continuous integration breakup story</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">David Gray Widder</li>
+<li class="nameList">Michael Hilton</li>
+<li class="nameList">Christian K&#228;stner</li>
+<li class="nameList Last">Bogdan Vasilescu</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Continuous Integration (CI) services, which can automatically build, test, and deploy software projects, are an invaluable asset in distributed teams, increasing productivity and helping to maintain code quality. Prior work has shown that CI pipelines can be sophisticated, and choosing and configuring a CI system involves tradeoffs. As CI technology matures, new CI tool offerings arise to meet the distinct wants and needs of software teams, as they negotiate a path through these tradeoffs, depending on their context. In this paper, we begin to uncover these nuances, and tell the story of open-source projects falling out of love with Travis, the earliest and most popular cloud-based CI system. Using logistic regression, we quantify the effects that open-source community factors and project technical factors have on the rate of Travis abandonment. We find that increased build complexity reduces the chances of abandonment, that larger projects abandon at higher rates, and that a project's dominant language has significant but varying effects. Finally, we find the surprising result that metrics of configuration attempts and knowledge dispersion in the project do not affect the rate of abandonment.</p></div> </div>
+<h2>SESSION: Modularity and dependency</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665971" title="Get the Full Text from the ACM Digital Library">An empirical evaluation of OSGi dependencies best practices in the eclipse IDE</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Lina Ochoa</li>
+<li class="nameList">Thomas Degueule</li>
+<li class="nameList Last">Jurgen Vinju</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>OSGi is a module system and service framework that aims to fill Java's lack of support for modular development. Using OSGi, developers divide software into multiple <i>bundles</i> that declare constrained dependencies towards other bundles. However, there are various ways of declaring and managing such dependencies, and it can be confusing for developers to choose one over another. Over the course of time, experts and practitioners have defined "best practices" related to dependency management in OSGi. The underlying assumptions are that these best practices (i) are indeed relevant and (ii) help to keep OSGi systems manageable and efficient. In this paper, we investigate these assumptions by first conducting a systematic review of the best practices related to dependency management issued by the OSGi Alliance and OSGi-endorsed organizations. Using a large corpus of OSGi bundles (1,124 core plug-ins of the Eclipse IDE), we then analyze the use and impact of 6 selected best practices. Our results show that the selected best practices are not widely followed in practice. Besides, we observe that following them strictly reduces classpath size of individual bundles by up to 23% and results in up to &plusmn;13% impact on performance at bundle resolution time. In summary, this paper contributes an initial empirical validation of industry-standard OSGi best practices. Our results should influence practitioners especially, by providing evidence of the impact of these best practices in real-world systems.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665972" title="Get the Full Text from the ACM Digital Library">On the impact of security vulnerabilities in the npm package dependency network</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Alexandre Decan</li>
+<li class="nameList">Tom Mens</li>
+<li class="nameList Last">Eleni Constantinou</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Security vulnerabilities are among the most pressing problems in open source software package libraries. It may take a long time to discover and fix vulnerabilities in packages. In addition, vulnerabilities may propagate to dependent packages, making them vulnerable too. This paper presents an empirical study of nearly 400 security reports over a 6-year period in the npm dependency network containing over 610k JavaScript packages. Taking into account the severity of vulnerabilities, we analyse how and when these vulnerabilities are discovered and fixed, and to which extent they affect other packages in the packaging ecosystem in presence of dependency constraints. We report our findings and provide guidelines for package maintainers and tool developers to improve the process of dealing with security issues.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665973" title="Get the Full Text from the ACM Digital Library">Feature location using crowd-based screencasts</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Parisa Moslehi</li>
+ <li class="nameList">Bram Adams</li>
+<li class="nameList Last">Juergen Rilling</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Crowd-based multi-media documents such as screencasts have emerged as a source for documenting requirements of agile software projects. For example, screencasts can describe buggy scenarios of a software product, or present new features in an upcoming release. Unfortunately, the binary format of videos makes traceability between the video content and other related software artifacts (e.g., source code, bug reports) difficult. In this paper, we propose an LDA-based feature location approach that takes as input a set of screencasts (i.e., the GUI text and/or spoken words) to establish traceability link between the features described in the screencasts and source code fragments implementing them. We report on a case study conducted on 10 WordPress screencasts, to evaluate the applicability of our approach in linking these screencasts to their relevant source code artifacts. We find that the approach is able to successfully pinpoint relevant source code files at the top 10 hits using speech and GUI text. We also found that term frequency rebalancing can reduce noise and yield more precise results.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665974" title="Get the Full Text from the ACM Digital Library">Profiling call changes via motif mining</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Barbara Russo</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Components' interactions in software systems evolve over time increasing in complexity and size. Developers might have hard time to master such complexity during their maintenance activities incrementing the risk to make mistakes. Understanding changes of such interactions helps developer plan their re-factoring activities. In this study, we propose a method to study the occurrence of motifs in call graphs and their role in the evolution of a system. In our settings, motifs are patterns of class calls that can arise for many reasons as, for example, by implementing design choices. By mining motifs of the call graph obtained from each system's release, we were able to profile the evolution of 68 releases of five open source systems and show that 1) systems have common motifs that occur non-randomly and persistently over their releases, 2) motifs can be used to describe the evolution of calls, compare systems and eventually reveal releases that underwent major changes, 3) there are no specific motif types that include design patterns in all systems under study, but each system has motifs that likely include them, motifs that do not include them at all, and motifs that include a design pattern and occur only once in every release. Some of the findings resemble the ones for biological / physical systems and, as such, path the way to study the evolution of call graphs as dynamical systems (i.e., as system regulated by analytic functions).</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665985" title="Get the Full Text from the ACM Digital Library">Toward predicting architectural significance of implementation issues</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Arman Shahbazian</li>
+<li class="nameList">Daye Nam</li>
+<li class="nameList Last">Nenad Medvidovic</li>
+</ul>
+ <div class="DLabstract"><div style="display:inline"><p>In a software system's development lifecycle, engineers make numerous design decisions that subsequently cause architectural change in the system. Previous studies have shown that, more often than not, these architectural changes are unintentional by-products of continual software maintenance tasks. The result of inadvertent architectural changes is accumulation of technical debt and deterioration of software quality. Despite their important implications, there is a relative shortage of techniques, tools, and empirical studies pertaining to architectural design decisions. In this paper, we take a step toward addressing that scarcity by using the information in the issue and code repositories of open-source software systems to investigate the cause and frequency of such architectural design decisions. Furthermore, building on these results, we develop a predictive model that is able to identify the architectural significance of newly submitted issues, thereby helping engineers to prevent the adverse effects of architectural decay. The results of this study are based on the analysis of 21,062 issues affecting 301 versions of 5 large open-source systems for which the code changes and issues were publicly accessible.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665986" title="Get the Full Text from the ACM Digital Library">The Android update problem: an empirical study</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Mehran Mahmoudi</li>
+<li class="nameList Last">Sarah Nadi</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Many phone vendors use Android as their underlying OS, but often extend it to add new functionality and to make it compatible with their specific phones. When a new version of Android is released, phone vendors need to merge or re-apply their customizations and changes to the new release. This is a difficult and time-consuming process, which often leads to late adoption of new versions. In this paper, we perform an empirical study to understand the nature of changes that phone vendors make, versus changes made in the original development of Android. By investigating the overlap of different changes, we also determine the possibility of having automated support for merging them. We develop a publicly available tool chain, based on a combination of existing tools, to study such changes and their overlap. As a proxy case study, we analyze the changes in the popular community-based variant of Android, L<scp>ineage</scp>OS, and its corresponding Android versions. We investigate and report the common types of changes that occur in practice. Our findings show that 83% of subsystems modified by L<scp>ineage</scp>OS are also modified in the next release of Android. By taking the nature of overlapping changes into account, we assess the feasibility of having automated tool support to help phone vendors with the Android update problem. Our results show that 56% of the changes in L<scp>ineage</scp>OS have the potential to be safely automated.</p></div> </div>
+<h2>SESSION: Mobile</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665987" title="Get the Full Text from the ACM Digital Library">Why are Android apps removed from Google Play?: a large-scale empirical study</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Haoyu Wang</li>
+<li class="nameList">Hao Li</li>
+<li class="nameList">Li Li</li>
+
+<li class="nameList">Yao Guo</li>
+<li class="nameList Last">Guoai Xu</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>To ensure the quality and trustworthiness of the apps within its app market (i.e., Google Play), Google has released a series of policies to regulate app developers. As a result, policy-violating apps (e.g., malware, low-quality apps, etc.) have been removed by Google Play periodically. In reality, we have found that the number of removed apps are actually much more than what we have expected, as almost half of all the apps have been removed or replaced from Google Play during a two year period from 2015 to 2017. However, despite the significant number of removed apps, there are almost no study on the characterization of these removed apps. To this end, this paper takes the first step to understand why Android apps are removed from Google Play, aiming at observing promising insights for both market maintainers and app developers towards building a better app ecosystem. By leveraging two app sets crawled from Google Play in 2015 (over 1.5 million) and 2017 (over 2.1 million), we have identified a set of over 790K removed apps, which are then thoroughly investigated in various aspects. The experimental results have revealed various interesting findings, as well as insights for future research directions.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665988" title="Get the Full Text from the ACM Digital Library">Anatomy of functionality deletion: an exploratory study on mobile apps</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Maleknaz Nayebi</li>
+<li class="nameList">Konstantin Kuznetsov</li>
+<li class="nameList">Paul Chen</li>
+<li class="nameList">Andreas Zeller</li>
+<li class="nameList Last">Guenther Ruhe</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>One of Lehman's laws of software evolution is that the functionality of programs has to increase over time to maintain user satisfaction. In the domain of mobile apps, though, too much functionality can easily impact usability, resource consumption, and maintenance effort. Hence, does the law of continuous growth apply there? This paper shows that in mobile apps, deletion of functionality is actually common, challenging Lehman's law. We analyzed user driven requests for deletions which were found in 213,866 commits from 1,519 open source Android mobile apps from a total of 14,238 releases. We applied hybrid (open and closed) card sorting and created taxonomies for nature and causes of deletions. We found that functionality deletions are mostly motivated by unneeded functionality, poor user experience, and compatibility issues. We also performed a survey with 106 mobile app developers. We found that 78.3% of developers consider deletion of functionality to be equally or more important than the addition of new functionality. Developers confirmed that they plan for deletions. This implies the need to re-think the process of planning for the next release, overcoming the simplistic assumptions to exclusively look at adding functionality to maximize the value of upcoming releases. Our work is the first to study the phenomenon of functionality deletion and opens the door to a wider perspective on software evolution.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665989" title="Get the Full Text from the ACM Digital Library">Characterising deprecated Android APIs</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Li Li</li>
+<li class="nameList">Jun Gao</li>
+<li class="nameList">Tegawend&#233; F. Bissyand&#233;</li>
+<li class="nameList">Lei Ma</li>
+<li class="nameList">Xin Xia</li>
+<li class="nameList Last">Jacques Klein</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Because of functionality evolution, or security and performance-related changes, some APIs eventually become unnecessary in a software system and thus need to be cleaned to ensure proper maintainability. Those APIs are typically marked first as <i>deprecated APIs</i> and, as recommended, follow through a <i>deprecated-replaceremove</i> cycle, giving an opportunity to client application developers to smoothly adapt their code in next updates. Such a mechanism is adopted in the Android framework development where thousands of reusable APIs are made available to Android app developers.</p> <p>In this work, we present a research-based prototype tool called CDA and apply it to different revisions (i.e., releases or tags) of the Android framework code for characterising deprecated APIs. Based on the data mined by CDA, we then perform an exploratory study on API deprecation in the Android ecosystem and the associated challenges for maintaining quality apps. In particular, we investigate the prevalence of deprecated APIs, their annotations and documentation, their removal and consequences, their replacement messages, as well as developer reactions to API deprecation. Experimental results reveal several findings that further provide promising insights for future research directions related to deprecated Android APIs. Notably, by mining the source code of the Android framework base, we have identified three bugs related to deprecated APIs. These bugs have been quickly assigned and positively appreciated by the framework maintainers, who claim that these issues will be updated in future releases.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665980" title="Get the Full Text from the ACM Digital Library">Leveraging historical versions of Android apps for efficient and precise taint analysis</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Haipeng Cai</li>
+<li class="nameList Last">John Jenkins</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Today, computing on various Android devices is pervasive. However, growing security vulnerabilities and attacks in the Android ecosystem constitute various threats through user apps. Taint analysis is a common technique for defending against these threats, yet it suffers from challenges in attaining practical simultaneous scalability and effectiveness. This paper presents a novel approach to fast and precise taint checking, called <i>incremental taint analysis</i>, by exploiting the evolving nature of Android apps. The analysis narrows down the search space of taint checking from an entire app, as conventionally addressed, to the parts of the program that are different from its previous versions. This technique improves the overall efficiency of checking multiple versions of the app as it evolves. We have implemented the techniques as a tool prototype, E<scp>vo</scp>T<scp>aint</scp>, and evaluated our analysis by applying it to real-world evolving Android apps. Our preliminary results show that the incremental approach largely reduced the cost of taint analysis, by 78.6% on average, yet without sacrificing the analysis effectiveness, relative to a representative precise taint analysis as the baseline.</p></div> </div>
+<h2>SESSION: Programming practice</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665981" title="Get the Full Text from the ACM Digital Library">Understanding the usage, impact, and adoption of non-OSI approved licenses</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">R&#244;mulo Meloca</li>
+<li class="nameList">Gustavo Pinto</li>
+<li class="nameList">Leonardo Baiser</li>
+<li class="nameList">Marco Mattos</li>
+<li class="nameList">Ivanilton Polato</li>
+<li class="nameList">Igor Scaliante Wiese</li>
+<li class="nameList Last">Daniel M German</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The software license is one of the most important non-executable pieces of any software system. However, due to its non-technical nature, developers often misuse or misunderstand software licenses. Although previous studies reported problems related to licenses clashes and inconsistencies, in this paper we shed the light on an important but yet overlooked issue: the use of non-approved open-source licenses. Such licenses claim to be open-source, but have not been formally approved by the Open Source Initiative (OSI). When a developer releases a software under a non-approved license, even if the interest is to make it open-source, the original author might not be granting the rights required by those who use the software. To uncover the reasons behind the use of non-approved licenses, we conducted a mix-method study, mining data from 657K open-source projects and their 4,367K versions, and surveying 76 developers that published some of these projects. Although 1,058,554 of the project versions employ at least one non-approved license, non-approved licenses account for 21.51% of license usage. We also observed that it is not uncommon for developers to change from a non-approved to an approved license. When asked, some developers mentioned that this transition was due to a better understanding of the disadvantages of using an non-approved license. This perspective is particularly important since developers often rely on package managers to easily and quickly get their dependencies working.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665982" title="Get the Full Text from the ACM Digital Library">Prevalence of confusing code in software projects: atoms of confusion in the wild</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Dan Gopstein</li>
+<li class="nameList">Hongwei Henry Zhou</li>
+<li class="nameList">Phyllis Frankl</li>
+<li class="nameList Last">Justin Cappos</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Prior work has shown that extremely small code patterns, such as the conditional operator and implicit type conversion, can cause considerable misunderstanding in programmers. Until now, the real world impact of these patterns - known as 'atoms of confusion' - was only speculative. This work uses a corpus of 14 of the most popular and influential open source C and C++ projects to measure the prevalence and significance of these small confusing patterns. Our results show that the 15 known types of confusing micro patterns occur millions of times in programs like the Linux kernel and GCC, appearing on average once every 23 lines. We show there is a strong correlation between these confusing patterns and bug-fix commits as well as a tendency for confusing patterns to be commented. We also explore patterns at the project level showing the rate of security vulnerabilities is higher in projects with more atoms. Finally, we examine real code examples containing these atoms, including ones that were used to find and fix bugs in our corpus. In total this work demonstrates that beyond simple misunderstanding in the lab setting, atoms of confusion are both prevalent - occurring often in real projects, and meaningful - being removed by bug-fix commits at an elevated rate.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665983" title="Get the Full Text from the ACM Digital Library">How swift developers handle errors</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Nathan Cassee</li>
+<li class="nameList">Gustavo Pinto</li>
+<li class="nameList">Fernando Castor</li>
+<li class="nameList Last">Alexander Serebrenik</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Swift is a new programming language developed by Apple as a replacement to Objective-C. It features a sophisticated error handling (EH) mechanism that provides the kind of separation of concerns afforded by exception handling mechanisms in other languages, while also including constructs to improve safety and maintainability. However, Swift also inherits a software development culture stemming from Objective-C being the de-facto standard programming language for Apple platforms for the last 15 years. It is, therefore, a priori unclear whether Swift developers embrace the novel EH mechanisms of the programming language or still rely on the old EH culture of Objective-C even working in Swift.</p> <p>In this paper, we study to what extent developers adhere to good practices exemplified by EH guidelines and tutorials, and what are the common bad EH practices particularly relevant to Swift code. Furthermore, we investigate whether perception of these practices differs between novices and experienced Swift developers.</p> <p>To answer these questions we employ a mixed-methods approach and combine 10 semi-structured interviews with Swift developers and quantitative analysis of 78,760 Swift 4 files extracted from 2,733 open-source GitHub repositories. Our findings indicate that there is ample opportunity to improve the way Swift developers use error handling mechanisms. For instance, some recommendations derived in this work are not well spread in the corpus of studied Swift projects. For example, generic catch handlers are common in Swift (even though it is not uncommon for them to share space with their counterparts: non empty catch handlers), custom, developerdefined error types are rare, and developers are mostly reactive when it comes to error handling, using Swift's constructs mostly to handle errors thrown by libraries, instead of throwing and handling application-specific errors.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665984" title="Get the Full Text from the ACM Digital Library">What are your programming language's energy-delay implications?</a>
+
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Stefanos Georgiou</li>
+<li class="nameList">Maria Kechagia</li>
+<li class="nameList">Panos Louridas</li>
+<li class="nameList Last">Diomidis Spinellis</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><b>Motivation</b>: Even though many studies examine the energy efficiency of hardware and embedded systems, those that investigate the energy consumption of software applications are still limited, and mostly focused on mobile applications. As modern applications become even more complex and heterogeneous a need arises for methods that can accurately assess their energy consumption.</p> <p><b>Goal</b>: Measure the energy consumption and run-time performance of commonly used programming tasks implemented in different programming languages and executed on a variety of platforms to help developers to choose appropriate implementation platforms.</p> <p><b>Method</b>: Obtain measurements to calculate the Energy Delay Product, a weighted function that takes into account a task's energy consumption and run-time performance. We perform our tests by calculating the Energy Delay Product of 25 programming tasks, found in the Rosetta Code Repository, which are implemented in 14 programming languages and run on three different computer platforms, a server, a laptop, and an embedded system.</p> <p><b>Results</b>: Compiled programming languages are outperforming the interpreted ones for most, but not for all tasks. C, C#, and JavaScript are on average the best performing compiled, semi-compiled, and interpreted programming languages for the Energy Delay Product, and Rust appears to be well-placed for <scp>i/o</scp>-intensive operations, such as file handling. We also find that a good behaviour, energy-wise, can be the result of clever optimizations and design choices in seemingly unexpected programming languages.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665995" title="Get the Full Text from the ACM Digital Library">"Automatically assessing code understandability" reanalyzed: combined metrics matter</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Asher Trockman</li>
+<li class="nameList">Keenen Cates</li>
+<li class="nameList">Mark Mozina</li>
+<li class="nameList">Tuan Nguyen</li>
+<li class="nameList">Christian K&#228;stner</li>
+<li class="nameList Last">Bogdan Vasilescu</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Previous research shows that developers spend most of their time understanding code. Despite the importance of code understandability for maintenance-related activities, an objective measure of it remains an elusive goal. Recently, Scalabrino <i>et al.</i> reported on an experiment with 46 Java developers designed to evaluate metrics for code understandability. The authors collected and analyzed data on more than a hundred features describing the code snippets, the developers' experience, and the developers' performance on a quiz designed to assess understanding. They concluded that none of the metrics considered can individually capture understandability. Expecting that understandability is better captured by a combination of multiple features, we present a reanalysis of the data from the Scalabrino <i>et al.</i> study, in which we use different statistical modeling techniques. Our models suggest that some computed features of code, such as those arising from syntactic structure and documentation, have a small but significant correlation with understandability. Further, we construct a binary classifier of understandability based on various interpretable code features, which has a small amount of discriminating power. Our encouraging results, based on a small data set, suggest that a useful metric of understandability could feasibly be created, but more data is needed.</p></div> </div>
+<h2>SESSION: 2008 most influential paper award and evolution and changes</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665996" title="Get the Full Text from the ACM Digital Library">SOTorrent: reconstructing and analyzing the evolution of stack overflow posts</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Sebastian Baltes</li>
+<li class="nameList">Lorik Dumani</li>
+<li class="nameList">Christoph Treude</li>
+<li class="nameList Last">Stephan Diehl</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Stack Overflow (SO) is the most popular question-and-answer website for software developers, providing a large amount of code snippets and free-form text on a wide variety of topics. Like other software artifacts, questions and answers on SO evolve over time, for example when bugs in code snippets are fixed, code is updated to work with a more recent library version, or text surrounding a code snippet is edited for clarity. To be able to analyze how content on SO evolves, we built <i>SOTorrent</i>, an open dataset based on the official SO data dump. <i>SOTorrent</i> provides access to the version history of SO content at the level of whole posts and individual text or code blocks. It connects SO posts to other platforms by aggregating URLs from text blocks and by collecting references from GitHub files to SO posts. In this paper, we describe how we built <i>SOTorrent</i>, and in particular how we evaluated 134 different string similarity metrics regarding their applicability for reconstructing the version history of text and code blocks. Based on a first analysis using the dataset, we present insights into the evolution of SO posts, e.g., that post edits are usually small, happen soon after the initial creation of the post, and that code is rarely changed without also updating the surrounding text. Further, our analysis revealed a close relationship between post edits and comments. Our vision is that researchers will use <i>SOTorrent</i> to investigate and understand the evolution of SO posts and their relation to other platforms such as GitHub.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665997" title="Get the Full Text from the ACM Digital Library">A design structure matrix approach for measuring co-change-modularity of software products</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Robert Benkoczi</li>
+<li class="nameList">Daya Gaur</li>
+<li class="nameList">Shahadat Hossain</li>
+<li class="nameList Last">Muhammad A. Khan</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Several authors have quantified the modularity of software systems in terms of coupling and cohesion metrics. Most of these approaches focus on functional and procedural dependencies in the system. Although highly relevant at the design phase, these static dependencies alone do not account for how a software product evolves over time. Instead, this is also dictated by logical and hidden dependencies between system files. To a large extent, the co-change (co-commit) relation captures these different types of dependencies. In this paper, we define two measures of co-change-modularity of a software product based on a weighted design structure matrix (DSM). The first metric, called the weighted propagation cost, uses matrix exponential to measure how changes to one system file potentially affect the whole product. The second metric, called the weighted clustering cost, uses the output of the first metric to measure the partitionability of the system based on the co-change relation. In addition, we provide a visual representation of how the co-change structure of a system evolves over time. We discuss the theoretical foundation of our work and highlight its advantages over existing methodologies. We apply our approach to GNU Octave and show the findings to be consistent with the available literature on the evolution of Octave. Our analysis is extensible and applicable to a range of scenarios including open source systems.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665998" title="Get the Full Text from the ACM Digital Library">A study on inappropriately partitioned commits: how much and what kinds of IP commits in Java projects?</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Ryo Arima</li>
+<li class="nameList">Yoshiki Higo</li>
+<li class="nameList Last">Shinji Kusumoto</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>When we use code repositories, each commit should include code changes for only a single task and code changes for a single task should not be scattered over multiple commits. There are many studies on the former violation-often referred to as tangled commits- but the latter violation has been out of scope for MSR research. In this paper, we firstly investigate how much and what kinds of inappropriately partitioned commits in Java projects. Then, we propose a simple technique to detect such commits automatically. We also report evaluation results of the proposed technique.</p></div> </div>
+<h2>SESSION: Machine learning for SE</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665999" title="Get the Full Text from the ACM Digital Library">Data-driven search-based software engineering</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Vivek Nair</li>
+<li class="nameList">Amritanshu Agrawal</li>
+<li class="nameList">Jianfeng Chen</li>
+<li class="nameList">Wei Fu</li>
+<li class="nameList">George Mathew</li>
+<li class="nameList">Tim Menzies</li>
+<li class="nameList">Leandro Minku</li>
+<li class="nameList">Markus Wagner</li>
+<li class="nameList Last">Zhe Yu</li>
+
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>This paper introduces Data-Driven Search-based Software Engineering (DSE), which combines insights from Mining Software Repositories (MSR) and Search-based Software Engineering (SBSE). While MSR formulates software engineering problems as data mining problems, SBSE reformulate Software Engineering (SE) problems as optimization problems and use meta-heuristic algorithms to solve them. Both MSR and SBSE share the common goal of providing insights to improve software engineering. The algorithms used in these two areas also have intrinsic relationships. We, therefore, argue that combining these two fields is useful for situations (a) which require learning from a large data source or (b) when optimizers need to know the lay of the land to find better solutions, faster.</p> <p>This paper aims to answer the following three questions: (1) What are the various topics addressed by DSE?, (2) What types of data are used by the researchers in this area?, and (3) What research approaches do researchers use? The paper briefly sets out to act as a practical guide to develop new DSE techniques and also to serve as a teaching resource.</p> <p>This paper also presents a resource (tiny.cc/data-se) for exploring DSE. The resource contains 89 artifacts which are related to DSE, divided into 13 groups such as requirements engineering, software product lines, software processes. All the materials in this repository have been used in recent software engineering papers; i.e., for all this material, there exist baseline results against which researchers can comparatively assess their new ideas.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665990" title="Get the Full Text from the ACM Digital Library">The open-closed principle of modern machine learning frameworks</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Houssem Ben Braiek</li>
+<li class="nameList">Foutse Khomh</li>
+<li class="nameList Last">Bram Adams</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Recent advances in computing technologies and the availability of huge volumes of data have sparked a new machine learning (ML) revolution, where almost every day a new headline touts the demise of human experts by ML models on some task. Open source software development is rumoured to play a significant role in this revolution, with both academics and large corporations such as Google and Microsoft releasing their ML frameworks under an open source license. This paper takes a step back to examine and understand the role of open source development in modern ML, by examining the growth of the open source ML ecosystem on GitHub, its actors, and the adoption of frameworks over time. By mining LinkedIn and Google Scholar profiles, we also examine driving factors behind this growth (paid vs. voluntary contributors), as well as the major players who promote its democratization (companies vs. communities), and the composition of ML development teams (engineers vs. scientists). According to the technology adoption lifecycle, we find that ML is in between the stages of early adoption and early majority. Furthermore, companies are the main drivers behind open source ML, while the majority of development teams are hybrid teams comprising both engineers and professional scientists. The latter correspond to scientists employed by a company, and by far represent the most active profiles in the development of ML applications, which reflects the importance of a scientific background for the development of ML frameworks to complement coding skills. The large influence of cloud computing companies on the development of open source ML frameworks raises the risk of vendor lock-in. These frameworks, while open source, could be optimized for specific commercial cloud offerings.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665991" title="Get the Full Text from the ACM Digital Library">A benchmark study on sentiment analysis for software engineering research</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Nicole Novielli</li>
+<li class="nameList">Daniela Girardi</li>
+<li class="nameList Last">Filippo Lanubile</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>A recent research trend has emerged to identify developers' emotions, by applying sentiment analysis to the content of communication traces left in collaborative development environments. Trying to overcome the limitations posed by using off-the-shelf sentiment analysis tools, researchers recently started to develop their own tools for the software engineering domain. In this paper, we report a benchmark study to assess the performance and reliability of three sentiment analysis tools specifically customized for software engineering. Furthermore, we offer a reflection on the open challenges, as they emerge from a qualitative analysis of misclassified texts.<sup>1</sup></p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665992" title="Get the Full Text from the ACM Digital Library">A deep learning approach to identifying source code in images and video</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Jordan Ott</li>
+<li class="nameList">Abigail Atchison</li>
+<li class="nameList">Paul Harnack</li>
+<li class="nameList">Adrienne Bergh</li>
+<li class="nameList Last">Erik Linstead</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>While substantial progress has been made in mining code on an Internet scale, efforts to date have been overwhelmingly focused on data sets where source code is represented natively as text. Large volumes of source code available online and embedded in technical videos have remained largely unexplored, due in part to the complexity of extraction when code is represented with images. Existing approaches to code extraction and indexing in this environment rely heavily on computationally intense optical character recognition. To improve the ease and efficiency of identifying this embedded code, as well as identifying similar code examples, we develop a deep learning solution based on convolutional neural networks and autoencoders. Focusing on Java for proof of concept, our technique is able to identify the presence of typeset and handwritten source code in thousands of video images with 85.6%-98.6% accuracy based on syntactic and contextual features learned through deep architectures. When combined with traditional approaches, this provides a more scalable basis for video indexing that can be incorporated into existing software search and mining tools.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665993" title="Get the Full Text from the ACM Digital Library">Natural language or not (NLON): a package for software engineering text analysis pipeline</a>
+</h3>
+<ul class="DLauthors">
+
+<li class="nameList First">Mika V. M&#228;ntyl&#228;</li>
+<li class="nameList">Fabio Calefato</li>
+<li class="nameList Last">Maelick Claes</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The use of natural language processing (NLP) is gaining popularity in software engineering. In order to correctly perform NLP, we must pre-process the textual information to separate natural language from other information, such as log messages, that are often part of the communication in software engineering. We present a simple approach for classifying whether some textual input is natural language or not. Although our NLoN package relies on only 11 language features and character tri-grams, we are able to achieve an area under the ROC curve performances between 0.976-0.987 on three different data sources, with Lasso regression from Glmnet as our learner and two human raters for providing ground truth. Cross-source prediction performance is lower and has more fluctuation with top ROC performances from 0.913 to 0.980. Compared with prior work, our approach offers similar performance but is considerably more lightweight, making it easier to apply in software engineering text mining pipelines. Our source code and data are provided as an R-package for further improvements.</p></div> </div>
+<h2>SESSION: OSS practices and methods</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665994" title="Get the Full Text from the ACM Digital Library">How is video game development different from software development in open source?</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Luca Pascarella</li>
+<li class="nameList">Fabio Palomba</li>
+<li class="nameList">Massimiliano Di Penta</li>
+<li class="nameList Last">Alberto Bacchelli</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Recent research has provided evidence that, in the industrial context, developing video games diverges from developing software systems in other domains, such as office suites and system utilities.</p> <p>In this paper, we consider video game development in the open source system (OSS) context. Specifically, we investigate how developers contribute to video games vs. non-games by working on different kinds of artifacts, how they handle malfunctions, and how they perceive the development process of their projects. To this purpose, we conducted a mixed, qualitative and quantitative study on a broad suite of 60 OSS projects. Our results confirm the existence of significant differences between game and non-game development, in terms of how project resources are organized and in the diversity of developers' specializations. Moreover, game developers responding to our survey perceive more difficulties than other developers when reusing code as well as performing automated testing, and they lack a clear overview of their system's requirements.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665905" title="Get the Full Text from the ACM Digital Library">Which contributions predict whether developers are accepted into github teams</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Justin Middleton</li>
+<li class="nameList">Emerson Murphy-Hill</li>
+<li class="nameList">Demetrius Green</li>
+<li class="nameList">Adam Meade</li>
+<li class="nameList">Roger Mayer</li>
+<li class="nameList">David White</li>
+<li class="nameList Last">Steve McDonald</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Open-source software (OSS) often evolves from volunteer contributions, so OSS development teams must cooperate with their communities to attract new developers. However, in view of the myriad ways that developers interact over platforms for OSS development, observers of these communities may have trouble discerning, and thus learning from, the successful patterns of developer-to-team interactions that lead to eventual team acceptance. In this work, we study project communities on GitHub to discover which forms of software contribution characterize developers who begin as development team outsiders and eventually join the team, in contrast to developers who remain team outsiders. From this, we identify and compare the forms of contribution, such as pull requests and several forms of discussion comments, that influence whether new developers join OSS teams, and we discuss the implications that these behavioral patterns have for the focus of designers and educators.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665906" title="Get the Full Text from the ACM Digital Library">Automatic classification of software artifacts in open-source applications</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Yuzhan Ma</li>
+<li class="nameList">Sarah Fakhoury</li>
+<li class="nameList">Michael Christensen</li>
+<li class="nameList">Venera Arnaoudova</li>
+<li class="nameList">Waleed Zogaan</li>
+<li class="nameList Last">Mehdi Mirakhorli</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>With the increasing popularity of open-source software development, there is a tremendous growth of software artifacts that provide insight into how people build software. Researchers are always looking for large-scale and representative software artifacts to produce systematic and unbiased validation of novel and existing techniques. For example, in the domain of software requirements traceability, researchers often use software applications with multiple types of artifacts, such as requirements, system elements, verifications, or tasks to develop and evaluate their traceability analysis techniques. However, the manual identification of rich software artifacts is very labor-intensive. In this work, we first conduct a large-scale study to identify which types of software artifacts are produced by a wide variety of open-source projects at different levels of granularity. Then we propose an automated approach based on Machine Learning techniques to identify various types of software artifacts. Through a set of experiments, we report and compare the performance of these algorithms when applied to software artifacts.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665907" title="Get the Full Text from the ACM Digital Library">Large-scale analysis of the co-commit patterns of the active developers in github's top repositories</a>
+
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Eldan Cohen</li>
+<li class="nameList Last">Mariano P. Consens</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>GitHub, the largest code hosting site (with 25 million public active repositories and contributions from 6 million active users), provides an unprecedented opportunity to observe the collaboration patterns of software developers. Understanding the patterns behind the social coding phenomena is an active research area where the insights gained can guide the design of better collaboration tools, and can also help to identify and select developer talent. In this paper, we present a large-scale analysis of the co-commit patterns in GitHub. We analyze 10 million commits made by 200 thousand developers to 16 thousand repositories, using 17 of the most popular programming languages over a period of 3 years. Although a large volume of data is included in our study, we pay close attention to the participation criteria for repositories and developers. We select repositories by reputation (based on star ranking), and we introduce the notion of <i>active developer</i> in GitHub (observing that a limited subset of developers is responsible for the vast majority of the commits). Using co-authorship networks, we analyze the co-commit patterns of the active developer network for each programming language. We observe that the active developer networks are less connected and more centralized than the general GitHub developer networks, and that the patterns vary significantly among languages. We compare our results to other collaborative environments (Wikipedia and scientific research networks), and we also describe the evolution of the co-commit patterns over time.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665908" title="Get the Full Text from the ACM Digital Library">Towards automatically identifying paid open source developers</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Ma&#235;lick Claes</li>
+<li class="nameList">Mika M&#228;ntyl&#228;</li>
+<li class="nameList">Miikka Kuutila</li>
+<li class="nameList Last">Umar Farooq</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Open source development contains contributions from both hired and volunteer software developers. Identification of this status is important when we consider the transferability of research results to the closed source software industry, as they include no volunteer developers. While many studies have taken the employment status of developers into account, this information is often gathered manually due to the lack of accurate automatic methods. In this paper, we present an initial step towards predicting paid and unpaid open source development using machine learning and compare our results with automatic techniques used in prior work. By relying on code source repository meta-data from Mozilla, and manually collected employment status, we built a dataset of the most active developers, both volunteer and hired by Mozilla. We define a set of metrics based on developers' usual commit time pattern and use different classification methods (logistic regression, classification tree, and random forest). The results show that our proposed method identify paid and unpaid commits with an AUC of 0.75 using random forest, which is higher than the AUC of 0.64 obtained with the best of the previously used automatic methods.</p></div> </div>
+<h2>SESSION: Search and traceability</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665909" title="Get the Full Text from the ACM Digital Library">Analyzing requirements and traceability information to improve bug localization</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Michael Rath</li>
+<li class="nameList">David Lo</li>
+<li class="nameList Last">Patrick M&#228;der</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Locating bugs in industry-size software systems is time consuming and challenging. An automated approach for assisting the process of tracing from bug descriptions to relevant source code benefits developers. A large body of previous work aims to address this problem and demonstrates considerable achievements. Most existing approaches focus on the key challenge of improving techniques based on textual similarity to identify relevant files. However, there exists a lexical gap between the natural language used to formulate bug reports and the formal source code and its comments. To bridge this gap, state-of-the-art approaches contain a component for analyzing bug history information to increase retrieval performance. In this paper, we propose a novel approach TraceScore that also utilizes projects' requirements information and explicit dependency trace links to further close the gap in order to relate a new bug report to defective source code files. Our evaluation on more than 13,000 bug reports shows, that TraceScore significantly outperforms two state-of-the-art methods. Further, by integrating TraceScore into an existing bug localization algorithm, we found that TraceScore significantly improves retrieval performance by 49% in terms of mean average precision (MAP).</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665900" title="Get the Full Text from the ACM Digital Library">Towards extracting web API specifications from documentation</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Jinqiu Yang</li>
+<li class="nameList">Erik Wittern</li>
+<li class="nameList">Annie T. T. Ying</li>
+<li class="nameList">Julian Dolby</li>
+<li class="nameList Last">Lin Tan</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Web API specifications are machine-readable descriptions of APIs. These specifications, in combination with related tooling, simplify and support the consumption of APIs. However, despite the increased distribution of web APIs, specifications are rare and their creation and maintenance heavily rely on manual efforts by third parties. In this paper, we propose an automatic approach and an associated tool called D2Spec for extracting significant parts of such specifications from web API documentation pages. Given a seed online documentation page of an API, D2Spec first crawls all documentation pages on the API, and then uses a set of machine-learning techniques to extract the base URL, path templates, and HTTP methods - collectively describing the endpoints of the API.</p> <p>We evaluate whether D2Spec can accurately extract endpoints from documentation on 116 web APIs. The results show that D2Spec achieves a precision of 87.1% in identifying base URLs, a precision of 80.3% and a recall of 80.9% in generating path templates, and a precision of 83.8% and a recall of 77.2% in extracting HTTP methods. In addition, in an evaluation on 64 APIs with pre-existing API specifications, D2Spec revealed many inconsistencies between web API documentation and their corresponding publicly available specifications. API consumers would benefit from D2Spec pointing them to, and allowing them thus to fix, such inconsistencies.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665901" title="Get the Full Text from the ACM Digital Library">Evaluating how developers use general-purpose web-search for code retrieval</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Md Masudur Rahman</li>
+<li class="nameList">Jed Barson</li>
+<li class="nameList">Sydney Paul</li>
+<li class="nameList">Joshua Kayani</li>
+<li class="nameList">Federico Andr&#233;s Lois</li>
+<li class="nameList">Sebasti&#225;n Fernandez Quezada</li>
+<li class="nameList">Christopher Parnin</li>
+<li class="nameList">Kathryn T. Stolee</li>
+<li class="nameList Last">Baishakhi Ray</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Search is an integral part of a software development process. Developers often use search engines to look for information during development, including reusable code snippets, API understanding, and reference examples. Developers tend to prefer general-purpose search engines like Google, which are often not optimized for code related documents and use search strategies and ranking techniques that are more optimized for generic, non-code related information.</p> <p>In this paper, we explore whether a general purpose search engine like Google is an optimal choice for code-related searches. In particular, we investigate whether the performance of searching with Google varies for code vs. non-code related searches. To analyze this, we collect search logs from 310 developers that contains nearly 150,000 search queries from Google and the associated result clicks. To differentiate between code-related searches and non-code-related searches, we build a model which identifies the code intent of queries. Leveraging this model, we build an automatic classifier that detects a code and non-code related query. We confirm the effectiveness of the classifier on manually annotated queries where the classifier achieves a <i>precision</i> of 87%, a <i>recall</i> of 86%, and an <i>F1-score</i> of 87%. We apply this classifier to automatically annotate all the queries in the dataset. Analyzing this dataset, we observe that code related searching often requires more effort (e.g., time, result clicks, and query modifications) than general non-code search, which indicates code search performance with a general search engine is less effective.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665902" title="Get the Full Text from the ACM Digital Library">Learning to mine aligned code and natural language pairs from stack overflow</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Pengcheng Yin</li>
+<li class="nameList">Bowen Deng</li>
+<li class="nameList">Edgar Chen</li>
+<li class="nameList">Bogdan Vasilescu</li>
+<li class="nameList Last">Graham Neubig</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>For tasks like code synthesis from natural language, code retrieval, and code summarization, data-driven models have shown great promise. However, creating these models require parallel data between natural language (NL) and code with fine-grained alignments. S<scp>tack</scp> O<scp>verflow</scp> (SO) is a promising source to create such a data set: the questions are diverse and most of them have corresponding answers with high quality code snippets. However, existing heuristic methods (<i>e.g.</i>, pairing the title of a post with the code in the accepted answer) are limited both in their coverage and the correctness of the NL-code pairs obtained. In this paper, we propose a novel method to mine high-quality aligned data from SO using two sets of features: hand-crafted features considering the structure of the extracted snippets, and correspondence features obtained by training a probabilistic model to capture the correlation between NL and code using neural networks. These features are fed into a classifier that determines the quality of mined NL-code pairs. Experiments using Python and Java as test beds show that the proposed method greatly expands coverage and accuracy over existing mining methods, even when using only a small number of labeled examples. Further, we find that reasonable results are achieved even when training the classifier on one language and testing on another, showing promise for scaling NL-code mining to a wide variety of programming languages beyond those for which we are able to annotate data.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665903" title="Get the Full Text from the ACM Digital Library">A search system for mathematical expressions on software binaries</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Ridhi Jain</li>
+<li class="nameList">Sai Prathik</li>
+<li class="nameList">Venkatesh Vinayakarao</li>
+<li class="nameList Last">Rahul Purandare</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Developers often ask for libraries that implement specific mathematical expressions. A fundamental bottleneck in building information retrieval (IR) systems to answer such mathematical queries is the inability to detect a given expression in software binaries. While we have a few math IR solutions such as EgoMath2 and Tangent-3 that work over text documents, none exist to search over software binaries. Our vision is to build a search system for binaries to answer queries containing mathematical expressions. A wide variety of compilers and differences in the way they optimize the code, pose difficult challenges to solve this problem. In this work, we discuss our preliminary results in detecting mathematical expressions in software binaries. We use a knowledge base assisted approach to solve this problem. We are able to search mathematical expressions with a precision of 80% and a recall of 53%. This work opens up interesting research opportunities in areas such as software security and performance, to help analysts in identifying and analyzing binaries for implementations of mathematical expressions.</p></div> </div>
+<h2>SESSION: APIs and code</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665904" title="Get the Full Text from the ACM Digital Library">Imprecisions diagnostic in source code deltas</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Guillermo de la Torre</li>
+<li class="nameList">Romain Robbes</li>
+<li class="nameList Last">Alexandre Bergel</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Beyond a practical use in code review, source code change detection (SCCD) is an important component of many mining software repositories (MSR) approaches. As such, any error or imprecision in the detection may result in a wrong conclusion while mining repositories. We identified, analyzed, and characterized impressions in GumTree, which is the most advanced algorithm for SCCD. After analyzing its detection accuracy over a curated corpus of 107 C# projects, we diagnosed several imprecisions. Many of our findings confirm that a more language-aware perspective of GumTree can be helpful in reporting more precise changes.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665915" title="Get the Full Text from the ACM Digital Library">Exploring the use of automated API migrating techniques in practice: an experience report on Android</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Maxime Lamothe</li>
+<li class="nameList Last">Weiyi Shang</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In recent years, open source software libraries have allowed developers to build robust applications by consuming freely available application program interfaces (API). However, when these APIs evolve, consumers are left with the difficult task of migration. Studies on API migration often assume that software documentation lacks explicit information for migration guidance and is impractical for API consumers. Past research has shown that it is possible to present migration suggestions based on historical code-change information. On the other hand, research approaches with optimistic views of documentation have also observed positive results. Yet, the assumptions made by prior approaches have not been evaluated on large scale practical systems, leading to a need to affirm their validity. This paper reports our recent practical experience migrating the use of Android APIs in FDroid apps when leveraging approaches based on documentation and historical code changes. Our experiences suggest that migration through historical codechanges presents various challenges and that API documentation is undervalued. In particular, the majority of migrations from removed or deprecated Android APIs to newly added APIs can be suggested by a simple keyword search in the documentation. More importantly, during our practice, we experienced that the challenges of API migration lie beyond migration suggestions, in aspects such as coping with parameter type changes in new API. Future research may aim to design automated approaches to address the challenges that are documented in this experience report.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665916" title="Get the Full Text from the ACM Digital Library">The patch-flow method for measuring inner source collaboration</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Maximilian Capraro</li>
+<li class="nameList">Michael Dorner</li>
+<li class="nameList Last">Dirk Riehle</li>
+
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Inner source (IS) is the use of open source software development (SD) practices and the establishment of an open source-like culture within an organization. IS enables and requires developers to collaborate more than traditional SD methods such as plan-driven or agile development. To better understand IS, researchers and practitioners need to measure IS collaboration. However, there is no method yet for doing so. In this paper, we present a method for measuring IS collaboration by measuring the patch-flow within an organization. Patch-flow is the flow of code contributions across organizational boundaries such as project, organizational unit, or profit center boundaries. We evaluate our patch-flow measurement method using case study research with a software developing multi-industry company. By applying the method in the case organization, we evaluate its relevance and viability and discuss its usefulness. We found that about half (47.9%) of all code contributions constitute patch-flow between organizational units, almost all (42.2%) being between organizational units working on different products. Such significant patch-flow indicates high relevance of the patch-flow phenomenon and hence the method presented in this paper. Our patch-flow measurement method is the first of its kind to measure and quantify IS collaboration. It can serve as a base for further quantitative analyses of IS collaboration.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665917" title="Get the Full Text from the ACM Digital Library">Was self-admitted technical debt removal a real removal?: an in-depth perspective</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Fiorella Zampetti</li>
+<li class="nameList">Alexander Serebrenik</li>
+<li class="nameList Last">Massimiliano Di Penta</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Technical Debt (TD) has been defined as "code being not quite right yet", and its presence is often self-admitted by developers through comments. The purpose of such comments is to keep track of TD and appropriately address it when possible. Building on a previous quantitative investigation by Maldonado et al. on the removal of self-admitted technical debt (SATD), in this paper we perform an in-depth quantitative and qualitative study of how SATD is addressed in five Java open source projects. On the one hand, we look at whether SATD is "accidentally" removed, and the extent to which the SATD removal is being documented. We found that that (i) between 20% and 50% of SATD comments are accidentally removed while entire classes or methods are dropped, (ii) 8% of the SATD removal is acknowledged in commit messages, and (iii) while most of the changes addressing SATD require complex source code changes, very often SATD is addressed by specific changes to method calls or conditionals. Our results can be used to better plan TD management or learn patterns for addressing certain kinds of TD and provide recommendations to developers.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665918" title="Get the Full Text from the ACM Digital Library">Restmule: enabling resilient clients for remote APIs</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Beatriz A. Sanchez</li>
+<li class="nameList">Konstantinos Barmpis</li>
+<li class="nameList">Patrick Neubauer</li>
+
+<li class="nameList">Richard F. Paige</li>
+<li class="nameList Last">Dimitrios S. Kolovos</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Mining data from remote repositories, such as GitHub and StackExchange, involves the execution of requests that can easily reach the limitations imposed by the respective APIs to shield their services from overload and abuse. Therefore, data mining clients are left alone to deal with such protective service policies which usually involves an extensive amount of manual implementation effort. In this work we present R<scp>est</scp>M<scp>ule</scp>, a framework for handling various service policies, such as limited number of requests within a period of time and multi-page responses, by generating resilient clients that are able to handle request rate limits, network failures, response caching, and paging in a graceful and transparent manner. As a result, R<scp>est</scp>M<scp>ule</scp> clients generated from OpenAPI specifications (i.e. standardized REST API descriptors), are suitable for intensive data-fetching scenarios. We evaluate our framework by reproducing an existing repository mining use case and comparing the results produced by employing a popular hand-written client and a R<scp>est</scp>M<scp>ule</scp> client.</p></div> </div>
+<h2>SESSION: Modeling and prediction</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665919" title="Get the Full Text from the ACM Digital Library">Deep learning similarities from different representations of source code</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Michele Tufano</li>
+<li class="nameList">Cody Watson</li>
+<li class="nameList">Gabriele Bavota</li>
+<li class="nameList">Massimiliano Di Penta</li>
+<li class="nameList">Martin White</li>
+<li class="nameList Last">Denys Poshyvanyk</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Assessing the similarity between code components plays a pivotal role in a number of Software Engineering (SE) tasks, such as clone detection, impact analysis, refactoring, <i>etc.</i> Code similarity is generally measured by relying on manually defined or hand-crafted features, <i>e.g.</i>, by analyzing the overlap among identifiers or comparing the Abstract Syntax Trees of two code components. These features represent a <i>best guess</i> at what SE researchers can utilize to exploit and reliably assess code similarity for a given task. Recent work has shown, when using a stream of identifiers to represent the code, that Deep Learning (DL) can effectively replace manual feature engineering for the task of clone detection. However, source code can be represented at different levels of abstraction: identifiers, Abstract Syntax Trees, Control Flow Graphs, and Bytecode. We conjecture that each code representation can provide a different, yet orthogonal view of the same code fragment, thus, enabling a more reliable detection of similarities in code. In this paper, we demonstrate how SE tasks can benefit from a DL-based approach, which can automatically learn code similarities from different representations.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665910" title="Get the Full Text from the ACM Digital Library">500+ times faster than deep learning: a case study exploring faster methods for text mining stackoverflow</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Suvodeep Majumder</li>
+<li class="nameList">Nikhila Balaji</li>
+<li class="nameList">Katie Brey</li>
+<li class="nameList">Wei Fu</li>
+<li class="nameList Last">Tim Menzies</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Deep learning methods are useful for high-dimensional data and are becoming widely used in many areas of software engineering. Deep learners utilizes extensive computational power and can take a long time to train- making it difficult to widely validate and repeat and improve their results. Further, they are not the best solution in all domains. For example, recent results show that for finding related Stack Overflow posts, a tuned SVM performs similarly to a deep learner, but is significantly faster to train.</p> <p>This paper extends that recent result by clustering the dataset, then tuning every learners within each cluster. This approach is over 500 times faster than deep learning (and over 900 times faster if we use all the cores on a standard laptop computer). Significantly, this faster approach generates classifiers nearly as good (within 2% F1 Score) as the much slower deep learning method. Hence we recommend this faster methods since it is much easier to reproduce and utilizes far fewer CPU resources.</p> <p>More generally, we recommend that before researchers release research results, that they compare their supposedly sophisticated methods against simpler alternatives (e.g applying simpler learners to build local models).</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665911" title="Get the Full Text from the ACM Digital Library">Studying the relationship between exception handling practices and post-release defects</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Guilherme B. de P&#225;dua</li>
+<li class="nameList Last">Weiyi Shang</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Modern programming languages, such as Java and C#, typically provide features that handle exceptions. These features separate error-handling code from regular source code and aim to assist in the practice of software comprehension and maintenance. Nevertheless, their misuse can still cause reliability degradation or even catastrophic software failures. Prior studies on exception handling revealed the suboptimal practices of the exception handling flows and the prevalence of their anti-patterns. However, little is known about the relationship between exception handling practices and software quality. In this work, we investigate the relationship between software quality (measured by the probability of having post-release defects) and: (i) exception flow characteristics and (ii) 17 exception handling anti-patterns. We perform a case study on three Java and C# open-source projects. By building statistical models of the probability of post-release defects using traditional software metrics and metrics that are associated with exception handling practice, we study whether exception flow characteristics and exception handling anti-patterns have a statistically significant relationship with post-release defects. We find that exception flow characteristics in Java projects have a significant relationship with post-release defects. In addition, although the majority of the exception handing anti-patterns are not significant in the models, there exist anti-patterns that can provide significant explanatory power to the probability of post-release defects. Therefore, development teams should consider allocating more resources to improving their exception handling practices and avoid the anti-patterns that are found to have a relationship with post-release defects. Our findings also highlight the need for techniques that assist in handling exceptions in the software development practice.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665912" title="Get the Full Text from the ACM Digital Library">Analyzing conflict predictors in open-source Java projects</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Paola Accioly</li>
+<li class="nameList">Paulo Borba</li>
+<li class="nameList">L&#233;uson Silva</li>
+<li class="nameList Last">Guilherme Cavalcanti</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In collaborative development environments integration conflicts occur frequently. To alleviate this problem, different awareness tools have been proposed to alert developers about potential conflicts before they become too complex. However, there is not much empirical evidence supporting the strategies used by these tools. Learning about what types of changes most likely lead to conflicts might help to derive more appropriate requirements for early conflict detection, and suggest improvements to existing conflict detection tools. To bring such evidence, in this paper we analyze the effectiveness of two types of code changes as conflict predictors. Namely, editions to the same method, and editions to directly dependent methods. We conduct an empirical study analyzing part of the development history of 45 Java projects from GitHub and Travis CI, including 5,647 merge scenarios, to compute the precision and recall for the conflict predictors aforementioned. Our results indicate that the predictors combined have a precision of 57.99% and a recall of 82.67%. Moreover, we conduct a manual analysis which provides insights about strategies that could further increase the precision and the recall.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665913" title="Get the Full Text from the ACM Digital Library">Bayesian hierarchical modelling for tailoring metric thresholds</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Neil A. Ernst</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Software is highly contextual. While there are cross-cutting 'global' lessons, individual software projects exhibit many 'local' properties. This data heterogeneity makes drawing local conclusions from global data dangerous. A key research challenge is to construct locally accurate prediction models that are informed by global characteristics and data volumes. Previous work has tackled this problem using clustering and transfer learning approaches, which identify locally similar characteristics. This paper applies a simpler approach known as Bayesian hierarchical modeling. We show that hierarchical modeling supports cross-project comparisons, while preserving local context. To demonstrate the approach, we conduct a conceptual replication of an existing study on setting software metrics thresholds. Our emerging results show our hierarchical model reduces model prediction error compared to a global approach by up to 50%.</p></div> </div>
+</div>
+</div>
+</body>
+</html>

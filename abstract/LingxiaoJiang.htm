@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+Similar code, also known as cloned code, commonly exists in large software.  Studies show that code duplication can incur higher software maintenance cost and more software defects.  Thus, detecting similar code and tracking its migration have many important applications, including program understanding, refactoring, optimization, and bug detection.
+<p>
+This dissertation presents novel, general techniques for detecting and analyzing both syntactic and semantic code clones.  The techniques can scalably and accurately detect clones based on various similarity definitions, including trees, graphs, and functional behavior.  They also have the general capability to help reduce software defects and advance code reuse.  Specifically, this dissertation makes the following main contributions:
+<p>
+First, it presents Deckard, a tree-based clone detection technique and tool.  The key insight is that we accurately represent syntax trees and dependency graphs of a program as characteristic vectors in the Euclidean space and apply hashing algorithms to cluster similar vectors efficiently.  Experiments show that Deckard scales to millions of lines of code with few false positives. In addition, Deckard is language-agnostic and easily parallelizable, with the potential to scale to billions of lines of code in different languages.
+<p>
+Second, it describes a novel application of Deckard to bug detection.  In particular, it introduces a general notion of context-based inconsistencies as indicators of clone-related bugs and formalizes three concrete types of such inconsistencies. The formalization is then applied to the clones identified by Deckard, and many previously unknown bugs in large projects are discovered. These bugs exhibit diverse characteristics and cannot be detected by any single previous bug detection technique.
+<p>
+Third, the dissertation presents EqMiner, a practical technique to detect functionally equivalent code.  Inspired by Schwartz's randomized polynomial identity testing, EqMiner adapts automated random testing in a novel way to quickly determine functional equivalence among arbitrary code fragments automatically extracted from a large program. Evaluated on the Linux kernel, EqMiner discovered many functionally equivalent, but syntactically different code fragments, which can facilitate future studies on semantic-aware code reuse.
+
+
+</div>
+</body>
+</html>

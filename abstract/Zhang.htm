@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">Developing automated techniques for identifying a fault candidate set (i.e., subset of executed statements that contains the faulty code responsible for the failure during a program run), can greatly reduce the effort of debugging. Over 15 years ago precise dynamic slicing was proposed to identify a fault candidate set as consisting of all executed statements that influence the computation of an incorrect value through a chain of data and/or control dependences. However, the challenge of making precise dynamic slicing practical has not been addressed. This
+dissertation addresses this challenge and makes precise dynamic slicing useful for debugging realistic applications. First, the cost of computing precise dynamic slices is greatly reduced. Second, innovative ways of using precise dynamic slicing are identified to produce small failure candidate sets.
+<P>
+
+The key cause of high space and time cost of precise dynamic slicing is the very large size of dynamic dependence graphs that are constructed and traversed for computing dynamic slices. By developing a novel series of optimizations the size of the dynamic dependence graph is greatly reduced leading to a compact representation that can be rapidly traversed. Average space needed is reduced from 2 Gigabytes to 94 Megabytes for dynamic dependence graphs corresponding to executions with average lengths of 130 Million instructions. The precise dynamic slicing time is reduced from up to 20 minutes for a demand-driven algorithm to 16 seconds. A compression algorithm is developed to further reduce dependence graph sizes. The resulting representation achieves the space efficiency such that the dynamic execution history of executing a couple of billion instructions can be held in a Gigabyte of memory. To further scale precise dynamic slicing to longer program runs, a novel approach is !
+ proposed that uses checkpointing/logging to enable collection of dynamic history of only the relevant window of execution.
+<P>
+
+Classical backward dynamic slicing can often produce fault candidate sets that contain thousands of statements making the task of identifying faulty code very time consuming for the programmer. Novel techniques are proposed to improve effectiveness of dynamic slicing for fault location. The merit of these techniques lies in identifying multiple forms of dynamic slices in a failed run and then intersecting them to produce smaller fault candidate sets. Using these techniques, the fault candidate set size corresponding to the backward dynamic slice is reduced by nearly a factor of 3. A fine-grained statistical pruning technique based on value profiles is also developed and this technique reduces the sizes of backward dynamic slices by a factor of 2.5.
+<P>
+
+In conclusion, this dissertation greatly reduces the cost of precise dynamic slicing and presents techniques to improve its effectiveness for fault location.
+<P>
+
+
+
+</div>
+</body>
+</html>

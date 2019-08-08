@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+Many areas of software engineering essentially involve analysis and transformation of source code representations. Generally, such representations are highly heterogenous data structures. Examples are parse trees, abstract syntax trees, dependency graphs, and call graphs. Preferably, the well-formedness of such data structures is guarded by strong static type systems.<p>
+
+Unfortunately, when using traditional approaches, typeful programming is at odds with conciseness, reusability, and robustness. Access to and traversal over subelements of typed representations involves dealing with many specific types in specific ways. As a consequence, type-safety comes at the cost of lengthy traversal code, which can not be reused in different parts of the representation or for differently typed representations, and which breaks with any change in the representation type.<p>
+
+In this thesis we present techniques to remedy the dilemma between type-safety on the one hand, and conciseness, reusability, and robustness on the other. For representative typed languages from the functional and object-oriented programming paradigms, viz Haskell and Java, we developed programming idioms that allow program construction from combinators which support typeful generic traversal. Using these combinators, program abstractions can be composed that capture e.g. reusable traversal strategies or analysis and transformation schemas. Though typeful, these abstractions need make little or no commitment to the specific type structure of the representations to which they are applied.<p>
+
+We have developed tool support to enable the application of our generic traversal techniques to source code representations that involve large numbers of different subelement types. These tools generate combinator support from SDF grammars. Parsers and pretty-printers can be generated from the same grammars, as well as the necessary code for representing and exchanging syntax trees between parsers, traversal components, and pretty-printers. In fact, SDF grammars are employed as contracts that govern all tree exchange, representation, and processing in a general multi-lingual architecture for source code analysis and transformation.<p>
+
+The practical applicability of all these techniques has been put to the test in several case studies, ranging from procedure reconstruction for Cobol programs, through static analysis of Toolbus scripts, to automated Java refactoring.
+</div>
+</body>
+</html>

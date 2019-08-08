@@ -1,0 +1,19 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">	Model checking is the most successful formal technique for verifying hardware behaviors. A model checker exhaustively explores a state machine's state space to check it against a temporal-logic formula. The technique is therefore restricted by the huge number of states that many real-life systems possess. Symbolic model checking overcomes this fundamental limitation by representing sets of states implicitly as binary decision diagrams (BDDs), which can often succinctly capture the regularity in many industrial circuits. Despite its tremendous success in hardware, BDD-based model checking has rarely been applied to software. The prevalent view postulates that BDDs cannot capture the complexity inherent in software systems. Contrary to this belief, we present some results and experience in applying the technique to the state-machine specifications of two software systems: a collision-avoidance system and an electrical power distribution system, both used on commercial aircraf!
+t. The two models are written in variants of the statecharts language, a popular specification language for reactive software. We systematically translated portions of the models to inputs to a BDD-based model checker. The model-checking analyses disclosed subtle but important errors not found in prior verification efforts. Despite the final encouraging results, the huge BDDs generated made many of the initial analyses infeasible. We have developed intuition about some reasons for BDD blowups, and based on the insights, modified the models and the model checker to speed up the analyses by orders of magnitude. These optimizations exploit the models' synchronization mechanisms and environmental assumptions, and enable many analyses that were previously intractable. Another limitation of BDDs is their exponential complexity for nonlinear arithmetic. This poses a problem for verifying embedded systems that base their transitions on nonlinear predicates over sensor inputs. To att!
+ack the problem, we have extended the conventional model chec!
+king by tightly coupling BDDs with a nonlinear constraint solver. This extension and the optimizations above have broadened the range of systems that are amenable to automatic behavioral verification, and are important steps toward making symbolic model checking a viable verification technique for state-machine specifications. 
+
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+Software maintenance and evolution is arguably a lengthy and expensive
+phase in the life cycle of a software system. A critical issue at this
+phase is change propagation: given a set of primary changes that have
+been made to software, what additional secondary changes are needed to
+maintain consistency between software artefacts? Although many
+approaches have been proposed, automated change propagation is still a
+significant technical challenge in software maintenance and evolution.
+<p>
+Our objective is to provide tool support for assisting designers in
+propagating changes during the process of maintaining and evolving
+models. We propose a novel, agent-oriented, approach that works by
+repairing violations of desired consistency rules in a design
+model. Such consistency constraints are specified using the Object
+Constraint Language (OCL) and the Unified Modelling Language (UML)
+metamodel, which form the key inputs to our change propagation
+framework. The underlying change propagation mechanism of our
+framework is based on the well-known Belief-Desire-Intention (BDI)
+agent architecture. Our approach represents change options for
+repairing inconsistencies using event-triggered plans, as is done in
+BDI agent platforms. This naturally reflects the cascading nature of
+change propagation, where each change (primary or secondary) can
+require further changes to be made. We also propose a new method for
+generating repair plans from OCL consistency constraints. Furthermore,
+a given inconsistency will typically have a number of repair plans
+that could be used to restore consistency, and we propose a mechanism
+for semi-automatically selecting between alternative repair
+plans. This mechanism, which is based on a notion of cost, takes into
+account cascades (where fixing the violation of a constraint breaks
+another constraint), and synergies between constraints (where fixing
+the violation of a constraint also fixes another violated
+constraint). Finally, we report on an evaluation of the approach,
+covering both effectiveness and efficiency.
+
+
+</div>
+</body>
+</html>

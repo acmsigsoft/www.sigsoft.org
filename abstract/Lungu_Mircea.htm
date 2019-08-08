@@ -1,0 +1,15 @@
+<p>Reverse engineering is an active area of research concerned with discovering techniques and providing tools that support the understanding of software systems. All the techniques that were proposed until now study individual systems in isolation.</p>
+ 
+<p>However, software systems are seldom developed in isolation. Instead, many times, they are developed together with other projects in the wider context of an organization or a community. We call the collection of projects that are developed in such a context a software ecosystem. Often, a software ecosystem and the knowledge associated with it is the most valuable asset of its owner. Sometimes the ecosystem can be the very reason for the existence of the organization.</p>
+ 
+<p>In this thesis we show that software ecosystems are an interesting and challenging subject of study, and that reverse engineering techniques can be used beyond the level of individual systems in the process of understanding software ecosystems.</p>
+ 
+<p>Our main contributions are threefold: we introduce a methodology for reverse engineering software ecosystems, we provide tools that support the methodology, and we validate the methodology on multiple case-studies.</p>
+ 
+<p>Our methodology is based on analyzing the source code and the information in the versioning system repositories of the projects in an ecosystem and generating visual representations of the results. These visual representations present the ecosystem from several complementary perspectives. Given the large amount of information in an ecosystem, we need to provide exploration mechanisms that allow one to navigate the wealth of information available about the ecosystem.</p>
+ 
+<p>We distinguish between two dimensions of ecosystem exploration: horizontal exploration allows one to navigate between different views of a given ecosystem, while vertical exploration allows one to dive into the details of individual projects in the ecosystem. Supporting horizontal exploration is a matter of linking the various ecosytem perspectives in the tool. Supporting vertical exploration, on the other hand, implies connecting the ecosystem level model to the single system detailed models and performing architecture recovery on those models.</p>
+ 
+<p>Since architecture recovery can not be fully automated, in our work we introduce two techniques that ease the generation of intra-project architectural views. The first technique, is automating the exploration based on the classification modules in a set of structural patterns. The second technique is automating the filtering of dependencies in the architectural views based on the classification of the inter-module dependencies based on their evolution.</p>
+ 
+</p>To validate our contributions we applied our tools and techniques on a set of ecosystem case studies that belong to various organizations: two academic institutions, one industrial software house, and one open-source community. We validated the techniques that work at the architectural level on a several well-known open source software systems.</p>

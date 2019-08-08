@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+
+<p align="justify">The increasing popularity of mobile devices, such as mobile
+phones and personal digital assistants, and advances in wireless networking
+technologies, are enabling new classes of applications that present
+challenging problems to application designers. Applications have to be aware
+of, and adapt to, variations in the execution context, such as fluctuating
+network bandwidth and decreasing battery power, in order to deliver a good
+quality of service to their users.
+
+<p align="justify">We argue that building applications directly on top of the
+network operating system would be extremely tedious and error-prone, as
+application developers would have to deal with these issues explicitly, and
+would consequently be distracted from the actual requirements of the
+application they are building.  Rather, a middleware layered between the
+network operating system and the application should provide application
+developers with abstractions and mechanisms to deal with them.
+
+<p align="justify">We investigate the principle of reflection and demonstrate
+how it can be used to support context-awareness and dynamic adaptation to
+context changes. We offer application engineers an abstraction of middleware
+as a dynamically customisable service provider, where each service can be
+delivered using different policies when requested in different contexts. Based
+on this abstraction, current middleware behaviour, with respect to a
+particular application, is reified in an application profile, and made
+accessible to the application for run-time inspection and
+adaptation. Applications can use the meta-interface that the middleware
+provides to change the information encoded in their profile, thus tailoring
+middleware behaviour to the user's needs. However, while doing so, conflicts
+may arise; different users may have different quality-of-service needs, and
+applications, in an attempt to fulfil these needs, may customise middleware
+behaviour in conflicting ways. These conflicts have to be resolved in order to
+allow applications to come to an agreement, and thus be able to engage
+successful collaborations.
+
+<p align="justify">We demonstrate how microeconomic techniques can be used to
+treat these kinds of conflicts. We offer an abstraction of the mobile setting
+as an economy, where applications compete to have a service delivered
+according to their quality-of-service needs. We have designed a mechanism
+where middleware plays the role of the auctioneer, collecting bids from the
+applications and delivering the service using the policy that maximises social
+welfare; that is, the one that delivers, on average, the best
+quality-of-service.
+
+<p align="justify">We formalise the principles discussed above, namely
+reflection to support context-awareness and microeconomic techniques to
+support conflict resolution. To demonstrate their effectiveness in fostering
+the development of context-aware applications, we discuss a middleware
+architecture and implementation (CARISMA) that embed these principles, and
+report on performance and usability results obtained during a thorough
+evaluation stage.
+
+
+
+</body> </html>

@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Mohammad Raunak - PhD Dissertation Abstract</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify"> 
+<p>
+Resource management is at the heart of many diverse science and engineering research areas. Although the general notion of what constitutes a resource entity seems similar in different research areas, their types, characteristics, and constraints governing their behavior are vastly different depending on the particular domain of research and the nature of the research itself. Often research related to resource modeling and management focus on largely homogeneous resources in a relatively simplified model of the real world. The problem becomes much more challenging to deal with when working with a complex real life domain with many heterogeneous resource types and intricate constraints. In this dissertation, we have looked at the modeling and management of resource instances and tried to develop a better sense of what makes them different from other objects in a system. As part of this work, we formally define the general resource management problem, identify its major sub-problem areas and their associated complexities, and look at the problem in the context of a  particularly complex and dynamic environment, namely the emergency department (ED) of a hospital. We propose an approach to the problem and some of its complexities by presenting an overall unifying view, as well as tools and methods for dealing with this pervasive, yet surprisingly under-examined, type of entity, i.e. resources.
+</p>
+<p>
+We have discovered that one of the discerning characteristics of resource instances in complex and dynamic environments seem to be their dynamic capability profile that may change depending on system context. This, in turn, often results in complex substitutability relationship amongst resource instances.
+</p>
+<p>
+We have identified four major sub-problem areas that can provide a holistic view of any resource management service. These separate, yet interconnected, areas of concerns include resource modeling, resource request specification, resource constraint management, and resource allocation. Resource modeling involves capturing of resource characteristics and their potentially dynamic
+behavior. Request definitions describe how resource users specify requirements for resources in a particular domain. In most domains, there are constraints that need to be satisfied while serving resources to fulfill specific requests.  The fourth area of concerns, the allocation of resources, is a complex component with multiple subcomponents that closely interact with each other. In this thesis, we have described an architecture for a flexible resource management service based on the above described separation of concerns.
+We have proposed some simple, yet effective, techniques for modeling resource instances, specifying resource requests, specifying and managing resource constraints, and allocating resource instances to meet a resource demand characterized by a continuous stream of requests.  Using our proposed design, we have developed ROMEO, a resource management service and customized it to serve a task coordination framework based on Little-JIL process definition language. Our work then concentrated on evaluating the effectiveness of ROMEO in supporting simulations and executions of complex processes. For this evaluation purpose, we developed a simulation infrastructure named JSim on top of Juliette, Little-JIL's execution environment. We ran a variety of simulations of patient care processes in EDs using our ROMEO-JSim infrastructure. We also used ROMEO to support the actual execution (rather than just the simulation) of a large mediation process.
+</p>
+<p>
+A central premise, hypothesized and explored in this thesis, is a novel way of thinking about resource instances in dynamic domains, namely defining them with a set of guarded capabilities, some of which may be dependent on the execution state of the system. This has led us to think about how to represent execution states of a running system and what types of system state information might be important for representing the guard functions on the capabilities of a resource instance that define the resource instance's ability to satisfy a request at a given execution state of the system. We have also identified a small set of common types of attributes of resource instances that seem able to support specification of a large variety of resource instances in complex domains. We believe that our research supports our hypothesis that specifying resource instances as having sets of guarded capabilities provides a useful abstraction for modeling many of the complex dynamic behaviors of resource instances in such domains as hospital EDs.
+</p>
+
+</div>
+</body>
+</html>

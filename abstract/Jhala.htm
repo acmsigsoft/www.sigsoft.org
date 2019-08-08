@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">The enormous cost and ubiquity of software errors necessitates the need for techniques and tools that can precisely analyze large systems and prove that they meet given specifications, or if they don't, return counterexample behaviors showing how the system fails. Recent advances in model checking, decision procedures, program analysis and type systems, and a shift of focus to partial specifications common to several systems (e.g., memory safety and race freedom) have resulted in several practical verification methods. However, these methods are either precise or they are scalable, depending on whether they track the values of variables or only a fixed small set of dataflow facts (e.g., types), and are usually insufficient for precisely verifying large programs.
+<P>
+
+We describe a new technique called Lazy Abstraction (LA) which achieves both precision and scalability by localizing the use of precise information. LA automatically builds, explores and refines a single abstract model of the program in a way that different parts of the model exhibit different degrees of precision, namely just enough to verify the desired property. The algorithm automatically mines the information required by partitioning mechanical proofs of unsatisfiability of spurious counterexamples into Craig Interpolants. For multithreaded systems, we give a new technique based on analyzing the behavior of a single thread executing in a context which is an abstraction of the other (arbitrarily many) threads. We define novel context models and show how to automatically infer them and analyze the full system (thread + context) using LA.
+<P>
+
+LA is implemented in BLAST. We have run BLAST on Windows and Linux Device Drivers to verify API conformance properties, and have used it to find (or guarantee the absence of) data races in multithreaded Networked Embedded Systems (NESC) applications. BLAST is able to prove the absence of races in several cases where earlier methods, which depend on lock-based synchronization, fail. 
+
+
+
+</div>
+</body>
+</html>

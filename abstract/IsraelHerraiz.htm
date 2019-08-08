@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+
+How and why does software evolve? This question has been under study since almost 40 years ago, and it is still a subject of controversy. After many years of empirical research, Meir M. Lehman formulated the laws of software evolution, which were a first attempt to characterize the dynamics of the evolution of software systems.
+<p>
+With the raising of the libre (free / open source) software development phenomenon, some cases that do not fulfill those laws have appeared. Are Lehman's laws valid in the case of libre software development? Is it possible to desing an universal theory for software evolution? And if it is, how?
+<p>
+This thesis is a large-scale empirical study that uses a statistical approach to analyze the properties and evolution of libre software. The studied properties are size and complexity. For that study, we have used a set of thousands of software systems, extracted using the packages system of FreeBSD. The evolution study was done using another set of thousands of software projects hosted in SourceForge.net.
+<p>
+With the first set, we measured different size and complexity metrics of the source code of the packages in FreeBSD, and calculated the correlations among the different metrics. We also estimated the distribution function of those properties.
+<p>
+Regarding the second set, we obtained the daily series of number of changes. We applied Time Series Analysis to estimate the kind of process that drives software evolution. We used ARIMA (Auto Regressive Integrated Moving Average) models to forecast evolution.
+<p>
+The results show that a small subset of basic size metrics are enough to characterize a software system. Furthermore, the shape of the distribution of those metrics suggests that the Random Forest File Model could be used to simulate the evolution of a software product.
+<p>
+Using Time Series Analysis (TSA), we have found that software evolution is a short memory process. That implies that statistical models of evolution based on TSA are a better option than regression models for forecasting purposes.
+<p>
+Finally, the shape of the distribution of size is the same, regardless of the level of aggregation used to measure it (file, module, software project, etc). That is an evidence of self-similarity in software, and could be an explanation of the fast growth patterns observed in some libre software projects.
+<p>
+Another remarkable contribution of this thesis is that it shows how to perform an empirical study at a large scale, using publicly available data sources. Thanks to this, all the results are repeatable and verifiable by third parties. Therefore, the conclusions of this thesis can be the beginning of a theory of software evolution that is based on empirical findings verified in thousands of software systems.
+
+
+</div>
+</body>
+</html>

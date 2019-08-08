@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">Building efficient tools for understanding large software systems is difficult. Many existing program understanding tools build control-flow and data-flow represen-tations of the program a priori, and therefore require prohibitive space and time when analyzing large systems.
+<P>
+
+By customizing the tool to the task and analysis being performed, significant time and space can be saved. Since much of these representations may be unused during an analysis, we construct them on demand, not in advance. Furthermore, some representations may be used infrequently during an analysis. We discard these and re-compute them as needed, reducing the overall space required. Finally, we permit the user to selectively trade-off time for precision and to customize the termination of these costly analyses to provide finer user control, thereby improving the flexibility of the tool. We revised the traditional software architecture for compilers to provide these features without unnecessarily complicating the analyses themselves.
+<P>
+
+These solutions improve the effectiveness of whole-program analysis tools by making the analysis more practical (i.e., faster and scalable) and task-oriented. However, the use of pointers in most modern programming languages introduces additional problems. The lessons of adaptability and flexibility must be applied to points-to analysis if our approach is to remain effective on large systems.
+<P>
+
+First, we use a fast, flow-insensitive, points-to analysis before traditional data-flow analysis. Second, we allow the user to parameterize the points-to analysis so that the resulting data-flow information more closely matches the actual program behavior. Such information cannot easily be obtained by the tool or might otherwise be deemed unsafe. Finally, we present data-flow equations for dealing with pointers to local variables in recursive programs. These equations allow the user to select an arbitrary amount of calling context in order to better trade performance for precision.
+<P>
+
+To validate our techniques, we constructed program slicers for the MUMPS and C programming languages. We present empirical results using our slicing tools on the Comprehensive Health Care System (CHCS), a million-line hospital management system written in MUMPS, and on several C programs with aggressive pointer usage. The results indicate that cost-effective analysis of large programs with pointers is feasible using our techniques.
+<P>
+
+
+
+</div>
+</body>
+</html>

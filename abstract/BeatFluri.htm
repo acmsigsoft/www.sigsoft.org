@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+Software systems have to evolve over their life-cycle or they become
+progressively less useful. The reasons of why software is continuously
+changed are manifold: Features are added or adapted because of
+changing requirements; bugs have to be fixed because of faults in the
+software; or the software has to be migrated because of
+modernization. One negative effect of the continuing change is the
+software aging phenomenon. As software is changed from people unaware
+of the initial design concepts and, mostly, under time-pressure
+software becomes larger, more complex, and less understandable. As a
+result, in the last decade, several techniques have been developed to
+understand the negative impact of continuing change by analyzing
+change in general and source code change in particular.
+<p>
+The approaches developed so far suffer from the coarse-grained
+information available for changes. They rely on data provided by
+versioning systems, which keep track of changes by storing the text
+differences of a particular file. Changes at the level of source code
+entities are not considered. In addition, a precise definition and a
+classification of source code changes are still missing. Both are key
+to extract and analyze source code changes, and eventually understand
+the negative impact of continuing change. We therefore claim:
+Extracting, classifying, and analyzing fine-grained source code
+changes from the history of software systems provide useful insights
+into problems of continuing change and can identify support mechanisms
+to reduce them.
+<p>
+The key contribution of this dissertation is change distilling, a
+methodology to define, classify, extract, and analyze fine-grained
+source code changes. Change distilling provides a taxonomy of source
+code changes which defines source code change types according to tree
+edit operations in the abstract syntax tree. Our change distilling
+algorithm applies tree differencing pairwise on subsequent versions of
+abstract syntax trees to extract the tree edit operations.
+<p>
+We provide three empirical experiments to show the benefits of
+extracting fine-grained source code change types. First, we analyze
+the source code and comment co-change behavior in the evolution of
+eight software systems. We show that in cases where comments are
+adapted to source code changes, the related changes happen in the same
+revision. We also show that in half of these software systems API
+comments are adapted several revisions after the source code change
+happened.
+<p>
+Second, we explore whether certain change types appear frequently
+together. For that we use hierarchical agglomerative clustering to
+discover change type patterns and present a catalogue of change type
+patterns. The results from a commercial software system show that
+certain control flow changes are due to source code cleanup
+activities, that exception flow is used differently in different
+system parts, and that API convention changes are spread over many
+releases.
+<p>
+Third, we investigate whether methods exist whose invocations are
+significantly more affected by context and update changes than other
+methods, and whether we can reveal change patterns among these
+invocation changes. We develop an approach that ranks how often
+context and update changes were applied to invocations of a particular
+method and whether these changes were bug fixes. In addition, we
+extract patterns of context and update changes to assess whether they
+can be used to provide valuable change suggestions.
+<p>
+The results of our three software evolution experiments provide enough
+evidence that the analysis of change types helps in understanding
+software evolution and provides means to support developers in their
+daily work.
+</div>
+</body>
+</html>

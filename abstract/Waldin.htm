@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">Programs in a heterogeneous environment communicate by exchanging typed values in messages. When sending and receiving values, a program must translate between the internal representation used in the program and the transfer representation used in a message. Reducing the overhead of translation is a major factor in achieving efficient communication.
+<P>
+
+The importance of using efficient message representations has long been recogized for machine-dependent types such as integers and floating point numbers. The solution is to define multiple transfer representations for a given type and allow programs to negotiate the representation actually used. However, existing systems do not allow multiple representations and negotiation for user-defined types. As shown in this dissertation, negotiating an efficient representation for user-defined types is just as important as for machine-dependent types.
+<P>
+
+The major focus of this dissertation is on choosing the transfer representation
+that has the lowest translation cost. As shown in this dissertation, quantitative cost models for user-defined types are difficult to describe. In contrast, programmers are able to state qualitative preferences among representations that accurately reflect costs. I present a novel language for expressing qualitative preferences and show its application to two relatively complex types: a video display image and a VLSI mask. I also present efficient algorithms for computing the most preferred representation given two sets of preferences. The qualitative model presented here provides many
+of the benefits of a quantitative model, but is simpler and easier to use.
+<P>
+
+To show that negotiation with preferences is practical, I describe a prototype
+implementation of the algorithms and give measurements. I also show how to incorporate negotiation into existing systems.
+<P>
+
+
+
+</div>
+</body>
+</html>

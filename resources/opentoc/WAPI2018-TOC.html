@@ -1,0 +1,173 @@
+
+<!doctype html>
+<head>
+<META http-equiv="Content-Style-Type" content="text/css">
+<title>WAPI '18- Proceedings of the 2nd International Workshop on API Usage and Evolution</title>
+<STYLE type="text/css">
+#DLtoc {
+	font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+	}
+
+#DLheader {
+	}
+#DLheader h1 {
+	font-size:16px;	
+}
+	
+#DLcontent {
+	 font-size:12px;
+	}
+#DLcontent h2 {
+	 font-size:14px;
+	 margin-bottom:5px;
+	}
+#DLcontent h3 {
+	 font-size:12px;
+	 padding-left:20px;
+	 margin-bottom:0px;
+	}
+
+#DLcontent ul{
+	margin-top:0px;
+	margin-bottom:0px;
+	}
+		
+.DLauthors li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLauthors li:after{
+	content:",";
+	}
+.DLauthors li.nameList.Last:after{
+	content:"";
+	}		
+
+.DLabstract {
+	 padding-left:40px;
+	 padding-right:20px;
+	 display:block;
+	}
+
+.DLformats li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLformats li:after{
+	content:",";
+	}
+.DLformats li.formatList.Last:after{
+	content:"";
+	}		
+
+.DLlogo {
+	vertical-align:middle; 
+	padding-right:5px;
+	border:none;
+	}
+	
+.DLcitLink {
+	margin-left:20px;
+	}	
+
+.DLtitleLink {
+	margin-left:20px;
+	}	
+
+.DLotherLink {
+	margin-left:0px;
+	}		
+   
+</STYLE>
+</head>
+<body>
+<div id="DLtoc">
+<div id="DLheader">
+<h1>WAPI '18- Proceedings of the 2nd International Workshop on API Usage and Evolution</h1>
+<a class="DLcitLink" href="https://dl.acm.org/citation.cfm?id=3194793" title="Go to the ACM Digital Library for additional information about this proceeding"><img class="DLlogo" src="https://dl.acm.org/img/dllogo.png" alt="Digital Library logo" height="30" width="30">Full Citation in the ACM Digital Library</a>
+</div>
+<div id="DLcontent">
+<h2>SESSION: Keynote</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N654186" title="Get the Full Text from the ACM Digital Library">The changing landscape of refactoring research in the last decade: keynote of the 2nd international workshop on API usage and evolution (WAPI'18)</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Danny Dig</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In the last decade refactoring research has seen exponential growth. I will attempt to map this vast landscape and the advances that the community has made by answering questions such as who does what, when, where, why, and how. I will muse on some of the factors contributing to the growth of the field, the adoption of research into industry, and the lessons that we learned along this journey. This will inspire and equip you so that you can make a difference, with people who make a difference, at a time when it makes a difference.</p></div> </div>
+<h2>SESSION: API evolution</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N654187" title="Get the Full Text from the ACM Digital Library">Non-atomic refactoring and software sustainability</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Titus Winters</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Sustainability is the ability of a project / codebase / organization to react to necessary changes over its expected lifespan. At a large enough scale, or with enough disconnect between dependencies, sustainability comes from application of both technical and non-technical approaches. On the technical side, I advocate for restraint among API providers on making arbitrary changes, and use of non-atomic refactoring techniques when more invasive changes are required; such techniques are employed in many Google projects, and in programming languages like Go and C++, to allow more flexible changes to language standards over time. On the non-technical side, I argue for a clear separation of responsibilities (providers need to do the bulk of the work for the update), as well as a growing need to document acceptable usage of an API, be it a library or programming language. In many languages, there are very few changes to an API that are provably safe without this idea: just because a user's code currently works does not mean that it is supported and can be expected to continue to work indefinitely under maintenance. Taken together, these two approaches form what I believe to be a minimum set of requirements when approaching software sustainability.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N654188" title="Get the Full Text from the ACM Digital Library">On software modernisation due to library obsolescence</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Simos Gerasimou</li>
+<li class="nameList">Maria Kechagia</li>
+<li class="nameList">Dimitris Kolovos</li>
+<li class="nameList">Richard Paige</li>
+<li class="nameList Last">Georgios Gousios</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Software libraries, typically accessible through Application Programming Interfaces (APIs), enhance modularity and reduce development time. Nevertheless, their use reinforces system dependency on third-party software. When libraries become obsolete or their APIs change, performing the necessary modifications to dependent systems, can be time-consuming, labour intensive and error-prone. In this paper, we propose a methodology that reduces the effort developers must spend to mitigate library obsolescence. We describe the steps comprising the methodology, i.e., source code analysis, visualisation of hot areas, code-based transformation, and verification of the modified system. Also, we present some preliminary results and describe our plan for developing a fully automated software modernisation approach.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N654189" title="Get the Full Text from the ACM Digital Library">Exploring API: client co-evolution</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Anna Maria Eilertsen</li>
+<li class="nameList Last">Anya Helene Bagge</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Software libraries evolve over time, as do their APIs and the clients that use them. Studying this <i>co-evolution</i> of APIs and API clients can give useful insights into both how to manage the co-evolution, and how to design software so that it is more resilient against API changes.</p> <p>In this paper, we discuss problems and challenges of API and client code co-evolution, and the tools and methods we will need to resolve them.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N654180" title="Get the Full Text from the ACM Digital Library">Discovering API usability problems at scale</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Emerson Murphy-Hill</li>
+
+<li class="nameList">Caitlin Sadowski</li>
+<li class="nameList">Andrew Head</li>
+<li class="nameList">John Daughtry</li>
+<li class="nameList">Andrew Macvean</li>
+<li class="nameList">Ciera Jaspan</li>
+<li class="nameList Last">Collin Winter</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Software developers' productivity can be negatively impacted by using APIs incorrectly. In this paper, we describe an analysis technique we designed to find API usability problems by comparing successive file-level changes made by individual software developers. We applied our tool, StopMotion, to the file histories of real developers doing real tasks at Google. The results reveal several API usability challenges including simple typos, conceptual API misalignments, and conflation of similar APIs.</p></div> </div>
+<h2>SESSION: API learning &#38; analysis</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N654181" title="Get the Full Text from the ACM Digital Library">Web APIs - challenges, design points, and research opportunities: invited talk at the 2nd international workshop on API usage and evolution (WAPI '18)</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Erik Wittern</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><i>Web Application Programming Interfaces</i> (web APIs) provide programmatic, network-based access to remote data or functionalities. Applications, for example, use the Google Places API to learn about nearby establishments, use the Twitter, Instagram, or Facebook API to connect users with friends and family, or use the Stripe API to accept end-user payments. Increasingly, applications themselves consist of micro-services that expose their capabilities to one another using web APIs.</p> <p>In comparison to library APIs, which are a common subject of software engineering research, web APIs present unique challenges - both for providers and consumers - that are arguably much less explored yet [3]. For one, in web APIs, providers control both the API and the runtime providing the capabilities exposed by the API. In consequence, providers may extend, change, or even remove these capabilities or the API, with possibly severe effects for consuming applications. In contrast, applications typically depend on specific versions of software libraries, which can be used even as the library evolves. Being controlled by another party and invoked via network, web API consumers also have to consider and possibly mitigate varying <i>quality of service</i> (QoS) characteristics. Primarily, the availabilities and response times of web APIs change over time, possibly impacting application performance or functionality. Furthermore, the use of library APIs is eased by mechanisms like auto-complete or IDE-integrated documentation (at least in typed languages). In contrast, web APIs commonly lack machine-understandable specifications and consume and provide data in the form of strings. To correctly use a web API, developers have to familiarize with semi-structured documentation pages, often written in HTML - there are only few IDE-based error-checking approaches for web APIs yet [2]. Whereas for many programming languages central package manager services provide unified access to available libraries (think Maven for Java, npm for JavaScript, or RubyGems for Ruby), comprehensive listings of web APIs do not exist, hardening their discovery and selection.</p> <p>In this talk, we outline the characteristics of web APIs causing these challenges. We discuss relevant design points, both for providers and consumers, how these design points have been implemented by different web API paradigms in recent years, and recent attempts to bride these paradigms [1]. Throughout the talk, we give examples of our research to address web API-related challenges. Our goal is to inspire WAPI attendees to take on some of the many research opportunities surrounding web APIs.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N654182" title="Get the Full Text from the ACM Digital Library">Where does Google find API documentation?</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Christoph Treude</li>
+<li class="nameList Last">Maur&#237;cio Aniche</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The documentation of popular APIs is spread across many formats, from vendor-curated reference documentation to Stack Overflow threads. For developers, it is often not obvious from where a particular piece of information can be retrieved. To understand this documentation landscape, we systematically conducted Google searches for the elements of ten popular APIs. We found that their documentation is widely dispersed among many sources, that GitHub and Stack Overflow play a prominent role among the search results, and that most sources are quick to document new API functionalities. These findings inform API vendors about where developers find documentation about their products, they inform developers about places to look for documentation, and they enable researchers to further study the software documentation landscape.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N654183" title="Get the Full Text from the ACM Digital Library">Extending existing inference tools to mine dynamic APIs</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Ziyad Alsaeed</li>
+<li class="nameList Last">Michal Young</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>APIs often feature dynamic relations between client and service provider, such as registering for notifications or establishing a connection to a service. Dynamic specification mining techniques attempt to fill gaps in missing or decaying documentation, but current miners are blind to relations established dynamically. Because they cannot recover properties involving these dynamic structures, they may produce incomplete or misleading specifications. We have devised an extension to current dynamic specification mining techniques that ameliorates this shortcoming. The key insight is to monitor not only values dynamically, but also properties to track dynamic data structures that establish new relations between client and service provider. We have implemented this approach as an extension to the instrumentation component of Daikon, the leading example of dynamic invariant mining in the research literature. We evaluated our tool by applying it to selected modules of widely used software systems published on GitHub.</p></div> </div>
+</div>
+</div>
+</body>
+</html>

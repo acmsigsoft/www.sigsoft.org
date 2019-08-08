@@ -1,0 +1,473 @@
+
+<!doctype html>
+<head>
+<META http-equiv="Content-Style-Type" content="text/css">
+<title>ICPE '19- Proceedings of the 2019 ACM/SPEC International Conference on Performance Engineering</title>
+<STYLE type="text/css">
+#DLtoc {
+	font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+	}
+
+#DLheader {
+	}
+#DLheader h1 {
+	font-size:16px;	
+}
+	
+#DLcontent {
+	 font-size:12px;
+	}
+#DLcontent h2 {
+	 font-size:14px;
+	 margin-bottom:5px;
+	}
+#DLcontent h3 {
+	 font-size:12px;
+	 padding-left:20px;
+	 margin-bottom:0px;
+	}
+
+#DLcontent ul{
+	margin-top:0px;
+	margin-bottom:0px;
+	}
+		
+.DLauthors li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLauthors li:after{
+	content:",";
+	}
+.DLauthors li.nameList.Last:after{
+	content:"";
+	}		
+
+.DLabstract {
+	 padding-left:40px;
+	 padding-right:20px;
+	 display:block;
+	}
+
+.DLformats li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLformats li:after{
+	content:",";
+	}
+.DLformats li.formatList.Last:after{
+	content:"";
+	}		
+
+.DLlogo {
+	vertical-align:middle; 
+	padding-right:5px;
+	border:none;
+	}
+	
+.DLcitLink {
+	margin-left:20px;
+	}	
+
+.DLtitleLink {
+	margin-left:20px;
+	}	
+
+.DLotherLink {
+	margin-left:0px;
+	}		
+   
+</STYLE>
+</head>
+<body>
+<div id="DLtoc">
+<div id="DLheader">
+<h1>ICPE '19- Proceedings of the 2019 ACM/SPEC International Conference on Performance Engineering</h1>
+<a class="DLcitLink" href="https://dl.acm.org/citation.cfm?id=3297663" title="Go to the ACM Digital Library for additional information about this proceeding"><img class="DLlogo" src="https://dl.acm.org/img/dllogo.png" alt="Digital Library logo" height="30" width="30">Full Citation in the ACM Digital Library</a>
+</div>
+<div id="DLcontent">
+<h2>SESSION: Keynote &#38; Invited Talks</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678956" title="Get the Full Text from the ACM Digital Library">Software Aging and Software Rejuvenation: Keynote</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Kishor Trivedi</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The study of software failures has now become more important since it has been recognized that computer system outages are more due to software faults than due to hardware faults. The phenome- non of "software aging", in which the state of the software system degrades with time, has been reported in widely used software and also in high-availability and safety-critical systems. The primary causes of this degradation are the exhaustion of operating system resources, data corruption and numerical error accumulation. This may eventually lead to performance degradation of the software system or crash/hang failure or both. To counteract this phenome- non, a proactive approach to fault management, called "software rejuvenation" has been proposed. This essentially involves grace- fully terminating an application or a system and restarting it in a clean internal state. This process removes the accumulated errors and frees up operating system resources. This method therefore avoids or postpones unplanned and potentially expensive system outages due to software aging. In this talk, we discuss methods of evaluating the effectiveness of proactive fault management in operational software systems and determining optimal times to perform rejuvenation.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678957" title="Get the Full Text from the ACM Digital Library">Practical Reliability Analysis of GPGPUs in the Wild: From Systems to Applications</a>
+</h3>
+<ul class="DLauthors">
+ <li class="nameList Last">Evgenia Smirni</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>General Purpose Graphics Processing Units (GPGPUs) have rapidly evolved to enable energy-efficient data-parallel computing for a broad range of scientific areas. While GPUs achieve exascale performance at a stringent power budget, they are also susceptible to soft errors (faults), often caused by high-energy particle strikes, that can significantly affect application output quality. As those applications are normally long-running, investigating the characteristics of GPU errors becomes imperative to better understand the reliability of such systems. In this talk, I will present a study of the system conditions that trigger GPU soft errors using a six-month trace data collected from a large-scale, operational HPC system from Oak Ridge National Lab. Workload characteristics, certain GPU cards, temperature and power consumption could be indicative of GPU faults, but it is non-trivial to exploit them for error prediction. Motivated by these observations and challenges, I will show how machine-learning-based error prediction models can capture the hidden interactions among system and workload properties. The above findings beg the question: how can one better understand the resilience of applications if faults are bound to happen? To this end, I will illustrate the challenges of comprehensive fault injection in GPGPU applications and outline a novel fault injection solution that captures the error resilience profile of GPGPU applications.</p></div> </div>
+<h2>SESSION: Session 1: Performance Modeling</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678958" title="Get the Full Text from the ACM Digital Library">Performance Modelling of an Anonymous and Failure Resilient Fair-Exchange E-Commerce Protocol</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Ohud Almutairi</li>
+<li class="nameList Last">Nigel Thomas</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>This paper explores a type of non-repudiation protocol, called an anonymous and failure resilient fair-exchange e-commerce protocol, which guarantees a fair-exchange between two parties in an e-commerce environment. Models are formulated using the PEPA formalism to investigate the performance overheads introduced by the security properties and behaviour of the protocol. The PEPA eclipse plug-in is used to support the creation of the PEPA models for the security protocol and the automatic calculation of the performance measures identified for the protocol models.</p></div> </div>
+<h2>SESSION: Session 2: Cloud Computing</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678959" title="Get the Full Text from the ACM Digital Library">Performance Evaluation of Multi-Path TCP for Data Center and Cloud Workloads</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Lucas Chaufournier</li>
+<li class="nameList">Ahmed Ali-Eldin</li>
+<li class="nameList">Prateek Sharma</li>
+<li class="nameList">Prashant Shenoy</li>
+<li class="nameList Last">Don Towsley</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Today's cloud data centers host a wide range of applications including data analytics, batch processing, and interactive processing. These applications require high throughput, low latency, and high reliability from the network. Satisfying these requirements in the face of dynamically varying network conditions remains a challenging problem. Multi-Path TCP (MPTCP) is a recently proposed IETF extension to TCP that divides a conventional TCP flow into multiple subflows so as to utilize multiple paths over the network. Despite the theoretical and practical benefits of MPTCP, its effectiveness for <i>cloud applications</i> and environments remains unclear as there has been little work to quantify the benefits of MPTCP for real cloud applications. We present a broad empirical study of the effectiveness and feasibility of MPTCP for data center and cloud applications, under different network conditions. Our results show that while MPTCP provides useful bandwidth aggregation, congestion avoidance, and improved resiliency for some cloud applications, these benefits do not apply uniformly across applications, especially in cloud settings.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678950" title="Get the Full Text from the ACM Digital Library">Performance Modeling for Cloud Microservice Applications</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Anshul Jindal</li>
+<li class="nameList">Vladimir Podolskiy</li>
+<li class="nameList Last">Michael Gerndt</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Microservices enable a fine-grained control over the cloud applications that they constitute and thus became widely-used in the industry. Each microservice implements its own functionality and communicates with other microservices through language- and platform-agnostic API. The resources usage of microservices varies depending on the implemented functionality and the workload. Continuously increasing load or a sudden load spike may yield a violation of a service level objective (SLO). To characterize the behavior of a microservice application which is appropriate for the user, we define a <i>MicroService Capacity (MSC)</i> as a maximal rate of requests that can be served without violating SLO.</p> <p>The paper addresses the <i>challenge of identifying MSC individually for each microservice</i>. Finding individual capacities of microservices ensures the flexibility of the capacity planning for an application. This challenge is addressed by <i>sandboxing</i> a microservice and building its performance model. This approach was implemented in a tool <b>Terminus</b>. The tool estimates the capacity of a microservice on different deployment configurations by conducting a limited set of load tests followed by fitting an appropriate regression model to the acquired performance data. The evaluation of the microservice performance models on microservices of four different applications shown relatively accurate predictions with mean absolute percentage error (MAPE) less than 10%.</p> <p>The results of the proposed performance modeling for individual microservices are deemed as a major input for the microservice application performance modeling.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678951" title="Get the Full Text from the ACM Digital Library">Characterization of a Big Data Storage Workload in the Cloud</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Sacheendra Talluri</li>
+<li class="nameList">Alicja &#321;uszczak</li>
+
+<li class="nameList">Cristina L. Abad</li>
+<li class="nameList Last">Alexandru Iosup</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The proliferation of big data processing platforms has led to radically different system designs, such as MapReduce and the newer Spark. Understanding the workloads of such systems facilitates tuning and could foster new designs. However, whereas MapReduce workloads have been characterized extensively, relatively little public knowledge exists about the characteristics of Spark workloads in representative environments. To address this problem, in this work we collect and analyze a 6-month Spark workload from a major provider of big data processing services, Databricks. Our analysis focuses on a number of key features, such as the long-term trends of reads and modifications, the statistical properties of reads, and the popularity of clusters and of file formats. Overall, we present numerous findings that could form the basis of new systems studies and designs. Our quantitative evidence and its analysis suggest the existence of daily and weekly load imbalances, of heavy-tailed and bursty behaviour, of the relative rarity of modifications, and of proliferation of big data specific formats.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678952" title="Get the Full Text from the ACM Digital Library">How is Performance Addressed in DevOps?</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Cor-Paul Bezemer</li>
+<li class="nameList">Simon Eismann</li>
+<li class="nameList">Vincenzo Ferme</li>
+<li class="nameList">Johannes Grohmann</li>
+<li class="nameList">Robert Heinrich</li>
+<li class="nameList">Pooyan Jamshidi</li>
+<li class="nameList">Weiyi Shang</li>
+<li class="nameList">Andr&#233; van Hoorn</li>
+<li class="nameList">Monica Villavicencio</li>
+<li class="nameList">J&#252;rgen Walter</li>
+<li class="nameList Last">Felix Willnecker</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>DevOps is a modern software engineering paradigm that is gaining widespread adoption in industry. The goal of DevOps is to bring software changes into production with a high frequency and fast feedback cycles. This conflicts with software quality assurance activities, particularly with respect to performance. For instance, performance evaluation activities --- such as load testing --- require a considerable amount of time to get statistically significant results.</p> <p>We conducted an industrial survey to get insights into how performance is addressed in industrial DevOps settings. In particular, we were interested in the frequency of executing performance evaluations, the tools being used, the granularity of the obtained performance data, and the use of model-based techniques. The survey responses, which come from a wide variety of participants from different industry sectors, indicate that the complexity of performance engineering approaches and tools is a barrier for wide-spread adoption of performance analysis in DevOps. The implication of our results is that performance analysis tools need to have a short learning curve, and should be easy to integrate into the DevOps pipeline in order to be adopted by practitioners.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678953" title="Get the Full Text from the ACM Digital Library">Overload Protection of Cloud-IoT Applications by Feedback Control of Smart Devices</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Manuel Gotin</li>
+<li class="nameList">Dominik Werle</li>
+<li class="nameList">Felix L&#246;sch</li>
+<li class="nameList">Anne Koziolek</li>
+<li class="nameList Last">Ralf Reussner</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>One of the most common usage scenarios for Cloud-IoT applications is Sensing-as-a-Service, which focuses on the processing of sensor data in order to make it available for other applications. Auto-scaling is a popular runtime management technique for cloud applications to cope with a varying resource demand by provisioning resources in an autonomous manner. However, if an auto-scaling system cannot provide the required resources, e.g., due to cost constraints, the cloud application is overloaded, which impacts its performance and availability. We present a feedback control mechanism to mitigate and recover from overload situations by adapting the send rate of smart devices in consideration of the current processing rate of the cloud application. This mechanism supports a coupling with the widely used threshold-based auto-scaling systems. In a case study, we demonstrate the capability of the approach to cope with overload scenarios in a realistic environment. Overall, we consider this approach as a novel tool for runtime managing cloud applications.</p></div> </div>
+<h2>SESSION: Session 3: High Performance Computing</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678954" title="Get the Full Text from the ACM Digital Library">Simultaneous Solving of Batched Linear Programs on a GPU</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Amit Gurung</li>
+<li class="nameList Last">Rajarshi Ray</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Linear Programs (LPs) appear in a large number of applications. Offloading the LP solving tasks to a GPU is viable to accelerate an application's performance. Existing work on offloading and solving an LP on a GPU shows that performance can be accelerated only for large LPs (typically 500 constraints, 500 variables and above). This paper is motivated from applications having to solve small LPs but many of them. Existing techniques fail to accelerate such applications using GPU. We propose a batched LP solver in CUDA to accelerate such applications and demonstrate its utility in a use case - state-space exploration of models of control systems design. A performance comparison of The batched LP solver against sequential solving in CPU using the open source solver GLPK (GNU Linear Programming Kit) and the CPLEX solver from IBM is also shown. The evaluation on selected LP benchmarks from the Netlib repository displays a maximum speed-up of 95x and 5x with respect to CPLEX and GLPK solver respectively, for a batch of 1<i>e</i>5 LPs.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678965" title="Get the Full Text from the ACM Digital Library">A Study of Core Utilization and Residency in Heterogeneous Smart Phone Architectures</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Joseph Whitehouse</li>
+<li class="nameList">Qinzhe Wu</li>
+<li class="nameList">Shuang Song</li>
+<li class="nameList">Eugene John</li>
+<li class="nameList">Andreas Gerstlauer</li>
+<li class="nameList Last">Lizy K. John</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In recent years, the smart phone platform has seen a rise in the number of cores and the use of heterogeneous clusters as in the Qualcomm Snapdragon, Apple A10 and the Samsung Exynos processors. This paper attempts to understand characteristics of mobile workloads, with measurements on heterogeneous multicore phone platforms with big and little cores. It answers questions such as the following: (i) Do smart phones need multiple cores of different types (eg: big or little)? (ii) Is it energy-efficient to operate with more cores (with less time) or fewer cores even if it might take longer? (iii)What are the best frequencies to operate the cores considering energy efficiency? (iv) Do mobile applications need out-of-order speculative execution cores with complex branch prediction? (v) Is IPC a good performance indicator for early design tradeoff evaluation while working on mobile processor design?</p> <p>Using Geekbench and more than 3 dozen Android applications, and the Workload Automation tool from ARM, we measure core utilization, frequency residencies, and energy efficiency characteristics on two leading edge smart phones. Many characteristics of smartphone platforms are presented, and architectural implications of the observations as well as design considerations for future mobile processors are discussed. A key insight is that multiple big and complex cores are beneficial both from a performance as well as an energy point of view in certain scenarios. It is seen that 4 big cores are utilized during application launch and update phases of applications. Similarly, reboot using all 4 cores at maximum performance provides latency advantages. However, it consumes higher power and energy, and reboot with 2 cores was seen to be more energy efficient than reboot with 1 or 4 cores. Furthermore, inaccurate branch prediction is seen to result in up to 40% mis-speculated instructions in many applications, suggesting that it is important to improve the accuracy of branch predictors in mobile processors. While absolute IPCs are observed to be a poor predictor of benchmark scores, relative IPCs are useful for estimating the impact of microarchitectural changes on benchmark scores.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678966" title="Get the Full Text from the ACM Digital Library">Analysis and Modeling of Collaborative Execution Strategies for Heterogeneous CPU-FPGA Architectures</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Sitao Huang</li>
+<li class="nameList">Li-Wen Chang</li>
+<li class="nameList">Izzat El Hajj</li>
+<li class="nameList">Simon Garcia de Gonzalo</li>
+<li class="nameList">Juan G&#243;mez-Luna</li>
+<li class="nameList">Sai Rahul Chalamalasetti</li>
+
+<li class="nameList">Mohamed El-Hadedy</li>
+<li class="nameList">Dejan Milojicic</li>
+<li class="nameList">Onur Mutlu</li>
+<li class="nameList">Deming Chen</li>
+<li class="nameList Last">Wen-mei Hwu</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Heterogeneous CPU-FPGA systems are evolving towards tighter integration between CPUs and FPGAs for improved performance and energy efficiency. At the same time, programmability is also improving with High Level Synthesis tools (e.g., OpenCL Software Development Kits), which allow programmers to express their designs with high-level programming languages, and avoid time-consuming and error-prone register-transfer level (RTL) programming. In the traditional loosely-coupled accelerator mode, FPGAs work as offload accelerators, where an entire kernel runs on the FPGA while the CPU thread waits for the result. However, tighter integration of the CPUs and the FPGAs enables the possibility of fine-grained collaborative execution, i.e., having both devices working concurrently on the same workload. Such collaborative execution makes better use of the overall system resources by employing both CPU threads and FPGA concurrency, thereby achieving higher performance. In this paper, we explore the potential of collaborative execution between CPUs and FPGAs using OpenCL High Level Synthesis. First, we compare various collaborative techniques (namely, data partitioning and task partitioning), and evaluate the tradeoffs between them. We observe that choosing the most suitable partitioning strategy can improve performance by up to 2x. Second, we study the impact of a common optimization technique, kernel duplication, in a collaborative CPU-FPGA context. We show that the general trend is that kernel duplication improves performance until the memory bandwidth saturates. Third, we provide new insights that application developers can use when designing CPU-FPGA collaborative applications to choose between different partitioning strategies. We find that different partitioning strategies pose different tradeoffs (e.g., task partitioning enables more kernel duplication, while data partitioning has lower communication overhead and better load balance), but they generally outperform execution on conventional CPU-FPGA systems where no collaborative execution strategies are used. Therefore, we advocate even more integration in future heterogeneous CPU-FPGA systems (e.g., OpenCL 2.0 features, such as fine-grained shared virtual memory).</p></div> </div>
+<h2>SESSION: Session 4: Performance and AI</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678967" title="Get the Full Text from the ACM Digital Library">Analyzing and Optimizing Java Code Generation for Apache Spark Query Plan</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Kazuaki Ishizaki</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Big data processing frameworks have received attention because of the importance of high performance computation. They are expected to quickly process a huge amount of data in memory with a simple programming model in a cluster. Apache Spark is becoming one of the most popular frameworks. Several studies have analyzed Spark programs and optimized their performance. Recent versions of Spark generate optimized Java code from a Spark program, but few research works have analyzed and improved such generated code to achieve better performance. Here, two types of problems were analyzed by inspecting generated code, namely, access to column-oriented storage and to a primitive-type array. The resulting performance issues in the generated code and were analyzed, and optimizations that can eliminate inefficient code were devised to solve the issues. The proposed optimizations were then implemented for Spark. Experimental results with the optimizations on a cluster of five Intel machines indicated performance improvement by up to 1.4x for TPC-H queries and by up to 1.4x for machine-learning programs. These optimizations have since been integrated into the release version of Apache Spark 2.3.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678968" title="Get the Full Text from the ACM Digital Library">AI Based Performance Benchmarking &#38; Analysis of Big Data and Cloud Powered Applications: An in Depth View</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Jayanti Vemulapati</li>
+<li class="nameList">Anuruddha S. Khastgir</li>
+<li class="nameList Last">Chethana Savalgi</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Big data analytics platforms on cloud are becoming mainstream technology enabling cost-effective rapid deployment of customer's Big Data applications delivering quicker insights from their data. It is, therefore, even more imperative that we have high performant platform infrastructure and application at a reasonable cost. This is only possible if we make a transition from traditional approach to execute and measure performance by adopting new AI techniques such as Machine Learning (ML) &#38; predictive approach to performance benchmarking for every application domain.</p> <p>This paper proposes a high-level conceptual model for automated performance benchmarking which includes execution engine that has been designed to support a self-service model covering automated benchmarking in every application domain. The automated engine is supported by performance scaling recommendations via prescriptive analytics from real performance data set.</p> <p>We furthermore extended the recommendation capabilities of our self-service automated engine by introducing predictive analytics for making it more flexible in addressing 'what-if' scenarios to predict 'Right Scale' with measurement of "Performance Cost Ratio" (PCR). Finally, we also present some real-world industry examples which have seen the performance benefits in their applications with the recommendations given by our proposed model.</p></div> </div>
+<h2>SESSION: Session 5: Fishbowl Panel: AI and Performance</h2>
+<div class="DLabstract"> </div>
+<h2>SESSION: Session 6: Profiling and Monitoring</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678969" title="Get the Full Text from the ACM Digital Library">SPEC CPU2017: Performance, Event, and Energy Characterization on the Core i7-8700K</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Ranjan Hebbar S R</li>
+<li class="nameList Last">Aleksandar Milenkovi&#263;</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Computer engineers in academia and industry rely on a standardized set of benchmarks to quantitatively evaluate the performance of computer systems and research prototypes. SPEC CPU2017 is the most recent incarnation of standard benchmarks designed to stress a system's processor, memory subsystem, and compiler. This paper describes the results of measurement-based studies focusing on characterization, performance, and energy-efficiency analyses of SPEC CPU2017 on the Intel's Core i7-8700K. Intel and GNU compilers are used to create executable files utilized in performance studies. The results show that executables produced by the Intel compilers are superior to those produced by GNU compilers. We characterize all the benchmarks, perform a top-down microarchitectural analysis to identify performance bottlenecks, and test benchmark scalability with respect to performance and energy. Findings from these studies can be used to guide future performance evaluations and computer architecture research</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678960" title="Get the Full Text from the ACM Digital Library">Profiling and Tracing Support for Java Applications</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Andy Nisbet</li>
+<li class="nameList">Nuno Miguel Nobre</li>
+<li class="nameList">Graham Riley</li>
+<li class="nameList Last">Mikel Luj&#225;n</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We demonstrate the feasibility of undertaking performance evaluations for JVMs using: (1) a hybrid JVM/OS tool, such as async-profiler, (2) OS centric profiling and tracing tools based on Linux perf, and (3) the <i>Extended Berkeley Packet Filter Tracing</i> (eBPF) framework where we demonstrate the rationale behind the standard offwaketime tool, for analysing the causes of blocking latencies, and our own eBPF-based tool bcc-java, that relates changes in microarchitecture performance counter values to the execution of individual JVM and application threads at low overhead.</p> <p>The relative execution time overheads of the performance tools are illustrated for the DaCapo-bach-9.12 benchmarks with OpenJDK9 on an Intel Xeon E5-2690, running Ubuntu 16.04. Whereas sampling based tools can have up to 25% slowdown using 4kHz frequency, our tool bcc-java has a geometric mean of less than 5%. Only for the avrora benchmark, bcc-java has a significant overhead (37%) due to an unusually high number of futex system calls. Finally, we provide a discussion on the recommended approaches to solve specific performance use-case scenarios.</p></div> </div>
+<h2>SESSION: Session 7: Cloud Computing II</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678961" title="Get the Full Text from the ACM Digital Library">Multi-Objective Mobile Edge Provisioning in Small Cell Clouds</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Vincenzo De Maio</li>
+<li class="nameList Last">Ivona Brandic</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In recent years, Mobile Cloud Computing (MCC) has been proposed as a solution to enhance the capabilities of user equipment (UE), such as smartphones, tablets and laptops. However, offloading to conventional Cloud introduces significant execution delays that are inconvenient in case of near real-time applications. Mobile Edge Computing (MEC) has been proposed as a solution to this problem. MEC brings computational and storage resources closer to the UE, enabling to offload near real-time applications from the UE while meeting strict latency requirements. However, it is very difficult for Edge providers to determine how many Edge nodes are required to provide MEC services, in order to guarantee a high QoS and to maximize their profit. In this paper, we investigate the static provisioning of Edge nodes in a area representing a cellular network in order to guarantee the required QoS to the user without affecting providers' profits. First, we design a model for MEC offloading considering user satisfaction and provider's costs. Then, we design a simulation framework based on this model. Finally, we design a multi-objective algorithm to identify a deployment solution that is a trade-off between user satisfaction and provider profit. Results show that our algorithm can guarantee a user satisfaction above 80%, with a profit for the provider of up 4 times their cost.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678962" title="Get the Full Text from the ACM Digital Library">Performance Prediction of Explicit ODE Methods on Multi-Core Cluster Systems</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Markus Scherg</li>
+<li class="nameList">Johannes Seiferth</li>
+<li class="nameList">Matthias Korch</li>
+<li class="nameList Last">Thomas Rauber</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>When migrating a scientific application to a new HPC system, the program code usually has to be re-tuned to achieve the best possible performance. Auto-tuning techniques are a promising approach to support the portability of performance. Often, a large pool of possible implementation variants exists from which the most efficient variant needs to be selected. Ideally, auto-tuning approaches should be capable of undertaking this task in an efficient manner for a new HPC system and new characteristics of the input data by applying suitable analytic models and program transformations.</p> <p>In this article, we discuss a performance prediction methodology for multi-core cluster applications, which can assist this selection process by significantly reducing the selection effort compared to in-depth runtime tests. The methodology proposed is an extension of an analytical performance prediction model for shared-memory applications introduced in our previous work. Our methodology is based on the execution-cache-memory (ECM) performance model and estimations of intra-node and inter-node communication costs, which we apply to numerical solution methods for ordinary differential equations (ODEs). In particular, we investigate whether it is possible to obtain accurate performance predictions for hybrid MPI/OpenMP implementation variants in order to support the variant selection. We demonstrate that our approach is able to reliably select a set of efficient variants for a given configuration (ODE system, solver and hardware platform) and, thus, to narrow down the search space for possible later empirical tuning.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678963" title="Get the Full Text from the ACM Digital Library">A Cloud Performance Analytics Framework to Support Online Performance Diagnosis and Monitoring Tools</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Amitabha Banerjee</li>
+<li class="nameList Last">Abhishek Srivastava</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Traditionally, performance analysis, de-bugging, triaging, troubleshooting, and optimization are left in the hands of performance experts. The main rationale behind this is that performance engi-neering is considered a specialized do-main expertise, and therefore left to the trained hands of experts. However, this approach requires human manpower to be put behind every performance escala-tion. This is no longer future proof in enterprise environments because of the following reasons: (i) Enterprise customers now expect much quicker performance troubleshooting, particularly in cloud platforms as Soft-ware As A Service (SaaS) offerings where the billing is subscription based, (ii) As products grow more distributed and complex, the number of performance met-rics required to troubleshoot a perfor-mance problem implodes, making it very time consuming for human intervention and analysis, and (iii) Our past experi-ences show that while many customers land up on similar performance issues, the human effort to troubleshoot each of these performance issues in a different infrastructural environment is non-trivial. We believe that data analytics platforms that can quickly mine through performance data and point out potential bottlenecks offer a good solution for non-domain experts to debug and solve a performance issue. In this work, we showcase a cloud based performance data analytics framework which can be leveraged to build tools which analyze and root-cause performance issues in enterprise sys-tems. We describe the architecture of this framework which consists of: (i) A cloud service (which we term as a plugin), (ii) Supporting libraries that may be used to interact with this plugin from end-systems such as computer serv-ers or appliance Virtual Machines (VMs), and (iii) A solution to monitor and ana-lyze the results delivered by the plugin. We demonstrate how this platform can be used to develop different perfor-mance analyses and debugging tools. We provide one example of a tool that we have built on top of this framework and released: VMware Virtual SAN (vSAN) per-formance diagnostics.</p> <p>We specifically discuss how collecting performance data in the cloud from over a thousand deployments, and then analyz-ing to detect performance issues, helped us write rules that can easily detect similar performance issues. Finally, we discuss a framework for monitoring the performance of the rules and improving them.</p></div> </div>
+<h2>SESSION: Session 8: Runtime Adaptation</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678964" title="Get the Full Text from the ACM Digital Library">Performance Oriented Dynamic Bypassing for Intrusion Detection Systems</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Lukas Iffl&#228;nder</li>
+<li class="nameList">Jonathan Stoll</li>
+<li class="nameList">Nishant Rawtani</li>
+<li class="nameList">Veronika Lesch</li>
+<li class="nameList">Klaus-Dieter Lange</li>
+<li class="nameList Last">Samuel Kounev</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Attacks on software systems are becoming more and more frequent, aggressive and sophisticated. With the changing threat landscape, in 2018, organizations are looking at when they will be attacked, not if. Intrusion Detection Systems (IDSs) can help in defending against these attacks. The systems that host IDSs require extensive computing resources as IDSs tend to detect attacks under overloaded conditions wrongfully. With the end of Moore's law and the growing adoption of Internet of Things, designers of security systems can no longer expect processing power to keep up the pace with them. This limitation requires ways to increase the performance of these systems without adding additional compute power. In this work, we present two dynamic and a static approach to bypass IDS for traffic deemed benign. We provide its prototype implementation and evaluate our solution. Our evaluation shows promising results. Performance is increased up to the level of a system without an IDS. Attack detection is within the margin of error from the 100% rate. However, our findings show that dynamic approaches perform best when using software switches. The use of a hardware switch reduces the detection rate and performance significantly.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678975" title="Get the Full Text from the ACM Digital Library">Cachematic - Automatic Invalidation in Application-Level Caching Systems</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Viktor Holmqvist</li>
+<li class="nameList">Jonathan Nilsfors</li>
+<li class="nameList Last">Philipp Leitner</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Caching is a common method for improving the performance of modern web applications. Due to the varying architecture of web applications, and the lack of a standardized approach to cache management, ad-hoc solutions are common. These solutions tend to be hard to maintain as a code base grows, and are a common source of bugs. We present Cachematic, a general purpose application-level caching system with an au- tomatic cache management strategy. Cachematic provides a simple programming model, allowing developers to explic- itly denote a function as cacheable. The result of a cacheable function will transparently be cached without the developer having to worry about cache management. We present algo- rithms that automatically handle cache management, han- dling the cache dependency tree, and cache invalidation. Our experiments showed that the deployment of Cachematic decreased response time for read requests, compared to a manual cache management strategy for a representative case study conducted in collaboration with Bison, an US-based business intelligence company. We also found that, com- pared to the manual strategy, the cache hit rate was in- creased with a factor of around 1.64x. However, we observe a significant increase in response time for write requests. We conclude that automatic cache management as implemented in Cachematic is attractive for read-domminant use cases, but the substantial write overhead in our current proof-of- concept implementation represents a challenge.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678976" title="Get the Full Text from the ACM Digital Library">Performance Scaling of Cassandra on High-Thread Count Servers</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Disha Talreja</li>
+<li class="nameList">Kanishka Lahiri</li>
+<li class="nameList">Subramaniam Kalambur</li>
+<li class="nameList Last">Prakash Raghavendra</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>NoSQL databases are commonly used today in cloud deployments due to their ability to "scale-out" and effectively use distributed computing resources in a data center. At the same time, cloud servers are also witnessing rapid growth in CPU core counts, memory bandwidth, and memory capacity. Hence, apart from scaling out effectively, it's important to consider how such workloads "scale-up" within a single system, so that they can make the best use of available resources. In this paper, we describe our experiences studying the performance scaling characteristics of Cassandra, a popular open-source, column-oriented database, on a single high-thread count dual socket server. We demonstrate that using commonly used benchmarking practices, Cassandra does not scale well on such systems. Next, we show how by taking into account specific knowledge of the underlying topology of the server architecture, we can achieve substantial improvements in performance scalability. We report on how, during the course of our work, we uncovered an area for performance improvement in the official open-source implementation of the Java platform with respect to NUMA awareness. We show how optimizing this resulted in 27% throughput gain for Cassandra under studied configurations. As a result of these optimizations, using standard workload generators, we obtained up to 1.44x and 2.55x improvements in Cassandra throughput over baseline single and dual-socket performance measurements respectively. On wider testing across a variety of workloads, we achieved excellent performance scaling, averaging 98% efficiency within a socket and 90% efficiency at the system-level.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678977" title="Get the Full Text from the ACM Digital Library">Towards Structured Performance Analysis of Industry 4.0 Workflow Automation Resources</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Ajay Kattepur</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Automation and the use of robotic components within business processes is in vogue across retail and manufacturing industries. However, a structured way of analyzing performance improvements provided by automation in complex workflows is still at a nascent stage. In this paper, we consider the common Industry 4.0 automation workflow resource patterns and model them within a hybrid queuing network. The queuing stations are replaced by <i>scale up</i>, <i>scale out</i> and <i>hybrid scale</i> automation patterns, to examine improvements in end-to-end process performance. We exhaustively simulate the throughput, response time, utilization and operating costs at higher concurrencies using Mean Value Analysis (MVA) algorithms. The queues are analyzed for cases with multiple classes, batch/transactional processing and load dependent service demands. These solutions are demonstrated over an exemplar use case of automation in Industry 4.0 warehouse automation workflows. A structured process of automation workflow performance analysis will prove valuable across industrial deployments.</p></div> </div>
+<h2>SESSION: Session 9: Candidates for Best Paper Awards</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678978" title="Get the Full Text from the ACM Digital Library">Profile-based Detection of Layered Bottlenecks</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Tatsushi Inagaki</li>
+<li class="nameList">Yohei Ueda</li>
+<li class="nameList">Takuya Nakaike</li>
+<li class="nameList Last">Moriyoshi Ohara</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Detection of software bottlenecks which hinder utilizing hardware resources is a classic but complex problem due to the layered structures of the software bottlenecks. However, model-based approaches require a performance model given, which is impractical to maintain under today's agile development environment, and profile-based approaches do not handle the layered structures of the software bottlenecks.</p> <p>This paper proposes a novel approach of taking the best of both worlds which extracts a performance model from execution profiles of the target application to detect the layered bottlenecks. We collect a wake-up profile of threads, which samples an event that one thread wakes up another thread, and build a thread dependency graph to detect the layered bottlenecks.</p> <p>We implement our approach of profile-based detection of layered bottlenecks in the Go programming language. We demonstrate that our method can detect software bottlenecks limiting scalability and throughput of state-of-the-art middleware such as a web application server and a permissioned blockchain network, with small amount of the runtime overhead for profile collection.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678979" title="Get the Full Text from the ACM Digital Library">Evaluating Characteristics of CUDA Communication Primitives on High-Bandwidth Interconnects</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Carl Pearson</li>
+<li class="nameList">Abdul Dakkak</li>
+<li class="nameList">Sarah Hashash</li>
+<li class="nameList">Cheng Li</li>
+<li class="nameList">I-Hsin Chung</li>
+<li class="nameList">Jinjun Xiong</li>
+<li class="nameList Last">Wen-Mei Hwu</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Data-intensive applications such as machine learning and analytics have created a demand for faster interconnects to avert the memory bandwidth wall and allow GPUs to be effectively leveraged for lower compute intensity tasks. This has resulted in wide adoption of heterogeneous systems with varying underlying interconnects, and has delegated the task of understanding and copying data to the system or application developer. No longer is a malloc followed by memcpy the only or dominating modality of data transfer; application developers are faced with additional options such as unified memory and zero-copy memory. Data transfer performance on these systems is now impacted by many factors including data transfer modality, system interconnect hardware details, CPU caching state, CPU power management state, driver policies, virtual memory paging efficiency, and data placement.</p> <p>This paper presents Comm|Scope, a set of microbenchmarks designed for system and application developers to understand memory transfer behavior across different data placement and exchange scenarios. Comm|Scope comprehensively measures the latency and bandwidth of CUDA data transfer primitives, and avoids common pitfalls in ad-hoc measurements by controlling CPU caches, clock frequencies, and avoids measuring synchronization costs imposed by the measurement methodology where possible. This paper also presents an evaluation of Comm|Scope on systems featuring the POWER and x86 CPU architectures and PCIe 3, NVLink 1, and NVLink 2 interconnects. These systems are chosen as representative configurations of current high-performance GPU platforms. Comm|Scope measurements can serve to update insights about the relative performance of data transfer methods on current systems. This work also reports insights for how high-level system design choices affect the performance of these data transfers, and how developers can optimize applications on these systems.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678970" title="Get the Full Text from the ACM Digital Library">Measuring the Energy Efficiency of Transactional Loads on GPGPU</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">J&#243;akim von Kistowski</li>
+<li class="nameList">Johann Pais</li>
+<li class="nameList">Tobias Wahl</li>
+<li class="nameList">Klaus-Dieter Lange</li>
+<li class="nameList">Hansfried Block</li>
+<li class="nameList">John Beckett</li>
+<li class="nameList Last">Samuel Kounev</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>General Purpose Graphics Processing Units (GPGPUs) are becoming more and more common in current servers and data centers, which in turn consume a significant amount of electrical power. Measuring and benchmarking this power consumption is important as it helps with optimization and selection of these servers. However, benchmarking and comparing the energy efficiency of GPGPU workloads is challenging as standardized workloads are rare and standardized power and efficiency measurement methods and metrics do not exist. In addition, not all GPGPU systems run at maximum load all the time. Systems that are utilized in transactional, request driven workloads, for example, can run at lower utilization levels. Existing benchmarks for GPGPU systems primarily consider performance and are intended only to run at maximum load. They do not measure performance or energy efficiency at other loads. In turn, server energy-efficiency benchmarks that consider multiple load levels do not address GPGPUs.</p> <p>This paper introduces a measurement methodology for servers with GPGPU accelerators that considers multiple load levels for transactional workloads. The methodology also addresses verifiability of results in order to achieve comparability of different device solutions. We analyze our methodology on three different systems with solutions from two different accelerator vendors. We investigate the efficacy of different methods of load levels scaling and our methodology's reproducibility. We show that the methodology is able to produce consistent and reproducible results with a maximum coefficient of variation of 1.4% regarding power consumption.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678971" title="Get the Full Text from the ACM Digital Library">Bottleneck Identification and Performance Modeling of OPC UA Communication Models</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Andreas Burger</li>
+<li class="nameList">Heiko Koziolek</li>
+<li class="nameList">Julius R&#252;ckert</li>
+<li class="nameList">Marie Platenius-Mohr</li>
+<li class="nameList Last">G&#246;sta Stomberg</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The OPC UA communication architecture is currently becoming an integral part of industrial automation systems, which control complex production processes, such as electric power generation or paper production. With a recently released extension for pub/sub communication, OPC UA can now also support fast cyclic control applications, but the bottlenecks of OPC UA implementations and their scalability on resource-constrained industrial devices are not yet well understood. Former OPC UA performance evaluations mainly concerned client/server round-trip times or focused on jitter, but did not explore resource bottlenecks or create predictive performance models. We have carried out extensive performance measurements with OPC UA client/server and pub/sub communication and created a CPU utilization prediction model based on linear regression that can be used to size hardware environments. We found that the server CPU is the main bottleneck for OPC UA pub/sub communication, but allows a throughput of up to 40,000 signals per second on a Raspberry Pi Zero. We also found that the client/server session management overhead can severely impact performance, if more than 20 clients access a single server.</p></div> </div>
+<h2>SESSION: Session 10: Performance Optimization</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678972" title="Get the Full Text from the ACM Digital Library">Yardstick: A Benchmark for Minecraft-like Services</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Jerom van der Sar</li>
+<li class="nameList">Jesse Donkervliet</li>
+<li class="nameList Last">Alexandru Iosup</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Online gaming applications entertain hundreds of millions of daily active players and often feature vastly complex architecture. Among online games, Minecraft-like games simulate unique (e.g., modifiable) environments, are virally popular, and are increasingly provided as a service. However, the performance of Minecraft-like services, and in particular their scalability, is not well understood. Moreover, currently no benchmark exists for Minecraft-like games. Addressing this knowledge gap, in this work we design and use the Yardstick benchmark to analyze the performance of Minecraft-like services. Yardstick is based on an operational model that captures salient characteristics of Minecraft-like services. As input workload, Yardstick captures important features, such as the most-popular maps used within the Minecraft community. Yardstick captures system- and application-level metrics, and derives from them service-level metrics such as frequency of game-updates under scalable workload. We implement Yardstick, and, through real-world experiments in our clusters, we explore the performance and scalability of popular Minecraft-like servers, including the official vanilla server, and the community-developed servers Spigot and Glowstone. Our findings indicate the scalability limits of these servers, that Minecraft-like services are poorly parallelized, and that Glowstone is the least viable option among those tested.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678973" title="Get the Full Text from the ACM Digital Library">Accelerating Database Workloads with DM-WriteCache and Persistent Memory</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Rajesh Tadakamadla</li>
+<li class="nameList">Mikulas Patocka</li>
+<li class="nameList">Toshi Kani</li>
+<li class="nameList Last">Scott J. Norton</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Businesses today need systems that provide faster access to critical and frequently used data. Digitization has led to a rapid explosion of this business data, and thereby an increase in the database footprint. In-memory computing is one possible solution to meet the performance needs of such large databases, but the rate of data growth far exceeds the amount of memory that can hold the data. The computer industry is striving to remain on the cutting edge of technologies that accelerate performance, guard against data loss, and minimize downtime. The evolution towards a memory-centric architecture is driving development of newer memory technologies such as Persistent Memory (aka Storage Class Memory or Non-Volatile Memory [1]), as an answer to these pressing needs. In this paper, we present the use cases of storage class memory (or persistent memory) as a write-back cache to accelerate commit-sensitive online transaction processing (OLTP) database workloads. We provide an overview of Persistent Memory, a new technology that offers current generation of high-performance solutions a low latency-storage option that is byte-addressable. We also introduce the Linux kernel's new feature "DM-WriteCache", a write-back cache decades the computing industry has been researching ways to reduce the performance gap implemented on top of persistent memory solutions. And finally we present data from our tests that demonstrate how this technology adoption can enable existing OLTP applications to scale their performance.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678974" title="Get the Full Text from the ACM Digital Library">Behavior-driven Load Testing Using Contextual Knowledge - Approach and Experiences</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Henning Schulz</li>
+<li class="nameList">Du&#353;an Okanovi&#263;</li>
+<li class="nameList">Andr&#233; van Hoorn</li>
+<li class="nameList">Vincenzo Ferme</li>
+<li class="nameList Last">Cesare Pautasso</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Load testing is widely considered a meaningful technique for performance quality assurance. However, empirical studies reveal that in practice, load testing is not applied systematically, due to the sound expert knowledge required to specify, implement, and execute load tests.</p> <p>Our Behavior-driven Load Testing (BDLT) approach eases load test specification and execution for users with no or little expert knowledge. It allows a user to describe a load test in a template-based natural language and to rely on an automated framework to execute the test. Utilizing the system's contextual knowledge such as workload-influencing events, the framework automatically determines the workload and test configuration. We investigated the applicability of our approach in an industrial case study, where we were able to express four load test concerns using BDLT and received positive feedback from our industrial partner. They understood the BDLT definitions well and proposed further applications, such as the usage for software quality acceptance criteria.</p></div> </div>
+<h2>SESSION: Session 11: Performance Analysis and Simulation</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678985" title="Get the Full Text from the ACM Digital Library">Analyzing Data Structure Growth Over Time to Facilitate Memory Leak Detection</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Markus Weninger</li>
+<li class="nameList">Elias Gander</li>
+<li class="nameList Last">Hanspeter M&#246;ssenb&#246;ck</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Memory leaks are a major threat in modern software systems. They occur if objects are unintentionally kept alive longer than necessary and are often indicated by continuously growing data structures.</p> <p>While there are various state-of-the-art memory monitoring tools, most of them share two critical shortcomings: (1) They have no knowledge about the monitored application's data structures and (2) they support no or only rudimentary analysis of the application's data structures over time.</p> <p>This paper encompasses novel techniques to tackle both of these drawbacks. It presents a domain-specific language (DSL) that allows users to describe arbitrary data structures, as well as an algorithm to detect instances of these data structures in reconstructed heaps. In addition, we propose techniques and metrics to analyze and measure the evolution of data structure instances over time. This allows us to identify those instances that are most likely involved in a memory leak. These concepts have been integrated into AntTracks, a trace-based memory monitoring tool. We present our approach to detect memory leaks in several real-world applications, showing its applicability and feasibility.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678986" title="Get the Full Text from the ACM Digital Library">Memory Centric Characterization and Analysis of SPEC CPU2017 Suite</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Sarabjeet Singh</li>
+<li class="nameList Last">Manu Awasthi</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In this paper, we provide a comprehensive, memory-centric characterization of the SPEC CPU2017 benchmark suite, using a number of mechanisms including dynamic binary instrumentation, measurements on native hardware using hardware performance counters and operating system based tools.</p> <p>We present a number of results including working set sizes, memory capacity consumption and memory bandwidth utilization of various workloads. Our experiments reveal that, on the x86_64 ISA, SPEC CPU2017 workloads execute a significant number of memory related instructions, with approximately 50% of all dynamic instructions requiring memory accesses. We also show that there is a large variation in the memory footprint and bandwidth utilization profiles of the entire suite, with some benchmarks using as much as 16 GB of main memory and up to 2.3 GB/s of memory bandwidth.</p> <p>We perform instruction distribution analysis of the benchmark suite and find that the average instruction count for SPEC CPU2017 workloads is an order of magnitude higher than SPEC CPU2006 ones. In addition, we also find that FP benchmarks of the suite have higher compute requirements: on average, FP workloads execute three times the number of compute operations as compared to INT workloads.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678987" title="Get the Full Text from the ACM Digital Library">Follower Core: A Model To Simulate Large Multicore SoCs</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Tanuj Agarwal</li>
+<li class="nameList">Bill Jones</li>
+<li class="nameList Last">Anasua Bhowmik</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Cycle accurate simulator is a critical tool for processor design and as the complexity and the core count of the processor increase, the simulation becomes extremely time and resource consuming and hence not very practical. Accurate multi-core performance estimation in realistic time is needed for making the right design choices and make high quality performance projections. In this work we present a multi-core simulation model called Follower Core, that helps us to approximate the multi-core simulations by simulating some cores in detail and abstracting out the other cores without reducing the overall activities at the shared resources. This enables us to simulate all the critical shared resources in the multi-core system accurately and hence the detailed core can provide correct performance estimation. The approach is applied over existing simulation models and it reduces the simulation time significantly, especially for long running workloads. The 'Follower Core' model provides an average speed up of 3x compared to baseline and is an accurate approximation of detailed multi-core simulations with a maximum error of 2% with the baseline model and extends our capabilities by improving our coverage and providing flexibilities to run mixed workloads.</p></div> </div>
+<h2>SESSION: Session 12: Modeling, Prediction, Optimization</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678988" title="Get the Full Text from the ACM Digital Library">Predicting Server Power Consumption from Standard Rating Results</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">J&#243;akim von Kistowski</li>
+<li class="nameList">Johannes Grohmann</li>
+<li class="nameList">Norbert Schmitt</li>
+<li class="nameList Last">Samuel Kounev</li>
+
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Data center providers and server operators try to reduce the power consumption of their servers. Finding an energy efficient server for a specific target application is a first step in this regard. Estimating the power consumption of an application on an unavailable server is difficult, as nameplate power values are generally overestimations. Offline power models are able to predict the consumption accurately, but are usually intended for system design, requiring very specific and detailed knowledge about the system under consideration.</p> <p>In this paper, we introduce an offline power prediction method that uses the results of standard power rating tools. The method predicts the power consumption of a specific application for multiple load levels on a target server that is otherwise unavailable for testing. We evaluate our approach by predicting the power consumption of three applications on different physical servers. Our method is able to achieve an average prediction error of 9.49% for three workloads running on real-world, physical servers.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678989" title="Get the Full Text from the ACM Digital Library">Simulation Based Job Scheduling Optimization for Batch Workloads</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Dheeraj Chahal</li>
+<li class="nameList">Benny Mathew</li>
+<li class="nameList Last">Manoj Nambiar</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We present a simulation based approach for scheduling jobs that are part of a batch workflow. Our objective is to minimize the makespan, defined as completion time of the last job to leave the system in a batch workflow with dependencies. The existing job schedulers make scheduling decisions based on available cores, memory size, priority or execution time of jobs. This does not guarantee minimum makespan since contention for resources among concurrently running jobs are ignored. In our approach, prior to scheduling batch jobs on physical servers, we simulate the execution of jobs using a discrete event simulator. The simulator considers available cores and available memory bandwidth on distributed systems to accurately simulate the execution of jobs using resource contention models in a concurrent run. We also propose simulation based job scheduling algorithms that use underlying contention models and minimize the makespan by optimally mapping jobs onto the available nodes. Our approach ensures that job dependencies are adhered to during the simulation. We assess the efficacy of our job scheduling algorithms and contention models by performing experiments on a real cluster. Our experimental results show that simulation based approach improves the makespan by 15% to 35% depending on the nature of workload.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N678980" title="Get the Full Text from the ACM Digital Library">Mowgli: Finding Your Way in the DBMS Jungle</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Daniel Seybold</li>
+<li class="nameList">Moritz Keppler</li>
+<li class="nameList">Daniel Gr&#252;ndler</li>
+<li class="nameList Last">J&#246;rg Domaschka</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Big Data and IoT applications require highly-scalable database management system (DBMS), preferably operated in the cloud to ensure scalability also on the resource level. As the number of existing distributed DBMS is extensive, the selection and operation of a distributed DBMS in the cloud is a challenging task. While DBMS benchmarking is a supportive approach, existing frameworks do not cope with the runtime constraints of distributed DBMS and the volatility of cloud environments. Hence, DBMS evaluation frameworks need to consider DBMS runtime and cloud resource constraints to enable portable and reproducible results. In this paper we present Mowgli, a novel evaluation framework that enables the evaluation of non-functional DBMS features in correlation with DBMS runtime and cloud resource constraints. Mowgli fully automates the execution of cloud and DBMS agnostic evaluation scenarios, including DBMS cluster adaptations. The evaluation of Mowgli is based on two IoT-driven scenarios, comprising the DBMSs Apache Cassandra and Couchbase, nine DBMS runtime configurations, two cloud providers with two different storage backends. Mowgli automates the execution of the resulting 102 evaluation scenarios, verifying its support for portable and reproducible DBMS evaluations. The results provide extensive insights into the DBMS scalability and the impact of different cloud resources. The significance of the results is validated by the correlation with existing DBMS evaluation results.</p></div> </div>
+</div>
+</div>
+</body>
+</html>

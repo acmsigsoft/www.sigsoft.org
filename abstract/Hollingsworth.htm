@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">Software Component Design-for-Reuse:
+A Language-Independent Discipline Applied to Ada
+
+By
+
+Joseph Eugene Hollingsworth, Ph.D.
+<P>
+
+The Ohio State University, 1992
+
+Professor Bruce W. Weide, Adviser
+
+
+In an attempt to improve software quality and programmer productivity, software engineers have focused on improving the software development process.  Another approach to the quality and productivity problem, similar to but crucially different from the software-process approach, is improving the design and implementation of individual components of a system.  In order to achieve improvements one component at a time, this research applies software engineering principles to individual component design.
+<P>
+
+Engineering principles alone are not enough, however.  A software discipline comprising goals, properties, principles and local certification techniques is needed.  Goals are concerned with improvement in the overall software process (e.g., improved programmer productivity).  The properties are those characteristics each component should possess in order to achieve the goals (e.g., composability).  The principles are very detailed language-dependent guidelines that lead the engineer to high-quality component designs and implementations.  Certification techniques are specific methods that permit one-time certification of component possession of the properties.  Local certification techniques permit certification for component C without knowledge of any of Cs clients, and without knowledge of implementation details of any component used in Cs implementation.
+<P>
+
+The RESOLVE/Ada Discipline  for constructing components in Ada  is defined with the goals of improved programmer productivity and systems that are easier to maintain.  There are four component properties: correctness, composability, reusability and understandability.  There are 41 specific principles governing component construction.  Finally, all four properties are shown to be locally certifiable.
+<P>
+
+Locally certifying correctness of component C (i.e., certifying that Cs implementation meets its specification) is the biggest problem.  In the proposed discipline, it requires examining Cs package specification (including embedded comments formally specifying Cs behavior) and the package specification of each component used in Cs implementation  but nothing else.
+<P>
+
+Examination of several existing component libraries and frameworks for constructing components show that some implicitly define parts of a discipline (e.g., some have goals and properties while others have properties and principles).  However, none explicitly defines a discipline and more importantly none even mentions the need for certification, local or not.
+<P>
+
+Numerous certified RESOLVE/Ada components (package specifications and bodies) are provided as examples.
+<P>
+
+
+
+
+</div>
+</body>
+</html>

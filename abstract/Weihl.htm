@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">Maintaining the consistency of long-lived, on-line data is a difficult task, particularly in a distributed system.  This dissertation focuses on atomicity as a fundamental organizational concept for such systems.  It explores an approach in which atomicity is ensured by the data objects shared by concurrent activities; such objects are called atomic objects, and data types whose objects are atomic are called atomic types.  By using information about the behavior of the shared objects, greater concurrency among activities can be permitted.  In addition, by encapsulating the synchronization and recovery needed to support atomicity in the implementations of the shared objects, modularity can be enhanced.
+<P>
+
+This dissertation addresses three fundamental questions:
+
+    - What is an atomic type?
+
+    - How can an atomic type be specified?
+
+    - How can an atomic type be implemented?
+
+Atomicity of activities is a global property of an entire system, while atomicity of types is a local property of individual types.  This dissertation examines three definitions of atomicity for types, each of which is optimal:  not strictly weaker definition of (local) atomicity for types suffices to ensure (global) atomicity of activities.  The definitions of atomicity discussed encompass both serializability and recoverability, and use user-supplied specifications of objects to permit greater concurrency.
+<P>
+
+The specification framework presented in this dissertation divides the specification of a data type into two parts:  the serial specification, which describes how the type behaves in the absence of concurrency and failures, and the behavioral specification, which describes how the type supports atomicity.  This division permits the programmer of an individual activity to ignore how atomicity is achieved, and to focus on the serial behavior of each object.  In addition, the definitions of atomicity permit the behavioral specification of a type to be derived systematically from its serial specification.
+<P>
+
+A novel two-phase locking protocol, covering both synchronization and recovery, is presented and verified.  The protocol uses information about the behavior of objects to achieve greater concurrency than can be achieved with protocols based on read and write operations.  In addition, the protocol permits the results of an operation, as well as its arguments, to be used in determining the appropriate lock mode for the operation.  Furthermore, the protocol permits operations to be both partial and non-deterministic.
+<P>
+
+Finally, several implementations of atomic types are presented, illustrating how existing techniques for synchronization and recovery can be extended to use information about the behavior of objects to increase concurrency.  The dissertation also explores linguistic support for atomic types, analyzing the advantages and disadvantages of alternative approaches.
+<P>
+
+
+
+</div>
+</body>
+</html>

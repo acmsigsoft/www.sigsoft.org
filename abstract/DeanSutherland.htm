@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+Concurrent programming has proven to be difficult. One cause of this difficulty is that the relevant thread usage policy seldom appears either in documents or code comments. A second difficulty is that thread usage policy even when it is known imposes widespread consequences on the code to be written. Finally, finding and removing concurrency faults in existing code is hard.
+<p>
+This thesis introduces thread coloring, a language of discourse useful for concise expression of and reasoning about intended thread usage policies in a wide variety of code. Thread coloring addresses a range of concurrency issues assuring single-thread access, identifying possibly shared data regions and localizing knowledge about roles for threads that have not previously been comprehensively addressed. Using this language, programmers can model design intent about relationships among the roles of threads with respect to segments of executable code and also with respect to shared state. Programmers formally link the model with their code by expressing the model as annotations in that code.
+<p>
+This thesis describes a prototype analysis tool, integrated into an integrated development environment, and its use in case studies to demonstrate that thread coloring is a feasible and practicable approach to expressing and understanding thread usage policies, including complex ones. The tool analyzes consistency between the expressed model and the as-written code, and notifies programmers of discrepancies between them. The case studies use published code to demonstrate that developers can express useful models, identify concurrency faults and assure policy compliance. The thesis includes a demonstration of scaling to a medium-sized program of 140KSLOC and a demonstration of the potential to scale to much larger programs and support composition among analysis results for separately developed components. By limiting the problem scope to thread usage policy, the prototype implementation requires one hundred times fewer annotations than are needed for full functional correctness 6.3 annotations per KSLOC, potentially reduceable in future by another order of magnitude.
+<p>
+This thesis provides five primary contributions to software engineering. First, it provides a language that developers can use to express thread usage policies. Second, it provides a systematic way to improve code quality by assuring that as-written code complies with expressed thread usage policy. Third, it uses a new combination of preexisting techniques to reduce the effort required to express models to very low levels. Fourth, it demonstrates techniques that permit the analysis to operate on very large programs millions of lines of code appear to be within reach. Finally, it demonstrates techniques that permit straightforward and reliable incremental recomputation of results after a program change.
+</div>
+</body>
+</html>

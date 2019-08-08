@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+Integrity and availability are two competing dependability attributes. While some applications require strict integrity, other applications exist, e.g., safety or mission critical systems, where depending on the specific situation availability is more important for dependability than strict integrity. Within our work, we focus on data-centric systems, where availability can be increased by temporarily relaxing data integrity, thereby allowing for certain inconsistencies. Potential inconsistencies are accepted based on constraint validation on replicated copies that are possibly stale in the face of network partitions. Such consistency threats need to be bound and eventually resolved during reconciliation to re-establish a consistent system state.
+<p>
+This dissertation presents a middleware approach to support adaptive dependability by balancing integrity and availability in distributed object systems. The envisaged balancing is based on explicit runtime management of integrity constraints and consistency threats. While the support for adaptive dependability is integrated into the middleware, the application provides the necessary artefacts, e.g., integrity constraints and corresponding metadata, on which trade-off decisions between integrity and availability can be based. Moreover, several plugin-based or even dynamically configurable call-backs allow for runtime interaction between application and middleware in order to perform flexible (in)consistency management within the system.
+<p>
+Runtime configurability and explicitness contribute to separation of concerns and hence to a well-structured system design, robustness, and better maintainability, while generally impairing system performance. Our studies show that the increases in maintainability of some of the more advanced approaches for explicit integrity constraints are certainly worth their performance costs of 1 15% while other approaches might be simply too slow with overheads of up to about 40,000%.
+<p>
+Consistency management based on explicit constraints is the first key part of our adaptive dependability approach. The second major part is an integrated replication service in order to provide fault tolerance for node and link failures. Evaluations of our middleware enhancement show that it is most worth its costs in systems where (i) the read-to-write ratio is high, (ii) the number of replicated nodes in the system is small, and/or (iii) write-performance is not the limiting factor. Moreover, systems can benefit most if they do not require the history of performed operations/applied states in order to reconcile inconsistencies of the system.
+</div>
+</body>
+</html>

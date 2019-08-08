@@ -1,0 +1,381 @@
+
+<!doctype html>
+<head>
+<META http-equiv="Content-Style-Type" content="text/css">
+<title>SEAMS '18- Proceedings of the 13th International Conference on Software Engineering for Adaptive and Self-Managing Systems</title>
+<STYLE type="text/css">
+#DLtoc {
+	font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+	}
+
+#DLheader {
+	}
+#DLheader h1 {
+	font-size:16px;	
+}
+	
+#DLcontent {
+	 font-size:12px;
+	}
+#DLcontent h2 {
+	 font-size:14px;
+	 margin-bottom:5px;
+	}
+#DLcontent h3 {
+	 font-size:12px;
+	 padding-left:20px;
+	 margin-bottom:0px;
+	}
+
+#DLcontent ul{
+	margin-top:0px;
+	margin-bottom:0px;
+	}
+		
+.DLauthors li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLauthors li:after{
+	content:",";
+	}
+.DLauthors li.nameList.Last:after{
+	content:"";
+	}		
+
+.DLabstract {
+	 padding-left:40px;
+	 padding-right:20px;
+	 display:block;
+	}
+
+.DLformats li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLformats li:after{
+	content:",";
+	}
+.DLformats li.formatList.Last:after{
+	content:"";
+	}		
+
+.DLlogo {
+	vertical-align:middle; 
+	padding-right:5px;
+	border:none;
+	}
+	
+.DLcitLink {
+	margin-left:20px;
+	}	
+
+.DLtitleLink {
+	margin-left:20px;
+	}	
+
+.DLotherLink {
+	margin-left:0px;
+	}		
+   
+</STYLE>
+</head>
+<body>
+<div id="DLtoc">
+<div id="DLheader">
+<h1>SEAMS '18- Proceedings of the 13th International Conference on Software Engineering for Adaptive and Self-Managing Systems</h1>
+<a class="DLcitLink" href="https://dl.acm.org/citation.cfm?id=3194133" title="Go to the ACM Digital Library for additional information about this proceeding"><img class="DLlogo" src="https://dl.acm.org/img/dllogo.png" alt="Digital Library logo" height="30" width="30">Full Citation in the ACM Digital Library</a>
+</div>
+<div id="DLcontent">
+<h2>SESSION: Qualities &#38; verification</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665914" title="Get the Full Text from the ACM Digital Library">Compositional verification of self-adaptive cyber-physical systems</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Aimee Borda</li>
+<li class="nameList">Liliana Pasquale</li>
+<li class="nameList">Vasileios Koutavas</li>
+<li class="nameList Last">Bashar Nuseibeh</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Cyber-Physical Systems (CPSs) must often self-adapt to respond to changes in their operating environment. However, using formal verification techniques to provide assurances that critical requirements are satisfied can be computationally intractable due to the large state space of self-adaptive CPSs. In this paper we propose a novel language, <i>Adaptive CSP</i>, to model self-adaptive CPSs modularly and provide a technique to support compositional verification of such systems. Our technique allows system designers to identify (a subset of) the CPS components that can affect satisfaction of given requirements, and define adaptation procedures of these components to preserve the requirements in the face of changes to the system's operating environment. System designers can then use <i>Adaptive CSP</i> to represent the system including potential self-adaptation procedures. The requirements can then be verified only against relevant components, independently from the rest of the system, thus enabling computationally tractable verification. Our technique enables the use of existing formal verification technology to check requirement satisfaction. We illustrate this through the use of FDR, a refinement checking tool. To achieve this, we provide an adequate translation from a subset of <i>Adaptive CSP</i> to the language of FDR. Our technique allows system designers to identify alternative adaptation procedures, potentially affecting different sets of CPS components, for each requirement, and compare them based on correctness and optimality. We demonstrate the feasibility of our approach using a substantive example of a smart art gallery. Our results show that our technique reduces the computational complexity of verifying self-adaptive CPSs and can support the design of adaptation procedures.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665925" title="Get the Full Text from the ACM Digital Library">DeSiRE: further understanding nuances of degrees of satisfaction of non-functional requirements trade-off</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Ross Edwards</li>
+<li class="nameList Last">Nelly Bencomo</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>[&lt;u&gt;Context/Motivation&lt;/u&gt;] Self-adaptive systems (SAS) are being deployed in environments of increasing uncertainty, in which they must adapt reconfiguring themselves in such a way as to continuously fulfil multiple objectives according to changes in the environment. The trade-offs between a system's non-functional requirements (NFRs) need to be done to maximise a system's utility (or equity) with regards to the NFRs, and are key drivers of the adaptation process. Decision-making for multiple objective scenarios frequently uses utility functions as measures of satisfaction of both individual and sets of NFRs, usually resulting in a weighted sum of the different objectives. [&lt;u&gt;Questions/Problems&lt;/u&gt;] However, while adaptations are performed autonomously, the methods for choosing an adaptation are based on the criteria of human expert(s), who are susceptible to bias, subjectivity and/or lack of quantitativeness in their judgements. Thus, there is a need for a non-subjective and quantitative approach to reason about NFR satisfaction in multi-objective self-adaptation without relying on human expertise. Furthermore, human biases can also apply to the relationships between two or more NFRs (e.g. how much the satisfaction of one NFR affects the satisfaction of another), resulting in emergent inaccuracies affecting the decision(s) chosen. [&lt;u&gt;Principal ideas/ results&lt;/u&gt;] This paper presents DeSiRE (Degrees of Satisfaction of NFRs), a purely automated objective statistical approach to quantifying the extent that a requirement is violated or satisfied, and its application to further explore the trade-offs between NFRs in decision making. Experiments using case studies have positive results showing the identification of a Pareto optimal set of candidate solutions, in addition to a ranking of these configurations by their satisfaction of each NFR.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665926" title="Get the Full Text from the ACM Digital Library">RE-STORM: mapping the decision-making problem and non-functional &lt;u&gt;re&lt;/u&gt;quirement&lt;u&gt;s&lt;/u&gt; trade-off to par&lt;u&gt;t&lt;/u&gt;ially &lt;u&gt;o&lt;/u&gt;bse&lt;u&gt;r&lt;/u&gt;vable &lt;u&gt;m&lt;/u&gt;arkov decision processes</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Luis H. Garcia Paucar</li>
+<li class="nameList Last">Nelly Bencomo</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Different model-based techniques have been used to model and underpin requirements management and decision-making strategies under uncertainty for self-adaptive Systems (SASs). The models specify how the partial or total fulfilment of non-functional requirements (NFRs) drive the decision-making process at runtime. There has been considerable progress in this research area. However, precarious progress has been made by the use of models at runtime using machine learning to deal with uncertainty and support decision-making based on new evidence learned during execution. New techniques are needed to systematically revise the current model and the satisficement of its NFRs when empirical evidence becomes available from the monitoring infrastructure. In this paper, we frame the decision-making problem and trade-off specifications of NFRs in terms of Partially Observable Markov Decision Processes (POMDPs) models. The mathematical probabilistic framework based on the concept of POMDPs serves as a runtime model that can be updated with new learned evidence to support reasoning about partial satisficement of NFRs and their trade-off under the new changes in the environment. In doing so, we demonstrate how our novel approach RE-STORM underpins reasoning over uncertainty and dynamic changes during the system's execution.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665927" title="Get the Full Text from the ACM Digital Library">Towards integrating undependable self-adaptive systems in safety-critical environments</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Gereon Weiss</li>
+<li class="nameList">Philipp Schleiss</li>
+<li class="nameList">Daniel Schneider</li>
+<li class="nameList Last">Mario Trapp</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Modern cyber-physical systems (CPS) integrate more and more powerful computing power to master novel applications and adapt to changing situations. A striking example is the recent progression in the automotive market towards autonomous driving. Powerful artificial intelligent algorithms must be executed on high performant parallelized platforms. However, this cannot be employed in a safe way, as the platforms stemming from the consumer electronics (CE) world still lack required dependability and safety mechanisms. In this paper, we present a concept to integrate undependable self-adaptive subsystems into safety-critical environments. For this, we introduce self-adaptation envelopes which manage undependable system parts and integrate within a dependable system. We evaluate our approach by a comprehensive case study of autonomous driving. Thereby, we show that the potential failures of the AUTOSAR Adaptive platform as exemplary undependable system can be handled by our concept. In overall, we outline a way of integrating inherently undependable adaptive systems into safety-critical CPS.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665928" title="Get the Full Text from the ACM Digital Library">K8-scalar: a workbench to compare autoscalers for container-orchestrated database clusters</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Wito Delnat</li>
+<li class="nameList">Eddy Truyen</li>
+<li class="nameList">Ansar Rafique</li>
+<li class="nameList">Dimitri Van Landuyt</li>
+<li class="nameList Last">Wouter Joosen</li>
+ </ul>
+<div class="DLabstract"><div style="display:inline"><p>Although a considerable amount of research exists on auto-scaling of database clusters, the design of an effective auto-scaling strategy requires fine-grained tailoring towards the specific application scenario.</p> <p>This paper presents an easy-to-use and extensible workbench exemplar, named K8-Scalar (Kube-Scalar), which allows researchers to implement and evaluate different self-adaptive approaches to auto-scaling container-orchestrated services. The workbench is based on Docker, a popular technology for easing the deployment of containerized software that also has been positioned as an enabler for reproducible research. The workbench also relies on a container orchestration framework: Kubernetes (K8s), the de-facto industry standard for orchestration and monitoring of elastically scalable container-based services. Finally, it integrates and extends Scalar, a generic testbed for evaluating the scalability of large-scale systems with support for evaluating the performance of autoscalers for database clusters.</p> <p>The paper discusses (i) the architecture and implementation of K8-Scalar and how a particular autoscaler can be plugged in, (ii) sketches the design of a Riemann-based autoscaler for database clusters, (iii) illustrates how to design, setup and analyze a series of experiments to configure and evaluate the performance of this autoscaler for a particular database (i.e., Cassandra) and a particular workload type, and (iv) validates the effectiveness of K8-Scalar as a workbench for accurately comparing the performance of different auto-scaling strategies.</p></div> </div>
+<h2>SESSION: Uncertainty</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665929" title="Get the Full Text from the ACM Digital Library">Managing uncertainty in self-adaptive systems with plan reuse and stochastic search</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Cody Kinneer</li>
+<li class="nameList">Zack Coker</li>
+<li class="nameList">Jiacheng Wang</li>
+<li class="nameList">David Garlan</li>
+<li class="nameList Last">Claire Le Goues</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Many software systems operate in environments where change and uncertainty are the rule, rather than exceptions. Techniques for self-adaptation allow these systems to automatically respond to environmental changes, yet they do not handle changes to the adaptive system itself, such as the addition or removal of adaptation tactics. Instead, changes in a self-adaptive system often require a human planner to redo an expensive planning process to allow the system to continue satisfying its quality requirements under different conditions; automated techniques typically must replan from scratch. We propose to address this problem by reusing prior planning knowledge to adapt in the face of unexpected situations. We present a planner based on genetic programming that reuses existing plans. While reuse of material in genetic algorithms has recently applied successfully in the area of automated program repair, we find that na&iuml;vely reusing existing plans for self-* planning actually results in a loss of utility. Furthermore, we propose a series of techniques to lower the costs of reuse, allowing genetic techniques to leverage existing information to improve planning utility when replanning for unexpected changes.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665920" title="Get the Full Text from the ACM Digital Library">Uncertainty reduction in self-adaptive systems</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Gabriel A. Moreno</li>
+<li class="nameList">Javier C&#225;mara</li>
+<li class="nameList">David Garlan</li>
+<li class="nameList Last">Mark Klein</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Self-adaptive systems depend on models of themselves and their environment to decide whether and how to adapt, but these models are often affected by uncertainty. While current adaptation decision approaches are able to model and reason about this uncertainty, they do not consider ways to <i>reduce</i> it. This presents an opportunity for improving decision-making in self-adaptive systems, because reducing uncertainty results in a better characterization of the current and future states of the system and the environment (at some cost), which in turn supports making better adaptation decisions. We propose <i>uncertainty reduction</i> as the natural next step in uncertainty management in the field of self-adaptive systems. This requires both an approach to decide <i>when</i> to reduce uncertainty, and a catalog of tactics to reduce different kinds of uncertainty. We present an example of such a decision, examples of uncertainty reduction tactics, and describe how uncertainty reduction requires changes to the different activities in the typical self-adaptation loop.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665921" title="Get the Full Text from the ACM Digital Library">Adapting a system with noisy outputs with statistical guarantees</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Ilias Gerostathopoulos</li>
+<li class="nameList">Christian Prehofer</li>
+<li class="nameList Last">Tomas Bures</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Many complex systems are intrinsically stochastic in their behavior which complicates their control and optimization. Current self-adaptation and self-optimization approaches are not tailored to systems that have (i) complex internal behavior that is unrealistic to model explicitly, (ii) noisy outputs, (iii) high cost of bad adaptation decisions, i.e. systems that are both hard <i>and</i> risky to adapt at runtime. In response, we propose to model the system to be adapted as black box and apply state-of-the-art optimization techniques combined with statistical guarantees. Our main contribution is a framework that combines runtime optimization with guarantees obtained from statistical testing and with a method for handling cost of bad adaptation decisions. We evaluate the feasibility of our approach by applying it on an existing traffic navigation self-adaptation exemplar.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665922" title="Get the Full Text from the ACM Digital Library">Trace checking for dynamic software product lines</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Rafael Olaechea</li>
+<li class="nameList">Joanne Atlee</li>
+<li class="nameList">Axel Legay</li>
+<li class="nameList Last">Uli Fahrenberg</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>A key objective of self-adaptive systems is to continue to provide optimal quality of service when the environment changes. A dynamic software product line (DSPL) can benefit from knowing how its various <i>product variants</i> would have performed (in terms of quality of service) with respect to the recent history of inputs. We propose a family-based analysis that simulates all the product variants of a DSPL simultaneously, at runtime, on recent environmental inputs to obtain an estimate of the quality of service that each one of the product variants would have had, provided it had been executing. We assessed the efficiency of our DSPL analysis compared to the efficiency of analyzing each product individually on three case studies. We obtained mixed results due to the explosion of quality-of-service values for the product variants of a DSPL. After introducing a simple data abstraction on the values of quality-of- service variables, our DSPL analysis is between 1.4 and 7.7 times faster than analyzing the products one at a time.</p></div> </div>
+<h2>SESSION: Modeling</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665923" title="Get the Full Text from the ACM Digital Library">Hybrid adaptation policies: towards a framework for classification and modelling of different combinations of adaptation policies</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Frank Trollmann</li>
+<li class="nameList">Johannes F&#228;hndrich</li>
+<li class="nameList Last">Sahin Albayrak</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The development<sup>1</sup> of self-adaptive systems can greatly benefit from reference frameworks to structure the development process. Current reference frameworks abstract from the adaptation decision - the selection of a specific adaptation based on the goals and options available. This decision is usually based on the three adaptation policies: rule-based, goal-based or utility based. However, concepts from these policies often are combined with each other in different ways to achieve hybrid policies. To structure this combination this paper identifies four types of such combinations. We express these types as patterns within a model that captures the functions, models and relations participating in the adaptation decision.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665924" title="Get the Full Text from the ACM Digital Library">A systematic literature review of UML-based domain-specific modeling languages for self-adaptive systems</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Jo&#227;o Pablo S. da Silva</li>
+<li class="nameList">Miguel Ecar</li>
+<li class="nameList">Marcelo S. Pimenta</li>
+<li class="nameList">Gilleanes T. A. Guedes</li>
+<li class="nameList">Luiz Paulo Franz</li>
+<li class="nameList Last">Luciano Marchezan</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Self-adaptive Systems (SaSs) operate under uncertainty conditions and have intrinsic properties that make their modeling a non-trivial activity. This complexity can be minimized by using Domain-Specific Modeling Languages (DSMLs), which may be created by extending Unified Modeling Language (UML). In face of this, we propose investigating how the UML has been customized to create DSMLs that provide proper support for SaSs modeling. To achieve this, we performed a Systematic Literature Review (SRL) by retrieving studies with snowballing technique, selecting studies according to inclusion and exclusion criteria, and extracting and analyzing data to answer our research questions. As the outcome, we retrieved 786 studies and selected 16 primary studies published between 2005 and 2017. The results reveal that the class diagram has been customized through the profile-based mechanism to provide proper support to analysis and design of context-awareness and self-adaptiveness properties.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665935" title="Get the Full Text from the ACM Digital Library">Run-time monitoring of self-adaptive systems to detect N-way feature interactions and their causes</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Byron DeVries</li>
+<li class="nameList Last">Betty H. C. Cheng</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The validity of systems at run time depends on the features included in those systems operating as specified. However, when feature interactions occur, the specifications no longer reflect the state of the run-time system due to the conflict. While methods exist to detect feature interactions at design time, conflicts that cause features to fail may still arise when new detected feature interactions are considered unreachable, new features are added, or an exhaustive design-time detection approach is impractical due to computational costs. This paper introduces <i>Thoosa</i>, an approach for using models at run time to detect features that can fail due to n-way feature interactions at run time and thereby trigger mitigating adaptations and/or updates to the requirements. We illustrate our approach by applying <i>Thoosa</i> to an industry-based automotive braking system comprising multiple subsystems.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665936" title="Get the Full Text from the ACM Digital Library">mRUBiS: an exemplar for model-based architectural self-healing and self-optimization</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Thomas Vogel</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Self-adaptive software systems are often structured into an adaptation engine that manages an adaptable software by operating on a runtime model that represents the architecture of the software (model-based architectural self-adaptation). Despite the popularity of such approaches, existing exemplars provide application programming interfaces but no runtime model to develop adaptation engines. Consequently, there does not exist any exemplar that supports developing, evaluating, and comparing model-based self-adaptation off the shelf. Therefore, we present mRUBiS, an extensible exemplar for model-based architectural self-healing and self-optimization. mRUBiS simulates the adaptable software and therefore provides and maintains an architectural runtime model of the software, which can be directly used by adaptation engines to realize and perform self-adaptation. Particularly, mRUBiS supports injecting issues into the model, which should be handled by self-adaptation, and validating the model to assess the self-adaptation. Finally, mRUBiS allows developers to explore variants of adaptation engines (e.g., event-driven self-adaptation) and to evaluate the effectiveness, efficiency, and scalability of the engines.</p></div> </div>
+<h2>SESSION: Agents &#38; distribution</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665937" title="Get the Full Text from the ACM Digital Library">Cleaning up the mess: a formal framework for autonomously reverting BDI agent actions</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Jo&#228;o Faccin</li>
+<li class="nameList Last">Ingrid Nunes</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In order to cope with abnormal situations, self-adaptive systems may perform remediation actions to guarantee an acceptable system behaviour while dealing with critical execution problems. When problems are solved, the effect of such actions may need to be reverted to return the system to a normal state. This leads to the general problem of providing systems with the ability of autonomously reverting actions. In this paper, we address this problem by proposing a formal framework that customises the <i>belief-desire-intention</i> (BDI) architecture, typically used to implement autonomous agents. This customisation involves steps to monitor agent actions and store reversion metadata, identify when and which actions must be reverted, and execute action reversion. Our formal approach was implemented as an extension of the BDI4JADE platform. This extension was used to evaluate our proposal with a case study in the context of smart homes.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665938" title="Get the Full Text from the ACM Digital Library">Prototyping self-managed interdependent networks: self-healing synergies against cascading failures</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Evangelos Pournaras</li>
+<li class="nameList">Mark Ballandies</li>
+<li class="nameList">Dinesh Acharya</li>
+<li class="nameList">Manish Thapa</li>
+<li class="nameList Last">Ben-Elias Brandt</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The interconnection of networks between several techno-socioeconomic sectors such as energy, transport, and communication, questions the manageability and resilience of the digital society. System interdependencies alter the fundamental dynamics that govern isolated systems, which can unexpectedly trigger catastrophic instabilities such as cascading failures. This paper envisions a general-purpose, yet simple prototyping of self-management software systems that can turn system interdependencies from a cause of instability to an opportunity for higher resilience. Such prototyping proves to be challenging given the highly interdisciplinary scope of interdependent networks. Different system dynamics and organizational constraints such as the distributed nature of interdependent networks or the autonomy and authority of system operators over their controlled infrastructure perplex the design for a general prototyping approach, which earlier work has not yet addressed. This paper contributes such a modular design solution implemented as an open source software extension of SFINA, the <i>Simulation Framework for Intelligent Network Adaptations.</i> The applicability of the software artifact is demonstrated with the introduction of a novel self-healing mechanism for interdependent power networks, which optimizes power flow exchanges between a damaged and a healer network to mitigate power cascading failures. Results show a significant decrease in the damage spread by self-healing synergies, while the degree of interconnectivity between the power networks indicates a tradeoff between links survivability and load served. The contributions of this paper aspire to bring closer several research communities working on modeling and simulation of different domains with an economic and societal impact on the resilience of real-world interdependent networks.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665939" title="Get the Full Text from the ACM Digital Library">A coordination mechanism to replicate large-scale multi-agent systems</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Sylvain Ductor</li>
+<li class="nameList Last">Zahia Guessoum</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Distributed cooperative applications are now increasingly designed as Multi-Agent Systems (MAS). Such applications may be open, dynamic, large scale and exhibit heterogeneous and dynamic agents criticalities. These characteristics create new challenges to the traditional approaches of fault-tolerance. We focus on replication-based preventive approach. The aim is to dynamically and automatically adapt the agent replication strategy (number of replicas and their location), in order to maximize the MAS reliability (guarantee of continuity of computation w.r.t the agents criticalities). In this paper, we describe a decentralized coordination mechanism supporting adaptive replication. In order to provide a clear understanding of the specifics of our proposal, we provide a theoretical validation and report on experimental validations by confronting our proposal with an existing solution that is structurally similar.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665930" title="Get the Full Text from the ACM Digital Library">SWIM: an exemplar for evaluation and comparison of self-adaptation approaches for web applications</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Gabriel A. Moreno</li>
+<li class="nameList">Bradley Schmerl</li>
+<li class="nameList Last">David Garlan</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Research in self-adaptive systems often uses web applications as target systems, running the actual software on real web servers. This approach has three drawbacks. First, these systems are not easy and/or cheap to deploy. Second, run-time conditions cannot be replicated exactly to compare different adaptation approaches due to uncontrolled factors. Third, running experiments is time-consuming. To address these issues, we present SWIM, an exemplar that simulates a web application. SWIM can be used as a target system with an external adaptation manager interacting with it through its TCP-based interface. Since the servers are simulated, this use case addresses the first two problems. The full benefit of SWIM is attained when the adaptation manager is built as a simulation module. An experiment using a simulated 60-server cluster, processing 18 hours of traffic with 29 million requests takes only 5 minutes to run on a laptop computer. SWIM has been used for evaluating self-adaptation approaches, and for a comparative study of model-based predictive approaches to self-adaptation.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665931" title="Get the Full Text from the ACM Digital Library">Decentralized self-adaptive computing at the edge</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Mirko D'Angelo</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Nowadays, computing infrastructures are usually deployed in fully controlled environments and managed in a centralized fashion. Leveraging on centralized infrastructures prevent the system to deal with scalability and performance issues, which are inherent to modern large-scale data-intensive applications. On the other hand, we envision fully decentralized computing infrastructures deployed at the edge of the network providing the required support for operating data-intensive systems. However, engineering such systems raises many challenges, as decentralization introduces uncertainty, which in turn may harm the dependability of the system. To this end, self-adaptation is a key approach to manage uncertainties at runtime and satisfy the requirements of decentralized data-intensive systems. This paper shows the research directions and current contributions towards this vision by (<i>i</i>) evaluating the impact of the distribution of computational entities, (<i>ii</i>) engineering decentralized computing through self-adaptation and, (<i>iii</i>) evaluating decentralized and self-adaptive applications.</p></div> </div>
+<h2>SESSION: Security</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665932" title="Get the Full Text from the ACM Digital Library">Toward evaluating the impact of self-adaptation on security control certification</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Allen Marshall</li>
+<li class="nameList">Sharmin Jahan</li>
+<li class="nameList Last">Rose Gamble</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Certifying security controls is required for information systems that are either federally maintained or maintained by a US government contractor. As described in the NIST SP800-53, certified and accredited information systems are deployed with an acceptable security threat risk. Self-adaptive information systems that allow functional and decision-making changes to be dynamically configured at runtime may violate security controls increasing the risk of security threat to the system. Methods are needed to formalize the process of certification for security controls by expressing and verifying the functional and non-functional requirements to determine what risks are introduced through self-adaptation. We formally express the existence and behavior requirements of the mechanisms needed to guarantee the security controls' effectiveness using audit controls on program example. To reason over the risk of security control compliance given runtime self-adaptations, we use the KIV theorem prover on the functional requirements, extracting the verification concerns and workflow associated with the proof process. We augment the MAPE-K control loop planner with knowledge of the mechanisms that satisfy the existence criteria expressed by the security controls. We compare self-adaptive plans to assess their risk of security control violation prior to plan deployment.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665933" title="Get the Full Text from the ACM Digital Library">Requirements and specifications for adaptive security: concepts and analysis</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">T. T. Tun</li>
+<li class="nameList">M. Yang</li>
+<li class="nameList">A. K. Bandara</li>
+<li class="nameList">Y. Yu</li>
+<li class="nameList">A. Nhlabatsi</li>
+<li class="nameList">N. Khan</li>
+<li class="nameList">K. M. Khan</li>
+<li class="nameList Last">B. Nuseibeh</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In an adaptive security-critical system, security mechanisms change according to the type of threat posed by the environment. Specifying the behavior of these systems is difficult because conditions of the environment are difficult to describe until the system has been deployed and used for a length of time. This paper defines the problem of adaptation in security-critical systems, and outlines the RELAIS approach for expressing requirements and specifying the behavior in a way that helps identify the need for adaptation, and the appropriate adaptation behavior at runtime. The paper introduces the notion of adaptation via input approximation and proposes statistical machine learning techniques for realizing it. The approach is illustrated with a running example and is applied to a realistic security example from a cloud-based file-sharing application. Bayesian classification and logistic regression methods are used to implement adaptive specifications and these methods offer different levels of adaptive security and usability in the file-sharing application.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665934" title="Get the Full Text from the ACM Digital Library">Defining, enforcing and checking privacy policies in data-intensive applications</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Michele Guerriero</li>
+<li class="nameList">Damian Andrew Tamburri</li>
+<li class="nameList Last">Elisabetta Di Nitto</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The rise of Big Data is leading to an increasing demand for large-scale data-intensive applications (DIAs), which have to analyse massive amounts of <i>personal</i> data (e.g. customers' location, cars' speed, people heartbeat, etc.), some of which can be <i>sensitive</i>, meaning that its confidentiality has to be protected. In this context, DIA providers are responsible for enforcing <i>privacy policies</i> that account for the privacy preferences of data subjects as well as for general privacy regulations. This is the case, for instance, of data brokers, i.e. companies that continuously collect and analyse data in order to provide useful analytics to their clients. Unfortunately, the enforcement of privacy policies in modern DIAs tends to become cumbersome because (i) the number of policies can easily explode, depending on the number of data subjects, (ii) policy enforcement has to autonomously adapt to the application context, thus, requiring some non-trivial runtime reasoning, and (iii) designing and developing modern DIAs is complex per se. For the above reasons, we need specific design and runtime methods enabling so called <i>privacy-by-design</i> in a Big Data context. In this article we propose an approach for specifying, enforcing and checking privacy policies on DIAs designed according to the Google Dataflow model and we show that the enforcement approach behaves correctly in the considered cases and introduces a performance overhead that is acceptable given the requirements of a typical DIA.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665945" title="Get the Full Text from the ACM Digital Library">INSpIRA: iNtegrating security into risk assessment: doctoral project paper</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">J&#252;rgen Dobaj</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Today's software and hardware technologies enable the expansion of Cyber-Physical Systems (CPSs) into the realms of mobility (car2x, autonomous driving), energy (power plants, smart grid) and healthcare (health monitoring), paving the way into a highly interlaced world. However, this also dramatically broadens the threat landscape for potential attacks on CPSs. The malfunction of these CPSs could threaten human life, cause environmental damage and major financial loss [5, 9, 16]. This drives the need for comprehensive methods that support the cross-domain design, development and implementation of safe and secure systems [3, 4]. In order to tackle these challenges, this paper proposes a method called INSpIRA, a method for INtegrating Security Into Risk Assessment, including a toolchain implementing the method. The envisioned method is supposed to be a holistic approach that supports the efficient cross-domain design, development, implementation and maintenance of dependable CPSs, where security and safety are a critical aspect that requires an in-depth risk assessment.</p></div> </div>
+<h2>SESSION: Security and adaptivity</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665946" title="Get the Full Text from the ACM Digital Library">Security: a critical quality attribute in self-adaptive systems</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Anthony Peruma</li>
+<li class="nameList Last">Daniel E. Krutz</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Self-Adaptive Systems (SAS) are revolutionizing many aspects of our society. From server clusters to autonomous vehicles, SAS are becoming more ubiquitous and essential to our world. Security is frequently a priority for these systems as many SAS conduct mission-critical operations, or work with sensitive information. Fortunately, security is being more recognized as an indispensable aspect of virtually all aspects of computing systems, in all phases of software development. Despite the growing prominence in security, from computing education to vulnerability detection systems, it is just another concern of creating good software. Despite how critical security is, it is a quality attribute like other aspects such as reliability, stability, or adaptability in a SAS.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665947" title="Get the Full Text from the ACM Digital Library">The special case of data protection and self-adaptation</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Zolt&#225;n &#193;d&#225;m Mann</li>
+<li class="nameList Last">Andreas Metzger</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In this extended abstract, we consider one important aspect of security: the protection of sensitive data from unauthorized access. We argue that (i) self-adaptation may facilitate the efficient protection of sensitive data; (ii) data protection has peculiar properties that make its treatment different from other quality attributes; and (iii) data protection should be considered in combination with other quality attributes like performance and costs.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665948" title="Get the Full Text from the ACM Digital Library">Self-adaptation made easy with blockchains</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Peter E. Sedgewick</li>
+<li class="nameList Last">Rog&#233;rio de Lemos</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>This position paper describes how blockchains facilitate the implementation of distributed self-adaptive systems. We demonstrate how the master/slave decentralised control pattern for self-adaptive systems, integrated with a permissioned blockchain, can protect nodes of a network against attacks by continuously adapting the membership of an access control list. Whenever malicious behaviour is detected, consensus on an updated access control list is reached, and that node is removed from the network. Using a smart home, as an example, we demonstrate that a permissioned blockchain is able to maintain a consistent view of a network of Internet of Things (IoT) devices in the presence of malicious nodes.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665949" title="Get the Full Text from the ACM Digital Library">Agree to disagree: security requirements are different, but mechanisms for security adaptation are not</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Thein Tun</li>
+<li class="nameList Last">Amel Bennaceur</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We describe a dialogue between a proponent and an opponent of the proposition "security is not just another quality attribute in self-adaptive systems". The dialogue is structured in two steps. First, we examine whether security requirements are different from other system-level requirements. Our consensus is that security requirements require specific methods for elicitation, reasoning, and analysis. However, other requirements (such as safety, usability and performance) also require specific techniques. Then, we examine the adaptation mechanisms for security and compare them with other properties. Our consensus is that most adaptation techniques can be applied to maintain security and other requirements alike.</p></div> </div>
+<h2>SESSION: Learning</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665940" title="Get the Full Text from the ACM Digital Library">Learning non-deterministic impact models for adaptation</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Francisco Duarte</li>
+<li class="nameList">Richard Gil</li>
+<li class="nameList">Paolo Romano</li>
+<li class="nameList">Ant&#243;nia Lopes</li>
+<li class="nameList Last">Lu&#237;s Rodrigues</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Many adaptive systems react to variations in their environment by changing their configuration. Often, they make the adaptation decisions based on some knowledge about how the reconfiguration actions impact the key performance indicators. However, the outcome of these actions is typically affected by uncertainty. Adaptation actions have non-deterministic impacts, potentially leading to multiple outcomes. When this uncertainty is not captured explicitly in the models that guide adaptation, decisions may turn out ineffective or even harmful to the system. Also critical is the need for these models to be interpretable to the human operators that are accountable for the system. However, accurate impact models for actions that result in non-deterministic outcomes are very difficult to obtain and existing techniques that support the automatic generation of these models, mainly based on machine learning, are limited in the way they learn non-determinism.</p> <p>In this paper, we propose a method to learn human-readable models that capture non-deterministic impacts explicitly. Additionally, we discuss how to exploit expert's knowledge to bootstrap the adaptation process as well as how to use the learned impacts to revise models defined offline. We motivate our work on the adaptation of applications in the cloud, typically affected by hardware heterogeneity and resource contention. To validate our approach we use a prototype based on the RUBiS auction application.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665941" title="Get the Full Text from the ACM Digital Library">A learning approach to enhance assurances for real-time self-adaptive systems</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Arthur Rodrigues</li>
+<li class="nameList">Ricardo Diniz Caldas</li>
+<li class="nameList">Gena&#237;na Nunes Rodrigues</li>
+<li class="nameList">Thomas Vogel</li>
+<li class="nameList Last">Patrizio Pelliccione</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The assurance of real-time properties is prone to context variability. Providing such assurance at design time would require to check all the possible context and system variations or to predict which one will be actually used. Both cases are not viable in practice since there are too many possibilities to foresee. Moreover, the knowledge required to fully provide the assurance for self-adaptive systems is only available at runtime and therefore difficult to predict at early development stages. Despite all the efforts on assurances for self-adaptive systems at design or runtime, there is still a gap on verifying and validating real-time constraints accounting for context variability. To fill this gap, we propose a method to provide assurance of self-adaptive systems, at design- and runtime, with special focus on real-time constraints. We combine off-line requirements elicitation and model checking with on-line data collection and data mining to guarantee the system's goals, both functional and non-functional, with fine tuning of the adaptation policies towards the optimization of quality attributes. We experimentally evaluate our method on a simulated prototype of a Body Sensor Network system (BSN) implemented in OpenDaVINCI. The results of the validation are promising and show that our method is effective in providing evidence that support the provision of assurance.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N665942" title="Get the Full Text from the ACM Digital Library">Adaptive runtime response time control in PLC-based real-time systems using reinforcement learning</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Mahshid Helali Moghadam</li>
+<li class="nameList">Mehrdad Saadatmand</li>
+<li class="nameList">Markus Borg</li>
+<li class="nameList">Markus Bohlin</li>
+<li class="nameList Last">Bj&#246;rn Lisper</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Timing requirements such as constraints on response time are key characteristics of real-time systems and violations of these requirements might cause a total failure, particularly in hard real-time systems. Runtime monitoring of the system properties is of great importance to check the system status and mitigate such failures. Thus, a runtime control to preserve the system properties could improve the robustness of the system with respect to timing violations. Common control approaches may require a precise analytical model of the system which is difficult to be provided at design time. Reinforcement learning is a promising technique to provide adaptive model-free control when the environment is stochastic, and the control problem could be formulated as a Markov Decision Process. In this paper, we propose an adaptive runtime control using reinforcement learning for real-time programs based on Programmable Logic Controllers (PLCs), to meet the response time requirements. We demonstrate through multiple experiments that our approach could control the response time efficiently to satisfy the timing requirements.</p></div> </div>
+</div>
+</div>
+</body>
+</html>

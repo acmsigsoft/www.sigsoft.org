@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+The software business and its technology continuously advance and the requirements on manufacturers of software systems increase. The size and complexity of development projects have reached a level, where it is difficult to make reliable statements about quality. People responsible for steering software projects need to know how the application evolves to react on project level. Information on software evolution can be used to assess the characteristics of the resulting system, which provides support for many project related decisions (e.g. which activities should be realized next to achieve a better product in terms of quality).
+<p>
+This thesis aims at the development of tools and techniques for the assessment of software projects. The development of a system can be described through a sequence of engineering events. On a high level, these events are grouped to process models for software development. In such sequences events are rarely isolated but related to each other. For the assessment of the interdependencies in products and projects we can utilize information systems of today that support development projects. Our sources of evolution information are configuration management systems (e.g. CVS and Subversion) and issue tracking systems (e.g. Jira and Bugzilla). The amount of data from such tools is very large and the manual investigation is almost impossible. Therefore, we apply different data mining methods for the extraction of relevant facts. Association mining enables us to identify coupling between software entities and to describe the architecture from an evolution perspective. Future activi!
+ ties and product attributes can be anticipated with the help of regression and classification methods. We evaluate our approach based on a field study of commercial and open source projects.
+<p>
+We extend the basic data mining approaches with the mining of value series, which are based on evolution attributes describing the course of development over time. The recognition of sequential patterns is essential, because it can be exploited to improve the accuracy of our prediction models. For the input to this series mining algorithm we reconstruct the event types of software evolution processes. The relation between different types offers very good results with a high correlation of more than 0.9. These values are reached with prediction models in which events are involved that are described through the terms  refactor  or  comment . Thus, our predictions have a very high accuracy, which is due to the exploitation of the sequential nature of software evolution. For the assessment of software projects we define a large number of evolution metrics and techniques to apply them for the anticipation of future events. Our prediction models focus on short time frames and allo!
+ w us to predict refactorings and defects in the next two months based on evolution metrics from just the previous two or three months.
+
+</div>
+</body>
+</html>

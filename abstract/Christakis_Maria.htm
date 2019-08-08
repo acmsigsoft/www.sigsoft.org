@@ -1,0 +1,41 @@
+<p>This dissertation focuses on narrowing the gap between verification 
+and systematic testing, in two directions: (1) by complementing 
+verification with systematic testing, and (2) by pushing systematic 
+testing toward reaching verification.</p>
+ 
+<p>In the first direction, we explore how to effectively combine unsound 
+static analysis with systematic testing, so as to guide test 
+generation toward properties that have not been checked (soundly) by a 
+static analyzer. Our combination significantly reduces the test effort 
+while checking more unverified properties. 
+In the process of testing properties that are typically not soundly 
+verified by static analyzers, we identify important limitations in 
+existing test generation tools, with respect to considering sufficient 
+oracles and all factors that affect the outcome of these oracles. 
+Specifically, testing tools that use object invariants as filters on 
+input data do not thoroughly check whether these invariants are 
+actually maintained by the unit under test. Moreover, existing test 
+generation tools ignore the potential interaction of static state with 
+a unit under test. We address these issues by presenting novel 
+techniques based on static analysis and dynamic symbolic 
+execution. Our techniques detected a significant number of errors that 
+were previously missed by existing tools. 
+We also investigate in which ways it is beneficial to complement 
+sound, interactive verification with systematic testing for the 
+properties that have not been verified yet.</p>
+ 
+<p>In the second direction, we push systematic testing toward 
+verification, in particular, toward proving memory safety of the ANI 
+Windows image parser. This is achieved by concentrating on the main 
+limitations of systematic dynamic test generation, namely, imperfect 
+symbolic execution and path explosion, in the context of this parser. 
+Based on insights from attempting to reach verification of the ANI 
+parser using only systematic testing, we then define IC-Cut, a new 
+compositional search strategy for automatically and dynamically 
+discovering simple function interfaces, where large programs can be 
+effectively decomposed. IC-Cut preserves code coverage and increases 
+bug finding in significantly less exploration time compared to the 
+current search strategy of the dynamic symbolic execution tool 
+SAGE. An additional novelty of IC-Cut is that it can identify which 
+decomposed program units are exhaustively tested and, thus, 
+dynamically verified.</p>

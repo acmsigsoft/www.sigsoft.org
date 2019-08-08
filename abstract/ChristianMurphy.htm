@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+Applications in the fields of scientific computing, simulation, optimization, machine learning, etc. are sometimes said to be "non-testable programs" because there is no reliable test oracle to indicate what the correct output should be for arbitrary input. In some cases, it may be impossible to know the program's correct output a priori; in other cases, the creation of an oracle may simply be too hard. These applications typically fall into a category of software that Weyuker describes as "Programs which were written in order to determine the answer in the first place. There would be no need to write such programs, if the correct answer were known." The absence of a test oracle clearly presents a challenge when it comes to detecting subtle errors, faults, defects or anomalies in software in these domains.
+<p>
+Without a test oracle, it is impossible to know in general what the expected output should be for a given input, but it may be possible to predict how changes to the input should effect changes in the output, and thus identify expected relations among a set of inputs and among the set of their respective outputs. This approach, introduced by Chen et al., is known as "metamorphic testing". In metamorphic testing, if test case input x produces an output f(x), the function's so-called "metamorphic properties" can then be used to guide the creation of a transformation function t, which can then be applied to the input to produce t(x); this transformation then allows us to predict the expected output f(t(x)), based on the (already known) value of f(x). If the new output is as expected, it is not necessarily right, but any violation of the property indicates a defect. That is, though it may not be possible to know whether an output is correct, we can at least tell whether an output is incorrect.
+<p>
+This thesis investigates three hypotheses. First, I claim that an automated approach to metamorphic testing will advance the state of the art in detecting defects in programs without test oracles, particularly in the domains of machine learning, simulation, and optimization. To demonstrate this, I describe a tool for test automation, and present the results of new empirical studies comparing the effectiveness of metamorphic testing to that of other techniques for testing applications that do not have an oracle. Second, I suggest that conducting function-level metamorphic testing in the context of a running application will reveal defects not found by metamorphic testing using system-level properties alone, and introduce and evaluate a new testing technique called Metamorphic Runtime Checking. Third, I hypothesize that it is feasible to continue this type of testing in the deployment environment (i.e., after the software is released), with minimal impact on the user, and describe a generalized approach called In Vivo Testing.
+<p>
+Additionally, this thesis presents guidelines for identifying metamorphic properties, explains how metamorphic testing fits into the software development process, and discusses suggestions for both practitioners and researchers who need to test software without the help of a test oracle.
+</div>
+</body>
+</html>

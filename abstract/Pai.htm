@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+This thesis contributes to the practice of software quality assessment (SQA) on
+several fronts. First, existing SQA methods are inadequate in providing a representative assessment since they mainly consider one aspect of software quality at a time. For instance, the general notion of a high quality software product is usually associated with a low fault content or a low level of fault proneness; however, this can be misleading especially if the faults remaining in the product cause frequent failures. Consequently, to gauge software quality, software reliability analysis is also required. To address this problem, we develop a new probabilistic characterization for software product quality. It provides a quantitative assessment of the quality level, conditioned on the evidence available from the quality attributes of fault content, fault proneness, and reliability. It is also extensible to include other
+qualitative or quantitative attributes from existing software quality standards.
+<p>
+Second, in practice, the software development process exhibits sufficient variation so that faults are introduced into the product from diverse sources. The existing models for fault content or fault proneness analysis use product metrics in their formulation while typically excluding the different process sources. Although there are models in the literature which have included some process related metrics on a project-specific basis, all the models rely primarily on quantitative data. These models are insufficient to include those process attributes that are only subjectively qualified. To address these issues, we employ Bayesian networks (BN) to build a useful and feasible framework for SQA. This framework can include qualitative and quantitative data from both the process and product sources. It also provides a formalized framework to assess process assertions about product quality. To support
+this framework, we have built a data flow representation for software process
+modeling, and an algorithm to convert it to BN.
+<p>
+Third, our framework unifies different methods in the taxonomy of SQA, including
+the new quality characterization. Specifically, (1) we show that the BN representation of the generalized linear model can be used for fault content or fault proneness analysis and (2) we build a generic BN representation for many practically used software reliability models. In essence, our framework subsumes many existing methods in the SQA domain.
+<p>
+Our approach is applied to and evaluated on real software systems. We use the
+example of a prototyping process to illustrate the fundamental concepts in this
+thesis. Then, we empirically evaluate our approach on a public domain data set for a medium sized object-oriented system. The results of this analysis demonstrate that our approach performs no worse than existing methods and produces estimations at a statistically significant level. The results also contribute to the body of empirical knowledge on the suitability of certain product metrics as quality indicators. Subsequently, we perform an end-to-end analysis of code quality on the guidance, navigation and control component for the miniature autonomous extravehicular robotic camera system (Mini-AERCam); the results are applied in the broader context of system-level probabilistic risk analysis.
+
+</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+Exception handling mechanisms were conceived as a means to
+improve maintainability and reliability of programs that have to deal
+with exceptional situations. They are included in several mainstream
+programming languages and promote a certain degree of textual
+separation between normal and exceptional behaviour. Even though
+maintainability and reliability motivated the adoption of exception
+handling, several studies indicate that achieve them is difficult in
+real-life exception handling implementations.
+<p>
+Our claim is that this difficulty is caused by the local way in which
+global exceptions are handled in conventional exception handling
+models. It demands that developers understand the source of an
+exception, the place where it is handled, and everything in
+between. As a consequence, exceptions easily get out of control and,
+as system development progresses, exceptional control flows become
+less well-understood, with potentially negative consequences for the
+program maintainability and reliability.
+<p>
+This work proposes an innovative platform-independent model for
+exception handling, called EFlow, which aims to improve the
+simultaneous satisfaction of software maintainability and
+reliability. EFlow is mainly grounded on the notion of explicit
+exception channels, which support modular representation of global
+exceptional-behaviour properties. EFlow was initially assessed in the
+context of aspect-oriented programming, and concretised by two
+distinct full-fledged implementations: EJFlow and ESFlow. The goal was
+to evaluate the generality and applicability of the EFlow model in
+significantly different software development contexts. The first
+implementation extends the AspectJ programming language with the aim
+of promoting enhanced exception handling modularity and robustness in
+the presence of changes. The second one focuses on supporting explicit
+exception channels in executable statecharts. Finally, the EFlow model
+was assessed through two empirical studies. The first exploratory
+study aimed at investigating whether EFlow abstractions improve the
+maintainability and reliability of exception handling
+implementation. The second investigation evaluated usability
+dimensions of the EFlow abstractions.
+</div>
+</body>
+</html>

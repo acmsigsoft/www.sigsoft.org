@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+This dissertation presents an architectural model and a reference
+implementation for push systems. Push systems reverse the pull-based
+communication paradigm on the world-wide web and in most other distributed
+systems to support easier information dissemination and discovery for
+users. The pull model requires the user to issue a request whenever information
+is needed, whereas push systems support asynchronous information distribution:
+Whenever information of the user's choice becomes available, it gets
+distributed. In the push communication model, an information producer announces
+the availability of certain types of information, an interested consumer
+subscribes to this information, and the producer periodically publishes the
+information (pushes it to the consumer).  This simplifies the discovery of
+information and provides timely information dissemination but introduces
+complex problems that challenge the widespread deployment of push systems:
+scalability to large numbers of users in terms of network bandwidth, timely
+notification of information availability, authenticity and integrity of
+information, and support for payment methods and business models. Current
+systems fall short in addressing these issues. Most available push systems
+actually use a pull-based distribution approach where clients check for new
+information at configurable intervals; frequently scalability is limited, many
+systems lack services to provide information authenticity and integrity, and
+moreover, the important issue of payment models is not adequately addressed by
+any existing system.
+<p>
+This thesis defines and presents a communication and component model for push
+systems: The communication model contrasts push systems with client-server and
+event-based systems; the component model provides a framework for comparison
+and evaluation of different push systems and their design alternatives. The
+component model consists of producers and consumers, broadcasters and channels,
+and a transport system. It can also be used as basis for developing a reference
+implementation for push systems. The second part of the thesis presents such a
+reference implementation called Minstrel where the component model is used as
+an architecture for developing plug-compatible components and to devise an open
+protocol suite for Internet-scale content distribution. Minstrel is designed
+as a Java-based proof-of-concept implementation of the architectural model and
+addresses the issues of scalability, notification, authenticity, and payment
+highlighted above. To provide scalability, Minstrel uses a hierarchical
+transport system transparent to both producers and consumers. For timely
+notification of information availability it employs an active, hybrid
+broadcasting strategy that does not rely on special multicast
+infrastructures. Minstrel's distribution process and protocols are presented
+and evaluated in detail. First evaluations of the broadcasting strategy are
+promising in terms of scalability and delays. To support payment and business
+models, Minstrel provides a flexible and generic payment model which decouples
+the business model employed from the underlying payment method(s), so that it
+can be used for a variety of business models with (theoretically) arbitrary
+payment methods. Minstrel includes a distributed authentication infrastructure
+that facilitates authentication of information origin and integrity checks
+through digital signatures and offers high-level security
+abstractions. Minstrel supports the distribution of static and executable
+content (mobile Java code). To protect consumers from malicious mobile code,
+Minstrel provides a highly configurable Java secure execution framework that
+offers advanced features such as subtractive security policies and runtime
+security negotiation.
+</div>
+</body>
+</html>

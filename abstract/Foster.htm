@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">Software plays a pivotal role in our daily lives, yet software
+glitches and security vulnerabilities continue to plague us.  Existing
+techniques for ensuring the quality of software are limited in scope,
+suggesting that we need to supply programmers with new tools to make
+it easier to write programs with fewer bugs.  In this dissertation, we
+propose using type qualifiers, a lightweight, type-based mechanism, to
+improve the quality of software.  In our framework, programmers add a
+few qualifier annotations to their source code, and type qualifier
+inference determines the remaining qualifiers and checks consistency
+of the qualifier annotations.  In this dissertation we develop
+scalable inference algorithms for flow-insensitive qualifiers, which
+are invariant during execution, and for flow-sensitive qualifiers,
+which may vary from one program point to the next.  The latter
+inference algorithm incorporates flow-insensitive alias analysis,
+effect inference, ideas from linear type systems, and lazy constraint
+resolution to scale to large programs.  We also describe a new
+language construct ``restrict'' that allows a programmer to specify
+certain aliasing properties, and we give a provably sound system for
+checking usage of restrict.  In our system, restrict is used to
+improve the precision of flow-sensitive type qualifier inference.
+<P>
+Finally, we describe a tool for adding type qualifiers to the C
+programming language, and we present several experiments using our
+tool, including finding security vulnerabilities in popular C programs
+and finding deadlocks in the Linux kernel.
+<P>
+
+
+
+</div>
+</body>
+</html>

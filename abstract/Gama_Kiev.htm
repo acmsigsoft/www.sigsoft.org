@@ -1,0 +1,23 @@
+<p>Software is moving towards evolutionary architectures that are able to easily accommodate
+changes and integrate new functionality. This is important in a wide range of applications, from
+plugin-based end user applications to critical applications with high availability requirements.
+Dynamic component-based platforms allow software to evolve at runtime, by allowing components
+to be loaded, and executed without forcing applications to be restarted. However, the flexibility of
+such mechanism demands applications to cope with errors due to inconsistencies in the update
+process, or due to faulty behavior from components introduced during execution. This is mainly true
+when dealing with third-party components, making it harder to predict the impacts (e.g., runtime
+incompatibilities, application crashes) and to maintain application dependability when integrating
+such third-party code into the application. Components whose origin or quality attributes are
+unknown could be considered as untrustworthy since they can potentially introduce faults to
+applications when combined with other components, even if unintentionally. The quality of
+components is harder to evaluate when components are combined together, especially if it happens
+on-the-fly. We are interested in reducing the impact that can be brought by untrustworthy
+components deployed at runtime and that would potentially compromise application dependability.</p>
+
+<p>This thesis focuses on applying techniques for moving a step forward towards dependable
+dynamic component-based applications by addressing different dependability attributes namely
+reliability, maintainability and availability. We propose the utilization of strong component isolation
+boundaries, by providing a fault-contained environment for separately running untrustworthy
+components. Our solution combines three approaches: (i) the dynamic isolation of components,
+governed by a runtime reconfigurable policy; (ii) a self-healing component isolation container; and
+(iii) the usage of aspects for separating dependability concerns from functional code.</p>

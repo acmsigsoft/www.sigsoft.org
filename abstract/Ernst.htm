@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">This dissertation introduces dynamic detection of program invariants,
+presents techniques for detecting such invariants from traces, assesses
+the techniques' efficacy, and points the way for future research.
+<P>
+
+Invariants are valuable in many aspects of program development, including
+design, coding, verification, testing, optimization, and maintenance.
+<P>
+They also enhance programmers' understanding of data structures,
+algorithms, and program operation.  Unfortunately, explicit invariants
+are usually absent from programs, depriving programmers and automated
+tools of their benefits.
+<P>
+
+This dissertation shows how invariants can be dynamically detected from
+program traces that capture variable values at program points of
+interest.  The user runs the target program over a test suite to create
+the traces, and an invariant detector determines which properties and
+relationships hold over both explicit variables and other expressions.
+<P>
+Properties that hold over the traces and also satisfy other tests, such
+as being statistically justified, not being over unrelated variables, and
+not being implied by other reported invariants, are reported as likely
+invariants.  Like other dynamic techniques such as testing, the quality
+of the output depends in part on the comprehensiveness of the test suite.
+<P>
+If the test suite is inadequate, then the output indicates how,
+permitting its improvement.  Dynamic analysis complements static
+techniques, which can be made sound but for which certain program
+constructs remain beyond the state of the art.
+<P>
+
+Experiments demonstrate a number of positive qualities of dynamic invariant
+detection and of a prototype implementation, Daikon.  Invariant detection
+is accurate -- it rediscovers formal specifications -- and useful -- it
+assists programmers in programming tasks.  It runs quickly and produces
+output of modest size.  Test suites found in practice tend to be adequate
+for dynamic invariant detection.
+<P>
+
+
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+A software system interacts with third-party libraries through various
+Application Program Interfaces (APIs). Using these APIs correctly
+often needs to follow certain programming rules, i.e., API
+specifications. API specifications specify the required checks (on API
+input parameters and return values) and other APIs to be invoked
+before (preconditions) and after (postconditions) an API
+call. Incorrect usage of APIs (in short, API violations) can lead to
+security and robustness problems, two primary hindrances for the
+reliable operation of a software system. Hence, for a software system,
+adherence to the specifications, which govern the correct usage of
+APIs used by the system, is paramount for software reliability.
+<p>
+Specifications, when known, can be formally written for third-party
+APIs and statically verified against a software system. This
+dissertation addresses two main problems faced by programmers in
+effectively and correctly reusing third-party APIs. (1) Formal API
+specifications are complicated and lengthy mainly due to the various
+API details (such as input/return type, error-flag codes, and return
+values for APIs on success/failure) and language-specific syntax
+considerations required for the specification to be accurate and
+complete. Hence, manually writing a large number of formal API
+specifications, when known, for static verification is often
+inaccurate or incomplete, apart from being cumbersome. (2) API
+specifications are not well documented by the API developers and are
+often not known to programmers who reuse third-party APIs in the first
+place. API specifications cut across procedural boundaries and an
+attempt to infer these specifications by manual inspection of source
+code (API client code) is often inefficient and inaccurate.
+<p>
+This dissertation proposes a novel framework to address the
+aforementioned problems faced by programmers in reusing third-party
+APIs. Our framework comprises related approaches to aid programmers in
+constructing API specifications for static verification. First, when
+API specifications are known, to encourage the use of formal
+verification in the software development cycle, we present an approach
+to automatically construct formal API specifications for static
+verification from generic, user-specified specification templates,
+which are free from language-specific syntax and API details.
+<p>
+Second, when API specifications are not known, to automatically mine
+them from source code (API client code), we present an approach to
+generate static traces from the source code; we then present novel
+applications of data mining techniques on the generated static traces
+for specification mining. Our approach allows mining of software
+systems that reuse APIs without requiring environment setup for system
+executions or availability of sufficiently high-quality system
+tests. We apply our trace mining approach on several popular
+open-source packages to mine API specifications and detect violations,
+without requiring any user input.
+<p>
+Finally, we conduct an empirical analysis of the characteristics of
+API specifications in practice such as the distance of
+pre/postcondition enforcement points in a program to their
+corresponding call sites and the extent of aliasing between these
+points and call sites (involving API input parameters and return
+values) in large open-source packages. These characteristics, as we
+demonstrate, have implications on the cost and precision of the
+inter-procedural and alias analysis required for specification mining
+and violation detection algorithms, and hence, on the scalability and
+the false-positive rate of the algorithms.
+
+
+</div>
+</body>
+</html>

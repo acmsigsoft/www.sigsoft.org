@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+The unified approach embodied in data flow frameworks has inspired several tool-
+kits that partially automate the construction of solvers for various data flow
+problem classes. Unfortunately, existing toolkits have fairly limited
+application. Although most can handle both classical and more advanced analyses,
+the full breadth of flow analysis forms particularly those arising in new
+applications of the technique lies outside the range of any single system.
+<p>
+This dissertation extends and reformulates the traditional approach, in order to
+support the automatic generation of solvers for multisource data flow analysis
+prob- lems. In this very general class, a data flow problem is modeled by a
+directed graph in which more than one type of edge may be defined and
+information about the type of an edge considered along with the flow value it
+carries. While this describes, roughly, all forms of flow analysis, attempts to
+unify the members of the multisource family have so far held only theoretical
+interest. The approach we present here thus offers a significant increase in
+flexibility to existing flow analysis tools.
+<p>
+Our method is based on a new approach to user-level specification of data flow
+problems. Existing approaches require instantiation of the four parameters of a
+data flow framework: value lattice, function space, flow graph, and local
+semantic func- tional. All such approaches presume a fixed global semantics, an
+assumption that fails in the general multisource case. Instead, we propose a
+domain-specific language, which harkens back to the earliest  flow equation
+forms, allowing us to view the global abstract semantics itself as a fifth
+parametric component.
+<p>
+We then leverage this language-theoretic view to develop a new technique for the
+automatic generation of efficient solvers. There are several improvements to the
+basic iterative solution strategy that exploit properties of the flow graph
+model in order to discover advantageous orderings and avoid redundant
+computation in the global solution. All rely on a known relationship between the
+structure of the flow graph and the flow of information between nodes. To adapt
+these to the multisource case, we present a new method for discovering the
+information flow relation induced by arbitrary global semantic specifications.
+</div>
+</body>
+</html>

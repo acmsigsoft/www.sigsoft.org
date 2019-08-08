@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">Compilers for monomorphic languages, such as C and Pascal, take advantage of types to determine data representations, alignment, calling conventions, and register selec­ tion. However, these languages lack important features including polymorphism, abstract datatypes, and garbage collection. In contrast, modern programming languages such as Standard ML (SML), provide all of these features, but existing implementations fail to take full advantage of types. The result is that performance of SML code is quite bad when compared to C.
+<P>
+
+In this thesis, I provide a general framework, called type­directed compilation, that allows compiler writers to take advantage of types at all stages in compilation. In the framework, types are used not only to determine efficient representations and calling conventions, but also to prove the correctness of the compiler. A key property of type­directed compilation is that all but the lowest levels of the compiler use typed intermediate languages. An advantage of this approach is that it provides a means for automatically checking the integrity of the resulting code.
+<P>
+
+An important contribution of this work is the development of a new, statically­typed intermediate language, called lambda-ML-i. This language supports dynamic type dispatch, providing a means to select operations based on types at run time. I show how to use dynamic type dispatch to support polymorphism, ad­hoc operators, and garbage collection without having to box or tag values. This allows compilers for SML to take advantage of techniques used in C compilers, without sacrificing language features or separate compilation.
+<P>
+
+To demonstrate the applicability of my approach, I, along with others, have constructed a new compiler for SML called TIL that eliminates most restrictions on the representations of values. The code produced by TIL is roughly twice as fast as code produced by the SML/NJ compiler. This is due at least partially to the use of natural representations, but primarily to the conventional optimizer which manipulates typed, lambda-ML-i code. TIL demonstrates that combining type­directed compilation with dynamic type dispatch yields a superior architecture for compilers of modern languages.
+<P>
+
+
+
+</div>
+</body>
+</html>

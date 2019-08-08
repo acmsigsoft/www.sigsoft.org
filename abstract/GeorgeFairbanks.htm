@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="justify">
+Frameworks are a valuable way to share designs and implementations on a large scale. Client programmers, however, have difficulty using frameworks. They find it difficult to understand non-local client-framework interactions, design solutions when they do not own the architectural skeleton, gain confidence that they have engaged with the framework correctly, represent their successful engagement with the framework in a way that can be shared with others, ensure their design intent is expressed in their source code, and connect with external files.
+<p>
+A design fragment is a specification of how a client program can use framework resources to accomplish a goal. From the framework, it identifies the minimal set of classes, interfaces, and methods that should be employed. For the client program, it specifies the client-framework interactions that must be implemented. The structure of the client program is specified as roles, where the roles can be filled by an actual client s classes, fields, and methods. A design fragment exists separately from client programs, and can be bound to the client program via annotations in their source code. These annotations express design intent; specifically, that it is the intention of the client programs to interact with the framework as specified by the design fragment.
+<p>
+The thesis of this dissertation is: We can provide pragmatic help for programmers to use frameworks by providing a form of specification, called a design fragment, to describe how a client program can correctly employ a framework and by providing tools to assure conformance between the client program and the design fragments.
+<p>
+We built tools into an IDE to demonstrate how design fragments could alleviate the difficulties experienced by client programmers. We performed two case studies on commercial Java frameworks, using demo client programs from the framework authors, and client programs we found on the internet. The first case study, on the Applet framework, yielded a complete catalog of twelve design fragments based on our analysis of fifty-six Applets. The second case study, on the larger Eclipse framework, yielded a partial catalog of fourteen design fragments based on our analysis of more than fifty client programs.
+<p>
+This work provides three primary contributions to software engineering. First, it provides a new technique to help programmers use frameworks. Second, it provides a systematic way to increase code quality. Design fragments provide a means to communicate known-good designs to programmers, and, unlike simple copying of examples, a means of influencing the uses of that design so that revisions can be propagated. Third, it provides an empirically-based understanding of how clients use frameworks, which aids researchers in choosing research directions and aids framework authors in delivery of new frameworks.
+</div>
+</body>
+</html>

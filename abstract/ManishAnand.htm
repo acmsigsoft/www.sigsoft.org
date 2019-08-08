@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+A significant problem with current I/O power management is that it is
+device-centric: each device implements its own algorithm without
+considering the context in which it is operating.  This dissertation
+puts forth the claim that devices should adapt their power management
+to their environment for fast and energy-efficient data access.  Such
+adaptation can be achieved through a collaboration between users,
+applications and devices in a mobile computing environment.  This
+approach is called collaborative power management.
+<p>
+This dissertation begins by improving the power management for
+individual I/O devices.  It describes the design and implementation of
+self-tuning power management (STPM) for network and storage devices.
+STPM provides simple interfaces that allow applications and users to
+share context with device drivers and power management algorithms that
+effectively utilize this external context.
+<p>
+The dissertation next shows how applications can improve power
+management by coordinating their data access across multiple I/O
+devices.  It provides the design and implementation of interfaces that
+allow devices to share information about their current state and
+characteristics with adaptive applications.  Adaptive applications use
+this context to dynamically select an I/O device to access data for
+better performance and energy-savings.  It also extends the STPM
+interface to allow adaptive applications to provide passive hints
+about their data access intent even when they are employing another
+device for data access.  This support allows devices to adapt better
+to application needs.
+<p>
+The final part of this dissertation describes the design and
+implementation of PAN-on-Demand, a system that allows co-located
+computers to collaborate with each other for better data access.
+PAN-on-Demand provides an energy-efficient infrastructure that allows
+co-located computers to self-organize in a wireless personal-area
+network (PAN) and share data using multiple radios, such as Bluetooth
+and Wi-Fi.  When applications are actively using the network,
+PAN-on-Demand offers high-bandwidth, low-latency communication; when
+demand is light, PAN-on-Demand adapts the network structure to
+minimize energy usage.
+<body>
+<div align="justify">
+</div>
+</body>
+</html>
