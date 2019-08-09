@@ -1,0 +1,150 @@
+
+<!doctype html>
+<head>
+<META http-equiv="Content-Style-Type" content="text/css">
+<title>A-TEST 2019- Proceedings of the 10th ACM SIGSOFT International Workshop on Automating TEST Case Design, Selection, and Evaluation</title>
+<STYLE type="text/css">
+#DLtoc {
+	font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+	}
+
+#DLheader {
+	}
+#DLheader h1 {
+	font-size:16px;	
+}
+	
+#DLcontent {
+	 font-size:12px;
+	}
+#DLcontent h2 {
+	 font-size:14px;
+	 margin-bottom:5px;
+	}
+#DLcontent h3 {
+	 font-size:12px;
+	 padding-left:20px;
+	 margin-bottom:0px;
+	}
+
+#DLcontent ul{
+	margin-top:0px;
+	margin-bottom:0px;
+	}
+		
+.DLauthors li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLauthors li:after{
+	content:",";
+	}
+.DLauthors li.nameList.Last:after{
+	content:"";
+	}		
+
+.DLabstract {
+	 padding-left:40px;
+	 padding-right:20px;
+	 display:block;
+	}
+
+.DLformats li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLformats li:after{
+	content:",";
+	}
+.DLformats li.formatList.Last:after{
+	content:"";
+	}		
+
+.DLlogo {
+	vertical-align:middle; 
+	padding-right:5px;
+	border:none;
+	}
+	
+.DLcitLink {
+	margin-left:20px;
+	}	
+
+.DLtitleLink {
+	margin-left:20px;
+	}	
+
+.DLotherLink {
+	margin-left:0px;
+	}		
+   
+</STYLE>
+</head>
+<body>
+<div id="DLtoc">
+<div id="DLheader">
+<h1>A-TEST 2019- Proceedings of the 10th ACM SIGSOFT International Workshop on Automating TEST Case Design, Selection, and Evaluation</h1>
+<a class="DLcitLink" href="https://dl.acm.org/citation.cfm?id=3340433" title="Go to the ACM Digital Library for additional information about this proceeding"><img class="DLlogo" src="https://dl.acm.org/img/dllogo.png" alt="Digital Library logo" height="30" width="30">Full Citation in the ACM Digital Library</a>
+</div>
+<div id="DLcontent">
+<h2>SESSION: Papers</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N680750" title="Get the Full Text from the ACM Digital Library">Testing extended finite state machines using NSGA-III</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Ana &#354;urlea</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Finite state machines (FSMs) are widely used in test data generation approaches. An extended finite state machine (EFSM) extends the FSM with memory (context variables), guards for each transition and assignment operations. In FSMs all paths are feasible, but the existence of context variables combined with guards in EFSMs can lead to infeasible paths. Using EFSMs in test data generation, we are dealing with feasibility problems. This paper presents a test suite generation algorithm for EFSMs. The algorithm produces a set of feasible transition paths (test cases) that cover all transitions using NSGA-III. We also measure the similarities between test cases from the generated test suite.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N680751" title="Get the Full Text from the ACM Digital Library">Extending UTP 2 with cascading arbitration specifications</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Marc-Florian Wendland</li>
+<li class="nameList">Martin Schneider</li>
+<li class="nameList Last">Andreas Hoffmann</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In testing, the term arbitration describes the process of calculating the verdict after the execution of a test case or test suite. The calculation of the verdict follows a defined rule set that clearly specifies which verdict to produce under which conditions. In many situations, these rules simply follow the scheme that any deviation between the expected and the actual response of the system under test leads to fail. UTP 2 introduces the concept of arbitration specifications on various hierarchy levels to determine the final verdict of an arbitration target. It provides default arbitration specifications that adhere to the above-mentioned straightforward calculation of verdicts, but allows for overriding these default ones with user-defined arbitration specifications. Unfortunately, this override mechanism adversely affects the maintainability of test cases and test actions because of its high degree of intrusion. Arbitration targets, such as test sets, test cases and procedural elements, and arbitration specifications are tightly coupled with each other, losing the ability to reuse these arbitration targets in a different context with different arbitration specifications. In this paper, we suggest to replace this highly intrusive override mechanism with a decoupling binding mechanism. This binding mechanism increases both comprehensibility and maintainability of test specifications on one hand, because arbitration targets remain independent of any potential arbitration specification. On the other hand, it offers a high degree of reusability and flexibility to the user because of a cascading override mechanism inspired by W3C cascading style sheets.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N680752" title="Get the Full Text from the ACM Digital Library">Test coverage criteria for RESTful web APIs</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Alberto Martin-Lopez</li>
+<li class="nameList">Sergio Segura</li>
+<li class="nameList Last">Antonio Ruiz-Cort&#233;s</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Web APIs following the REST architectural style (so-called RESTful web APIs) have become the de-facto standard for software integration. As RESTful APIs gain momentum, so does the testing of them. However, there is a lack of mechanisms to assess the adequacy of testing approaches in this context, which makes it difficult to automatically measure and compare their effectiveness. In this paper, we first present a set of ten coverage criteria that allow to determine the degree to which a test suite exercises the different inputs (i.e. requests) and outputs (i.e. responses) of a RESTful API. We then arrange the proposed criteria into eight Test Coverage Levels (TCLs), where TCL0 represents the weakest coverage level and TCL7 represents the strongest one. This enables the automated assessment and comparison of testing techniques according to the overall coverage and TCL achieved by their generated test suites. Our evaluation results on two open-source APIs with real bugs show that the proposed coverage levels nicely correlate with code coverage and fault detection measurements.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N680753" title="Get the Full Text from the ACM Digital Library">Lessons learned from making the transition to model-based GUI testing</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Rudolf Ramler</li>
+<li class="nameList">Claus Klammer</li>
+<li class="nameList Last">Thomas Wetzlmaier</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Model-based testing (MBT) has been proposed as an effective and versatile approach for testing graphical user interfaces (GUIs) by automatically generating executable test cases from a model of the GUI. Model-based GUI testing has received increasing attention in research, but it is still rarely applied in practice. In this paper, we present our experiences and share the lessons we learned from successfully introducing MBT for GUI testing in three industry projects. We describe the underlying modeling approach, the development of tests models in joint workshops, the implementation of the test model in form of model programs, and the integration of MBT in the test automation architecture. The findings distilled from the three cases are summarized as lessons learned to support the adoption of a model-based approach for GUI testing in practice.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N680754" title="Get the Full Text from the ACM Digital Library">Fragility of layout-based and visual GUI test scripts: an assessment study on a hybrid mobile application</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Riccardo Coppola</li>
+<li class="nameList">Luca Ardito</li>
+<li class="nameList Last">Marco Torchiano</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Context: Albeit different approaches exist for automated GUI testing of hybrid mobile applications, the practice appears to be not so commonly adopted by developers. A possible reason for such a low diffusion can be the fragility of the techniques, i.e. the frequent need for maintaining test cases when the GUI of the app is changed. </p> <p> Goal: In this paper, we perform an assessment of the maintenance needed by test cases for a hybrid mobile app, and the related fragility causes. </p> <p> Methods: We evaluated a small test suite with a Layout-based testing tool (Appium) and a Visual one (EyeAutomate) and observed the changes needed by tests during the co-evolution with the GUI of the app. </p> <p> Results: We found that 20% Layout-based test methods and 30% Visual test methods had to be modified at least once, and that each release induced fragilities in 3-4% of the test methods. </p> <p> Conclusion: Fragility of GUI tests can induce relevant maintenance efforts in test suites of large applications. Several principal causes for fragilities have been identified for the tested hybrid application, and guidelines for developers are deduced from them.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N680765" title="Get the Full Text from the ACM Digital Library">A platform for diversity-driven test amplification</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Marcus Kessel</li>
+<li class="nameList Last">Colin Atkinson</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Test amplification approaches take a manually written set of tests (input/output mappings) and enhance their effectiveness for some clearly defined engineering goal such as detecting faults. Conceptually, they can either achieve this in a ``black box&#39;&#39; way using only the initial ``seed&#39;&#39; tests or in a ``white box&#39;&#39; way utilizing additional inputs such as the source code or specification of the software under test. However, no fully black box approach to test amplification is currently available even though they can be used to enhance white box approaches. In this paper we introduce a new approach that uses the seed tests to search for existing redundant implementations of the software under test and leverages them as oracles in the generation and evaluation of new tests. The approach can therefore be used as a stand alone black box test amplification method or in tandem with other methods. In this paper we explain the approach, describe its synergies with other approaches and provide some evidence for its practical feasibility.</p></div> </div>
+</div>
+</div>
+</body>
+</html>

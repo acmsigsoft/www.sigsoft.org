@@ -1,0 +1,168 @@
+
+<!doctype html>
+<head>
+<META http-equiv="Content-Style-Type" content="text/css">
+<title>MaLTeSQuE 2019- Proceedings of the 3rd ACM SIGSOFT International Workshop on Machine Learning Techniques for Software Quality Evaluation</title>
+<STYLE type="text/css">
+#DLtoc {
+	font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+	}
+
+#DLheader {
+	}
+#DLheader h1 {
+	font-size:16px;	
+}
+	
+#DLcontent {
+	 font-size:12px;
+	}
+#DLcontent h2 {
+	 font-size:14px;
+	 margin-bottom:5px;
+	}
+#DLcontent h3 {
+	 font-size:12px;
+	 padding-left:20px;
+	 margin-bottom:0px;
+	}
+
+#DLcontent ul{
+	margin-top:0px;
+	margin-bottom:0px;
+	}
+		
+.DLauthors li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLauthors li:after{
+	content:",";
+	}
+.DLauthors li.nameList.Last:after{
+	content:"";
+	}		
+
+.DLabstract {
+	 padding-left:40px;
+	 padding-right:20px;
+	 display:block;
+	}
+
+.DLformats li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLformats li:after{
+	content:",";
+	}
+.DLformats li.formatList.Last:after{
+	content:"";
+	}		
+
+.DLlogo {
+	vertical-align:middle; 
+	padding-right:5px;
+	border:none;
+	}
+	
+.DLcitLink {
+	margin-left:20px;
+	}	
+
+.DLtitleLink {
+	margin-left:20px;
+	}	
+
+.DLotherLink {
+	margin-left:0px;
+	}		
+   
+</STYLE>
+</head>
+<body>
+<div id="DLtoc">
+<div id="DLheader">
+<h1>MaLTeSQuE 2019- Proceedings of the 3rd ACM SIGSOFT International Workshop on Machine Learning Techniques for Software Quality Evaluation</h1>
+<a class="DLcitLink" href="https://dl.acm.org/citation.cfm?id=3340482" title="Go to the ACM Digital Library for additional information about this proceeding"><img class="DLlogo" src="https://dl.acm.org/img/dllogo.png" alt="Digital Library logo" height="30" width="30">Full Citation in the ACM Digital Library</a>
+</div>
+<div id="DLcontent">
+<h2>SESSION: Testing and Debugging</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N680774" title="Get the Full Text from the ACM Digital Library">Leveraging mutants for automatic prediction of metamorphic relations using machine learning</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Aravind Nair</li>
+<li class="nameList">Karl Meinke</li>
+<li class="nameList Last">Sigrid Eldh</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>An oracle is used in software testing to derive the verdict (pass/fail) for a test case. Lack of precise test oracles is one of the major problems in software testing which can hinder judgements about quality. Metamorphic testing is an emerging technique which solves both the oracle problem and the test case generation problem by testing special forms of software requirements known as metamorphic requirements. However, manually deriving the metamorphic requirements for a given program requires a high level of domain expertise, is labor intensive and error prone. As an alternative, we consider the problem of automatic detection of metamorphic requirements using machine learning (ML). For this problem we can apply graph kernels and support vector machines (SVM). A significant problem for any ML approach is to obtain a large labeled training set of data (in this case programs) that generalises well. The main contribution of this paper is a general method to generate large volumes of synthetic training data which can improve ML assisted detection of metamorphic requirements. For training data synthesis we adopt mutation testing techniques. This research is the first to explore the area of data augmentation techniques for ML-based analysis of software code. We also have the goal to enhance black-box testing using white-box methodologies. Our results show that the mutants incorporated into the source code corpus not only efficiently scale the dataset size, but they can also improve the accuracy of classification models.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N680785" title="Get the Full Text from the ACM Digital Library">SZZ unleashed: an open implementation of the SZZ algorithm - featuring example usage in a study of just-in-time bug prediction for the Jenkins project</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Markus Borg</li>
+<li class="nameList">Oscar Svensson</li>
+<li class="nameList">Kristian Berg</li>
+<li class="nameList Last">Daniel Hansson</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Machine learning applications in software engineering often rely on detailed information about bugs. While issue trackers often contain information about when bugs were fixed, details about when they were introduced to the system are often absent. As a remedy, researchers often rely on the SZZ algorithm as a heuristic approach to identify bug-introducing software changes. Unfortunately, as reported in a recent systematic literature review, few researchers have made their SZZ implementations publicly available. Consequently, there is a risk that research effort is wasted as new projects based on SZZ output need to initially reimplement the approach. Furthermore, there is a risk that newly developed (closed source) SZZ implementations have not been properly tested, thus conducting research based on their output might introduce threats to validity. We present SZZ Unleashed, an open implementation of the SZZ algorithm for git repositories. This paper describes our implementation along with a usage example for the Jenkins project, and conclude with an illustrative study on just-in-time bug prediction. We hope to continue evolving SZZ Unleashed on GitHub, and warmly invite the community to contribute.</p></div> </div>
+<h2>SESSION: On the Role of Data</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N680786" title="Get the Full Text from the ACM Digital Library">Risk-based data validation in machine learning-based software systems</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Harald Foidl</li>
+<li class="nameList Last">Michael Felderer</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Data validation is an essential requirement to ensure the reliability and quality of Machine Learning-based Software Systems. However, an exhaustive validation of all data fed to these systems (i.e. up to several thousand features) is practically unfeasible. In addition, there has been little discussion about methods that support software engineers of such systems in determining how thorough to validate each feature (i.e. data validation rigor). Therefore, this paper presents a conceptual data validation approach that prioritizes features based on their estimated risk of poor data quality. The risk of poor data quality is determined by the probability that a feature is of low data quality and the impact of this low (data) quality feature on the result of the machine learning model. Three criteria are presented to estimate the probability of low data quality (Data Source Quality, Data Smells, Data Pipeline Quality). To determine the impact of low (data) quality features, the importance of features according to the performance of the machine learning model (i.e. Feature Importance) is utilized. The presented approach provides decision support (i.e. data validation prioritization and rigor) for software engineers during the implementation of data validation techniques in the course of deploying a trained machine learning model and its software stack.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N680787" title="Get the Full Text from the ACM Digital Library">On the role of data balancing for machine learning-based code smell detection</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Fabiano Pecorelli</li>
+<li class="nameList">Dario Di Nucci</li>
+<li class="nameList">Coen De Roover</li>
+<li class="nameList Last">Andrea De Lucia</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Code smells can compromise software quality in the long term by inducing technical debt. For this reason, many approaches aimed at identifying these design flaws have been proposed in the last decade. Most of them are based on heuristics in which a set of metrics (e.g., code metrics, process metrics) is used to detect smelly code components. However, these techniques suffer of subjective interpretation, low agreement between detectors, and threshold dependability. To overcome these limitations, previous work applied Machine Learning techniques that can learn from previous datasets without needing any threshold definition. However, more recent work has shown that Machine Learning is not always suitable for code smell detection due to the highly unbalanced nature of the problem. In this study we investigate several approaches able to mitigate data unbalancing issues to understand their impact on ML-based approaches for code smell detection. Our findings highlight a number of limitations and open issues with respect to the usage of data balancing in ML-based code smell detection.</p></div> </div>
+<h2>SESSION: Quality Attributes</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N680788" title="Get the Full Text from the ACM Digital Library">Classifying non-functional requirements using RNN variants for quality software development</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Md. Abdur Rahman</li>
+<li class="nameList">Md. Ariful Haque</li>
+<li class="nameList">Md. Nurul Ahad Tawhid</li>
+<li class="nameList Last">Md. Saeed Siddik</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Non-Functional Requirements (NFR), a set of quality attributes, required for software architectural design. Which are usually scattered in SRS and must be extracted for quality software development to meet user expectations. Researchers show that functional and non-functional requirements are mixed together within the same SRS, which requires a mammoth effort for distinguishing them. Automatic NFR classification would be a feasible way to characterize those requirements, where several techniques have been recommended e.g. IR, linguistic knowledge, etc. However, conventional supervised machine learning methods suffered for word representation problem and usually required hand-crafted features, which will be overcome by proposed research using RNN variants to categories NFR. The NFR are interrelated and one task happens after another, which is the ideal situation for RNN. In this approach, requirements are processed to eliminate unnecessary contents, which are used to extract features using word2vec to fed as input of RNN variants LSTM and GRU. Performance has been evaluated using PROMISE dataset considering several statistical analyses. Among those models, precision, recall, and f1-score of LSTM validation are 0.973, 0.967 and 0.966 respectively, which is higher over CNN and GRU models. LSTM also correctly classified minimum 60% and maximum 80% unseen requirements. In addition, classification accuracy of LSTM is 6.1% better than GRU, which concluded that RNN variants can lead to better classification results, and LSTM is more suitable for NFR classification from textual requirements.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N680789" title="Get the Full Text from the ACM Digital Library">A machine learning based automatic folding of dynamically typed languages</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Nickolay Viuginov</li>
+<li class="nameList Last">Andrey Filchenkov</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The popularity of dynamically typed languages has been growing strongly lately. Elegant syntax of such languages like <i>javascript</i>, <i>python</i>, <i>PHP</i> and <i>ruby</i> pays back when it comes to finding bugs in large codebases. The analysis is hindered by specific capabilities of dynamically typed languages, such as defining methods dynamically and evaluating string expressions. For finding bugs or investigating unfamiliar classes and libraries in modern IDEs and text editors features for folding unimportant code blocks are implemented. In this work, data on user foldings from real projects were collected and two classifiers were trained on their basis. The input to the classifier is a set of parameters describing the structure and syntax of the code block. These classifiers were subsequently used to identify unimportant code fragments. The implemented approach was tested on JavaScript and Python programs and compared with the best existing algorithm for automatic code folding.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N680780" title="Get the Full Text from the ACM Digital Library">Towards surgically-precise technical debt estimation: early results and research roadmap</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Valentina Lenarduzzi</li>
+<li class="nameList">Antonio Martini</li>
+<li class="nameList">Davide Taibi</li>
+<li class="nameList Last">Damian Andrew Tamburri</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The concept of technical debt has been explored from many perspectives but its precise estimation is still under heavy empirical and experimental inquiry. We aim to understand whether, by harnessing approximate, data-driven, machine-learning approaches it is possible to improve the current techniques for technical debt estimation, as represented by a top industry quality analysis tool such as SonarQube. For the sake of simplicity, we focus on relatively simple regression modelling techniques and apply them to modelling the additional project cost connected to the sub-optimal conditions existing in the projects under study. Our results shows that current techniques can be improved towards a more precise estimation of technical debt and the case study shows promising results towards the identification of more accurate estimation of technical debt.</p></div> </div>
+</div>
+</div>
+</body>
+</html>
