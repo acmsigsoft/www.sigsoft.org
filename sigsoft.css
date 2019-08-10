@@ -40,6 +40,16 @@ table.annual td {
   padding: 5px;
 }
 
+table.logos td {
+  vertical-align: top;
+}
+table.logos tr+tr td {
+  padding-top: 3em;
+}
+table.logos td+td {
+  padding-left: 4em;
+  text-align: center;
+}
 a:link {
   text-decoration: underline;
   color: #003f52;
