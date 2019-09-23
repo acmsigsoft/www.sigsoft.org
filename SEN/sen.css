@@ -1,0 +1,38 @@
+/* sen.css
+ * rev. 05/27/2007
+ */
+
+body { font-family: sans-serif; background: #FFFFFF; margin: 0; padding: 0; }
+p,ul,ol,td,blockquote { font-family: sans-serif; font-size: 9pt }
+small { font-family: sans-serif; font-size: .8em }
+h1,h2,h4,h5 { font-family: sans-serif }
+h3 {font-family: sans-serif; border-bottom: 1px solid #c0c0c0; padding-bottom: .5em; margin: 0 0 .5em 0;}
+
+#container { margin: 0; padding: 0; background-color: #ffffff; background-image: url("gif/navbackground.png"); background-repeat: repeat-y; }
+
+#banner { background-color: #ffffff; margin: 0; padding: 0; border-bottom: 1px solid #c0c0c0; }
+
+#nav { float: left; width: 150px; margin-top: 1em; margin-left: 10px; padding: 5px; border: 1px solid #c0c0c0; font-size: .8em }
+
+#content { padding-top: 0; margin: 0 1em 0 200px; }
+
+#footer { clear: both; padding: 1em; text-align: left; border-top: 1px solid #c0c0c0; font-size: .8em }
+
+hr.hrnav { border: 0; color: #e0e0e0; background-color: #e0e0e0; height: 1px }
+
+.box8 { margin-top: 1em; padding: 5px; border: 1px solid #c0c0c0; font-size: .8em }
+
+.senblue { color: #007ea4 }
+.ltgray { color: #c0c0c0 }
+.gray { color: #a0a0a0 }
+.indent5 { margin-left: 5px }
+.indent5_5 { margin-left: 5px; margin-right: 5px }
+.indent10 { margin-left: 10px }
+.indent10_10 { margin-left: 10px; margin-right: 10px }
+.indent10_t10 { margin-left: 10px; margin-top: 10px }
+.indent20 { margin-left: 20px }
+
+.memoriam { color: #FFFFFF; background: #333333; padding: 10px 10px 10px 10px;
+ border-style: solid; border-width: 2px; border-color: #999999 }
+
+ 

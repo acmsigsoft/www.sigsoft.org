@@ -1,0 +1,430 @@
+<html>
+<head>
+<title>ACM SIGSOFT SEN: ACM Fellow David Lorge Parnas</title>
+<link rel="stylesheet" href="../sen.css" type="text/css">
+</head>
+
+<body>
+<div id="container">
+ <div id="banner">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+   <tr>
+    <td width="50%" valign="top" align="left"><img src="../images/sen_chevron_med.png" alt="Software Engineering Notes"></td>
+    <td width="30%" valign="middle" align="center"><a href="http://www.acm.org/"><img src="../images/acmlogo_sg2007b.png" alt="ACM: Association for Computing Machinery" border="0"></a></td>
+    <td width="20%" valign="middle" align="center"><a href="http://www.sigsoft.org/"><img src="../images/sigsoft_vsml.png" alt="SIGSOFT: Special Interest Group on Software Engineering" border="0"></a></td>
+   </tr>
+  </table>
+ </div>
+
+<div align="center"><br>
+  <h2><em>ACM Fellow Profile</em><br>
+  David Lorge Parnas</h2>
+  <a href="http://www.crl.mcmaster.ca/SERG/SERG.HOMEPG">www.crl.mcmaster.ca/SERG/SERG.HOMEPG</a><br>
+  <a href="http://www.cas.mcmaster.ca/cas/undergraduate/SEprogrammes.htm">www.cas.mcmaster.ca/cas/undergraduate/SEprogrammes.htm</a>
+</div>
+
+<div class="indent10_10">
+<p><em>Nancy Eickelmann profiled ACM Fellow David Lorge Parnas for SEN.  The
+following brief biography serves as an introduction to the interview:</em></p>
+
+<p>David Lorge Parnas holds the NSERC/Bell Industrial Research Chair in
+Software Engineering in the McMaster University Faculty of Engineering's
+Computing and Software Department where he is Director of the Software
+Engineering Programme.  He is also an associate member of the Department of
+Electrical and Computer Engineering.</P>
+
+<p>Prof. Parnas has previously been a Professor at the University of
+Victoria, the Technische Hochschule Darmstadt, the University of North
+Carolina at Chapel Hill, Carnegie Mellon University and the University of
+Maryland.  Parnas has held non-academic positions advising Philips Computer
+Industry (Apeldoorn), the United States Naval Research Laboratory in
+Washington, D.C. and the IBM Federal Systems Division.  At NRL, he
+instigated the Software Cost Reduction (SCR) Project, which develops and
+applies software technology to aircraft weapon systems.  He has advised the
+Atomic Energy Control Board of Canada on the use of safety-critical real-time
+software at the Darlington Nuclear Generation Station and elsewhere.</P>
+
+<p>The author of more than 200 papers and reports, Dr. Parnas is interested
+in most aspects of computer system design.  In his teaching, as well as in
+his research, Dr. Parnas seeks to find a "middle road" between theory and
+practice, emphasizing the identification of theoretical results and
+notations that can be applied to improve the quality of our products.</P>
+
+<p>Professor Parnas received his B.S., M.S. and Ph.D. in Electrical
+Engineering from Carnegie Mellon University, and honorary doctorates from
+the ETH in Zurich and the Catholic University of Louvain in Belgium.
+Dr. Parnas won an ACM "Best Paper" Award in 1979, and two "Most Influential
+Paper" awards from the International Conference on Software Engineering.
+He was the 1998 winner of ACM SIGSOFT's "Outstanding Research Award."  Dr.
+Parnas is a Fellow of the Royal Society of Canada and a Fellow of the
+Association for Computing Machinery (ACM).  He is licensed as a Professional
+Engineer in the Province of Ontario.</P>
+
+<p><strong><em>Eickelmann:  Elaborate on the work leading up to your
+achieving the distinction of ACM Fellow:</em></strong><br>
+Parnas:  I don't know why they made me an ACM Fellow.  I was part of the
+first batch and to get started they looked at all the people who were
+members of the highest scientific societies in their respective countries.
+I was included as a Fellow of the Royal Society of Canada.  The question
+might be better stated, "Why was I a Fellow of the Royal Society of Canada?"
+I don't know the answer to that either.</P>
+
+<p>I can talk about some of the work that preceded my nomination.  I think my
+work has often attracted attention because I have always chosen to work on
+problems that I observed in industrial software development, rather than
+respond to other people's papers.  My first "stint" in industry, in 1969,
+changed the focus of my work dramatically.  I went there with an idea that
+I wanted to try; looking back I believe it was a stupid research idea.
+The only comfort for me here is that the same idea reappears in the
+literature every few years.  I had written a paper about this research idea
+and someone at the company read the paper or heard the talk and invited me
+to work with them.  Shortly after my arrival, the fellow was transferred to
+another location leaving me nothing to work on and two years left in my
+contract.  They put me in an office with people who were actually doing
+software development.  I was trying to see if I could be helpful but I
+really didn't have anything to do.  At the start all I could do was listen
+and try to understand. </P>
+
+<p>At one point the company asked me to review a document written by some of
+the regular employees.  I said yes and when I looked at it, I realized the
+company was nowhere near the point where it could use my research results.
+Their problems were of a very different nature.  They did not have the
+information that I assumed they would have.  It was because of this chance
+to observe industrial development that I began thinking about decomposing
+systems into modules and writing specifications for those modules.  It was
+clear to me that they were doing it wrong and they didn't understand why it
+was wrong.  While in graduate school, I had never had a chance to observe
+how difficult, and important, that problem was.  The company thought their
+problem was that they didn't know how to specify their interfaces but I
+came to the conclusion that the real problem was they had chosen the wrong
+interfaces.  By choosing the wrong "cut points," they had made their
+interfaces too complicated.  If they reorganized the software, their system
+could have simpler interfaces and these interfaces would be easier to
+specify.  They were looking at a short-term problem, "How do we write this
+spec?"  I was looking at the long term and concluded if they turned their
+design "inside out," they could build a better system.  The result was not
+my first paper but they were the first publications that had any impact. </P>
+
+<p>Since then, with one exception, every piece of research I have initiated
+has been motivated by problems that I see in software development.  I resist
+the temptation to respond to research papers by "I can do it better"
+research.  That doesn't mean that I solve problems exactly as presented to
+me.  Usually, as in the case above, I reformulate the problem thereby
+changing it from a problem that has no solution (e.g. simple specifications
+for complex interfaces) to one where we can do something, e.g. simplify the
+interfaces and then document them.</P>
+
+<p><strong><em>What are your current research interests?</em></strong><br>
+I have been studying various aspects of software design/maintenance
+documentation and have been doing that for about ten years. I'd like to
+explain that a bit because many people who look at my work do not recognize
+it as documentation.  They think we are trying to do more theoretical work
+on "formal methods."  In fact, we are trying to apply mathematical ideas
+that have been known for decades but have not found their way into
+industrial practice.  Often very subtle changes turn a correct but hard to
+apply theory into an equivalent approach that is easier to apply.</P>
+
+<p>I became interested in the problem of documentation when I was teaching
+a course for a telephone equipment manufacturing company.  What I enjoy
+about those courses isn't the lecturing but the discussions during the
+breaks.  The participants were telling me some stories about a telephone
+switch that started out as unusually well-designed software.  When it was
+new, I used to hear complaints about the switch, not from the manufacturer
+or their customers but from their competitors (who wanted to know how they
+could add new features ahead of everyone else).  When the switch first came
+out, the designers had published papers about how they had used my
+modularity and "uses hierarchy" ideas; that is how I got to know them.
+Ten years later, I was talking to maintenance programmers who were
+complaining about what a mess this switch had become.  When I talked to
+them about it, it became clear that the software had become a mess because
+the designers had not documented it properly.  Theyhad lots of documentation but it was too large to be useful, too vague to be
+helpful, and too inaccurate to be trusted.   I thought about the SCR/A-7
+documentation, which was almost mathematical although we never formalized
+it or explained the model behind those documents.  The big thing that we did
+right with the documentation was the use of tables.  We had written a
+document that was precise enough to be used as the basis for implementation
+but readable enough that non-programmer users had found many errors in the
+early draft.  That's when I began to think that we could make mathematical
+documentation readable for the average programmer if we used tabular
+notation.  If we thought about what ought to be in each document we could
+come up with a good documentation model and examples of documentation that
+were concise, precise, and accurate.  I have been working on various
+aspects of that problem since that time.</p>
+ 
+<p>My work was also strongly influenced by experience that I gained working
+in a company that was run by a "fallen professor" who also believed in
+documentation. His idea was that you would produce an outline of all the
+documents that you were going to write and then proceed, on a fixed schedule,
+to complete those documents.  He seemed to believe that if you produced all
+the documents in the specified format, the actual product would appear.</p>
+ 
+<p>His idea was good as far as it went, but it had a fatal flaw.  He
+specified what sections were required, the names of the sections, and the
+format of the document. However, he was never able to define the content of
+the sections.  People were writing the same information in every section.
+Sometimes we could have fun. I recall we were supposed to write a section on
+the safety of our part of the software.  At that time (1969), we didn't
+know what "software safety" meant, so we wrote jokes like "there are no
+sharp comments" and "none of the loops can get too tight."  What we wrote
+was accepted without question.  We met all the requirements.</P>
+ 
+<p>I see documents like that today; every time I am asked to look at some
+project's official documentation, I find that it repeats itself horribly and
+it is never clear where certain key bits of information should be.
+Standards like DoD 2167 and its relatives do exactly the same thing; they
+tell you what sections you need but not what the content should be. This has
+resulted in expensive arguments about such things what goes in the "A"
+specification or the "B" specification.  To avoid such wastes of time, the
+first thing we did was to write down mathematical definitions of what would
+go into each document.  The next step was to develop tabular notations that
+would allow us to write practical descriptions of the mathematical relations
+that we had defined.  After that, we started looking at tools. For example,
+we can generate test oracles from one of these program documents, then
+generate test cases and estimate reliability, by comparing a program with
+what the documentation says it should be. You can make documents formal
+without making them unreadable.  It takes a little longer to write the
+document but the resulting documents are incredibly useful. Tools can check
+the tabular notation for consistency and completeness.  I've also been
+looking at visualizing programs, a better form of flowchart.  No one teaches
+flowcharts anymore and for good reason; they are not manageable for a large
+program. But a very well structured and precisely annotated picture of a
+program allows some programmers to understand how the program is supposed to
+work.  We are annotating the diagrams with our table thereby adding
+semantics to the diagrams. </P>
+ 
+<p>While my main focus has been software documentation, I have also
+recently started to look at how we can use computer networks better.  While
+some people seem to worship "The Internet," and write "commandments" like
+"There is only one net," I find the present approach to networks
+frustratingly stupid.  Information retrieval takes far too long.  We are not
+using our technology very well and I am starting to work on what can be
+done if we impose strict semantic standards on application level network
+interfaces.</p>
+ 
+<p><strong><em>What are your current outside interests?</em></strong><br>
+My family, my schnauzer, bicycling and my work. Occasionally, I write
+newspaper editorials. A professional education as an engineer can provide
+insights into topics that are far from engineering and I enjoy writing for
+the public. </P>
+ 
+<p><strong><em>What was the greatest influence on you?</em></strong><br>
+Four people taught me how to do research.  Two taught engineering and had
+little to do with computers; the other two were mathematicians who turned to
+computing.  The four were Everard M. Williams, long-time Head of the
+Department of Electrical Engineering at Carnegie Institute of Technology
+(now Carnegie Mellon), Alan J. Perlis, founding Head of Carnegie's Computer
+Science Department and the first winner of the Turing prize, Leo A. Finzi,
+an internationally known Electrical Engineering researcher, and Harlan Mills,
+a mathematician best known for the work he did while an IBM Fellow.  I have
+already written about these mentors in SEN so I don't think I should say
+more. </P>
+ 
+<p><strong><em>What was your greatest influence?</em></strong><br>
+I suppose that my early work on "Information Hiding" has had the most
+influence but I look around and don't see it being used enough.  I see it
+mentioned in papers, and explained (very briefly) in many textbooks but when
+I look at real systems, I see that it is not being used in most systems.
+Too many people get into programmer positions without learning how to use
+such basic (and frequently reinvented) ideas.  As Steve McConnell has
+pointed out, good object oriented design requires that objects hide
+something.  Unfortunately, most of the O-O code that I have seen hides
+nothing. The programs look like COBOL programs with a new syntax. </P>
+ 
+<p>Some people think that the articles I wrote when I refused to work on
+Star Wars had a great influence but I don't agree.  First, I don't want to
+be known for what I didn't do.  Second, I find that bad ideas never die.
+I predict that it won't be long before the SDI ideas re-emerge from the
+"black funding" areas where they have been hiding and this huge job
+creation program is again a subject of vigorous debate.</p>
+ 
+<p><strong><em>Who do you think has made the greatest impact on software engineering?</em></strong><br>
+It depends on whether you mean academic research or industrial software
+engineering.  An influential academic would be Edsger W. Dijkstra; you can
+find much of what is fundamental to Software Engineering in his papers on
+structured programming, hierarchical system structure, synchronization, and
+verification. Engineers are taught his shortest path algorithm.  However,
+I don't think his work has changed our software very much; few developers
+read or understand his work.  In contrast, if you look for a single
+individual who has actually influenced what is done in industry, it would
+have to be Fred Brooks. "The Mythical Man Month" should be read by every
+software developer and the nice thing is that it is fun and easy to read.
+Consequently, many people have read and understood his book.  That book has
+sold more copies each year for twenty years and has had tremendous influence.
+Somewhere in the middle, you can find Harlan D. Mills.  He had many good
+ideas such as using "program functions" instead of pre/post-conditions.
+The quality of his work is superior to more widely read work but the
+mathematical sophistication of his work means that it is largely
+unappreciated by many people in both industry and academia.  Today's
+Computer Science students learn too little fundamental mathematics and
+practitioners, who have never been shown how to use it, reject mathematical
+methods without giving them much thought. </P>
+ 
+<p><strong><em>Which computer-related area is most in need of investment by government, business or education?</em></strong><br>
+I think it would have to be software engineering education. First we have
+to improve the quality of that education.  I find that most students receive
+a poorly structured and random introduction to software issues. They learn a
+lot of folklore that is too vague too apply and a lot of theory that seems
+(and often is) irrelevant. Second, we must make sure that people do get a
+professional education.  In a world where you need a license to be a barber,
+anybody can get a job writing software without any credentials.  In the last
+few years I have devoted much of my time to developing an educational program
+for engineers who are specialists in software, a program that can be
+accredited by the professional engineering societies.</P>
+
+<p>One of the things I'm trying to achieve by having software engineering
+programs accredited is to identify a core body of knowledge shared by all
+graduates of such programs.  When I meet electrical engineers, regardless of
+where they come from, I can draw a circuit diagram and we have common
+understanding that allows us to discuss that diagram.  While there are many
+things that all EE graduates know, I cannot name a single topic that is
+understood by every computer science graduate.</P>
+ 
+<p>We also need to think about better education for those who do not
+specialize in software.  Many non-computer scientists are spending their
+lives writing programs. Most of our engineering graduates, i.e. mechanical,
+civil, materials engineers, are writing programs.  Often these are very
+important programs and, even more often, they are bad programs.</P>
+ 
+<p>We must not expect miracles or easy solutions. Programming is hard
+because representing information is difficult; it will stay hard.  Improving
+the quality of software is hard because you need to change how people work.
+People don't want to change.  We can approach them best during their
+education.  Once they graduate it is too late for many of them to change.</P>
+ 
+<p><strong><em>What advice do you have for computer science/software engineering students?</em></strong><br>
+Most students who are studying computer science really want to study software
+engineering but they don't have that choice.  There are very few programs
+that are designed as engineering programs but specialize in software.</P>
+ 
+<p>I would advise students to pay more attention to the fundamental ideas
+rather than the latest technology.  The technology will be out-of-date
+before they graduate.  Fundamental ideas never get out of date.  However,
+what worries me about what I just said is that some people would think of
+Turing machines and Goedel's theorem as fundamentals.  I think those
+things are fundamental but they are also nearly irrelevant.  I think there
+are fundamental design principles, for example structured programming
+principles, the good ideas in "Object Oriented" programming, etc.</P>
+ 
+<p><strong><em>What is the most often-overlooked risk in software engineering?</em></strong><br>
+Incompetent programmers.  There are estimates that the number of
+programmers needed in the U.S. exceeds 200,000.  This is entirely
+misleading.  It is not a quantity problem; we have a quality problem.
+One bad programmer can easily create two new jobs a year. Hiring more bad
+programmers will just increase our perceived need for them.  If we had
+more good programmers, and could easily identify them, we would need fewer,
+not more. </P>
+ 
+<p><strong><em>What is the most-repeated mistake in software engineering?</em></strong><br>
+People tend to underestimate the difficulty of the task. Overconfidence
+explains most of the poor software that I see.  Doing it right is hard work.
+Shortcuts lead you in the wrong direction and they often lead to disaster.</P>
+ 
+<p><strong><em>What are the most exciting/promising software engineering ideas or techniques on the horizon?</em></strong><br>
+I don't think that the most promising ideas are on the horizon.  They are
+already here and have been here for years but are not being used properly.
+A few years ago, I met an experienced software development manager who had
+just uncovered a memo I wrote for his company in 1969.  He told me, "If we
+were now doing what you told us then, we would be far ahead of where we are
+now."  The biggest payoff will not come from new research but from putting
+old ideas into practice and teaching people how to apply them properly.
+There is much more research to do and we have much to learn, but the
+priority should be put on technology transfer and education.</P>
+ 
+<p><strong><em>What are you doing now?</em></strong><br>
+We've started a new Software Engineering program that I think is the
+first real SE programme in the world.  It is an undergraduate program
+treated just like the other undergraduate programs in engineering.  It is
+designed to get people licensed by the Professional Engineers and I agreed
+to direct it while it was getting started.</p>
+ 
+<p>The trouble with teaching the first software engineering programs is
+that you don't have any software engineers to teach them.  There is a
+bootstrapping problem because there are no graduates yet.  Today's
+programmers may call themselves "Software Engineer," but most do not have
+the right to call themselves "Engineer."  Most do not know what we expect
+our graduates to know.  The best programmers are self-taught.  We very much
+need Engineers who understand software but they are very hard to find.</P>
+ 
+<p>Ours is the first software engineering program that wasn't started in a
+computer science department or in computer engineering.  The concept of this
+department is based on an intriguing idea: consider the meaning of the
+phrase "software engineering."  If you look at the history of engineering,
+you can see that over the years, different branches have split off from
+engineering, introducing disciplines such as mechanical, civil, electrical,
+chemical engineering.  As our knowledge of science and mathematics grew, it
+was no longer possible to teach every engineer all that we knew.  We were
+forced to identify various disciplines within Engineering.</P>
+ 
+<p>At McMaster, we regard software engineering in the same way. There is a
+great deal that I believe all engineers should know about software but we
+only have four years to teach them.  We decided to address the problem by
+treating Software Engineering exactly as we treat Chemical Engineering.
+That way of thinking leads to a program that looks very different than a
+conventional computer science program.  The conventional program considers
+software engineering to be a specialty of computer science with a few more
+courses in software.  We view Software Engineering as a specialty within
+engineering.  Our students take most of the standard engineering course.
+There are 42 required technical courses of which about 19 deal with "core"
+engineering material and the rest are specialized material that is needed
+for software engineering.  This includes some CS material and a lot of
+mathematics as well as software design courses that include projects.  It
+is important to understand that this is education, not training.  We
+teach fundamentals throughout.  None of our courses center on current
+products or languages but we use practical tools in the many laboratory
+experiences that are part of the courses. </P>
+ 
+<p><strong><em>Please give us any additional comments for the profile.</em></strong><br>
+What an opportunity for a few "cheap shots."  I can't resist.  I often hear
+developers described as "someone who knows how to build a large system
+quickly."  There is no trick in building large systems quickly; the quicker
+you build them, the larger they get! </P>
+ 
+<p>I have heard people proudly claim that they have built lots of large
+complex systems.  I try to remind them that the job could have been done by
+a small simple system if they had spent more time on "front-end" design.
+Large size and complexity should not be viewed as a goal. </P>
+ 
+<p>One of my pet peeves about this field is the way that people are
+confusing software management with engineering.  They are completely
+different.  Management is the art of getting things done without knowing
+exactly what is getting done.  No manager can know all the details of what
+all of the people that they supervise are doing.  They must learn how to get
+something done without such knowledge.  This is what they learn when they
+learn to be managers.   Engineers are required to know the properties of
+their products, i.e. they must know exactly what is getting done.</P>
+ 
+<p>We need both managers and engineers but we should not confuse the two.
+Unfortunately, a lot of what I hear discussed as "Software Engineering" is
+really project management techniques.  The science and mathematics that we
+need are not being taught.  In any field, badly designed products make a
+development project hard to manage.  Only when we have good designers will
+we find effective managers.</P>
+
+<p><em>Thank you for taking the time to share your thoughts with us.</em></p>
+
+<p>
+<font size=-1><em>Profiled by Nancy Eickelmann</em></font>
+</p>
+
+ </div>
+
+ <div id="footer">
+  <br>
+
+  <a href="http://www.acm.org/">ACM Home</a> |
+  <a href="http://www.acm.org/sigs/">ACM SIGs Home</a> |
+  <a href="http://www.acm.org/sigsoft/">SIGSOFT Home</a> |
+  <a href="http://www.acm.org/sigsoft/SEN/">SEN Home</a>
+
+  <br><br>
+
+  <small><em>
+  Originally published in SEN vol. 24 no. 3, May 1999<br>
+  Last update: 31 May 2007<br>
+  </em></small>
+
+ </div>
+</div>
+</body>
+</html>
+
