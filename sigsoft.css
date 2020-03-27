@@ -96,6 +96,11 @@ table {
   margin-left: 20px;
 }
 
+td p {
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
+
 code {
   font-weight: 600;
   font-family: 'Courier New', Courier, monospace;
