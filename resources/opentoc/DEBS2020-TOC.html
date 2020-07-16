@@ -1,0 +1,1006 @@
+<html xmlns:bkstg="http://www.atypon.com/backstage-ns" xmlns:urlutil="java:com.atypon.literatum.customization.UrlUtil" xmlns:pxje="java:com.atypon.frontend.services.impl.PassportXslJavaExtentions">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="Content-Style-Type" content="text/css"><style type="text/css">
+            #DLtoc {
+            font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+            }
+
+            #DLheader {
+            }
+            #DLheader h1 {
+            font-size:16px;
+            }
+
+            #DLcontent {
+            font-size:12px;
+            }
+            #DLcontent h2 {
+            font-size:14px;
+            margin-bottom:5px;
+            }
+            #DLcontent h3 {
+            font-size:12px;
+            padding-left:20px;
+            margin-bottom:0px;
+            }
+
+            #DLcontent ul{
+            margin-top:0px;
+            margin-bottom:0px;
+            }
+
+            .DLauthors li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLauthors li:after{
+            content:",";
+            }
+            .DLauthors li.nameList.Last:after{
+            content:"";
+            }
+
+            .DLabstract {
+            padding-left:40px;
+            padding-right:20px;
+            display:block;
+            }
+
+            .DLformats li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLformats li:after{
+            content:",";
+            }
+            .DLformats li.formatList.Last:after{
+            content:"";
+            }
+
+            .DLlogo {
+            vertical-align:middle;
+            padding-right:5px;
+            border:none;
+            }
+
+            .DLcitLink {
+            margin-left:20px;
+            }
+
+            .DLtitleLink {
+            margin-left:20px;
+            }
+
+            .DLotherLink {
+            margin-left:0px;
+            }
+
+        </style><title>DEBS '20: Proceedings of the 14th ACM International Conference on Distributed and Event-based
+         Systems
+      </title>
+   </head>
+   <body>
+      <div id="DLtoc">
+         <div id="DLheader">
+            <h1>DEBS '20: Proceedings of the 14th ACM International Conference on Distributed and Event-based
+               Systems
+            </h1><a class="DLcitLink" title="Go to the ACM Digital Library for additional information about this proceeding" href="https://dl.acm.org/doi/proceedings/10.1145/3401025"><img class="DLlogo" alt="Digital Library logo" height="30" src="https://dl.acm.org/specs/products/acm/releasedAssets/images/footer-logo1.png">
+               Full Citation in the ACM Digital Library
+               </a></div>
+         <div id="DLcontent">
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3401025.3406999">Streaming graph processing and analytics</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList Last">M. Tamer Özsu</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Graphs are now ubiquitous as many applications emerge where the relationships among
+                     entities are paramount and require being modeled as first-class objects. Graph database
+                     systems empower such applications by enabling querying and processing both the data
+                     stored on the graph and its topology, and they have gained significant attention both
+                     in industry and academia. The graphs used in many modern applications are not static
+                     and not fully available for analysis; rather the graph vertices and edges are streamed,
+                     and the graph "emerges" over time. These are called streaming graphs. Processing and
+                     analyzing streaming graphs are challenging, because the difficulties of streaming
+                     combine with the complexities of graph processing. In this talk, I have two objectives.
+                     First is the introduction and positioning of the problem and the environment. The
+                     second is to highlight some of our recent work in this area within the context of
+                     s-Graffito project.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3401025.3407941">Building reproducible, reusable, and robust machine learning software</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList Last">Joelle Pineau</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>We have seen significant achievements with machine learning in recent years. Yet reproducing
+                     results for state-of-the-art deep learning methods is seldom straightforward. High
+                     variance of some methods can make learning particularly difficult. Furthermore, results
+                     can be brittle to even minor perturbations in the domain or experimental procedure.
+                     In this talk, I will review challenges that arise in experimental techniques and reporting
+                     procedures in deep learning, with a particular focus on reinforcement learning. I
+                     will also describe several recent results and guidelines designed to make future results
+                     more reproducible, reusable and robust.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Research track</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3401025.3401731">Triggerflow: trigger-based orchestration of serverless workflows</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Pedro García López</li>
+               <li class="nameList">Aitor Arjona</li>
+               <li class="nameList">Josep Sampé</li>
+               <li class="nameList">Aleksander Slominski</li>
+               <li class="nameList Last">Lionel Villard</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>As more applications are being moved to the Cloud thanks to serverless computing,
+                     it is increasingly necessary to support native life cycle execution of those applications
+                     in the data center.
+                  </p> 
+                  <p>But existing systems either focus on short-running workflows (like IBM Composer or
+                     Amazon Express Workflows) or impose considerable overheads for synchronizing massively
+                     parallel jobs (Azure Durable Functions, Amazon Step Functions, Google Cloud Composer).
+                     None of them are open systems enabling extensible interception and optimization of
+                     custom workflows.
+                  </p> 
+                  <p>We present Triggerflow: an extensible Trigger-based Orchestration architecture for
+                     serverless workflows built on top of Knative Eventing and Kubernetes technologies.
+                     We demonstrate that Triggerflow is a novel serverless building block capable of constructing
+                     different reactive schedulers (State Machines, Directed Acyclic Graphs, Workflow as
+                     code). We also validate that it can support high-volume event processing workloads,
+                     auto-scale on demand and transparently optimize scientific workflows.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3401025.3401732">Leaving stragglers at the window: low-latency stream sampling with accuracy guarantees</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Omar Farhat</li>
+               <li class="nameList">Harsh Bindra</li>
+               <li class="nameList Last">Khuzaima Daudjee</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Stream Processing Engines (SPEs) are used to process large volumes of application
+                     data to emit high velocity output. Under high load, SPEs aim to minimize output latency
+                     by leveraging sample processing for many applications that can tolerate approximate
+                     results. Sample processing limits input to only a subset of events such that the sample
+                     is statistically representative of the input while ensuring output accuracy guarantees.
+                     For queries containing window operators, sample processing continuously samples events
+                     until all events relevant to the window operator have been ingested. However, events
+                     can suffer from large ingestion delays due to long or bursty network latencies. This
+                     leads to stragglers that are events generated within the window's timeline but are
+                     delayed beyond the window's deadline. Window computations that account for stragglers
+                     can add significant latency while providing inconsequential accuracy improvement.
+                     We propose Aion, an algorithm that utilizes sampling to provide approximate answers
+                     with low latency by minimizing the effect of stragglers. Aion quickly processes the
+                     window to minimize output latency while still achieving high accuracy guarantees.
+                     We implement Aion in Apache Flink and show using benchmark workloads that Aion reduces
+                     stream output latency by up to 85% while providing 95% accuracy guarantees.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3401025.3403777">A survey of adaptive sampling and filtering algorithms for the internet of things</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Dimitrios Giouroukis</li>
+               <li class="nameList">Alexander Dadiani</li>
+               <li class="nameList">Jonas Traub</li>
+               <li class="nameList">Steffen Zeuch</li>
+               <li class="nameList Last">Volker Markl</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The Internet of Things (IoT) represents one of the fastest emerging trends in the
+                     area of information and communication technology. The main challenge in the IoT is
+                     the timely gathering of data streams from potentially millions of sensors. In particular,
+                     those sensors are widely distributed, constantly in transit, highly heterogeneous,
+                     and unreliable. To gather data in such a dynamic environment efficiently, two techniques
+                     have emerged over the last decade: <em>adaptive sampling</em> and <em>adaptive filtering.</em> These techniques dynamically reconfigure rates and filter thresholds to trade-off
+                     data quality against resource utilization.
+                  </p> 
+                  <p>In this paper, we survey representative, state-of-the-art algorithms to address scalability
+                     challenges in real-time and distributed sensor systems. To this end, we cover publications
+                     from top peer-reviewed venues for a period larger than 12 years. For each algorithm,
+                     we point out <em>advantages, disadvantages, assumptions</em>, and <em>limitations.</em> Furthermore, we outline current research challenges, future research directions,
+                     and aim to support readers in their decision process when designing extremely distributed
+                     sensor systems.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3401025.3401734">EdgeScaler: effective elastic scaling for graph stream processing systems</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Daniel Presser</li>
+               <li class="nameList">Frank Siqueira</li>
+               <li class="nameList">Luís Rodrigues</li>
+               <li class="nameList Last">Paolo Romano</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Existing solutions for elastic scaling perform poorly with <em>graph</em> stream processing for two key reasons. First, when the system is scaled, the graph
+                     must be dynamically re-partitioned among workers. This requires a partitioning algorithm
+                     that is fast and offers good locality, a task that is far from being trivial. Second,
+                     existing modelling techniques for distributed graph processing systems only consider
+                     hash partitioning, and do not leverage the semantic knowledge used by more efficient
+                     partitioners. In this paper we propose EdgeScaler, an elastic scaler for graph stream
+                     processing systems that tackles these challenges by employing, in a synergistic way,
+                     two innovative techniques: <em>MicroMacroSplitter</em> and <em>AccuLocal. MicroMacroSplitter</em> is a new edge-based graph partitioning strategy that is as fast as simple hash partinioners,
+                     while achieving quality comparable to the best state-of-the-art solutions. <em>AccuLocal</em> is a novel performance model that takes the partitioner features into account while
+                     avoiding expensive off-line training phases. An extensive experimental evaluation
+                     offers insights on the effectiveness of the proposed mechanisms and shows that EdgeScaler
+                     is able to significantly outperform existing solutions designed for generic stream
+                     processing systems.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3401025.3404097">On the tracking of sensitive data and confidential executions</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">José Roberto Nascimento</li>
+               <li class="nameList">José B. S. Nunes</li>
+               <li class="nameList">Eduardo Lucena Falcão</li>
+               <li class="nameList">Lilia Sampaio</li>
+               <li class="nameList Last">Andrey Brito</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The production of large amounts of sensitive data raises growing concerns on confidentiality
+                     guarantees. Considering this, it is natural that data owners have an interest in how
+                     their data are being used. In this work, we propose Data aNd Application Tracking
+                     (DNAT), a trustworthy platform for tracking the executions of applications over sensitive
+                     data in untrusted environments. For traceability purposes, we use blockchain and smart
+                     contracts, and to guarantee execution confidentiality and, especially, enforce that
+                     operations are appropriately logged in the blockchain, we use Intel SGX. Experiments
+                     show that tracking costs on Ethereum varies from 1 to 61 cents of a US dollar, depending
+                     on the operation and urgency for consolidation. The time cost of confidential execution
+                     is associated with the SGX overhead. It increases non-linearly initially but has a
+                     linear growth rate when data and application size gets much higher than the available
+                     enclave page cache (≈ 93 MB).
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3401025.3401737">Mechanisms for outsourcing computation via a decentralized market</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Scott Eisele</li>
+               <li class="nameList">Taha Eghtesad</li>
+               <li class="nameList">Nicholas Troutman</li>
+               <li class="nameList">Aron Laszka</li>
+               <li class="nameList Last">Abhishek Dubey</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>As the number of personal computing and IoT devices grows rapidly, so does the amount
+                     of computational power that is available at the edge. Many of these devices are often
+                     idle and constitute an untapped resource which could be used for outsourcing computation.
+                     Existing solutions for harnessing this power, such as volunteer computing (e.g., BOINC),
+                     are centralized platforms in which a single organization or company can control participation
+                     and pricing. By contrast, an open market of computational resources, where resource
+                     owners and resource users trade directly with each other, could lead to greater participation
+                     and more competitive pricing. To provide an open market, we introduce MODiCuM, a decentralized
+                     system for outsourcing computation. MODiCuM deters participants from misbehaving---which
+                     is a key problem in decentralized systems---by resolving disputes via dedicated mediators
+                     and by imposing enforceable fines. However, unlike other decentralized outsourcing
+                     solutions, MODiCuM minimizes computational overhead since it does not require global
+                     trust in mediation results. We provide analytical results proving that MODiCuM can
+                     deter misbehavior, and we evaluate the overhead of MODiCuM using experimental results
+                     based on an implementation of our platform.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3401025.3401738">FaaSdom: a benchmark suite for serverless computing</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Pascal Maissen</li>
+               <li class="nameList">Pascal Felber</li>
+               <li class="nameList">Peter Kropf</li>
+               <li class="nameList Last">Valerio Schiavoni</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Serverless computing has become a major trend among cloud providers. With serverless
+                     computing, developers fully delegate the task of managing the servers, dynamically
+                     allocating the required resources, as well as handling availability and fault-tolerance
+                     matters to the cloud provider. In doing so, developers can solely focus on the application
+                     logic of their software, which is then deployed and completely managed in the cloud.
+                  </p> 
+                  <p>Despite its increasing popularity, not much is known regarding the actual system performance
+                     achievable on the currently available serverless platforms. Specifically, it is cumbersome
+                     to benchmark such systems in a language- or runtime-independent manner. Instead, one
+                     must resort to a full application deployment, to later take informed decisions on
+                     the most convenient solution along several dimensions, including performance and economic
+                     costs.
+                  </p> 
+                  <p>FaaSdom is a modular architecture and proof-of-concept implementation of a benchmark
+                     suite for serverless computing platforms. It currently supports the current mainstream
+                     serverless cloud providers (<em>i.e.</em>, AWS, Azure, Google, IBM), a large set of benchmark tests and a variety of implementation
+                     languages. The suite fully automatizes the deployment, execution and clean-up of such
+                     tests, providing insights (including historical) on the performance observed by serverless
+                     applications. FaaSdom also integrates a model to estimate budget costs for deployments
+                     across the supported providers. FaaSdom is open-source and available at https://github.com/faas-benchmarking/faasdom.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3401025.3401740">The Kaiju project: enabling event-driven observability</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Mario Scrocca</li>
+               <li class="nameList">Riccardo Tommasini</li>
+               <li class="nameList">Alessandro Margara</li>
+               <li class="nameList">Emanuele Della Valle</li>
+               <li class="nameList Last">Sherif Sakr</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Microservices architectures are getting momentum. Even small and medium-size companies
+                     are migrating towards cloud-based distributed solutions supported by lightweight virtualization
+                     techniques, containers, and orchestration systems. In this context, understanding
+                     the system behavior at runtime is critical to promptly react to errors. Unfortunately,
+                     traditional monitoring techniques are not adequate for such complex and dynamic environments.
+                     Therefore, a new challenge, namely observability, emerged from precise industrial
+                     needs: expose and make sense of the system behavior at runtime. In this paper, we
+                     investigate observability as a research problem. We discuss the benefits of events
+                     as a unified abstraction for metrics, logs, and trace data, and the advantages of
+                     employing event stream processing techniques and tools in this context. We show that
+                     an event-based approach enables understanding the system behavior in near real-time
+                     more effectively than state-of-the-art solutions in the field. We implement our model
+                     in the Kaiju system and we validate it against a realistic deployment supported by
+                     a software company.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3401025.3401741">DeepMatch: deep matching for in-vehicle presence detection in transportation</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Magnus Oplenskedal</li>
+               <li class="nameList">Amir Taherkordi</li>
+               <li class="nameList Last">Peter Herrmann</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>A key feature of modern public transportation systems is the accurate detection of
+                     the <em>mobile context</em> of transport vehicles and their passengers. A prominent example is automatic in-vehicle
+                     presence detection which allows, <em>e.g.</em>, intelligent auto-ticketing of passengers. Most existing solutions, in this field,
+                     are based on either using active RFID or Bluetooth Low Energy (BLE) technology, or
+                     mobile sensor data analysis. Such techniques suffer from low spatiotemporal accuracy
+                     in in-vehicle presence detection. In this paper, we address this issue by proposing
+                     a deep learning model and the design of an associated generic distributed framework.
+                     Our approach, called DeepMatch, utilizes the smartphone of a passenger to analyze
+                     and match the event streams of its own sensors and the event streams of the counterpart
+                     sensors in an in-vehicle reference unit. This is achieved through a new learning model
+                     architecture using Stacked Convolutional Autoencoders for feature extraction and dimensionality
+                     reduction, as well as a dense neural network for stream matching. In this distributed
+                     framework, feature extraction and dimensionality reduction is offloaded to the smartphone,
+                     while matching is performed in a server, <em>e.g.</em>, in the Cloud. In this way, the number of sensor events to be transmitted for matching
+                     on the server side will be minimized. We evaluated DeepMatch based on a large dataset
+                     taken in real vehicles. The evaluation results show that the statistical accuracy
+                     of our approach is 0.978 for in-vehicle presence detection which, as we will argue,
+                     is sufficient to be used in, <em>e.g.</em>, auto-ticketing systems.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3401025.3401742">hSPICE: state-aware event shedding in complex event processing</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Ahmad Slo</li>
+               <li class="nameList">Sukanya Bhowmik</li>
+               <li class="nameList Last">Kurt Rothermel</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>In complex event processing (CEP), load shedding is performed to maintain a given
+                     latency bound during overload situations when there is a limitation on resources.
+                     However, shedding load implies degradation in the quality of results (QoR). Therefore,
+                     it is crucial to perform load shedding in a way that has the lowest impact on QoR.
+                     Researchers, in the CEP domain, propose to drop either events or partial matches (PMs)
+                     in overload cases. They assign utilities to events or PMs by considering either the
+                     importance of events or the importance of PMs but not both together. In this paper,
+                     we propose a load shedding approach for CEP systems that combines these approaches
+                     by assigning a utility to an event by considering both the event importance and the
+                     importance of PMs. We adopt a probabilistic model that uses the type and position
+                     of an event in a window and the state of a PM to assign a utility to an event corresponding
+                     to each PM. We, also, propose an approach to predict a utility threshold that is used
+                     to drop the required amount of events to maintain a given latency bound. By extensive
+                     evaluations on two real-world datasets and several representative queries, we show
+                     that, in the majority of cases, our load shedding approach outperforms state-of-the-art
+                     load shedding approaches, w.r.t. QoR.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3401025.3401744">RocketBufs: a framework for building efficient, in-memory, message-oriented middleware</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Huy Hoang</li>
+               <li class="nameList">Benjamin Cassell</li>
+               <li class="nameList">Tim Brecht</li>
+               <li class="nameList Last">Samer Al-Kiswany</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>As companies increasingly deploy message-oriented middleware (MOM) systems in mission-critical
+                     components of their infrastructures and services, the demand for improved performance
+                     and functionality has accelerated the rate at which new systems are being developed.
+                     Unfortunately, existing MOM systems are not designed to take advantages of techniques
+                     for high-performance data center communication (e.g., RDMA). In this paper, we describe
+                     the design and implementation of RocketBufs, a framework which provides infrastructure
+                     for building high-performance, in-memory Message-Oriented Middleware (MOM) applications.
+                     RocketBufs provides memory-based <em>buffer</em> abstractions and APIs, which are designed to work efficiently with different transport
+                     protocols. Applications implemented using RocketBufs manage buffer data using input
+                     (rIn) and output (rOut) classes, while the framework is responsible for transmitting,
+                     receiving and synchronizing buffer access.
+                  </p> 
+                  <p>We use our current implementation, that supports both TCP and RDMA, to demonstrate
+                     the utility and evaluate the performance of RocketBufs by using it to implement a
+                     publish/subscribe message queuing system called RBMQ and a live streaming video application.
+                     When comparing RBMQ against two widely-used, industry-grade MOM systems, namely RabbitMQ
+                     and Redis, our evaluations show that when using TCP, RBMQ achieves broker messaging
+                     throughput up to 1.9 times higher than RabbitMQ and roughly on par with that of Redis,
+                     when configured comparably. However, RBMQ subscribers require significantly less CPU
+                     resources than those using Redis, allowing those resources to be used for other purposes
+                     like processing application data. When configured to use RDMA, RBMQ provides throughput
+                     up to 3.7 times higher than RabbitMQ and up to 1.7 times higher than Redis. We also
+                     demonstrate the flexibility of RocketBufs by implementing a live streaming video service
+                     and show that it can increase the number of simultaneous viewers by up to 55%.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3401025.3404098">Hermes: enabling energy-efficient IoT networks with generalized deduplication</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Christian Göttel</li>
+               <li class="nameList">Lars Nielsen</li>
+               <li class="nameList">Niloofar Yazdani</li>
+               <li class="nameList">Pascal Felber</li>
+               <li class="nameList">Daniel E. Lucani</li>
+               <li class="nameList Last">Valerio Schiavoni</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The Internet of Things (IoT) is connecting a massive number of devices that generate
+                     a growing amount of data to be transmitted over the network. This traffic growth is
+                     expected to continue. Generalized deduplication (GD) is a novel technique to effectively
+                     compress the data to (a) reduce the data storage cost by identifying similar data
+                     chunks, and (b) reduce the pressure on the network infrastructure. This paper presents
+                     Hermes, an application-level protocol for the data-plane that can operate using GD
+                     as well as classic deduplication. Hermes significantly reduces the data transmission
+                     traffic while effectively decreasing the energy footprint, a key goal in many IoT
+                     deployments. We fully implemented Hermes, evaluated its performance using consumer-grade
+                     IoT devices (<em>e.g.</em>, Raspberry Pi 4B), and highlighted key tradeoffs to be considered to manage real-world
+                     workloads. Several fold to several order of magnitude gains over standard compressors
+                     and deduplication are achievable.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3401025.3401739">ByzGame: byzantine generals game</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">James R. Clavin</li>
+               <li class="nameList">Pradeep M. Prakash</li>
+               <li class="nameList Last">Sisi Duan</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Byzantine Fault Tolerance (BFT) has gained renewed interest due to its usage as the
+                     core primitive in building consensus in blockchains. One of the primary challenges
+                     with BFT is understanding the theory behind it. Numerous BFT protocols have been proposed;
+                     unfortunately some of them have had correctness issues. We present ByzGame, a web
+                     application that uniquely connects a frontend visualization to a backend BFT implementation,
+                     and makes both BFT consensus theory and implementation more understandable. Our evaluation
+                     among two groups of students demonstrates that ByzGame can greatly increase the effectiveness
+                     in teaching and learning both fundamental and advanced topics related to BFT.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Industry track</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3401025.3401769">TinTiN: Travelling in time (if necessary) to deal with out-of-order data in streaming aggregation</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Joris van Rooij</li>
+               <li class="nameList">Vincenzo Gulisano</li>
+               <li class="nameList Last">Marina Papatriantafilou</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Cyber-Physical Systems (CPS) rely on data stream processing for high-throughput, low-latency
+                     analysis with correctness and accuracy guarantees (building on deterministic execution)
+                     for monitoring, safety or security applications. The trade-offs in processing performance
+                     and results' accuracy are nonetheless application-dependent. While some applications
+                     need strict deterministic execution, others can value fast (but possibly approximated)
+                     answers. Despite the existing literature on how to relax and trade strict determinism
+                     for efficiency or deadlines, we lack a formal characterization of levels of determinism,
+                     needed by industries to assess whether or not such trade-offs are acceptable. To bridge
+                     the gap, we introduce the notion of D-bounded eventual determinism, where D is the
+                     maximum out-of-order delay of the input data. We design and implement TinTiN, a streaming
+                     middleware that can be used in combination with user-defined streaming applications,
+                     to provably enforce D-bounded eventual determinism. We evaluate TinTiN with a real-world
+                     streaming application for Advanced Metering Infrastructure (AMI) monitoring, showing
+                     it provides an order of magnitude improvement in processing performance, while minimizing
+                     delays in output generation, compared to a state-of-the-art strictly deterministic
+                     solution that waits for time proportional to D, for each input tuple, before generating
+                     output that depends on it.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3401025.3401763">Classification of vessel activity in streaming data</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Ioannis Kontopoulos</li>
+               <li class="nameList">Konstantinos Chatzikokolakis</li>
+               <li class="nameList">Konstantinos Tserpes</li>
+               <li class="nameList Last">Dimitris Zissis</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>In this paper we motivate the need for real-time vessel behaviour classification and
+                     describe in detail our event-based classification approach, as implemented in our
+                     real-world industry strong maritime event detection service at MarineTraffic.com.
+                     A novel approach is presented for the classification of vessel activity from real-time
+                     data streams. The proposed solution splits vessel trajectories into multiple overlapping
+                     segments and distinguishes the ones in which a vessel is engaged in trawling or longlining
+                     operation (e.g. fishing activity) from other segments that a vessel is simply underway
+                     from its departure towards its destination. We evaluate the effectiveness of our tool
+                     on real-world data, demonstrating that it can practically achieve high accuracy results.
+                     We present our results and findings intended for both researchers and practitioners
+                     in the field of intelligent ship tracking and surveillance.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3401025.3401764">Managing geo-distributed stream processing pipelines for the MoT with StreamPipes
+                  edge extensions</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Patrick Wiener</li>
+               <li class="nameList">Philipp Zehnder</li>
+               <li class="nameList Last">Dominik Riemer</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The industrial IoT and its promise to realize data-driven decision-making by analyzing
+                     industrial event streams is an important innovation driver in the industrial sector.
+                     Due to an enormous increase of generated data and the development of specialized hardware,
+                     new decentralized paradigms such as fog computing arised to overcome shortcomings
+                     of centralized cloud-only approaches. However, current undertakings are focused on
+                     static deployments of standalone services, which is insufficient for geo-distributed
+                     applications that are composed of multiple event-driven functions. In this paper,
+                     we present StreamPipes Edge Extensions (SEE), a novel contribution to the open source
+                     IIoT toolbox Apache StreamPipes. With SEE, domain experts are able to create stream
+                     processing pipelines in a graphical editor and to assign individual pipeline elements
+                     to available edge nodes, while underlying provisioning and deployment details are
+                     abstracted by the framework. The main contributions are (i) a fog cluster management
+                     model to represent computing node characteristics, (ii) a node controller for pipeline
+                     element life cycle management and (iii) a management framework to deploy event-driven
+                     functions to registered nodes. Our approach was validated in a real industrial setup
+                     showing low overall overhead of SEE as part of a robot-assisted product quality inspection
+                     use case.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3401025.3403591">On the performance of commodity hardware for low latency and low jitter packet processing</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Charalampos Stylianopoulos</li>
+               <li class="nameList">Magnus Almgren</li>
+               <li class="nameList">Olaf Landsiedel</li>
+               <li class="nameList">Marina Papatriantafilou</li>
+               <li class="nameList">Trevor Neish</li>
+               <li class="nameList">Linus Gillander</li>
+               <li class="nameList">Bengt Johansson</li>
+               <li class="nameList Last">Staffan Bonnier</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>With the introduction of Virtual Network Functions (VNF), network processing is no
+                     longer done solely on special purpose hardware. Instead, deploying network functions
+                     on commodity servers increases flexibility and has been proven effective for many
+                     network applications. However, new industrial applications and the Internet of Things
+                     (IoT) call for event-based systems and midleware that can deliver ultra-low and predictable
+                     latency, which present a challenge for the packet processing infrastructure they are
+                     deployed on.
+                  </p> 
+                  <p>In this industry experience paper, we take a hands-on look on the performance of network
+                     functions on commodity servers to determine the feasibility of using them in existing
+                     and future latency-critical event-based applications. We identify sources of significant
+                     latency (delays in packet processing and forwarding) and jitter (variation in latency)
+                     and we propose application- and system-level improvements for removing or keeping
+                     them within required limits. Our results show that network functions that are highly
+                     optimized for throughput perform sub-optimally under the very different requirements
+                     set by latency-critical applications, compared to latency-optimized versions that
+                     have up to 9.8X lower latency. We also show that hardware-aware, system-level configurations,
+                     such as disabling frequency scaling technologies, greatly reduce jitter by up 2.4X
+                     and lead to more predictable latency.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: DEBS grand challenge</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3401025.3402684">The DEBS 2020 grand challenge</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Vincenzo Gulisano</li>
+               <li class="nameList">Daniel Jorde</li>
+               <li class="nameList">Ruben Mayer</li>
+               <li class="nameList">Hannaneh Najdataei</li>
+               <li class="nameList Last">Dimitris Palyvos-Giannas</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The ACM DEBS 2020 Grand Challenge is the tenth in a series of challenges which seek
+                     to provide a common ground and evaluation criteria for a competition aimed at both
+                     research and industrial event-based systems. The focus of the ACM DEBS 2020 Grand
+                     Challenge is on Non-Intrusive Load Monitoring (NILM). The goal of the challenge is
+                     to detect when appliances contributing to an aggregated stream of voltage and current
+                     readings from a smart meter are switched on or off. NILM is leveraged in many contexts,
+                     ranging from monitoring of energy consumption to home automation. This paper describes
+                     the specifics of the data streams provided in the challenge, as well as the benchmarking
+                     platform that supports the testing of the solutions submitted by the participants.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3401025.3401756">Incremental stream query analytics</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Pedro Silva</li>
+               <li class="nameList">Wang Yue</li>
+               <li class="nameList Last">Tilmann Rabl</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Applications in the Internet of Things (IoT) create many data processing challenges
+                     because they have to deal with massive amounts of data and low latency constraints.
+                     The DEBS Grand Challenge 2020 specifies an IoT problem whose objective is to identify
+                     special type of events in a stream of electricity smart meters data.
+                  </p> 
+                  <p>In this work, we present the <em>Sequential Incremental DBSCAN-based Event Detection Algorithm</em> (SINBAD), a solution based on an incremental version of the clustering algorithm
+                     DBSCAN and scenario specific data processing optimizations. SINBAD manages to calculate
+                     solutions up to 7 times faster and up to 26% more accurate than the baseline provided
+                     by the DEBS Grand Challenge.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3401025.3401757">Real-time detection of smart meter events with odysseus</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Michael Brand</li>
+               <li class="nameList">Tobias Brandt</li>
+               <li class="nameList Last">Marco Grawunder</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The energy grid is changing rapidly to include volatile, renewable energy sources
+                     to help achieve climate goals. The transition to a smart grid, including smart meters
+                     for the metering and communication of the energy consumption, helps with that transition.
+                     The smart meters provide a stream of measurements, which can be used for additional
+                     services, such as visualization of power consumption. Detecting switching events,
+                     when devices in a household are switched on or off, is one possible application on
+                     smart meter data.
+                  </p> 
+                  <p>The goal of the ACM DEBS Grand Challenge 2020 is to implement a live switch detection
+                     on a data stream from a smart meter for Non-Intrusive Load Monitoring. This paper
+                     presents a solution for the challenge with a general purpose and open source data
+                     stream management system that focuses on reusable, generic operators instead of a
+                     custom black-box implementation.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3401025.3401758">Anomaly detection for NILM task with Apache Flink</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Zongshun Zhang</li>
+               <li class="nameList Last">Ethan Timoteo Go</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The topic of the 2020 DEBS Grand Challenge is to develop a solution for Non Intrusive
+                     Load Monitoring (NILM). Sensors continuously send voltage and current data into a
+                     stream processing application that would detect the pattern of power data based on
+                     the data characteristics. NILM is important in signal processing especially in those
+                     advancing areas such as 5G and IoT products, which generate massive amounts of data
+                     from the edge of the network. Our solution focuses on how to divide and parallelize
+                     jobs as small as possible while keeping some reasonable Service Level Agreement (SLA)
+                     including job sizes and latency so that it would be practical for edge or fog deployment.
+                     This paper describes our solution based on Apache Flink, a stream processing framework,
+                     and the DBSCAN density based clustering algorithm for anomaly detection through the
+                     context of data provided by DEBS Grand Challenge.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3401025.3401759">Using streaming data and Apache Flink to infer energy consumption</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Manuja DeSilva</li>
+               <li class="nameList Last">Michael Hendrick</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>This paper entails the technical details of an approach to the challenge presented
+                     by the DEBS 2020 committee [5], regarding Non-Intrusive Load Monitoring (NILM) and
+                     its relevance in the area of data streaming. Our project highlights how the open source
+                     project Apache Flink can provide an efficient solution for processing large data-sets.
+                     Furthermore, we implement a version of DBSCAN, a data clustering algorithm, and we
+                     present an effective approach for handling out of order events in a data stream. We
+                     observe that our approach strikes a balance between optimization, usability, and accuracy
+                     with room for future work. We propose a complete solution that is capable of detecting
+                     appliance power events and energy consumption by using a stream of voltage and current
+                     data.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3401025.3401760">Optimized parallel implementation of sequential clustering-based event detection</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Gengtao Xu</li>
+               <li class="nameList">Jing Qin</li>
+               <li class="nameList Last">Runqi Tian</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The ACM 2020 DEBS Grand Challenge focused on Non-Intrusive Load Monitoring (NILM).
+                     NILM is a method that analyzes changes in the voltage and current going into a building
+                     to deduce appliance use and energy consumption. The 2020 Grand Challenge requires
+                     high performance and high accuracy NILM implementations. In this paper, we describe
+                     the technical details of our solution for the 2020 Grand Challenge, a NILM program
+                     based on Apache Flink. We employ a Divide-and-conquer strategy to implement our parallel
+                     algorithm and designed a verify stage to improve the accuracy. For performance, our
+                     method achieves a great overall run time and the highest accuracy.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>TUTORIAL SESSION: Tutorials</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3401025.3404088">The role of event-time order in data streaming analysis</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Vincenzo Gulisano</li>
+               <li class="nameList">Dimitris Palyvos-Giannas</li>
+               <li class="nameList">Bastian Havers</li>
+               <li class="nameList Last">Marina Papatriantafilou</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The data streaming paradigm was introduced around the year 2000 to overcome the limitations
+                     of traditional store-then-process paradigms found in relational databases (DBs). Opposite
+                     to DBs' "<em>first-the-data-then-the-query</em>" approach, data streaming applications build on the "<em>first-the-query-then-the-data</em>" alternative. More concretely, data streaming applications do not rely on storage
+                     to initially persist data and later query it, but rather build on continuous single-pass
+                     analysis in which incoming streams of data are processed on the fly and result in
+                     continuous streams of outputs.
+                  </p> 
+                  <p>In contrast with traditional batch processing, data streaming applications require
+                     the user to reason about an additional dimension in the data: <em>event-time.</em> Numerous models have been proposed in the literature to reason about event-time,
+                     each with different guarantees and trade-offs. Since it is not always clear which
+                     of these models is appropriate for a particular application, this tutorial studies
+                     the relevant concepts and compares the available options. This study can be highly
+                     relevant for people working with data streaming applications, both researchers and
+                     industrial practitioners.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3401025.3404099">Blockchain consensus unraveled: virtues and limitations</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Suyash Gupta</li>
+               <li class="nameList">Jelle Hellings</li>
+               <li class="nameList">Sajjad Rahnama</li>
+               <li class="nameList Last">Mohammad Sadoghi</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Since the introduction of Bitcoin---the first wide-spread application driven by blockchains---the
+                     interest of the public and private sector in blockchains has skyrocketed. At the core
+                     of this interest are the ways in which blockchains can be used to improve data management,
+                     e.g., by enabling federated data management via decentralization, resilience against
+                     failure and malicious actors via replication and consensus, and strong data provenance
+                     via a secured immutable ledger.
+                  </p> 
+                  <p>In practice, high-performance blockchains for data management are usually built in
+                     permissioned environments in which the participants are vetted and can be identified.
+                     In this setting, blockchains are typically powered by Byzantine fault-tolerant consensus
+                     protocols. These consensus protocols are used to provide full replication among all
+                     honest blockchain participants by enforcing an unique order of processing incoming
+                     requests among the participants.
+                  </p> 
+                  <p>In this tutorial, we take an in-depth look at Byzantine fault-tolerant consensus.
+                     First, we take a look at the theory behind replicated computing and consensus. Then,
+                     we delve into how common consensus protocols operate. Finally, we take a look at current
+                     developments and briefly look at our vision moving forward.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Doctoral symposium</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3401025.3406442">Trade-off analysis of thermal-constrained scheduling strategies in multi-core systems</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList Last">Muhammad Usama Sardar</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The increasing usage of multi-cores in safety-critical applications, such as autonomous
+                     control, demands high levels of reliability, which crucially depends on the temperature.
+                     The scheduling of tasks is one of the key factors which determine the natural trade-off
+                     between system performance and reliability. Commonly used techniques, such as simulation-based
+                     on benchmarks, can simulate only a limited number of input sequences of system runs
+                     and hardly optimize the performance-reliability trade-off. In order to accurately
+                     evaluate the schedulers and provide formal guarantees suitable in early design stages,
+                     we use a design flow based on formal methods for a quantitative performance-reliability
+                     trade-off analysis. Specifically, we propose to use energy-utility quantiles as a
+                     metric to evaluate the effectiveness of a given scheduler. For illustration, we evaluate
+                     TAPE, a state-of-the-art thermal-constrained scheduler, with theoretical optimal ones.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3401025.3406443">Pre-processing and data validation in IoT data streams</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList Last">Philsy Baban</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>In the last few years, distributed stream processing engines have been on the rise
+                     due to their crucial impacts on real-time data processing with guaranteed low latency
+                     in several application domains such as financial markets, surveillance systems, manufacturing,
+                     smart cities, etc. Stream processing engines are run-time libraries to process data
+                     streams without knowing the lower level streaming mechanics. Apache Storm, Apache
+                     Flink, Apache Spark, Kafka Streams and Hazelcast Jet are some of the popular stream
+                     processing engines. Nowadays, critical systems like energy systems, are interconnected
+                     and automated. As a result, these systems are vulnerable to cyber-attacks. In real-world
+                     applications, the sensing values come from sensor devices contains missing values,
+                     redundant data, data outliers, manipulated data, data failures, etc. Therefore, our
+                     system must be resilient to these conditions. In this paper, we present an approach
+                     to check if there is any above mentioned conditions by pre-processing data streams
+                     using a stream processing engine like Apache Flink which will be updated as a library
+                     in future. Then, the pre-processed streams are forwarded to other stream processing
+                     engines like Apache Kafka for real stream processing. As a result, data validation,
+                     data consistency and integrity for a resilient system can be accomplished before initiating
+                     the actual stream processing.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3401025.3406444">Dynamic scaling of distributed data-flows under uncertainty</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList Last">Stuart Jamieson</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Existing approaches to dynamic scaling of streaming applications often fail to incorporate
+                     uncertainty arising from performance variability of shared computing infrastructures,
+                     and rapid changes in offered load. We explore the definition and incorporation of
+                     risk and uncertainty, and advocate for risk-adjusted measures of performance and their
+                     application in improving the robustness of autonomic scaling of streaming systems.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+         </div>
+      </div>
+   </body>
+</html>
