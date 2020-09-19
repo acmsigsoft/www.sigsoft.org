@@ -1,0 +1,1811 @@
+<html xmlns:bkstg="http://www.atypon.com/backstage-ns" xmlns:urlutil="java:com.atypon.literatum.customization.UrlUtil" xmlns:pxje="java:com.atypon.frontend.services.impl.PassportXslJavaExtentions">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="Content-Style-Type" content="text/css"><style type="text/css">
+            #DLtoc {
+            font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+            }
+
+            #DLheader {
+            }
+            #DLheader h1 {
+            font-size:16px;
+            }
+
+            #DLcontent {
+            font-size:12px;
+            }
+            #DLcontent h2 {
+            font-size:14px;
+            margin-bottom:5px;
+            }
+            #DLcontent h3 {
+            font-size:12px;
+            padding-left:20px;
+            margin-bottom:0px;
+            }
+
+            #DLcontent ul{
+            margin-top:0px;
+            margin-bottom:0px;
+            }
+
+            .DLauthors li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLauthors li:after{
+            content:",";
+            }
+            .DLauthors li.nameList.Last:after{
+            content:"";
+            }
+
+            .DLabstract {
+            padding-left:40px;
+            padding-right:20px;
+            display:block;
+            }
+
+            .DLformats li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLformats li:after{
+            content:",";
+            }
+            .DLformats li.formatList.Last:after{
+            content:"";
+            }
+
+            .DLlogo {
+            vertical-align:middle;
+            padding-right:5px;
+            border:none;
+            }
+
+            .DLcitLink {
+            margin-left:20px;
+            }
+
+            .DLtitleLink {
+            margin-left:20px;
+            }
+
+            .DLotherLink {
+            margin-left:0px;
+            }
+
+        </style><title>ICPC '20: Proceedings of the 28th International Conference on Program Comprehension</title>
+   </head>
+   <body>
+      <div id="DLtoc">
+         <div id="DLheader">
+            <h1>ICPC '20: Proceedings of the 28th International Conference on Program Comprehension</h1><a class="DLcitLink" title="Go to the ACM Digital Library for additional information about this proceeding" href="https://dl.acm.org/doi/proceedings/10.1145/3387904"><img class="DLlogo" alt="Digital Library logo" height="30" src="https://dl.acm.org/specs/products/acm/releasedAssets/images/footer-logo1.png">
+               Full Citation in the ACM Digital Library
+               </a></div>
+         <div id="DLcontent">
+            <h2>SESSION: NONE</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3394491">On the Equivalence of Information Retrieval Methods for Automated Traceability Link
+                  Recovery: A Ten-Year Retrospective</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Rocco Oliveto</li>
+               <li class="nameList">Malcom Gethers</li>
+               <li class="nameList">Denys Poshyvanyk</li>
+               <li class="nameList Last">Andrea De Lucia</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>At ICPC 2010 we presented an empirical study to statistically analyze the equivalence
+                     of several traceability recovery methods based on Information Retrieval (IR) techniques
+                     [1]. We experimented the Vector Space Model (VSM) [2], Latent Semantic Indexing (LSI)
+                     [3], the Jensen-Shannon (JS) method [4], and Latent Dirichlet Allocation (LDA) [5].
+                     Unlike previous empirical studies we did not compare the different IR based traceability
+                     recovery methods only using the usual precision and recall metrics. We introduced
+                     some metrics to analyze the overlap of the set of candidate links recovered by each
+                     method. We also based our analysis on Principal Component Analysis (PCA) to analyze
+                     the orthogonality of the experimented methods. The results showed that while the accuracy
+                     of LDA was lower than previously used methods, LDA was able to capture some information
+                     missed by the other exploited IR methods. Instead, JS, VSM, and LSI were almost equivalent.
+                     This paved the way to possible integration of IR based traceability recovery methods
+                     [6].
+                  </p> 
+                  <p>Our paper was one of the first papers experimenting LDA for traceability recovery.
+                     Also, the overlap metrics and PCA have been used later to compare and possibly integrate
+                     different recommendation approaches not only for traceability recovery, but also for
+                     other reverse engineering and software maintenance tasks, such as code smell detection,
+                     design pattern detection, and bug prediction.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Research</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389258">A Human Study of Comprehension and Code Summarization</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Sean Stapleton</li>
+               <li class="nameList">Yashmeet Gambhir</li>
+               <li class="nameList">Alexander LeClair</li>
+               <li class="nameList">Zachary Eberhart</li>
+               <li class="nameList">Westley Weimer</li>
+               <li class="nameList">Kevin Leach</li>
+               <li class="nameList Last">Yu Huang</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Software developers spend a great deal of time reading and understanding code that
+                     is poorly-documented, written by other developers, or developed using differing styles.
+                     During the past decade, researchers have investigated techniques for automatically
+                     documenting code to improve comprehensibility. In particular, recent advances in deep
+                     learning have led to sophisticated summary generation techniques that convert functions
+                     or methods to simple English strings that succinctly describe that code's behavior.
+                     However, automatic summarization techniques are assessed using internal metrics such
+                     as BLEU scores, which measure natural language properties in translational models,
+                     or ROUGE scores, which measure overlap with human-written text. Unfortunately, these
+                     metrics do not necessarily capture how machine-generated code summaries actually affect
+                     human comprehension or developer productivity.
+                  </p> 
+                  <p>We conducted a human study involving both university students and professional developers
+                     (n = 45). Participants reviewed Java methods and summaries and answered established
+                     program comprehension questions. In addition, participants completed coding tasks
+                     given summaries as specifications. Critically, the experiment controlled the source
+                     of the summaries: for a given method, some participants were shown human-written text
+                     and some were shown machine-generated text.
+                  </p> 
+                  <p>We found that participants performed significantly better (p = 0.029) using human-written
+                     summaries versus machine-generated summaries. However, we found no evidence to support
+                     that participants perceive human- and machine-generated summaries to have different
+                     qualities. In addition, participants' performance showed no correlation with the BLEU
+                     and ROUGE scores often used to assess the quality of machine-generated summaries.
+                     These results suggest a need for revised metrics to assess and guide automatic summarization
+                     techniques.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389251">A Literature Review of Automatic Traceability Links Recovery for Software Change Impact
+                  Analysis</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Thazin Win Win Aung</li>
+               <li class="nameList">Huan Huo</li>
+               <li class="nameList Last">Yulei Sui</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>In large-scale software development projects, change impact analysis (CIA) plays an
+                     important role in controlling software design evolution. Identifying and accessing
+                     the effects of software changes using traceability links between various software
+                     artifacts is a common practice during the software development cycle. Recently, research
+                     in automated traceability-link recovery has received broad attention in the software
+                     maintenance community to reduce the manual maintenance cost of trace links by developers.
+                     In this study, we conducted a systematic literature review related to automatic traceability
+                     link recovery approaches with a focus on CIA. We identified 33 relevant studies and
+                     investigated the following aspects of CIA: traceability approaches, CIA sets, degrees
+                     of evaluation, trace direction and methods for recovering traceability link between
+                     artifacts of different types. Our review indicated that few traceability studies focused
+                     on designing and testing impact analysis sets, presumably due to the scarcity of datasets.
+                     Based on the findings, we urge further industrial case studies. Finally, we suggest
+                     developing traceability tools to support fully automatic traceability approaches,
+                     such as machine learning and deep learning.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389255">A Model to Detect Readability Improvements in Incremental Changes</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Devjeet Roy</li>
+               <li class="nameList">Sarah Fakhoury</li>
+               <li class="nameList">John Lee</li>
+               <li class="nameList Last">Venera Arnaoudova</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Identifying source code that has poor readability allows developers to focus maintenance
+                     efforts on problematic code. Therefore, the effort to develop models that can quantify
+                     the readability of a piece of source code has been an area of interest for software
+                     engineering researchers for several years. However, recent research questions the
+                     usefulness of these readability models in practice. When applying these models to
+                     readability improvements that are made in practice, i.e., commits, they are unable
+                     to capture these incremental improvements, despite a clear perceived improvement by
+                     the developers. This results in a discrepancy between the models we have built to
+                     measure readability, and the actual perception of readability in practice.
+                  </p> 
+                  <p>In this work, we propose a model that is able to detect incremental readability improvements
+                     made by developers in practice with an average precision of 79.2% and an average recall
+                     of 67% on an unseen test set. We then investigate the metrics that our model associates
+                     with developer perceived readability improvements as well as non-readability changes.
+                     Finally, we compare our model to existing state-of-the-art readability models, which
+                     our model outperforms by at least 23% in terms of precision and 42% in terms of recall.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389261">A Self-Attentional Neural Architecture for Code Completion with Multi-Task Learning</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Fang Liu</li>
+               <li class="nameList">Ge Li</li>
+               <li class="nameList">Bolin Wei</li>
+               <li class="nameList">Xin Xia</li>
+               <li class="nameList">Zhiyi Fu</li>
+               <li class="nameList Last">Zhi Jin</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Code completion, one of the most useful features in the Integrated Development Environments
+                     (IDEs), can accelerate software development by suggesting the libraries, APIs, and
+                     method names in real-time. Recent studies have shown that statistical language models
+                     can improve the performance of code completion tools through learning from large-scale
+                     software repositories. However, these models suffer from three major drawbacks: a)
+                     The hierarchical structural information of the programs is not fully utilized in the
+                     program's representation; b) In programs, the semantic relationships can be very long.
+                     Existing recurrent neural networks based language models are not sufficient to model
+                     the long-term dependency. c) Existing approaches perform a specific task in one model,
+                     which leads to the underuse of the information from related tasks. To address these
+                     challenges, in this paper, we propose a self-attentional neural architecture for code
+                     completion with multi-task learning. To utilize the hierarchical structural information
+                     of the programs, we present a novel method that considers the path from the predicting
+                     node to the root node. To capture the long-term dependency in the input programs,
+                     we adopt a self-attentional architecture based network as the base language model.
+                     To enable the knowledge sharing between related tasks, we creatively propose a Multi-Task
+                     Learning (MTL) framework to learn two related tasks in code completion jointly. Experiments
+                     on three real-world datasets demonstrate the effectiveness of our model when compared
+                     with state-of-the-art methods.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389278">Adaptive Deep Code Search</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Chunyang Ling</li>
+               <li class="nameList">Zeqi Lin</li>
+               <li class="nameList">Yanzhen Zou</li>
+               <li class="nameList Last">Bing Xie</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Searching code in a large-scale codebase using natural language queries is a common
+                     practice during software development. Deep learning-based code search methods demonstrate
+                     superior performance if models are trained with large amount of text-code pairs. However,
+                     few deep code search models can be easily transferred from one codebase to another.
+                     It can be very costly to prepare training data for a new codebase and re-train an
+                     appropriate deep learning model. In this paper, we propose AdaCS, an adaptive deep
+                     code search method that can be trained once and transferred to new codebases. AdaCS
+                     decomposes the learning process into embedding domain-specific words and matching
+                     general syntactic patterns. Firstly, an unsupervised word embedding technique is used
+                     to construct a matching matrix to represent the lexical similarities. Then, a recurrent
+                     neural network is used to capture latent syntactic patterns from these matching matrices
+                     in a supervised way. As the supervised task learns general syntactic patterns that
+                     exist across domains, AdaCS is transferable to new codebases. Experimental results
+                     show that: when extended to new software projects never seen in the training data,
+                     AdaCS is more robust and significantly outperforms state-of-the-art deep code search
+                     methods.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389266">An Empirical Study of Quick Remedy Commits</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Fengcai Wen</li>
+               <li class="nameList">Csaba Nagy</li>
+               <li class="nameList">Michele Lanza</li>
+               <li class="nameList Last">Gabriele Bavota</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Software systems are continuously modified to implement new features, to fix bugs,
+                     and to improve quality attributes. Most of these activities are not atomic changes,
+                     but rather the result of several related changes affecting different parts of the
+                     code. For this reason, it may happen that developers omit some of the needed changes
+                     and, as a consequence, leave a task partially unfinished, introduce technical debt
+                     or, in the worst case scenario, inject bugs. Knowing the changes that are mistakenly
+                     omitted by developers can help in designing recommender systems able to automatically
+                     identify risky situations in which, for example, the developer is likely to be pushing
+                     an incomplete change to the software repository.
+                  </p> 
+                  <p>We present a qualitative study investigating "quick remedy commits" performed by developers
+                     with the goal of implementing changes omitted in previous commits. With quick remedy
+                     commits we refer to commits that (i) quickly follow a commit performed by the same
+                     developer in the same repository, and (ii) aim at remedying issues introduced as the
+                     result of code changes omitted in the previous commit (e.g., fix references to code
+                     components that have been broken as a consequence of a rename refactoring). Through
+                     a manual analysis of 500 quick remedy commits, we define a taxonomy categorizing the
+                     types of changes that developers tend to omit. The defined taxonomy can guide the
+                     development of tools aimed at detecting omitted changes, and possibly autocomplete
+                     them.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389267">An Empirical Study on Critical Blocking Bugs</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Hao Ren</li>
+               <li class="nameList">Yanhui Li</li>
+               <li class="nameList Last">Lin Chen</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Blocking bugs are a severe type of bugs that prevent other bugs from being fixed.
+                     As software becomes increasingly complex and large, blocking bugs occur in many large-scale
+                     software, especially in software ecosystems. Blocking bugs may have a high negative
+                     impact on software development and maintenance. Usually, blocking bugs preventing
+                     more bugs should be more concerned. In this paper, we focus on a special type of blocking
+                     bugs that block at least two bugs, which we call Critical Blocking Bugs (CBBs).
+                  </p> 
+                  <p>We study CBBs from the following five aspects: the importance, the repair time, the
+                     scale of repair, the experience of developers who repair CBBs, and the circumstance
+                     why CBBs block multiple bugs. We build a dataset containing five open source projects
+                     and classify bugs into three types (i.e., critical blocking bugs, normal blocking
+                     bugs and other bugs, which block at least two, just one and zero bugs, respectively)
+                     to compare the differences between CBBs and other types of bugs. The experimental
+                     results show that CBBs are more important with longer repair time and larger repair
+                     scale, and CBBs are concentrated on parts of components of the project. These results
+                     highlight that CBBs are different from other types of bugs in many aspects, and we
+                     should pay more attention to such bugs in the future software maintenance process.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389253">An Empirical Study on Dynamic Typing Related Practices in Python Systems</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Zhifei Chen</li>
+               <li class="nameList">Yanhui Li</li>
+               <li class="nameList">Bihuan Chen</li>
+               <li class="nameList">Wanwangying Ma</li>
+               <li class="nameList">Lin Chen</li>
+               <li class="nameList Last">Baowen Xu</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The dynamic typing discipline of Python allows developers to program at a high level
+                     of abstraction. However, type related bugs are commonly encountered in Python systems
+                     due to the lack of type declaration and static type checking. Especially, the misuse
+                     of dynamic typing discipline produces underlying bugs and increases maintenance efforts.
+                     In this paper, we introduce six types of dynamic typing related practices in Python
+                     programs, which are the common but potentially risky usage of dynamic typing discipline
+                     by developers. We also implement a tool named PYDYPE to detect them. Based on this
+                     tool, we conduct an empirical study on nine real-world Python systems (with the size
+                     of more than 460KLOC) to understand dynamic typing related practices. We investigate
+                     how widespread the dynamic typing related practices are, why they are introduced into
+                     the systems, whether their usage correlates with increased likelihood of bug occurring,
+                     and how developers fix dynamic typing related bugs. The results show that: (1) dynamic
+                     typing related practices exist inconsistently in different systems and Inconsistent
+                     Variable Types is most prevalent; (2) they are introduced into systems mainly during
+                     early development phase to promote development efficiency; (3) they have a significant
+                     positive correlation with bug occurring; (4) developers tend to add type checks or
+                     exception handling to fix dynamic typing related bugs. These results benefit future
+                     research in coding convention, language design, bug detection and fixing.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389272">BugSum: Deep Context Understanding for Bug Report Summarization</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Haoran Liu</li>
+               <li class="nameList">Yue Yu</li>
+               <li class="nameList">Shanshan Li</li>
+               <li class="nameList">Yong Guo</li>
+               <li class="nameList">Deze Wang</li>
+               <li class="nameList Last">Xiaoguang Mao</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>During collaborative software development, bug reports are dynamically maintained
+                     and evolved as a part of a software project. For a historical bug report with complicated
+                     discussions, an accurate and concise summary can enable stakeholders to reduce the
+                     time effort perusing the entire content. Existing studies on bug report summarization,
+                     based on whether supervised or unsupervised techniques, are limited due to their lack
+                     of consideration of the redundant information and disapproved standpoints among developers'
+                     comments. Accordingly, in this paper, we propose a novel unsupervised approach based
+                     on deep learning network, called BugSum. Our approach integrates an auto-encoder network
+                     for feature extraction with a novel metric (believability) to measure the degree to
+                     which a sentence is approved or disapproved within discussions. In addition, a dynamic
+                     selection strategy is employed to optimize the comprehensiveness of the auto-generated
+                     summary represented by limited words. Extensive experiments show that our approach
+                     outperforms 8 comparative approaches over two public datasets. In particular, the
+                     probability of adding controversial sentences that are clearly disapproved by other
+                     developers during the discussion, into the summary is reduced by up to 69.6%.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389282">Deep-Diving into Documentation to Develop Improved Java-to-Swift API Mapping</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Zejun Zhang</li>
+               <li class="nameList">Minxue Pan</li>
+               <li class="nameList">Tian Zhang</li>
+               <li class="nameList">Xinyu Zhou</li>
+               <li class="nameList Last">Xuandong Li</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Application program interface (API) mapping is the key to the success of code migration.
+                     Leveraging API documentation to map APIs has been explored by previous studies, and
+                     recently, code-based learning approaches have become the mainstream approach and shown
+                     better results. However, learning approaches often require a large amount of training
+                     data (e.g., projects implemented using multiple languages or API mapping datasets),
+                     which are not widely available. In contrast, API documentation is usually available,
+                     but we have observed that much information in API documentation has been underexploited.
+                     Therefore, we develop a deep-dive approach to extensively explore API documentation
+                     to create improved API mapping methods. Our documentation exploration approach involves
+                     analyzing the functional description of APIs, and also considers the parameters and
+                     return values. The results of this analysis can be used to generate not only one-to-one
+                     API mapping, but also compatible API sequences, thereby enabling one-to-many API mapping.
+                     In addition, parameter-mapping relationships, which have often been ignored in previous
+                     approaches, can be produced. We apply this approach to map APIs from Java to Swift,
+                     and the experimental results indicate that our deep-dive analysis of API documentation
+                     leads to API mapping results that are superior to those generated by existing approaches.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389263">Duplicate Bug Report Detection Using Dual-Channel Convolutional Neural Networks</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Jianjun He</li>
+               <li class="nameList">Ling Xu</li>
+               <li class="nameList">Meng Yan</li>
+               <li class="nameList">Xin Xia</li>
+               <li class="nameList Last">Yan Lei</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Developers rely on bug reports to fix bugs. The bug reports are usually stored and
+                     managed in bug tracking systems. Due to the different expression habits, different
+                     reporters may use different expressions to describe the same bug in the bug tracking
+                     system. As a result, the bug tracking system often contains many duplicate bug reports.
+                     Automatically detecting these duplicate bug reports would save a large amount of effort
+                     for bug analysis. Prior studies have found that deep-learning technique is effective
+                     for duplicate bug report detection. Inspired by recent Natural Language Processing
+                     (NLP) research, in this paper, we propose a duplicate bug report detection approach
+                     based on Dual-Channel Convolutional Neural Networks (DC-CNN). We present a novel bug
+                     report pair representation, i.e., dual-channel matrix through concatenating two single-channel
+                     matrices representing bug reports. Such bug report pairs are fed to a CNN model to
+                     capture the correlated semantic relationships between bug reports. Then, our approach
+                     uses the association features to classify whether a pair of bug reports are duplicate
+                     or not. We evaluate our approach on three large datasets from three open-source projects,
+                     including Open Office, Eclipse, Net Beans and a larger combined dataset, and the accuracy
+                     of classification reaches 0.9429, 0.9685, 0.9534, 0.9552 respectively. Such performance
+                     outperforms the two state-of-the-art approaches which also use deep-learning techniques.
+                     The results indicate that our dual-channel matrix representation is effective for
+                     duplicate bug report detection.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389275">Evaluating a Visual Approach for Understanding JavaScript Source Code</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Martin Dias</li>
+               <li class="nameList">Diego Orellana</li>
+               <li class="nameList">Santiago Vidal</li>
+               <li class="nameList">Leonel Merino</li>
+               <li class="nameList Last">Alexandre Bergel</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>To characterize the building blocks of a legacy software system (e.g., structure,
+                     dependencies), programmers usually spend a long time navigating its source code. Yet,
+                     modern integrated development environments (IDEs) do not provide appropriate means
+                     to efficiently achieve complex software comprehension tasks. To deal with this unfulfilled
+                     need, we present Hunter, a tool for the visualization of JavaScript applications.
+                     Hunter visualizes source code through a set of coordinated views that include a node-link
+                     diagram that depicts the dependencies among the components of a system, and a treemap
+                     that helps programmers to orientate when navigating its structure.
+                  </p> 
+                  <p>In this paper, we report on a controlled experiment that evaluates Hunter. We asked
+                     16 participants to solve a set of software comprehension tasks, and assessed their
+                     effectiveness in terms of (i) user performance (i.e., completion time, accuracy, and
+                     attention), and (ii) user experience (i.e., emotions, usability). We found that when
+                     using Hunter programmers required significantly less time to complete various software
+                     comprehension tasks and achieved a significantly higher accuracy. We also found that
+                     the node-link diagram panel of Hunter gets most of the attention of programmers, whereas
+                     the source code panel does so in Visual Studio Code. Moreover, programmers considered
+                     that Hunter exhibits a good user experience.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389252">GGF: A Graph-based Method for Programming Language Syntax Error Correction</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Liwei Wu</li>
+               <li class="nameList">Fei Li</li>
+               <li class="nameList">Youhua Wu</li>
+               <li class="nameList Last">Tao Zheng</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Syntax errors combined with obscure error messages generated by compilers usually
+                     annoy programmers and cause them to waste a lot of time on locating errors. The existing
+                     models do not utilize the structure in the code and just treat the code as token sequences.
+                     It causes low accuracy and poor performance on this task. In this paper, we propose
+                     a novel deep supervised learning model, called Graph-based Grammar Fix(GGF), to help
+                     programmers locate and fix the syntax errors. GGF treats the code as a mixture of
+                     the token sequences and graphs. The graphs build upon the Abstract Syntax Tree (AST)
+                     structure information. GGF encodes an erroneous code with its sub-AST structure, predicts
+                     the error position using pointer network and generates the right token. We utilized
+                     the DeepFix dataset which contains 46500 correct C programs and 6975 programs with
+                     errors written by students taking an introductory programming course. GGF is trained
+                     with the correct programs from the DeepFix dataset with intentionally injected syntax
+                     errors. After training, GGF could fix 4054 (58.12%) of the erroneous code, while the
+                     existing state of the art tool DeepFix fixes 1365 (19.57%) of the erroneous code.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389264">How Does Incomplete Composite Refactoring Affect Internal Quality Attributes?</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Ana Carla Bibiano</li>
+               <li class="nameList">Vinicius Soares</li>
+               <li class="nameList">Daniel Coutinho</li>
+               <li class="nameList">Eduardo Fernandes</li>
+               <li class="nameList">João Lucas Correia</li>
+               <li class="nameList">Kleber Santos</li>
+               <li class="nameList">Anderson Oliveira</li>
+               <li class="nameList">Alessandro Garcia</li>
+               <li class="nameList">Rohit Gheyi</li>
+               <li class="nameList">Baldoino Fonseca</li>
+               <li class="nameList">Márcio Ribeiro</li>
+               <li class="nameList">Caio Barbosa</li>
+               <li class="nameList Last">Daniel Oliveira</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Program refactoring consists of code changes applied to improve the internal structure
+                     of a program and, as a consequence, its comprehensibility. Recent studies indicate
+                     that developers often perform composite refactorings, i.e., a set of two or more interrelated
+                     single refactorings. Recent studies also recommend certain patterns of composite refactorings
+                     to fully remove poor code structures, i.e, code smells, thus further improving the
+                     program comprehension. However, other recent studies report that composite refactorings
+                     often fail to fully remove code smells. Given their failure to achieve this purpose,
+                     these composite refactorings are considered incomplete, i.e, they are not able to
+                     entirely remove a smelly structure. Unfortunately, there is no study providing an
+                     in-depth analysis of the incompleteness nature of many composites and their possibly
+                     partial impact on improving, maybe decreasing, internal quality attributes. This paper
+                     identifies the most common forms of incomplete composites, and their effect on quality
+                     attributes, such as coupling and cohesion, which are known to have an impact on program
+                     comprehension. We analyzed 353 incomplete composite refactorings in 5 software projects,
+                     two common code smells (Feature Envy and God Class), and four internal quality attributes.
+                     Our results reveal that incomplete composite refactorings with at least one Extract
+                     Method are often (71%) applied without Move Methods on smelly classes. We have also
+                     found that most incomplete composite refactorings (58%) tended to at least maintain
+                     the internal structural quality of smelly classes, thereby not causing more harm to
+                     program comprehension. We also discuss the implications of our findings to the research
+                     and practice of composite refactoring.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389274">How Graduate Computing Students Search When Using an Unfamiliar Programming Language</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Gina R. Bai</li>
+               <li class="nameList">Joshua Kayani</li>
+               <li class="nameList Last">Kathryn T. Stolee</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Developers and computing students are usually expected to master multiple programming
+                     languages. To learn a new language, developers often turn to online search to find
+                     information and code examples. However, insights on how learners perform code search
+                     when working with an unfamiliar language are lacking. Understanding how learners search
+                     and the challenges they encounter when using an unfamiliar language can motivate future
+                     tools and techniques to better support subsequent language learners.
+                  </p> 
+                  <p>Research on code search behavior typically involves monitoring developers during search
+                     activities through logs or in situ surveys. We conducted a study on how computing
+                     students search for code in an unfamiliar programming language with 18 graduate students
+                     working on VBA tasks in a lab environment. Our surveys explicitly asked about search
+                     success and query reformulation to gather reliable data on those metrics. By analyzing
+                     the combination of search logs and survey responses, we found that students typically
+                     search to explore APIs or find example code. Approximately 50% of queries that precede
+                     clicks on documentation or tutorials successfully solved the problem. Students frequently
+                     borrowed terms from languages with which they are familiar when searching for examples
+                     in an unfamiliar language, but term borrowing did not impede search success. Edit
+                     distances between reformulated queries and non-reformulated queries were nearly the
+                     same. These results have implications for code search research, especially on reformulation,
+                     and for research on supporting programmers when learning a new language.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389254">How are Deep Learning Models Similar?: An Empirical Study on Clone Analysis of Deep Learning Software</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Xiongfei Wu</li>
+               <li class="nameList">Liangyu Qin</li>
+               <li class="nameList">Bing Yu</li>
+               <li class="nameList">Xiaofei Xie</li>
+               <li class="nameList">Lei Ma</li>
+               <li class="nameList">Yinxing Xue</li>
+               <li class="nameList">Yang Liu</li>
+               <li class="nameList Last">Jianjun Zhao</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Deep learning (DL) has been successfully applied to many cutting-edge applications,
+                     e.g., image processing, speech recognition, and natural language processing. As more
+                     and more DL software is made open-sourced, publicly available, and organized in model
+                     repositories and stores (Model Zoo, ModelDepot), there comes a need to understand
+                     the relationships of these DL models regarding their maintenance and evolution tasks.
+                     Although clone analysis has been extensively studied for traditional software, up
+                     to the present, clone analysis has not been investigated for DL software. Since DL
+                     software adopts the data-driven development paradigm, it is still not clear whether
+                     and to what extent the clone analysis techniques of traditional software could be
+                     adapted to DL software.
+                  </p> 
+                  <p>In this paper, we initiate the first step on the clone analysis of DL software at
+                     three different levels, i.e., source code level, model structural level, and input/output
+                     (I/0)-semantic level, which would be a key in DL software management, maintenance
+                     and evolution. We intend to investigate the similarity between these DL models from
+                     clone analysis perspective. Several tools and metrics are selected to conduct clone
+                     analysis of DL software at three different levels. Our study on two popular datasets
+                     (i.e., MNIST and CIFAR-10) and eight DL models of five architectural families (i.e.,
+                     LeNet, ResNet, DenseNet, AlexNet, and VGG) shows that: 1). the three levels of similarity
+                     analysis are generally adequate to find clones between DL models ranging from structural
+                     to semantic; 2). different measures for clone analysis used at each level yield similar
+                     results; 3) clone analysis of one single level may not render a complete picture of
+                     the similarity of DL models. Our findings open up several research opportunities worth
+                     further exploration towards better understanding and more effective clone analysis
+                     of DL software.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389268">Improved Code Summarization via a Graph Neural Network</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Alexander LeClair</li>
+               <li class="nameList">Sakib Haque</li>
+               <li class="nameList">Lingfei Wu</li>
+               <li class="nameList Last">Collin McMillan</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Automatic source code summarization is the task of generating natural language descriptions
+                     for source code. Automatic code summarization is a rapidly expanding research area,
+                     especially as the community has taken greater advantage of advances in neural network
+                     and AI technologies. In general, source code summarization techniques use the source
+                     code as input and outputs a natural language description. Yet a strong consensus is
+                     developing that using structural information as input leads to improved performance.
+                     The first approaches to use structural information flattened the AST into a sequence.
+                     Recently, more complex approaches based on random AST paths or graph neural networks
+                     have improved on the models using flattened ASTs. However, the literature still does
+                     not describe the using a graph neural network together with source code sequence as
+                     separate inputs to a model. Therefore, in this paper, we present an approach that
+                     uses a graph-based neural architecture that better matches the default structure of
+                     the AST to generate these summaries. We evaluate our technique using a data set of
+                     2.1 million Java method-comment pairs and show improvement over four baseline techniques,
+                     two from the software engineering literature, and two from machine learning literature.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389269">Improving Code Search with Co-Attentive Representation Learning</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Jianhang Shuai</li>
+               <li class="nameList">Ling Xu</li>
+               <li class="nameList">Chao Liu</li>
+               <li class="nameList">Meng Yan</li>
+               <li class="nameList">Xin Xia</li>
+               <li class="nameList Last">Yan Lei</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Searching and reusing existing code from a large-scale codebase, e.g, GitHub, can
+                     help developers complete a programming task efficiently. Recently, Gu et al. proposed
+                     a deep learning-based model (i.e., DeepCS), which significantly outperformed prior
+                     models. The DeepCS embedded codebase and natural language queries into vectors by
+                     two LSTM (long and short-term memory) models separately, and returned developers the
+                     code with higher similarity to a code search query. However, such embedding method
+                     learned two isolated representations for code and query but ignored their internal
+                     semantic correlations. As a result, the learned isolated representations of code and
+                     query may limit the effectiveness of code search.
+                  </p> 
+                  <p>To address the aforementioned issue, we propose a co-attentive representation learning
+                     model, i.e., Co-Attentive Representation Learning Code Search-CNN (CARLCS-CNN). CARLCS-CNN
+                     learns interdependent representations for the embedded code and query with a co-attention
+                     mechanism. Generally, such mechanism learns a correlation matrix between embedded
+                     code and query, and co-attends their semantic relationship via row/column-wise max-pooling.
+                     In this way, the semantic correlation between code and query can directly affect their
+                     individual representations. We evaluate the effectiveness of CARLCS-CNN on Gu et al.'s
+                     dataset with 10k queries. Experimental results show that the proposed CARLCS-CNN model
+                     significantly outperforms DeepCS by 26.72% in terms of MRR (mean reciprocal rank).
+                     Additionally, CARLCS-CNN is five times faster than DeepCS in model training and four
+                     times in testing.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389262">Investigating Near-Miss Micro-Clones in Evolving Software</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Manishankar Mondal</li>
+               <li class="nameList">Banani Roy</li>
+               <li class="nameList">Chanchal K. Roy</li>
+               <li class="nameList Last">Kevin A. Schneider</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Code clones are the same or nearly similar code fragments in a software system's code-base.
+                     While the existing studies have extensively studied regular code clones in software
+                     systems, micro-clones have been mostly ignored. Although an existing study investigated
+                     consistent changes in exact micro-clones, near-miss micro-clones have never been investigated.
+                     In our study, we investigate the importance of near-miss micro-clones in software
+                     evolution and maintenance by automatically detecting and analyzing the consistent
+                     updates that they experienced during the whole period of evolution of our subject
+                     systems. We compare the consistent co-change tendency of near-miss micro-clones with
+                     that of exact micro-clones and regular code clones. According to our investigation
+                     on thousands of revisions of six open-source subject systems written in two different
+                     programming languages, near-miss micro-clones have a significantly higher tendency
+                     of experiencing consistent updates compared to exact micro-clones and regular (both
+                     exact and near-miss) code clones. Consistent updates in near-miss micro-clones have
+                     a high tendency of being related with bug-fixes. Moreover, the percentage of commit
+                     operations where near-miss micro-clones experience consistent updates is considerably
+                     higher than that of regular clones and exact micro-clones. We finally observe that
+                     near-miss micro-clones staying in close proximity to each other have a high tendency
+                     of experiencing consistent updates. Our research implies that near-miss micro-clones
+                     should be considered equally important as of regular clones and exact micro-clones
+                     when making clone management decisions.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389281">Exploiting Code Knowledge Graph for Bug Localization via Bi-directional Attention</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Jinglei Zhang</li>
+               <li class="nameList">Rui Xie</li>
+               <li class="nameList">Wei Ye</li>
+               <li class="nameList">Yuhan Zhang</li>
+               <li class="nameList Last">Shikun Zhang</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Bug localization automatic localize relevant source files given a natural language
+                     description of bug within a software project. For a large project containing hundreds
+                     and thousands of source files, developers need cost lots of time to understand bug
+                     reports generated by quality assurance and localize these buggy source files. Traditional
+                     methods are heavily depending on the information retrieval technologies which rank
+                     the similarity between source files and bug reports in lexical level. Recently, deep
+                     learning based models are used to extract semantic information of code with significant
+                     improvements for bug localization. However, programming language is a highly structural
+                     and logical language, which contains various relations within and cross source files.
+                     Thus, we propose KGBugLocator to utilize knowledge graph embeddings to extract these
+                     interrelations of code, and a keywords supervised bi-directional attention mechanism
+                     regularize model with interactive information between source files and bug reports.
+                     With extensive experiments on four different projects, we prove our model can reach
+                     the new the-state-of-art(SOTA) for bug localization.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389270">Knowledge Transfer in Modern Code Review</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Maria Caulo</li>
+               <li class="nameList">Bin Lin</li>
+               <li class="nameList">Gabriele Bavota</li>
+               <li class="nameList">Giuseppe Scanniello</li>
+               <li class="nameList Last">Michele Lanza</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Knowledge transfer is one of the main goals of modern code review, as shown by several
+                     studies that surveyed and interviewed developers. While knowledge transfer is a clear
+                     expectation of the code review process, there are no analytical studies using data
+                     mined from software repositories to assess the effectiveness of code review in "training"
+                     developers and improve their skills over time. We present a mining-based study investigating
+                     how and whether the code review process helps developers to improve their contributions
+                     to open source projects over time. We analyze 32,062 peer-reviewed pull requests (PRs)
+                     made across 4,981 GitHub repositories by 728 developers who created their GitHub account
+                     in 2015. We assume that PRs performed in the past by a developer D that have been
+                     subject to a code review process have "transferred knowledge" to D. Then, we verify
+                     if over time (i.e., when more and more reviewed PRs are made by D), the quality of
+                     the contributions made by D to open source projects increases (as assessed by proxies
+                     we defined, such as the acceptance of PRs, or the polarity of the sentiment in the
+                     review comments left for the submitted PRs). With the above measures, we were unable
+                     to capture the positive impact played by the code review process on the quality of
+                     developers' contributions. This might be due to several factors, including the choices
+                     we made in our experimental design.Additional investigations are needed to confirm
+                     or contradict such a negative result.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389273">Measuring Software Testability Modulo Test Quality</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Valerio Terragni</li>
+               <li class="nameList">Pasquale Salza</li>
+               <li class="nameList Last">Mauro Pezzè</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Comprehending the degree to which software components support testing is important
+                     to accurately schedule testing activities, train developers, and plan effective refactoring
+                     actions. Software testability estimates such property by relating code characteristics
+                     to the test effort. The main studies of testability reported in the literature investigate
+                     the relation between class metrics and test effort in terms of the size and complexity
+                     of the associated test suites. They report a moderate correlation of some class metrics
+                     to test-effort metrics, but suffer from two main limitations: (i) the results hardly
+                     generalize due to the small empirical evidence (datasets with no more than eight software
+                     projects); and (ii) mostly ignore the quality of the tests. However, considering the
+                     quality of the tests is important. Indeed, a class may have a low test effort because
+                     the associated tests are of poor quality, and not because the class is easier to test.
+                     In this paper, we propose an approach to measure testability that normalizes the test
+                     effort with respect to the test quality, which we quantify in terms of code coverage
+                     and mutation score. We present the results of a set of experiments on a dataset of
+                     9,861 Java classes, belonging to 1,186 open source projects, with around 1.5 million
+                     of lines of code overall. The results confirm that normalizing the test effort with
+                     respect to the test quality largely improves the correlation between class metrics
+                     and the test effort. Better correlations result in better prediction power and thus
+                     better prediction of the test effort.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389280">On Combining IR Methods to Improve Bug Localization</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Saket Khatiwada</li>
+               <li class="nameList">Miroslav Tushev</li>
+               <li class="nameList Last">Anas Mahmoud</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Information Retrieval (IR) methods have been recently employed to provide automatic
+                     support for bug localization tasks. However, for an IR-based bug localization tool
+                     to be useful, it has to achieve adequate retrieval accuracy. Lower precision and recall
+                     can leave developers with large amounts of incorrect information to wade through.
+                     To address this issue, in this paper, we systematically investigate the impact of
+                     combining various IR methods on the retrieval accuracy of bug localization engines.
+                     The main assumption is that different IR methods, targeting different dimensions of
+                     similarity between artifacts, can be used to enhance the confidence in each others'
+                     results. Five benchmark systems from different application domains are used to conduct
+                     our analysis. The results show that a) near-optimal global configurations can be determined
+                     for different combinations of IR methods, b) optimized IR-hybrids can significantly
+                     outperform individual methods as well as other unoptimized methods, and c) hybrid
+                     methods achieve their best performance when utilizing information-theoretic IR methods.
+                     Our findings can be used to enhance the practicality of IR-based bug localization
+                     tools and minimize the cognitive overload developers often face when locating bugs.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389277">Performing Tasks Can Improve Program Comprehension Mental Model of Novice Developers: An Empirical Approach</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Amal A. Shargabi</li>
+               <li class="nameList">Syed Ahmad Aljunid</li>
+               <li class="nameList">Muthukkaruppan Annamalai</li>
+               <li class="nameList Last">Abdullah Mohd Zin</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Program comprehension is challenging for many novice developers. Literature indicates
+                     that program comprehension is greatly influenced by the specific purpose of reading
+                     a program, i.e., the task. However, the task has often been used in research as a
+                     measure for program comprehension. Our study takes an inverse approach to investigate
+                     the effect of using the task as a facilitator to improve novice developers program
+                     comprehension. To measure the effect, our previously published program comprehension
+                     mental model of novice developers was utilized. In a sense, the study provides an
+                     empirical evaluation of our proposed model in terms of its ability to capture the
+                     novice developer's mental model properly. The comprehensive experiment involved one
+                     hundred and seventy-eight (178) novice developers from three (3) universities and
+                     investigated the effect of six (6) tasks with difficulties ranked according to the
+                     cognitive categories of Revised Bloom Taxonomy. The results of the experiment confirmed
+                     that performing the tasks can improve program comprehension of novice developers.
+                     It demonstrated that different tasks improved different abstraction levels of the
+                     mental model and further indicated that higher cognitive category tasks improve program
+                     comprehension mental model at higher abstraction levels. The results also showed that
+                     the mental model we have proposed earlier is able to capture what novice developers
+                     know in response to the tasks they perform. The general implication of the study is
+                     that the tasks can be an effective tool for computing educators to incorporate program
+                     comprehension in programming courses, whereby these tasks need to be introduced in
+                     stages in the teaching of programming; starting initially from the lower cognitive
+                     categories' tasks such as Recall and culminating at the higher cognitive categories'
+                     tasks such as Modification by first taking into consideration the novices' programming
+                     levels.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389271">srcClone: Detecting Code Clones via Decompositional Slicing</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Hakam W. Alomari</li>
+               <li class="nameList Last">Matthew Stephan</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Detecting code clones is an established method for comprehending and maintaining systems.
+                     One important but challenging form of code clone detection involves detecting semantic
+                     clones, which are those that are semantically similar code segments that differ syntactically.
+                     Existing approaches to semantic clone detection do not scale well to large code bases
+                     and have room for improvement in their precision and recall. In this paper, we present
+                     a scalable slicing-based approach for detecting code clones, including semantic clones.
+                     We determine code segment similarity based on their corresponding program slices.
+                     We take advantage of a lightweight, publicly available, and scalable program slicing
+                     approach to compute the necessary information. Our approach uses dependency analysis
+                     to find and measure cloned elements, and provides insights into elements of the code
+                     that are affected by an entire clone set/class. We have implemented our approach as
+                     a tool called srcClone. We evaluate it by comparing it to two semantic clone detectors
+                     in terms of clones, performance, and scalability; and perform recall and precision
+                     analysis using established benchmark scenarios. In our evaluation, we illustrate our
+                     approach is both relatively scalable and accurate. srcClone can also be used by program
+                     analysts to run on non-compilable and incomplete source code, which serves comprehension
+                     and maintenance tasks very well. We believe our approach is an important advancement
+                     in program comprehension that can help improve clone detection practices and provide
+                     developers greater insights into their software.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389260">Supporting Program Comprehension through Fast Query response in Large-Scale Systems</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Jinfeng Lin</li>
+               <li class="nameList">Yalin Liu</li>
+               <li class="nameList Last">Jane Cleland-Huang</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Software traceability provides support for various engineering activities including
+                     Program Comprehension; however, it can be challenging and arduous to complete in large
+                     industrial projects. Researchers have proposed automated traceability techniques to
+                     create, maintain and leverage trace links. Computationally intensive techniques, such
+                     as repository mining and deep learning, have showed the capability to deliver accurate
+                     trace links. The objective of achieving trusted, automated tracing techniques at industrial
+                     scale has not yet been successfully accomplished due to practical performance challenges.
+                     This paper evaluates high-performance solutions for deploying effective, computationally
+                     expensive trace-ability algorithms in large scale industrial projects and leverages
+                     generated trace links to answer Program Comprehension Queries. We comparatively evaluate
+                     four different platforms for supporting industrial-scale tracing solutions, capable
+                     of tackling software projects with millions of artifacts. We demonstrate that tracing
+                     solutions built using big data frameworks scale well for large projects and that our
+                     Spark implementation outperforms relational database, graph database (GraphDB), and
+                     plain Java implementations. These findings contradict earlier results which suggested
+                     that GraphDB solutions should be adopted for large-scale tracing problems.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389256">Testing of Mobile Applications in the Wild: A Large-Scale Empirical Study on Android Apps</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Fabiano Pecorelli</li>
+               <li class="nameList">Gemma Catolino</li>
+               <li class="nameList">Filomena Ferrucci</li>
+               <li class="nameList">Andrea De Lucia</li>
+               <li class="nameList Last">Fabio Palomba</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Nowadays, mobile applications (a.k.a., apps) are used by over two billion users for
+                     every type of need, including social and emergency connectivity. Their pervasiveness
+                     in today's world has inspired the software testing research community in devising
+                     approaches to allow developers to better test their apps and improve the quality of
+                     the tests being developed. In spite of this research effort, we still notice a lack
+                     of empirical studies aiming at assessing the actual quality of test cases developed
+                     by mobile developers: this perspective could provide evidence-based findings on the
+                     current status of testing in the wild as well as on the future research directions
+                     in the field. As such, we performed a large-scale empirical study targeting 1,780
+                     open-source Android apps and aiming at assessing (1) the extent to which these apps
+                     are actually tested, (2) how well-designed are the available tests, and (3) what is
+                     their effectiveness. The key results of our study show that mobile developers still
+                     tend not to properly test their apps. Furthermore, we discovered that the test cases
+                     of the considered apps have a low (i) design quality, both in terms of test code metrics
+                     and test smells, and (ii) effectiveness when considering code coverage as well as
+                     assertion density.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389259">The Secret Life of Commented-Out Source Code</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Tri Minh Triet Pham</li>
+               <li class="nameList Last">Jinqiu Yang</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Source code commenting is a common practice to improve code comprehension in software
+                     development. While comments often consist of descriptive natural language, surprisingly,
+                     there exists a non-trivial portion of comments that are actually code statements,
+                     i.e., commented-out code (CO code), even in well-maintained software systems. Commented-out
+                     code practice is rarely studied and often excluded in prior studies on comments due
+                     to its irrelevance to natural language. When being openly discussed, CO practice is
+                     generally considered a bad practice. However, there is no prior work to assess the
+                     nature (prevalence, evolution, motivation, and necessity of utilization) of CO code
+                     practice.
+                  </p> 
+                  <p>In this paper, we perform the first study to understand CO code practice. Inspired
+                     by prior works in comment analysis, we develop automated solutions to identify CO
+                     code and track its evolution in development history. Through analyzing six open-source
+                     projects of different sizes and from diverse domains, we find that CO code practice
+                     is non-trivial in software development, especially in the early phase of development
+                     history, e.g., up to 20% of the commits involve CO code practice. We observe common
+                     evolution patterns of CO code and find that developers may uncomment and comment code
+                     more frequently than expected, e.g., 10% of the CO code practices have been uncommented
+                     at least once. Through a manual analysis, we identify the common reasons that developers
+                     adopt CO code practices and reveal maintenance challenges associated with CO code
+                     practices.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389265">UI Screens Identification and Extraction from Mobile Programming Screencasts</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Mohammad Alahmadi</li>
+               <li class="nameList">Abdulkarim Khormi</li>
+               <li class="nameList Last">Sonia Haiduc</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Mobile applications demand is on the rise, leading to more programmers learning to
+                     develop or having to maintain this kind of programs. Developers often refer to online
+                     resources to find inspiration or answers to questions they have about mobile programming
+                     topics and screencasts are a popular resource. However, given the multitude of screencasts
+                     available, it can be difficult to quickly comprehend which of the many videos is relevant
+                     to one's needs.
+                  </p> 
+                  <p>We propose a novel approach, called UIScreens, which detects, extracts, and presents
+                     the most representative user interface (UI) screens embedded in mobile development
+                     screencasts. This could help developers quickly comprehend what an app displayed in
+                     a video is about, therefore saving time searching for useful videos.
+                  </p> 
+                  <p>UIScreens has been evaluated in two empirical studies on iOS and Android programming
+                     screencasts. The first study investigates the accuracy of our UI extraction and shows
+                     that our approach is able to detect and extract UI screens with an accuracy of 94%.
+                     The second is a user study with mobile app developers, who evaluated both the accuracy
+                     and the usefulness of UIScreens. They agreed that UIScreens is accurate and extracts
+                     representative UI screens from videos. They considered that the extracted UI screens
+                     are useful for understanding what a video is about and if it is relevant to a search.
+                     Our approach has been implemented as a free online tool.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389257">Unified Configuration Setting Access in Configuration Management Systems</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Markus Raab</li>
+               <li class="nameList">Bernhard Denner</li>
+               <li class="nameList">Stefan Hahnenberg</li>
+               <li class="nameList Last">Jürgen Cito</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The behavior of software is often governed by a large set of configuration settings,
+                     distributed over several stacks in the software system. These settings are often manifested
+                     as plain text files that exhibit different formats and syntax. Configuration management
+                     systems are introduced to manage the complexity of provisioning and distributing configuration
+                     in large scale software. Globally patching configuration settings in these systems
+                     requires, however, introducing text manipulation or external templating mechanisms,
+                     that paradoxically lead to increased complexity and, eventually, to misconfigurations.
+                     These issues manifest through crashes or bugs that are often only discovered at runtime.
+                     We introduce a framework called Elektra, which integrates a centralized configuration
+                     space into configuration management systems to avoid syntax errors and avert the overriding
+                     of default values, to increase developer productivity. Elektra enables mounting different
+                     configuration files into a common, globally shared data structure to abstract away
+                     from the intricate details of file formats and configuration syntax and introduce
+                     a unified way to specify and patch configuration settings as key/value pairs. In this
+                     work, we integrate Elektra in the configuration management tool Puppet. Additionally,
+                     we present a user study with 14 developers showing that Elektra enables significant
+                     productivity improvements over existing configuration management concepts. Our study
+                     participants performed significantly faster using Elektra in solving three representative
+                     scenarios that involve configuration manipulation, compared to other general-purpose
+                     configuration manipulation methods.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389279">What Drives the Reading Order of Programmers?: An Eye Tracking Study</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Norman Peitek</li>
+               <li class="nameList">Janet Siegmund</li>
+               <li class="nameList Last">Sven Apel</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Background: The way how programmers comprehend source code depends on several factors,
+                     including the source code itself and the programmer. Recent studies showed that novice
+                     programmers tend to read source code more like natural language text, whereas experts
+                     tend to follow the program execution flow. But, it is unknown how the linearity of
+                     source code and the comprehension strategy influence programmers' linearity of reading
+                     order.
+                  </p> 
+                  <p>Objective: We replicate two previous studies with the aim of additionally providing
+                     empirical evidence on the influencing effects of linearity of source code and programmers'
+                     comprehension strategy on linearity of reading order.
+                  </p> 
+                  <p>Methods: To understand the effects of linearity of source code on reading order, we
+                     conducted a non-exact replication of studies by Busjahn et al. and Peachock et al.,
+                     which compared the reading order of novice and expert programmers. Like the original
+                     studies, we used an eye-tracker to record the eye movements of participants (12 novice
+                     and 19 intermediate programmers).
+                  </p> 
+                  <p>Results: In line with Busjahn et al. (but different from Peachock et al.), we found
+                     that experience modulates the reading behavior of participants. However, the linearity
+                     of source code has an even stronger effect on reading order than experience, whereas
+                     the comprehension strategy has a minor effect.
+                  </p> 
+                  <p>Implications: Our results demonstrate that studies on the reading behavior of programmers
+                     must carefully select source code snippets to control the influence of confounding
+                     factors. Furthermore, we identify a need for further studies on how programmers should
+                     structure source code to align it with their natural reading behavior to ease program
+                     comprehension.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389276">When Are Smells Indicators of Architectural Refactoring Opportunities: A Study of 50 Software Projects</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Leonardo Sousa</li>
+               <li class="nameList">Willian Oizumi</li>
+               <li class="nameList">Alessandro Garcia</li>
+               <li class="nameList">Anderson Oliveira</li>
+               <li class="nameList">Diego Cedrim</li>
+               <li class="nameList Last">Carlos Lucena</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Refactoring is a widely adopted practice for improving code comprehension and for
+                     removing severe structural problems in a project. When refactorings affect the system
+                     architecture, they are called architectural refactorings. Unfortunately, developers
+                     usually do not know when and how they should apply refactorings to remove architectural
+                     problems. Nevertheless, they might be more susceptible to applying architectural refactoring
+                     if they rely on code smells and code refactoring -- two concepts that they usually
+                     deal with through their routine programming activities. To investigate if smells can
+                     serve as indicators of architectural refactoring opportunities, we conducted a retrospective
+                     study over the commit history of 50 software projects. We analyzed 52,667 refactored
+                     elements to investigate if they had architectural problems that could have been indicated
+                     by automatically-detected smells. We considered purely structural refactorings to
+                     identify elements that were likely to have architectural problems. We found that the
+                     proportion of refactored elements without smells is much lower than those refactored
+                     with smells. By analyzing the latter, we concluded that smells can be used as indicators
+                     of architectural refactoring opportunities when the affected source code is deteriorated,
+                     i.e., the code hosting two or more smells. For example, when God Class or Complex
+                     Class appear together with other smells, they are indicators of architectural refactoring
+                     opportunities. In general, smells that often co-occurred with other smells (67.53%)
+                     are indicators of architectural refactoring opportunities in most cases (88.53% of
+                     refactored elements). Our study also enables us to derive a catalog with patterns
+                     of smells that indicate refactoring opportunities to remove specific types of architectural
+                     problems. These patterns can guide developers and make them more susceptible to apply
+                     architectural refactorings.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Early Research Achievements</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389291">Combining Biometric Data with Focused Document Types Classifies a Success of Program
+                  Comprehension</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Toyomi Ishida</li>
+               <li class="nameList">Hidetake Uwano</li>
+               <li class="nameList Last">Yoshiharu Ikutani</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Program comprehension is one of the important cognitive processes in software maintenance.
+                     The process typically involves diverse mental activities such as understanding of
+                     source code, library usages, and requirements. Systematic supports would be improved
+                     if the supports can be aware of such fine-grained mental activities during program
+                     comprehension. Here we aim to investigate whether biometric data can be varied according
+                     to such mental activity classes and conduct an experiment with program comprehension
+                     tasks involving multiple documents. As a result, we successfully classified the success/failure
+                     of the tasks at 85.2% from electroencephalogram (EEG) combined with focused document
+                     types. This result suggests that our metrics based on EEG and focused document types
+                     might be beneficial to detect developers' diverse mental activities triggered by different
+                     documents.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389286">Detecting Code Comment Inconsistency using Siamese Recurrent Network</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Fazle Rabbi</li>
+               <li class="nameList Last">Md Saeed Siddik</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Comments are the internal documentation of corresponding code blocks, which are essential
+                     to understand and maintain a software. In large scale software development, developers
+                     need to analyze existing codes, where comments assist better readability. In practice,
+                     developers commonly ignore comments' updating with respect to changing codes, which
+                     leads the code comment inconsistency. Traditionally researchers detect these inconsistencies
+                     based on code-comment tokens. However, sequence ordering in codecomments is ignored
+                     in existing solution, as a result inconsistencies for invalid sequences of codes and
+                     comments are neglected. This paper solves these inconsistencies using siamese recurrent
+                     network which uses word tokens in codes and comments as well as their sequences in
+                     corresponding codes or comments. Proposed approach has been evaluated with a benchmark
+                     dataset, along with the ability of detecting invalid code comment sequence is examined.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389290">Improving the Accuracy of Spectrum-based Fault Localization for Automated Program
+                  Repair</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Tetsushi Kuma</li>
+               <li class="nameList">Yoshiki Higo</li>
+               <li class="nameList">Shinsuke Matsumoto</li>
+               <li class="nameList Last">Shinji Kusumoto</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The sufficiency of test cases is essential for spectrum-based fault localization (in
+                     short, SBFL). If a given set of test cases is not sufficient, SBFL does not work.
+                     In such a case, we can improve the reliability of SBFL by adding new test cases. However,
+                     adding many test cases without considering their properties is not appropriate in
+                     the context of automated program repair (in short, APR). For example, in the case
+                     of GenProg, which is the most famous APR tool, all the test cases related to the bug
+                     module are executed for each of the mutated programs. Execution results of test cases
+                     are used for checking whether they pass all the test cases and inferring faulty statements
+                     for a given bug. Thus, in the context of APR, it is important to add necessary minimum
+                     test cases to improve the accuracy of SBFL. In this paper, we propose three strategies
+                     for selecting some test cases from a large number of automatically-generated test
+                     cases. We conducted a small experiment on bug dataset Defect4J and confirmed that
+                     the accuracy of SBFL was improved for 56.3% of target bugs while the accuracy was
+                     decreased for 17.3% in the case of the best strategy. We also confirmed that the increase
+                     of the execution time was suppressed to 1.5 seconds at the median.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389284">Inheritance software metrics on smart contracts</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Ashish Rajendra Sai</li>
+               <li class="nameList">Conor Holmes</li>
+               <li class="nameList">Jim Buckley</li>
+               <li class="nameList Last">Andre Le Gear</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Blockchain systems have gained substantial traction recently, partly due to the potential
+                     of decentralized immutable mediation of economic activities. Ethereum is a prominent
+                     example that has the provision for executing stateful computing scripts known as Smart
+                     Contracts. These smart contracts resemble traditional programs, but with immutability
+                     being the core differentiating factor. Given their immutability and potential high
+                     monetary value, it becomes imperative to develop high-quality smart contracts. Software
+                     metrics have traditionally been an essential tool in determining programming quality.
+                     Given the similarity between smart contracts (written in Solidity for Ethereum) and
+                     object-oriented (OO) programming, OO metrics would appear applicable. In this paper,
+                     we empirically evaluate inheritance-based metrics as applied to smart contracts. We
+                     adopt this focus because, traditionally, inheritance has been linked to a more complex
+                     codebase which we posit is not the case with Solidity based smart contracts. In this
+                     work, we evaluate the hypothesis that, due to the differences in the context of smart
+                     contracts and OO programs, it may not be appropriate to use the same interpretation
+                     of inheritance based metrics for assessment.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389288">Linguistic Documentation of Software History</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Miroslav Tushev</li>
+               <li class="nameList Last">Anas Mahmoud</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Open Source Software (OSS) projects start with an initial vocabulary, often determined
+                     by the first generation of developers. This vocabulary, embedded in code identifier
+                     names and internal code comments, goes through multiple rounds of change, influenced
+                     by the interrelated patterns of human (e.g., developers joining and departing) and
+                     system (e.g., maintenance activities) interactions. Capturing the dynamics of this
+                     change is crucial for understanding and synthesizing code changes over time. However,
+                     existing code evolution analysis tools, available in modern version control systems
+                     such as GitHub and SourceForge, often overlook the linguistic aspects of code evolution.
+                     To bridge this gap, in this paper, we propose to study code evolution in OSS projects
+                     through the lens of developers' language, also known as code lexicon. Our analysis
+                     is conducted using 32 OSS projects sampled from a broad range of application domains.
+                     Our results show that different maintenance activities impact code lexicon differently.
+                     These insights lay out a preliminary foundation for modeling the linguistic history
+                     of OSS projects. In the long run, this foundation will be utilized to provide support
+                     for basic program comprehension tasks and help researchers gain new insights into
+                     the complex interplay between linguistic change and various system and human aspects
+                     of OSS development.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389287">Program Comprehension in Virtual Reality</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">James Dominic</li>
+               <li class="nameList">Brock Tubre</li>
+               <li class="nameList">Jada Houser</li>
+               <li class="nameList">Charles Ritter</li>
+               <li class="nameList">Deborah Kunkel</li>
+               <li class="nameList Last">Paige Rodeghero</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Virtual reality is an emerging technology for various domains such as medicine, psychotherapy,
+                     architecture, and gaming. Recently, software engineering researchers have started
+                     to explore virtual reality as a tool for programmers. However, few studies examine
+                     source code comprehension in a virtual reality (VR) environment. In this paper, we
+                     explore the human experience of comprehending source code in VR. We conducted a study
+                     with 26 graduate students. We found that the programmers experienced more challenges
+                     when reading and comprehending code in VR. We found no statistically significant difference
+                     in the programmers' perceived productivity between our VR and traditional comprehension
+                     studies.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389289">Staged Tree Matching for Detecting Code Move across Files</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Akira Fujimoto</li>
+               <li class="nameList">Yoshiki Higo</li>
+               <li class="nameList">Junnosuke Matsumoto</li>
+               <li class="nameList Last">Shinji Kusumoto</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>In software development, developers often need to understand source code differences
+                     in their activities. GumTree is a tool that detects tree-based source code differences.
+                     GumTree constructs abstract syntax trees from the source code before and after a given
+                     change, and then, it identifies inserted/deleted/moved subtrees and updated nodes.
+                     Source code differences are detected based on the four kinds of information in GumTree.
+                     However, GumTree calculates the difference for each file individually, so that it
+                     cannot detect moves of code fragments across files. In this research, we propose (1)
+                     to construct a single abstract syntax tree from all source files included in a project
+                     and (2) to perform a staged tree matching to detect across-file code moves efficiently
+                     and accurately. We have already conducted a pilot experiment on open source projects
+                     with our technique. As a result, we were able to detect code moves across files in
+                     all the projects, and the number of such code moves was 76,600 in total.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389285">Automatic Android Deprecated-API Usage Update by Learning from Single Updated Example</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Stefanus A. Haryono</li>
+               <li class="nameList">Ferdian Thung</li>
+               <li class="nameList">Hong Jin Kang</li>
+               <li class="nameList">Lucas Serrano</li>
+               <li class="nameList">Gilles Muller</li>
+               <li class="nameList">Julia Lawall</li>
+               <li class="nameList">David Lo</li>
+               <li class="nameList Last">Lingxiao Jiang</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Due to the deprecation of APIs in the Android operating system, developers have to
+                     update usages of the APIs to ensure that their applications work for both the past
+                     and current versions of Android. Such updates may be widespread, non-trivial, and
+                     time-consuming. Therefore, automation of such updates will be of great benefit to
+                     developers. AppEvolve, which is the state-of-the-art tool for automating such updates,
+                     relies on having before- and after-update examples to learn from. In this work, we
+                     propose an approach named CocciEvolve that performs such updates using only a single
+                     after-update example. CocciEvolve learns edits by extracting the relevant update to
+                     a block of code from an after-update example. From preliminary experiments, we find
+                     that CocciEvolve can successfully perform 96 out of 112 updates, with a success rate
+                     of 85%.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Industry</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389293">Ownership at Large: Open Problems and Challenges in Ownership Management</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">John Ahlgren</li>
+               <li class="nameList">Maria Eugenia Berezin</li>
+               <li class="nameList">Kinga Bojarczuk</li>
+               <li class="nameList">Elena Dulskyte</li>
+               <li class="nameList">Inna Dvortsova</li>
+               <li class="nameList">Johann George</li>
+               <li class="nameList">Natalija Gucevska</li>
+               <li class="nameList">Mark Harman</li>
+               <li class="nameList">Shan He</li>
+               <li class="nameList">Ralf Lämmel</li>
+               <li class="nameList">Erik Meijer</li>
+               <li class="nameList">Silvia Sapora</li>
+               <li class="nameList Last">Justin Spahr-Summers</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Software-intensive organizations rely on large numbers of software assets of different
+                     types, e.g., source-code files, tables in the data warehouse, and software configurations.
+                     Who is the most suitable owner of a given asset changes over time, e.g., due to reorganization
+                     and individual function changes. New forms of automation can help suggest more suitable
+                     owners for any given asset at a given point in time. By such efforts on ownership
+                     health, accountability of ownership is increased. The problem of finding the most
+                     suitable owners for an asset is essentially a program comprehension problem: how do
+                     we automatically determine who would be best placed to understand, maintain, evolve
+                     (and thereby assume ownership of) a given asset. This paper introduces the Facebook
+                     Ownesty system, which uses a combination of ultra large scale data mining and machine
+                     learning and has been deployed at Facebook as part of the company's ownership management
+                     approach. Ownesty processes many millions of software assets (e.g., source-code files)
+                     and it takes into account workflow and organizational aspects. The paper sets out
+                     open problems and challenges on ownership for the research community with advances
+                     expected from the fields of software engineering, programming languages, and machine
+                     learning.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389292">Program Slicing and Execution Tracing for Differential Testing at Adobe Analytics</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Darryl Jarman</li>
+               <li class="nameList">Scott Hunt</li>
+               <li class="nameList Last">Dave Towey</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>This paper reports on the use of program slicing concepts and partial execution tracing
+                     at Adobe Analytics to address a major limitation of differential testing --- namely,
+                     how to deal with the large numbers of differences typically produced by this regression
+                     testing technique. Manual verification, typically used to verify detected differences,
+                     is tedious, time-consuming and error-prone. This severely limits the volume of testing
+                     that can be done and thereby reduces adoption of differential testing. It is hoped
+                     that, by sharing this experience, researchers with expertise in program slicing might
+                     be motivated to help solve some of the issues and limitations encountered during this
+                     novel application of slicing to a real-world industrial problem.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389294">Understanding What Software Engineers Are Working on: The Work-Item Prediction Challenge</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Ralf Lämmel</li>
+               <li class="nameList">Alvin Kerber</li>
+               <li class="nameList Last">Liane Praza</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Understanding what a software engineer (a developer, an incident responder, a production
+                     engineer, etc.) is working on is a challenging problem -- especially when considering
+                     the more complex software engineering workflows in software-intensive organizations:
+                     i) engineers rely on a multitude (perhaps hundreds) of loosely integrated tools; ii)
+                     engineers engage in concurrent and relatively long running workflows; ii) infrastructure
+                     (such as logging) is not fully aware of work items; iv) engineering processes (e.g.,
+                     for incident response) are not explicitly modeled. In this paper, we explain the corresponding
+                     'work-item prediction challenge' on the grounds of representative scenarios, report
+                     on related efforts at Facebook, discuss some lessons learned, and review related work
+                     to call to arms to leverage, advance, and combine techniques from program comprehension,
+                     mining software repositories, process mining, and machine learning.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Programming Education</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389283">How do Students Experience and Judge Software Comprehension Techniques?</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Regina Hebig</li>
+               <li class="nameList">Truong Ho-Quang</li>
+               <li class="nameList">Rodi Jolak</li>
+               <li class="nameList">Jan Schröder</li>
+               <li class="nameList">Humberto Linero</li>
+               <li class="nameList">Magnus Ågren</li>
+               <li class="nameList Last">Salome Honest Maro</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Today, there is a wide range of techniques to support software comprehension. However,
+                     we do not fully understand yet what techniques really help novices, to comprehend
+                     a software system. In this paper, we present a master level project course on software
+                     evolution, which has a large focus on software comprehension. We collected data about
+                     student's experience with diverse comprehension techniques during focus group discussions
+                     over the course of two years. Our results indicate that systematic code reading can
+                     be supported by additional techniques to guiding reading efforts. Most techniques
+                     are considered valuable for gaining an overview and some techniques are judged to
+                     be helpful only in later stages of software comprehension efforts.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>DEMONSTRATION SESSION: Tool Demonstration</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389299">BugVis: Commit Slicing for Fault Visualisation</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">David Bowes</li>
+               <li class="nameList">Jean Petrić</li>
+               <li class="nameList Last">Tracy Hall</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>In this paper we present BugVis, our tool which allows the visualisation of the lifetime
+                     of a code fault. The commit history of the fault from insertion to fix is visualised.
+                     Unlike previous similar tools, BugVis visualises only the lines of each commit involved
+                     in the fault. The visualisation creates a commit slice throughout the history of the
+                     fault which enables comprehension of the evolution of the code involved in the fault.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389296">Just-In-Time Test Smell Detection and Refactoring: The DARTS Project</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Stefano Lambiase</li>
+               <li class="nameList">Andrea Cupito</li>
+               <li class="nameList">Fabiano Pecorelli</li>
+               <li class="nameList">Andrea De Lucia</li>
+               <li class="nameList Last">Fabio Palomba</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Test smells represent sub-optimal design or implementation solutions applied when
+                     developing test cases. Previous research has shown that these smells may decrease
+                     both maintainability and effectiveness of tests and, as such, researchers have been
+                     devising methods to automatically detect them. Nevertheless, there is still a lack
+                     of tools that developers can use within their integrated development environment to
+                     identify test smells and refactor them. In this paper, we present DARTS (Detection
+                     And Refactoring of Test Smells), an Intellij plug-in which (1) implements a state-of-the-art
+                     detection mechanism to detect instances of three test smell types, i.e., General Fixture,
+                     Eager Test, and Lack of Cohesion of Test Methods, at commit-level and (2) enables
+                     their automated refactoring through the integrated APIs provided by Intellij.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389295">OpenSZZ: A Free, Open-Source, Web-Accessible Implementation of the SZZ Algorithm</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Valentina Lenarduzzi</li>
+               <li class="nameList">Fabio Palomba</li>
+               <li class="nameList">Davide Taibi</li>
+               <li class="nameList Last">Damian Andrew Tamburri</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The accurate identification of defect-inducing commits represents a key problem for
+                     researchers interested in studying the naturalness of defects and defining defect
+                     prediction models. To tackle this problem, software engineering researchers have relied
+                     on and proposed several implementations of the well-known Sliwerski-Zimmermann-Zeller
+                     (SZZ) algorithm. Despite its popularity and wide usage, no open-source, publicly available,
+                     and web-accessible implementation of the algorithm has been proposed so far. In this
+                     paper, we prototype and make available one such implementation for further use by
+                     practitioners and researchers alike. The evaluation of the proposed prototype showed
+                     competitive results and lays the foundation for future work. This paper outlines our
+                     prototype, illustrating its usage and reporting on its evaluation in action.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389298">Refactoring Android-specific Energy Smells: A Plugin for Android Studio</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Emanuele Iannone</li>
+               <li class="nameList">Fabiano Pecorelli</li>
+               <li class="nameList">Dario Di Nucci</li>
+               <li class="nameList">Fabio Palomba</li>
+               <li class="nameList Last">Andrea De Lucia</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Mobile applications are major means to perform daily actions, including social and
+                     emergency connectivity. However, their usability is threatened by energy consumption
+                     that may be impacted by code smells i.e., symptoms of bad implementation and design
+                     practices. In particular, researchers derived a set of mobile-specific code smells
+                     resulting in increased energy consumption of mobile apps and removing such smells
+                     through refactoring can mitigate the problem. In this paper, we extend and revise
+                     aDoctor, a tool that we previously implemented to identify energy-related smells.
+                     On the one hand, we present and implement automated refactoring solutions to those
+                     smells. On the other hand, we make the tool completely open-source and available in
+                     Android Studio as a plugin published in the official store. The video showing the
+                     tool in action is available at: https://www.youtube.com/watch?v=1c2EhVXiKis
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387904.3389297">SimplyHover: Improving Comprehension of else Statements</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Ahmad Jbara</li>
+               <li class="nameList">Or Shacham</li>
+               <li class="nameList">Bar Ben Michael</li>
+               <li class="nameList Last">Omer Tavor</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Code comprehension is a vital mental process in any maintenance activity. It becomes
+                     decisive in large code blocks, in particular those that are governed by if-else statements.
+                     These large blocks increase the spatial distance between the if statement and its
+                     else counterpart or other dependent else statements. This increased spatial complexity
+                     makes it hard for the developer to recall the if logical expression that he has just
+                     read and understood, so he needs to go back and read it again, then understand it,
+                     and eventually negate it to get the else implicit logical expression. In extreme cases
+                     the if-else pair might occur in different pages so the developer has to scroll back
+                     and forth to grasp them both. Furthermore, to understand the else implicit negated
+                     expression he might want to go back to the farthest if statement and understand the
+                     aggregated logical expression all the way to the else which makes the understanding
+                     of the else even harder.
+                  </p> 
+                  <p>In this work, we introduce SimplyHover, a plug-in for the Eclipse IDE that brings
+                     the if condition next to its else counterpart or one of its descendants saving the
+                     developer to go back and forth over and over again. Furthermore, SimplyHover presents
+                     to the developer, when he hovers over else, the if conditions in their negated form
+                     and even lets him write his own simplification for that. In some cases, the tool even
+                     suggests its own simplification of the aggregated expression. To demonstrate the usage
+                     and usefulness of SimplyHover, a few code snippets from real software are presented.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+         </div>
+      </div>
+   </body>
+</html>
