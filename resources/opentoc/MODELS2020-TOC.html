@@ -1,0 +1,1274 @@
+<html xmlns:bkstg="http://www.atypon.com/backstage-ns" xmlns:urlutil="java:com.atypon.literatum.customization.UrlUtil" xmlns:pxje="java:com.atypon.frontend.services.impl.PassportXslJavaExtentions">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="Content-Style-Type" content="text/css"><style type="text/css">
+            #DLtoc {
+            font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+            }
+
+            #DLheader {
+            }
+            #DLheader h1 {
+            font-size:16px;
+            }
+
+            #DLcontent {
+            font-size:12px;
+            }
+            #DLcontent h2 {
+            font-size:14px;
+            margin-bottom:5px;
+            }
+            #DLcontent h3 {
+            font-size:12px;
+            padding-left:20px;
+            margin-bottom:0px;
+            }
+
+            #DLcontent ul{
+            margin-top:0px;
+            margin-bottom:0px;
+            }
+
+            .DLauthors li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLauthors li:after{
+            content:",";
+            }
+            .DLauthors li.nameList.Last:after{
+            content:"";
+            }
+
+            .DLabstract {
+            padding-left:40px;
+            padding-right:20px;
+            display:block;
+            }
+
+            .DLformats li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLformats li:after{
+            content:",";
+            }
+            .DLformats li.formatList.Last:after{
+            content:"";
+            }
+
+            .DLlogo {
+            vertical-align:middle;
+            padding-right:5px;
+            border:none;
+            }
+
+            .DLcitLink {
+            margin-left:20px;
+            }
+
+            .DLtitleLink {
+            margin-left:20px;
+            }
+
+            .DLotherLink {
+            margin-left:0px;
+            }
+
+        </style><title>MODELS '20: Proceedings of the 23rd ACM/IEEE International Conference on Model Driven Engineering
+         Languages and Systems
+      </title>
+   </head>
+   <body>
+      <div id="DLtoc">
+         <div id="DLheader">
+            <h1>MODELS '20: Proceedings of the 23rd ACM/IEEE International Conference on Model Driven Engineering
+               Languages and Systems
+            </h1><a class="DLcitLink" title="Go to the ACM Digital Library for additional information about this proceeding" href="https://dl.acm.org/doi/proceedings/10.1145/3365438"><img class="DLlogo" alt="Digital Library logo" height="30" src="https://dl.acm.org/specs/products/acm/releasedAssets/images/footer-logo1.png">
+               Full Citation in the ACM Digital Library
+               </a></div>
+         <div id="DLcontent">
+            <h2>SESSION: MDE process support</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410942">To build, or not to build: ModelFlow, a build solution for MDE projects</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Beatriz Sanchez</li>
+               <li class="nameList">Dimitris Kolovos</li>
+               <li class="nameList Last">Richard Paige</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Conservative execution, end-to-end traceability, and context-aware resource handling
+                     are desirable features in model management build processes. Yet, none of the existing
+                     MDE-dedicated build tools (e.g. MTC-Flow, MWE2) support such features. An initial
+                     investigation of general-purpose build tools (e.g. ANT, Gradle) to assess whether
+                     we could build a workflow engine with support for these desirable features on top
+                     of it revealed limitations that could act as roadblocks for our work. As such, we
+                     decided to design and implement a new MDE-focused build tool (ModelFlow) from scratch
+                     to avoid being constrained by assumptions and technical constraints of these tools.
+                     We evaluated whether this decision was sensible by attempting to replicate its behaviour
+                     with Gradle in a typical model-driven engineering scenario. The evaluation highlighted
+                     scenarios where Gradle could not be extended to achieve the desirable behaviour which
+                     validates the decision to not base ModelFlow on top of it.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410943">Efficient generation of graphical model views via lazy model-to-text transformation</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Dimitris Kolovos</li>
+               <li class="nameList">Alfonso de la Vega</li>
+               <li class="nameList Last">Justin Cooper</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Producing graphical views from software and system models is often desirable for communication
+                     and comprehension purposes, even when graphical model editing capabilities are not
+                     required - because the preferred editable concrete syntax of the models is text-based,
+                     or for models extracted via reverse engineering. To support such scenarios, we present
+                     a novel approach for efficient rule-based generation of transient graphical views
+                     from models using lazy model-to-text transformation, and an implementation of the
+                     proposed approach in the form of an open-source Eclipse plugin named Picro. PiCTO
+                     builds on top of mature visualisation software such as Graphviz and PlantUML and supports,
+                     among others, composite views, layers, and multi-model visualisation. We illustrate
+                     how Picto can be used to produce various forms of graphical views such as node-edge
+                     diagrams, tables and sequence-like diagrams, and we demonstrate the efficiency benefits
+                     of lazy view generation approach against batch model-to-text transformation for generating
+                     views from large models.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410957">An extensible framework for customizable model repair</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Angela Barriga</li>
+               <li class="nameList">Rogardt Heldal</li>
+               <li class="nameList">Ludovico Iovino</li>
+               <li class="nameList">Magnus Marthinsen</li>
+               <li class="nameList Last">Adrian Rutle</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>In model-driven software engineering, models are used in all phases of the development
+                     process. These models may get broken due to various editions during the modeling process.
+                     There are a number of existing tools that reduce the burden of manually dealing with
+                     correctness issues in models, however, most of these tools do not prioritize customization
+                     to follow user requirements nor allow the extension of their components to adapt to
+                     different model types. In this paper, we present an extensible model repair framework
+                     which enables users to deal with different types of models and to add their own repair
+                     preferences to customize the results. The framework uses customizable learning algorithms
+                     to automatically find the best sequence of actions for repairing a broken model according
+                     to the user preferences. As an example, we customize the framework by including as
+                     a preference a model distance metric, which allows the user to choose a more or less
+                     conservative repair. Then, we evaluate how this preference extension affects the results
+                     of the repair by comparing different distance metric calculations. Our experiment
+                     proves that extending the framework makes it more precise and produces models with
+                     better quality characteristics.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410934">A compositional framework for systematic modeling language reuse</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Arvid Butting</li>
+               <li class="nameList">Jerome Pfeiffer</li>
+               <li class="nameList">Bernhard Rumpe</li>
+               <li class="nameList Last">Andreas Wortmann</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Many engineering domains started using generic modeling languages, such as SysML,
+                     to describe or prescribe the systems under development. This raises a gap between
+                     the generic modeling languages and the domains of experience of the engineers using
+                     these. Engineering truly domain-specific languages (DSLs) for experts of these domains
+                     still is too challenging for their wide-spread adoption. One major obstacle, the inability
+                     to reuse multi-dimensional (encapsulating constituents of syntax and semantics) language
+                     components in a black-box fashion, prevents the effective engineering of novel DSLs.
+                     To facilitate engineering DSLs, we devised a concept of 3D components for textual,
+                     external, and translational DSLs that relies on systematic reuse through systematic
+                     closed and open variability in which DSL syntaxes can be embedded, well-formedness
+                     rules joined, and code generators integrated in a black-box fashion. We present this
+                     concept, a method for its systematic application, an integrated collection of modeling
+                     languages supporting systematic language reuse, and an extensible framework that leverages
+                     these languages to derive novel DSLs from language product lines. These can greatly
+                     mitigate many of the challenges in DSL reuse and, hence, can advance the engineering
+                     of truly domain-specific modeling languages.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410988">Template based model engineering in UML</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Gilles Vanwormhoudt</li>
+               <li class="nameList">Mathieu Allon</li>
+               <li class="nameList">Olivier Caron</li>
+               <li class="nameList Last">Bernard Carré</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Model-based engineering (MBE) contributes a lot to software reuse by abstracting technology
+                     independent models, their capitalization and then their reuse to produce systems,
+                     ensuring early composition and checking capabilities. One step further, it was recognized
+                     that models could be parameterized in order to capture recurrent modeling patterns.
+                     This led to the concept of "model template" as offered in UML. In this paper we concentrate
+                     on engineering practices and operators which derive from the adoption of this concept,
+                     specifically in the case of "aspectual templates", where parameters form full models.
+                     As a first step, we show the consequent partitioning of modeling spaces into two subspaces:
+                     one dedicated to template modelers ("model for reuse"), the other one dedicated to
+                     application modelers ("model by reuse"). Respective activities are identified, but
+                     also back-and-forth between them. From this, engineering operators are isolated and
+                     formally specified. Finally, reusable technology within Eclipse is offered.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410947">MAR: a structure-based search engine for models</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">José Antonio Hernández López</li>
+               <li class="nameList Last">Jesús Sánchez Cuadrado</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The availability of shared software models provides opportunities for reusing, adapting
+                     and learning from them. Public models are typically stored in a variety of locations,
+                     including model repositories, regular source code repositories, web pages, etc. To
+                     profit from them developers need effective search mechanisms to locate the models
+                     relevant for their tasks. However, to date, there has been little success in creating
+                     a generic and efficient search engine specially tailored to the modelling domain.
+                  </p> 
+                  <p>In this paper we present MAR, a search engine for models. MAR is generic in the sense
+                     that it can index any type of model if its meta-model is known. MAR uses a query-by-example
+                     approach, that is, it uses example models as queries. The search takes the model structure
+                     into account using the notion of bag of paths, which encodes the structure of a model
+                     using paths between model elements and is a representation amenable for indexing.
+                     MAR is built over HBase using a specific design to deal with large repositories. Our
+                     benchmarks show that the engine is efficient and has fast response times in most cases.
+                     We have also evaluated the precision of the search engine by creating model mutants
+                     which simulate user queries. A REST API is available to perform queries and an Eclipse
+                     plug-in allows end users to connect to the search engine from model editors. We have
+                     currently indexed more than 50.000 models of different kinds, including Ecore meta-models,
+                     BPMN diagrams and UML models. MAR is available at http://mar-search.org.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410966">Interactive metamodel/model co-evolution using unsupervised learning and multi-objective
+                  search</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Wael Kessentini</li>
+               <li class="nameList Last">Vahid Alizadeh</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Metamodels evolve even more frequently than programming languages. This evolution
+                     process may result in a large number of instance models that are no longer conforming
+                     to the revised metamodel. On the one hand, the manual adaptation of models after the
+                     metamodels' evolution can be tedious, error-prone, and time-consuming. On the other
+                     hand, the automated co-evolution of metamodels/models is challenging, especially when
+                     new semantics is introduced to the metamodels. While some interactive techniques have
+                     been proposed, designers still need to explore a large number of possible revised
+                     models, which makes the interaction time-consuming. In this paper, we propose an interactive
+                     multi-objective approach that dynamically adapts and interactively suggests edit operations
+                     to designers based on three objectives: minimizing the deviation with the initial
+                     model, the number of non-conformities with the revised metamodel and the number of
+                     changes. The proposed approach proposes to the user few regions of interest by clustering
+                     the set of recommended co-evolution solutions of the multi-objective search. Thus,
+                     users can quickly select their preferred cluster and give feedback on a smaller number
+                     of solutions by eliminating similar ones. This feedback is then used to guide the
+                     search for the next iterations if the user is still not satisfied. We evaluated our
+                     approach on a set of metamodel/model co-evolution case studies and compared it to
+                     existing fully automated and interactive co-evolution techniques.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Systems engineering</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410938">Modeling mechanical functional architectures in SysML</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Imke Drave</li>
+               <li class="nameList">Bernhard Rumpe</li>
+               <li class="nameList">Andreas Wortmann</li>
+               <li class="nameList">Joerg Berroth</li>
+               <li class="nameList">Gregor Hoepfner</li>
+               <li class="nameList">Georg Jacobs</li>
+               <li class="nameList">Kathrin Spuetz</li>
+               <li class="nameList">Thilo Zerwas</li>
+               <li class="nameList">Christian Guist</li>
+               <li class="nameList Last">Jens Kohl</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Innovations in Cyber-Physical System (CPS) are driven by functionalities and features.
+                     Mechanical Engineering, on the other hand, is mainly concerned with the physical product
+                     architecture, <em>i.e.</em>, the hierarchical arrangement of physical components and assemblies that forms the
+                     product, which is not explicitly linked to these functions. A holistic model-driven
+                     engineering approach for CPS, therefore, needs to bridge the gap between functions
+                     and the physical product architecture to enable agile development driven by automation.
+                     In the theoretical field of mechanical design methodology, functional architectures
+                     describe the functionality of the system under development as a hierarchical structure.
+                     However, in practice, these are typically not considered let alone modeled. Existing
+                     approaches utilizing mechanical functional architectures, however, do not formalize
+                     the relation between the functional architecture and the geometric design. Therefore,
+                     we conceived a meta-model that defines modeling-languages for modeling functional
+                     architectures of mechanical systems and physical solutions, <em>i.e.</em>, interconnections of physical effects and geometries, as refinements of the functional
+                     components. We have encoded the meta-model as a SysML profile and applied it within
+                     an interdisciplinary, industrial project to model an automotive coolant pump. Our
+                     contribution signposts the potential of functional structures to not only bridge the
+                     gap between function and geometry in mechanics but also to integrate the heterogeneous
+                     domains participating in CPS engineering.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410941">Model-driven digital twin construction: synthesizing the integration of cyber-physical systems with their information systems</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Jörg Christian Kirchhof</li>
+               <li class="nameList">Judith Michael</li>
+               <li class="nameList">Bernhard Rumpe</li>
+               <li class="nameList">Simon Varga</li>
+               <li class="nameList Last">Andreas Wortmann</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Digital twins emerge in many disciplines to support engineering, monitoring, controlling,
+                     and optimizing cyber-physical systems, such as airplanes, cars, factories, medical
+                     devices, or ships. There is an increasing demand to create digital twins as representation
+                     of cyber-physical systems and their related models, data traces, aggregated data,
+                     and services. Despite a plethora of digital twin applications, there are very few
+                     systematic methods to facilitate the modeling of digital twins for a given cyber-physical
+                     system. Existing methods focus only on the construction of specific digital twin models
+                     and do not consider the integration of these models with the observed cyber-physical
+                     system. To mitigate this, we present a fully model-driven method to describe the software
+                     of the cyber-physical system, its digital twin information system, and their integration.
+                     The integration method relies on MontiArc models of the cyber-physical system's architecture
+                     and on UML/P class diagrams from which the digital twin information system is generated.
+                     We show the practical application and feasibility of our method on an IoT case study.
+                     Explicitly modeling the integration of digital twins and cyber-physical systems eliminates
+                     repetitive programming activities and can foster the systematic engineering of digital
+                     twins.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410952">AC-ROS: assurance case driven adaptation for the robot operating system</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Betty H. C. Cheng</li>
+               <li class="nameList">Robert Jared Clark</li>
+               <li class="nameList">Jonathon Emil Fleck</li>
+               <li class="nameList">Michael Austin Langford</li>
+               <li class="nameList Last">Philip K. McKinley</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Cyber-physical systems that implement self-adaptive behavior, such as autonomous robots,
+                     need to ensure that requirements remain satisfied across run-time adaptations. The
+                     Robot Operating System (ROS), a middleware infrastructure for robotic systems, is
+                     widely used in both research and industrial applications. However, ROS itself does
+                     not assure self-adaptive behavior. This paper introduces AC-ROS, which fills this
+                     gap by using assurance case models at run time to manage the self-adaptive operation
+                     of ROS-based systems. Assurance cases provide structured arguments that a system satisfies
+                     requirements and can be specified graphically with Goal Structuring Notation (GSN)
+                     models. AC-ROS uses GSN models to instantiate a ROS-based MAPE-K framework, which
+                     in turn uses these models at run time to assure system behavior adheres to requirements
+                     across adaptations. For this study, AC-ROS is implemented and tested on EvoRally,
+                     a 1:5-scale autonomous vehicle.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410933">SceML: a graphical modeling framework for scenario-based testing of autonomous vehicles</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Barbara Schütt</li>
+               <li class="nameList">Thilo Braun</li>
+               <li class="nameList">Stefan Otten</li>
+               <li class="nameList Last">Eric Sax</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Ensuring the functional correctness and safety of autonomous vehicles is a major challenge
+                     for the automotive industry. However, exhaustive physical test drives are not feasible,
+                     as billions of driven kilometers would be required to obtain reliable results. Scenario-based
+                     testing is an approach to tackle this problem and reduce necessary test drives by
+                     replacing driven kilometers with simulations of relevant or interesting scenarios.
+                     These scenarios can be generated or extracted from recorded data with machine learning
+                     algorithms or created by experts. In this paper, we propose a novel graphical scenario
+                     modeling language. The graphical framework allows experts to create new scenarios
+                     or review ones designed by other experts or generated by machine learning algorithms.
+                     The scenario description is modeled as a graph and based on behavior trees. It supports
+                     different abstraction levels of scenario description during software and test development.
+                     Additionally, the graph-based structure provides modularity and reusable sub-scenarios,
+                     an important use case in scenario modeling. A graphical visualization of the scenario
+                     enhances comprehensibility for different users. The presented approach eases the scenario
+                     creation process and increases the usage of scenarios within development and testing
+                     processes.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410948">A model-based approach for developing event-driven architectures with AsyncAPI</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Abel Gómez</li>
+               <li class="nameList">Markel Iglesias-Urkia</li>
+               <li class="nameList">Aitor Urbieta</li>
+               <li class="nameList Last">Jordi Cabot</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>In this Internet of Things (IoT) era, our everyday objects have evolved into the so-called
+                     cyber-physical systems (CPS). The use and deployment of CPS has especially penetrated
+                     the industry, giving rise to the Industry 4.0 or Industrial IoT (IIoT). Typically,
+                     architectures in IIoT environments are distributed and asynchronous, communication
+                     being guided by events such as the publication of (and corresponding subscription
+                     to) messages.
+                  </p> 
+                  <p>While these architectures have some clear advantages (such as scalability and flexibility),
+                     they also raise interoperability challenges among the agents in the network. Indeed,
+                     the knowledge about the message content and its categorization (topics) gets diluted,
+                     leading to consistency problems, potential losses of information and complex processing
+                     requirements on the subscriber side to try to understand the received messages.
+                  </p> 
+                  <p>In this paper, we present our proposal relying on <em>AsyncAPI</em> to automate the design and implementation of these architectures using model-based
+                     techniques for the generation of (part of) event-driven infrastructures. We have implemented
+                     our proposal as an open-source tool freely available online.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410951">Model-based fleet deployment of edge computing applications</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Hui Song</li>
+               <li class="nameList">Rustem Dautov</li>
+               <li class="nameList">Nicolas Ferry</li>
+               <li class="nameList">Arnor Solberg</li>
+               <li class="nameList Last">Franck Fleurey</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Edge computing brings software in close proximity to end users and IoT devices. Given
+                     the increasing number of distributed Edge devices with various contexts, as well as
+                     the widely adopted continuous delivery practices, software developers need to maintain
+                     multiple application versions and frequently (re-)deploy them to a fleet of many devices
+                     with respect to their contexts. Doing this correctly and efficiently goes beyond manual
+                     capabilities and requires employing an intelligent and reliable automated approach.
+                     Accordingly this paper describes a joint research with a Smart Healthcare application
+                     provider on a model-based approach to automatically assigning multiple software deployments
+                     to hundreds of Edge gateways. From a Platform-Specific Model obtained from the existing
+                     Edge computing platform, we extract a Platform-Independent Model that describes a
+                     list of target devices and a pool of available deployments. Next, we use constraint
+                     solving to automatically assign deployments to devices at once, given their specific
+                     contexts. The resulting solution is transformed back to the PSM as to proceed with
+                     software deployment accordingly. We validate the approach with a Fleet Deployment
+                     prototype integrated into the DevOps toolchain currently used by the application provider.
+                     Initial experiments demonstrate the viability of the approach and its usefulness in
+                     supporting DevOps in Edge computing applications.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410960">A parametric model for creating customized fabrication machines</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Frikk H Fossdal</li>
+               <li class="nameList">Rogardt Heldal</li>
+               <li class="nameList">Jens Dyvik</li>
+               <li class="nameList Last">Adrian Rutle</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Digital fabrication tools such as 3D printers, computer-numerically controlled (CNC)
+                     milling machines, and laser cutters are becoming increasingly available, ranging from
+                     consumer to industrial versions. Although these tools have enabled a completely new
+                     set of users to take part in manufacturing, they are still limited in their use and
+                     the workflows they provide. As an answer to this, users are modifying and customizing
+                     their machines by changing the work envelope and adding different end-effectors. However,
+                     customizing, modifying and creating digital fabrication machines require extensive
+                     knowledge within multiple different engineering domains, and is non-trivial. In this
+                     paper, we present <em>The Fabricatable Axis</em>, a high-level parametric model that aims to simplify the process of experimenting,
+                     customizing and implementing digital fabrication machines. This model encapsulates
+                     the knowledge of an experienced machine designer into a model that less experienced
+                     machine builders can use to design and customize linear and rotary motion axes which
+                     can be combined into different machines. The model receives high-level input parameters
+                     such as axis type, length and speed-parameters, and outputs a CAD model of a motion
+                     axis consisting of <em>fabricatable</em> parts (parts that are readily available or parts that can be fabricated using accessible
+                     tools such as a CNC milling machine). To validate our contribution, we first present
+                     a constructed scenario were we use the model to implement a specific machine. Secondly,
+                     we present an evaluation of our tool through a series of interviews with users who
+                     have been using the model to create different types of machines.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410965">Supporting robotic software migration using static analysis and model-driven engineering</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Sophie Wood</li>
+               <li class="nameList">Nicholas Matragkas</li>
+               <li class="nameList">Dimitris Kolovos</li>
+               <li class="nameList">Richard Paige</li>
+               <li class="nameList Last">Simos Gerasimou</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The wide use of robotic systems contributed to developing robotic software highly
+                     coupled to the hardware platform running the robotic system. Due to increased maintenance
+                     cost or changing business priorities, the robotic hardware is infrequently upgraded,
+                     thus increasing the risk for technology stagnation. Reducing this risk entails migrating
+                     the system and its software to a new hardware platform. Conventional software engineering
+                     practices such as complete re-development and code-based migration, albeit useful
+                     in mitigating these obsolescence issues, they are time-consuming and overly expensive.
+                     Our RoboSMi model-driven approach supports the migration of the software controlling
+                     a robotic system between hardware platforms. First, RoboSMi executes static analysis
+                     on the robotic software of the source hardware platform to identify platform-dependent
+                     and platform-agnostic software constructs. By analysing a model that expresses the
+                     architecture of robotic components on the target platform, RoboSMi establishes the
+                     hardware configuration of those components and suggests software libraries for each
+                     component whose execution will enable the robotic software to control the components.
+                     Finally, RoboSMi through code-generation produces software for the target platform
+                     and indicates areas that require manual intervention by robotic engineers to complete
+                     the migration. We evaluate the applicability of RoboSMi and analyse the level of automation
+                     and performance provided from its use by migrating two robotic systems deployed for
+                     an environmental monitoring and a line following mission from a Propeller Activity
+                     Board to an Arduino Uno.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Model analysis, query and generation</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410955">Semantic comparisons of Alloy models</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Jan Oliver Ringert</li>
+               <li class="nameList Last">Syed Waqee Wali</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Alloy is a textual modeling language for structures and behaviors of software designs.
+                     The Alloy Analyzer provides various analyses making it a popular light-weight formal
+                     methods tool. While Alloy models can be analyzed, explored, and tested, there is little
+                     support for comparing different versions of Alloy models. We believe that these comparisons
+                     are crucial when trying to refactor, refine, or extend models. In this work we present
+                     an approach for the semantic comparisons of Alloy models. Our pair-wise comparisons
+                     include semantic model differencing and the checking of refactoring, refinement, and
+                     extension. We enable semantic comparisons of Alloy models by a translation of two
+                     versions into a single model that is able to simulate instances of either one or of
+                     the versions. Semantic differencing and instance computation require only a single
+                     analysis of the combined model in the Alloy Analyzer. We implemented our work and
+                     evaluated it using 654 Alloy models from different sources including version histories.
+                     Our evaluation examines the cost of semantic comparisons using the Alloy Analyzer
+                     in terms of running times and variable numbers over individual models.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410961">A scalable querying scheme for memory-efficient runtime models with history</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Lucas Sakizloglou</li>
+               <li class="nameList">Sona Ghahremani</li>
+               <li class="nameList">Matthias Barkowsky</li>
+               <li class="nameList Last">Holger Giese</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Runtime models provide a snapshot of a system at runtime at a desired level of abstraction.
+                     Via a causal connection to the modeled system and by employing model-driven engineering
+                     techniques, models support schemes for runtime adaptation where data from previous
+                     snapshots facilitates more informed decisions. Although runtime models and model-based
+                     adaptation techniques have been the focus of extensive research, schemes that treat
+                     the evolution of the model over time as a first-class citizen have only lately received
+                     attention. Consequently, there is a lack of sophisticated technology for such runtime
+                     models with history.
+                  </p> 
+                  <p>We present a querying scheme where the integration of temporal requirements with incremental
+                     model queries enables scalable querying for runtime models with history. Moreover,
+                     our scheme provides for a memory-efficient storage of such models. By integrating
+                     these two features into an adaptation loop, we enable efficient history-aware self-adaptation
+                     via runtime models, of which we present a reference implementation.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410962">Automated generation of consistent models with structural and attribute constraints</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Oszkár Semeráth</li>
+               <li class="nameList">Aren A. Babikian</li>
+               <li class="nameList">Anqi Li</li>
+               <li class="nameList">Kristóf Marussy</li>
+               <li class="nameList Last">Daniel Varró</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Automatically synthesizing consistent models is a key prerequisite for many testing
+                     scenarios in autonomous driving or software tool validation where model-based systems
+                     engineering techniques are frequently used to ensure a designated coverage of critical
+                     cornercases. From a practical perspective, an inconsistent model is irrelevant as
+                     a test case (e.g. false positive), thus each synthetic model needs to simultaneously
+                     satisfy various structural and attribute well-formedness constraints. While different
+                     logic solvers or dedicated graph solvers have recently been developed, they fail to
+                     handle either structural or attribute constraints in a scalable way.
+                  </p> 
+                  <p>In the current paper, we combine a structural graph solver that uses partial models
+                     with an SMT-solver to automatically derive models which simultaneously fulfill structural
+                     and attribute constraints while key theoretical properties of model generation like
+                     completeness or diversity are still ensured. This necessitates a sophisticated bidirectional
+                     interaction between different solvers which carry out consistency checks, decision,
+                     unit propagation, concretization steps. We evaluate the scalability and diversity
+                     of our approach in the context of three complex case studies.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410964">mel- model extractor language for extracting facts from models</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Robert Hackman</li>
+               <li class="nameList">Joanne M. Atlee</li>
+               <li class="nameList">Alistair Finn Hackett</li>
+               <li class="nameList Last">Michael W. Godfrey</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>There is a large body of research on extracting models from code-related artifacts
+                     to enable model-based analyses of large software systems. However, engineers do not
+                     always have access to the entire code base of a system: some components may be procured
+                     from third-party suppliers based on a Model specification or their code may be generated
+                     automatically from Models.
+                  </p> 
+                  <p>This paper introduces <em>mel</em>--- a model extraction language and interpreter for extracting "facts" from Models
+                     represented in XMI; these facts can be combined with facts extracted from other system
+                     components to form a lightweight model of an entire software system. We provide preliminary
+                     evidence that <em>mel</em> is sufficient to specify fact extraction from Models that have very different XMI
+                     representations. We also show that it can be easier to use <em>mel</em> to create a fact extractor for a particular Model representation, than to develop
+                     a specialized fact extractor for the Model from scratch.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410967">Designing, animating, and verifying partial UML Models</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Frédéric Jouault</li>
+               <li class="nameList">Valentin Besnard</li>
+               <li class="nameList">Théo Le Calvar</li>
+               <li class="nameList">Ciprian Teodorov</li>
+               <li class="nameList">Matthias Brun</li>
+               <li class="nameList Last">Jerome Delatour</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Models have been shown to be useful during virtually all stages of the software lifecycle.
+                     They can be reverse engineered from existing artifacts, or created as part of a system's
+                     execution, but in many cases models are created by designers from informal specifications.
+                     In the latter case, such design models are typically used as means of communication
+                     between designers, and developers. They can also in some cases be validated by simulation
+                     over test cases, or even by formal verification. However, most existing model simulation
+                     or verification approaches require relatively consistent and complete models, whereas
+                     design models often start small, incomplete, and inconsistent. Moreover, few design
+                     models actually reach the stage where they can be simulated, and even fewer the stage
+                     where they can be formally verified. In order to address this issue, we propose a
+                     partial modeling approach that makes it possible to animate incomplete and inconsistent
+                     models. This approach makes it possible to incrementally improve testable models,
+                     and can also help designers reach the stage where their models can be formally verified.
+                     A proof-of-concept tool called AnimUML has been created in order to provide means
+                     to evaluate the approach on several examples. They are all executable, and some can
+                     even undergo model-checking.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Requirements and variability</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410953">Leveraging natural-language requirements for deriving better acceptance criteria from
+                  models</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Alvaro Veizaga</li>
+               <li class="nameList">Mauricio Alferez</li>
+               <li class="nameList">Damiano Torre</li>
+               <li class="nameList">Mehrdad Sabetzadeh</li>
+               <li class="nameList">Lionel Briand</li>
+               <li class="nameList Last">Elene Pitskhelauri</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>In many software and systems development projects, analysts specify requirements using
+                     a combination of modeling and natural language (NL). In such situations, systematic
+                     acceptance testing poses a challenge because defining the acceptance criteria (AC)
+                     to be met by the system under test has to account not only for the information in
+                     the (requirements) model but also that in the NL requirements. In other words, neither
+                     models nor NL requirements per se provide a complete picture of the information content
+                     relevant to AC. Our work in this paper is prompted by the observation that a reconciliation
+                     of the information content in NL requirements and models is necessary for obtaining
+                     precise AC. We perform such reconciliation by devising an approach that automatically
+                     extracts AC-related information from NL requirements and helps modelers enrich their
+                     model with the extracted information. An existing AC derivation technique is then
+                     applied to the model that has now been enriched by the information extracted from
+                     NL requirements.
+                  </p> 
+                  <p>Using a real case study from the financial domain, we evaluate the usefulness of the
+                     AC-related model enrichments recommended by our approach. Our evaluation results are
+                     very promising: Over our case study system, a group of five domain experts found 89%
+                     of the recommended enrichments relevant to AC and yet absent from the original model
+                     (precision of 89%). Furthermore, the experts could not pinpoint any additional information
+                     in the NL requirements which was relevant to AC but which had not already been brought
+                     to their attention by our approach (recall of 100%).
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410990">From text to visual BPMN process models: design and evaluation</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Ana Ivanchikj</li>
+               <li class="nameList">Souhaila Serbout</li>
+               <li class="nameList Last">Cesare Pautasso</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Most existing Business Process Model and Notation (BPMN) editing tools are graphical,
+                     and as such based on explicit modeling, requiring good knowledge of the notation and
+                     its semantics, as well as the ability to analyze and abstract business requirements
+                     and capture them by correctly using the notation. As a consequence, their use can
+                     be cumbersome for live modeling during interviews and design workshops, where participants
+                     should not only provide input but also give feedback on how it has been represented
+                     in a model. To overcome this, in this paper we present the design and evaluation of
+                     BPMN Sketch Miner, a tool which combines notes taking in constrained natural language
+                     with process mining to automatically produce BPMN diagrams in real-time as interview
+                     participants describe them with stories. In this work we discuss the design decisions
+                     regarding the trade-off between using mining vs. modelling in order to: 1) support
+                     a larger number of BPMN constructs in the textual language; 2) target both BPMN beginners
+                     and business analysts, in addition to the process participants themselves. The evaluation
+                     of the new version of the tool in terms of how it balances the expressiveness and
+                     learnability of its DSL with the usability of the text-to-visual sketching environment
+                     shows encouraging results. Namely, while BPMN beginners could model a non-trivial
+                     process with the tool in a relatively short time and with good accuracy, business
+                     analysts appreciated the usability of the tool and the expressiveness of the language
+                     in terms of supported BPMN constructs.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410935">Variability representations in class models: an empirical assessment</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Daniel Strüber</li>
+               <li class="nameList">Anthony Anjorin</li>
+               <li class="nameList Last">Thorsten Berger</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Owing to the ever-growing need for customization, software systems often exist in
+                     many different variants. To avoid the need to maintain many different copies of the
+                     same model, developers of modeling languages and tools have recently started to provide
+                     representations for such variant-rich systems, notably <em>variability mechanisms</em> that support the implementation of differences between model variants. Available
+                     mechanisms either follow the <em>annotative</em> or the <em>compositional</em> paradigm, each of them having unique benefits and drawbacks. Language and tool designers
+                     select the used variability mechanism often solely based on intuition. A better empirical
+                     understanding of the comprehension of variability mechanisms would help them in improving
+                     support for effective modeling.
+                  </p> 
+                  <p>In this paper, we present an empirical assessment of annotative and compositional
+                     variability mechanisms for class models. We report and discuss findings from an experiment
+                     with 73 participants, in which we studied the impact of two selected variability mechanisms
+                     during model comprehension tasks. We find that, compared to the baseline of listing
+                     all model variants separately, the annotative technique did not affect developer performance.
+                     Use of the compositional mechanism correlated with impaired performance. For two out
+                     of three considered tasks, the annotative mechanism is preferred to the compositional
+                     one and the baseline. We present actionable recommendations concerning support of
+                     flexible, tasks-specific solutions, and the transfer of established best practices
+                     from the code domain to models.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410963">"Union is power": analyzing families of goal models using union models</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Sanaa Alwidian</li>
+               <li class="nameList Last">Daniel Amyot</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>A goal model family is a set of related goal models that conform to the same metamodel,
+                     with commonalities and variabilities between models. Such families stem from the evolution
+                     of initial models into several <em>versions</em> over <em>time</em> and/or the <em>variation</em> of models over the <em>space</em> dimension (e.g., products). In contexts where there are several versions/variations
+                     of a goal model, analyzing a set of related models with typical similarities, one
+                     model at a time, often involves redundant computations and may require repeated user
+                     assistance (e.g., for interactive analysis) and laborious activities. This paper proposes
+                     the use of union models as first-class artifacts to analyze families of goal models,
+                     in order to improve performance of language-specific analysis procedures. The paper
+                     empirically evaluates the performance gain resulting from adapting (or lifting) an
+                     existing analysis technique <em>specific</em> to the Goal-oriented Requirement Language (GRL) to a family of GRL models, all at
+                     once using a union model, compared to analyzing individual models. Our experiments
+                     show, based on the use of the IBM CPLEX optimizer, the usefulness and performance
+                     gains of using union models to perform a computationally expensive analysis, namely
+                     quantitative backward propagation, on families of GRL models.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410989">Co-evolution of simulink models in a model-based product line</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Robbert Jongeling</li>
+               <li class="nameList">Antonio Cicchetti</li>
+               <li class="nameList">Federico Ciccozzi</li>
+               <li class="nameList Last">Jan Carlson</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Co-evolution of metamodels and conforming models is a known challenge in model-driven
+                     engineering. A variation of co-evolution occurs in model-based software product line
+                     engineering, where it is needed to efficiently co-evolve various products together
+                     with the single common platform from which they are derived. In this paper, we aim
+                     to alleviate manual efforts during this co-evolution process in an industrial setting
+                     where Simulink models are partially reused across various products. We propose and
+                     implement an approach providing support for the co-evolution of reusable model fragments.
+                     A demonstration on a realistic example model shows that our approach yields a correct
+                     co-evolution result and is feasible in practice, although practical application challenges
+                     remain. Furthermore, we discuss insights from applying the approach within the studied
+                     industrial setting.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Behavioural modelling and model transformations</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410936">Synthesis of state machine models</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Nafiseh Kahani</li>
+               <li class="nameList">Mojtaba Bagherzadeh</li>
+               <li class="nameList Last">James R. Cordy</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The automated synthesis of behavioural models in the form of state machines (SMs)
+                     from higher-level specifications has a high potential impact on the efficiency and
+                     accuracy of software development using models. In this paper, inspired by program
+                     synthesis techniques, we propose a model synthesis approach that takes as input a
+                     structural model of a system and its desired system properties, and automatically
+                     synthesizes executable SMs for its components. To this end, we first generate a synthesis
+                     formula for each component, consistent with the system properties, and then perform
+                     a State Space Exploration (SSE) of each component, based on its synthesis formula.
+                     The result of the SSE is saved in a Labeled Transition System (LTS), for which we
+                     then synthesize detailed actions for each of its transitions. Finally, we transform
+                     the LTSs into UML-RT (UML real-time profile) SMs, and integrate them with the original
+                     structural models. We assess the applicability, performance, and scalability of our
+                     approach using several different use cases extracted from the literature.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410939">Efficient reordering and replay of execution traces of distributed reactive systems
+                  in the context of model-driven development</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Majid Babaei</li>
+               <li class="nameList">Mojtaba Bagherzadeh</li>
+               <li class="nameList Last">Juergen Dingel</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Ordering and replaying of execution traces of distributed systems is a challenging
+                     problem. State-of-the-art approaches annotate the traces with logical or physical
+                     timestamps. However, both kinds of timestamps have their drawbacks, including increased
+                     trace size. We examine the problem of determining consistent orderings of execution
+                     traces in the context of model-driven development of reactive distributed systems,
+                     that is, systems whose code has been generated from communicating state machine models.
+                     By leveraging key concepts of state machines and existing model analysis and transformation
+                     techniques, we propose an approach to collecting and reordering execution traces that
+                     does not rely on timestamps. We describe a prototype implementation of our approach
+                     and an evaluation. The experimental results show that compared to reordering based
+                     on logical timestamps using vector time (clocks), our approach reduces the size of
+                     the trace information collected by more than half while incurring similar runtime
+                     overhead.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410949">Certifying a rule-based model transformation engine for proof preservation</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Zheng Cheng</li>
+               <li class="nameList">Massimo Tisi</li>
+               <li class="nameList Last">Joachim Hotonnier</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Executable engines for relational model-transformation languages evolve continuously
+                     because of language extension, performance improvement and bug fixes. While new versions
+                     generally change the engine semantics, end-users expect to get backward-compatibility
+                     guarantees, so that existing transformations do not need to be adapted at every engine
+                     update.
+                  </p> 
+                  <p>The CoqTL model-transformation language allows users to define model transformations,
+                     theorems on their behavior and machine-checked proofs of these theorems in Coq. Backward-compatibility
+                     for CoqTL involves also the preservation of these proofs. However, proof preservation
+                     is challenging, as proofs are easily broken even by small refactorings of the code
+                     they verify.
+                  </p> 
+                  <p>In this paper we present the solution we designed for the evolution of CoqTL, and
+                     by extension, of rule-based transformation engines. We provide a deep specification
+                     of the transformation engine, including a set of theorems that must hold against the
+                     engine implementation. Then, at each milestone in the engine development, we certify
+                     the new version of the engine against this specification, by providing proofs of the
+                     impacted theorems. The certification formally guarantees end-users that all the proofs
+                     they write using the provided theorems will be preserved through engine updates.
+                  </p> 
+                  <p>We illustrate the structure of the deep specification theorems, we produce a machine-checked
+                     certification of three versions of CoqTL against it, and we show examples of user
+                     theorems that leverage this specification and are thus preserved through the updates.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410950">An exploratory study on performance engineering in model transformations</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Raffaela Groner</li>
+               <li class="nameList">Luis Beaucamp</li>
+               <li class="nameList">Matthias Tichy</li>
+               <li class="nameList Last">Steffen Becker</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Model-Driven Software Engineering (MDSE) is a widely used approach to deal with the
+                     increasing complexity of software. This increasing complexity also leads to the fact
+                     that the models used and the model transformations applied become larger and more
+                     complex as well. This means that the execution performance of model transformations
+                     is gaining in importance. While improving the performance of model transformation
+                     execution engines has been a focus of the MDSE-community in the past, there does not
+                     exist any empirical study on how developers of model transformation deal with performance
+                     issues. Consequently, we conducted an exploratory mixed method study consisting of
+                     a quantitative online survey and a qualitative interview study. We used a questionnaire
+                     to investigate whether the performance of a transformation is actually important for
+                     transformation developers and whether they have already tried to improve the performance
+                     of a model transformation. Subsequently, we conducted semi-structured interviews based
+                     on the answers to the questionnaire to investigate how transformation developers deal
+                     with performance issues, what causes and solutions they found and also what they think
+                     could help them to easier find causes. The results of the quantitative online survey
+                     show that 43 of 81 participants have already tried to improve the performance of a
+                     transformation and 34 of the 81 are sometimes or only rarely satisfied with the execution
+                     performance. Based on the answers from our 13 interviews, we identified different
+                     strategies to prevent or find performance issues in model transformations as well
+                     as different types of causes of performance issues and solutions. Finally, we compiled
+                     a collection of additional tool features perceived helpful by the interviewees to
+                     address performance issues.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410991">Automating test schedule generation with domain-specific languages: a configurable, model-driven approach</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Anthony Anjorin</li>
+               <li class="nameList">Nils Weidmann</li>
+               <li class="nameList">Robin Oppermann</li>
+               <li class="nameList">Lars Fritsche</li>
+               <li class="nameList Last">Andy Schürr</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Solving scheduling problems is important for a wide range of application domains including
+                     home care in the health care domain, allocation engineering in the automotive domain,
+                     and virtual network embedding in the network virtualisation domain. Standard solution
+                     approaches assume that an initially given problem definition (e.g. a set of constraints
+                     and an objective function) can be fixed, and does not have to be constantly changed
+                     and validated by domain experts. In this paper, we investigate an application where
+                     this is not the case: at dSPACE GmbH, a developer of software and hardware for mechatronic
+                     control systems, recurring manual tests must be executed in every development and
+                     release cycle. To allocate human resources (developers and testers) to perform these
+                     tests, a test schedule must be created and maintained during the testing process.
+                     Prior to our work, test scheduling at dSPACE was performed manually by a test manager,
+                     requiring more than one working day to create the initial schedule, and several hours
+                     of tedious, error-prone work every week to maintain the schedule. The novel challenge
+                     here is that an acceptable automation must be highly configurable by the test manager
+                     (the domain expert), who should be able to easily adapt and validate the problem definition
+                     on a regular basis. We demonstrate that techniques and results from consistency maintenance
+                     via triple graph grammars, and constraint solving via linear programming can be synergetically
+                     combined to yield a highly configurable and fully automated approach to test schedule
+                     generation. We evaluate our solution at dSPACE and show that it not only reduces the
+                     effort required to create and maintain schedules of acceptable quality, but that it
+                     can also be understood, configured, and validated by the test manager.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Applications: Security, data quality and education</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410954">Automating the early detection of security design flaws</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Katja Tuma</li>
+               <li class="nameList">Laurens Sion</li>
+               <li class="nameList">Riccardo Scandariato</li>
+               <li class="nameList Last">Koen Yskout</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Security by design is a key principle for realizing secure software systems and it
+                     is advised to hunt for security flaws from the very early stages of development. At
+                     design-time, security analysis is often performed manually by means of either threat
+                     modeling or expert-based design inspections. However, when leveraging the wide range
+                     of established knowledge bases on security design flaws (e.g., CWE, CAWE), these manual
+                     assessments become too time consuming, error-prone, and infeasible in the context
+                     of contemporary development practices with frequent iterations. This paper focuses
+                     on design inspection and explores the potential for automating the application of
+                     inspection rules to speed up the security analysis.
+                  </p> 
+                  <p>The contributions of this paper are: (i) the creation of a publicly available data
+                     set consisting of 26 design models annotated with security flaws, (ii) an automated
+                     approach for following inspection guidelines using model query patterns, and (iii)
+                     an empirical comparison of the results from this automated approach with those from
+                     manual inspection. Even though our results show that a complete automation of the
+                     security design flaw detection is hard to achieve, we find that some flaws (e.g.,
+                     insecure data exposure) are more amenable to automation. Compared to manual analysis
+                     techniques, our results are encouraging and suggest that the automated technique could
+                     guide security analysts towards a more complete inspection of the software design,
+                     especially for large models.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410946">Scenario-based specification of security protocols and transformation to security
+                  model checkers</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Thorsten Koch</li>
+               <li class="nameList">Stefan Dziwok</li>
+               <li class="nameList">Jörg Holtmann</li>
+               <li class="nameList Last">Eric Bodden</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Security protocols ensure secure communication between and within systems such as
+                     internet services, factories, and smartphones. As evidenced by numerous successful
+                     attacks against popular protocols such as TLS, designing protocols securely is a tedious
+                     and error-prone task. Model checkers greatly aid protocol verification, yet any single
+                     model checker is oftentimes insufficient to check a protocol's security in full. Instead,
+                     engineers are forced to maintain multiple overlapping and hopefully non-contradicting
+                     and non-diverging specifications, one per model-checking tool---an error-prone task.
+                  </p> 
+                  <p>To address this problem, this paper presents VICE, a scenario-based approach to security-protocol
+                     verification. It provides a visual modeling language based for specifying security
+                     protocols <em>independent</em> of the model checker. It then automatically transforms the relevant fragments of
+                     these models into equivalent inputs to multiple model checkers. In result, VICE completely
+                     relieves the security engineer from choosing and specifying queries via a fully automatic
+                     generation of all necessary queries.
+                  </p> 
+                  <p>Through a case study involving real-world specifications of eight security protocols,
+                     we show that VICE is applicable in practice.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410987">Detecting quality problems in research data: a model-driven approach</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Arno Kesper</li>
+               <li class="nameList">Viola Wenz</li>
+               <li class="nameList Last">Gabriele Taentzer</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>As scientific progress highly depends on the quality of research data, there are strict
+                     requirements for data quality coming from the scientific community. A major challenge
+                     in data quality assurance is to localise quality problems that are inherent to data.
+                     Due to the dynamic digitalisation in specific scientific fields, especially the humanities,
+                     different database technologies and data formats may be used in rather short terms
+                     to gain experiences. We present a model-driven approach to analyse the quality of
+                     research data. It allows abstracting from the underlying database technology. Based
+                     on the observation that many quality problems show anti-patterns, a data engineer
+                     formulates analysis patterns that are generic concerning the database format and technology.
+                     A domain expert chooses a pattern that has been adapted to a specific database technology
+                     and concretises it for a domain-specific database format. The resulting concrete patterns
+                     are used by data analysts to locate quality problems in their databases. As proof
+                     of concept, we implemented tool support that realises this approach for XML databases.
+                     We evaluated our approach concerning expressiveness and performance in the domain
+                     of cultural heritage based on a qualitative study on quality problems occurring in
+                     cultural heritage data.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410944">Is automated grading of models effective?: assessing automated grading of class diagrams</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Weiyi Bian</li>
+               <li class="nameList">Omar Alam</li>
+               <li class="nameList Last">Jörg Kienzle</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Learning how to model the structural properties of a problem domain or an object-oriented
+                     design in the form of a class diagram is an essential learning task in many software
+                     engineering courses. Since the grading of models is a time-consuming activity, automated
+                     grading approaches have been developed to assist the instructor by speeding up the
+                     grading process, as well as ensuring consistency and fairness for large classrooms.
+                     This paper empirically evaluates the efficacy of one such automated grading approach
+                     when applied in two real world settings: a beginner undergraduate class of 103 students
+                     required to create an object-oriented design model, and an advanced undergraduate
+                     class of 89 students elaborating a domain model. The results of the experiment highlight
+                     a) the need to adapt the grading strategy and strictness to the level of the students
+                     and the grading style of the instructor, and b) the importance of considering multiple
+                     solution variants when grading. Modifications to the grading algorithm are proposed
+                     and validated experimentally.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3365438.3410959">A model-driven alternative to programming in blocks using rule-based transformations</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Huseyin Ergin</li>
+               <li class="nameList">Wenjun Shi</li>
+               <li class="nameList">Herart Dominggus Nurue</li>
+               <li class="nameList Last">Jeff Gray</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The recent surge in computer science (CS) education for children has led to the popularization
+                     of blocks-based programming languages (BBPLs), which offer a syntax-directed approach
+                     to teach fundamental programming concepts. Most BBPL environments are designed with
+                     imperative programming in mind. The primary building blocks represent the key constructs
+                     that support sequencing, iteration, and selection, all in an imperative style. Some
+                     BBPL environments support bi-directionality and can show the source code of the same
+                     program represented as either blocks or in a general-purpose textual language. There
+                     have been few alternatives to the imperative primitives used in these environments.
+                     In this Vision paper, we propose a paradigmatic change to the underlying and front-facing
+                     structures of BBPL environments by replacing them with Model-driven Engineering (MDE)
+                     primitives, such as declarative transformation rules and metamodels. We have implemented
+                     a prototype of our envisioned system in a modeling environment to show the feasibility
+                     of the approach, which we believe could be used by young children. The contribution
+                     of our vision is a demonstration of the potential for a new thread of research that
+                     lies at the intersection of modeling and CS education for children. We aim to spark
+                     an interest in MDE among CS education researchers, while encouraging the modeling
+                     community to consider how MDE might be taught to younger students.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+         </div>
+      </div>
+   </body>
+</html>

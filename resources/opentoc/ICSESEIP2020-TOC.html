@@ -1,0 +1,1007 @@
+<html xmlns:bkstg="http://www.atypon.com/backstage-ns" xmlns:urlutil="java:com.atypon.literatum.customization.UrlUtil" xmlns:pxje="java:com.atypon.frontend.services.impl.PassportXslJavaExtentions">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="Content-Style-Type" content="text/css"><style type="text/css">
+            #DLtoc {
+            font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+            }
+
+            #DLheader {
+            }
+            #DLheader h1 {
+            font-size:16px;
+            }
+
+            #DLcontent {
+            font-size:12px;
+            }
+            #DLcontent h2 {
+            font-size:14px;
+            margin-bottom:5px;
+            }
+            #DLcontent h3 {
+            font-size:12px;
+            padding-left:20px;
+            margin-bottom:0px;
+            }
+
+            #DLcontent ul{
+            margin-top:0px;
+            margin-bottom:0px;
+            }
+
+            .DLauthors li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLauthors li:after{
+            content:",";
+            }
+            .DLauthors li.nameList.Last:after{
+            content:"";
+            }
+
+            .DLabstract {
+            padding-left:40px;
+            padding-right:20px;
+            display:block;
+            }
+
+            .DLformats li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLformats li:after{
+            content:",";
+            }
+            .DLformats li.formatList.Last:after{
+            content:"";
+            }
+
+            .DLlogo {
+            vertical-align:middle;
+            padding-right:5px;
+            border:none;
+            }
+
+            .DLcitLink {
+            margin-left:20px;
+            }
+
+            .DLtitleLink {
+            margin-left:20px;
+            }
+
+            .DLotherLink {
+            margin-left:0px;
+            }
+
+        </style><title>ICSE-SEIP '20: Proceedings of the ACM/IEEE 42nd International Conference on Software Engineering:
+         Software Engineering in Practice
+      </title>
+   </head>
+   <body>
+      <div id="DLtoc">
+         <div id="DLheader">
+            <h1>ICSE-SEIP '20: Proceedings of the ACM/IEEE 42nd International Conference on Software Engineering:
+               Software Engineering in Practice
+            </h1><a class="DLcitLink" title="Go to the ACM Digital Library for additional information about this proceeding" href="https://dl.acm.org/doi/proceedings/10.1145/3377813"><img class="DLlogo" alt="Digital Library logo" height="30" src="https://dl.acm.org/specs/products/acm/releasedAssets/images/footer-logo1.png">
+               Full Citation in the ACM Digital Library
+               </a></div>
+         <div id="DLcontent">
+            <h2>SESSION: Empirical studies and requirements</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3377813.3381365">Using a context-aware approach to recommend code reviewers: findings from an industrial case study</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Anton Strand</li>
+               <li class="nameList">Markus Gunnarson</li>
+               <li class="nameList">Ricardo Britto</li>
+               <li class="nameList Last">Muhmmad Usman</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Code review is a commonly used practice in software development. It refers to the
+                     process of reviewing new code changes before they are merged with the code base. However,
+                     to perform the review, developers are mostly assigned manually to code changes. This
+                     may lead to problems such as: a time-consuming selection process, limited pool of
+                     known candidates and risk of over-allocation of a few reviewers. To address the above
+                     problems, we developed Carrot, a machine learning-based tool to recommend code reviewers.
+                     We conducted an improvement case study at Ericsson. We evaluated Carrot using a mixed
+                     approach. we evaluated the prediction accuracy using historical data and the metrical
+                     Mean Reciprocal Rank (MRR). Furthermore, we deployed the tool in one Ericsson project
+                     and evaluated how adequate the recommendations were from the point of view of the
+                     tool users and the recommended reviewers. We also asked the opinion of senior developers
+                     about the usefulness of the tool. The results show that Carrot can help identify relevant
+                     non-obvious reviewers and be of great assistance to new developers. However, there
+                     were mixed opinions on Carrot's ability to assist with workload balancing and the
+                     decrease code review lead time.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Testing and debugging 1</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3377813.3381347">Code-level model checking in the software development workflow</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Nathan Chong</li>
+               <li class="nameList">Byron Cook</li>
+               <li class="nameList">Konstantinos Kallas</li>
+               <li class="nameList">Kareem Khazem</li>
+               <li class="nameList">Felipe R. Monteiro</li>
+               <li class="nameList">Daniel Schwartz-Narbonne</li>
+               <li class="nameList">Serdar Tasiran</li>
+               <li class="nameList">Michael Tautschnig</li>
+               <li class="nameList Last">Mark R. Tuttle</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>This experience report describes a style of applying symbolic model checking developed
+                     over the course of four years at Amazon Web Services (AWS). Lessons learned are drawn
+                     from proving properties of numerous C-based systems, e.g., custom hypervisors, encryption
+                     code, boot loaders, and an IoT operating system. Using our methodology, we find that
+                     we can prove the correctness of industrial low-level C-based systems with reasonable
+                     effort and predictability. Furthermore, AWS developers are increasingly writing their
+                     own formal specifications. All proofs discussed in this paper are publicly available
+                     on GitHub.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Cyber-physical systems</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3377813.3381364">The forgotten case of the dependency bugs: on the example of the robot operating system</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Anders Fischer-Nielsen</li>
+               <li class="nameList">Zhoulai Fu</li>
+               <li class="nameList">Ting Su</li>
+               <li class="nameList Last">Andrzej Wąsowski</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>A dependency bug is a software fault that manifests itself when accessing an unavailable
+                     asset. Dependency bugs are pervasive and we all hate them. This paper presents a case
+                     study of dependency bugs in the Robot Operating System (ROS), applying mixed methods:
+                     a <em>qualitative</em> investigation of 78 dependency bug reports, a <em>quantitative</em> analysis of 1354 ROS bug reports against 19553 reports in the top 30 GitHub projects,
+                     and a <em>design</em> of three dependency linters evaluated on 406 ROS packages.
+                  </p> 
+                  <p>The paper presents a definition and a taxonomy of dependency bugs extracted from data.
+                     It describes multiple facets of these bugs and estimates that as many as 15% (!) of
+                     all reported bugs are dependency bugs. We show that lightweight tools can find dependency
+                     bugs efficiently, although it is challenging to decide which tools to build and difficult
+                     to build general tools. We present the research problem to the community, and posit
+                     that it should be feasible to eradicate it from software development practice.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3377813.3381358">How do you architect your robots?: state of the practice and guidelines for ROS-based systems</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Ivano Malavolta</li>
+               <li class="nameList">Grace Lewis</li>
+               <li class="nameList">Bradley Schmerl</li>
+               <li class="nameList">Patricia Lago</li>
+               <li class="nameList Last">David Garlan</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The Robot Operating System (ROS) is <em>the</em> de-facto standard for robotic software. If on one hand ROS is helping roboticists,
+                     <em>e.g.</em>, by providing a standardized communication platform, on the other hand ROS-based
+                     systems are getting larger and more complex and could benefit from good software architecture
+                     practices. This paper presents an observational study aimed at (i) unveiling the state-of-the-practice
+                     for architecting ROS-based systems and (ii) providing guidance to roboticists about
+                     how to properly architect ROS-based systems. To achieve these goals, we (i) build
+                     a dataset of 335 GitHub repositories containing real open-source ROS-based systems,
+                     (ii) mine the repositories for extracting the state of the practice about how roboticists
+                     are architecting them, and (iii) synthesize a catalog of 49 <em>evidence-based guidelines</em> for architecting ROS-based systems. The guidelines have been validated by 77 roboticists
+                     working on real-world open-source ROS-based systems.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Bugs and repair</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3377813.3381356">Precfix: large-scale patch recommendation by mining defect-patch pairs</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Xindong Zhang</li>
+               <li class="nameList">Chenguang Zhu</li>
+               <li class="nameList">Yi Li</li>
+               <li class="nameList">Jianmei Guo</li>
+               <li class="nameList">Lihua Liu</li>
+               <li class="nameList Last">Haobo Gu</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Patch recommendation is the process of identifying errors in software systems and
+                     suggesting suitable fixes for them. Patch recommendation can significantly improve
+                     developer productivity by reducing both the debugging and repairing time. Existing
+                     techniques usually rely on complete test suites and detailed debugging reports, which
+                     are often absent in practical industrial settings. In this paper, we propose Precfix,
+                     a pragmatic approach targeting large-scale industrial codebase and making recommendations
+                     based on previously observed debugging activities. Precfix collects defect-patch pairs
+                     from development histories, performs clustering, and extracts generic reusable patching
+                     patterns as recommendations. We conducted experimental study on an industrial codebase
+                     with 10K projects involving diverse defect patterns. We managed to extract 3K templates
+                     of defect-patch pairs, which have been successfully applied to the entire codebase.
+                     Our approach is able to make recommendations within milliseconds and achieves a false
+                     positive rate of 22% confirmed by manual review. The majority (10/12) of the interviewed
+                     developers appreciated Precfix, which has been rolled out to Alibaba to support various
+                     critical businesses.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3377813.3381355">Automated bug reproduction from user reviews for Android applications</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Shuyue Li</li>
+               <li class="nameList">Jiaqi Guo</li>
+               <li class="nameList">Ming Fan</li>
+               <li class="nameList">Jian-Guang Lou</li>
+               <li class="nameList">Qinghua Zheng</li>
+               <li class="nameList Last">Ting Liu</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Bug-related user reviews of mobile applications have negative influence on their reputation
+                     and competence, and thus these reviews are highly regarded by developers. Before bug
+                     fixing, developers need to manually reproduce the bugs reported in user reviews, which
+                     is an extremely time-consuming and tedious task. Hence, it is highly expected to automate
+                     this process. However, it is challenging to do so since user reviews are hard to understand
+                     and poorly informative for bug reproduction (especially lack of reproduction steps).
+                     In this paper, we propose RepRev to automatically Reproduce Android application bugs
+                     from user Reviews. Specifically, RepRev leverages natural language processing techniques
+                     to extract valuable information for bug reproduction. Then, it ranks GUI components
+                     by semantic similarity with the user review and dynamically searches on apps with
+                     a novel one-step exploration technique. To evaluate RepRev, we construct a benchmark
+                     including 63 crash-related user reviews from Google Play, which have been reproduced
+                     successfully by three graduate students. On this benchmark, RepRev presents comparable
+                     performance with humans, which successfully reproduces 44 user reviews in our benchmark
+                     (about 70%) with 432.2 seconds average time. We make the implementation of our approach
+                     publicly available, along with the artifacts and experimental data we used [4].
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Testing and debugging 2</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3377813.3381369">Debugging crashes using continuous contrast set mining</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Rebecca Qian</li>
+               <li class="nameList">Yang Yu</li>
+               <li class="nameList">Wonhee Park</li>
+               <li class="nameList">Vijayaraghavan Murali</li>
+               <li class="nameList">Stephen Fink</li>
+               <li class="nameList Last">Satish Chandra</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Facebook operates a family of services used by over two billion people daily on a
+                     huge variety of mobile devices. Many devices are configured to upload crash reports
+                     should the app crash for any reason. Engineers monitor and triage millions of crash
+                     reports logged each day to check for bugs, regressions, and any other quality problems.
+                     Debugging groups of crashes is a manually intensive process that requires deep domain
+                     expertise and close inspection of traces and code, often under time constraints.
+                  </p> 
+                  <p>We use contrast set mining, a form of discriminative pattern mining, to learn what
+                     distinguishes one group of crashes from another. Prior works focus on discretization
+                     to apply contrast mining to continuous data. We propose the first direct application
+                     of contrast learning to continuous data, without the need for discretization. We also
+                     define a weighted anomaly score that unifies continuous and categorical contrast sets
+                     while mitigating bias, as well as uncertainty measures that communicate confidence
+                     to developers. We demonstrate the value of our novel statistical improvements by applying
+                     it on a challenging dataset from Facebook production logs, where we achieve 40x speedup
+                     over baseline approaches using discretization.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3377813.3381371">Automatic abnormal log detection by analyzing log history for providing debugging
+                  insight</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Jinhan Kim</li>
+               <li class="nameList">Valeriy Savchenko</li>
+               <li class="nameList">Kihyuck Shin</li>
+               <li class="nameList">Konstantin Sorokin</li>
+               <li class="nameList">Hyunseok Jeon</li>
+               <li class="nameList">Georgiy Pankratenko</li>
+               <li class="nameList">Sergey Markov</li>
+               <li class="nameList Last">Chul-Joo Kim</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>As the size of software becomes larger and more complex, finding the cause of defects
+                     becomes increasingly difficult. Moreover, it is hard to reproduce defects when many
+                     components such as processes in platform environment or devices in IoT environment
+                     are involved. In this case, analyzing logs are the only way to get debugging insights,
+                     but manual log analysis is highly labor intensive work. In this paper, we propose
+                     a new log analysis system called historian which runs based on history of test logs. Our system first computes importance and
+                     noise scores of each log line by using statistical text mining techniques, and then
+                     highlights abnormal log lines based on computed scores for providing debugging insights.
+                     We applied historian to Tizen Native API test logs, and our system highlighted only about 4% log lines
+                     in average. We also provided highlighted failed logs to Tizen developers and the developers
+                     said that failure related log lines were highlighted well. These experimental results
+                     show that our system effectively highlights abnormal log lines and provides debugging
+                     insights to developers.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Traceability</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3377813.3381359">Lack of adoption of units of measurement libraries: survey and anecdotes</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Omar-Alfred Salah</li>
+               <li class="nameList Last">Steve McKeever</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Units of measurement (UoM) libraries are mostly used to appropriately encode unit
+                     variables and convert between them in a type-safe manner. Approximately 3700 functioning
+                     unit measurement libraries exist on the web, indicating that the wheel is being reinvented
+                     time and time again. Previous research has postulated that too much diversity, lack
+                     of code sharing and duplicated efforts are discouraging adoption, yet more remains
+                     to be known. Three developers and a scientist were interviewed and 91 practitioners
+                     of varying experiences from online forums were surveyed to explain their dissatisfaction
+                     with UoM libraries and possible reasons behind the lack of adoption. Our findings
+                     range from insufficient awareness of these UoM's, to development processes that exclude
+                     unit information through to specific performance concerns. We conclude with recommendations
+                     to UoM library creators stemming from these points that could help alleviate the problem
+                     and lead to an increased adoption rate of methodologies that support unit annotation
+                     and checking.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Security</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3377813.3381360">Automated identification of libraries from vulnerability data</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Yang Chen</li>
+               <li class="nameList">Andrew E. Santosa</li>
+               <li class="nameList">Asankhaya Sharma</li>
+               <li class="nameList Last">David Lo</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p><em>Software Composition Analysis</em> (<em>SCA</em>) has gained traction in recent years with a number of commercial offerings from various
+                     companies. SCA involves <em>vulnerability curation</em> process where a group of security researchers, using various data sources, populate
+                     a database of open-source library vulnerabilities, which is used by a scanner to inform
+                     the end users of vulnerable libraries used by their applications. One of the data
+                     sources used is the <em>National Vulnerability Database</em> (<em>NVD</em>). The key challenge faced by the security researchers here is in figuring out which
+                     libraries are related to each of the reported vulnerability in NVD. In this article,
+                     we report our design and implementation of a machine learning system to help identify
+                     the libraries related to each vulnerability in NVD.
+                  </p> 
+                  <p>The problem is that of <em>extreme multi-label learning</em> (<em>XML</em>), and we developed our system using the state-of-the-art FastXML algorithm. Our system
+                     is iteratively executed, improving the performance of the model over time. At the
+                     time of writing, it achieves <em>F</em><sub>1</sub>@1 score of 0.53 with average <em>F</em><sub>1</sub>@<em>k</em> score for <em>k</em> = 1, 2, 3 of 0.51 (<em>F</em><sub>1</sub>@<em>k</em> is the harmonic mean of <em>precision@k</em> and <em>recall@k</em>). It has been deployed in Veracode as part of a machine learning system that helps
+                     the security researchers identify the likelihood of web data items to be vulnerability-related.
+                     In addition, we present evaluation results of our feature engineering and the FastXML
+                     tree number used. Our work formulates and solves for the first time library name identification
+                     from NVD data as XML, and deploys the solution in a complete production system.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3377813.3381348">Building and maintaining a third-party library supply chain for productive and secure
+                  SGX enclave development</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Pei Wang</li>
+               <li class="nameList">Yu Ding</li>
+               <li class="nameList">Mingshen Sun</li>
+               <li class="nameList">Huibo Wang</li>
+               <li class="nameList">Tongxin Li</li>
+               <li class="nameList">Rundong Zhou</li>
+               <li class="nameList">Zhaofeng Chen</li>
+               <li class="nameList Last">Yiming Jing</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The big data industry is facing new challenges as concerns about privacy leakage soar.
+                     One of the remedies to privacy breach incidents is to encapsulate computations over
+                     sensitive data within hardware-assisted Trusted Execution Environments (TEE). Such
+                     TEE-powered software is called secure enclaves. Secure enclaves hold various advantages
+                     against competing for privacy-preserving computation solutions. However, enclaves
+                     are much more challenging to build compared with ordinary software. The reason is
+                     that the development of TEE software must follow a restrictive programming model to
+                     make effective use of strong memory encryption and segregation enforced by hardware.
+                     These constraints transitively apply to all third-party dependencies of the software.
+                     If these dependencies do not officially support TEE hardware, TEE developers have
+                     to spend additional engineering effort in porting them. High development and maintenance
+                     cost is one of the major obstacles against adopting TEE-based privacy protection solutions
+                     in production.
+                  </p> 
+                  <p>In this paper, we present our experience and achievements with regard to constructing
+                     and continuously maintaining a third-party library supply chain for TEE developers.
+                     In particular, we port a large collection of Rust third-party libraries into Intel
+                     SGX, one of the most mature trusted computing platforms. Our supply chain accepts
+                     upstream patches in a timely manner with SGX-specific security auditing. We have been
+                     able to maintain the SGX ports of 159 open-source Rust libraries with reasonable operational
+                     costs. Our work can effectively reduce the engineering cost of developing SGX enclaves
+                     for privacy-preserving data processing and exchange.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Testing</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3377813.3381370">Modeling and ranking flaky tests at Apple</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Emily Kowalczyk</li>
+               <li class="nameList">Karan Nair</li>
+               <li class="nameList">Zebao Gao</li>
+               <li class="nameList">Leo Silberstein</li>
+               <li class="nameList">Teng Long</li>
+               <li class="nameList Last">Atif Memon</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Test flakiness---inability to reliably repeat a test's Pass/Fail outcome---continues
+                     to be a significant problem in Industry, adversely impacting continuous integration
+                     and test pipelines. Completely eliminating flaky tests is not a realistic option as
+                     a significant fraction of system tests (typically non-hermetic) for services-based
+                     implementations exhibit some level of flakiness. In this paper, we view the flakiness
+                     of a test as a rankable value, which we quantify, track and assign a confidence. We
+                     develop two ways to model flakiness, capturing the randomness of test results via
+                     entropy, and the temporal variation via flipRate, and aggregating these over time.
+                     We have implemented our flakiness scoring service and discuss how its adoption has
+                     impacted test suites of two large services at Apple. We show how flakiness is distributed
+                     across the tests in these services, including typical score ranges and outliers. The
+                     flakiness scores are used to monitor and detect changes in flakiness trends. Evaluation
+                     results demonstrate near perfect accuracy in ranking, identification and alignment
+                     with human interpretation. The scores were used to identify 2 causes of flakiness
+                     in the dataset evaluated, which have been confirmed, and where fixes have been implemented
+                     or are underway. Our models reduced flakiness by 44% with less than 1% loss in fault
+                     detection.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Testing and debugging 1</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3377813.3381346">Property-based testing for LG home appliances using accelerated software-in-the-loop
+                  simulation</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Mingyu Park</li>
+               <li class="nameList">Hoon Jang</li>
+               <li class="nameList">Taejoon Byun</li>
+               <li class="nameList Last">Yunja Choi</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>As LG home appliances promise more convenience features to end-users, the complexity
+                     of their control software is also increasing, creating a higher pressure for software
+                     verification. However, since the embedded software is tightly coupled with its hardware
+                     counterpart, the development and verification schedules are dependent upon hardware
+                     development and this hinders integration testing to be performed as thoroughly as
+                     it deserves. Furthermore, the manually-crafted test cases have had limitations, both
+                     in terms of the thoroughness of state-space exploration and the power of test oracles.
+                  </p> 
+                  <p>To overcome these problems and facilitate a more efficient software verification,
+                     we introduce a property-based testing framework using software-in-the-loop simulation
+                     (SILS). SILS allows the software to be integrated virtually and tested before the
+                     hardware is fully developed, and, further, it enables an acceleration in test executions
+                     of up to a few tens of thousand times. Property-based testing is achieved by translating
+                     the formalized properties to synchronous observers which can concurrently check the
+                     violation of the verification property during test executions. In the field application,
+                     we discovered two fault cases in real products under development using our framework.
+                     According to our analysis, these cases could not have been found using manual testing,
+                     but made possible by our testing framework. These cases could have cost the company
+                     tens of million dollars each, if they were not discovered until after sale.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Ecosystems 1</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3377813.3381351">Sharing at scale: an open-source-software-based license compliance ecosystem</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Aran Azhakesan</li>
+               <li class="nameList Last">Frances Paulisch</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The amount of open-source-software (OSS) used in the global software engineering community
+                     is already enormous and still growing. This includes both the products we develop
+                     and the development tools we use to create them. It is meanwhile rare to find examples
+                     of products that do not contain open source components. Although, using open source
+                     components in products does have many advantages, it is very important that one also
+                     manages the use of the open source components in a license-compliant way.
+                  </p> 
+                  <p>A set of companies and other organizations who either offer or use OSS-based license
+                     compliance tools have recently formed the "Open Source Tooling Group". This international
+                     group works on establishing an ecosystem of OSS-based tools for license compliance
+                     that fit together well and can offer an ecosystem of tools for organizations to help
+                     fulfill their license compliance obligations.
+                  </p> 
+                  <p>This talk provides the motivation and overview of this topic describing the relevance
+                     to software engineering practitioners. It will close by highlighting some of the research
+                     areas where further improvements could be done in this fast-growing field.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Contracts and analysis</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3377813.3381361">How to reduce risk effectively in fixed price software development</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Volker Gruhn</li>
+               <li class="nameList Last">Niklas Spitczok von Brisinski</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>In this paper we consider 20 years of software development at a medium-sized European
+                     software company (called adesso). We identify changes and trends in software project
+                     management and we name typical risks inherent to fixed price projects (beyond the
+                     common sense that unclear requirements, missing domain knowledge and breakdown of
+                     project communication are permanent risks). Fixed price projects and their related
+                     derivatives can have a huge economical upside for companies like adesso, which goes
+                     along with sometimes even larger risks. The goal of this research is to identify both
+                     risk drivers and risk reduction or even elimination strategies. On this basis, we
+                     introduce the notion of a Project Management Office (PMO) and supporting tools and
+                     mechanisms which help to identify project risks early. Experience reported is based
+                     on eight years of monitoring software development projects with these tools and mechanisms.
+                     We also give some insights how PMO at adesso has changed over time and why these changes
+                     were implemented. As key message of this paper we show the correlation between the
+                     systematic usage of the PMO tools and a decreasing overspend rate over eight years
+                     and more than 320 projects.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3377813.3381368">Escape from escape analysis of Golang</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Cong Wang</li>
+               <li class="nameList">Mingrui Zhang</li>
+               <li class="nameList">Yu Jiang</li>
+               <li class="nameList">Huafeng Zhang</li>
+               <li class="nameList">Zhenchang Xing</li>
+               <li class="nameList Last">Ming Gu</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Escape analysis is widely used to determine the scope of variables, and is an effective
+                     way to optimize memory usage. However, the escape analysis algorithm can hardly reach
+                     100% accurate, mistakes of which can lead to a waste of heap memory. It is challenging
+                     to ensure the correctness of programs for memory optimization.
+                  </p> 
+                  <p>In this paper, we propose an escape analysis optimization approach for Go programming
+                     language (Golang), aiming to save heap memory usage of programs. First, we compile
+                     the source code to capture information of escaped variables. Then, we change the code
+                     so that some of these variables can bypass Golang's escape analysis mechanism, thereby
+                     saving heap memory usage and reducing the pressure of memory garbage collection. Next,
+                     we present a verification method to validate the correctness of programs, and evaluate
+                     the effect of memory optimization. We implement the approach to an automatic tool
+                     and make it open-source<sup>1</sup>. For evaluation, we apply our approach to 10 open-source projects. For the optimized
+                     Golang code, the heap allocation is reduced by 8.88% in average, and the heap usage
+                     is reduced by 8.78% in average. Time consumption is reduced by 9.48% in average, while
+                     the cumulative time of GC pause is reduced by 5.64% in average. We also apply our
+                     approach to 16 industrial projects in Bytedance Technology. Our approach successfully
+                     finds 452 optimized cases which are confirmed by developers.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Code generation and verification</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3377813.3381354">Rule-based code generation in industrial automation: four large-scale case studies applying the CAYENNE method</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Heiko Koziolek</li>
+               <li class="nameList">Andreas Burger</li>
+               <li class="nameList">Marie Platenius-Mohr</li>
+               <li class="nameList">Julius Rückert</li>
+               <li class="nameList">Hadil Abukwaik</li>
+               <li class="nameList">Raoul Jetley</li>
+               <li class="nameList Last">Abdulla P P</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Software development for industrial automation applications is a growing market with
+                     high economic impact. Control engineers design and implement software for such systems
+                     using standardized programming languages (IEC 61131-3) and still require substantial
+                     manual work causing high engineering costs and potential quality issues. Methods for
+                     automatically generating control logic using knowledge extraction from formal requirements
+                     documents have been developed, but so far only been demonstrated in simplified lab
+                     settings. We have executed four case studies on large industrial plants with thousands
+                     of sensors and actuators for a rule-based control logic generation approach called
+                     CAYENNE to determine its practicability. We found that we can generate more than 70
+                     percent of the required interlocking control logic with code generation rules that
+                     are applicable across different plants. This can lead to estimated overall development
+                     cost savings of up to 21 percent, which provides a promising outlook for methods in
+                     this class.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3377813.3381363">Understanding and handling alert storm for online service systems</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Nengwen Zhao</li>
+               <li class="nameList">Junjie Chen</li>
+               <li class="nameList">Xiao Peng</li>
+               <li class="nameList">Honglin Wang</li>
+               <li class="nameList">Xinya Wu</li>
+               <li class="nameList">Yuanzong Zhang</li>
+               <li class="nameList">Zikai Chen</li>
+               <li class="nameList">Xiangzhong Zheng</li>
+               <li class="nameList">Xiaohui Nie</li>
+               <li class="nameList">Gang Wang</li>
+               <li class="nameList">Yong Wu</li>
+               <li class="nameList">Fang Zhou</li>
+               <li class="nameList">Wenchi Zhang</li>
+               <li class="nameList">Kaixin Sui</li>
+               <li class="nameList Last">Dan Pei</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Alert is a kind of key data source in monitoring system for online service systems,
+                     which is used to record the anomalies in service components and report to engineers.
+                     In general, the occurrence of a service failure tends to be along with a large number
+                     of alerts, which is called alert storm. However, alert storm brings great challenges to diagnose the failure, because it
+                     is time-consuming and tedious for engineers to investigate such an overwhelming number
+                     of alerts manually. To help understand alert storm in practice, we conduct the first
+                     empirical study of alert storm based on large-scale real-world alert data and gain
+                     some valuable insights. Based on the findings obtained from the study, we propose
+                     a novel approach to handling alert storm. Specifically, this approach includes alert
+                     storm detection which aims to identify alert storm accurately, and alert storm summary
+                     which aims to recommend a small set of representative alerts to engineers for failure
+                     diagnosis. Our experimental study on real-world dataset demonstrates that our alert
+                     storm detection can achieve high F1-score (larger than 0.9). Besides, our alert storm
+                     summary can reduce the number of alerts that need to be examined by more than 98%
+                     and discover representative alerts accurately. We have successfully applied our approach
+                     to the service maintenance of a large commercial bank (China EverBright Bank), and
+                     we also share our success stories and lessons learned in industry.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Version control and programming</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3377813.3381362">Towards understanding and fixing upstream merge induced conflicts in divergent forks: an industrial case study</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Chungha Sung</li>
+               <li class="nameList">Shuvendu K. Lahiri</li>
+               <li class="nameList">Mike Kaufman</li>
+               <li class="nameList">Pallavi Choudhury</li>
+               <li class="nameList Last">Chao Wang</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p><em>Divergent forks</em> are a common practice in open-source software development to perform long-term, independent
+                     and diverging development on top of a popular source repository. However, keeping
+                     such divergent <em>downstream</em> forks in sync with the <em>upstream</em> source evolution poses engineering challenges in terms of frequent merge conflicts.
+                     In this paper, we conduct the first industrial case study of the implications of frequent
+                     merges from upstream and the resulting merge conflicts, in the context of Microsoft
+                     Edge development. The study consists of two parts. First, we describe the nature of
+                     merge conflicts that arise due to merges from upstream and classify them into textual
+                     conflicts, build breaks, and test failures. Second, we investigate the feasibility
+                     of automatically fixing a class of merge conflicts related to <em>build breaks</em> that consume a significant amount of developer time to root-cause and fix. Towards
+                     this end, we have implemented a tool MrgBldBrkFixer and evaluate it on three months
+                     of real Microsoft Edge Beta development data, and report encouraging results.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Cognition</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3377813.3381367">Assessing practitioner beliefs about software defect prediction</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">N. C. Shrikanth</li>
+               <li class="nameList Last">Tim Menzies</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Just because software developers say they believe in "X", that does not necessarily
+                     mean that "X" is true. As shown here, there exist numerous beliefs listed in the recent
+                     Software Engineering literature which are only supported by small portions of the
+                     available data. Hence we ask what is the source of this disconnect between beliefs
+                     and evidence?.
+                  </p> 
+                  <p>To answer this question we look for evidence for ten beliefs within 300,000+ changes
+                     seen in dozens of open-source projects. Some of those beliefs had strong support across
+                     all the projects; specifically, "<em>A commit that involves more added and removed lines is more bug-prone</em>" and "<em>Files with fewer lines contributed by their owners (who contribute most changes) are
+                        bug-prone</em>".
+                  </p> 
+                  <p>Most of the widely-held beliefs studied are only sporadically supported in the data;
+                     i.e. large effects can appear in project data and then disappear in subsequent releases.
+                     Such sporadic support explains why developers believe things that were relevant to
+                     their prior work, but not necessarily their current work.
+                  </p> 
+                  <p>Our conclusion will be that we need to change the nature of the debate with Software
+                     Engineering. Specifically, while it is important to report the effects that hold right
+                     now, it is also important to report on what effects change over time.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Applications</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3377813.3381349">Engineering for a science-centric experimentation platform</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Nikos Diamantopoulos</li>
+               <li class="nameList">Jeffrey Wong</li>
+               <li class="nameList">David Issa Mattos</li>
+               <li class="nameList">Ilias Gerostathopoulos</li>
+               <li class="nameList">Matthew Wardrop</li>
+               <li class="nameList">Tobias Mao</li>
+               <li class="nameList Last">Colin McFarland</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Netflix is an internet entertainment service that routinely employs experimentation
+                     to guide strategy around product innovations. As Netflix grew, it had the opportunity
+                     to explore increasingly specialized improvements to its service, which generated demand
+                     for deeper analyses supported by richer metrics and powered by more diverse statistical
+                     methodologies. To facilitate this, and more fully harness the skill sets of both engineering
+                     and data science, Netflix engineers created a science-centric experimentation platform
+                     that leverages the expertise of scientists from a wide range of backgrounds working
+                     on data science tasks by allowing them to make direct code contributions in the languages
+                     used by them (Python and R). Moreover, the same code that runs in production is able
+                     to be run locally, making it straightforward to explore and graduate both metrics
+                     and causal inference methodologies directly into production services.
+                  </p> 
+                  <p>In this paper, we provide two main contributions. Firstly, we report on the architecture
+                     of this platform, with a special emphasis on its novel aspects: how it supports science-centric
+                     end-to-end workflows without compromising engineering requirements. Secondly, we describe
+                     its approach to causal inference, which leverages the potential outcomes conceptual
+                     framework to provide a unified abstraction layer for arbitrary statistical models
+                     and methodologies.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Analysis and verification</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3377813.3381353">DeCaf: diagnosing and triaging performance issues in large-scale cloud services</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Chetan Bansal</li>
+               <li class="nameList">Sundararajan Renganathan</li>
+               <li class="nameList">Ashima Asudani</li>
+               <li class="nameList">Olivier Midy</li>
+               <li class="nameList Last">Mathru Janakiraman</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Large scale cloud services use Key Performance Indicators (KPIs) for tracking and
+                     monitoring performance. They usually have Service Level Objectives (SLOs) baked into
+                     the customer agreements which are tied to these KPIs. Dependency failures, code bugs,
+                     infrastructure failures, and other problems can cause performance regressions. It
+                     is critical to minimize the time and manual effort in diagnosing and triaging such
+                     issues to reduce customer impact. Large volume of logs and mixed type of attributes
+                     (categorical, continuous) in the logs makes diagnosis of regressions non-trivial.
+                  </p> 
+                  <p>In this paper, we present the design, implementation and experience from building
+                     and deploying DeCaf, a system for automated diagnosis and triaging of KPI issues using
+                     service logs. It uses machine learning along with pattern mining to help service owners
+                     automatically root cause and triage performance issues. We present the learnings and
+                     results from case studies on two large scale cloud services in Microsoft where DeCaf
+                     successfully diagnosed 10 known and 31 unknown issues. DeCaf also automatically triages
+                     the identified issues by leveraging historical data. Our key insights are that for
+                     any such diagnosis tool to be effective in practice, it should a) scale to large volumes
+                     of service logs and attributes, b) support different types of KPIs and ranking functions,
+                     c) be integrated into the DevOps processes.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Android and web testing</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3377813.3381352">JSidentify: a hybrid framework for detecting plagiarism among JavaScript code in online mini games</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Qun Xia</li>
+               <li class="nameList">Zhongzhu Zhou</li>
+               <li class="nameList">Zhihao Li</li>
+               <li class="nameList">Bin Xu</li>
+               <li class="nameList">Wei Zou</li>
+               <li class="nameList">Zishun Chen</li>
+               <li class="nameList">Huafeng Ma</li>
+               <li class="nameList">Gangqiang Liang</li>
+               <li class="nameList">Haochuan Lu</li>
+               <li class="nameList">Shiyu Guo</li>
+               <li class="nameList">Ting Xiong</li>
+               <li class="nameList">Yuetang Deng</li>
+               <li class="nameList Last">Tao Xie</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Online mini games are lightweight game apps, typically implemented in JavaScript (JS),
+                     that run inside another host mobile app (such as WeChat, Baidu, and Alipay). These
+                     mini games do not need to be downloaded or upgraded through an app store, making it
+                     possible for one host mobile app to perform the aggregated services of many apps.
+                     Hundreds of millions of users play tens of thousands of mini games, which make a great
+                     profit, and consequently are popular targets of plagiarism. In cases of plagiarism,
+                     deeply obfuscated code cloned from the original code often embodies malicious code
+                     segments and copyright infringements, posing great challenges for existing plagiarism
+                     detection tools. To address these challenges, in this paper, we design and implement
+                     JSidentify, a hybrid framework to detect plagiarism among online mini games. JSidentify
+                     includes three techniques based on different levels of code abstraction. JSidentify
+                     applies the included techniques in the constructed priority list one by one to reduce
+                     overall detection time. Our evaluation results show that JSidentify outperforms other
+                     existing related state-of-the-art approaches and achieves the best precision and recall
+                     with affordable detection time when detecting plagiarism among online mini games and
+                     clones among general JS programs. Our deployment experience of JSidentify also shows
+                     that JSidentify is indispensable in the daily operations of online mini games in WeChat.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Software architecture</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3377813.3381350">Piranha: reducing feature flag debt at uber</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Murali Krishna Ramanathan</li>
+               <li class="nameList">Lazaro Clapp</li>
+               <li class="nameList">Rajkishore Barik</li>
+               <li class="nameList Last">Manu Sridharan</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Feature flags are commonly used in mobile app development and can introduce technical
+                     debt related to deleting their usage from the codebase. This can adversely affect
+                     the overall reliability of the apps and increase their maintenance complexity. Reducing
+                     this debt without imposing additional overheads on the developers necessitates the
+                     design of novel tools and automated workflows.
+                  </p> 
+                  <p>In this paper, we describe the design and implementation of Piranha, an automated
+                     code refactoring tool which is used to automatically generate differential revisions
+                     (<em>a.k.a</em> diffs) to delete code corresponding to stale feature flags. Piranha takes as input
+                     the name of the flag, expected treatment behavior, and the name of the flag's author.
+                     It analyzes the ASTs of the program to generate appropriate refactorings which are
+                     packaged into a diff. The diff is assigned to the author of the flag for further processing,
+                     who can land it after performing any additional refactorings.
+                  </p> 
+                  <p>We have implemented Piranha to delete code in Objective-C, Java, and Swift programs,
+                     and deployed it to handle stale flags in multiple Uber apps. We present our experiences
+                     with the deployment of Piranha from Dec 2017 to May 2019, including the following
+                     highlights: (a) generated code cleanup diffs for 1381 flags (17% of total flags),
+                     (b) 65% of the diffs landed without any changes, (c) over 85% of the generated diffs
+                     compile and pass tests successfully, (d) around 80% of the diffs affect more than
+                     one file, (e) developers process more than 88% of the generated diffs, (f) 75% of
+                     the generated diffs are processed within a week, and (g) Piranha diffs have been interacted
+                     with by ~200 developers across Uber.
+                  </p> 
+                  <p>Piranha is available as open source at https://github.com/uber/piranha.</p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3377813.3381357">Software development data for architecture analysis: expectations, reality, and future directions</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Yuanfang Cai</li>
+               <li class="nameList Last">Rick Kazman</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Recently we have worked with a dozen industrial collaborators to pinpoint and quantify
+                     architecture debts, from multi-national corporations to startup companies. Our technology
+                     leverages a wide range of project data, from source file dependencies to issue records,
+                     and we interacted with projects of various sizes and characteristics. Crossing the
+                     border between research and practice, we have observed significant gaps in terms of
+                     data availability and quality among projects of different kinds. Compared with successful
+                     open source projects, data from proprietary projects are rarely complete or well-organized.
+                     Consequently, not all projects can benefit from all the features and analyses we provide.
+                     This, in turn, made them realize they needed to improve their development processes.
+                     In this talk, we categorize the commonly observed differences between open source
+                     and proprietary project data, analyze the reasons for such differences, and propose
+                     suggestions to minimize the gaps, to facilitate advances to both software research
+                     and practice.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Dependencies and configuration</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3377813.3381366">Exploring differences and commonalities between feature flags and configuration options</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Jens Meinicke</li>
+               <li class="nameList">Chu-Pan Wong</li>
+               <li class="nameList">Bogdan Vasilescu</li>
+               <li class="nameList Last">Christian Kästner</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Feature flags for continuous deployment and configuration options for customizing
+                     software share many similarities, both conceptually and technically. However, neither
+                     academic nor practitioner publications seem to clearly compare these two concepts.
+                     We argue that a distinction is valuable, as applications, goals, and challenges differ
+                     fundamentally between feature flags and configuration options. In this work, we explore
+                     the differences and commonalities of both concepts to help understand practices and
+                     challenges, and to help transfer existing solutions (e.g., for testing). To better
+                     understand feature flags and how they relate to configuration options, we performed
+                     nine semi-structured interviews with feature-flag experts. We discovered several distinguishing
+                     characteristics but also opportunities for knowledge and technology transfer across
+                     both communities. Overall, we think that both communities can learn from each other.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+         </div>
+      </div>
+   </body>
+</html>
