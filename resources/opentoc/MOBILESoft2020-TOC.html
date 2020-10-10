@@ -1,0 +1,775 @@
+<html xmlns:bkstg="http://www.atypon.com/backstage-ns" xmlns:urlutil="java:com.atypon.literatum.customization.UrlUtil" xmlns:pxje="java:com.atypon.frontend.services.impl.PassportXslJavaExtentions">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="Content-Style-Type" content="text/css"><style type="text/css">
+            #DLtoc {
+            font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+            }
+
+            #DLheader {
+            }
+            #DLheader h1 {
+            font-size:16px;
+            }
+
+            #DLcontent {
+            font-size:12px;
+            }
+            #DLcontent h2 {
+            font-size:14px;
+            margin-bottom:5px;
+            }
+            #DLcontent h3 {
+            font-size:12px;
+            padding-left:20px;
+            margin-bottom:0px;
+            }
+
+            #DLcontent ul{
+            margin-top:0px;
+            margin-bottom:0px;
+            }
+
+            .DLauthors li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLauthors li:after{
+            content:",";
+            }
+            .DLauthors li.nameList.Last:after{
+            content:"";
+            }
+
+            .DLabstract {
+            padding-left:40px;
+            padding-right:20px;
+            display:block;
+            }
+
+            .DLformats li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLformats li:after{
+            content:",";
+            }
+            .DLformats li.formatList.Last:after{
+            content:"";
+            }
+
+            .DLlogo {
+            vertical-align:middle;
+            padding-right:5px;
+            border:none;
+            }
+
+            .DLcitLink {
+            margin-left:20px;
+            }
+
+            .DLtitleLink {
+            margin-left:20px;
+            }
+
+            .DLotherLink {
+            margin-left:0px;
+            }
+
+        </style><title>MOBILESoft '20: Proceedings of the IEEE/ACM 7th International Conference on Mobile Software Engineering
+         and Systems
+      </title>
+   </head>
+   <body>
+      <div id="DLtoc">
+         <div id="DLheader">
+            <h1>MOBILESoft '20: Proceedings of the IEEE/ACM 7th International Conference on Mobile Software Engineering
+               and Systems
+            </h1><a class="DLcitLink" title="Go to the ACM Digital Library for additional information about this proceeding" href="https://dl.acm.org/doi/proceedings/10.1145/3387905"><img class="DLlogo" alt="Digital Library logo" height="30" src="https://dl.acm.org/specs/products/acm/releasedAssets/images/footer-logo1.png">
+               Full Citation in the ACM Digital Library
+               </a></div>
+         <div id="DLcontent">
+            <h2>SESSION: Software quality</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387905.3388592">Security testing of second order permission re-delegation vulnerabilities in Android
+                  apps</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Biniam Fisseha Demissie</li>
+               <li class="nameList Last">Mariano Ceccato</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>In Android, inter-app communication is a cornerstone feature where apps exchange special
+                     messages called Intents in order to integrate with each other and deliver a rich end-user
+                     experience. In particular, in case an app is granted special permission, it can dispatch
+                     privileged Intents to request sensitive tasks to system components.
+                  </p> 
+                  <p>However, a malicious app might hijack a defective privileged app and exploit it as
+                     a proxy, to forward attacking Intents to system components. We call this threat "Second
+                     Order Permission Re-delegation" vulnerability.
+                  </p> 
+                  <p>In this paper, we present (i) a detailed description of this novel vulnerability and
+                     (ii) our approach based on static analysis and automated test cases generation to
+                     detect (and document) instances of this vulnerability. We empirically evaluated our
+                     approach on a large set of top Google Play apps. Results suggest that this novel vulnerability
+                     is neglected by state of the art, but that it is common even among popular apps. In
+                     fact, our approach found 27 real vulnerabilities with fast analysis time, while a
+                     state-of-the-art static analysis tool could find none of them.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387905.3388604">DFarm: massive-scaling dynamic Android app analysis on real hardware</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Marc Miltenberger</li>
+               <li class="nameList">Julien Gerding</li>
+               <li class="nameList">Jens Guthmann</li>
+               <li class="nameList Last">Steven Arzt</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Dynamic analysis is an important tool for assessing software quality during testing.
+                     It not only helps analysts identify performance bottlenecks and functional errors,
+                     but also provides a means for finding security vulnerabilities. For example, analysts
+                     can determine the servers to which a mobile app connects, which sensitive data it
+                     transfers, and which cryptographic protocols it uses for the transfer. While many
+                     approaches for monitoring a running Android app exist, most work silently assumes
+                     that a suitable execution environment is available. When analyzing hundreds of apps
+                     at the same time, however, a single phone on the analyst's desk is not enough. Emulators
+                     are not always an alternative as we show, because apps can behave differently on real
+                     hardware.
+                  </p> 
+                  <p>In this paper, we discuss the challenges for providing a large-scale testing environment
+                     with real Android devices on physical hardware. We further present DFarm, a software
+                     and hardware system to configure and control hundreds of Android phones in a private
+                     testing cloud. We discuss electrical wiring, USB and WiFi connectivity, automatic
+                     configuration, and load balancing. We evaluate DFarm on a range between 1 and more
+                     than 70 devices. We show that it provides near-linear scaling for dynamic app analysis
+                     when adding new devices, while retaining the original device's computation and network
+                     performance.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387905.3388609">Making Android apps monkey-friendly</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList Last">Samad Paydar</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Monkey testing is a random testing technique in which a stream of pseudo-random events
+                     are automatically fired on the GUI of the application under test, usually with the
+                     purpose of robustness testing or responsiveness analysis. A line of research is dedicated
+                     to addressing the limitations of monkey testing for Android apps. However, all the
+                     existing works try to improve the underlying algorithms or techniques used by the
+                     monkey testing tools. In this vision paper, we propose the idea of improving the effectiveness
+                     of monkey testing by automatically refactoring the application under test. We provide
+                     two sample scenarios in which this idea can be used to address limitations of monkey
+                     testing for Android applications.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387905.3388603">Improving app quality despite flawed mobile analytics</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList Last">Julian Harty</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Analytics can help improve the quality of software; the improvements are affected
+                     by the fidelity of the analytics. The impact of poor fidelity may vary depending on
+                     the type of data being collected, for example, for crashes low fidelity may be sufficient.
+                  </p> 
+                  <p>The mobile ecosystem includes a platform where apps run and an app store that intermediates
+                     between developers and users. Google's Android ecosystem provides all the developers
+                     with analytics about various qualities of their app through a service called Android
+                     Vitals that automatically collects data on how their app is performing.
+                  </p> 
+                  <p>My research found ways to improve app quality through using mobile analytics, including
+                     Android Vitals. It also found fidelity flaws in several analytics tools provided by
+                     Google. They confirmed and validated some flaws and chose not to discuss others.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Mining and reviews</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387905.3388606">AndroidPropTracker: mining lifetime properties of Android projects</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Demetrio Guilardi</li>
+               <li class="nameList">Jalves Nicácio</li>
+               <li class="nameList">Bianca M. Napoleão</li>
+               <li class="nameList Last">Fabio Petrillo</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Android operating system introduces new releases frequently. This fact led to the
+                     existence of several Android Application Programming Interfaces (APIs) which is one
+                     of the causes of the Android fragmentation phenomenon. As a consequence of fragmentation,
+                     many apps became not ready for new Android releases. Aiming at investigation of the
+                     readiness of Android apps, we developed a software repository mining tool to understand
+                     how ready apps are (and were) for Android releases. The tool tracks the changes of
+                     Android projects properties over time, contributing for a deeper analysis through
+                     collecting data since the beginning of the projects. It allows researchers to examine
+                     when exactly Android properties were changed, how many times they were changed, as
+                     well as all their values along time. This mechanism can support researchers to understand
+                     the evolution of Android projects and to answer research questions. In addition, developers
+                     can use the tool to track their apps evolution and perform comparisons and analysis
+                     with other open source apps. The tool can help developers to have a broader view of
+                     their apps evolution as well as to analyze competitor apps evolution.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387905.3388605">ReviewViz: assisting developers perform empirical study on energy consumption related reviews
+                  for mobile applications</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Mohammad Abdul Hadi</li>
+               <li class="nameList Last">Fatemeh Hendijani Fard</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Improving energy efficiency of mobile applications is a topic that has gained a lot
+                     of attention recently. It has been addressed in a number of ways such as identifying
+                     energy bugs and developing a catalog of energy patterns. Previous work shows that
+                     users discuss the battery related issues (energy inefficiency or energy consumption)
+                     of the apps in their reviews. However, there is no work that addresses the automatic
+                     extraction of the battery related issues from users' feedback.
+                  </p> 
+                  <p>In this paper, we report on a visualization tool that is developed to empirically
+                     study machine learning algorithms and text features to automatically identify the
+                     energy consumption specific reviews with the highest accuracy. Other than the common
+                     machine learning algorithms, we utilize deep learning models with different word embeddings
+                     to compare the results. Furthermore, to help the developers extract the main topics
+                     that are discussed in the reviews, two state of the art topic modeling algorithms
+                     are applied. The visualizations of the topics represent the keywords that are extracted
+                     for each topic along with a comparison with the results of <em>string matching.</em></p> 
+                  <p>The developed web-browser based interactive visualization tool is a novel framework
+                     developed with the intention of giving the app developers insights about running time
+                     and accuracy of machine learning and deep learning models as well as extracted topics.
+                     The tool makes it easier for the developers to traverse through the extensive result
+                     set generated by the text classification and topic modeling algorithms. The dynamic-data
+                     structure used for the tool stores the baseline-results of the discussed approaches
+                     and are updated when applied on new datasets. The tool is open sourced to replicate
+                     the research results.<sup>1</sup></p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387905.3388612">Embracing mobile app evolution via continuous ecosystem mining and characterization</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList Last">Haipeng Cai</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>While an indicator of its vibrancy, the rapid evolution of a mobile ecosystem also
+                     causes challenges to mobile software engineers in developing and maintaining quality
+                     products, and to users concerning the usability and security of resulting apps. In
+                     this context, it is crucially important to arm mobile software engineers with effective
+                     and practical tool support that is informed and enabled by a comprehensive understanding
+                     of the evolutionary dynamics of this ecosystem. Targeting Android, we envision to
+                     build an infrastructure that is capable of systematically and continuously mining
+                     a mobile software ecosystem. Using this infrastructure, we then perform large-scale
+                     longitudinal characterization studies of the ecosystem to understand its evolutionary
+                     dynamics with a focus on the behavioral evolution patterns of, and ecological interaction
+                     among, three ecosystem elements: the mobile platforms, user apps built on the platforms,
+                     and users associated with the apps (including end users and developers). Further,
+                     the characterization results enable proactive app quality and sustainable app security.
+                     We also report our current progress in this effort with initial results, and discuss
+                     risks and next steps.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387905.3388602">Collaborative earthquake detection and response using smart devices</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList Last">Irshad Khan</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>An earthquake detection and response system is crucial due to the fatal nature of
+                     earthquakes. Recently, extensive research efforts have been made to detect earthquakes
+                     in real time and give an alert by incorporating with server-based systems or by working
+                     as a stand-alone device. However, such approaches still have many challenges due to
+                     the cost of network and server infrastructures or the inaccuracy of detection algorithms.
+                     In this work, we introduce a collaborative approach using smart devices located in
+                     a near area to detect earthquakes and issue an alert with detailed action plans. A
+                     smartphone's accelerometer works as a seismic sensor to monitor ground motions when
+                     it is in a steady state. Once an earthquakelike motion is detected, it is sent to
+                     nearby devices through D2D communications to confirm it as an earthquake. Our experimental
+                     results show that the proposed approach can be effective in a home environment or
+                     an earthquake early warning system is not present.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Empirical software engineering</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387905.3388594">Leave my apps alone!: a study on how Android developers access installed apps on user's device</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Gian Luca Scoccia</li>
+               <li class="nameList">Ibrahim Kanj</li>
+               <li class="nameList">Ivano Malavolta</li>
+               <li class="nameList Last">Kaveh Razavi</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>To enable app interoperability, the Android platform exposes <em>installed application methods</em> (IAMs), i.e., APIs that allow developers to query for the list of apps installed
+                     on a user's device. It is known that information collected through IAMs can be used
+                     to precisely deduce end-users interests and personal traits, thus raising privacy
+                     concerns. In this paper, we present a large-scale empirical study investigating the
+                     presence of IAMs in Android apps and their usage by Android developers.
+                  </p> 
+                  <p>Our results highlight that: (i) IAMs are widely used in commercial applications while
+                     their popularity is limited in open-source ones; (ii) IAM calls are mostly performed
+                     in included libraries code; (iii) more than one-third of libraries that employ IAMs
+                     are advertisement libraries; (iv) a small number of popular advertisement libraries
+                     account for over 33% of all usages of IAMs by bundled libraries; (v) developers are
+                     not always aware that their apps include IAMs calls.
+                  </p> 
+                  <p>Based on the collected data, we confirm the need to (i) revise the way IAMs are currently
+                     managed by the Android platform, introducing either an ad-hoc permission or an opt-out
+                     mechanism and (ii) improve both developers and end-users awareness with respect to
+                     the privacy-related concerns raised by IAMs.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387905.3388596">Experimental comparison of features and classifiers for Android malware detection</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Lwin Khin Shar</li>
+               <li class="nameList">Biniam Fisseha Demissie</li>
+               <li class="nameList">Mariano Ceccato</li>
+               <li class="nameList Last">Wei Minn</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Android platform has dominated the smart phone market for years now and, consequently,
+                     gained a lot of attention from attackers. Malicious apps (malware) pose a serious
+                     threat to the security and privacy of Android smart phone users. Available approaches
+                     to detect mobile malware based on machine learning rely on features extracted with
+                     static analysis or dynamic analysis techniques. Different types of machine learning
+                     classifiers (such as support vector machine and random forest) deep learning classifiers
+                     (based on deep neural networks) are then trained on extracted features, to produce
+                     models that can be used to detect mobile malware. The usually-analyzed features include
+                     permissions requested/used, frequency of API calls, use of API calls, and sequence
+                     of API calls. The API calls are analyzed at various granularity levels such as method,
+                     class, package, and family.
+                  </p> 
+                  <p>In the view of the proposals of different types of classifiers and the use of different
+                     types of features and different underlying analyses used for feature extraction, there
+                     is a need for a comprehensive evaluation on the effectiveness of the current state-of-the-art
+                     studies in malware detection on a common benchmark. In this work, we provide a baseline
+                     comparison of several conventional machine learning classifiers and deep learning
+                     classifiers, without fine tuning. We also provide the evaluation of different types
+                     of features that characterize the use of API calls at class level and the sequence
+                     of API calls at method level. Features have been extracted from a common benchmark
+                     of 4572 benign samples and 2399 malware samples, using both static analysis and dynamic
+                     analysis.
+                  </p> 
+                  <p>Among other interesting findings, we observed that classifiers trained on the use
+                     of API calls generally perform better than those trained on the sequence of API calls.
+                     Classifiers trained on static analysis-based features perform better than those trained
+                     on dynamic analysis-based features. Deep learning classifiers, despite their sophistication,
+                     are not necessarily better than conventional classifiers, especially when they are
+                     not optimized. However, deep learning classifiers do perform better than conventional
+                     classifiers when trained on dynamic analysis-based features.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387905.3388597">Empirical study on code smells in iOS applications</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Kristiina Rahkema</li>
+               <li class="nameList Last">Dietmar Pfahl</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Code smells are recurring patterns in code that have been identified as bad practices.
+                     They have been analysed extensively in Java desktop applications. For mobile applications
+                     most of the research has been done for Android with very little research done for
+                     iOS. Although Android has the largest market share, iOS is a very popular platform.
+                     Our goal is to understand the distribution of code smells in iOS applications. For
+                     this analysis we used a collaborative list of open source iOS applications from GitHub.
+                     We combined code smells defined by Fowler and object oriented code smells studied
+                     on Android. We developed a tool that can detect these code smells in Swift applications.
+                     We discovered that iOS applications are most often affected by Lazy Class, Long Method
+                     and Message Chain code smells. Most often occurring code smells are Internal Duplication,
+                     Lazy Class and Long Method.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Software development and evolution</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387905.3388598">Are apps ready for new Android releases?</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Demetrio Guilardi</li>
+               <li class="nameList">Jalves Nicácio</li>
+               <li class="nameList">Bianca M. Napoleão</li>
+               <li class="nameList Last">Fabio Petrillo</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p><em>Context</em>: Android operating system always brings new releases and updates to improve security,
+                     increase performance and bring a better user experience. When Google announces a new
+                     release, a whole chain of changes is triggered in cascade, causing many compatibility
+                     issues. <em>Objective</em>: This study focus at performing a quantitative and qualitative analysis on the state
+                     of apps readiness for new Android releases over time. <em>Method</em>: We performed an empirical study to map apps readiness to different Android versions.
+                     We developed a Repository Mining Tool to analyse 8420 open-source repositories, detecting
+                     2118 Android projects and when they were adapted to different Android versions along
+                     their lifetimes. <em>Results</em>: Our results show that Android apps have became "less ready" over time. We found
+                     that 76.45% of the analysed apps were ready for Android Lollipop 5.0 (API level 21)
+                     release, in October 2014. Though only 5.46% were ready for Android 10 (API level 29),
+                     in September 2019. In addition, our results show that when apps are adapted to an
+                     Android version, 59.41% perform the adaptation until the new Android release month,
+                     95% are adapted twelve months after the release, and 99.16% are adapted two years
+                     later. <em>Conclusion</em>: Our findings reveal implications that affect not only the Android or mobile development
+                     research field and developers, they also reveal implications that points to Google's
+                     policies and Android final users as well.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387905.3388608">APIMigrator: an API-usage migration tool for Android apps</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Mattia Fazzini</li>
+               <li class="nameList">Qi Xin</li>
+               <li class="nameList Last">Alessandro Orso</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>To provide their functionality, mobile apps interact extensively with the application
+                     programming interface (API) of the underlying operating system. Given that this API
+                     evolves frequently, app developers are periodically required to migrate API usages
+                     in their apps to ensure that the apps behave as expected when running on the new API.
+                     To help developers with this tedious, error-prone, and time-consuming task, we defined
+                     a technique for automated API migration and implemented it in a tool called APIMigrator
+                     that supports Android apps. APIMigrator (1) automatically migrates API usages within
+                     an app by leveraging how developers of other apps migrated corresponding API usages
+                     and (2) validates the migrations through differential testing. We evaluated APIMigrator
+                     on a benchmark of 15 real-world apps and obtained promising results. Overall, our
+                     tool was able to migrate 85% of the API usages considered and validate 68% of these
+                     migrations. We provide a demo video of the tool at https://youtu.be/v0VfpKi_IDc.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387905.3388607">Doodle2App: native app code by freehand UI sketching</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Soumik Mohian</li>
+               <li class="nameList Last">Christoph Csallner</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>User interface development typically starts with freehand sketching, with pen on paper,
+                     which creates a big gap in the software development process. Recent advances in deep
+                     neural networks that have been trained on large sketch stroke sequence collections
+                     have enabled online sketch detection that supports many sketch element classes at
+                     high classification accuracy. This paper leverages the recent Google Quick, Draw!
+                     dataset of 50M sketch stroke sequences to pre-train a recurrent neural network and
+                     retrains it with sketch stroke sequences we collected via Amazon Mechanical Turk.
+                     The resulting Doodle2App website offers a paper substitute, i.e., a drawing interface
+                     with interactive UI preview and can convert sketches to a compilable single-page Android
+                     application. On 712 sketch samples Doodle2App achieved higher accuracy than the state-of-the-art
+                     tool Teleport. A video demo is at https://youtu.be/P4sb0pKTNEY
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387905.3388601">Real-time multi-user spatial collaboration using ARCore</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList Last">Dongxing Cao</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>This paper proposes a collaboration application that allows multiuser to add extra
+                     contents to live video streaming, based on augmented reality annotation in real-time.
+                     Compared to the previous work, we think the integration of remote collaboration and
+                     a co-located collaborative way is one of the novelty points of the proposed application.
+                     The AR-based collaborative system can render annotations directly on an environment
+                     which helps local users easily recognize the original intention that the remote helper
+                     wants to deliver. We introduce how the application work.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Energy consumption</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387905.3392095">Should energy consumption influence the choice of Android third-party HTTP libraries?</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Hina Anwar</li>
+               <li class="nameList">Berker Demirer</li>
+               <li class="nameList">Dietmar Pfahl</li>
+               <li class="nameList Last">Satish Srirama</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>In mobile devices, the battery is a limited resource and mobile apps are designed
+                     with this constraint in mind. To speed up development, app developers often use third-party
+                     libraries. Researchers have found that third-party libraries for ads and billing excessively
+                     use mobile resources. Other often used third-party libraries such as Android third-party
+                     HTTP libraries have received less attention from research regarding energy consumption.
+                     To fill this gap, we investigated whether popular Android third-party HTTP libraries
+                     vary in energy consumption. In addition, we checked whether there is a correlation
+                     between performance and energy consumption. To achieve this goal, we performed a controlled
+                     experiment. We created 45 different versions of a custom app and explored the energy
+                     consumption and performance of eight popular Android third-party HTTP libraries in
+                     five typical use cases. We found that there is a significant variance of energy consumption
+                     between the selected Android third-party HTTP libraries. We assume that the energy
+                     drivers are related to the internal structure of the Android third-party HTTP libraries,
+                     in particular to the handling of asynchronous tasks and the creation of multiple threads
+                     in the background. We did not find significant correlation between performance and
+                     energy consumption in most of the versions. Our results will help app developers make
+                     better choices when selecting Android third-party HTTP libraries.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387905.3388600">Greenspecting Android virtual keyboards</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Rui Rua</li>
+               <li class="nameList">Tiago Fraga</li>
+               <li class="nameList">Marco Couto</li>
+               <li class="nameList Last">João Saraiva</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>During this still increasing mobile devices proliferation age, much of human-computer
+                     interaction involves text input, and the task of typing text is provided via virtual
+                     keyboards. In a mobile setting, energy consumption is a key concern for both hardware
+                     manufacturers and software developers. Virtual keyboards are software applications,
+                     and thus, inefficient applications have a negative impact on the overall energy consumption
+                     of the underlying device. Energy consumption analysis and optimization of mobile software
+                     is a recent and active area of research. Surprisingly, there is no study analyzing
+                     the energy efficiency of the most used software keyboards and evaluating the performance
+                     advantage of its features.
+                  </p> 
+                  <p>In this paper, we studied the energy performance of five of the most used virtual
+                     keyboards in the Android ecosystem. We measure and analyze the energy consumption
+                     in different keyboard scenarios, namely with or without using word prediction. This
+                     work presents the results of two studies: one where we instructed the keyboards to
+                     simulate the writing of a predefined input text, and another where we performed an
+                     empirical study with real users writing the same text.
+                  </p> 
+                  <p>Our studies show that there exist relevant performance differences among the most
+                     used keyboards of the considered ecosystem, and it is possible to save nearly 18%
+                     of energy by replacing the most used keyboard in Android by the most efficient one.
+                     We also showed that is possible to save both energy and time by disabling keyboard
+                     intrinsic features and that the use of word suggestions not always compensate for
+                     energy and time.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387905.3388593">Evaluating the impact of caching on the energy consumption and performance of progressive
+                  web apps</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Ivano Malavolta</li>
+               <li class="nameList">Katerina Chinnappan</li>
+               <li class="nameList">Lukas Jasmontas</li>
+               <li class="nameList">Sarthak Gupta</li>
+               <li class="nameList Last">Kaveh Ali Karam Soltany</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p><em>Context.</em> Since today mobile devices have limited battery life, the energy consumption of the
+                     software running on them can play a strong role with respect to the success of mobile-based
+                     businesses. Progressive Web Applications (PWAs) are built using common web technologies
+                     like HTML, CSS, and JavaScript and are commonly used for providing a better user experience
+                     to mobile users. Caching is the main technique used by PWA developers for optimizing
+                     network usage and for providing a meaningful experience even when the user's device
+                     is offline.
+                  </p> 
+                  <p><em>Goal.</em> This paper aims at assessing the impact of caching on both the energy consumption
+                     and performance of PWAs.
+                  </p> 
+                  <p><em>Method.</em> We conducted an empirical experiment targeting 9 real PWAs developed by third-party
+                     developers. The experiment is designed as a 1 factor - 2 treatments study, with the
+                     usage of caching as the single factor and the status of the cache as treatments (empty
+                     vs populated cache). The response variables of the experiment are (i) the energy consumption
+                     of the mobile device and (ii) the page load time of the PWAs. The experiment is executed
+                     on a real Android device running the Mozilla Firefox browser.
+                  </p> 
+                  <p><em>Results.</em> Our results show that PWAs do not consume significantly different amounts of energy
+                     when loaded either with an empty or populated cache. However, the page load time of
+                     PWAs is significantly lower when the cache is already populated, with a medium effect
+                     size.
+                  </p> 
+                  <p><em>Conclusions.</em> This study confirms that PWAs are promising in terms of energy consumption and provides
+                     evidence that caching can be safely exploited by PWA developers concerned with energy
+                     consumption. The study provides also empirical evidence that caching is an effective
+                     technique for improving the user experience in terms of page loading time of PWAs.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Security and privacy</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387905.3388595">Representing string computations as graphs for classifying malware</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Justin Del Vecchio</li>
+               <li class="nameList">Steven Y. Ko</li>
+               <li class="nameList Last">Lukasz Ziarek</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Android applications rely heavily on strings for sensitive operations like reflection,
+                     access to system resources, URL connections, database access, among others. Thus,
+                     insight into application behavior can be gained through not only an analysis of what
+                     strings an application creates but also the structure of the computation used to create
+                     theses strings, and in what manner are these strings used. In this paper we introduce
+                     a static analysis of Android applications to discover strings, how they are created,
+                     and their usage. The output of our static analysis contains all of this information
+                     in the form of a graph which we call a string computation. We leverage the results
+                     to classify individual application behavior with respect to malicious or benign intent.
+                     Unlike previous work that has focused only on extraction of string values, our approach
+                     leverages the structure of the computation used to generate string values as features
+                     to perform classification of Android applications. That is, we use none of the static
+                     analysis computed string values, rather using only the graph structures of created
+                     strings to do classification of an arbitrary Android application as malware or benign.
+                     Our results show that leveraging string computation structures as features can yield
+                     precision and recall rates as high as 97% on modern malware. We also provide baseline
+                     results against other malware detection tools and techniques to classify the same
+                     corpus of applications.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387905.3388610">On the elicitation of privacy and ethics preferences of mobile users</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Patrizio Migliarini</li>
+               <li class="nameList">Gian Luca Scoccia</li>
+               <li class="nameList">Marco Autili</li>
+               <li class="nameList Last">Paola Inverardi</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Nowadays, mobile users are constantly being connected and increasingly asked to express
+                     their personal preferences in the digital world. User preferences deal with simple
+                     device settings options, like notification alarms, as well as relevant ethical choices
+                     relating to the user behavior, privacy ones included (e.g., concerning the unauthorized
+                     disclosure and mining of personal data, as well as the access to restricted resources).
+                     All these preferences define the user, they are the building blocks of her digital
+                     identity and will be increasingly important given the growing rise of autonomous technologies
+                     and their ethical implications. The settings that enable these preferences are often
+                     hard to locate and hard to understand, even in popular apps and operating systems.
+                     Moreover, they can expose privacy, be employed for profiling or exploited for malicious
+                     activities. In this landscape, we devise the introduction of a <em>Personal Preferences Automation Module</em> (PPAM) capable of automatically inferring, applying and enforcing user choices in
+                     multiple scenarios ranging from speeding up simple time consuming tasks, to managing
+                     sensitive ethical choices. The wide range of sensors and devices that can be found
+                     in the mobile domain makes it a privileged context in which to employ the proposed
+                     module. In this paper, we present two application scenarios and describe the proposed
+                     approach at work on them.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3387905.3388611">Vision: alleviating Android developer burden on obfuscation</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Geoffrey Hecht</li>
+               <li class="nameList">Cyprien Neverov</li>
+               <li class="nameList Last">Alexandre Bergel</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Mobile applications (apps) have gained an increasing importance in the field of software
+                     engineering as they are becoming one of the most widely used type of software. In
+                     the Android ecosystem, obfuscation tools are available to optimize, reduce the size
+                     and protect the intellectual properties of apps. However, despite the clear advantages
+                     provided by obfuscation most apps do not use it, often because of the difficulties
+                     induced by the usage of obfuscation which requires writing rules to keep a usable
+                     app. In this paper, we identify the concrete challenges encountered by app developers
+                     who wish to use obfuscation in their apps. In addition, we propose an approach using
+                     crowdsourcing to automatically generate rules, when static analysis is not sufficient.
+                     With the knowledge gained from hundreds of projects, we hope to lighten the burden
+                     on developers when writing rules.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+         </div>
+      </div>
+   </body>
+</html>
