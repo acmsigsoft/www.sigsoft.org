@@ -1,1034 +1,1751 @@
-
-
-<!doctype html>
-<head>
-<META http-equiv="Content-Style-Type" content="text/css">
-<title>ISSTA 2017- Proceedings of the 26th ACM SIGSOFT International Symposium on Software Testing and Analysis</title>
-<STYLE type="text/css">
-#DLtoc {
-	font: normal 12px/1.5em Arial, Helvetica, sans-serif;
-	}
-
-#DLheader {
-	}
-#DLheader h1 {
-	font-size:16px;	
-}
-	
-#DLcontent {
-	 font-size:12px;
-	}
-#DLcontent h2 {
-	 font-size:14px;
-	 margin-bottom:5px;
-	}
-#DLcontent h3 {
-	 font-size:12px;
-	 padding-left:20px;
-	 margin-bottom:0px;
-	}
-
-#DLcontent ul{
-	margin-top:0px;
-	margin-bottom:0px;
-	}
-		
-.DLauthors li{
-	display: inline;
-	list-style-type: none;
-	padding-right: 5px;
-	}
-	
-.DLauthors li:after{
-	content:",";
-	}
-.DLauthors li.nameList.Last:after{
-	content:"";
-	}		
-
-.DLformats li{
-	display: inline;
-	list-style-type: none;
-	padding-right: 5px;
-	}
-	
-.DLformats li:after{
-	content:",";
-	}
-.DLformats li.formatList.Last:after{
-	content:"";
-	}		
-
-.DLlogo {
-	vertical-align:middle; 
-	padding-right:5px;
-	border:none;
-	}
-	
-.DLcitLink {
-	margin-left:20px;
-	}	
-
-.DLtitleLink {
-	margin-left:20px;
-	}	
-
-.DLotherLink {
-	margin-left:0px;
-	}		
-   
-</STYLE>
-</head>
-
-
-<body>
-
-<div id="DLtoc">
-	<div id="DLheader">
-    	<h1>ISSTA 2017- Proceedings of the 26th ACM SIGSOFT International Symposium on Software Testing and Analysis</h1>
-        <a class="DLcitLink" href="//dl.acm.org/citation.cfm?id=3092703" title="Go to the ACM Digital Library for additional information about this proceeding"><img class="DLlogo" src="//dl.acm.org/img/dllogo.png" alt="Digital Library logo" height="30" width="30">Full Citation in the ACM Digital Library</a>
-    </div>
-    <div id="DLcontent">
-    	<h2>SESSION: Improving Testing</h2> 
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31077" title="Get the Full Text from the ACM Digital Library">One test to rule them all</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Alex Groce</li>
-                          
-                          <li class="nameList">Josie Holmes</li>
-                          
-                          <li class="nameList Last">Kevin Kellar</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31078" title="Get the Full Text from the ACM Digital Library">Reinforcement learning for automatic test case prioritization and selection in continuous integration</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Helge Spieker</li>
-                          
-                          <li class="nameList">Arnaud Gotlieb</li>
-                          
-                          <li class="nameList">Dusica Marijan</li>
-                          
-                          <li class="nameList Last">Morten Mossige</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31079" title="Get the Full Text from the ACM Digital Library">PerfRanker: prioritization of performance regression tests for collection-intensive software</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Shaikh Mostafa</li>
-                          
-                          <li class="nameList">Xiaoyin Wang</li>
-                          
-                          <li class="nameList Last">Tao Xie</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31070" title="Get the Full Text from the ACM Digital Library">Compiler-assisted test acceleration on GPUs for embedded software</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Vanya Yaneva</li>
-                          
-                          <li class="nameList">Ajitha Rajan</li>
-                          
-                          <li class="nameList Last">Christophe Dubach</li>
-                          
-              </ul>
-        <h2>SESSION: Testing</h2> 
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31071" title="Get the Full Text from the ACM Digital Library">Targeted property-based testing</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Andreas L&#246;scher</li>
-                          
-                          <li class="nameList Last">Konstantinos Sagonas</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31072" title="Get the Full Text from the ACM Digital Library">Generating unit tests with descriptive names or: would you name your children thing1 and thing2?</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Ermira Daka</li>
-                          
-                          <li class="nameList">Jos&#233; Miguel Rojas</li>
-                          
-                          <li class="nameList Last">Gordon Fraser</li>
-                          
-              </ul>
-        <h2>SESSION: Symbolic Execution</h2> 
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31073" title="Get the Full Text from the ACM Digital Library">Accelerating array constraints in symbolic execution</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">David M. Perry</li>
-                          
-                          <li class="nameList">Andrea Mattavelli</li>
-                          
-                          <li class="nameList">Xiangyu Zhang</li>
-                          
-                          <li class="nameList Last">Cristian Cadar</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31074" title="Get the Full Text from the ACM Digital Library">Improving the cost-effectiveness of symbolic testing techniques for transport protocol implementations under packet dynamics</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Wei Sun</li>
-                          
-                          <li class="nameList">Lisong Xu</li>
-                          
-                          <li class="nameList Last">Sebastian Elbaum</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31085" title="Get the Full Text from the ACM Digital Library">Combining symbolic execution and search-based testing for programs with complex heap inputs</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Pietro Braione</li>
-                          
-                          <li class="nameList">Giovanni Denaro</li>
-                          
-                          <li class="nameList">Andrea Mattavelli</li>
-                          
-                          <li class="nameList Last">Mauro Pezz&#232;</li>
-                          
-              </ul>
-        <h2>SESSION: Concurrency</h2> 
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31086" title="Get the Full Text from the ACM Digital Library">Efficient computation of happens-before relation for event-driven programs</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Pallavi Maiya</li>
-                          
-                          <li class="nameList Last">Aditya Kanade</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31087" title="Get the Full Text from the ACM Digital Library">Automatic detection and validation of race conditions in interrupt-driven embedded software</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Yu Wang</li>
-                          
-                          <li class="nameList">Linzhang Wang</li>
-                          
-                          <li class="nameList">Tingting Yu</li>
-                          
-                          <li class="nameList">Jianhua Zhao</li>
-                          
-                          <li class="nameList Last">Xuandong Li</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31088" title="Get the Full Text from the ACM Digital Library">Monitoring decentralized specifications</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Antoine El-Hokayem</li>
-                          
-                          <li class="nameList Last">Yli&#232;s Falcone</li>
-                          
-              </ul>
-        <h2>SESSION: Dynamic Analysis</h2> 
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31089" title="Get the Full Text from the ACM Digital Library">Effective online software anomaly detection</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Yizhen Chen</li>
-                          
-                          <li class="nameList">Ming Ying</li>
-                          
-                          <li class="nameList">Daren Liu</li>
-                          
-                          <li class="nameList">Adil Alim</li>
-                          
-                          <li class="nameList">Feng Chen</li>
-                          
-                          <li class="nameList Last">Mei-Hwa Chen</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31080" title="Get the Full Text from the ACM Digital Library">Semi-automated discovery of server-based information oversharing vulnerabilities in Android applications</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">William Koch</li>
-                          
-                          <li class="nameList">Abdelberi Chaabane</li>
-                          
-                          <li class="nameList">Manuel Egele</li>
-                          
-                          <li class="nameList">William Robertson</li>
-                          
-                          <li class="nameList Last">Engin Kirda</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31081" title="Get the Full Text from the ACM Digital Library">CPR: cross platform binary code reuse via platform independent trace program</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Yonghwi Kwon</li>
-                          
-                          <li class="nameList">Weihang Wang</li>
-                          
-                          <li class="nameList">Yunhui Zheng</li>
-                          
-                          <li class="nameList">Xiangyu Zhang</li>
-                          
-                          <li class="nameList Last">Dongyan Xu</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31082" title="Get the Full Text from the ACM Digital Library">An actionable performance profiler for optimizing the order of evaluations</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Marija Selakovic</li>
-                          
-                          <li class="nameList">Thomas Glaser</li>
-                          
-                          <li class="nameList Last">Michael Pradel</li>
-                          
-              </ul>
-        <h2>SESSION: The Web</h2> 
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31083" title="Get the Full Text from the ACM Digital Library">Testing and analysis of web applications using page models</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Snigdha Athaiya</li>
-                          
-                          <li class="nameList Last">Raghavan Komondoor</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31084" title="Get the Full Text from the ACM Digital Library">Automated layout failure detection for responsive web pages without an explicit oracle</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Thomas A. Walsh</li>
-                          
-                          <li class="nameList">Gregory M. Kapfhammer</li>
-                          
-                          <li class="nameList Last">Phil McMinn</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31095" title="Get the Full Text from the ACM Digital Library">Test execution checkpointing for web applications</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Marco Guarnieri</li>
-                          
-                          <li class="nameList">Petar Tsankov</li>
-                          
-                          <li class="nameList">Tristan Buchs</li>
-                          
-                          <li class="nameList">Mohammad Torabi Dashti</li>
-                          
-                          <li class="nameList Last">David Basin</li>
-                          
-              </ul>
-        <h2>SESSION: Experience Report</h2> 
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31096" title="Get the Full Text from the ACM Digital Library">Experience paper: a study on behavioral backward incompatibilities of Java software libraries</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Shaikh Mostafa</li>
-                          
-                          <li class="nameList">Rodney Rodriguez</li>
-                          
-                          <li class="nameList Last">Xiaoyin Wang</li>
-                          
-              </ul>
-        <h2>SESSION: Program Repair and Patching</h2> 
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31097" title="Get the Full Text from the ACM Digital Library">Identifying test-suite-overfitted patches through test case generation</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Qi Xin</li>
-                          
-                          <li class="nameList Last">Steven P. Reiss</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31098" title="Get the Full Text from the ACM Digital Library">Impact of tool support in patch construction</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Anil Koyuncu</li>
-                          
-                          <li class="nameList">Tegawend&#233; F. Bissyand&#233;</li>
-                          
-                          <li class="nameList">Dongsun Kim</li>
-                          
-                          <li class="nameList">Jacques Klein</li>
-                          
-                          <li class="nameList">Martin Monperrus</li>
-                          
-                          <li class="nameList Last">Yves Le Traon</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31099" title="Get the Full Text from the ACM Digital Library">Automated repair of layout cross browser issues using search-based techniques</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Sonal Mahajan</li>
-                          
-                          <li class="nameList">Abdulmajeed Alameer</li>
-                          
-                          <li class="nameList">Phil McMinn</li>
-                          
-                          <li class="nameList Last">William G. J. Halfond</li>
-                          
-              </ul>
-        <h2>SESSION: Fault Localization and Mutation Testing</h2> 
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31090" title="Get the Full Text from the ACM Digital Library">Boosting spectrum-based fault localization using PageRank</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Mengshi Zhang</li>
-                          
-                          <li class="nameList">Xia Li</li>
-                          
-                          <li class="nameList">Lingming Zhang</li>
-                          
-                          <li class="nameList Last">Sarfraz Khurshid</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31091" title="Get the Full Text from the ACM Digital Library">FLUCCS: using code and change metrics to improve fault localization</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Jeongju Sohn</li>
-                          
-                          <li class="nameList Last">Shin Yoo</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31092" title="Get the Full Text from the ACM Digital Library">Inferring mutant utility from program context</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Ren&#233; Just</li>
-                          
-                          <li class="nameList">Bob Kurtz</li>
-                          
-                          <li class="nameList Last">Paul Ammann</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31093" title="Get the Full Text from the ACM Digital Library">Faster mutation analysis via equivalence modulo states</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Bo Wang</li>
-                          
-                          <li class="nameList">Yingfei Xiong</li>
-                          
-                          <li class="nameList">Yangqingwei Shi</li>
-                          
-                          <li class="nameList">Lu Zhang</li>
-                          
-                          <li class="nameList Last">Dan Hao</li>
-                          
-              </ul>
-        <h2>SESSION: Static Analysis</h2> 
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31094" title="Get the Full Text from the ACM Digital Library">Just-in-time static analysis</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Lisa Nguyen Quang Do</li>
-                          
-                          <li class="nameList">Karim Ali</li>
-                          
-                          <li class="nameList">Benjamin Livshits</li>
-                          
-                          <li class="nameList">Eric Bodden</li>
-                          
-                          <li class="nameList">Justin Smith</li>
-                          
-                          <li class="nameList Last">Emerson Murphy-Hill</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31005" title="Get the Full Text from the ACM Digital Library">Refining interprocedural change-impact analysis using equivalence relations</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Alex Gyori</li>
-                          
-                          <li class="nameList">Shuvendu K. Lahiri</li>
-                          
-                          <li class="nameList Last">Nimrod Partush</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31006" title="Get the Full Text from the ACM Digital Library">Boosting the precision of virtual call integrity protection with partial pointer analysis for C++</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Xiaokang Fan</li>
-                          
-                          <li class="nameList">Yulei Sui</li>
-                          
-                          <li class="nameList">Xiangke Liao</li>
-                          
-                          <li class="nameList Last">Jingling Xue</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31007" title="Get the Full Text from the ACM Digital Library">Lightweight detection of physical unit inconsistencies without program annotations</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">John-Paul Ore</li>
-                          
-                          <li class="nameList">Carrick Detweiler</li>
-                          
-                          <li class="nameList Last">Sebastian Elbaum</li>
-                          
-              </ul>
-        <h2>SESSION: Demonstrations</h2> 
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31008" title="Get the Full Text from the ACM Digital Library">Phriky-units: a lightweight, annotation-free physical unit inconsistency detection tool</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">John-Paul Ore</li>
-                          
-                          <li class="nameList">Carrick Detweiler</li>
-                          
-                          <li class="nameList Last">Sebastian Elbaum</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31009" title="Get the Full Text from the ACM Digital Library">A suite of tools for making effective use of automatically generated tests</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Josie Holmes</li>
-                          
-                          <li class="nameList Last">Alex Groce</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31000" title="Get the Full Text from the ACM Digital Library">ReDeCheck: an automatic layout failure checking tool for responsively designed web pages</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Thomas A. Walsh</li>
-                          
-                          <li class="nameList">Gregory M. Kapfhammer</li>
-                          
-                          <li class="nameList Last">Phil McMinn</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31001" title="Get the Full Text from the ACM Digital Library">CUT: automatic unit testing in the cloud</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Alessio Gambi</li>
-                          
-                          <li class="nameList">Sebastian Kappler</li>
-                          
-                          <li class="nameList">Johannes Lampel</li>
-                          
-                          <li class="nameList Last">Andreas Zeller</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31002" title="Get the Full Text from the ACM Digital Library">XFix: an automated tool for the repair of layout cross browser issues</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Sonal Mahajan</li>
-                          
-                          <li class="nameList">Abdulmajeed Alameer</li>
-                          
-                          <li class="nameList">Phil McMinn</li>
-                          
-                          <li class="nameList Last">William G. J. Halfond</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31003" title="Get the Full Text from the ACM Digital Library">THEMIS: a tool for decentralized monitoring algorithms</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Antoine El-Hokayem</li>
-                          
-                          <li class="nameList Last">Yli&#232;s Falcone</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31004" title="Get the Full Text from the ACM Digital Library">JFIX: semantics-based repair of Java programs via symbolic PathFinder</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Xuan-Bach D. Le</li>
-                          
-                          <li class="nameList">Duc-Hiep Chu</li>
-                          
-                          <li class="nameList">David Lo</li>
-                          
-                          <li class="nameList">Claire Le Goues</li>
-                          
-                          <li class="nameList Last">Willem Visser</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31015" title="Get the Full Text from the ACM Digital Library">ArtForm: a tool for exploring the codebase of form-based websites</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Ben Spencer</li>
-                          
-                          <li class="nameList">Michael Benedikt</li>
-                          
-                          <li class="nameList">Anders M&#248;ller</li>
-                          
-                          <li class="nameList Last">Franck van Breugel</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31016" title="Get the Full Text from the ACM Digital Library">ParTeCL: parallel testing using OpenCL</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Vanya Yaneva</li>
-                          
-                          <li class="nameList">Ajitha Rajan</li>
-                          
-                          <li class="nameList Last">Christophe Dubach</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31017" title="Get the Full Text from the ACM Digital Library">Verifying digital systems with MATLAB</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Lennon Chaves</li>
-                          
-                          <li class="nameList">Iury Bessa</li>
-                          
-                          <li class="nameList">Lucas Cordeiro</li>
-                          
-                          <li class="nameList">Daniel Kroening</li>
-                          
-                          <li class="nameList Last">Eddie Lima</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31018" title="Get the Full Text from the ACM Digital Library">SealTest: a simple library for test sequence generation</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Sylvain Hall&#233;</li>
-                          
-                          <li class="nameList Last">Rapha&#235;l Khoury</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31019" title="Get the Full Text from the ACM Digital Library">GitcProc: a tool for processing and classifying GitHub commits</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Casey Casalnuovo</li>
-                          
-                          <li class="nameList">Yagnik Suchak</li>
-                          
-                          <li class="nameList">Baishakhi Ray</li>
-                          
-                          <li class="nameList Last">Cindy Rubio-Gonz&#225;lez</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31010" title="Get the Full Text from the ACM Digital Library">Caret-HM: recording and replaying Android user sessions with heat map generation using UI state clustering</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList First">Dmitry Nurmuradov</li>
-                          
-                          <li class="nameList Last">Renee Bryce</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31011" title="Get the Full Text from the ACM Digital Library">LabPal: repeatable computer experiments made easy</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList Last">Sylvain Hall&#233;</li>
-                          
-              </ul>
-        <h2>SESSION: Analysis</h2> 
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31012" title="Get the Full Text from the ACM Digital Library">Consistency checking in requirements analysis</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList Last">Jaroslav Bend&#237;k</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31013" title="Get the Full Text from the ACM Digital Library">Testing and analysis of web applications using page models</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList Last">Snigdha Athaiya</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31014" title="Get the Full Text from the ACM Digital Library">Path cost analysis for side channel detection</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList Last">Tegan Brennan</li>
-                          
-              </ul>
-        <h2>SESSION: Modeling and Learning</h2> 
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31025" title="Get the Full Text from the ACM Digital Library">Automatically inferring and enforcing user expectations</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList Last">Jenny Hotzkow</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31026" title="Get the Full Text from the ACM Digital Library">Understanding intended behavior using models of low-level signals</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList Last">Deborah S. Katz</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31027" title="Get the Full Text from the ACM Digital Library">Version space learning for verification on temporal differentials</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList Last">Mark Santolucito</li>
-                          
-              </ul>
-        <h2>SESSION: Testing</h2> 
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31028" title="Get the Full Text from the ACM Digital Library">Data flow oriented UI testing: exploiting data flows and UI elements to test Android applications</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList Last">Nataniel P. Borges Jr.</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31029" title="Get the Full Text from the ACM Digital Library">Dynamic tainting for automatic test case generation</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList Last">Bj&#246;rn Mathis</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31020" title="Get the Full Text from the ACM Digital Library">Mapping hardness of automated software testing</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList Last">Carlos Oliveira</li>
-                          
-              </ul>
-        
-        <h3>
-
-			  
-              <a class="DLtitleLink" href="//dl.acm.org/authorize?N31021" title="Get the Full Text from the ACM Digital Library">Oracle problem in software testing</a>
-              
-        </h3>
-        
-           <ul class="DLauthors">
-           
-                          <li class="nameList Last">Gunel Jahangirova</li>
-                          
-              </ul>
-        
-    </div>
-</div>
-
-</body>
+<html xmlns:bkstg="http://www.atypon.com/backstage-ns" xmlns:urlutil="java:com.atypon.literatum.customization.UrlUtil" xmlns:pxje="java:com.atypon.frontend.services.impl.PassportXslJavaExtentions">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="Content-Style-Type" content="text/css"><style type="text/css">
+            #DLtoc {
+            font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+            }
+
+            #DLheader {
+            }
+            #DLheader h1 {
+            font-size:16px;
+            }
+
+            #DLcontent {
+            font-size:12px;
+            }
+            #DLcontent h2 {
+            font-size:14px;
+            margin-bottom:5px;
+            }
+            #DLcontent h3 {
+            font-size:12px;
+            padding-left:20px;
+            margin-bottom:0px;
+            }
+
+            #DLcontent ul{
+            margin-top:0px;
+            margin-bottom:0px;
+            }
+
+            .DLauthors li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLauthors li:after{
+            content:",";
+            }
+            .DLauthors li.nameList.Last:after{
+            content:"";
+            }
+
+            .DLabstract {
+            padding-left:40px;
+            padding-right:20px;
+            display:block;
+            }
+
+            .DLformats li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLformats li:after{
+            content:",";
+            }
+            .DLformats li.formatList.Last:after{
+            content:"";
+            }
+
+            .DLlogo {
+            vertical-align:middle;
+            padding-right:5px;
+            border:none;
+            }
+
+            .DLcitLink {
+            margin-left:20px;
+            }
+
+            .DLtitleLink {
+            margin-left:20px;
+            }
+
+            .DLotherLink {
+            margin-left:0px;
+            }
+
+        </style><title>ISSTA 2017: Proceedings of the 26th ACM SIGSOFT International Symposium on Software Testing and
+         Analysis
+      </title>
+   </head>
+   <body>
+      <div id="DLtoc">
+         <div id="DLheader">
+            <h1>ISSTA 2017: Proceedings of the 26th ACM SIGSOFT International Symposium on Software Testing and
+               Analysis
+            </h1><a class="DLcitLink" title="Go to the ACM Digital Library for additional information about this proceeding" href="https://dl.acm.org/doi/proceedings/10.1145/3092703"><img class="DLlogo" alt="Digital Library logo" height="30" src="https://dl.acm.org/specs/products/acm/releasedAssets/images/footer-logo1.png">
+               Full Citation in the ACM Digital Library
+               </a></div>
+         <div id="DLcontent">
+            <h2>SESSION: Improving Testing</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3092704">One test to rule them all</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Alex Groce</li>
+               <li class="nameList">Josie Holmes</li>
+               <li class="nameList Last">Kevin Kellar</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> Test reduction has long been seen as critical for automated testing. However, traditional
+                     test reduction simply reduces the length of a test, but does not attempt to reduce
+                     semantic complexity. This paper extends previous efforts with algorithms for normalizing
+                     and generalizing tests. Rewriting tests into a normal form can reduce semantic complexity
+                     and even remove steps from an already delta-debugged test. Moreover, normalization
+                     dramatically reduces the number of tests that a reader must examine, partially addressing
+                     the ``fuzzer taming'' problem of discovering distinct faults in a set of failing tests.
+                     Generalization, in contrast, takes a test and reports what aspects of the test could
+                     have been changed while preserving the property that the test fails. Normalization
+                     plus generalization aids understanding of tests, including tests for complex and widely
+                     used APIs such as the NumPy numeric computation library and the ArcPy GIS scripting
+                     package. Normalization frequently reduces the number of tests to be examined by well
+                     over an order of magnitude, and often to just one test per fault. Together, ideally,
+                     normalization and generalization allow a user to replace reading a large set of tests
+                     that vary in unimportant ways with reading one annotated summary test. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3092709">Reinforcement learning for automatic test case prioritization and selection in continuous
+                  integration</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Helge Spieker</li>
+               <li class="nameList">Arnaud Gotlieb</li>
+               <li class="nameList">Dusica Marijan</li>
+               <li class="nameList Last">Morten Mossige</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> Testing in Continuous Integration (CI) involves test case prioritization, selection,
+                     and execution at each cycle. Selecting the most promising test cases to detect bugs
+                     is hard if there are uncertainties on the impact of committed code changes or, if
+                     traceability links between code and tests are not available. This paper introduces
+                     Retecs, a new method for automatically learning test case selection and prioritization
+                     in CI with the goal to minimize the round-trip time between code commits and developer
+                     feedback on failed test cases. The Retecs method uses reinforcement learning to select
+                     and prioritize test cases according to their duration, previous last execution and
+                     failure history. In a constantly changing environment, where new test cases are created
+                     and obsolete test cases are deleted, the Retecs method learns to prioritize error-prone
+                     test cases higher under guidance of a reward function and by observing previous CI
+                     cycles. By applying Retecs on data extracted from three industrial case studies, we
+                     show for the first time that reinforcement learning enables fruitful automatic adaptive
+                     test case selection and prioritization in CI and regression testing. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3092725">PerfRanker: prioritization of performance regression tests for collection-intensive
+                  software</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Shaikh Mostafa</li>
+               <li class="nameList">Xiaoyin Wang</li>
+               <li class="nameList Last">Tao Xie</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> Regression performance testing is an important but time/resource-consuming phase
+                     during software development. Developers need to detect performance regressions as
+                     early as possible to reduce their negative impact and fixing cost. However, conducting
+                     regression performance testing frequently (e.g., after each commit) is prohibitively
+                     expensive. To address this issue, in this paper, we propose PerfRanker, the first
+                     approach to prioritizing test cases in performance regression testing for collection-intensive
+                     software, a common type of modern software heavily using collections. Our test prioritization
+                     is based on performance impact analysis that estimates the performance impact of a
+                     given code revision on a given test execution. Evaluation shows that our approach
+                     can cover top 3 test cases whose performance is most affected within top 30% to 37%
+                     prioritized test cases, in contrast to top 65% to 79% by 3 baseline techniques. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3092720">Compiler-assisted test acceleration on GPUs for embedded software</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Vanya Yaneva</li>
+               <li class="nameList">Ajitha Rajan</li>
+               <li class="nameList Last">Christophe Dubach</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Embedded software is found everywhere from our highly visible mobile devices to the
+                     confines of our car in the form of smart sensors. Embedded software companies are
+                     under huge pressure to produce safe applications that limit risks, and testing is
+                     absolutely critical to alleviate concerns regarding safety and user privacy. This
+                     requires using large test suites throughout the development process, increasing time-to-market
+                     and ultimately hindering competitivity. 
+                  </p>
+                  <p>Speeding up test execution is, therefore, of paramount importance for embedded software
+                     developers. This is traditionally achieved by running, in parallel, multiple tests
+                     on large-scale clusters of computers. However, this approach is costly in terms of
+                     infrastructure maintenance and energy consumed, and is at times inconvenient as developers
+                     have to wait for their tests to be scheduled on a shared resource. 
+                  </p>
+                  <p>We propose to look at exploiting GPUs (Graphics Processing Units) for running embedded
+                     software testing. GPUs are readily available in most computers and offer tremendous
+                     amounts of parallelism, making them an ideal target for embedded software testing.
+                     In this paper, we demonstrate, for the first time, how test executions of embedded
+                     C programs can be automatically performed on a GPU, without involving the end user.
+                     We take a compiler-assisted approach which automatically compiles the C program into
+                     GPU kernels for parallel execution of the input tests. Using this technique, we achieve
+                     an average speedup of 16× when compared to CPU execution of input tests across nine
+                     programs from an industry standard embedded benchmark suite.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Testing</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3092711">Targeted property-based testing</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Andreas Löscher</li>
+               <li class="nameList Last">Konstantinos Sagonas</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> We introduce targeted property-based testing, an enhanced form of property-based
+                     testing that aims to make the input generation component of a property-based testing
+                     tool guided by a search strategy rather than being completely random. Thus, this testing
+                     technique combines the advantages of both search-based and property-based testing.
+                     We demonstrate the technique with the framework we have built, called Target, and
+                     show its effectiveness on three case studies. The first of them demonstrates how Target
+                     can employ simulated annealing to generate sensor network topologies that form configurations
+                     with high energy consumption. The second case study shows how the generation of routing
+                     trees for a wireless network equipped with directional antennas can be guided to fulfill
+                     different energy metrics. The third case study employs Target to test the noninterference
+                     property of information-flow control abstract machine designs, and compares it with
+                     a sophisticated hand-written generator for programs of these abstract machines. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3092727">Generating unit tests with descriptive names or: would you name your children thing1
+                  and thing2?</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Ermira Daka</li>
+               <li class="nameList">José Miguel Rojas</li>
+               <li class="nameList Last">Gordon Fraser</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> The name of a unit test helps developers to understand the purpose and scenario of
+                     the test, and test names support developers when navigating amongst sets of unit tests.
+                     When unit tests are generated automatically, however, they tend to be given non-descriptive
+                     names such as “test0”, which provide none of the benefits a descriptive name can give
+                     a test. The underlying challenge is that automatically generated tests typically do
+                     not represent real scenarios and have no clear purpose other than covering code, which
+                     makes naming them di cult. In this paper, we present an automated approach which generates
+                     descriptive names for automatically generated unit tests by summarizing API-level
+                     coverage goals. The tests are optimized to be short, descriptive of the test, have
+                     a clear relation to the covered code under test, and allow developers to uniquely
+                     distinguish tests in a test suite. An empirical evaluation with 47 participants shows
+                     that developers agree with the synthesized names, and the synthesized names are equally
+                     descriptive as manually written names. Study participants were even more accurate
+                     and faster at matching code and tests with synthesized names compared to manually
+                     derived names. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Symbolic Execution</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3092728">Accelerating array constraints in symbolic execution</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">David M. Perry</li>
+               <li class="nameList">Andrea Mattavelli</li>
+               <li class="nameList">Xiangyu Zhang</li>
+               <li class="nameList Last">Cristian Cadar</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> Despite significant recent advances, the effectiveness of symbolic execution is limited
+                     when used to test complex, real-world software. One of the main scalability challenges
+                     is related to constraint solving: large applications and long exploration paths lead
+                     to complex constraints, often involving big arrays indexed by symbolic expressions.
+                     In this paper, we propose a set of semantics-preserving transformations for array
+                     operations that take advantage of contextual information collected during symbolic
+                     execution. Our transformations lead to simpler encodings and hence better performance
+                     in constraint solving. The results we obtain are encouraging: we show, through an
+                     extensive experimental analysis, that our transformations help to significantly improve
+                     the performance of symbolic execution in the presence of arrays. We also show that
+                     our transformations enable the analysis of new code, which would be otherwise out
+                     of reach for symbolic execution. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3092706">Improving the cost-effectiveness of symbolic testing techniques for transport protocol
+                  implementations under packet dynamics</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Wei Sun</li>
+               <li class="nameList">Lisong Xu</li>
+               <li class="nameList Last">Sebastian Elbaum</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> The majority of Internet traffic is transferred by transport protocols. The correctness
+                     of these transport protocol implementations is hard to validate as their behaviors
+                     depend not only on their protocols but also on their network environments that can
+                     introduce dynamic packet delay and loss. Random testing, widely used in industry due
+                     to its simplicity and low cost, struggles to detect packet delay related faults which
+                     occur with low probability. Symbolic execution based testing is promising at detecting
+                     such low probability faults, but it requires large testing budgets as it attempts
+                     to cover a prohibitively large input space of packet dynamics. To improve its cost-effectiveness,
+                     we propose two domain-specific heuristic techniques, called packet retransmission
+                     based priority and network state based priority, which are motivated by two common
+                     transport protocol properties. In our experiments using the Linux TFTP programs, our
+                     techniques improve the cost-effectiveness of symbolic execution based testing for
+                     transport protocols, detecting three times as many faults when the budget is in the
+                     range of minutes and hours. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3092715">Combining symbolic execution and search-based testing for programs with complex heap
+                  inputs</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Pietro Braione</li>
+               <li class="nameList">Giovanni Denaro</li>
+               <li class="nameList">Andrea Mattavelli</li>
+               <li class="nameList Last">Mauro Pezzè</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> Despite the recent improvements in automatic test case generation, handling complex
+                     data structures as test inputs is still an open problem. Search-based approaches can
+                     generate sequences of method calls that instantiate structured inputs to exercise
+                     a relevant portion of the code, but fall short in building inputs to execute program
+                     elements whose reachability is determined by the structural features of the input
+                     structures themselves. Symbolic execution techniques can effectively handle structured
+                     inputs, but do not identify the sequences of method calls that instantiate the input
+                     structures through legal interfaces. In this paper, we propose a new approach to automatically
+                     generate test cases for programs with complex data structures as inputs. We use symbolic
+                     execution to generate path conditions that characterise the dependencies between the
+                     program paths and the input structures, and convert the path conditions to optimisation
+                     problems that we solve with search-based techniques to produce sequences of method
+                     calls that instantiate those inputs. Our preliminary results show that the approach
+                     is indeed effective in generating test cases for programs with complex data structures
+                     as inputs, thus opening a promising research direction. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Concurrency</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3092733">Efficient computation of happens-before relation for event-driven programs</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Pallavi Maiya</li>
+               <li class="nameList Last">Aditya Kanade</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>An emerging style of programming is to use both threads and events to achieve better
+                     scalability. The improved scalability comes at the price of increased complexity,
+                     as both threads and events can follow non-deterministic schedules. The happens-before
+                     (HB) relation captures the space of possible schedules and forms the basis of various
+                     concurrency analyses. Improving efficiency of the HB computation can speed up these
+                     analyses. 
+                  </p>
+                  <p>In this paper, we identify a major bottleneck in computation of the HB relation for
+                     such event-driven programs. Event-driven programs are designed to interact continuously
+                     with their environment, and usually receive a large number of events even within a
+                     short span of time. This increases the cost of discovering the HB order among the
+                     events. We propose a novel data structure, called <em>event graph</em>, that maintains a subset of the HB relation to efficiently infer order between any
+                     pair of events. We present an algorithm, called EventTrack, which improves efficiency
+                     of vector clock based HB computation for event-driven programs using event graphs.
+                     
+                  </p>
+                  <p>We have implemented EventTrack and evaluated it on traces of eight Android applications.
+                     Compared to the state-of-the-art technique, EventTrack gave an average speedup of
+                     4.9X. The speedup ranged from 1.8X to 10.3X across the applications.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3092724">Automatic detection and validation of race conditions in interrupt-driven embedded
+                  software</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Yu Wang</li>
+               <li class="nameList">Linzhang Wang</li>
+               <li class="nameList">Tingting Yu</li>
+               <li class="nameList">Jianhua Zhao</li>
+               <li class="nameList Last">Xuandong Li</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> Interrupt-driven programs are widely deployed in safety-critical embedded systems
+                     to perform hardware and resource dependent data operation tasks. The frequent use
+                     of interrupts in these systems can cause race conditions to occur due to interactions
+                     between application tasks and interrupt handlers. Numerous program analysis and testing
+                     techniques have been proposed to detect races in multithreaded programs. Little work,
+                     however, has addressed race condition problems related to hardware interrupts. In
+                     this paper, we present SDRacer, an automated framework that can detect and validate
+                     race conditions in interrupt-driven embedded software. It uses a combination of static
+                     analysis and symbolic execution to generate input data for exercising the potential
+                     races. It then employs virtual platforms to dynamically validate these races by forcing
+                     the interrupts to occur at the potential racing points. We evaluate SDRacer on nine
+                     real-world embedded programs written in C language. The results show that SDRacer
+                     can precisely detect race conditions. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3092723">Monitoring decentralized specifications</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Antoine El-Hokayem</li>
+               <li class="nameList Last">Yliès Falcone</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> We define two complementary approaches to monitor decentralized systems. The first
+                     relies on those with a centralized specification, i.e, when the specification is written
+                     for the behavior of the entire system. To do so, our approach introduces a data-structure
+                     that i) keeps track of the execution of an automaton, ii) has predictable parameters
+                     and size, and iii) guarantees strong eventual consistency. The second approach defines
+                     decentralized specifications wherein multiple specifications are provided for separate
+                     parts of the system. We study decentralized monitorability, and present a general
+                     algorithm for monitoring decentralized specifications. We map three existing algorithms
+                     to our approaches and provide a framework for analyzing their behavior. Lastly, we
+                     introduce our tool, which is a framework for designing such decentralized algorithms,
+                     and simulating their behavior. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Dynamic Analysis</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3092730">Effective online software anomaly detection</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Yizhen Chen</li>
+               <li class="nameList">Ming Ying</li>
+               <li class="nameList">Daren Liu</li>
+               <li class="nameList">Adil Alim</li>
+               <li class="nameList">Feng Chen</li>
+               <li class="nameList Last">Mei-Hwa Chen</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>While automatic online software anomaly detection is crucial for ensuring the quality
+                     of production software, current techniques are mostly inefficient and ineffective.
+                     For online software, its inputs are usually provided by the users at runtime and the
+                     validity of the outputs cannot be automatically verified without a predefined oracle.
+                     Furthermore, some online anomalous behavior may be caused by the anomalies in the
+                     execution context, rather than by any code defect, which are even more difficult to
+                     detect. Existing approaches tackle this problem by identifying certain properties
+                     observed from the executions of the software during a training process and using them
+                     to monitor online software behavior. However, they may require a large execution overhead
+                     for monitoring the properties, which limits the applicability of these approaches
+                     for online monitoring. We present a methodology that applies effective algorithms
+                     to select a close to optimal set of anomaly-revealing properties, which enables online
+                     anomaly detection with minimal execution overhead. Our empirical results show that
+                     an average of 76.5% of anomalies were detected by using at most 5.5% of execution
+                     overhead.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3092708">Semi-automated discovery of server-based information oversharing vulnerabilities in
+                  Android applications</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">William Koch</li>
+               <li class="nameList">Abdelberi Chaabane</li>
+               <li class="nameList">Manuel Egele</li>
+               <li class="nameList">William Robertson</li>
+               <li class="nameList Last">Engin Kirda</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> Modern applications are often split into separate client and server tiers that communicate
+                     via message passing over the network. One well-understood threat to privacy for such
+                     applications is the leakage of sensitive user information either in transit or at
+                     the server. In response, an array of defensive techniques have been developed to identify
+                     or block unintended or malicious information leakage. However, prior work has primarily
+                     considered privacy leaks originating at the client directed at the server, while leakage
+                     in the reverse direction -- from the server to the client -- is comparatively under-studied.
+                     The question of whether and to what degree this leakage constitutes a threat remains
+                     an open question. We answer this question in the affirmative with Hush, a technique
+                     for semi-automatically identifying Server-based InFormation OvershariNg (SIFON) vulnerabilities
+                     in multi-tier applications. In particular, the technique detects SIFON vulnerabilities
+                     using a heuristic that overshared sensitive information from server-side APIs will
+                     not be displayed by the application's user interface. The technique first performs
+                     a scalable static program analysis to screen applications for potential vulnerabilities,
+                     and then attempts to confirm these candidates as true vulnerabilities with a partially-automated
+                     dynamic analysis. Our evaluation over a large corpus of Android applications demonstrates
+                     the effectiveness of the technique by discovering several previously-unknown SIFON
+                     vulnerabilities in eight applications. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3092707">CPR: cross platform binary code reuse via platform independent trace program</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Yonghwi Kwon</li>
+               <li class="nameList">Weihang Wang</li>
+               <li class="nameList">Yunhui Zheng</li>
+               <li class="nameList">Xiangyu Zhang</li>
+               <li class="nameList Last">Dongyan Xu</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> The rapid growth of Internet of Things (IoT) has been created a number of new platforms
+                     recently. Unfortunately, such variety of IoT devices causes platform fragmentation
+                     which makes software development on such devices challenging. In particular, existing
+                     programs cannot be simply reused on such devices as they rely on certain underlying
+                     hardware and software interfaces which we call platform dependencies. In this paper,
+                     we present CPR, a novel technique that synthesizes a platform independent program
+                     from a platform dependent program. Specifically, we leverage an existing system called
+                     PIEtrace which can generate a platform independent trace program. The generated trace
+                     program is platform independent while it can only reproduce a specific execution path.
+                     Hence, we develop an algorithm to merge a set of platform independent trace programs
+                     and synthesize a general program that can take multiple inputs. The synthesized platform-independent
+                     program is representative of the merged trace programs and the results produced by
+                     the program is correct if no exceptions occur. Our evaluation results on 15 real-world
+                     applications show that CPR is highly effective on reusing existing binaries across
+                     platforms. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3092716">An actionable performance profiler for optimizing the order of evaluations</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Marija Selakovic</li>
+               <li class="nameList">Thomas Glaser</li>
+               <li class="nameList Last">Michael Pradel</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> The efficiency of programs often can be improved by applying rel- atively simple
+                     changes. To find such optimization opportunities, developers either rely on manual
+                     performance tuning, which is time-consuming and requires expert knowledge, or on traditional
+                     profilers, which show where resources are spent but not how to optimize the program.
+                     This paper presents a profiler that provides actionable advice, by not only finding
+                     optimization opportunities but by also suggesting code transformations that exploit
+                     them. Specifically, we focus on optimization opportunities related to the order of
+                     evaluating subexpressions that are part of a decision made by the program. To help
+                     developers find such reordering opportuni- ties, we present DecisionProf, a dynamic
+                     analysis that automatically identifies the optimal order, for a given input, of checks
+                     in logical expressions and in switch statements. The key idea is to assess the computational
+                     costs of all possible orders, to find the optimal order, and to suggest a code transformation
+                     to the developer only if reordering yields a statistically significant performance
+                     improve- ment. Applying DecisionProf to 43 real-world JavaScript projects reveals
+                     52 beneficial reordering opportunities. Optimizing the code as proposed by DecisionProf
+                     reduces the execution time of indi- vidual functions between 2.5% and 59%, and leads
+                     to statistically significant application-level performance improvements that range
+                     between 2.5% and 6.5%. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: The Web</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3092734">Testing and analysis of web applications using page models</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Snigdha Athaiya</li>
+               <li class="nameList Last">Raghavan Komondoor</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> Web applications are difficult to analyze using code-based tools because data-flow
+                     and control-flow through the application occurs via both server-side code and client-side
+                     pages. Client-side pages are typically specified in a scripting language that is different
+                     from the main server-side language; moreover, the pages are generated dynamically
+                     from the scripts. To address these issues we propose a static-analysis approach that
+                     automatically constructs a ``model'' of each page in a given application. A page model
+                     is a code fragment in the same language as the server-side code, which faithfully
+                     over-approximates the possible elements of the page as well as the control-flows and
+                     data-flows due to these elements. The server-side code in conjunction with the page
+                     models then becomes a standard (non-web) program, thus amenable to analysis using
+                     standard code-based tools. We have implemented our approach in the context of J2EE
+                     applications. We demonstrate the versatility and usefulness of our approach by applying
+                     three standard analysis tools on the resultant programs from our approach: a concolic-execution
+                     based model checker (JPF), a dynamic fault localization tool (Zoltar), and a static
+                     slicer (Wala). 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3092712">Automated layout failure detection for responsive web pages without an explicit oracle</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Thomas A. Walsh</li>
+               <li class="nameList">Gregory M. Kapfhammer</li>
+               <li class="nameList Last">Phil McMinn</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> As the number and variety of devices being used to access the World Wide Web grows
+                     exponentially, ensuring the correct presentation of a web page, regardless of the
+                     device used to browse it, is an important and challenging task. When developers adopt
+                     responsive web design (RWD) techniques, web pages modify their appearance to accommodate
+                     a device’s display constraints. However, a current lack of automated support means
+                     that presentation failures may go undetected in a page’s layout when rendered for
+                     different viewport sizes. A central problem is the difficulty in providing an automated
+                     “oracle” to validate RWD layouts against, meaning that checking for failures is largely
+                     a manual process in practice, which results in layout failures in many live responsive
+                     web sites. This paper presents an automated failure detection technique that checks
+                     the consistency of a responsive page’s layout across a range of viewport widths, obviating
+                     the need for an explicit oracle. In an empirical study, this method found failures
+                     in 16 of 26 real-world production pages studied, detecting 33 distinct failures in
+                     total. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3092710">Test execution checkpointing for web applications</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Marco Guarnieri</li>
+               <li class="nameList">Petar Tsankov</li>
+               <li class="nameList">Tristan Buchs</li>
+               <li class="nameList">Mohammad Torabi Dashti</li>
+               <li class="nameList Last">David Basin</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> Test isolation is a prerequisite for the correct execution of test suites on web
+                     applications. We present Test Execution Checkpointing, a method for efficient test
+                     isolation. Our method instruments web applications to support checkpointing and exploits
+                     this support to isolate and optimize tests. We have implemented and evaluated this
+                     method on five popular PHP web applications. The results show that our method not
+                     only provides test isolation essentially for free, it also reduces testing time by
+                     44% on average. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Experience Report</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3092721">Experience paper: a study on behavioral backward incompatibilities of Java software
+                  libraries</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Shaikh Mostafa</li>
+               <li class="nameList">Rodney Rodriguez</li>
+               <li class="nameList Last">Xiaoyin Wang</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> Nowadays, due to the frequent technological innovation and market changes, software
+                     libraries are evolving very quickly. Backward compatibility has always been one of
+                     the most important requirements during the evolution of software platforms and libraries.
+                     However, backward compatibility is seldom fully achieved in practice, and many relevant
+                     software failures are reported. Therefore, it is important to understand the status,
+                     major reasons, and impact of backward incompatibilities in real world software. This
+                     paper presents an empirical study to understand behavioral changes of APIs during
+                     evolution of software libraries. Specifically, we performed a large-scale cross-version
+                     regression testing on 68 consecutive version pairs from 15 popular Java software libraries.
+                     Furthermore, we collected and studied 126 real-world software bugs reports on backward
+                     incompatibilities of software libraries. Our major findings include: (1) 1,094 test
+                     failures / errors and 296 behavioral backward incompatibilities are detected from
+                     52 of 68 consecutive version pairs; (2) there is a distribution mismatch between incompatibilities
+                     detected by library-side regression testing, and bug-inducing incompatibilities; (3)
+                     the majority of behavioral backward incompatibilities are not well documented in API
+                     documents or release notes; and (4) 67% of fixed client bugs caused by backward incompatibilities
+                     in software libraries are fixed by client developers, through several simple change
+                     patterns made to the backward incompatible API invocation. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Program Repair and Patching</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3092718">Identifying test-suite-overfitted patches through test case generation</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Qi Xin</li>
+               <li class="nameList Last">Steven P. Reiss</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>A typical automatic program repair technique that uses a test suite as the correct
+                     criterion can produce a patched program that is test-suite-overfitted, or overfitting,
+                     which passes the test suite but does not actually repair the bug. In this paper, we
+                     propose DiffTGen which identifies a patched program to be overfitting by first generating
+                     new test inputs that uncover semantic differences between the original faulty program
+                     and the patched program, then testing the patched program based on the semantic differences,
+                     and finally generating test cases. Such a test case could be added to the original
+                     test suite to make it stronger and could prevent the repair technique from generating
+                     a similar overfitting patch again. We evaluated DiffTGen on 89 patches generated by
+                     four automatic repair techniques for Java with 79 of them being likely to be overfitting
+                     and incorrect. DiffTGen identifies in total 39 (49.4%) overfitting patches and yields
+                     the corresponding test cases. We further show that an automatic repair technique,
+                     if configured with DiffTGen, could avoid yielding overfitting patches and potentially
+                     produce correct ones.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3092713">Impact of tool support in patch construction</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Anil Koyuncu</li>
+               <li class="nameList">Tegawendé F. Bissyandé</li>
+               <li class="nameList">Dongsun Kim</li>
+               <li class="nameList">Jacques Klein</li>
+               <li class="nameList">Martin Monperrus</li>
+               <li class="nameList Last">Yves Le Traon</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> In this work, we investigate the practice of patch construction in the Linux kernel
+                     development, focusing on the differences between three patching processes: (1) patches
+                     crafted entirely manually to fix bugs, (2) those that are derived from warnings of
+                     bug detection tools, and (3) those that are automatically generated based on fix patterns.
+                     With this study, we provide to the research community concrete insights on the practice
+                     of patching as well as how the development community is currently embracing research
+                     and commercial patching tools to improve productivity in repair. The result of our
+                     study shows that tool-supported patches are increasingly adopted by the developer
+                     community while manually-written patches are accepted more quickly. Patch application
+                     tools enable developers to remain committed to contributing patches to the code base.
+                     Our findings also include that, in actual development processes, patches generally
+                     implement several change operations spread over the code, even for patches fixing
+                     warnings by bug detection tools. Finally, this study has shown that there is an opportunity
+                     to directly leverage the output of bug detection tools to readily generate patches
+                     that are appropriate for fixing the problem, and that are consistent with manually-written
+                     patches. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3092726">Automated repair of layout cross browser issues using search-based techniques</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Sonal Mahajan</li>
+               <li class="nameList">Abdulmajeed Alameer</li>
+               <li class="nameList">Phil McMinn</li>
+               <li class="nameList Last">William G. J. Halfond</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> A consistent cross-browser user experience is crucial for the success of a website.
+                     Layout Cross Browser Issues (XBIs) can severely undermine a website’s success by causing
+                     web pages to render incorrectly in certain browsers, thereby negatively impacting
+                     users’ impression of the quality and services that the web page delivers. Existing
+                     Cross Browser Testing (XBT) techniques can only detect XBIs in websites. Repairing
+                     them is, hitherto, a manual task that is labor intensive and requires significant
+                     expertise. Addressing this concern, our paper proposes a technique for automatically
+                     repairing layout XBIs in websites using guided search-based techniques. Our empirical
+                     evaluation showed that our approach was able to successfully fix 86% of layout XBIs
+                     reported for 15 different web pages studied, thereby improving their cross-browser
+                     consistency. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Fault Localization and Mutation Testing</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3092731">Boosting spectrum-based fault localization using PageRank</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Mengshi Zhang</li>
+               <li class="nameList">Xia Li</li>
+               <li class="nameList">Lingming Zhang</li>
+               <li class="nameList Last">Sarfraz Khurshid</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> Manual debugging is notoriously tedious and time consuming. Therefore, various automated
+                     fault localization techniques have been proposed to help with manual debugging. Among
+                     the existing fault localization techniques, spectrum-based fault localization (SBFL)
+                     is one of the most widely studied techniques due to being lightweight. A focus of
+                     existing SBFL techniques is to consider how to differentiate program source code entities
+                     (i.e., one dimension in program spectra); indeed, this focus is aligned with the ultimate
+                     goal of finding the faulty lines of code. Our key insight is to enhance existing SBFL
+                     techniques by additionally considering how to differentiate tests (i.e., the other
+                     dimension in program spectra), which, to the best of our knowledge, has not been studied
+                     in prior work. 
+                  </p> 
+                  <p> We present PRFL, a lightweight technique that boosts spectrum-based fault localization
+                     by differentiating tests using PageRank algorithm. Given the original program spectrum
+                     information, PRFL uses PageRank to recompute the spectrum information by considering
+                     the contributions of different tests. Then, traditional SBFL techniques can be applied
+                     on the recomputed spectrum information to achieve more effective fault localization.
+                     Although simple and lightweight, PRFL has been demonstrated to outperform state-of-the-art
+                     SBFL techniques significantly (e.g., ranking 42% more real faults within Top-1 compared
+                     with the most effective traditional SBFL technique) with low overhead (e.g., around
+                     2 minute average extra overhead on real faults) on 357 real faults from 5 Defects4J
+                     projects and 30692 artificial (i.e., mutation) faults from 87 GitHub projects, demonstrating
+                     a promising future for considering the contributions of different tests during fault
+                     localization. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3092717">FLUCCS: using code and change metrics to improve fault localization</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Jeongju Sohn</li>
+               <li class="nameList Last">Shin Yoo</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> Fault localization aims to support the debugging activities of human developers by
+                     highlighting the program elements that are suspected to be responsible for the observed
+                     failure. Spectrum Based Fault Localization (SBFL), an existing localization technique
+                     that only relies on the coverage and pass/fail results of executed test cases, has
+                     been widely studied but also criticized for the lack of precision and limited effort
+                     reduction. To overcome restrictions of techniques based purely on coverage, we extend
+                     SBFL with code and change metrics that have been studied in the context of defect
+                     prediction, such as size, age and code churn. Using suspiciousness values from existing
+                     SBFL formulas and these source code metrics as features, we apply two learn-to-rank
+                     techniques, Genetic Programming (GP) and linear rank Support Vector Machines (SVMs).
+                     We evaluate our approach with a ten-fold cross validation of method level fault localization,
+                     using 210 real world faults from the Defects4J repository. GP with additional source
+                     code metrics ranks the faulty method at the top for 106 faults, and within the top
+                     five for 173 faults. This is a significant improvement over the state-of-the-art SBFL
+                     formulas, the best of which can rank 49 and 127 faults at the top and within the top
+                     five, respectively. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3092732">Inferring mutant utility from program context</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">René Just</li>
+               <li class="nameList">Bob Kurtz</li>
+               <li class="nameList Last">Paul Ammann</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> Existing mutation techniques produce vast numbers of equivalent, trivial, and redundant
+                     mutants. Selective mutation strategies aim to reduce the inherent redundancy of full
+                     mutation analysis to obtain most of its benefit for a fraction of the cost. Unfortunately,
+                     recent research has shown that there is no fixed selective mutation strategy that
+                     is effective across a broad range of programs; the utility (i.e., usefulness) of a
+                     mutant produced by a given mutation operator varies greatly across programs. 
+                  </p> 
+                  <p> This paper hypothesizes that mutant utility, in terms of equivalence, triviality,
+                     and dominance, can be predicted by incorporating context information from the program
+                     in which the mutant is embedded. Specifically, this paper (1) explains the intuition
+                     behind this hypothesis with a motivational example, (2) proposes an approach for modeling
+                     program context using a program's abstract syntax tree, and (3) proposes and evaluates
+                     a series of program-context models for predicting mutant utility. The results for
+                     129 mutation operators show that program context information greatly increases the
+                     ability to predict mutant utility. The results further show that it is important to
+                     consider program context for individual mutation operators rather than mutation operator
+                     groups. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3092714">Faster mutation analysis via equivalence modulo states</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Bo Wang</li>
+               <li class="nameList">Yingfei Xiong</li>
+               <li class="nameList">Yangqingwei Shi</li>
+               <li class="nameList">Lu Zhang</li>
+               <li class="nameList Last">Dan Hao</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> Mutation analysis has many applications, such as asserting the quality of test suites
+                     and localizing faults. One important bottleneck of mutation analysis is scalability.
+                     The latest work explores the possibility of reducing the redundant execution via split-stream
+                     execution. However, split-stream execution is only able to remove redundant execution
+                     before the first mutated statement. 
+                  </p> 
+                  <p> In this paper we try to also reduce some of the redundant execution after the execution
+                     of the first mutated statement. We observe that, although many mutated statements
+                     are not equivalent, the execution result of those mutated statements may still be
+                     equivalent to the result of the original statement. In other words, the statements
+                     are equivalent modulo the current state. In this paper we propose a fast mutation
+                     analysis approach, AccMut. AccMut automatically detects the equivalence modulo states
+                     among a statement and its mutations, then groups the statements into equivalence classes
+                     modulo states, and uses only one process to represent each class. In this way, we
+                     can significantly reduce the number of split processes. Our experiments show that
+                     our approach can further accelerate mutation analysis on top of split-stream execution
+                     with a speedup of 2.56x on average. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Static Analysis</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3092705">Just-in-time static analysis</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Lisa Nguyen Quang Do</li>
+               <li class="nameList">Karim Ali</li>
+               <li class="nameList">Benjamin Livshits</li>
+               <li class="nameList">Eric Bodden</li>
+               <li class="nameList">Justin Smith</li>
+               <li class="nameList Last">Emerson Murphy-Hill</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> We present the concept of Just-In-Time (JIT) static analysis that interleaves code
+                     development and bug fixing in an integrated development environment. Unlike traditional
+                     batch-style analysis tools, a JIT analysis tool presents warnings to code developers
+                     over time, providing the most relevant results quickly, and computing less relevant
+                     results incrementally later. In this paper, we describe general guidelines for designing
+                     JIT analyses. We also present a general recipe for transforming static data-flow analyses
+                     to JIT analyses through a concept of layered analysis execution. We illustrate this
+                     transformation through CHEETAH, a JIT taint analysis for Android applications. Our
+                     empirical evaluation of CHEETAH on real-world applications shows that our approach
+                     returns warnings quickly enough to avoid disrupting the normal workflow of developers.
+                     This result is confirmed by our user study, in which developers fixed data leaks twice
+                     as fast when using CHEETAH compared to an equivalent batch-style analysis. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3092719">Refining interprocedural change-impact analysis using equivalence relations</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Alex Gyori</li>
+               <li class="nameList">Shuvendu K. Lahiri</li>
+               <li class="nameList Last">Nimrod Partush</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> Change-impact analysis (CIA) is the task of determining the set of program elements
+                     impacted by a program change. Precise CIA has great potential to avoid expensive testing
+                     and code reviews for (parts of) changes that are refactorings (semantics-preserving).
+                     However most statement-level CIA techniques suffer from imprecision as they do not
+                     incorporate the semantics of the change. 
+                  </p> 
+                  <p> We formalize change impact in terms of the trace semantics of two program versions.
+                     We show how to leverage equivalence relations to make dataflow-based CIA aware of
+                     the change semantics, thereby improving precision in the presence of semantics-preserving
+                     changes. We propose an anytime algorithm that applies costly equivalence-relation
+                     inference incrementally to refine the set of impacted statements. We implemented a
+                     prototype and evaluated it on 322 real-world changes from open-source projects and
+                     benchmark programs used by prior research. The evaluation results show an average
+                     35% improvement in the number of impacted statements compared to prior dataflow-based
+                     techniques. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3092729">Boosting the precision of virtual call integrity protection with partial pointer analysis
+                  for C++</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Xiaokang Fan</li>
+               <li class="nameList">Yulei Sui</li>
+               <li class="nameList">Xiangke Liao</li>
+               <li class="nameList Last">Jingling Xue</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> We present, VIP, an approach to boosting the precision of Virtual call Integrity
+                     Protection for large-scale real-world C++ programs (e.g., Chrome) by using pointer
+                     analysis for the first time. VIP introduces two new techniques: (1) a sound and scalable
+                     partial pointer analysis for discovering statically the sets of legitimate targets
+                     at virtual callsites from separately compiled C++ modules and (2) a lightweight instrumentation
+                     technique for performing (virtual call) integrity checks at runtime. VIP raises the
+                     bar against vtable hijacking attacks by providing stronger security guarantees than
+                     the CHA-based approach with comparable performance overhead. 
+                  </p> 
+                  <p> VIP is implemented in LLVM-3.8.0 and evaluated using SPEC programs and Chrome. Statically,
+                     VIP protects virtual calls more effectively than CHA by significantly reducing the
+                     sets of legitimate targets permitted at 20.3% of the virtual callsites per program,
+                     on average. Dynamically, VIP incurs an average (maximum) instrumentation overhead
+                     of 0.7% (3.3%), making it practically deployable as part of a compiler tool chain.
+                     
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3092722">Lightweight detection of physical unit inconsistencies without program annotations</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">John-Paul Ore</li>
+               <li class="nameList">Carrick Detweiler</li>
+               <li class="nameList Last">Sebastian Elbaum</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> Systems interacting with the physical world operate on quantities measured with physical
+                     units. When unit operations in a program are inconsistent with the physical units'
+                     rules, those systems may suffer. Existing approaches to support unit consistency in
+                     programs can impose an unacceptable burden on developers. In this paper, we present
+                     a lightweight static analysis approach focused on physical unit inconsistency detection
+                     that requires no end-user program annotation, modification, or migration. It does
+                     so by capitalizing on existing shared libraries that handle standardized physical
+                     units, common in the cyber-physical domain, to link class attributes of shared libraries
+                     to physical units. Then, leveraging rules from dimensional analysis, the approach
+                     propagates and infers units in programs that use these shared libraries, and detects
+                     inconsistent unit usage. We implement and evaluate the approach in a tool, analyzing
+                     213 open-source systems containing +900,000 LOC, finding inconsistencies in 11% of
+                     them, with an 87% true positive rate for a class of inconsistencies detected with
+                     high confidence. An initial survey of robot system developers finds that the unit
+                     inconsistencies detected by our tool are 'problematic', and we investigate how and
+                     when these inconsistencies occur. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Demonstrations</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3098219">Phriky-units: a lightweight, annotation-free physical unit inconsistency detection
+                  tool</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">John-Paul Ore</li>
+               <li class="nameList">Carrick Detweiler</li>
+               <li class="nameList Last">Sebastian Elbaum</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> Systems that interact with the physical world use software that represents and manipulates
+                     physical quantities. To operate correctly, these systems must obey the rules of how
+                     quantities with physical units can be combined, compared, and manipulated. Incorrectly
+                     manipulating physical quantities can cause faults that go undetected by the type system,
+                     likely manifesting later as incorrect behavior. Existing approaches for inconsistency
+                     detection require code annotation, physical unit libraries, or specialized programming
+                     languages. We introduce Phriky-Units, a static analysis tool that detects physical
+                     unit inconsistencies in robotic software without developer annotations. It does so
+                     by capitalizing on existing shared libraries that handle standardized physical units,
+                     common in the cyber-physical domain, to link class attributes of shared libraries
+                     to physical units. In this work, we describe how Phriky-Units works, provide details
+                     of the implementation, and explain how Phriky-Units can be used. Finally we present
+                     a summary of an empirical evaluation showing it has an 87% true positive rate for
+                     a class of inconsistencies we detect with high-confidence. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3098220">A suite of tools for making effective use of automatically generated tests</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Josie Holmes</li>
+               <li class="nameList Last">Alex Groce</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> Automated test generation tools (we hope) produce failing tests from time to time.
+                     In a world of fault-free code this would not be true, but in such a world we would
+                     not need automated test generation tools. Failing tests are generally speaking the
+                     most valuable products of the testing process, and users need tools that extract their
+                     full value. This paper describes the tools provided by the TSTL testing language for
+                     making use of tests (which are not limited to failing tests). In addition to the usual
+                     tools for simple delta-debugging and executing tests as regressions, TSTL provides
+                     tools for 1) minimizing tests by criteria other than failure, such as code coverage,
+                     2) normalizing tests to achieve further reduction and canonicalization than provided
+                     by delta-debugging, 3) generalizing tests to describe the neighborhood of similar
+                     tests that fail in the same fashion, and 4) avoiding slippage, where delta-debugging
+                     causes a failing test to change underlying fault. These tools can be accessed both
+                     by easy-to-use command-line tools and via a powerful API that supports more complex
+                     custom test manipulations. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3098221">ReDeCheck: an automatic layout failure checking tool for responsively designed web
+                  pages</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Thomas A. Walsh</li>
+               <li class="nameList">Gregory M. Kapfhammer</li>
+               <li class="nameList Last">Phil McMinn</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> Since people frequently access websites with a wide variety of devices (e.g., mobile
+                     phones, laptops, and desktops), developers need frameworks and tools for creating
+                     layouts that are useful at many viewport widths. While responsive web design (RWD)
+                     principles and frameworks facilitate the development of such sites, there is a lack
+                     of tools supporting the detection of failures in their layout. Since the quality assurance
+                     process for responsively designed websites is often manual, time-consuming, and error-prone,
+                     this paper presents ReDeCheck, an automated layout checking tool that alerts developers
+                     to both potential unintended regressions in responsive layout and common types of
+                     layout failure. In addition to summarizing ReDeCheck’s benefits, this paper explores
+                     two different usage scenarios for this tool that is publicly available on GitHub.
+                     
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3098222">CUT: automatic unit testing in the cloud</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Alessio Gambi</li>
+               <li class="nameList">Sebastian Kappler</li>
+               <li class="nameList">Johannes Lampel</li>
+               <li class="nameList Last">Andreas Zeller</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> Unit tests can be significantly sped up by running them in parallel over distributed
+                     execution environments, such as the cloud. However, manually setting up such environments
+                     and configuring the testing frameworks to effectively use them is cumbersome and requires
+                     specialized expertise that developers might lack. 
+                  </p> 
+                  <p> We present Cloud Unit Testing (CUT), a tool for automatically executing unit tests
+                     in distributed execution environments. Given a set of unit tests, CUT allocates appropriate
+                     computational resources, i.e., virtual machines or containers, and schedules the execution
+                     of tests over them. Developers do not need to change existing unit test code, and
+                     can easily control relevant aspects of test execution, including resource allocation
+                     and test scheduling. Additionally, during the execution CUT monitors and publishes
+                     events about the running tests which enables stream analytics. 
+                  </p> 
+                  <p> CUT and videos showcasing its main features are freely available at: https://www.st.cs.uni-saarland.de/testing/cut/
+                     
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3098223">XFix: an automated tool for the repair of layout cross browser issues</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Sonal Mahajan</li>
+               <li class="nameList">Abdulmajeed Alameer</li>
+               <li class="nameList">Phil McMinn</li>
+               <li class="nameList Last">William G. J. Halfond</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> Differences in the rendering of a website across different browsers can cause inconsistencies
+                     in its appearance and usability, resulting in Layout Cross Browser Issues (XBIs).
+                     Such XBIs can negatively impact the functionality of a website as well as users’ impressions
+                     of its trustworthiness and reliability. Existing techniques can only detect XBIs,
+                     and therefore require developers to manually perform the labor intensive task of repair.
+                     In this demo paper we introduce our tool, XFix, that automatically repairs layout
+                     XBIs in web applications. To the best of our knowledge, XFix is the first automated
+                     technique for generating XBI repairs. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3098224">THEMIS: a tool for decentralized monitoring algorithms</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Antoine El-Hokayem</li>
+               <li class="nameList Last">Yliès Falcone</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> THEMIS is a tool to facilitate the design, development, and analysis of decentralized
+                     monitoring algorithms; developed using Java and AspectJ. It consists of a library
+                     and command-line tools. THEMIS provides an API, data structures and measures for decentralized
+                     monitoring. These building blocks can be reused or extended to modify existing algorithms,
+                     design new more intricate algorithms, and elaborate new approaches to assess existing
+                     algorithms. We illustrate the usage of THEMIS by comparing two variants of a monitoring
+                     algorithm. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3098225">JFIX: semantics-based repair of Java programs via symbolic PathFinder</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Xuan-Bach D. Le</li>
+               <li class="nameList">Duc-Hiep Chu</li>
+               <li class="nameList">David Lo</li>
+               <li class="nameList">Claire Le Goues</li>
+               <li class="nameList Last">Willem Visser</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> Recently there has been a proliferation of automated program repair (APR) techniques,
+                     targeting various programming languages. Such techniques can be generally classified
+                     into two families: syntactic- and semantics-based. Semantics-based APR, on which we
+                     focus, typically uses symbolic execution to infer semantic constraints and then program
+                     synthesis to construct repairs conforming to them. While syntactic-based APR techniques
+                     have been shown success- ful on bugs in real-world programs written in both C and
+                     Java, semantics-based APR techniques mostly target C programs. This leaves empirical
+                     comparisons of the APR families not fully explored, and developers without a Java-based
+                     semantics APR technique. We present JFix, a semantics-based APR framework that targets
+                     Java, and an associated Eclipse plugin. JFix is implemented atop Symbolic PathFinder,
+                     a well-known symbolic execution engine for Java programs. It extends one particular
+                     APR technique (Angelix), and is designed to be sufficiently generic to support a variety
+                     of such techniques. We demonstrate that semantics-based APR can indeed efficiently
+                     and effectively repair a variety of classes of bugs in large real-world Java programs.
+                     This supports our claim that the framework can both support developers seeking semantics-based
+                     repair of bugs in Java programs, as well as enable larger scale empirical studies
+                     comparing syntactic- and semantics-based APR targeting Java. The demonstration of
+                     our tool is available via the project website at: https://xuanbachle.github.io/semanticsrepair/
+                     
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3098226">ArtForm: a tool for exploring the codebase of form-based websites</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Ben Spencer</li>
+               <li class="nameList">Michael Benedikt</li>
+               <li class="nameList">Anders Møller</li>
+               <li class="nameList Last">Franck van Breugel</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> We describe ArtForm, a tool for exploring the codebase of dynamic data-driven websites
+                     where users enter data via forms. ArtForm extends an instrumented browser, so it can
+                     directly implement user interactions, adding in symbolic and concolic execution of
+                     JavaScript. The tool supports a range of exploration modes with varying degrees of
+                     user intervention. It includes a number of adaptations of concolic execution to the
+                     setting of form-based web programs. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3098227">ParTeCL: parallel testing using OpenCL</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Vanya Yaneva</li>
+               <li class="nameList">Ajitha Rajan</li>
+               <li class="nameList Last">Christophe Dubach</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>With the growing complexity of software, the number of test cases needed for effective
+                     validation is extremely large. Executing these large test suites is expensive and
+                     time consuming, putting an enormous pressure on the software development cycle. In
+                     previous work, we proposed using Graphics Processing Units (GPUs) to accelerate test
+                     execution by running test cases in parallel on the GPU threads. However, the complexity
+                     of GPU programming poses challenges to the usability and effectiveness of the proposed
+                     approach. 
+                  </p>
+                  <p>In this paper we present ParTeCL - a compiler-assisted framework to automatically
+                     generate GPU code from sequential programs and execute their tests in parallel on
+                     the GPU. We show feasibilitiy and performance achieved when executing test suites
+                     for 9 programs from an industry standard benchmark suite on the GPU. ParTeCL achieves
+                     an average speedup of 16× when compared to a single CPU for these benchmarks.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3098228">Verifying digital systems with MATLAB</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Lennon Chaves</li>
+               <li class="nameList">Iury Bessa</li>
+               <li class="nameList">Lucas Cordeiro</li>
+               <li class="nameList">Daniel Kroening</li>
+               <li class="nameList Last">Eddie Lima</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> A MATLAB toolbox is presented, with the goal of checking occurrences of design errors
+                     typically found in fixed-point digital systems, considering finite word-length effects.
+                     In particular, the present toolbox works as a front-end to a recently introduced verification
+                     tool, known as Digital-System Verifier (DSVerifier), and checks overflow, limit cycle,
+                     quantization, stability, and minimum phase errors in digital systems represented by
+                     transfer-function and state-space equations. It provides a command-line version with
+                     simplified access to specific functionality and a graphical-user interface, which
+                     was developed as a MATLAB application. The resulting toolbox enables application of
+                     verification to real-world systems by control engineers. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3098229">SealTest: a simple library for test sequence generation</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Sylvain Hallé</li>
+               <li class="nameList Last">Raphaël Khoury</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> SealTest is a Java library for generating test sequences based on a formal specification.
+                     It allows a user to easily define a wide range of coverage metrics using multiple
+                     specification languages. Its simple and generic architecture makes it a useful testing
+                     tool for dynamic software systems, as well as an appropriate research testbed for
+                     implementing and experimentally comparing test sequence generation algorithms. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3098230">GitcProc: a tool for processing and classifying GitHub commits</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Casey Casalnuovo</li>
+               <li class="nameList">Yagnik Suchak</li>
+               <li class="nameList">Baishakhi Ray</li>
+               <li class="nameList Last">Cindy Rubio-González</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> Sites such as GitHub have created a vast collection of software artifacts that researchers
+                     interested in understanding and improving software systems can use. Current tools
+                     for processing such GitHub data tend to target project metadata and avoid source code
+                     processing, or process source code in a manner that requires significant effort for
+                     each language supported. This paper presents GitcProc, a lightweight tool based on
+                     regular expressions and source code blocks, which downloads projects and extracts
+                     their project history, including fine-grained source code information and development
+                     time bug fixes. GitcProc can track changes to both single-line and block source code
+                     structures and associate these changes to the surrounding function context with minimal
+                     set up required from users. We demonstrate GitcProc's ability to capture changes in
+                     multiple languages by evaluating it on C, C++, Java, and Python projects, and show
+                     it finds bug fixes and the context of source code changes effectively with few false
+                     positives. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3098231">Caret-HM: recording and replaying Android user sessions with heat map generation using
+                  UI state clustering</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Dmitry Nurmuradov</li>
+               <li class="nameList Last">Renee Bryce</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> The Caret-HM framework allows Android developers to record and replay user sessions
+                     and convert them into heatmaps. One advantage of our framework over existing solutions
+                     is that it allows developers to control the environment while simplifying the recording
+                     process by giving users access to their applications via a web browser. The heatmap
+                     generation using Android user sessions and clustering UI states is a unique feature
+                     of our framework. Heat maps allow developers to identify the usage of application
+                     features for testing and guiding business decisions. We provide a qualitative comparison
+                     to the existing solutions. The video with demonstration is available at https://www.youtube.com/watch?v=eMSNAKM1Bj4
+                     
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3098232">LabPal: repeatable computer experiments made easy</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList Last">Sylvain Hallé</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> LabPal is a Java library designed to easily create and run experiments on a computer.
+                     It provides a user-friendly web console, support for automated plotting, a pause-resume
+                     facility, a mechanism for handling data traceability and linking, and the possibility
+                     of saving all experiment input and output data in an open format. These functionalities
+                     greatly reduce the amount of boilerplate scripting needed to run experiments on a
+                     computer, and simplify their re-execution by independent parties. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Analysis</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3098239">Consistency checking in requirements analysis</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList Last">Jaroslav Bendík</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> In the last decade it became a common practise to formalise software requirements
+                     using a mathematical language of temporal logics, e.g., LTL. The formalisation removes
+                     ambiguity and improves understanding. Formal description also enables various model-based
+                     techniques, like formal verification. Moreover, we get the opportunity to check the
+                     requirements earlier, even before any system model is built. This so called requirements
+                     sanity checking aims to assure that a given set of requirements is consistent, i.e.,
+                     that a product satisfying all the requirements can be developed. If inconsistencies
+                     are found, it is desirable to present them to the user in a minimal fashion, exposing
+                     the core problems among the requirements. Such cores are called minimal inconsistent
+                     subsets (MISes). In this work, we present a framework for online MISes enumeration
+                     in the domain of temporal logics. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3098240">Inferring page models for web application analysis</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList Last">Snigdha Athaiya</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> Web applications are difficult to analyze using code-based tools because data-flow
+                     and control-flow through the application occurs via both server-side code and client-side
+                     pages. Client-side pages are typically specified in a scripting language that is different
+                     from the main server-side language; moreover, the pages are generated dynamically
+                     from the scripts. To address these issues we propose a static-analysis approach that
+                     automatically constructs a "model" of each page in a given application. A page model
+                     is a code fragment in the same language as the server-side code, which faithfully
+                     over-approximates the possible elements of the page as well as the control-flows and
+                     data-flows due to these elements. The server-side code in conjunction with the page
+                     models then becomes a standard (non-web) program, thus amenable to analysis using
+                     standard code-based tools. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3098242">Path cost analysis for side channel detection</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList Last">Tegan Brennan</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> Side-channels have been increasingly demonstrated as a practical threat to the confidentiality
+                     of private user information. Being able to statically detect these kinds of vulnerabilites
+                     is a key challenge in current computer security research. We introduce a new technique,
+                     path-cost analysis (PCA), for the detection of side-channels. Given a cost model for
+                     a type of side-channel, path-cost analysis assigns a symbolic cost expression to every
+                     node and every back edge of a method's control flow graph that gives an over-approximation
+                     for all possible observable values at that node or after traversing that cycle. Queries
+                     to a satisfiability solver on the maximum distance between specific pairs of nodes
+                     allow us to detect the presence of imbalanced paths through the control flow graph.
+                     When combined with taint analysis, we are able to answer the following question: does
+                     there exist a pair of paths in the method's control flow graph, differing only on
+                     branch conditions influenced by the secret, that differs in observable value by more
+                     than some given threshold? In fact, we are able to answer the specifically state what
+                     sets of secret-sensitive conditional statements introduce a side-channel detectable
+                     given some noise parameter. We extend this approach to an interprocedural analysis,
+                     resulting in a over-approximation of the number of true side-channels in the program
+                     according to the given cost model. Greater precision can be obtained by combining
+                     our method with predicate abstraction or symbolic execution to eliminate a subset
+                     of the infeasible paths through the control flow graph. We propose evaluating our
+                     method on a set of sizeable Java server-client applications. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Modeling and Learning</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3098236">Automatically inferring and enforcing user expectations</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList Last">Jenny Hotzkow</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> Can we automatically learn how users expect an application to behave? Yes, if we
+                     consider an application <em>from the users perspective</em>. Whenever presented with an unfamiliar app, the user not only regards the context
+                     presented by this particular application, but rather considers previous experiences
+                     from other applications. This research presents an approach to reflect this procedure
+                     by automatically learning user expectations from the semantic contexts over multiple
+                     applications. Once the user expectations are established, this knowledge can be used
+                     as an oracle, to test if an application follows the user's expectations or entails
+                     surprising behavior by error or deliberately. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3098237">Understanding intended behavior using models of low-level signals</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList Last">Deborah S. Katz</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> As software systems increase in complexity and operate with less human supervision,
+                     it becomes more difficult to use traditional techniques to detect when software is
+                     not behaving as intended. Furthermore, many systems operating today are nondeterministic
+                     and operate in unpredictable environments, making it difficult to even define what
+                     constitutes correct behavior. I propose a family of novel techniques to model the
+                     behavior of executing programs using low-level signals collected during executions.
+                     The models provide a basis for predicting whether an execution of the program or program
+                     unit under test represents intended behavior. I have demonstrated success with these
+                     techniques for detecting faulty and unexpected behavior on small programs. I propose
+                     to extend the work to smaller units of large, complex programs. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3098238">Version space learning for verification on temporal differentials</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList Last">Mark Santolucito</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> Configuration files provide users with the ability to quickly alter the behavior
+                     of their software system. Ensuring that a configuration file does not induce errors
+                     in the software is a complex verification issue. The types of errors can be easy to
+                     measure, such as an initialization failure of system boot, or more insidious such
+                     as performance degrading over time under heavy network loads. In order to warn a user
+                     of potential configuration errors ahead of time, we propose using version space learning
+                     specifications for configuration languages. We frame an existing tool, ConfigC, in
+                     terms of version space learning. We extend that algorithm to leverage the temporal
+                     structuring available in training sets scraped from versioning control systems. We
+                     plan to evaluate our system on a case study using TravisCI configuration files collected
+                     from Github. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Testing</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3098234">Data flow oriented UI testing: exploiting data flows and UI elements to test Android
+                  applications</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList Last">Nataniel P. Borges Jr.</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> Testing user interfaces (UIs) is a challenging task. Ideally, every sequence of UI
+                     elements should be tested to guarantee that the application works correctly. This
+                     is, however, unfeasible due to the number of UI elements in an application. A better
+                     approach is to limit the evaluation to UI elements that affect a specific functionality.
+                     In this paper I present a novel technique to identify the relation between UI elements
+                     using the statically extracted data flows. I also present a method to refine these
+                     relations using dynamic analysis, in order to ensure that relations extracted from
+                     unreachable data flows are removed. Using these relations it is possible to more efficiently
+                     test a functionality. Finally, I present an approach to evaluate how these UI-aware
+                     data flows can be used as an heuristic to measure test coverage. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3098233">Dynamic tainting for automatic test case generation</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList Last">Björn Mathis</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> Dynamic tainting is an important part of modern software engineering research. State-of-the-art
+                     tools for debugging, bug detection and program analysis make use of this technique.
+                     Nonetheless, the research area based on dynamic tainting still has open questions,
+                     among others the automatic generation of program inputs. 
+                  </p> 
+                  <p> My proposed work concentrates on the use of dynamic tainting for test case generation.
+                     The goal is the generation of complex and valid test inputs from scratch. Therefore,
+                     I use byte level taint information enhanced with additional static and dynamic program
+                     analysis. This information is used in an evolutionary algorithm to create new offsprings
+                     and mutations. Concretely, instead of crossing and mutating the whole input randomly,
+                     taint information can be used to define which parts of the input have to be mutated.
+                     Furthermore, the taint information may also be used to define evolutionary operators.
+                     
+                  </p> 
+                  <p> Eventually, the evolutionary algorithm is able to generate valid inputs for a program.
+                     Such inputs can be used together with the taint information for further program analysis,
+                     e.g. the generation of input grammars. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3098241">Mapping hardness of automated software testing</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList Last">Carlos Oliveira</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> Automated Test Case Generation (ATCG) is an important topic in Software Testing,
+                     with a wide range of techniques and tools being used in academia and industry. While
+                     their usefulness is widely recognized, due to the labor-intensive nature of the task,
+                     the effectiveness of the different techniques in automatically generating test cases
+                     for different software systems is not thoroughly understood. Despite many studies
+                     introducing various ATCG techniques, much remains to be learned, however, about what
+                     makes a particular technique work well (or not) for a specific software system. Therefore,
+                     we propose a new methodology to evaluate and select the most effective ATCG technique
+                     using structure-based complexity measures. Empirical tests are going to be performed
+                     using two different techniques: Search-based Software Testing (SBST) and Random Testing
+                     (RT). 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3092703.3098235">Oracle problem in software testing</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList Last">Gunel Jahangirova</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p> The oracle problem remains one of the key challenges in software testing, for which
+                     little automated support has been developed so far. In my thesis work we introduce
+                     a technique for assessing and improving test oracles by reducing the incidence of
+                     both false positives and false negatives. Our technique combines test case generation
+                     to reveal false positives and mutation testing to reveal false negatives. The experimental
+                     results on five real-world subjects show that the fault detection rate of the oracles
+                     after improvement increases, on average, by 48.6% (86% over the implicit oracle).
+                     Three actual, exposed faults in the studied systems were subsequently confirmed and
+                     fixed by the developers. However, our technique contains a human in the loop, which
+                     was represented only by the author during the initial experiments. Our next goal is
+                     to conduct further experiments where the human in the loop will be represented by
+                     real developers. Our second future goal is to address the oracle placement problem.
+                     When testing software, developers can place oracles externally or internally to a
+                     method. Given a faulty execution state, i.e., one that differs from the expected one,
+                     an oracle might be unable to expose the fault if it is placed at a program point with
+                     no access to the incorrect program state or where the program state is no longer corrupted.
+                     In such a case, the oracle is subject to failed error propagation. Internal oracles
+                     are in principle less subject to failed error propagation than external oracles. However,
+                     they are also more difficult to define manually. Hence, a key research question is
+                     whether a more intrusive oracle placement is justified by its higher fault detection
+                     capability. 
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+         </div>
+      </div>
+   </body>
 </html>
