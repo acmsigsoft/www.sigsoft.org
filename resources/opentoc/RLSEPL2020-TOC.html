@@ -1,0 +1,314 @@
+<html xmlns:bkstg="http://www.atypon.com/backstage-ns" xmlns:urlutil="java:com.atypon.literatum.customization.UrlUtil" xmlns:pxje="java:com.atypon.frontend.services.impl.PassportXslJavaExtentions">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="Content-Style-Type" content="text/css"><style type="text/css">
+            #DLtoc {
+            font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+            }
+
+            #DLheader {
+            }
+            #DLheader h1 {
+            font-size:16px;
+            }
+
+            #DLcontent {
+            font-size:12px;
+            }
+            #DLcontent h2 {
+            font-size:14px;
+            margin-bottom:5px;
+            }
+            #DLcontent h3 {
+            font-size:12px;
+            padding-left:20px;
+            margin-bottom:0px;
+            }
+
+            #DLcontent ul{
+            margin-top:0px;
+            margin-bottom:0px;
+            }
+
+            .DLauthors li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLauthors li:after{
+            content:",";
+            }
+            .DLauthors li.nameList.Last:after{
+            content:"";
+            }
+
+            .DLabstract {
+            padding-left:40px;
+            padding-right:20px;
+            display:block;
+            }
+
+            .DLformats li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLformats li:after{
+            content:",";
+            }
+            .DLformats li.formatList.Last:after{
+            content:"";
+            }
+
+            .DLlogo {
+            vertical-align:middle;
+            padding-right:5px;
+            border:none;
+            }
+
+            .DLcitLink {
+            margin-left:20px;
+            }
+
+            .DLtitleLink {
+            margin-left:20px;
+            }
+
+            .DLotherLink {
+            margin-left:0px;
+            }
+
+        </style><title>RL+SE&amp;PL 2020: Proceedings of the 1st ACM SIGSOFT International Workshop on Representation Learning
+         for Software Engineering and Program Languages
+      </title>
+   </head>
+   <body>
+      <div id="DLtoc">
+         <div id="DLheader">
+            <h1>RL+SE&amp;PL 2020: Proceedings of the 1st ACM SIGSOFT International Workshop on Representation Learning
+               for Software Engineering and Program Languages
+            </h1><a class="DLcitLink" title="Go to the ACM Digital Library for additional information about this proceeding" href="https://dl.acm.org/doi/proceedings/10.1145/3416506"><img class="DLlogo" alt="Digital Library logo" height="30" src="https://dl.acm.org/specs/products/acm/releasedAssets/images/footer-logo1.png">
+               Full Citation in the ACM Digital Library
+               </a></div>
+         <div id="DLcontent">
+            <h2>SESSION: Papers</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3416506.3423575">A multi-task representation learning approach for source code</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Deze Wang</li>
+               <li class="nameList">Wei Dong</li>
+               <li class="nameList Last">Shanshan Li</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Representation learning has shown impressive results for a multitude of tasks in software
+                     engineering. However, most researches still focus on a single problem. As a result,
+                     the learned representations cannot be applied to other problems and lack generalizability
+                     and interpretability. In this paper, we propose a Multi-task learning approach for
+                     representation learning across multiple downstream tasks of software engineering.
+                     From the perspective of generalization, we build a shared sequence encoder with a
+                     pretrained BERT for the token sequence and a structure encoder with a Tree-LSTM for
+                     the abstract syntax tree of code. From the perspective of interpretability, we integrate
+                     attention mechanism to focus on different representations and set learnable parameters
+                     to adjust the relationship between tasks. We also present the early results of our
+                     model. The learning process analysis shows our model has a significant improvement
+                     over strong baselines.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3416506.3423576">Statistical machine translation outperforms neural machine translation in software
+                  engineering: why and how</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Hung Phan</li>
+               <li class="nameList Last">Ali Jannesari</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Neural Machine Translation (NMT) is the current trend approach in Natural Language
+                     Processing (NLP) to solve the problem of auto- matically inferring the content of
+                     target language given the source language. The ability of NMT is to learn deep knowledge
+                     inside lan- guages by deep learning approaches. However, prior works show that NMT
+                     has its own drawbacks in NLP and in some research problems of Software Engineering
+                     (SE). In this work, we provide a hypothesis that SE corpus has inherent characteristics
+                     that NMT will confront challenges compared to the state-of-the-art translation engine
+                     based on Statistical Machine Translation. We introduce a problem which is significant
+                     in SE and has characteristics that challenges the abil- ity of NMT to learn correct
+                     sequences, called Prefix Mapping. We implement and optimize the original SMT and NMT
+                     to mitigate those challenges. By the evaluation, we show that SMT outperforms NMT
+                     for this research problem, which provides potential directions to optimize the current
+                     NMT engines for specific classes of parallel corpus. By achieving the accuracy from
+                     65% to 90% for code tokens generation of 1000 Github code corpus, we show the potential
+                     of using MT for code completion at token level.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3416506.3423577">A differential evolution-based approach for effort-aware just-in-time software defect
+                  prediction</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Xingguang Yang</li>
+               <li class="nameList">Huiqun Yu</li>
+               <li class="nameList">Guisheng Fan</li>
+               <li class="nameList Last">Kang Yang</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Software defect prediction technology is an effective method to improve software quality.
+                     Effort-aware just-in-time software defect prediction (JIT-SDP) aims to identify more
+                     defective changes in limited effort. Although many methods have been proposed for
+                     JIT-SDP, the prediction performance of existing prediction models still needs to be
+                     improved. To improve the effort-aware prediction performance, we propose a new method
+                     called DEJIT based on differential evolution algorithm. First, we propose a metric
+                     called density-percentile-average (DPA), which is used as the optimization objective
+                     of models on the training set. Then, we use logistic regression to build models and
+                     use the differential evolution algorithm to determine coefficients of logistic regression.
+                     We conduct empirical research on six open source projects. Empirical results demonstrate
+                     that the proposed method significantly outperforms the state-of-the-art 4 supervised
+                     models and 4 unsupervised models.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3416506.3423578">When representation learning meets software analysis</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Ming Fan</li>
+               <li class="nameList">Ang Jia</li>
+               <li class="nameList">Jingwen Liu</li>
+               <li class="nameList">Ting Liu</li>
+               <li class="nameList Last">Wei Chen</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>In recent years, deep learning is increasingly prevalent in the field of Software
+                     Engineering (SE). Especially, representation learning, which can learn vectors from
+                     the syntactic and semantics of the code, offers much convenience and promotion for
+                     the downstream tasks such as code search and vulnerability detection. In this work,
+                     we introduce our two applications of leveraging representation learning for software
+                     analysis, including defect prediction and vulnerability detection.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3416506.3423579">Boosting component-based synthesis with control structure recommendation</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Binbin Liu</li>
+               <li class="nameList">Wei Dong</li>
+               <li class="nameList">Yating Zhang</li>
+               <li class="nameList">Daiyan Wang</li>
+               <li class="nameList Last">Jiaxin Liu</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Component-based synthesis is an important research field in program synthesis. API-based
+                     synthesis is a subfield of component-based synthesis, the component library of which
+                     are Java APIs. Unlike existing work in API-based synthesis that can only generate
+                     loop-free programs constituted by APIs, state-of-the-art work FrAngel can generate
+                     programs with control structures. However, for the generation of control structures,
+                     it samples different types of control structures all at random. Given the information
+                     about the desired method (such as method name and input/output types), experienced
+                     programmers can have an initial thought about the possible control structures that
+                     could be used in implementing the desired method. The knowledge about control structures
+                     in the method can be learned from high-quality projects. In this paper, we propose
+                     a novel approach of recommending control structures for API-based synthesis based
+                     on deep learning. A neural network that can jointly embed the natural language description,
+                     method name, and input/output types into high-dimensional vectors to predict the possible
+                     control structures of the desired method is proposed. We integrate the prediction
+                     model into the synthesizer to improve the efficiency of synthesis. We train our model
+                     on a codebase of high-quality Java projects from GitHub. The prediction results of
+                     the neural network are fed to the API-based synthesizer to guide the sampling process
+                     of control structures. The experimental results on 40 programming tasks show that
+                     our approach can effectively improve the efficiency of synthesis.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3416506.3423580">Towards demystifying dimensions of source code embeddings</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Md Rafiqul Islam Rabin</li>
+               <li class="nameList">Arjun Mukherjee</li>
+               <li class="nameList">Omprakash Gnawali</li>
+               <li class="nameList Last">Mohammad Amin Alipour</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Source code representations are key in applying machine learning techniques for processing
+                     and analyzing programs. A popular approach in representing source code is <em>neural source code embeddings</em> that represents programs with high-dimensional vectors computed by training deep
+                     neural networks on a large volume of programs. Although successful, there is little
+                     known about the contents of these vectors and their characteristics. 
+                  </p> 
+                  <p>In this paper, we present our preliminary results towards better understanding the
+                     contents of code2vec neural source code embeddings. In particular, in a small case
+                     study, we use the code2vec embeddings to create binary SVM classifiers and compare
+                     their performance with the handcrafted features. Our results suggest that the handcrafted
+                     features can perform very close to the highly-dimensional code2vec embeddings, and
+                     the information gains are more evenly distributed in the code2vec embeddings compared
+                     to the handcrafted features. We also find that the code2vec embeddings are more resilient
+                     to the removal of dimensions with low information gains than the handcrafted features.
+                     We hope our results serve a stepping stone toward principled analysis and evaluation
+                     of these code representations.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3416506.3423581">Representation learning for software engineering and programming languages</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Tien N. Nguyen</li>
+               <li class="nameList Last">Shaohua Wang</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Recently, deep learning (DL) and machine learning (ML) methods have been massively
+                     and successfully applied in various software engineering (SE) and programming languages
+                     (PL) tasks. The results are promising and exciting, and lead to further opportunities
+                     of exploring the amenability of DL and ML to different SE and PL tasks. Notably, the
+                     choice of the representations on which DL and ML methods are applied critically impacts
+                     the performance of the DL and ML methods. The rapidly developing field of representation
+                     learning (RL) in artificial intelligence is concerned with questions surrounding how
+                     we can best learn meaningful and useful representations of data. A broad view of the
+                     RL in SE and PL can include the topics, e.g., deep learning, feature learning, compositional
+                     modeling, structured prediction, and reinforcement learning. This workshop will advance
+                     the pace of research in the unique intersection of representation learning and SE
+                     and PL, which will, in the long term, lead to more effective solutions to common software
+                     engineering tasks such as coding, maintenance, testing, and porting. In addition to
+                     attracting the community of researchers who usually attend FSE, we have made intensive
+                     efforts to attract researchers from the RL (broadly AI) community to the workshop,
+                     specially from local, very strong groups in local universities, and research labs
+                     in the nation.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+         </div>
+      </div>
+   </body>
+</html>
