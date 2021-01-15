@@ -1,0 +1,11 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>SIGSOFT: Abstract</title><link href="/sigsoft.css" rel="stylesheet" type="text/css"/></head><body>
+ 
+<p>Differential software testing is important for software quality assurance as it aims to automatically generate test inputs that reveal behavioral differences in software. The concrete analysis procedure depends on the targeted result: differential testing can reveal divergences between two execution paths (1) of different program versions or (2) within the same program. The first analysis type would execute different program versions with the same input, while the second type would execute the same program with different inputs. Therefore, detecting regression bugs in software evolution, analyzing side-channels in programs, maximizing the execution cost of a program over multiple executions, and evaluating the robustness of neural networks are instances of differential software analysis with the goal to generate diverging executions of program paths.</p>
+
+<p>The key challenge of differential software testing is to simultaneously reason about multiple program paths, often across program variants, in an efficient way. Existing work in differential testing is often not (specifically) directed to reveal a different behavior or is limited to a subset of the search space.</p>
+
+<p>This PhD thesis proposes the concept of Hybrid Differential Software Testing (HyDiff) as a hybrid analysis technique to generate difference revealing inputs. HyDiff consists of two components that operate in a parallel setup: (1) a search-based technique that inexpensively generates inputs and (2) a systematic exploration technique to also exercise deeper program behaviors. HyDiff's search-based component uses differential fuzzing directed by differential heuristics. HyDiff's systematic exploration component is based on differential dynamic symbolic execution that allows to incorporate concrete inputs in its analysis.</p>
+
+<p>HyDiff is evaluated experimentally with applications specific for differential testing. The results show that HyDiff is effective in all considered categories and outperforms its components in isolation.</p>
+
+</body></html>
