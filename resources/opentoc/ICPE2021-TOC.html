@@ -1,0 +1,1133 @@
+<html xmlns:bkstg="http://www.atypon.com/backstage-ns" xmlns:urlutil="java:com.atypon.literatum.customization.UrlUtil" xmlns:pxje="java:com.atypon.frontend.services.impl.PassportXslJavaExtentions">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="Content-Style-Type" content="text/css">
+      <style type="text/css">
+            #DLtoc {
+            font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+            }
+
+            #DLheader {
+            }
+            #DLheader h1 {
+            font-size:16px;
+            }
+
+            #DLcontent {
+            font-size:12px;
+            }
+            #DLcontent h2 {
+            font-size:14px;
+            margin-bottom:5px;
+            }
+            #DLcontent h3 {
+            font-size:12px;
+            padding-left:20px;
+            margin-bottom:0px;
+            }
+
+            #DLcontent ul{
+            margin-top:0px;
+            margin-bottom:0px;
+            }
+
+            .DLauthors li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLauthors li:after{
+            content:",";
+            }
+            .DLauthors li.nameList.Last:after{
+            content:"";
+            }
+
+            .DLabstract {
+            padding-left:40px;
+            padding-right:20px;
+            display:block;
+            }
+
+            .DLformats li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLformats li:after{
+            content:",";
+            }
+            .DLformats li.formatList.Last:after{
+            content:"";
+            }
+
+            .DLlogo {
+            vertical-align:middle;
+            padding-right:5px;
+            border:none;
+            }
+
+            .DLcitLink {
+            margin-left:20px;
+            }
+
+            .DLtitleLink {
+            margin-left:20px;
+            }
+
+            .DLotherLink {
+            margin-left:0px;
+            }
+
+        </style>
+      <title>ICPE '21: Proceedings of the ACM/SPEC International Conference on Performance Engineering</title>
+   </head>
+   <body>
+      <div id="DLtoc">
+         <div id="DLheader">
+            <h1>ICPE '21: Proceedings of the ACM/SPEC International Conference on Performance Engineering</h1><a class="DLcitLink" title="Go to the ACM Digital Library for additional information about this proceeding" href="https://dl.acm.org/doi/proceedings/10.1145/3427921"><img class="DLlogo" alt="Digital Library logo" height="30" src="https://dl.acm.org/specs/products/acm/releasedAssets/images/footer-logo1.png">
+               Full Citation in the ACM Digital Library
+               </a></div>
+         <div id="DLcontent">
+            <h2>SESSION: Session 1: Testing, Measurement and Profiling</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3427921.3450255">ConfProf: White-Box Performance Profiling of Configuration Options</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Xue Han</li>
+               <li class="nameList">Tingting Yu</li>
+               <li class="nameList Last">Michael Pradel</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Modern software systems are highly customizable through configuration options. The
+                     sheer size of the configuration space makes it challenging to understand the performance
+                     influence of individual configuration options and their interactions under a specific
+                     usage scenario. Software with poor performance may lead to low system throughput and
+                     long response time. This paper presents ConfProf, a white-box performance profiling
+                     technique with a focus on configuration options. ConfProf helps developers understand
+                     how configuration options and their interactions influence the performance of a software
+                     system. The approach combines dynamic program analysis, machine learning, and feedback-directed
+                     configuration sampling to profile the program execution and analyze the performance
+                     influence of configuration options. Compared to existing approaches, ConfProf uses
+                     a white-box approach combined with machine learning to rank performance-influencing
+                     configuration options from execution traces. We evaluate the approach with 13 scenarios
+                     of four real-world, highly-configurable software systems. The results show that ConfProf
+                     ranks performance-influencing configuration options with high accuracy and outperform
+                     a state of the art technique.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3427921.3450247">RENOIR: Accelerating Blockchain Validation using State Caching</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Nitin Awathare</li>
+               <li class="nameList">Sourav Das</li>
+               <li class="nameList">Vinay J. Ribeiro</li>
+               <li class="nameList Last">Umesh Bellur</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>A Blockchain system such as Ethereum is a peer to peer network where each node works
+                     in three phases: creation, mining, and validation phases. In the creation phase, it
+                     executes a subset of locally cached transactions to form a new block. In the mining
+                     phase, the node solves a cryptographic puzzle (Proof of Work-PoW) on the block it
+                     forms. On receiving a block from another peer, it starts the validation phase, where
+                     it executes the transactions in the received block in order to ensure all transactions
+                     are valid. This execution also updates the blockchain state, which must be completed
+                     before creating the next block. A long block validation time lowers the system's overall
+                     throughput and brings the well known Verifier's dilemma into play. Additionally, this
+                     leads to wasted mining power utilization (MPU).</p> 
+                  <p>Through extensive measurement of 2000 nodes from the production Ethereum network we
+                     find that during block validation, nodes redundantly execute more than 80% of the
+                     transactions in greater than 75% of the blocks they receive - this points to significant
+                     potential to save time and computation during block validation.</p> 
+                  <p>Motivated by this, we present RENOIR, a novel mechanism that caches state from transaction
+                     execution during the block creation phase and reuses it to enable nodes to skip (re)executing
+                     these transactions during block validation. Our detailed evaluation of RENOIR on a
+                     50 node testbed mimicking the top 50 Ethereum miners illustrates that when gas limit
+                     is increased to 20 times the default value, to accommodate computationally intensive
+                     transactions, RENOIR reduces validation time by 90% compared to Ethereum. In addition,
+                     throughput of Ethereum reduces from 35326 tx/hour to 24716 tx/hour and MPU from 96%
+                     to 67% but these barely change for RENOIR. Furthermore, we deploy a node running RENOIR
+                     on the production Ethereum network. Our measurement illustrates that RENOIR reduces
+                     the block validation time by as much as 50%.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3427921.3450240">Context-tailored Workload Model Generation for Continuous Representative Load Testing</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Henning Schulz</li>
+               <li class="nameList">Dušan Okanović</li>
+               <li class="nameList">André van Hoorn</li>
+               <li class="nameList Last">Petr Tůma</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Load tests evaluate software quality attributes, such as performance and reliability,
+                     by e.g., emulating user behavior that is representative of the production workload.
+                     Existing approaches extract workload models from recorded user requests. However,
+                     a single workload model cannot reflect the complex and evolving workload of today's
+                     applications, or take into account workload-influencing contexts, such as special
+                     offers, incidents, or weather conditions. In this paper, we propose an integrated
+                     framework for generating load tests tailored to the context of interest, which a user
+                     can describe in a language we provide. The framework applies multivariate time series
+                     forecasting for extracting a context-tailored load test from an initial workload model,
+                     which is incrementally learned by clustering user sessions recorded in production
+                     and enriched with relevant context information.</p> 
+                  <p>We evaluated our approach with the workload of a student information system. Our results
+                     show that incrementally learned workload models can be used for generating tailored
+                     load tests. The description language is able to express the relevant contexts, which,
+                     in turn, improve the representativeness of the load tests. We have also found that
+                     the existing workload characterization concepts and forecasting tools used are limited
+                     in regard to strong workload fluctuations, which needs to be tackled in future work.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3427921.3450234">Creating a Virtuous Cycle in Performance Testing at MongoDB</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList Last">David Daly</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>It is important to detect changes in software performance during development in order
+                     to avoid performance decreasing release to release or dealing with costly delays at
+                     release time. Performance testing is part of the development process at MongoDB, and
+                     integrated into our continuous integration system. We describe a set of changes to
+                     that performance testing environment designed to improve testing effectiveness. These
+                     changes help improve coverage, provide faster and more accurate signaling for performance
+                     changes, and help us better understand the state of performance. In addition to each
+                     component performing better, we believe that we have created and exploited a virtuous
+                     cycle: performance test improvements drive impact, which drives more use, which drives
+                     further impact and investment in improvements. Overall, MongoDB is getting faster
+                     and we avoid shipping major performance regressions to our customers because of this
+                     infrastructure.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3427921.3450257">Multivariate Time Series Synthesis Using Generative Adversarial Networks</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Mark Leznik</li>
+               <li class="nameList">Patrick Michalsky</li>
+               <li class="nameList">Peter Willis</li>
+               <li class="nameList">Benjamin Schanzel</li>
+               <li class="nameList">Per-Olov Östberg</li>
+               <li class="nameList Last">Jörg Domaschka</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Collection and analysis of distributed (cloud) computing workloads allows for a deeper
+                     understanding of user and system behavior and is necessary for efficient operation
+                     of infrastructures and applications. The availability of such workload data is however
+                     often limited as most cloud infrastructures are commercially operated and monitoring
+                     data is considered proprietary or falls under GPDR regulations. This work investigates
+                     the generation of synthetic workloads using Generative Adversarial Networks and addresses
+                     a current need for more data and better tools for workload generation. Resource utilization
+                     measurements such as the utilization rates of Content Delivery Network (CDN) caches
+                     are generated and a comparative evaluation pipeline using descriptive statistics and
+                     time-series analysis is developed to assess the statistical similarity of generated
+                     and measured workloads. We use CDN data open sourced by us in a data generation pipeline
+                     as well as back-end ISP workload data to demonstrate the multivariate synthesis capability
+                     of our approach. The work contributes a generation method for multivariate time series
+                     workload generation that can provide arbitrary amounts of statistically similar data
+                     sets based on small subsets of real data. The presented technique shows promising
+                     results, in particular for heterogeneous workloads not too irregular in temporal behavior.</p>
+                  	</div>
+            </div>
+            						
+            					
+            <h2>SESSION: Session 3: Modeling and Optimization</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3427921.3450245">Learning Queuing Networks via Linear Optimization</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Emilio Incerto</li>
+               <li class="nameList">Annalisa Napolitano</li>
+               <li class="nameList Last">Mirco Tribastone</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The automatic derivation of analytical performance models is an essential tool to
+                     promote a wider adoption of performance engineering techniques in practice. Unfortunately,
+                     despite the importance of such techniques, the attempts pursuing that goal in the
+                     literature either focus on the estimation of service demand parameters only or suffer
+                     from scalability issues and sub-optimality due to the intrinsic complexity of the
+                     underlying optimization methods.</p> 
+                  <p>In this paper, we propose an efficient linear programming approach that allows to
+                     derive queuing network (QN) models from sampled execution traces. For doing so, we
+                     rely on a deterministic approximation of the average dynamic of QNs in terms of a
+                     compact system of ordinary differential equations. We encode these equations into
+                     a linear optimization problem whose decision variables can be directly related to
+                     the unknown QN parameters, i.e., service demands and routing probabilities. Using
+                     models of increasing complexity, we show the efficiency and the effectiveness of our
+                     technique in yielding models with high prediction power.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3427921.3450246">A Multivariate Characterization and Detection of Software Performance Antipatterns</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Alberto Avritzer</li>
+               <li class="nameList">Ricardo Britto</li>
+               <li class="nameList">Catia Trubiani</li>
+               <li class="nameList">Barbara Russo</li>
+               <li class="nameList">Andrea Janes</li>
+               <li class="nameList">Matteo Camilli</li>
+               <li class="nameList">André van Hoorn</li>
+               <li class="nameList">Robert Heinrich</li>
+               <li class="nameList">Martina Rapp</li>
+               <li class="nameList Last">Jörg Henß</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Context. Software Performance Antipatterns (SPAs) research has focused on algorithms
+                     for the characterization, detection, and solution of antipatterns. However, existing
+                     algorithms are based on the analysis of runtime behavior to detect trends on several
+                     monitored variables (e.g., response time, CPU utilization, and number of threads)
+                     using pre-defined thresholds. Objective. In this paper, we introduce a new approach
+                     for SPA characterization and detection designed to support continuous integration/delivery/deployment
+                     (CI/CDD) pipelines, with the goal of addressing the lack of computationally efficient
+                     algorithms.</p> 
+                  <p>Method. Our approach includes SPA statistical characterization using a multivariate
+                     analysis approach of load testing experimental results to identify the services that
+                     have the largest impact on system scalability.</p> 
+                  <p>More specifically, we introduce a layered decomposition approach that implements statistical
+                     analysis based on response time to characterize load testing experimental results.
+                     A distance function is used to match experimental results to SPAs.</p> 
+                  <p>Results. We have instantiated the introduced methodology by applying it to a large
+                     complex telecom system. We were able to automatically identify the top five services
+                     that are scalability choke points. In addition, we were able to automatically identify
+                     one SPA. We have validated the engineering aspects of our methodology and the expected
+                     benefits by means of a domain experts' survey.</p> 
+                  <p>Conclusion. We contribute to the state-of-the-art by introducing a novel approach
+                     to support computationally efficient SPA characterization and detection in large complex
+                     systems using performance testing results. We have compared the computational efficiency
+                     of the proposed approach with state-of-the-art heuristics. We have found that the
+                     approach introduced in this paper grows linearly, which is a significant improvement
+                     over existing techniques.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3427921.3450237">Simulation of In-Memory Database Workload: Markov Chains versus Relative Invocation
+                  Frequency and Equal Probability - A Trade-off between Accuracy and Time</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Maximilian Barnert</li>
+               <li class="nameList Last">Helmut Krcmar</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>In the last years, performance modeling approaches have been proposed to tackle new
+                     concepts for modern In-Memory Database Systems (IMDB). While these approaches model
+                     specific performance-relevant aspects, workload representation during performance
+                     modeling is considered only marginally. Furthermore, the manual integration of workload
+                     into modeling approaches comes along with high effort and requires deep domain-specific
+                     knowledge.</p> 
+                  <p>This paper presents our experience in representing workload within performance models
+                     for IMDB. In particular, we use a Markov chain-based approach to extract and reflect
+                     probabilistic user behavior during performance modeling. An automatic model generation
+                     process is integrated to simplify and reduce the effort for transferring workload
+                     characteristics from traces to performance models.</p> 
+                  <p>In an experimental series running analytical and transactional workloads on an IMDB,
+                     we compare this approach with two other methods which rely on less granular data to
+                     reflect database workload within performance models, namely reproducing the relative
+                     invocation frequency of queries and using the same query execution probability. The
+                     results reveal a trade-off between accuracy and speed when simulating database workload.
+                     Markov chains are the most accurate independent from workload characteristics, but
+                     the relative invocation frequency approach is appropriate for scenarios where simulation
+                     speed is important.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3427921.3450249">Prediction of the Consolidation Delay in Blockchain-based Applications</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Simonetta Balsamo</li>
+               <li class="nameList">Andrea Marin</li>
+               <li class="nameList">Isi Mitrani</li>
+               <li class="nameList Last">Nicola Rebagliati</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>In the last years, blockchains have become a popular technology to store immutable
+                     data validated in a peer-to-peer way. Software systems can take advantage of blockchains
+                     to publicly store data (organised in transactions) which is immutable by design. The
+                     most important consensus algorithm in public blockchains is the proof-of-work in which
+                     miners invest a huge computational power to consolidate new data in a ledger. Miners
+                     receive incentives for their work, i.e., a fee decided and paid for each transaction.
+                     Rational miners aim to maximise the profit generated by the mining activity, and thus
+                     choose the transactions offering the highest fee per byte for their consolidation.
+                     In this paper, we propose a queueing model to study the relation between the fee offered
+                     by a transaction and its expected consolidation time, i.e., the time required to be
+                     added to the blockchain by the miners. The solution of the queueing model, although
+                     approximate, is computationally and numerically efficient and software systems can
+                     use it online to analyse the trade-off between costs and response times. Indeed, a
+                     static configuration of the model would not account for the high variations in the
+                     blockchain workload and fees offered by other users.</p> 
+                  <p>The model takes into account the dropping of transactions caused by timeouts or finite
+                     capacity transaction pools. We validate our results with data extracted from the Bitcoin
+                     blockchain and with discrete event simulations.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3427921.3450251">QN-based Modeling and Analysis of Software Performance Antipatterns for Cyber-Physical
+                  Systems</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Riccardo Pinciroli</li>
+               <li class="nameList">Connie U. Smith</li>
+               <li class="nameList Last">Catia Trubiani</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Identifying performance problems in modern software systems is nontrivial, even more
+                     so when looking at specific application domains, such as cyber-physical systems. The
+                     heterogeneity of software and hardware components makes the process of performance
+                     evaluation more challenging, and traditional software performance engineering techniques
+                     may fail while dealing with interacting and heterogeneous components. The goal of
+                     this paper is to introduce a model-based approach to understand software performance
+                     problems in cyber-physical systems. In our previous work, we listed some common bad
+                     practices, namely software performance antipatterns, that may occur. Here we are interested
+                     in shedding light on these antipatterns by means of performance models, i.e., queuing
+                     network models, that provide evidence of how antipatterns may affect the overall system
+                     performance. Starting from the specification of three software performance antipatterns
+                     tailored for cyber-physical systems, we provide the queuing network models capturing
+                     the corresponding bad practices. The analysis of these models demonstrates their usefulness
+                     in recognizing performance problems early in the software development process. This
+                     way, performance engineers are supported in the task of detecting and fixing the performance
+                     criticalities.</p>
+                  	</div>
+            </div>
+            						
+            					
+            <h2>SESSION: Session 4: Memory and Resource Management</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3427921.3450244">SymFlex: Elastic, Persistent and Symbiotic SSD Caching in Virtualization Environments</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Muhammed Unais P</li>
+               <li class="nameList Last">Purushottam Kulkarni</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Hypervisor managed SSD caching is an often used technique for improving IO performance
+                     in virtualization based hosting solutions. Such caches are either explicitly managed
+                     by the hypervisor which approximate the access semantics of the applications for improving
+                     cache utilization, or operate as statically partitioned devices (which are utilized
+                     as caches) by virtual machines. We reason that both these broad directions do not
+                     exploit the potential of SSD based IO caches to the fullest, in terms of generalized
+                     management policies and performance. We propose SymFlex, a novel method to perform
+                     symbiotic management of IO caches by enabling elastic SSD devices. Each virtual machine
+                     is configured with an elastic virtual SSD whose contents can be managed according
+                     to guest OS and application semantics and requirements. Furthermore, the SSD sizing
+                     is managed by the hypervisor with a ballooning-like mechanism to dynamically adjust
+                     SSD provisioning to VMs based on performance and usage fairness policies. Our primary
+                     contribution of this work is to design and engineer the mechanism for elastic SSD
+                     disks to be virtualized, and demonstrate usage models and effectiveness of the symbiotic
+                     management of SSD caches across virtual machines. Through our empirical evaluation,
+                     we show that the overhead of implementing a virtio-based elastic SSD device is minimal
+                     (within 5% of virtio based device virtualization techniques). Further, we demonstrate
+                     using dm-cache and Fatcache, the applicability and benefits of SymFlex for enhancing
+                     IO throughput and enforcing VM-level SSD allocation policies.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3427921.3450254">LOOPS: A Holistic Control Approach for Resource Management in Cloud Computing</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Auday Al-Dulaimy</li>
+               <li class="nameList">Javid Taheri</li>
+               <li class="nameList">Alessandro V. Papadopoulos</li>
+               <li class="nameList Last">Thomas Nolte</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>In cloud computing model, resource sharing introduces major benefits for improving
+                     resource utilization and total cost of ownership, but it can create technical challenges
+                     on the running performance. In practice, orchestrators are required to allocate sufficient
+                     physical resources to each Virtual Machine (VM) to meet a set of predefined performance
+                     goals. To ensure a specific service level objective, the orchestrator needs to be
+                     equipped with a dynamic tool for assigning computing resources to each VM, based on
+                     the run-time state of the target environment. To this end, we present LOOPS, a multi-loop
+                     control approach, to allocate resources to VMs based on the service level agreement
+                     (SLA) requirements and the run-time conditions. LOOPS is mainly composed of one essential
+                     unit to monitor VMs, and three control levels to allocate resources to VMs based on
+                     requests from the essential node. A tailor-made controller is proposed with each level
+                     to regulate contention among collocated VMs, to reallocate resources if required,
+                     and to migrate VMs from one host to another. The three levels work together to meet
+                     the required SLA. The experimental results have shown that the proposed approach can
+                     meet applications' performance goals by assigning the resources required by cloud-based
+                     applications.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3427921.3450259">The Granularity Gap Problem: A Hurdle for Applying Approximate Memory to Complex Data
+                  Layout</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Soramichi Akiyama</li>
+               <li class="nameList Last">Ryota Shioya</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The main memory access latency has not much improved for more than two decades while
+                     the CPU performance had been exponentially increasing until recently.Approximate memory
+                     is a technique to reduce the DRAM access latency in return of losing data integrity.
+                     It is expected to be beneficial for applications that are robust to noisy input and
+                     intermediate data such as artificial intelligence, image/video processing, and big-data
+                     analytics. To obtain reasonable outputs from applications on approximate memory, it
+                     is crucial to protect critical data while accelerating accesses to non-critical data.
+                     We refer the minimum size of a continuous memory region that the same error rate is
+                     applied in approximate memory to as the approximation granularity. A fundamental limitation
+                     of approximate memory is that the approximation granularity is as large as a few kilo
+                     bytes. However, applications may have critical and non-critical data interleaved with
+                     smaller granularity. For example, a data structure for graph nodes can have pointers
+                     (critical) to neighboring nodes and its score (non-critical, depending on the use-case).
+                     This data structure cannot be directly mapped to approximate memory due to the gap
+                     between the approximation granularity and the granularity of data criticality. We
+                     refer to this issue as the granularity gap problem. In this paper, we first show that
+                     many applications potentially suffer from this problem. Then we propose a framework
+                     to quantitatively evaluate the performance overhead of a possible method to avoid
+                     this problem using known techniques.The evaluation results show that the performance
+                     overhead is non-negligible compared to expected benefit from approximate memory,suggesting
+                     that the granularity gap problem is a significant concern.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3427921.3450233">Courier: Real-Time Optimal Batch Size Prediction for Latency SLOs in BigDL</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Diego Albo Martínez</li>
+               <li class="nameList">Sharwin Bobde</li>
+               <li class="nameList">Tomasz Motyka</li>
+               <li class="nameList Last">Lydia Chen</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Distributed machine learning has seen immense rise in popularity in recent years.
+                     Many companies and universities are utilizing computational clusters to train and
+                     run machine learning models. Unfortunately, operating such a cluster imposes large
+                     costs. It is therefore crucial to attain as high system utilization as possible. Moreover,
+                     those who offer computational clusters as a service, apart from keeping high utilization,
+                     also have to meet the required Service Level Agreements (SLAs) for the system response
+                     time. This becomes increasingly more complex in multitenant scenarios, where the time
+                     dedicated to each task has to be limited to achieve fairness. In this work, we analyze
+                     how different parameters of the machine learning job influence the response time as
+                     well as system utilization and propose Courier. Courier is a model that, based on
+                     the type of machine learning job, can select a batch size such that the response time
+                     adheres to the Service Level Objectives (SLOs) specified, while also rendering the
+                     highest possible accuracy. We gather the data by conducting real-world experiments
+                     on a BigDL cluster. Later on, we study the influence of the factors and build several
+                     predictive models which lead us to the proposed Courier model.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3427921.3450238">HLS_PRINT: High Performance Logging Framework on FPGA</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Nupur Sumeet</li>
+               <li class="nameList Last">Manoj Nambiar</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>FPGAs have been tipped to be useful for implementing low latency transaction processing
+                     systems. Getting computationally powerful over time, they are making their way into
+                     enterprise data centers. Another factor is the availability of C compilers for FPGAs
+                     as opposed to hardware description languages (HDLs) that requires special skills.
+                     However, data center operations staff were concerned about real time troubleshooting
+                     in production. Tracing FPGA implemented application execution require special skills
+                     and vendor specific tools that can capture limited by the amount of data. To address
+                     this, we designed and implemented a logging frame-work on the FPGA. This paper presents
+                     the design and implementation of the framework. We present an algorithm that checks
+                     and generates alerts for performance overheads introduced due to the use of logging.
+                     Finally, experimental results are presented which demonstrate zero or low overhead
+                     of the logging framework.</p>
+                  	</div>
+            </div>
+            						
+            					
+            <h2>SESSION: Session 5: Service-based Systems</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3427921.3450236">Network Performance Influences of Software-defined Networks on Micro-service Architectures</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Axel Busch</li>
+               <li class="nameList Last">Martin Kammerer</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Modern business applications are increasingly developed as micro-services and deployed
+                     in the cloud. Due to many components involved micro-services need a flexible and high-performance
+                     network infrastructure. To ensure highly available and high performance applications,
+                     operators are increasingly relying on cloud service platforms such as the OpenShift
+                     Container Platform on Z. In such environments modern software-defined network technologies
+                     such as Open vSwitch (OVS) are used. However, the impact of their architecture on
+                     network performance has not yet been sufficiently researched although networking performance
+                     is particularly critical for the quality of the service. In this paper, we analyse
+                     the impact of the OVS pipeline and selected OVS operations in detail. We define different
+                     scenarios used in the industry and analyse the performance of different OVS configurations
+                     using an IBM z14 mainframe system. Our analysis showed the OVS pipeline and its operations
+                     can affect network performance by up to factor 3. Our results show that even the use
+                     of virtual switches such as OVS, network performance can be significantly improved
+                     by optimizing the OVS pipeline architecture.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3427921.3450248">SuanMing: Explainable Prediction of Performance Degradations in Microservice Applications</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Johannes Grohmann</li>
+               <li class="nameList">Martin Straesser</li>
+               <li class="nameList">Avi Chalbani</li>
+               <li class="nameList">Simon Eismann</li>
+               <li class="nameList">Yair Arian</li>
+               <li class="nameList">Nikolas Herbst</li>
+               <li class="nameList">Noam Peretz</li>
+               <li class="nameList Last">Samuel Kounev</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Application performance management (APM) tools are useful to observe the performance
+                     properties of an application during production. However, APM is normally purely reactive,
+                     that is, it can only report about current or past performance degradation. Although
+                     some approaches capable of predictive application monitoring have been proposed, they
+                     can only report a predicted degradation but cannot explain its root-cause, making
+                     it hard to prevent the expected degradation.</p> 
+                  <p>In this paper, we present SuanMing---a framework for predicting performance degradation
+                     of microservice applications running in cloud environments. SuanMing is able to predict
+                     future root causes for anticipated performance degradations and therefore aims at
+                     preventing performance degradations before they actually occur. We evaluate SuanMing
+                     on two realistic microservice applications, TeaStore and TrainTicket, and we show
+                     that our approach is able to predict and pinpoint performance degradations with an
+                     accuracy of over 90%.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3427921.3450250">Compositional Evaluation of Stochastic Workflows for Response Time Analysis of Composite
+                  Web Services</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Laura Carnevali</li>
+               <li class="nameList">Riccardo Reali</li>
+               <li class="nameList Last">Enrico Vicario</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Workflows are patterns of orchestrated activities designed to deliver some specific
+                     output, with application in various relevant contexts including software services,
+                     business processes, supply chain management. In most of these scenarios, durational
+                     properties of individual activities can be identified from logged data and cast in
+                     stochastic models, enabling quantitative evaluation of time behavior for diagnostic
+                     and predictive analytics. However, effective fitting of observed durations commonly
+                     requires that distributions break the limits of memoryless behavior and unbounded
+                     support of Exponential distributions, casting the problem in the class of non-Markovian
+                     models. This results in a major hurdle for numerical solution, largely exacerbated
+                     by the concurrency structure of workflows, which natively subtend concurrent activities
+                     with overlapping execution intervals and a limited number of regeneration points,
+                     i.e., time points at which the Markov property is satisfied and analysis can be decomposed
+                     according to a renewal argument. We propose a compositional method for quantitative
+                     evaluation of end-to-end response time of complex workflows. The workflow is modeled
+                     through Stochastic Time Petri Nets (STPNs), associating activity durations with Exponential
+                     distributions truncated over bilateral firmly bounded supports that fit mean and coefficient
+                     of variation of real logged histograms. Based on the model structure, the workflow
+                     is decomposed into a hierarchy of subworkflows, each amenable to efficient numerical
+                     solution through Markov regenerative transient analysis. In this step, the grain of
+                     decomposition is driven by non-deterministic analysis of the space of feasible behaviors
+                     in the underlying Time Petri Net (TPN) model, which permits efficient characterization
+                     of the factors that affect behavior complexity between regeneration points. Duration
+                     distributions of the subworkflows obtained through separate analyses are then repeatedly
+                     recomposed in numerical form to compute the response time distribution of the overall
+                     workflow.</p> 
+                  <p>Applicability is demonstrated on a case from the literature of composite web services,
+                     here extended in complexity to demonstrate scalability of the approach towards finer
+                     grain composition schemes, and associated with a variety of durations randomly selected
+                     from a data set in the literature of service oriented computing, so as to assess variability
+                     of accuracy and complexity of the overall approach with respect to specific timings.</p>
+                  	</div>
+            </div>
+            						
+            					
+            <h2>SESSION: Session 6: Benchmarking</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3427921.3450241">Libra: A Benchmark for Time Series Forecasting Methods</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">André Bauer</li>
+               <li class="nameList">Marwin Züfle</li>
+               <li class="nameList">Simon Eismann</li>
+               <li class="nameList">Johannes Grohmann</li>
+               <li class="nameList">Nikolas Herbst</li>
+               <li class="nameList Last">Samuel Kounev</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>In many areas of decision making, forecasting is an essential pillar. Consequently,
+                     there are many different forecasting methods. According to the "No-Free-Lunch Theorem",
+                     there is no single forecasting method that performs best for all time series. In other
+                     words, each method has its advantages and disadvantages depending on the specific
+                     use case. Therefore, the choice of the forecasting method remains a mandatory expert
+                     task. However, expert knowledge cannot be fully automated. To establish a level playing
+                     field for evaluating the performance of time series forecasting methods in a broad
+                     setting, we propose Libra, a forecasting benchmark that automatically evaluates and
+                     ranks forecasting methods based on their performance in a diverse set of evaluation
+                     scenarios. The benchmark comprises four different use cases, each covering 100 heterogeneous
+                     time series taken from different domains. The data set was assembled from publicly
+                     available time series and was designed to exhibit much higher diversity than existing
+                     forecasting competitions. Based on this benchmark, we perform a comprehensive evaluation
+                     to compare different existing time series forecasting methods.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3427921.3450242">ESPBench: The Enterprise Stream Processing Benchmark</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Guenter Hesse</li>
+               <li class="nameList">Christoph Matthies</li>
+               <li class="nameList">Michael Perscheid</li>
+               <li class="nameList">Matthias Uflacker</li>
+               <li class="nameList Last">Hasso Plattner</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Growing data volumes and velocities in fields such as Industry 4.0 or the Internet
+                     of Things have led to the increased popularity of data stream processing systems.
+                     Enterprises can leverage these developments by enriching their core business data
+                     and analyses with up-to-date streaming data. Comparing streaming architectures for
+                     these complex use cases is challenging, as existing benchmarks do not cover them.
+                     ESPBench is a new enterprise stream processing benchmark that fills this gap. We present
+                     its architecture, the benchmarking process, and the query workload. We employ ESPBench
+                     on three state-of-the-art stream processing systems, Apache Spark, Apache Flink, and
+                     Hazelcast Jet, using provided query implementations developed with Apache Beam. Our
+                     results highlight the need for the provided ESPBench toolkit that supports benchmark
+                     execution, as it enables query result validation and objective latency measures.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3427921.3450243">An Exploratory Study of the Impact of Parameterization on JMH Measurement Results
+                  in Open-Source Projects</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Hazem Samoaa</li>
+               <li class="nameList Last">Philipp Leitner</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The Java Microbenchmarking Harness (JMH) is a widely used tool for testing performance-critical
+                     code on a low level. One of the key features of JMH is the support for user-defined
+                     parameters, which allows executing the same benchmark with different workloads. However,
+                     a benchmark configured with n parameters with m different values each requires JMH
+                     to execute the benchmark mn times (once for each combination of configured parameter
+                     values). Consequently, even fairly modest parameterization leads to a combinatorial
+                     explosion of benchmarks that have to be executed, hence dramatically increasing execution
+                     time. However, so far no research has investigated how this type of parameterization
+                     is used in practice, and how important different parameters are to benchmarking results.
+                     In this paper, we statistically study how strongly different user parameters impact
+                     benchmark measurements for 126 JMH benchmarks from five well-known open source projects.
+                     We show that 40% of the studied metric parameters have no correlation with the resulting
+                     measurement, i.e., testing with different values in these parameters does not lead
+                     to any insights. If there is a correlation, it is often strongly predictable following
+                     a power law, linear, or step function curve. Our results provide a first understanding
+                     of practical usage of user-defined JMH parameters, and how they correlate with the
+                     measurements produced by benchmarks. We further show that a machine learning model
+                     based on Random Forest ensembles can be used to predict the measured performance of
+                     an untested metric parameter value with an accuracy of 93% or higher for all but one
+                     benchmark class, demonstrating that given sufficient training data JMH performance
+                     test results for different parameterizations are highly predictable.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3427921.3450239">The SPECpowerNext Benchmark Suite, its Implementation and New Workloads from a Developer's
+                  Perspective</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Norbert Schmitt</li>
+               <li class="nameList">Klaus-Dieter Lange</li>
+               <li class="nameList">Sanjay Sharma</li>
+               <li class="nameList">Nishant Rawtani</li>
+               <li class="nameList">Carl Ponder</li>
+               <li class="nameList Last">Samuel Kounev</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Innovation needs a competitive and fair playing field on which products can be compared
+                     and informed choices can be made. Standard benchmarks are a necessity to create such
+                     a level playing field among competitors in the server market for more energy-efficient
+                     servers. That, in turn, motivates their engineers to design more energy-efficient
+                     hardware. The SPECpower_ssj 2008 benchmark drove the increase of server energy efficiency
+                     by 113 times for single CPU servers, or 19 times on average. Yet, with added functionality
+                     and load, they are expected to consume a rising amount of energy. Additionally, server
+                     usage in data centers has changed over time with new application types. To continue
+                     the effort of increasing server energy efficiency, a new version, SPECpowerNext, is
+                     under development. In this work, after a short introduction to SPECpower_ssj 2008,
+                     we present the new implementation of SPECpowerNext together with the standardized
+                     way to collect server information in heterogeneous data centers. We also give insight,
+                     including preliminary measurements, into two of SPECpowerNext new workloads, the Wiki
+                     and the APA workload, in addition to an overview of both workloads.</p>
+                  	</div>
+            </div>
+            						
+            					
+            <h2>SESSION: Session 7: IoT, Embedded Systems, Cloud</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3427921.3450252">Towards a Group Encryption Scheme Benchmark: A View on Centralized Schemes with Focus
+                  on IoT</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Thomas Prantl</li>
+               <li class="nameList">Peter Ten</li>
+               <li class="nameList">Lukas Iffländer</li>
+               <li class="nameList">Stefan Herrnleben</li>
+               <li class="nameList">Alexandra Dmitrenko</li>
+               <li class="nameList">Samuel Kounev</li>
+               <li class="nameList Last">Christian Krupitzer</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The number of devices connected to the Internet of Things (IoT) is continuously increasing
+                     to several billion nowadays. As those devices often share sensitive data, encryption
+                     of those data is an important issue. The pure volume of data and the complexity of
+                     communication patterns increases, and, accordingly, the importanceof group encryption
+                     is recently gaining more importance. Still, the choice of the best-suited group encryption
+                     scheme for a specific application is complicated. Benchmarks can support this choice.
+                     However, while literature distinguishes three categories for theschemes (central,
+                     decentral, and hybrid), a one-fits-all benchmark seems challenging to achieve. In
+                     this paper, we go the first step towards a structured benchmark for group encryption
+                     schemes by presenting a benchmark for centralized group encryption schemes in an IoT
+                     scenario. To this end, our benchmark includes a descriptionof workloads, a baseline
+                     scheme, a measurement setup, and metrics while also considering the requirements and
+                     features of centralized group encryption schemes.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3427921.3450253">Performance Impact Analysis of Securing MQTT Using TLS</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Thomas Prantl</li>
+               <li class="nameList">Lukas Iffländer</li>
+               <li class="nameList">Stefan Herrnleben</li>
+               <li class="nameList">Simon Engel</li>
+               <li class="nameList">Samuel Kounev</li>
+               <li class="nameList Last">Christian Krupitzer</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The interconnectivity of devices on the Internet of Things (IoT) provides many new
+                     and smart applications. However, the integration of many devices - especially by inexperienced
+                     users - might introduce several security threats. Further, several often used communication
+                     protocols in the IoT domain are not out-of-the-boxsecured. On the other hand, security
+                     inherently introduces overhead, resulting in a decrease in performance. The Message
+                     QueuingTelemetry Transport (MQTT) protocol is a popular communication protocol for
+                     IoT applications - for example, in Industry 4.0, railways, automotive, or smart homes.
+                     This paper analyzes the influence on performance when using MQTT with TLS in terms
+                     of throughput, connection build-up times, and energy efficiency using a reproducible
+                     testbed based on a standard off-the-shelf microcontroller. The results indicate that
+                     the impact of TLS on performance across all QoS levels depends on (i) the network
+                     situation and (ii) the connection reestablishment frequency. Thus, a negative influence
+                     of TLS on the performance is noticeable only in deteriorated networksituations or
+                     at a high connection reestablishment frequency.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3427921.3450256">PieSlicer: Dynamically Improving Response Time for Cloud-based CNN Inference</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Samuel S. Ogden</li>
+               <li class="nameList">Xiangnan Kong</li>
+               <li class="nameList Last">Tian Guo</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Executing deep-learning inference on cloud servers enables the usage of high complexity
+                     models for mobile devices with limited resources. However, pre-execution time-the
+                     time it takes to prepare and transfer data to the cloud-is variable and can take orders
+                     of magnitude longer to complete than inference execution itself. This pre-execution
+                     time can be reduced by dynamically deciding the order of two essential steps, preprocessing
+                     and data transfer, to better take advantage of on-device resources and network conditions.
+                     In this work, we present PieSlicer, a system for making dynamic preprocessing decisions
+                     to improve cloud inference performance using linear regression models. PieSlicer then
+                     leverages these models to select the appropriate preprocessing location. We show that
+                     for image classification applications PieSlicer reduces median and 99th percentile
+                     pre-execution time by up to 50.2ms and 217.2ms respectively when compared to static
+                     preprocessing methods.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3427921.3450258">Statement-Level Timing Estimation for Embedded System Design Using Machine Learning
+                  Techniques</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Vittoriano Muttillo</li>
+               <li class="nameList">Paolo Giammatteo</li>
+               <li class="nameList Last">Vincenzo Stoico</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>During the initial design phases of an embedded system, the ability to support designers
+                     using metrics, obtained through a preliminary analysis, is of fundamental importance.
+                     Knowing which initial parameters of the embedded system (HW or SW) influence such
+                     metrics is even more important. The main characteristic of an embedded system that
+                     typically designers need to measure is the embedded SW (i.e., functions) execution
+                     time, used to describe the final system's performance (i.e., timing performance metric).
+                     The evaluation of such a metric is often a critical task, relying on several different
+                     techniques at different abstraction levels. Furthermore, in the era of Big Data, the
+                     use of Machine Learning methods can be a valid alternative to the classic methods
+                     used to evaluate or estimate metrics for temporal performance. In such a context,
+                     this paper describes a framework, based on the use of Machine Learning methods, to
+                     calculate a statement-level embedded software timing performance metric. Results are
+                     compared with those obtained with different approaches. They show that the proposed
+                     method improves the estimation accuracy for specific processor classes while also
+                     reducing estimation time.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3427921.3450235">A Framework for Developing DevOps Operation Automation in Clouds using Components-off-the-Shelf</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Yar Rouf</li>
+               <li class="nameList">Joydeep Mukherjee</li>
+               <li class="nameList">Marin Litoiu</li>
+               <li class="nameList">Joe Wigglesworth</li>
+               <li class="nameList Last">Radu Mateescu</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>DevOps is an emerging paradigm that integrates the development and operations teams
+                     to enable fast and efficient continuous delivery of software. Applications and services
+                     deployed on cloud platforms can benefit from implementing the DevOps practice. This
+                     involves using different tools for enabling end-to-end automation to ensure continuous
+                     deployment and maintain good Quality-of-Service. Self-Adaptive systems can support
+                     the DevOps process by automating service deployment and maintenance without manual
+                     intervention by employing a MAPE-K (Monitoring, Analysis, Planning, Execution- Knowledge)
+                     framework. While industrial MAPE-K tools are robust and built for production environments,
+                     they lack the flexibility to adapt large applications on multi-cloud environments.
+                     Academic models are more flexible and can be used to perform sophisticated self-adaption,
+                     but can lack the robustness to be used in production environments. In this paper,
+                     we present a MAPE-K framework that is built with existing Components-off-the-Shelf
+                     (COTS) that interacts with each other to perform self-adaptive actions on multi-cloud
+                     environments. By integrating existing COTS, we are able to deploy a MAPE-K framework
+                     efficiently to support DevOps for applications running on a multi-cloud environment.
+                     We validate our framework with a prototype implementation and demonstrate its practical
+                     feasibility by a detailed case study done on a real industrial platform.</p>
+                  	</div>
+            </div>
+            						
+            					
+            <h2>SESSION: Workshop Summaries</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3427921.3450223">The Ninth International Workshop on Load Testing and Benchmarking of Software Systems
+                  (LTB 2021)</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Alexander Poldelko</li>
+               <li class="nameList">Tse-Hsun (Peter) Chen</li>
+               <li class="nameList Last">Hamzeh Khazaei</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The Ninth International Workshop on Load Testing and Benchmarking of Software Systems
+                     (LTB 2021) is a full-day virtual event bringing together software testing researchers,
+                     practitioners and tool developers to discuss the challenges and opportunities of conducting
+                     research on load testing and benchmarking software systems. The workshop, co-located
+                     with the 12th International Conference on Performance Engineering (ICPE 2021), is
+                     held on April 19th, 2021 in Rennes, France.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3427921.3450224">The Fourth Workshop on Hot Topics in Cloud Computing Performance (HotCloudPerf'21):
+                  Benchmarking in the Cloud</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Cristina L. Abad</li>
+               <li class="nameList">Nikolas Herbst</li>
+               <li class="nameList">Alexandru Uta</li>
+               <li class="nameList Last">Alexandru Iosup</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The HotCloudPerf workshop is a meeting venue for academics and practitioners, from
+                     experts to trainees, in the field of cloud computing performance. The workshop aims
+                     to engage this community, and to lead to the development of new methodological aspects
+                     for gaining deeper understanding not only of cloud performance, but also of cloud
+                     operation and behavior, through diverse quantitative evaluation tools, including benchmarks,
+                     metrics, and workload generators. The workshop focuses on novel cloud properties such
+                     as elasticity, performance isolation, dependability, and other non-functional system
+                     properties, in addition to classical performance-related metrics such as response
+                     time, throughput, scalability, and efficiency. The theme for the 2021 edition is "Benchmarking
+                     in the Cloud". HotCloudPerf 2021, co-located with the 12th ACM/SPEC International
+                     Conference on Performance Engineering (ICPE 2021), is held on April 19-20th, 2021.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3427921.3450225">Welcome to the 3rd Workshop on Education and Practice of Performance Engineering</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Alberto Avritzer</li>
+               <li class="nameList">Kishor Trivedi</li>
+               <li class="nameList Last">Alexandru Iosup</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The Workshop on Education and Practice of Performance Engineering, in its 3rd edition,
+                     brings together University researchers and Industry Performance Engineers to share
+                     education and practice experiences. The recommendations from previous WEPPE workshops
+                     pointed to the need to form a team of critical thinkers that also have good communication
+                     skills.</p> 
+                  <p>This workshop is a forum to share experiences between researchers that are actively
+                     teaching performance engineering and of Performance Engineers that are applying Performance
+                     Engineering techniques in industry. Specifically, as ICPE 2021 is virtual, for the
+                     3rd edition, we will give special attention to online Q/A interactions supported by
+                     off-line videos. To achieve these goals we have put together a very exciting program,
+                     consisting of 3 full papers and 5 invited talks. We start by discussing recommendations
+                     from previous WEPPE workshops with the talk on Minding the Gap between Education and
+                     Practice by&nbsp;Alberto Avritzer, Kishor Trivedi, Alexandru Iosup, where the co-chairs
+                     will provide a summary report of previous WEPPE workshops as a starting point for
+                     WEPPE 2021 discussion. We continue with a presentation on "The role of analytical
+                     models in the engineering and science of computer systems", where Y.C Tay, National
+                     University of Singapore, reviews the role of analytical performance modeling in engineering
+                     computer systems and developing a science of computer systems. In the talk on "Performance
+                     monitoring guidelines" by Maria Calzarossa, Luisa Massari, Daniele Tessera, Università
+                     di Pavia and Università Cattolica del Sacro Cuore, the authors present the topic of
+                     Performance Monitoring, which is the process for collecting measurements on infrastructures
+                     and services. The talk on "Experience with Teaching Performance Measurement and Testing"
+                     by Andre Bondi, Razieh Saremi,&nbsp;Software Performance and Scalability Consulting LLC
+                     and&nbsp; Stevens Institute of Technology, the authors review a Course on Functional Testing
+                     that they have developed and taught where performance engineering aspects were introduced.
+                     In the talk "An Analysis of Distributed Systems Syllabi With a Focus on Performance-Related
+                     Topics" by Cristina Abad,&nbsp; Alexandru Iosup,&nbsp; Edwin Boza, Eduardo Ortiz-Holguin, Escuela
+                     Superior Politecnica del Litoral and Vrije Universiteit Amsterdam, the authors analyze
+                     a large set of Distributed Systems syllabi from top Computer Science programs. In
+                     "A New Course on Systems Benchmarking - For Scientists and Engineers", Samuel Kounev
+                     - University of Würzburg, presents an overview of a new course focussed on systems
+                     benchmarking. The talk on "Performance Engineering and Database Development at MongoDB"
+                     by David Daly, MongoDB, presents Performance and the related properties of stability
+                     and resilience in MongoDB. In the talk "Software Performance Engineering Education:
+                     What Topics Should be Covered?" by Connie U. Smith, Performance Engineering Service,
+                     the author presents her vast experience with Software Performance Engineering (SPE)
+                     and how it has evolved, skills needed by practitioners. We conclude the workshop with
+                     a discussion and a Q/A session. We would like to welcome the participants of WEPPE'21
+                     and wish all a productive discussion about how to bridge the gap between theory and
+                     practice of performance engineering.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3427921.3450227">WOSP-C 2021: Workshop on Challenges in Performance Methods for Software Development</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Diego Perez-Palacin</li>
+               <li class="nameList Last">José Merseguer</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The sixth ACM Workshop on Challenges in Performance Methods for Software Development
+                     is co-located with the 12th ACM/SPEC International Conference on Performance Engineering
+                     (ICPE 2021), 19-23 April 2021. The Conference initially hosted in Rennes, France,
+                     will be a virtual event due to COVID-19. The purpose of the workshop is to open up
+                     new venues of research on methods for software developers to address performance problems.
+                     The software world is changing continuously, and there are new challenges every day.
+                     The acronym WOSP-C was chosen to recall the original WOSP, the ACM International Workshop
+                     on Software and Performance, which has been a co-organizer of ICPE since 2010.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3427921.3450228">The 4th International Workshop on Autonomic Solutions for Parallel and Distributed
+                  Data Stream Processing (Auto-DaSP 2021)</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Valeria Cardellini</li>
+               <li class="nameList">Gabriele Mencagli</li>
+               <li class="nameList Last">Massimo Torquati</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The organizers of the 4th International Workshop on Autonomic Solutions for Parallel
+                     and Distributed Data Stream Processing (Auto-DaSP 2021) are delighted to welcome you
+                     to the workshop proceedings as part of the ICPE 2021 conference companion.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/10.1145/3427921.3450229">PECS'21: The First Workshop on Performance and Energy-efficiency of Concurrent Systems</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Romolo Marotta</li>
+               <li class="nameList Last">Francesco Quaglia</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Concurrent systems, based on (distributed) multi/many-core processing units, are the
+                     nowadays reference computing architecture. The (continuously-growing) level of hardware
+                     parallelism they offer has led these platforms to play a central role at any scale,
+                     ranging from data centers, to personal (mobile) devices. Optimizing performance and/or
+                     ensuring energy efficiency when running complex software stacks on top of these systems
+                     is extremely challenging due to several aspects, like data dependencies or resource
+                     sharing (and interference) among application threads, as well as VMs. Furthermore,
+                     hardware accelerators like GPGPUs or FPGAs introduce a level of heterogeneity that
+                     can potentially offer further opportunities for combined gain in performance and energy
+                     efficiency, if correctly exploited.</p> 
+                  <p>The goal of this workshop is to establish a venue for both academia and industry experts
+                     and practitioners, where they can discuss challenges, perspectives and opportunities
+                     given by researching on scalable, energy-efficient and secure software deployed on
+                     top of modern (heterogeneous) concurrent platforms.</p>
+                  	</div>
+            </div>
+            						
+            					</div>
+      </div>
+   </body>
+</html>
