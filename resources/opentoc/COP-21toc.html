@@ -1,0 +1,184 @@
+<html xmlns:bkstg="http://www.atypon.com/backstage-ns" xmlns:urlutil="java:com.atypon.literatum.customization.UrlUtil" xmlns:pxje="java:com.atypon.frontend.services.impl.PassportXslJavaExtentions">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="Content-Style-Type" content="text/css">
+      <style type="text/css">
+            #DLtoc {
+            font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+            }
+
+            #DLheader {
+            }
+            #DLheader h1 {
+            font-size:16px;
+            }
+
+            #DLcontent {
+            font-size:12px;
+            }
+            #DLcontent h2 {
+            font-size:14px;
+            margin-bottom:5px;
+            }
+            #DLcontent h3 {
+            font-size:12px;
+            padding-left:20px;
+            margin-bottom:0px;
+            }
+
+            #DLcontent ul{
+            margin-top:0px;
+            margin-bottom:0px;
+            }
+
+            .DLauthors li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLauthors li:after{
+            content:",";
+            }
+            .DLauthors li.nameList.Last:after{
+            content:"";
+            }
+
+            .DLabstract {
+            padding-left:40px;
+            padding-right:20px;
+            display:block;
+            }
+
+            .DLformats li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLformats li:after{
+            content:",";
+            }
+            .DLformats li.formatList.Last:after{
+            content:"";
+            }
+
+            .DLlogo {
+            vertical-align:middle;
+            padding-right:5px;
+            border:none;
+            }
+
+            .DLcitLink {
+            margin-left:20px;
+            }
+
+            .DLtitleLink {
+            margin-left:20px;
+            }
+
+            .DLotherLink {
+            margin-left:0px;
+            }
+
+        </style>
+      <title>COP 2021: Proceedings of the 13th ACM International Workshop on Context-Oriented Programming and Advanced Modularity</title>
+   </head>
+   <body>
+      <div id="DLtoc">
+         <div id="DLheader">
+            <h1>COP 2021: Proceedings of the 13th ACM International Workshop on Context-Oriented Programming
+               and Advanced Modularity</h1><a class="DLcitLink" title="Go to the ACM Digital Library for additional information about this proceeding" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/proceedings/10.1145/3464970"><img class="DLlogo" alt="Digital Library logo" height="30" src="https://dl.acm.org/specs/products/acm/releasedAssets/images/footer-logo1.png">
+               Full Citation in the ACM Digital Library
+               </a></div>
+         <div id="DLcontent">
+            <h2>SESSION: Papers</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3464970.3468412">Resolving synchronization conflicts in role-based multimodel-synchronization environments</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Sebastian Ebert</li>
+               <li class="nameList">Tim Kluge</li>
+               <li class="nameList Last">Sebastian Götz</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The ability to collaboratively edit data in distributed environments is essential
+                     in our information-based industry. Typically users or systems concurrently access
+                     and modify data from different locations for different purposes. Each purpose might
+                     require its own representation and subset of the shared data (i.e., a model), for
+                     the editor to be productive. Consequently, a multi-model system results, which requires
+                     multi-directional synchronization. Although some approaches exist to realize such
+                     systems, none of these supports concurrent modifications. To overcome this limitation,
+                     we extend previous work on role-oriented model synchronization with a novel conflict
+                     detection and resolution approach. Role-oriented programming has been shown to be
+                     an adequate paradigm to realize multi-model systems, as it offers separation of concerns
+                     at the level of object collaborations and allows to express context-dependent behavior.
+                     We evaluate our approach using an employee data management case study and assess the
+                     introduced performance overhead.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3464970.3468413">First-class concepts: reifying architectural knowledge beyond the dominant decomposition</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Toni Mattis</li>
+               <li class="nameList">Tom Beckmann</li>
+               <li class="nameList">Patrick Rein</li>
+               <li class="nameList Last">Robert Hirschfeld</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>In software engineering, programs are ideally partitioned into independently maintainable
+                     and understandable modules. As a system grows, its architecture gradually loses the
+                     capability to modularly accommodate new concepts. While refactoring is expensive and
+                     the language might lack appropriate <em>primary</em> language constructs to express certain cross-cutting concerns, programmers are still
+                     able to explain and delineate convoluted concepts through <em>secondary</em> means: code comments, use of whitespace and arrangement of code, documentation, or
+                     communicating tacit knowledge. </p> 
+                  <p>Secondary constructs are easy to change and provide high flexibility in communicating
+                     cross-cutting concerns and other concepts among programmers. However, they have no
+                     reified representation that can be explored and maintained through tools. </p> 
+                  <p>In this exploratory work, we discuss novel ways to express a wide range of <em>concepts</em>, including cross-cutting concerns, patterns, and lifecycle artifacts independently
+                     of the dominant decomposition imposed by an existing architecture. Our concepts are
+                     first-class objects inside the programming environment that retain the capability
+                     to change as easily as code comments. We explore new tools that allow programmers
+                     to view and change programs from conceptual perspectives rather than scattering their
+                     attention across existing modules. </p> 
+                  <p>Our designs are geared towards facilitating multiple <em>secondary</em> perspectives on a system to co-exist alongside the original architecture, hence making
+                     it easier to explore, understand, and explain complex contexts and narratives not
+                     expressible in traditional modularity constructs.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3464970.3468414">Towards a framework for analyzing context-oriented programming languages</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Achiya Elyasaf</li>
+               <li class="nameList Last">Arnon Sturm</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Context-aware systems keep on emerging in all of our daily activities. To cope with
+                     this new situation, programming languages were extended to support the notion of context.
+                     Although context-oriented programming languages exist for over 15 years, they were
+                     tested for their suitability in developing context-aware systems only to a limited
+                     extent. In this paper, we propose a framework for analyzing context-oriented languages
+                     from that viewpoint. In this framework, we refer to context definition and activation,
+                     reasoning capabilities, process aspects of how to work with the suggested extension,
+                     and pragmatic considerations. To demonstrate the use of the framework, we applied
+                     it to a relatively new context-oriented programming paradigm, namely context-oriented
+                     behavioral programming. The proposed framework can support users of context-oriented
+                     programming languages in deciding on the most fitted language for their purpose. Developers
+                     of context-oriented programming languages can also use the framework to improve such
+                     languages and their supporting tools.</p>
+                  	</div>
+            </div>
+            						
+            					</div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,327 @@
+<html xmlns:bkstg="http://www.atypon.com/backstage-ns" xmlns:urlutil="java:com.atypon.literatum.customization.UrlUtil" xmlns:pxje="java:com.atypon.frontend.services.impl.PassportXslJavaExtentions">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="Content-Style-Type" content="text/css">
+      <style type="text/css">
+            #DLtoc {
+            font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+            }
+
+            #DLheader {
+            }
+            #DLheader h1 {
+            font-size:16px;
+            }
+
+            #DLcontent {
+            font-size:12px;
+            }
+            #DLcontent h2 {
+            font-size:14px;
+            margin-bottom:5px;
+            }
+            #DLcontent h3 {
+            font-size:12px;
+            padding-left:20px;
+            margin-bottom:0px;
+            }
+
+            #DLcontent ul{
+            margin-top:0px;
+            margin-bottom:0px;
+            }
+
+            .DLauthors li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLauthors li:after{
+            content:",";
+            }
+            .DLauthors li.nameList.Last:after{
+            content:"";
+            }
+
+            .DLabstract {
+            padding-left:40px;
+            padding-right:20px;
+            display:block;
+            }
+
+            .DLformats li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLformats li:after{
+            content:",";
+            }
+            .DLformats li.formatList.Last:after{
+            content:"";
+            }
+
+            .DLlogo {
+            vertical-align:middle;
+            padding-right:5px;
+            border:none;
+            }
+
+            .DLcitLink {
+            margin-left:20px;
+            }
+
+            .DLtitleLink {
+            margin-left:20px;
+            }
+
+            .DLotherLink {
+            margin-left:0px;
+            }
+
+        </style>
+      <title>VORTEX 2021: Proceedings of the 5th ACM International Workshop on Verification and mOnitoring at Runtime EXecution</title>
+   </head>
+   <body>
+      <div id="DLtoc">
+         <div id="DLheader">
+            <h1>VORTEX 2021: Proceedings of the 5th ACM International Workshop on Verification and mOnitoring at
+               Runtime EXecution</h1><a class="DLcitLink" title="Go to the ACM Digital Library for additional information about this proceeding" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/proceedings/10.1145/3464974"><img class="DLlogo" alt="Digital Library logo" height="30" src="https://dl.acm.org/specs/products/acm/releasedAssets/images/footer-logo1.png">
+               Full Citation in the ACM Digital Library
+               </a></div>
+         <div id="DLcontent">
+            <h2>SESSION: Invited Keynotes</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3464974.3468452">Increasing confidence in autonomous systems</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Michael Fisher</li>
+               <li class="nameList">Angelo Ferrando</li>
+               <li class="nameList Last">Rafael C. Cardoso</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>This presentation will describe how we are using, and aiming to use, runtime verification,
+                     along with other varieties of formal verification and simulation-based testing, to
+                     together provide increased confidence in a range of autonomous systems.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3464974.3468453">Synchronous and asynchronous stream runtime verification</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList Last">César Sánchez</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>We revisit the topic of Stream Runtime Verification (SRV) both for synchronous and
+                     asynchronous systems. Stream Runtime Verification is a formalism to express monitors
+                     using streams, which results in a simple and expressive specification language. This
+                     language is not restricted to describe correctness/failure assertions, but can also
+                     collect richer information (including statistical measures) for system profiling and
+                     coverage analysis. The monitors generated in SRV are useful for testing, under actual
+                     deployment, and to analyze logs. </p> 
+                  <p> The steps in many algorithms proposed in runtime verification are based on temporal
+                     logics and similar formalisms, which generate Boolean verdicts. The key idea of Stream
+                     Runtime Verification is that these algorithms can be generalized to compute richer
+                     information if a different data domain is used. Hence, the keystone of SRV is to separate
+                     the temporal dependencies in the monitoring algorithm from the concrete operations
+                     performed at each step. </p> 
+                  <p> Early SRV languages, pioneered by Lola, considered that the observations arrive in
+                     a periodic fashion, so the model of time is synchronous sequences like in linear temporal
+                     logic. Newer systems, like TeSSLa, RTLola and Striver, have adapted SRV to real-time
+                     event streams, where input and output streams can contain events of data at any point.
+                     </p> 
+                  <p> We will revisit the notions of SRV for synchronous and asynchronous systems. Then,
+                     we will justify that synchronous SRV can be modeled by real-time SRV and finally present
+                     conditions under which synchronous SRV can simulate real-time SRV.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3464974.3468451">The e-ACSL perspective on runtime assertion checking</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList Last">Julien Signoles</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Runtime Assertion Checking (RAC) is the discipline of verifying program assertions
+                     at runtime, i.e. when executing the code. Nowadays, RAC usually relies on Behavioral
+                     Interface Specification Languages (BISL) à la Eiffel for writing powerful code specifications.
+                     Since now more than 20 years, several works have studied RAC. Most of them have focused
+                     on BISL. Some others have also considered combinations of RAC with others techniques,
+                     e.g. deductive verification (DV). Very few tackle RAC as a verification technique
+                     that soundly generates efficient code from formal annotations. Here, we revisit these
+                     three RAC's research areas by emphasizing the works done in E-Acsl, which is both
+                     a BISL and a RAC tool for C code. We also compare it to others languages and tools.</p>
+                  	</div>
+            </div>
+            						
+            					
+            <h2>SESSION: Extended Abstracts</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3464974.3468445">RM for users’ safety and security in the built environment</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Giorgio Audrito</li>
+               <li class="nameList">Ferruccio Damiani</li>
+               <li class="nameList">Giuseppe Di Giuda</li>
+               <li class="nameList">Silvia Meschini</li>
+               <li class="nameList">Laura Pellegrini</li>
+               <li class="nameList">Elena Seghezzi</li>
+               <li class="nameList">Lavinia Chiara Tagliabue</li>
+               <li class="nameList">Lorenzo Testa</li>
+               <li class="nameList Last">Gianluca Torta</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>As the cost of computing devices continues to decrease, swarms of low-end intelligent
+                     devices become a more interesting solution for safety-critical applications. The safe
+                     execution of such systems, however, usually requires mechanisms ensuring that relevant
+                     global properties, expressed as logical formulas, are satisfied. These formulas need
+                     to capture properties of the system evolution in time, and of its distribution in
+                     space, thus requiring a mix of spatial and temporal logic modalities. Furthermore,
+                     in scenarios where access to the cloud might not be available, monitoring their validity
+                     should be performed autonomously by the distributed system itself. Previous works
+                     show that through the aggregate computing approach, and targeting the field calculus
+                     language, automatic translations of spatial or temporal logic formulas into distributed
+                     decentralized monitors are possible. However, the definition and translation of properties
+                     mixing space and time has not been considered so far. In this paper, we start the
+                     investigation on integrating space and time modalities through examples, outlining
+                     a roadmap for a fully-fledged distributed monitoring of space-time properties.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3464974.3468446">Test’n’Mo: a collaborative platform for human testers and intelligent monitoring agents</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Filippo Ricca</li>
+               <li class="nameList">Viviana Mascardi</li>
+               <li class="nameList Last">Alessandro Verri</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Many software bugs have disruptive consequences, both in financial terms and in loss
+                     of life. Software Testing is one widely used approach to detect software bugs and
+                     ensure software quality but the testing activity, conducted either manually or using
+                     testing frameworks, is repetitive and expensive. Runtime Monitoring, differently from
+                     Software Testing, does not require test cases to be designed and executed and – once
+                     the property to be monitored has been specified – it does not rely on human beings
+                     performing any further actions, unless a violation is detected. However the property
+                     to be monitored, that must feed the monitor along with the trace or stream of observed
+                     events, may be very hard to identify and specify. In this extended abstract we present
+                     the Test'n'Mo vision which goes in the direction of exploiting Artificial intelligence
+                     and Machine Learning as enabling techniques for a hybrid platform for Software Testing
+                     and Runtime Monitoring. In Test'n'Mo, human testers and software agents of different
+                     kinds – 'Learning Agents' and 'Runtime Monitoring and Testing Agents' – collaborate
+                     to achieve their common testing goal. Although Test'n'Mo is meant to address User
+                     Interface testing of web/mobile apps, the Test'n'Mo approach may be adapted to other
+                     software testing activities.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3464974.3468447">RVPLAN: a general purpose framework for replanning using runtime verification</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Angelo Ferrando</li>
+               <li class="nameList Last">Rafael C. Cardoso</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>We present RVPLAN, a general purpose framework for replanning that combines classical
+                     planning with runtime verification. RVPLAN uses runtime monitors to report violations
+                     of the planner’s assumptions over the system, effectively detecting plan failures.
+                     Re-planning is triggered when such violations are detected, using the feedback from
+                     the monitors to update the model of environment. We illustrate the use of our framework
+                     with a remote inspection running example.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3464974.3468448">Towards aggregate monitoring of spatio-temporal properties</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Giorgio Audrito</li>
+               <li class="nameList Last">Gianluca Torta</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>As the cost of computing devices continues to decrease, swarms of low-end intelligent
+                     devices become a more interesting solution for safety-critical applications. The safe
+                     execution of such systems, however, usually requires mechanisms ensuring that relevant
+                     global properties, expressed as logical formulas, are satisfied. These formulas need
+                     to capture properties of the system evolution in time, and of its distribution in
+                     space, thus requiring a mix of spatial and temporal logic modalities. Furthermore,
+                     in scenarios where access to the cloud might not be available, monitoring their validity
+                     should be performed autonomously by the distributed system itself. </p> 
+                  <p> Previous works show that through the aggregate computing approach, and targeting
+                     the field calculus language, automatic translations of spatial or temporal logic formulas
+                     into distributed decentralized monitors are possible. However, the definition and
+                     translation of properties mixing space and time has not been considered so far. In
+                     this paper, we start the investigation on integrating space and time modalities through
+                     examples, outlining a roadmap for a fully-fledged distributed monitoring of space-time
+                     properties.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3464974.3468449">Runtime verification for trustworthy secure shell deployment</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Axel Curmi</li>
+               <li class="nameList">Christian Colombo</li>
+               <li class="nameList Last">Mark Vella</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Incorrect cryptographic protocol implementation and malware attacks targeting its
+                     runtime may lead to insecure execution even if the protocol design has been proven
+                     safe. This research focuses on adapting a runtime-verification-centric trusted execution
+                     environment (RV-TEE) solution to a cryptographic protocol deployment --- particularly
+                     that of the Secure Shell Protocol (SSH). We aim to show that our approach, which does
+                     not require any specific security hardware or operating system modifications, is feasible
+                     through the design of a framework and work-in-progress empirical evaluation. We provide:
+                     (i) The design of the setup involving SSH, (ii) The provision of the RV-TEE setup
+                     with SSH implementation, including (iii) An overview of the property extraction process
+                     through a methodical analysis of the SSH protocol specifications.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3464974.3468450">Optional monitoring for long-lived transactions</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Joshua Ellul</li>
+               <li class="nameList Last">Gordon J. Pace</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Runtime monitoring comes at a runtime cost. Overheads induced by monitoring and verification
+                     code may be necessary, and yet prohibitive in certain circumstances. When verification
+                     is local to a single unit of execution in a system, one can choose whether or not
+                     to monitor based on the risk of that individual unit. In this paper, we propose a
+                     monitoring and verification approach for a class of long-lived transaction-based systems
+                     whose execution can be partitioned into separate subtraces, one for each such transaction,
+                     and which are independent of each other from a correctness perspective. We focus on
+                     the use of this approach for the monitoring of smart contracts on distributed ledger
+                     technologies to show how we can reduce overheads in this manner.</p>
+                  	</div>
+            </div>
+            						
+            					</div>
+      </div>
+   </body>
+</html>

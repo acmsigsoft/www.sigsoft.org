@@ -1,0 +1,340 @@
+<html xmlns:bkstg="http://www.atypon.com/backstage-ns" xmlns:urlutil="java:com.atypon.literatum.customization.UrlUtil" xmlns:pxje="java:com.atypon.frontend.services.impl.PassportXslJavaExtentions">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="Content-Style-Type" content="text/css">
+      <style type="text/css">
+            #DLtoc {
+            font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+            }
+
+            #DLheader {
+            }
+            #DLheader h1 {
+            font-size:16px;
+            }
+
+            #DLcontent {
+            font-size:12px;
+            }
+            #DLcontent h2 {
+            font-size:14px;
+            margin-bottom:5px;
+            }
+            #DLcontent h3 {
+            font-size:12px;
+            padding-left:20px;
+            margin-bottom:0px;
+            }
+
+            #DLcontent ul{
+            margin-top:0px;
+            margin-bottom:0px;
+            }
+
+            .DLauthors li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLauthors li:after{
+            content:",";
+            }
+            .DLauthors li.nameList.Last:after{
+            content:"";
+            }
+
+            .DLabstract {
+            padding-left:40px;
+            padding-right:20px;
+            display:block;
+            }
+
+            .DLformats li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLformats li:after{
+            content:",";
+            }
+            .DLformats li.formatList.Last:after{
+            content:"";
+            }
+
+            .DLlogo {
+            vertical-align:middle;
+            padding-right:5px;
+            border:none;
+            }
+
+            .DLcitLink {
+            margin-left:20px;
+            }
+
+            .DLtitleLink {
+            margin-left:20px;
+            }
+
+            .DLotherLink {
+            margin-left:0px;
+            }
+
+        </style>
+      <title>FTfJP 2021: Proceedings of the 23rd ACM International Workshop on Formal Techniques for Java-like Programs</title>
+   </head>
+   <body>
+      <div id="DLtoc">
+         <div id="DLheader">
+            <h1>FTfJP 2021: Proceedings of the 23rd ACM International Workshop on Formal Techniques for Java-like
+               Programs</h1><a class="DLcitLink" title="Go to the ACM Digital Library for additional information about this proceeding" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/proceedings/10.1145/3464971"><img class="DLlogo" alt="Digital Library logo" height="30" src="https://dl.acm.org/specs/products/acm/releasedAssets/images/footer-logo1.png">
+               Full Citation in the ACM Digital Library
+               </a></div>
+         <div id="DLcontent">
+            <h2>SESSION: Papers</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3464971.3468416">Source code patches from dynamic analysis</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Indigo Orton</li>
+               <li class="nameList Last">Alan Mycroft</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Dynamic analysis can identify improvements to programs that cannot feasibly be identified
+                     by static analysis; concurrency improvements are a motivating example. However, mapping
+                     these dynamic-analysis-based improvements back to patch-like source-code changes is
+                     non-trivial. We describe a system, Scopda, for generating source-code patches for
+                     improvements identified by execution-trace-based dynamic analysis. Scopda uses a graph-based
+                     static program representation (abstract program graph, APG), containing inter-procedural
+                     control flow and local data flow information, to analyse and transform static source-code.
+                     We demonstrate Scopda's ability to generate sensible source code patches for Java
+                     programs, though it is fundamentally language agnostic.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3464971.3468419">A generic type system for featherweight Java</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Ulrich Schöpp</li>
+               <li class="nameList Last">Chuangjie Xu</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>We introduce a generic type system for Featherweight Java (FJ) that is parametrized
+                     with a monad-like structure, and prove a uniform soundness theorem. Its instances
+                     include some region type systems studied by Martin Hofmann et al. as well as a new
+                     one that performs more precise analysis of trace-based properties. Their soundness
+                     is guaranteed by the uniform theorem. We only need to verify some natural conditions.
+                     Instead of refining the FJ type system as in the previous work, our region type system
+                     is separate from the FJ type system, making it simpler and also easier to move to
+                     larger fragments of Java. Moreover, the uniform framework helps to avoid redundant
+                     work on the meta-theory when extending the system to cover other language features
+                     such as exception handling.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3464971.3468420">Refactoring traces to identify concurrency improvements</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Indigo Orton</li>
+               <li class="nameList Last">Alan Mycroft</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>It is often difficult to analyse why a program executes more slowly than intended.
+                     This is particularly true for concurrent programs. We describe and evaluate a system,
+                     Rehype, which takes Java programs, performs low-overhead tracing of method calls,
+                     analyses the resulting trace-logs to detect inefficient uses of concurrency constructs,
+                     and suggests source-code-oriented improvements. Rehype deals with task-based concurrency,
+                     specifically a future-based model of tasks. Implementing the suggested improvements
+                     on an industrial API server more than doubled request-processing throughput.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3464971.3468421">Reconstructing z3 proofs in KeY: there and back again</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Wolfram Pfeifer</li>
+               <li class="nameList">Jonas Schiffl</li>
+               <li class="nameList Last">Mattias Ulbrich</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>One of the main factors of the increasing power of deductive verification tools are
+                     modern SMT solvers. Unfortunately, SMT solvers usually do not produce proof artifacts
+                     that could be inspected or checked. KeY is a formal platform for the deductive verification
+                     of Java programs which produces explicit, browsable proofs. SMT solvers can be driven
+                     from within KeY, but this unfortunately breaks these proof transparency intentions.
+                     </p> 
+                  <p>In this paper, we describe how we complemented the existing translation of proof obligations
+                     to Z3 (<em>There ...</em>) with the replay of proof transcripts reported by Z3 inside KeY (<em>... and Back Again</em>). We describe the conceptual and engineering challenges we encountered for this round
+                     trip and present solutions for them. </p> 
+                  <p>The replay technique has been implemented in KeY, and in the evaluation, we demonstrate
+                     the feasibility of the approach for first-order proof instances and investigate the
+                     effects of proof replay on the proof run time and size.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3464971.3468422">Using dafny to solve the VerifyThis 2021 challenges</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Marie Farrell</li>
+               <li class="nameList">Conor Reynolds</li>
+               <li class="nameList Last">Rosemary Monahan</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>This paper provides an experience report of using the Dafny program verifier, at the
+                     VerifyThis 2021 program verification competition. The competition aims to evaluate
+                     the usability of logic-based program verification tools in a controlled experiment,
+                     challenging both the verification tools and the users of those tools. We present the
+                     two challenges that we tackled during the competition and discuss our solutions. As
+                     a result, we identify strengths and weaknesses of Dafny in the verification of relatively
+                     complex algorithms, and report on our experience of applying Dafny in this setting.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3464971.3468423">IntelliJML: a JML plugin for IntelliJ IDEA</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Steven Monteiro</li>
+               <li class="nameList">Erikas Sokolovas</li>
+               <li class="nameList">Ellen Wittingen</li>
+               <li class="nameList">Tom van Dijk</li>
+               <li class="nameList Last">Marieke Huisman</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Java code can be annotated with formal specifications using the Java Modelling Language
+                     (JML). Previous work has provided IDE plugins intended to help write JML, but mostly
+                     for the Eclipse IDE. We introduce IntelliJML, a JML plugin for IntelliJ IDEA, with
+                     a focus on ease of use and maintainability. Features such as syntax, semantic, and
+                     type checking, as well as syntax highlighting and code completion are integrated into
+                     the plugin. The plugin can also be extended in the future to add more features. The
+                     source code for the plugin can be found at https://gitlab.utwente.nl/fmt/intellijml.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3464971.3468418">Ensuring correct cryptographic algorithm and provider usage at compile time</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Weitian Xing</li>
+               <li class="nameList">Yuanhui Cheng</li>
+               <li class="nameList Last">Werner Dietl</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Using cryptographic APIs to encrypt and decrypt data, calculate digital signatures,
+                     or compute hashes is error prone. Weak or unsupported cryptographic algorithms can
+                     cause information leakage and runtime exceptions, such as a NoSuchAlgorithmException
+                     in Java. Using the wrong cryptographic service provider can also lead to unsupported
+                     cryptographic algorithms. Moreover, for Android developers who want to store their
+                     key material in the Android Keystore, misused cryptographic algorithms and providers
+                     make the key material unsafe. </p> 
+                  <p> We present the Crypto Checker, a pluggable type system that detects the use of forbidden
+                     algorithms and providers at compile time. For typechecked code, the Crypto Checker
+                     guarantees that only trusted algorithms and providers are used, and thereby ensures
+                     that the cryptographic APIs never cause runtime exceptions or use weak algorithms
+                     or providers. The Crypto Checker is easy-to-use: it allows developers to determine
+                     which algorithms and providers are permitted by writing specifications using type
+                     qualifiers. </p> 
+                  <p> We implemented the Crypto Checker for Java and evaluated it with 32 open-source Java
+                     applications (over 2 million LOC). We found 2 issues that cause runtime exceptions
+                     and 62 violations of security recommendations and best practices. We also used the
+                     Crypto Checker to analyze 65 examples from a public benchmark of hard security issues
+                     and discuss the differences between our approach and a different static analysis in
+                     detail.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3464971.3468424">Behavioural separation with parallel usages</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Iaroslav Golovanov</li>
+               <li class="nameList">Hans Hüttel</li>
+               <li class="nameList">Mathias Jakobsen</li>
+               <li class="nameList Last">Mikkel Kettunen</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Mungo is an object-oriented language that uses typestates with a behavioural type
+                     system to ensure the absence of null-dereferencing. Typestates are usages that specify
+                     the admissible sequences of method calls on objects. Previous type systems for Mungo
+                     have all had a linearity constraint on objects. We present an extension of these systems,
+                     where usage specifications can now include a parallel construct that lets us describe
+                     separate local behaviour. A parallel usage describes a separation of the heap, and
+                     this allows us to reason about aliasing and to express arbitrary interleaving of local
+                     protocols. This also solves the state-space explosion problem for usages. Our extension
+                     retains the safety properties of previous type systems for Mungo.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3464971.3468425">Combining formal and machine learning techniques for the generation of JML specifications</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Armand Puccetti</li>
+               <li class="nameList">Gaël de Chalendar</li>
+               <li class="nameList Last">Pierre-Yves Gibello</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Producing maintainable programs is a big challenge for the software industry as it
+                     requires solid Engineering skills and efficient CASE tools. Often, industrial programs
+                     are of a very large size (more than 1M SLOC), use high-level programming languages
+                     to their full extent (e.g. C++20, Ada 2005 or Java 16), are provided with scarce and
+                     often outdated documentation partially written in natural language. Maintenance engineers
+                     are therefore in need to understand the application at hand starting from the material
+                     left behind by the developers. The European H2020 Project DECODER (https://www.decoder-
+                     project.eu) addresses this problem by proposing to combine Natural Language Processing
+                     techniques and Formal Methods to turn as best as possible code artifacts into formal
+                     data allowing to reduce the maintenance costs and thus the total costs of ownership.
+                     In this context, we will show how to generate JML annotations using a combination
+                     of 1) automatic generation of minimal predicates, 2) Natural Language Processing (NLP)
+                     based predicates generator, and 3) manual refinement and correction, to instrument
+                     and enhance code and documentation. We will illustrate it on code samples from the
+                     MyThaiStar (https://github.com/devonfw/my- thai-star) application developed with the
+                     CASE tool devonfw by CAP GEMINI, and the Joram JMS implementation (https://gitlab.ow2.org/joram/joram)
+                     from OW2 code base.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3464971.3468417">JML and OpenJML for Java 16</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList Last">David R. Cok</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>As the Java language evolves, the Java Modeling Language (JML) and the OpenJML deductive
+                     verification tool must evolve with it. Changes in Java since Java 8 bring language
+                     and organizational changes which affect the semantics of JML and the implementation
+                     of OpenJML. They also raise questions about language definition, joint efforts, and
+                     community engagement, some enumerated in this paper, for the Java formal reasoning
+                     community to address.</p>
+                  	</div>
+            </div>
+            						
+            					</div>
+      </div>
+   </body>
+</html>
