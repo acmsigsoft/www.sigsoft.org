@@ -1,0 +1,1080 @@
+<html xmlns:bkstg="http://www.atypon.com/backstage-ns" xmlns:urlutil="java:com.atypon.literatum.customization.UrlUtil" xmlns:pxje="java:com.atypon.frontend.services.impl.PassportXslJavaExtentions">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="Content-Style-Type" content="text/css">
+      <style type="text/css">
+            #DLtoc {
+            font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+            }
+
+            #DLheader {
+            }
+            #DLheader h1 {
+            font-size:16px;
+            }
+
+            #DLcontent {
+            font-size:12px;
+            }
+            #DLcontent h2 {
+            font-size:14px;
+            margin-bottom:5px;
+            }
+            #DLcontent h3 {
+            font-size:12px;
+            padding-left:20px;
+            margin-bottom:0px;
+            }
+
+            #DLcontent ul{
+            margin-top:0px;
+            margin-bottom:0px;
+            }
+
+            .DLauthors li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLauthors li:after{
+            content:",";
+            }
+            .DLauthors li.nameList.Last:after{
+            content:"";
+            }
+
+            .DLabstract {
+            padding-left:40px;
+            padding-right:20px;
+            display:block;
+            }
+
+            .DLformats li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLformats li:after{
+            content:",";
+            }
+            .DLformats li.formatList.Last:after{
+            content:"";
+            }
+
+            .DLlogo {
+            vertical-align:middle;
+            padding-right:5px;
+            border:none;
+            }
+
+            .DLcitLink {
+            margin-left:20px;
+            }
+
+            .DLtitleLink {
+            margin-left:20px;
+            }
+
+            .DLotherLink {
+            margin-left:0px;
+            }
+
+        </style>
+      <title>SPLC '21: Proceedings of the 25th ACM International Systems and Software Product Line Conference - Volume A</title>
+   </head>
+   <body>
+      <div id="DLtoc">
+         <div id="DLheader">
+            <h1>SPLC '21: Proceedings of the 25th ACM International Systems and Software Product Line Conference
+               - Volume A</h1><a class="DLcitLink" title="Go to the ACM Digital Library for additional information about this proceeding" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/proceedings/10.1145/3461001"><img class="DLlogo" alt="Digital Library logo" height="30" src="https://dl.acm.org/specs/products/acm/releasedAssets/images/footer-logo1.png">
+               Full Citation in the ACM Digital Library
+               </a></div>
+         <div id="DLcontent">
+            <h2>SESSION: Variability modeling and analysis</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3471143">Variability modules for Java-like languages</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Ferruccio Damiani</li>
+               <li class="nameList">Reiner Hähnle</li>
+               <li class="nameList">Eduard Kamburjan</li>
+               <li class="nameList">Michael Lienhardt</li>
+               <li class="nameList Last">Luca Paolini</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>A Software Product Line (SPL) is a family of similar programs (called variants) generated
+                     from a common artifact base. A Multi SPL (MPL) is a set of interdependent SPLs (i.e.,
+                     such that an SPL's variant can depend on variants from other SPLs). MPLs are challenging
+                     to model and implement efficiently, especially when different variants of the same
+                     SPL must coexist and interoperate. We address this challenge by introducing variability
+                     modules (VMs), a new language construct. A VM represents both a module and an SPL
+                     of standard (variability-free), possibly interdependent modules. Generating a variant
+                     of a VM triggers the generation of all variants required to fulfill its dependencies.
+                     Then, a set of interdependent VMs represents an MPL that can be compiled into a set
+                     of standard modules. We illustrate VMs by an example from an industrial modeling scenario,
+                     formalize them in a core calculus, provide an implementation for the Java-like modeling
+                     language ABS, and evaluate VMs by case studies.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3471150">From pairwise to family-based generic analysis of delta-oriented model-based SPLs</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Christopher Pietsch</li>
+               <li class="nameList">Udo Kelter</li>
+               <li class="nameList Last">Timo Kehrer</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>One way to implement model-based software product lines (MBSPLs) is to use a transformational
+                     approach known as Delta Modeling (DM). Here, an MBSPL is implemented by one core model
+                     and a set of delta modules. Delta modules define model transformations using edit
+                     operations which add, remove or modify model elements. Editings of different delta
+                     modules can be in conflict or depend on each other, leading to conflict and dependency
+                     relations between delta modules. Conflicts and unfulfilled dependencies can cause
+                     the generation of a product to fail or to lead to invalid models. In order to spot
+                     such defects, one needs analysis tools for each modeling (sub-)language used. Existing
+                     generic approaches to statically detect such defects in a language-agnostic manner
+                     analyze pairs of delta modules. However, the pairwise approach can lead to false positives,
+                     i.e., conflicts and unfulfilled dependencies are reported although product generation
+                     does not fail. Following the idea of family-based analysis, this paper presents a
+                     new approach to detect pseudo defects resolved by "healing effects" implied by the
+                     network of dependencies. These effects typically occur when a delta module (partially)
+                     reverts the effect of a preceding delta module. We have implemented our approach within
+                     the SiPL framework and evaluated our family-based analysis using a realistic MBSPL
+                     known as Body Comfort System (BCS).</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3473060">Variability realization in model-based system engineering using software product line
+                  techniques: an industrial perspective</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Andreas Schäfer</li>
+               <li class="nameList">Martin Becker</li>
+               <li class="nameList">Markus Andres</li>
+               <li class="nameList">Tim Kistenfeger</li>
+               <li class="nameList Last">Florian Rohlf</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Efficiently handling system variants is rising of importance in industry and challenges
+                     the application of model-based systems engineering.</p> 
+                  <p>This paper reveals the increasing industrial demand of guidance and decision support
+                     on how to handle variants and variability within SysML and UML models. While a substantial
+                     amount of variability realization approaches has already been published on source
+                     code level, there is little guidance for practitioners on system model level. Hence,
+                     there is major uncertainty in dealing with system changes or concurrent system modeling
+                     of related system. Due to a poor modularization and variability realization these
+                     model variants are ending up in interwoven and complex system models.</p> 
+                  <p>In this paper, we aim to raise awareness of the need for appropriate guidance and
+                     decision support, identify important contextual factors of MBSE that influence variability
+                     realization, and derive well known variability mechanisms used in software coding
+                     for their applicability in system modeling.</p>
+                  	</div>
+            </div>
+            						
+            					
+            <h2>SESSION: AI, machine learning and NLP</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3471152">A machine learning model to classify the feature model maintainability</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Publio Silva</li>
+               <li class="nameList">Carla I. M. Bezerra</li>
+               <li class="nameList Last">Ivan Machado</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Software Product Lines (SPL) are generally specified using a Feature Model (FM), an
+                     artifact designed in the early stages of the SPL development life cycle. This artifact
+                     can quickly become too complex, which makes it challenging to maintain an SPL. Therefore,
+                     it is essential to evaluate the artifact's maintainability continuously. The literature
+                     brings some approaches that evaluate FM maintainability through the aggregation of
+                     maintainability measures. Machine Learning (ML) models can be used to create these
+                     approaches. They can aggregate the values of independent variables into a single target
+                     data, also called a dependent variable. Besides, when using white-box ML models, it
+                     is possible to interpret and explain the ML model results. This work proposes white-box
+                     ML models intending to classify the FM maintainability based on 15 measures. To build
+                     the models, we performed the following steps: (i) we compared two approaches to evaluate
+                     the FM maintainability through a human-based oracle of FM maintainability classifications;
+                     (ii) we used the best approach to pre-classify the ML training dataset; (iii) we generated
+                     three ML models and compared them against classification accuracy, precision, recall,
+                     F1 and AUC-ROC; and, (iv) we used the best model to create a mechanism capable of
+                     providing improvement indicators to domain engineers. The best model used the decision
+                     tree algorithm that obtained accuracy, precision, and recall of 0.81, F1-Score of
+                     0.79, and AUC-ROC of 0.91. Using this model, we could reduce the number of measures
+                     needed to evaluate the FM maintainability from 15 to 9 measures.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3471155">A comparison of performance specialization learning for configurable systems</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Hugo Martin</li>
+               <li class="nameList">Mathieu Acher</li>
+               <li class="nameList">Juliana Alves Pereira</li>
+               <li class="nameList Last">Jean-Marc Jézéquel</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The specialization of the configuration space of a software system has been considered
+                     for targeting specific configuration profiles, usages, deployment scenarios, or hardware
+                     settings. The challenge is to find constraints among options' values that only retain
+                     configurations meeting a performance objective. Since the exponential nature of configurable
+                     systems makes a manual specialization unpractical, several approaches have considered
+                     its automation using machine learning, <em>i.e.</em>, measuring a sample of configurations and then learning what options' values should
+                     be constrained. Even focusing on learning techniques based on decision trees for their
+                     built-in explainability, there is still a wide range of possible approaches that need
+                     to be evaluated, <em>i.e.</em>, how accurate is the specialization with regards to sampling size, performance thresholds,
+                     and kinds of configurable systems. In this paper, we compare six learning techniques:
+                     three variants of decision trees (including a novel algorithm) with and without the
+                     use of model-based feature selection. We first perform a study on 8 configurable systems
+                     considered in previous related works and show that the accuracy reaches more than
+                     90% and that feature selection can improve the results in the majority of cases. We
+                     then perform a study on the Linux kernel and show that these techniques performs as
+                     well as on the other systems. Overall, our results show that there is no one-size-fits-all
+                     learning variant (though high accuracy can be achieved): we present guidelines and
+                     discuss tradeoffs.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3471144">Evaluating recommender systems in feature model configuration</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Mathias Uta</li>
+               <li class="nameList">Alexander Felfernig</li>
+               <li class="nameList">Viet-Man Le</li>
+               <li class="nameList">Andrei Popescu</li>
+               <li class="nameList">Thi Ngoc Trang Tran</li>
+               <li class="nameList Last">Denis Helic</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Configurators can be evaluated in various ways such as <em>efficiency</em> and <em>completeness</em> of solution search, <em>optimality</em> of the proposed solutions, <em>usability</em> of configurator user interfaces, and configuration <em>consistency.</em> Due to the increasing size and complexity of feature models, the integration of recommendation
+                     algorithms with feature model configurators becomes relevant. In this paper, we show
+                     how the output of a recommender system can be evaluated within the scope of feature
+                     model configuration scenarios. Overall, we argue that the discussed ways of measuring
+                     recommendation quality help developers to gain a broader view on evaluation techniques
+                     in constraint-based recommendation domains.</p>
+                  	</div>
+            </div>
+            						
+            					
+            <h2>SESSION: Evolution</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3471148">Incremental construction of modal implication graphs for evolving feature models</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Sebastian Krieter</li>
+               <li class="nameList">Rahel Arens</li>
+               <li class="nameList">Michael Nieke</li>
+               <li class="nameList">Chico Sundermann</li>
+               <li class="nameList">Tobias Heß</li>
+               <li class="nameList">Thomas Thüm</li>
+               <li class="nameList Last">Christoph Seidl</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>A feature model represents a set of variants as configurable features and dependencies
+                     between them. During variant configuration, (de)selection of a feature may entail
+                     that other features must or cannot be selected. A Modal Implication Graph (MIG) enables
+                     efficient decision propagation to perform automatic (de)selection of subsequent features.
+                     In addition, it facilitates other configuration-related activities such as t-wise
+                     sampling. Evolution of a feature model may change its configuration logic, thereby
+                     invalidating an existing MIG and forcing a full recomputation. However, repeated recomputation
+                     of a MIG is expensive, and thus hampers the overall usefulness of MIGs for frequently
+                     evolving feature models. In this paper, we devise a method to incrementally compute
+                     updated MIGs after feature model evolution. We identify expensive steps in the MIG
+                     construction algorithm, enable them for incremental computation, and measure performance
+                     compared to a full rebuild of a complete MIG within the evolution histories of four
+                     real-world feature models. Results show that our incremental method can increase the
+                     speed of MIG construction by orders of magnitude, depending on the given scenario
+                     and extent of evolutionary changes.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3461660">Managing systems evolving in space and time: four challenges for maintenance, evolution and composition of variants</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Gabriela Karoline Michelon</li>
+               <li class="nameList">David Obermann</li>
+               <li class="nameList">Wesley K. G. Assunção</li>
+               <li class="nameList">Lukas Linsbauer</li>
+               <li class="nameList">Paul Grünbacher</li>
+               <li class="nameList Last">Alexander Egyed</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Software companies need to provide a large set of features satisfying functional and
+                     non-functional requirements of diverse customers, thereby leading to <em>variability in space.</em> Feature location techniques have been proposed to support software maintenance and
+                     evolution in space. However, so far only one feature location technique also analyses
+                     the <em>evolution in time</em> of system variants, which is required for feature enhancements and bug fixing. Specifically,
+                     existing tools for managing a set of systems over time do not offer proper support
+                     for keeping track of feature revisions, updating existing variants, and creating new
+                     product configurations based on feature revisions. This paper presents four challenges
+                     concerning such capabilities for feature (revision) location and composition of new
+                     product configurations based on feature/s (revisions). We also provide a benchmark
+                     containing a ground truth and support for computing metrics. We hope that this will
+                     motivate researchers to provide and evaluate tool-supported approaches aiming at managing
+                     systems evolving in space and time. Further, we do not limit the evaluation of techniques
+                     to only this benchmark: we introduce and provide instructions on how to use a benchmark
+                     extractor for generating ground truth data for other systems. We expect that the feature
+                     (revision) location techniques maximize information retrieval in terms of precision,
+                     recall, and F-score, while keeping execution time and memory consumption low.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3473064">ProDSPL: proactive self-adaptation based on dynamic software product lines</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Inmaculada Ayala</li>
+               <li class="nameList">Alessandro V. Papadopoulos</li>
+               <li class="nameList">Mercedes Amor</li>
+               <li class="nameList Last">Lidia Fuentes</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>This is an extended abstract of the article: Inmaculada Ayala, Alessandro V. Papadopoulos,
+                     Mercedes Amor, Lidia Fuentes, ProDSPL: Proactive self-adaptation based on Dynamic
+                     Software Product Lines, Journal of Systems and Software, Volume 175, 2021, 110909,
+                     ISSN 0164-1212, https://doi.org/10.1016/j.jss.2021.110909.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3471141">A proposal for organizing source code variability in the git version control system</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Junior Cupe Casquina</li>
+               <li class="nameList Last">Leonardo Montecchi</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Often, either to expand the target market or to satisfy specific new requirements,
+                     software systems inside a company are cloned, refactored, and customized, generating
+                     new derived software systems. Although this is a practical solution, it is not effective
+                     in the long-term because of the high maintenance costs when maintaining each of these
+                     derived software systems. Software product lines (SPLs) were proposed to reduce these
+                     costs; however, the lack of integration between variability realization mechanisms
+                     and version control systems reduces its attractiveness in the software development
+                     industry, especially in small and medium software companies. In this paper we propose
+                     an approach to integrate the conditional compilation mechanism used to implement the
+                     SPL variabilities and the Git version control system used to manage software versions
+                     in order to increase the attractiveness of the SPLs in the industry. The proposed
+                     solution also could be seen as a method to manage software system families' evolution
+                     in space and time.</p>
+                  	</div>
+            </div>
+            						
+            					
+            <h2>SESSION: Performance</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3471142">On reducing the energy consumption of software product lines</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Édouard Guégain</li>
+               <li class="nameList">Clément Quinton</li>
+               <li class="nameList Last">Romain Rouvoy</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Along the last decade, several studies considered green software design as a key development
+                     concern to improve the energy efficiency of software. Yet, few techniques address
+                     this concern for <em>Software Product Lines</em> (SPL). In this paper, we therefore introduce two approaches to measure and reduce
+                     the energy consumption of a SPL by analyzing a limited set of products sampled from
+                     this SPL. While the first approach relies on the analysis of individual feature consumptions,
+                     the second one takes feature interactions into account to better mitigate energy consumption
+                     of resulting products.</p> 
+                  <p>Our experimental results on a real-world SPL indicate that both approaches succeed
+                     to produce significant energy improvements on a large number of products, while consumption
+                     data was modeled from a small set of sampled products. Furthermore, we show that taking
+                     feature interactions into account leads to more products improved with higher energy
+                     savings per product.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3471149">The interplay of compile-time and run-time options for performance prediction</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Luc Lesoil</li>
+               <li class="nameList">Mathieu Acher</li>
+               <li class="nameList">Xhevahire Térnava</li>
+               <li class="nameList">Arnaud Blouin</li>
+               <li class="nameList Last">Jean-Marc Jézéquel</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Many software projects are configurable through compile-time options (<em>e.g.</em>, using ./configure) and also through run-time options (<em>e.g.</em>, command-line parameters, fed to the software at execution time). Several works have
+                     shown how to predict the effect of run-time options on performance. However it is
+                     yet to be studied how these prediction models behave when the software is built with
+                     different compile-time options. For instance, is the best run-time configuration always
+                     the best w.r.t. the chosen compilation options? In this paper, we investigate the
+                     effect of compile-time options on the performance distributions of 4 software systems.
+                     There are cases where the compiler layer effect is linear which is an opportunity
+                     to generalize performance models or to tune and measure runtime performance at lower
+                     cost. We also prove there can exist an interplay by exhibiting a case where compile-time
+                     options significantly alter the performance distributions of a configurable system.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3473063">Automated model-based performance analysis of software product lines under uncertainty</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Paolo Arcaini</li>
+               <li class="nameList">Omar Inverso</li>
+               <li class="nameList Last">Catia Trubiani</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>In the context of Software Product Lines (SPLs), the <em>performance</em> evaluation of the different products is highly relevant, especially if such products
+                     include a set of features that are subject to uncertainties (e.g., the service time
+                     of a certain functionality may be subject to fluctuations). To this aim, variability
+                     modeling notations have been extended with the capability of assigning to the features
+                     some <em>attributes</em> that are defined over numeric domains (i.e., <em>attributed feature models</em>), possibly subject to lower and upper bounds capturing their uncertainties.</p>
+                  	</div>
+            </div>
+            						
+            					
+            <h2>SESSION: Case studies and benchmarks</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3473062">Empirical software product line engineering: a systematic literature review. an IST journal publication</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Ana Eva Chacón-Luna</li>
+               <li class="nameList">Antonio Manuel Gutiérrez Fernández</li>
+               <li class="nameList">José A. Galindo</li>
+               <li class="nameList Last">David Benavides</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The adoption of Software Product Line Engineering (SPLE) is usually only based on
+                     its theoretical benefits instead of empirical evidences. In fact, there is no work
+                     that synthesizes the empirical studies on SPLE. This makes it difficult for researchers
+                     to base their contributions on previous works validated with an empirical strategy.
+                     The objective of this work is to discover and summarize the studies that have used
+                     empirical evidences in SPLE limited to those ones with the intervention of humans.
+                     This will allow evaluating the quality and knowing the scope of these studies over
+                     time. Doing so, research opportunities can arise. Analyzing the authors and institutions
+                     that investigate SPLE supported by empirical studies will also help to know which
+                     institutions have knowledge of the subject, leading to detect and encourage collaboration
+                     among researches. A systematic literature review was conducted with the focus on those
+                     studies in which there is human intervention and were published between 2000 and 2018
+                     (the systematic literature review was developed in 2019). We considered peer-reviewed
+                     papers from journals and top software engineering conferences. Out of a total of 1880
+                     studies in the initial set, a total of 62 primary studies were selected after applying
+                     a series of inclusion and exclusion criteria. We found that, approximately 56% of
+                     the studies used the empirical case study strategy while the rest used experimental
+                     strategies. Around 86% of the case studies were performed in an industrial environment
+                     showing the penetration of SPLE in industry while 81% of the experiments were conducted
+                     in an academic environment. Around 95.16% of the studies address aspects related to
+                     domain engineering while application engineering received less attention. Most of
+                     the experiments and case study evaluated showed an acceptable level of quality. The
+                     first study found dates from 2005 and since 2008, the interest in the empirical SPLE
+                     has increased.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3473061">The architectural divergence problem in security and privacy of eHealth IoT product
+                  lines</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Oleksandr Tomashchuk</li>
+               <li class="nameList">Dimitri Van Landuyt</li>
+               <li class="nameList Last">Wouter Joosen</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The Internet of Things (IoT) seamlessly becomes integrated into many aspects of daily
+                     life, and in the case of healthcare, it arises in the shape of eHealth IoT systems.
+                     Evidently, the design of such systems must apply best practices when it comes to security
+                     and privacy, in addition to ensuring compliance with various national and international
+                     regulations. When it comes to the required functionality, commonalities and variations
+                     can effectively be managed in a product line approach that involves deriving specific
+                     application architecture variants from a common reference architecture.</p> 
+                  <p>This paper illustrates and discusses a specific problem encountered in the establishment
+                     of a software product-line in this specific context: the adoption of systematic security
+                     and privacy threat modeling and risk assessment approaches introduces a variation
+                     space that is very difficult to capture in a proactive product-line approach. One
+                     of the main causes for this is that threat assessment itself suffers from the problem
+                     of threat explosion, i.e. combinatorial explosions of threats that have to be investigated
+                     and systematically mitigated. The highlighted divergence of the security and privacy
+                     threats across architectural variants is illustrated in the specific case of an industry
+                     IoT-based e-health software product line.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3473058">Variability fault localization: a benchmark</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Kien-Tuan Ngo</li>
+               <li class="nameList">Thu-Trang Nguyen</li>
+               <li class="nameList">Son Nguyen</li>
+               <li class="nameList Last">Hieu Dinh Vo</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Software fault localization is one of the most expensive, tedious, and time-consuming
+                     activities in program debugging. This activity becomes even much more challenging
+                     in Software Product Line (SPL) systems due to the variability of failures in SPL systems.
+                     These unexpected behaviors are caused by variability faults which can only be exposed
+                     under some combinations of system features. Although localizing bugs in non-configurable
+                     code has been investigated in-depth, variability fault localization in SPL systems
+                     still remains mostly unexplored. To approach this challenge, we propose a benchmark
+                     for variability fault localization with a large set of 1,570 buggy versions of six
+                     SPL systems and baseline variability fault localization performance results. Our hope
+                     is to engage the community to propose new and better approaches to the problem of
+                     variability fault localization in SPL systems.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3473065">Spectrum-based feature localization: a case study using ArgoUML</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Gabriela K. Michelon</li>
+               <li class="nameList">Bruno Sotto-Mayor</li>
+               <li class="nameList">Jabier Martinez</li>
+               <li class="nameList">Aitor Arrieta</li>
+               <li class="nameList">Rui Abreu</li>
+               <li class="nameList Last">Wesley K. G. Assunção</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Feature localization (FL) is a basic activity in re-engineering legacy systems into
+                     software product lines. In this work, we explore the use of the Spectrum-based localization
+                     technique for this task. This technique is traditionally used for fault localization
+                     but with practical applications in other tasks like the dynamic FL approach that we
+                     propose. The ArgoUML SPL benchmark is used as a case study and we compare it with
+                     a previous hybrid (static and dynamic) approach from which we reuse the manual and
+                     testing execution traces of the features. We conclude that it is feasible and sound
+                     to use the Spectrum-based approach providing promising results in the benchmark metrics.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3474452">On the scalability of building binary decision diagrams for current feature models</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Tobias Heß</li>
+               <li class="nameList">Chico Sundermann</li>
+               <li class="nameList Last">Thomas Thüm</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Binary decision diagrams (BDD) have been proposed for numerous product-line analyses.
+                     These analyses typically exploit properties unique to decision diagrams, such as negation
+                     in constant time and space. Furthermore, the existence of a BDD representing the configuration
+                     space of a product line removes the need to employ SAT or #SAT solvers for their analysis.
+                     Recent work has shown that the performance of state-of-the-art BDD libraries is significantly
+                     lower than previously reported and hypothesized. In this work, we provide an assessment
+                     of the state-of-the-art of BDD scalability in this domain and explain why previous
+                     results on the scalability of BDDs do not apply to more recent product-line instances.</p>
+                  	</div>
+            </div>
+            						
+            					
+            <h2>SESSION: Community efforts, surveys, reviews</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3471145">Yet another textual variability language?: a community effort towards a unified language</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Chico Sundermann</li>
+               <li class="nameList">Kevin Feichtinger</li>
+               <li class="nameList">Dominik Engelhardt</li>
+               <li class="nameList">Rick Rabiser</li>
+               <li class="nameList Last">Thomas Thüm</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Variability models are commonly used to model commonalities and variability in a product
+                     line. There is a large variety of textual formats to represent and store variability
+                     models. This variety causes overhead to researchers and practitioners as they frequently
+                     need to translate models. The MODEVAR initiative consists of dozens of researchers
+                     and aims to find a unified language for variability modeling. In this work, we describe
+                     the cooperative development of a textual variability language. We evaluate preferences
+                     of the community regarding properties of existing formats and applications for an
+                     initial design of a unified variability language. Then, we examine the acceptance
+                     of the community for our proposal. The results indicate that our proposal is a promising
+                     start towards a unified variability language instead of <em>yet another language.</em> We envision that the community applies our language proposal in teaching, research
+                     prototypes, and industrial applications to further evolve the design and then ultimately
+                     reach a unified language.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3471147">Safety, security, and configurable software systems: a systematic mapping study</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Andy Kenner</li>
+               <li class="nameList">Richard May</li>
+               <li class="nameList">Jacob Krüger</li>
+               <li class="nameList">Gunter Saake</li>
+               <li class="nameList Last">Thomas Leich</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Safety and security are important properties of any software system, particularly
+                     in safety-critical domains, such as embedded, automotive, or cyber-physical systems.
+                     Moreover, particularly those domains also employ highly-configurable systems to customize
+                     variants, for example, to different customer requirements or regulations. Unfortunately,
+                     we are missing an overview understanding of what research has been conducted on the
+                     intersection of safety and security with configurable systems. To address this gap,
+                     we conducted a systematic mapping study based on an automated search, covering ten
+                     years (2011--2020) and 65 relevant (out of 367) publications. We classified each publication
+                     based on established security and safety concerns (e.g., CIA triad) as well as the
+                     connection to configurable systems (e.g., ensuring security of such a system). In
+                     the end, we found that considerably more research has been conducted on safety concerns,
+                     but both properties seem under-explored in the context of configurable systems. Moreover,
+                     existing research focuses on two directions: Ensuring safety and security properties
+                     in product-line engineering; and applying product-line techniques to ensure safety
+                     and security properties. Our mapping study provides an overview of the current state-of-the-art
+                     as well as open issues, helping practitioners identify existing solutions and researchers
+                     define directions for future research.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3471151">Capturing the diversity of analyses on the Linux kernel variability</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Johann Mortara</li>
+               <li class="nameList Last">Philippe Collet</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>As its variability management architecture is complex, the Linux kernel is a constant
+                     subject of study for analyzing different aspects of its variability. It relies on
+                     a configuration-aware build system, preprocessor directives in the code, and a configuration
+                     tool. While many studies have focused on detecting anomalies within these parts or
+                     between them, all concepts and denominations are different among contributions, with
+                     similar properties devised with varied formalisms, or with no easy relationship between
+                     them. This actually hampers the understanding of all variability issues and proposed
+                     analyses, as well as their application to other highly configurable systems. In this
+                     paper, we analyse the different properties that have been studied on the variability
+                     of the kernel and propose a formalism based on the generic concepts of configurator
+                     and derivator. We instantiate them to represent the Kconfig, the Kbuild, and CPP in
+                     a unified model that enables to represent all the consistency properties. With this
+                     model, we manage to categorize the main related studies, establishing their coverage
+                     on the defined properties, showing also overlapping and divergences between studies.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3473059">20 years of industrial experience at SPLC: a systematic mapping study</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Maider Azanza</li>
+               <li class="nameList">Leticia Montalvillo</li>
+               <li class="nameList Last">Oscar Díaz</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Software Product Lines (SPLs) have been around since the late 1970s and have established
+                     themselves as a way to deal with product variability. Tens of companies around the
+                     globe can pay testament to their advantages. Practitioners, however, have lamented
+                     the lack of data on other practitioners' experiences that would help them in the SPL
+                     journey. This work intends to analyze the application of SPLs in industry in the last
+                     20 years. We departed from 194 industrial studies that were published at the Software
+                     Product Line Conference, the premier venue for SPL research. After the filtering process
+                     we selected 66 primary studies, from 43 different companies and 15 countries. The
+                     studies were classified to answer three research questions: <em>(i)</em> which <em>contexts</em> have SPLs been applied in?, <em>(ii)</em> what <em>phenomena</em> have been reported? and, <em>(iii)</em> what <em>evidences</em> have been collected in terms of obtained benefits, encountered issues and lessons
+                     learned? Regarding the <em>context</em>, SPLs have mainly been reported in USA and Germany (50%) and are used to develop
+                     embedded systems (76%). The most cited reason to adopt SPLs is the need to increase
+                     product variants (42.42%). As for the <em>phenomena</em>, the most reported problem area is adoption (39.39%). Last, as for <em>evidences</em> the most cited benefit is a cost reduction (53.03%), the issue is evolution (13.13%)
+                     and the learned lesson is that architecture is essential (24.24%). We believe the
+                     findings will be of interest to the community as a whole in quest to bridge the gap
+                     between industry and academia while balancing rigor, authenticity and relevance.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3474301">Bridging the gap: voices from industry and research on industrial relevance of SPLC</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Klaus Schmid</li>
+               <li class="nameList">Rick Rabiser</li>
+               <li class="nameList">Martin Becker</li>
+               <li class="nameList">Goetz Botterweck</li>
+               <li class="nameList">Matthias Galster</li>
+               <li class="nameList">Iris Groher</li>
+               <li class="nameList Last">Danny Weyns</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Product line engineering emerged from a fruitful interaction of applied research in
+                     academia, industry research, and software engineering practice. SPLC was created as
+                     the primary venue to exchange ideas on this emerging topic and integrate the communities.
+                     Yet, today, SPLC is mostly regarded as an academic conference with little industry
+                     participation. Since a strong integration of academia and industry is often seen positive,
+                     here, we try to better understand motivations for practitioners to visit academic
+                     conferences like SPLC and the impact this has on such conferences. This analysis is
+                     based on nine systematic interviews with practitioners and researchers, who have been
+                     members of the SPLC community and other leading software engineering communities for
+                     a long time. Our preliminary results clarify the relevance and interest of practitioners
+                     and researchers to exchange knowledge and learn when attending scientific software
+                     engineering conferences such as SPLC. Yet, the results also highlight the differences
+                     between the goals of industry and academic conference participants, which often lead
+                     to inefficiencies and even barriers for constructive interaction at scientific conferences
+                     such as SPLC. We use this as a basis for pointing out further discussion points, both
+                     from the perspective of the interviewees as well as the authors.</p>
+                  	</div>
+            </div>
+            						
+            					
+            <h2>SESSION: Sampling, variability analysis and visualization</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3471146">Monte Carlo tree search for feature model analyses: a general framework for decision-making</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Jose-Miguel Horcas</li>
+               <li class="nameList">José A. Galindo</li>
+               <li class="nameList">Ruben Heradio</li>
+               <li class="nameList">David Fernandez-Amoros</li>
+               <li class="nameList Last">David Benavides</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The colossal solution spaces of most configurable systems make intractable their exhaustive
+                     exploration. Accordingly, relevant analyses remain open research problems. There exist
+                     analyses alternatives such as SAT solving or constraint programming. However, none
+                     of them have explored simulation-based methods. Monte Carlo-based decision making
+                     is a simulation-based method for dealing with colossal solution spaces using randomness.
+                     This paper proposes a conceptual framework that tackles various of those analyses
+                     using Monte Carlo methods, which have proven to succeed in vast search spaces (<em>e.g.</em>, game theory). Our general framework is described formally, and its flexibility to
+                     cope with a diversity of analysis problems is discussed (<em>e.g.</em>, finding defective configurations, feature model reverse engineering or getting optimal
+                     performance configurations). Additionally, we present a Python implementation of the
+                     framework that shows the feasibility of our proposal. With this contribution, we envision
+                     that different problems can be addressed using Monte Carlo simulations and that our
+                     framework can be used to advance the state of the art a step forward.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3471154">FeatureVista: interactive feature visualization</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Alexandre Bergel</li>
+               <li class="nameList">Razan Ghzouli</li>
+               <li class="nameList">Thorsten Berger</li>
+               <li class="nameList Last">Michel R. V. Chaudron</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Comprehending and characterizing the spread and interaction of features in a software
+                     system is know to be difficult and error-prone. This paper presents <em>FeatureVista</em>, a lightweight tool providing interactive, glyph-based, and iconic visualization
+                     concepts designed to visually characterize the feature locations in software assets
+                     (source code). FeatureVista supports navigating between software components and features
+                     in an equal fashion. Our pilot study indicates that FeatureVista is intuitive and
+                     supports comprehending features. It helps to precisely characterize relations among
+                     features in large software systems and to contrast explicit software component definitions
+                     (e.g., package, class, method) with annotated feature portions---which so far was
+                     a largely manual and error-prone activity, albeit essential to get an adequate understanding
+                     of a software system. We suggest research directions for true, feature-oriented interfaces
+                     that can be used to manage software assets.</p>
+                  	</div>
+            </div>
+            						
+            					
+            <h2>WORKSHOP SESSION: Workshops</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3475157">International Workshop on Variability Management for Modern Technologies (VM4ModernTech
+                  2021)</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Wesley K. G. Assunção</li>
+               <li class="nameList">Inmaculada Ayala</li>
+               <li class="nameList">Jacob Krüger</li>
+               <li class="nameList Last">Sébastien Mosser</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Variability is an inherent property of software systems that allows developers to
+                     deal with the needs of different customers and environments, creating a family of
+                     related systems. Variability can be managed in an opportunistic fashion, for example,
+                     using clone-and-own, or by employing a systematic approach, for instance, using a
+                     software product line (SPL). In the SPL community, variability management has been
+                     discussed for systems in various domains, such as defense, avionics, or finance, and
+                     for different platforms, such as desktops, web applications, or embedded systems.
+                     Unfortunately, other research communities---particularly those working on modern technologies,
+                     such as microservice architectures, cyber-physical systems, robotics, cloud computing,
+                     autonomous driving, or ML/AI-based systems---are less aware of the state-of-the-art
+                     in variability management, which is why they face similar problems and start to redeveloped
+                     the same solutions as the SPL community already did. With the <em>International Workshop on Variability Management for Modern Technologies</em>, we aim to foster and strengthen synergies between the communities researching variability
+                     management and modern technologies. More precisely, we aim to attract researchers
+                     and practitioners to contribute processes, techniques, tools, empirical studies, and
+                     problem descriptions or solutions that are related to reuse and variability management
+                     for modern technologies. By inviting different communities and establishing collaborations
+                     between them, we hope that the workshop can raise the interest of researchers outside
+                     the SPL community for variability management, and thus reduce the extent of costly
+                     redevelopments in research.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3473054">REVE 2021: 9th International Workshop on Reverse Variability Engineering</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Wesley K. G. Assunção</li>
+               <li class="nameList">Roberto E. Lopez-Herrejon</li>
+               <li class="nameList">Tewfik Ziadi</li>
+               <li class="nameList Last">Jabier Martinez</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Software Product Line (SPL) migration remains a challenging endeavour. From organizational
+                     issues to purely technical challenges, there is a wide range of barriers that complicates
+                     SPL adoption. This workshop aims to foster research about making the most of the two
+                     main inputs for SPL migration: 1) domain knowledge and 2) legacy assets. Domain knowledge,
+                     usually implicit and spread across an organization, is key to define the SPL scope
+                     and to validate the variability model and its semantics. At the technical level, domain
+                     expertise is also needed to create or extract the reusable software components. Legacy
+                     assets can be, for instance, similar product variants (e.g., requirements, models,
+                     source code, etc.) that were implemented using ad-hoc reuse techniques such as clone-and-own.
+                     More generally, the workshop REverse Variability Engineering attracts researchers
+                     and practitioners contributing to processes, techniques, tools, or empirical studies
+                     related to the automatic, semi-automatic or manual extraction or refinement of SPL
+                     assets.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3473055">Fourth International Workshop on Variability and Evolution of Software-Intensive Systems
+                  (VariVolution 2021)</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Lea Gerling</li>
+               <li class="nameList">Sandra Greiner</li>
+               <li class="nameList">Kristof Meixner</li>
+               <li class="nameList Last">Gabriela Karoline Michelon</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Software versions resulting from evolution in time (revisions) and space (variants)
+                     are still separately managed instead of being treated uniformly. Recently, several
+                     research activities have focused on the integrated management of evolution and variability.
+                     Existing approaches stem from multiple origins, most notably from the fields of software
+                     configuration management and software product line engineering. For instance, variation
+                     control systems adopt a holistic view on software evolution in time and space with
+                     the ultimate goal of systematically managing software revisions and variants. <em>VariVolution</em> (the 4th International Workshop on Variability and Evolution of Software-Intensive
+                     Systems) aims at bringing together active researchers studying software evolution
+                     and variability from different angles as well as practitioners who encounter these
+                     phenomena in real-world applications and systems. The workshop offers a platform for
+                     exchanging new ideas and fostering future research collaborations and synergies.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3473056">Fourth International Workshop on Languages for Modelling Variability (MODEVAR@SPLC
+                  2021)</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Thomas Thüm</li>
+               <li class="nameList">Philippe Collet</li>
+               <li class="nameList Last">Mathieu Acher</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Feature models were invented in 1990 and have been recognised as one of the main contributions
+                     to the Software Product Line community. Although there have been several attempts
+                     to establish and study a sort of standard variability modelling language, there is
+                     still no consensus on a simple feature modelling language. There can be many motivations
+                     to have one but among others, there is one that is very important: information sharing
+                     among researchers, tools or developers. Following the spirit of the first three editions,
+                     this workshop is an interactive event where all participants shall share knowledge,
+                     but also ongoing realizations about how to build up a simple feature modelling language
+                     that all the community can agree on.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3473057">Fourth International Workshop on Experiences and Empirical Studies on Software Reuse
+                  (WEESR 2021)</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Jaime Chavarriaga</li>
+               <li class="nameList Last">Julio Ariel Hurtado</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>In the <em>Workshop on Experiences and Empirical Studies on Software Reuse (WEESR)</em> researchers and practitioners discusses in-progress research regarding experiences
+                     and empirical studies applying reuse techniques in non-academic environments. The
+                     fourth edition of this workshop, the WEESR 2021, was co-located with the 25th International
+                     Systems and Software Product Line Conference (SPLC'21). There, attendants discussed
+                     a original paper and a journal-first paper presenting empirical studies regarding
+                     variability models for real cyber-physical products and the software product line
+                     practices in large companies.</p>
+                  	</div>
+            </div>
+            						
+            					
+            <h2>TUTORIAL SESSION: Tutorials</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3472728">Describing variability with domain-specific languages and models</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Juha-Pekka Tolvanen</li>
+               <li class="nameList Last">Steven Kelly</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>This tutorial will teach participants about domain-specific languages and models,
+                     where they can best be used (and where not), and how to apply them effectively to
+                     improve the speed and quality of product development within a product line.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3472733">How I met your implemented variability: identification in object-oriented systems with symfinder</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Johann Mortara</li>
+               <li class="nameList Last">Philippe Collet</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Variability-rich object-oriented systems are often not organized as fully-fledged
+                     software product lines, and implement their variability in a single code base using
+                     the mechanisms provided by the supporting language (<em>e.g.</em>, inheritance overloading, design patterns). This makes variability identification
+                     and management very difficult. In this half-day tutorial open to both academics and
+                     industrials, we present how the <em>symfinder</em> toolchain can help one to better understand how variability is implemented in a single
+                     codebase Java system, relying solely on a specific code analysis and an adapted visualization.
+                     After presenting the underlying concepts on which <em>symfinder</em> is based (<em>i.e.</em>, symmetries in code, density), the participants will be able to use the toolchain
+                     and visualize the potential variation points and variants identified by <em>symfinder</em> in their own projects or in provided large-scale open-source projects.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3472734">PRICES: towards web-based product lines generator</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Maya R. A. Setyautami</li>
+               <li class="nameList">Hafiyyan Sayyid Fadhlillah</li>
+               <li class="nameList Last">Ade Azurat</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Precise Requirement Changes Integrated System (PRICES) is a framework to develop a
+                     web-based product line. PRICES is designed based on model-driven engineering and delta-oriented
+                     programming. The goal of this tutorial is to introduce how PRICES can be used to model
+                     the problem domain and generate a running web application. The tutorial is planned
+                     to be conducted in a half-day. A combination of lecture and hands-on training will
+                     be provided. In addition, we will demonstrate a possibility of a semi-automatic approach
+                     to generate a web application using SPLE. Participants can try to develop a new variation
+                     and generate an application using a running case study.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3472729">Requirements-driven reuse recommendation</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Muhammad Abbas</li>
+               <li class="nameList">Mehrdad Saadatmand</li>
+               <li class="nameList Last">Eduard Paul Enoiu</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>This tutorial explores requirements-based reuse recommendation for product line assets
+                     in the context of clone-and-own product lines.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3472730">Reuse for mass personalisation through feature models and similarities</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Mike Mannion</li>
+               <li class="nameList Last">Hermann Kaindl</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>This tutorial explores the impact of the socio-economic trends of customization and
+                     personalization on software reuse and describes a product similarity evaluation process
+                     to support the management of a product line.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3472731">Variability realization in UML/SysML models</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Martin Becker</li>
+               <li class="nameList Last">Andreas Schäfer</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Motivated by experiences from different industrial settings, the tutorial reveals
+                     the increasing need for guidance and decision support on how to handle variants and
+                     variability in SysML and UML models. While a substantial amount of variability realization
+                     approaches has already been discussed on the level of source code, there is little
+                     guidance for practitioners on the model level. With this, there is major uncertainty
+                     in dealing with concurrent changes and parallel modeling of similar system variants</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461001.3472732">Static analysis and family-based model checking with VMC</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Maurice H. ter Beek</li>
+               <li class="nameList">Franco Mazzanti</li>
+               <li class="nameList">Ferruccio Damiani</li>
+               <li class="nameList">Luca Paolini</li>
+               <li class="nameList">Giordano Scarso</li>
+               <li class="nameList Last">Michael Lienhardt</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>VMC is a research tool for model checking variability-rich behavioural models specified
+                     as a modal transition system (MTS) with variability constraints (MTS<sub><em>u</em></sub>). In this tutorial, we introduce a tool chain built on VMC that allows to perform
+                     an efficient kind of family-based model checking in absence of deadlocks. It accepts
+                     as input either an MTS<sub><em>u</em></sub> or a featured transition system (FTS).</p>
+                  	</div>
+            </div>
+            						
+            					</div>
+      </div>
+   </body>
+</html>

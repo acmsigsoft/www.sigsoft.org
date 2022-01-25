@@ -1,0 +1,717 @@
+<html xmlns:bkstg="http://www.atypon.com/backstage-ns" xmlns:urlutil="java:com.atypon.literatum.customization.UrlUtil" xmlns:pxje="java:com.atypon.frontend.services.impl.PassportXslJavaExtentions">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="Content-Style-Type" content="text/css">
+      <style type="text/css">
+            #DLtoc {
+            font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+            }
+
+            #DLheader {
+            }
+            #DLheader h1 {
+            font-size:16px;
+            }
+
+            #DLcontent {
+            font-size:12px;
+            }
+            #DLcontent h2 {
+            font-size:14px;
+            margin-bottom:5px;
+            }
+            #DLcontent h3 {
+            font-size:12px;
+            padding-left:20px;
+            margin-bottom:0px;
+            }
+
+            #DLcontent ul{
+            margin-top:0px;
+            margin-bottom:0px;
+            }
+
+            .DLauthors li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLauthors li:after{
+            content:",";
+            }
+            .DLauthors li.nameList.Last:after{
+            content:"";
+            }
+
+            .DLabstract {
+            padding-left:40px;
+            padding-right:20px;
+            display:block;
+            }
+
+            .DLformats li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLformats li:after{
+            content:",";
+            }
+            .DLformats li.formatList.Last:after{
+            content:"";
+            }
+
+            .DLlogo {
+            vertical-align:middle;
+            padding-right:5px;
+            border:none;
+            }
+
+            .DLcitLink {
+            margin-left:20px;
+            }
+
+            .DLtitleLink {
+            margin-left:20px;
+            }
+
+            .DLotherLink {
+            margin-left:0px;
+            }
+
+        </style>
+      <title>SPLC '21: Proceedings of the 25th ACM International Systems and Software Product Line Conference - Volume B</title>
+   </head>
+   <body>
+      <div id="DLtoc">
+         <div id="DLheader">
+            <h1>SPLC '21: Proceedings of the 25th ACM International Systems and Software Product Line Conference
+               - Volume B</h1><a class="DLcitLink" title="Go to the ACM Digital Library for additional information about this proceeding" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/proceedings/10.1145/3461002"><img class="DLlogo" alt="Digital Library logo" height="30" src="https://dl.acm.org/specs/products/acm/releasedAssets/images/footer-logo1.png">
+               Full Citation in the ACM Digital Library
+               </a></div>
+         <div id="DLcontent">
+            <h2>SESSION: Doctoral symposium</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461002.3473066">LIFTS: learning featured transition systems</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList Last">Sophie Fortz</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>This PhD project aims to automatically learn transition systems capturing the behaviour
+                     of a whole family of software-based systems. Reasoning at the family level yields
+                     important economies of scale and quality improvements for a broad range of systems
+                     such as software product lines, adaptive and configurable systems. Yet, to fully benefit
+                     from the above advantages, a model of the system family's behaviour is necessary.
+                     Such a model is often prohibitively expensive to create manually due to the number
+                     of variants. For large long-lived systems with outdated specifications or for systems
+                     that continuously adapt, the modelling cost is even higher. Therefore, this PhD proposes
+                     to automate the learning of such models from existing artefacts. To advance research
+                     at a fundamental level, our learning target are Featured Transition Systems (FTS),
+                     an abstract formalism that can be used to provide a pivot semantics to a range of
+                     variability-aware state-based modelling languages. The main research questions addressed
+                     by this PhD project are: (1) Can we learn variability-aware models efficiently? (2)
+                     Can we learn FTS in a black-box fashion? (<em>i.e.</em>, with access to execution logs but not to source code); (3) Can we learn FTS in a
+                     white/grey-box testing fashion? (<em>i.e.</em>, with access to source code); and (4) How do the proposed techniques scale in practice?</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461002.3473067">Consistent management of variability in space and time</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList Last">Sofia Ananieva</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Development and maintenance of software-intensive systems face major challenges. To
+                     cope with an increasing demand for customization, systems need to exist in concurrent
+                     variations at a single point in time (i.e., variability in space). Furthermore, as
+                     longevity of systems increases, it is necessary to continuously maintain sequential
+                     variations due to evolution (i.e., variability in time). Finally, systems are often
+                     built from different kinds of artifacts, such as source code or diagrams, that need
+                     to be kept consistent. Managing these challenges - the evolution of variable systems
+                     composed of heterogeneous artifacts in a consistent and integrated way - is highly
+                     demanding for engineers. To tackle the described challenges, we propose an approach
+                     for consistent, view-based management of variability in space and time. Therefore,
+                     we study, identify, and unify concepts and operations of approaches and tools dealing
+                     with variability in space and time to provide a common ground for comparing existing
+                     work and encouraging novel solutions. Furthermore, we identify consistency preservation
+                     challenges related to view-based evolution of variable systems composed of heterogeneous
+                     artifacts, such as the consistent propagation of changes between products, and across
+                     the different types of artifacts. We provide a technique for (semi-)automated detection
+                     and repair of variability-related inconsistencies. The goal of this doctoral work
+                     is to develop an integrated solution for dealing with the described challenges and,
+                     thus, advance state of the art towards uniform management of variability in space
+                     and time.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461002.3473068">STARS: software technology for adaptable and reusable systems</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList Last">Edilton Lima dos Santos</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Dynamic Software Product Lines (DSPLs) engineering implements self-adaptive systems
+                     by dynamically binding or unbinding features at runtime according to a feature model.
+                     However, these features may interact in unexpected and undesired ways leading to critical
+                     consequences for the DSPL. Moreover, (re)configurations may negatively affect the
+                     runtime system's architectural qualities, manifesting architectural bad smells. These
+                     issues are challenging to detect due to the combinatorial explosion of the number
+                     of interactions amongst features. As some of them may appear at runtime, we need a
+                     runtime approach to their analysis and mitigation. This thesis introduces the Behavioral
+                     Map (BM) formalism that captures information from different sources (feature model,
+                     code) to automatically detect these issues. We provide behavioral map inference algorithms.
+                     Using the Smart Home Environment (SHE) as a case study, we describe how a BM is helpful
+                     to identify critical feature interactions and architectural smells. Our preliminary
+                     results already show promising progress for both feature interactions and architectural
+                     bad smells identification at runtime.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461002.3473069">A flexible approach for transforming variability models</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList Last">Kevin Feichtinger</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>In software product lines, engineers use variability models to explicitly represent
+                     commonalities and variability. A plethora of variability modeling approaches have
+                     been proposed in the last 30 years, and there is no standard variability modeling
+                     approach the community agrees on. Well-known approaches such as feature modeling or
+                     decision modeling exist in many different variants, most of which have been shown
+                     to be useful for at least one specific use case. Due to this variety of approaches
+                     researchers and practitioners alike struggle to find, understand, and eventually pick
+                     the right approach for a specific context or (set of) system(s). Practitioners in
+                     industry often develop custom solutions to manage the variability of various artifacts,
+                     like requirements documents or design spreadsheets. In this paper, we report on our
+                     ongoing research towards developing a framework for (semi-)automatically transforming
+                     variability models. Our approach supports researchers and practitioners experimenting
+                     with and comparing different variability modeling approaches and switching from one
+                     modeling approach to another. We present the research questions guiding our research
+                     and discuss the current status of our work as well as future work.</p>
+                  	</div>
+            </div>
+            						
+            					
+            <h2>DEMONSTRATION SESSION: Demonstrations and tools</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461002.3473071">Static analysis and family-based model checking of featured transition systems with
+                  VMC</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Maurice H. ter Beek</li>
+               <li class="nameList">Franco Mazzanti</li>
+               <li class="nameList">Ferruccio Damiani</li>
+               <li class="nameList">Luca Paolini</li>
+               <li class="nameList">Giordano Scarso</li>
+               <li class="nameList">Michele Valfrè</li>
+               <li class="nameList Last">Michael Lienhardt</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>A Featured Transition System (FTS) is a formalism for modeling variability in configurable
+                     system behavior. The behavior of all variants (products) is modeled in a single compact
+                     FTS by associating the possibility to perform an action and transition from one state
+                     to another with feature expressions that condition the execution of an action in specific
+                     variants. We present a front-end for the research tool VMC. The resulting toolchain
+                     allows a modeler to analyze an FTS for ambiguities (dead or false optional transitions
+                     and hidden deadlock states), transform an ambiguous FTS into an unambiguous one, and
+                     perform an efficient kind of family-based verification of an FTS without hidden deadlock
+                     states. We use benchmarks from the literature to demonstrate the novelties offered
+                     by the toolchain.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461002.3473072">HAnS: IDE-based editing support for embedded feature annotations</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Johan Martinson</li>
+               <li class="nameList">Herman Jansson</li>
+               <li class="nameList">Mukelabai Mukelabai</li>
+               <li class="nameList">Thorsten Berger</li>
+               <li class="nameList">Alexandre Bergel</li>
+               <li class="nameList Last">Truong Ho-Quang</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>When developers maintain or evolve software, they often need to know the locations
+                     of features. This proves challenging when the feature locations are not documented,
+                     when the code was written by different developers who may have left the organization,
+                     or when the developer's memory of the implementation has faded. Automated feature
+                     location techniques are hard to adopt in practice, especially since they boast too
+                     many false positives. To address these challenges, embedded feature annotations have
+                     been proposed to allow developers to <em>trace</em> features in code during development with minimal effort. However, tool support is
+                     needed for developers to effectively record and use these annotations. We propose
+                     HAnS as a tool to meet this need; it is implemented as an IntelliJ IDE plugin to support
+                     developers seamlessly record feature locations while they write their code. HAnS supports
+                     developers when mapping features to software assets, such as files and code fragments,
+                     with code completion and syntax highlighting. It also provides functionality to browse
+                     feature definitions and locations, as well as refactor features. A demo video is available
+                     at https://youtu.be/cx_-ZshHLgA.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461002.3473074">A spaCy-based tool for extracting variability from NL requirements</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Alessandro Fantechi</li>
+               <li class="nameList">Stefania Gnesi</li>
+               <li class="nameList">Samuele Livi</li>
+               <li class="nameList Last">Laura Semini</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>In previous work, we have shown that ambiguity detection in requirements can also
+                     be used as a way to capture latent aspects of variability. Natural Language Processing
+                     (NLP) tools have been used for a lexical analysis aimed at ambiguity indicators detection,
+                     and we have studied the necessary adaptations to those tools for pointing at potential
+                     variability, essentially by adding specific dictionaries for variability. We have
+                     identified also some syntactic rules able to detect potential variability, such as
+                     disjunction between nouns or pairs of indicators in a subordinate proposition. This
+                     paper describes a new prototype NLP tool, based on the spaCy library, specifically
+                     designed to detect variability. The prototype is shown to preserve the same recall
+                     exhibited by previously used lexical tools, with a higher precision.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461002.3473070">BURST: a benchmarking platform for uniform random sampling techniques</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Mathieu Acher</li>
+               <li class="nameList">Gilles Perrouin</li>
+               <li class="nameList Last">Maxime Cordy</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>We present BURST, a benchmarking platform for uniform random sampling techniques.
+                     With BURST, researchers have a flexible, controlled environment in which they can
+                     evaluate the scalability and uniformity of their sampling. BURST comes with an extensive
+                     --- and extensible --- benchmark dataset comprising 128 feature models, including
+                     challenging, real-world models of the Linux kernel. BURST takes as inputs a sampling
+                     tool, a set of feature models and a sampling budget. It automatically translates any
+                     feature model of the set in DIMACS and invokes the sampling tool to generate the budgeted
+                     number of samples. To evaluate the scalability of the sampling tool, BURST measures
+                     the time the tool needs to produce the requested sample. To evaluate the uniformity
+                     of the produced sample, BURST integrates the state-of-the-art and proven statistical
+                     test Barbarik. We envision BURST to become the starting point of a standardisation
+                     initiative of sampling tool evaluation. Given the huge interest of research for sampling
+                     algorithms and tools, this initiative would have the potential to reach and crosscut
+                     multiple research communities including AI, ML, SAT and SPL.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461002.3473073">AutoSMP: an evaluation platform for sampling algorithms</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Tobias Pett</li>
+               <li class="nameList">Sebastian Krieter</li>
+               <li class="nameList">Thomas Thüm</li>
+               <li class="nameList">Malte Lochau</li>
+               <li class="nameList Last">Ina Schaefer</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Testing configurable systems is a challenging task due to the combinatorial explosion
+                     problem. Sampling is a promising approach to reduce the testing effort for product-based
+                     systems by finding a small but still representative subset (i.e., a sample) of all
+                     configurations for testing. The quality of a generated sample wrt. evaluation criteria
+                     such as run time of sample generation, feature coverage, sample size, and sampling
+                     stability depends on the subject systems and the sampling algorithm. Choosing the
+                     right sampling algorithm for practical applications is challenging because each sampling
+                     algorithm fulfills the evaluation criteria to a different degree. Researchers keep
+                     developing new sampling algorithms with improved performance or unique properties
+                     to satisfy application-specific requirements. Comparing sampling algorithms is therefore
+                     a necessary task for researchers. However, this task needs a lot of effort because
+                     of missing accessibility of existing algorithm implementations and benchmarks. Our
+                     platform <em>AutoSMP</em> eases practitioners and researchers lifes by automatically executing sampling algorithms
+                     on predefined benchmarks and evaluating the sampling results wrt. specific user requirements.
+                     In this paper, we introduce the open-source application of <em>AutoSMP</em> and a set of predefined benchmarks as well as a set of T-wise sampling algorithms
+                     as examples.</p>
+                  	</div>
+            </div>
+            						
+            					
+            <h2>WORKSHOP SESSION: VM4ModernTech 2021: International workshop on variability management for modern technologies</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461002.3473942">Automated derivation of variants in manufacturing systems design</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Gökhan Kahraman</li>
+               <li class="nameList Last">Loek Cleophas</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The Logistics Specification and Analysis Tool (LSAT) is a modelbased engineering tool
+                     used for design-space exploration of flexible manufacturing systems. LSAT provides
+                     domain specific languages to model a manufacturing system and means to analyze the
+                     productivity characteristics of such a system. In LSAT, developers can specify a system
+                     and model its deterministic operations as a set of activities. Given a set of activities,
+                     it is possible to construct an individual activity sequence that represents one valid
+                     system execution, and with minor variations in the specification individual systems
+                     can be obtained. To avoid modeling each variant separately, which means cloning and
+                     maintaining the common parts, new functionality is needed to deal with the variability
+                     of system specifications. In this study, we aim to establish integration between LSAT
+                     and product line engineering techniques. Specifically, we provide a realization of
+                     a toolchain including variability representation of LSAT realization artifacts and
+                     automated variant derivation for the LSAT model variants. Delta modeling, a transformational
+                     variability realization mechanism, is employed to model the variability within LSAT
+                     realization artifacts. Using the toolchain, we develop an industry-related case for
+                     a product line, the so called Extended Twilight System, a Cyber Physical System (CPS)
+                     inspired by the CPSs of our industrial partner.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461002.3473944">Transfer learning for multiobjective optimization algorithms supporting dynamic software
+                  product lines</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Joaquín Ballesteros</li>
+               <li class="nameList Last">Lidia Fuentes</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Dynamic Software Product Lines (DSPLs) are a well-accepted approach for self-adapting
+                     Cyber-Physical Systems (CPSs) at run-time. The DSPL approaches make decisions supported
+                     by performance models, which capture system features' contribution to one or more
+                     optimization goals. Combining performance models with Multi-Objectives Evolutionary
+                     Algorithms (MOEAs) as decision-making mechanisms is common in DSPLs. However, MOEAs
+                     algorithms start solving the optimization problem from a randomly selected population,
+                     not finding good configurations fast enough after a context change, requiring too
+                     many resources so scarce in CPSs. Also, the DSPL engineer must deal with the hardware
+                     and software particularities of the target platform in each CPS deployment. And although
+                     each system instantiation has to solve a similar optimization problem of the DSPL,
+                     it does not take advantage of experiences gained in similar CPS. Transfer learning
+                     aims at improving the efficiency of systems by sharing the previously acquired knowledge
+                     and applying it to similar systems. In this work, we analyze the benefits of transfer
+                     learning in the context of DSPL and MOEAs testing on 8 feature models with synthetic
+                     performance models. Results are good enough, showing that transfer learning solutions
+                     dominate up to 71% of the non-transfer learning ones for similar DSPL.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461002.3473947">Product-lining the elinvar wealthtech microservice platform</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList Last">Marcus Pinnecke</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Software product lining is the act of providing different but related software products
+                     under the same brand, known as a <em>software product line</em> (SPL). As engineering, management and validation of SPLs is far from trivial, special
+                     solutions for <em>software product line engineering</em> (SPLE) have a continuous momentum in both academic and industry. In general, it is
+                     hard to judge when to reasonably favor SPLE over alternative solutions that are more
+                     common in the industry. In this paper, we illustrate how we as Elinvar manage variability
+                     within our WealthTech Platform as a Service (PaaS) at different granularity levels,
+                     and discuss methods for SPLE in this context. More in detail, we share our techniques
+                     and concepts to address configuration management, and show how we manage a single
+                     microservice SPL including inter-service communication. Finally, we provide insights
+                     into platform solutions by means of packages for our clients. We end with a discussion
+                     on SPLE techniques in context of service SPLs and our packaging strategy. We conclude
+                     that while we are good to go with industry-standard approaches for microservice SPLs,
+                     the variability modeling and analysis advantages within SPLE is promising for our
+                     packaging strategy.</p>
+                  	</div>
+            </div>
+            						
+            					
+            <h2>WORKSHOP SESSION: MODEVAR@SPLC 2021: 4th international workshop on languages for modelling variability</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461002.3473945">How flexible must a transformation approach for variability models and custom variability
+                  representations be?</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Kevin Feichtinger</li>
+               <li class="nameList Last">Rick Rabiser</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>A plethora of variability modeling approaches has been developed in the last 30 years.
+                     Feature modeling approaches are probably the most common and well-known approaches.
+                     All existing variability modeling approaches have their benefits and drawbacks and
+                     have been shown to be useful at least in certain use cases. Nevertheless, industry
+                     frequently develops their own custom solutions to manage variability because they
+                     struggle picking an approach from the (still growing) number of modeling approaches
+                     available. Therefore, we work towards a transformation approach, which enables researchers
+                     and practitioners alike to compare different (custom) variability modeling approaches
+                     and representations and switch in between them at least (semi-)automatically. In this
+                     paper, we discuss ongoing challenges for the transformation approach regarding the
+                     implementation of the transformations and the expected flexibility of the approach.
+                     We present our research agenda towards a flexible and adaptable transformation approach
+                     for well-known variability modeling approaches and custom variability representations
+                     used in industry.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461002.3473940">Integration of UVL in FeatureIDE</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Chico Sundermann</li>
+               <li class="nameList">Tobias Heß</li>
+               <li class="nameList">Dominik Engelhardt</li>
+               <li class="nameList">Rahel Arens</li>
+               <li class="nameList">Johannes Herschel</li>
+               <li class="nameList">Kevin Jedelhauser</li>
+               <li class="nameList">Benedikt Jutz</li>
+               <li class="nameList">Sebastian Krieter</li>
+               <li class="nameList Last">Ina Schaefer</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Variability models are prevalent for specifying the commonalities and variabilities
+                     of configurable systems. A large variety of tools support using, editing, and analyzing
+                     variability models. However, the different tools often depend on distinct textual
+                     notations to store and read variability models which induces a large effort for researchers
+                     and practitioners. This additional effort could be reduced if the community adopted
+                     a single format. Following the goal of the MODEVAR initiative to develop a widely
+                     adopted variability language, we provided a first proposal with the Universal Variability
+                     language (UVL) in previous work. For a textual format to be adopted, an important
+                     aspect is an as small as possible effort when integrating the format in other tools.
+                     In this work, we discuss the integration of UVL in FeatureIDE. We use the integration
+                     to examine the applicability of UVL and our parser library to existing tools and gather
+                     further requirements for the language design. Furthermore, we provide a thorough documentation
+                     on the implementation to be used as reference and guidance for integration in other
+                     tools.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461002.3473949">A first prototype of a new repository for feature model exchange and knowledge sharing</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">David Romero</li>
+               <li class="nameList">José Á. Galindo</li>
+               <li class="nameList">Jose-Miguel Horcas</li>
+               <li class="nameList Last">David Benavides</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Feature models are the "de facto" standard for variability modelling and are used
+                     in both academia and industry. The MODEVAR initiative tries to establish a common
+                     textual feature modelling language that can be used by different communities and can
+                     allow information sharing. Feature model related researches use different models for
+                     different purposes such as analysis, sampling, testing, debugging, teaching, etc.
+                     Those models are shared in private repositories and there is a risk that all that
+                     knowledge is spread across different platforms which hinder collaboration and knowledge
+                     reuse. In this paper, we propose a first working version of a new feature model repository
+                     that allows to centralise the knowledge generated in the community together with advanced
+                     capabilities such as DOI generation, an API, analysis reports, among others. Our solution
+                     is a front end interface that uses the popular open science repository Zenodo as an
+                     end point to materialise the storage of all the information. Zenodo is enhanced with
+                     characteristics that facilitate the management of the models. The idea of our repository
+                     is to provide existing but also new features that are not present in other repositories
+                     (e.g., SPLOT). We propose to populate our repository with all the existing models
+                     of many sources including SPLOT.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461002.3473948">Optimisation for the product configuration system of Renault: towards an integration of symmetries</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Hao Xu</li>
+               <li class="nameList">Souheib Baarir</li>
+               <li class="nameList">Tewfik Ziadi</li>
+               <li class="nameList">Lom Messan Hillah</li>
+               <li class="nameList">Siham Essodaigui</li>
+               <li class="nameList Last">Yves Bossu</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>The problem of configuring model variability is widespread in many different domains.
+                     Renault, a leading french automobile manufacturer, has developed its technology internally
+                     to model vehicle diversity. This technology relies on the approach known as knowledge
+                     compilation. Since its inception, continuous progress has been made in the tool while
+                     monitoring the latest developments from the software field and academia. However,
+                     the growing number of vehicle models brings potential risks and higher requirements
+                     for the tool. This paper presents a short reminder of Renault's technology principles
+                     and the improvements we intend to achieve by analyzing and leveraging notable data
+                     features of Renault problem instances. In particular, the aim is to exploit symmetry
+                     properties.</p>
+                  	</div>
+            </div>
+            						
+            					
+            <h2>WORKSHOP SESSION: REVE 2021: 9th international workshop on reverse variability engineering</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461002.3473943">Extending the identification of object-oriented variability implementations using
+                  usage relationships</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Johann Mortara</li>
+               <li class="nameList">Xhevahire Tërnava</li>
+               <li class="nameList">Philippe Collet</li>
+               <li class="nameList Last">Anne-Marie Pinna-Dery</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Many variability-rich object-oriented systems rely on multiple traditional techniques
+                     (inheritance, patterns) to implement their variability in a single codebase. These
+                     variability implementation places are neither explicit nor documented, hampering their
+                     detection and variability comprehension. Based on the identification of symmetry property
+                     in seven implementation techniques, a first approach was proposed with <em>symfinder</em> to automatically identify and display the variability of a system in a graph-based
+                     visualization structured by inheritance. However, composition, or more generally the
+                     usage relationship, is extensively used to implement the variability in object-oriented
+                     systems, and without this information, comprehending the large amount of variability
+                     identified by <em>symfinder</em> is not trivial. In this paper, we present <em>symfinder-2</em>, an extension of the former approach that incorporates the usage relationships to
+                     better identify potential variability implementations. We provide two ways to mark
+                     classes as entry points, user-defined and automatic, so that the visualization is
+                     filtered and enables users to have a better focus when they identify variability.
+                     We also report on the evaluation of this extension to ten open-source Java-based systems.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461002.3473951">Product-line analysis cookbook: a classification system for complex analysis toolchains</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">David Morais Ferreira</li>
+               <li class="nameList">Vasil L. Tenev</li>
+               <li class="nameList Last">Martin Becker</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Adopting Product Line Engineering (PLE) approaches in the context of software-intensive
+                     systems reduces overall development and maintenance costs, reduces time to market
+                     and leads to an overall improvement in product quality. The Software and System Product
+                     Line (SPL) community has provided a large number of different analysis approaches
+                     and tools, which were developed in different contexts, answer different questions,
+                     and can contribute to the fulfillment of different analysis goals. Typically, these
+                     analysis tools are initially developed as part of a research study, where they serve
+                     a specific purpose, e. g. for investigating the use of a new technology, or to demonstrate
+                     the transfer of methods from other fields. Generally, such purpose is aligned with
+                     a specific, but not explicitly stated, high-level goal. The pursuit of these goals
+                     requires holistic approaches, i. e. integrated toolchains and classification of analyses,
+                     which are documented as a centralized collection of wisdom. Therefore, we propose
+                     a classification system which describes existing analyses and reveals possible combinations,
+                     i. e. integrated toolchains, and provide first examples. This method supports the
+                     search for toolchains which address complex industrial needs. With the support of
+                     the SPL community, we hope to collaboratively document existing analyses and corresponding
+                     goals on an open platform.</p>
+                  	</div>
+            </div>
+            						
+            					
+            <h2>WORKSHOP SESSION: WEESR2021: 4th workshop on experiences and empirical studies on software reuse</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461002.3473946">A reusable set of real-world product line case studies for comparing variability models
+                  in research and practice</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Kristof Meixner</li>
+               <li class="nameList">Kevin Feichtinger</li>
+               <li class="nameList">Rick Rabiser</li>
+               <li class="nameList Last">Stefan Biffl</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Real-world cases describing (product) variability in production systems are rare and
+                     often not accessible. Thus, researchers often use toy examples or develop fictitious
+                     case studies. These are designed to demonstrate their approach but rarely to compare
+                     multiple approaches. In this paper, we aim at making variability modeling evaluations
+                     comparable. We present and provide a reusable set of four real-world case studies
+                     that are easy to access, with artifacts represented in a universal, variability-model-agnostic
+                     way, the industrial Product-Process-Resource Domain-Specific Language (PPR DSL). We
+                     report how researchers can use the case studies, automatically transforming the Domain-Specific
+                     Language (DSL) artifacts to well-known variability models, e.g., product feature models,
+                     using the Variability Evolution Roundtrip Transformation (VERT) process. We compare
+                     the expressiveness and complexity of the transformed feature models. We argue that
+                     the case studies with the DSL and the flexible transformation capabilities build a
+                     valuable contribution to making future research results more comparable and facilitating
+                     evaluations with real-world product lines.</p>
+                  	</div>
+            </div>
+            						
+            					
+            <h2>WORKSHOP SESSION: VariVolution 2021: 4th international workshop on variability and evolution of software-intensive
+               systems</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461002.3473950">Iterative development and changing requirements: drivers of variability in an industrial system for veterinary anesthesia</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Elias Kuiter</li>
+               <li class="nameList">Jacob Krüger</li>
+               <li class="nameList Last">Gunter Saake</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Developing a safety-critical embedded system poses a high risk, since such systems
+                     must usually comply with (potentially changing) rigorous standards set by customers
+                     and legal authorities. To reduce risk and cope with changing requirements, manufacturers
+                     of embedded devices increasingly use iterative development processes and prototyping
+                     both for hard- and firmware. However, hard- and firmware development are difficult
+                     to align in a common process, because hardware development cycles are typically longer
+                     and more expensive. Thus, seamlessly transitioning software to new hardware revisions
+                     and reusing old hardware revisions can be problematic. In this paper, we describe
+                     an industrial case study for veterinary anesthesia in which we also faced this problem.
+                     To solve it, we introduced preprocessor-based variability to create a small configurable
+                     system that could flexibly adapt to our needs. We discuss our solution, alternative
+                     solutions for hardware evolution, as well as their pros and cons. Our experiences
+                     generalize an interesting evolution scenario for systems that are planned and delivered
+                     as a single system, but exhibited variability to cope with problems during agile development
+                     processes.</p>
+                  	</div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3461002.3473941">Towards heterogeneous multi-dimensional variability modeling in cyber-physical production
+                  systems</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Hafiyyan Sayyid Fadhlillah</li>
+               <li class="nameList">Kevin Feichtinger</li>
+               <li class="nameList">Lisa Sonnleithner</li>
+               <li class="nameList">Rick Rabiser</li>
+               <li class="nameList Last">Alois Zoitl</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Cyber-Physical Production Systems (CPPSs) are complex systems interacting with their
+                     environment by sensors and actuators. Such systems typically have a long lifespan,
+                     over which a plethora of variants are developed and maintained. The heterogeneity
+                     of hardware and software components used in CPPSs and the multiple disciplines (mechanical,
+                     electrical, software engineering) involved in the development and maintenance of CPPSs,
+                     however, make it difficult to manage their variability. Specifically, variability
+                     needs to be expressed in and across multiple disciplines, which use heterogeneous
+                     methods and tools. This also affects configuration as well as co-evolution of models
+                     and artifacts. In this short paper, we discuss our first ideas towards a Heterogeneous
+                     Multi-Dimensional Variability Modeling approach for CPPSs. Our approach builds on
+                     and extends existing work to address the challenges of modeling the variability of
+                     CPPSs and supporting their configuration and evolution. We showcase our idea using
+                     a case study system and outline a research agenda.</p>
+                  	</div>
+            </div>
+            						
+            					</div>
+      </div>
+   </body>
+</html>
