@@ -1,0 +1,16 @@
+name: Syncing to the server
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: lets copy the file
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          source: "index.html"
+          target: "public_html/index.html"
+      - run: echo "🖥️ We have just synchronized."
