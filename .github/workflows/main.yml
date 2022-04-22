@@ -1,0 +1,10 @@
+# Lets upload the changes to the website
+name: deploy-to-sigsoft
+  uses: garygrossgarten/github-action-scp@release
+  with:
+    local: index.html
+    port: 7822
+    remote: public_html/index.html
+    host: ${{ secrets.HOST }}
+    username: ${{ secrets.SSH_USER }}
+    password: ${{ secrets.PASSWORD }}
