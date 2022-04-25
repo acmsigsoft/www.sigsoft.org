@@ -3,6 +3,7 @@ on: [push]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
+    environment: sigsoft
     steps:
       - name: lets copy the file
         uses: appleboy/scp-action@master
