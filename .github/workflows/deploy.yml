@@ -12,5 +12,5 @@ jobs:
           echo "${{ secrets.HOST }}" > ~/.ssh/known_hosts
 
       - name: 🚀 Deploy using rsync
-        run: rsync --archive --delete --stats -e 'ssh -p 7822' '/' ${{ secrets.REMOTE_DEST }}
+        run: rsync --archive -e 'ssh -p 7822' '/' ${{ secrets.REMOTE_DEST }}
       - run: echo "🖥️ We have just synchronized."
