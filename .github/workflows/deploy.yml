@@ -5,13 +5,12 @@ jobs:
     runs-on: ubuntu-latest
     environment: sigsoft
     steps:
-      - name: lets copy the file
-        uses: appleboy/scp-action@master
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
-          port: ${{ secrets.PORT }}
-          source: "index.html"
-          target: "public_html/index.html"
+      - name: 🔑 Install SSH Key
+        run: |
+          install -m 600 -D /dev/null ~/.ssh/id_rsa
+          echo "${{ secrets.PRIVATE_SSH_KEY }}" > ~/.ssh/id_rsa
+          echo "${{ secrets.HOST }}" > ~/.ssh/known_hosts
+
+      - name: 🚀 Deploy using rsync
+        run: rsync --archive --delete --stats -e 'ssh -p 7822' 'index.html' 'public_html/index.html'
       - run: echo "🖥️ We have just synchronized."
