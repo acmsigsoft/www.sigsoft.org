@@ -28,5 +28,5 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
-          source: "index.html"
+          source: "./index.html"
           target: "public_html/index.html"
