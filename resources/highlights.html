@@ -50,6 +50,36 @@
       <h2>SIGSOFT Research Highlights Papers</h2>
       
       <div class="highlight-paper">
+		<p class="highlight-paper-title"><a href="https://ieeexplore.ieee.org/document/9678792">QDiff: Differential Testing of Quantum Software Stacks</a></p>
+        <p class="highlight-paper-authors">J. Wang, Q. Zhang, G.H. Xu, M. Kim</p>
+        <p class="highlight-paper-venue"><strong>Venue: </strong>ASE 2021</p>
+        <p class="highlight-paper-statement"><strong>Nomination Statement: </strong>
+			This paper presents a three-stage approach for testing quantum compilers and simulators that are part of the software stack for quantum computers.
+			The authors note three main challenges for testing quantum software stacks including (i) generating semantically equivalent programs for testing compilers,
+			(ii) exposing and examining bugs in quantum simulators and hardware, and (iii) interpreting measurements from the results of running quantum programs
+			given their probabilistic nature. To address these three issues the authors develop QDiff which introduces three main features that align with the
+			challenges listed above, namely: (i) it is capable of generating logically equivalent quantum programs using a set of equivalent gate transformation rules,
+			(ii) a process for selecting subsets of said programs to run on hardware, and
+			(iii) it can determine the how many measurements are needed for a reliable comparison between equivalent programs to detect potential issues. 
+			Quantum computing continues to grow in popularity, particularly as quantum supremacy for certain classes of algorithms has now been illustrated.
+			Testing the software stack for these programs will likely be an important topic of research moving forward, therefore,
+			I believe that this line is both important, and given the focus on automation, is appropriate for ACM research highlights: Important topic;
+			Equivalent gate Transformation and mutation are interesting applications of testing techniques in the quantum domain;
+			Well-motivated problem;
+			Promising preliminary results
+			</p>
+      </div>
+      
+      <div class="highlight-paper">
+		<p class="highlight-paper-title"><a href="https://dl.acm.org/doi/10.1145/3368089.3409748">Boosting fuzzer efficiency: an information theoretic perspective</a></p>
+        <p class="highlight-paper-authors">M. B&ouml;hme, V.J.M. Man&egrave;s, S.K. Cha</p>
+        <p class="highlight-paper-venue"><strong>Venue: </strong>ESEC/FSE 2020</p>
+        <p class="highlight-paper-statement"><strong>Nomination Statement: </strong>
+			Fuzzing is one of the most successful software testing approaches for finding security vulnerabilities and is widely used in practice. Since many security faults are the result of malicious inputs, fuzzing probes an application with a large number of malformed inputs over a long period, continuously exercising the system in unintended ways. An important research direction for fuzzing is to find more efficient and effective ways to select inputs so that faults can be found quickly and that the inputs exercise (or cover) a large part of the software’s codebase.  This paper reaches outside of software engineering for a solution, and leverages a novel use of information theory to improve a fuzzer’s efficiency.  It uses Shannon’s entropy as a metric of the quality of input seeds, and drives the fuzzing towards those inputs by maximizing this metric.  This idea was implemented in an existing fuzzer and as a result the extension is now turned on by default.   While this paper makes contributions to fuzzing,  it also advances the use of information theory for testing. The authors have made all of their artifacts available for the general research community and were awarded the reusable and functional artifacts badges from ACM.
+		</p>
+      </div>
+      
+      <div class="highlight-paper">
       	<p class="highlight-paper-title"><a href="https://dl.acm.org/doi/10.1145/3377811.3380330">A Tale from the Trenches: Cognitive Biases and Software Development</a></p>
       	<p class="highlight-paper-authors">S. Chattopadhyay, N. Nelson, A. Au, N. Morales, C. Sanchez, R. Pandita, and A. Sarma</p>
       	<p class="highlight-paper-venue"><strong>Venue: </strong>ICSE 2020</p>
@@ -78,16 +108,6 @@
            Deep neural networks (DNNs) have demonstrated their effectiveness in multiple important application contexts, from face recognition, to medical diagnosis, fraud detection, and others. Especially when DNNs work with human-related characteristics, it is of paramount importance to ensure that they show fair behavior. However, because of societal bias often occurring in the training data, the resulting DNNs may introduce discrimination unintentionally. To address this problem, the paper proposes a scalable approach for generating individual discriminatory instances of DNNs. By generating several instances, it is possible to retrain a DNN to reduce discrimination. The approach is evaluated by comparing it with other two from the state of the art. The evaluation is performed on three significant datasets and shows a more effective search space exploration as well as the possibility to generate a larger number of individual discriminatory instances using significant less time. This paper provides a contribution that is cross-cutting two disciplines, software engineering and machine learning, and paves the way toward improving the quality of DNNs and their usability in societal contexts.
 		</p>
       </div>
-      
-      <div class="highlight-paper">
-		<p class="highlight-paper-title"><a href="https://dl.acm.org/doi/10.1145/3368089.3409748">Boosting fuzzer efficiency: an information theoretic perspective</a></p>
-        <p class="highlight-paper-authors">M. B&ouml;hme, V.J.M. Man&egrave;s, S.K. Cha</p>
-        <p class="highlight-paper-venue"><strong>Venue: </strong>ESEC/FSE 2020</p>
-        <p class="highlight-paper-statement"><strong>Nomination Statement: </strong>
-			Fuzzing is one of the most successful software testing approaches for finding security vulnerabilities and is widely used in practice. Since many security faults are the result of malicious inputs, fuzzing probes an application with a large number of malformed inputs over a long period, continuously exercising the system in unintended ways. An important research direction for fuzzing is to find more efficient and effective ways to select inputs so that faults can be found quickly and that the inputs exercise (or cover) a large part of the software’s codebase.  This paper reaches outside of software engineering for a solution, and leverages a novel use of information theory to improve a fuzzer’s efficiency.  It uses Shannon’s entropy as a metric of the quality of input seeds, and drives the fuzzing towards those inputs by maximizing this metric.  This idea was implemented in an existing fuzzer and as a result the extension is now turned on by default.   While this paper makes contributions to fuzzing,  it also advances the use of information theory for testing. The authors have made all of their artifacts available for the general research community and were awarded the reusable and functional artifacts badges from ACM.
-		</p>
-      </div>
-      
 
       </div>
      </div>
