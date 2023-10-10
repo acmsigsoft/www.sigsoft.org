@@ -1,1 +1,27 @@
-RedirectMatch 302 /awards/distinguishedServiceAward.html https://sigsoft.org/awards/distinguishedservice/
+FIXME: Add the Includes
+
+RedirectMatch 301 /awards/distinguishedServiceAward.html https://www2.sigsoft.org/awards/distinguishedservice/
+RedirectMatch 301 /awards/outstandingResearchAward.html https://www2.sigsoft.org/awards/outstandingresearch/
+RedirectMatch 301 /awards/influentialEducatorAward.html https://www2.sigsoft.org/awards/influentialeducator/
+RedirectMatch 301 /awards/angerAward.html https://www2.sigsoft.org/awards/anger/
+RedirectMatch 301 /awards/impactPaperAward.html https://www2.sigsoft.org/awards/impactpaper/
+RedirectMatch 301 /awards/dissertationAward.html https://www2.sigsoft.org/awards/dissertation/
+RedirectMatch 301 /awards/earlyCareerResearcherAward.html https://www2.sigsoft.org/awards/earlycareerresearcher/
+
+RedirectMatch 301 /awards/distinguishedservice/ https://www2.sigsoft.org/awards/distinguishedservice/
+RedirectMatch 301 /awards/outstandingresearch/ https://www2.sigsoft.org/awards/outstandingresearch/
+RedirectMatch 301 /awards/influentialeducator/ https://www2.sigsoft.org/awards/influentialeducator/
+RedirectMatch 301 /awards/anger/ https://www2.sigsoft.org/awards/anger/
+RedirectMatch 301 /awards/impactpaper/ https://www2.sigsoft.org/awards/impactpaper/
+RedirectMatch 301 /awards/dissertation/ https://www2.sigsoft.org/awards/dissertation/
+RedirectMatch 301 /awards/earlycareerresearcher/ https://www2.sigsoft.org/awards/earlycareerresearcher/
+
+RedirectMatch 301 /execcomm.html https://www2.sigsoft.org/execcontact/
+RedirectMatch 301 /resources/caps.html https://www2.sigsoft.org/caps/capsmain/
+RedirectMatch 301 /resources/webinars.html https://www2.sigsoft.org/webinars/webinarsmain/
+RedirectMatch 301 /contact.html https://www2.sigsoft.org/contact/
+
+RedirectMatch 301 /execcontact/ https://www2.sigsoft.org/execcontact/
+RedirectMatch 301 /caps/capsmain/ https://www2.sigsoft.org/caps/capsmain/
+RedirectMatch 301 /webinars/webinarsmain/ https://www2.sigsoft.org/webinars/webinarsmain/
+RedirectMatch 301 /contact/ https://www2.sigsoft.org/contact/
