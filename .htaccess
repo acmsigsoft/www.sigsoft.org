@@ -27,3 +27,6 @@ RedirectMatch 301 /execcontact/ https://www2.sigsoft.org/execcontact/
 RedirectMatch 301 /caps/capsmain/ https://www2.sigsoft.org/caps/capsmain/
 RedirectMatch 301 /webinars/webinarsmain/ https://www2.sigsoft.org/webinars/webinarsmain/
 RedirectMatch 301 /contact/ https://www2.sigsoft.org/contact/
+
+RedirectMatch 301 /index.html https://www2.sigsoft.org/
+RedirectMatch 301 ^/$ https://www2.sigsoft.org/
