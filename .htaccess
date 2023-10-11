@@ -1,4 +1,6 @@
-FIXME: Add the Includes
+AddType text/html .html 
+AddHandler server-parsed .html 
+Options FollowSymLinks Includes
 
 RedirectMatch 301 /awards/distinguishedServiceAward.html https://www2.sigsoft.org/awards/distinguishedservice/
 RedirectMatch 301 /awards/outstandingResearchAward.html https://www2.sigsoft.org/awards/outstandingresearch/
